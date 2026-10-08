@@ -21,6 +21,8 @@ Busque um nome e filtre por anotação, valência, papel semântico ou realizaç
 
 Os arquivos de consulta usam referências legíveis para distinguir instâncias do mesmo lema na mesma sentença. `arguments_annotated` distingue a ausência de realização anotada de uma anotação ainda não realizada. Todos os arquivos preservam as informações científicas disponíveis; a exportação técnica permite reproduzir a segmentação original por tokens.
 
+Evidência lexicográfica e autoridade de frames são distintas. Verbetes do DUPB não são descrições de rolesets. As glosas lexicais herdadas ficam em `data/lexical_evidence.jsonl`; as glosas originais de frames de referência ficam em `origin_frames[].gloss`, com identificação do recurso e link. Descrições de roleset sem autoridade documentada permanecem nulas.
+
 ## Interface e direitos
 
 O leiaute deriva do [NounBank.DS Expanded](https://github.com/bryankhelven/NounBank.DS-Expanded). Consulte `NOTICE` e `LICENSE-CODE` para os créditos e a licença do código. Essa licença não concede direitos adicionais sobre os textos do corpus ou outros recursos de terceiros.
