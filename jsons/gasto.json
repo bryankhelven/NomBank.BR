@@ -1,0 +1,1262 @@
+{
+  "lemma": "gasto",
+  "lemma_base": "gasto",
+  "senses": [
+    {
+      "pt_roleset": "gasto · acepção 1",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_f5621b4e976bc3b9",
+          "description": null,
+          "valency": 5,
+          "origin_frames": [
+            {
+              "roleset": "spending.01",
+              "resource": "English NomBank",
+              "description": "use money",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/spending.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "gastador",
+              "definition": "Quem dispende recursos."
+            },
+            {
+              "id": "Arg1",
+              "desc": "bem/atividade financiada",
+              "definition": "Aquilo em que se gasta; não vendedor ou quantidade de dinheiro."
+            },
+            {
+              "id": "Arg2",
+              "desc": "vendedor",
+              "definition": "Quem recebe como vendedor da prestação/bem adquirido, não todo beneficiário do gasto."
+            },
+            {
+              "id": "Arg3",
+              "desc": "montante gasto",
+              "definition": "Quantia/avaliação do próprio dispêndio, distinta de redução percentual ou média de outra grandeza."
+            },
+            {
+              "id": "Arg4",
+              "desc": "beneficiário do gasto",
+              "definition": "Para quem se custeia, distinto do gastador e do objeto financiado."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "nmod": 7,
+              "amod": 2,
+              "obl": 2,
+              "conj": 2
+            },
+            "Arg0": {
+              "nsubj": 4,
+              "amod": 4,
+              "nmod": 4,
+              "obj": 1,
+              "obl": 1
+            },
+            "Arg3": {
+              "root": 1,
+              "amod": 2,
+              "obl": 1,
+              "advmod": 1
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 138,
+          "sent_ID": "FOLHA_DOC004129_SENT025",
+          "text": "A nova roupagem da GCM é adotada após diminuição de gastos com policiamento.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 58
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "com policiamento",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 59,
+                "char_end": 75
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 1879,
+          "sent_ID": "FOLHA_DOC004129_SENT031",
+          "text": "Sobre a diminuição nos gastos, a gestão Doria afirma que não houve corte.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 29
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a gestão Doria",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 31,
+                "char_end": 45
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 3018,
+          "sent_ID": "FOLHA_DOC002036_SENT019",
+          "text": "Ainda assim, seria preciso arrancar dos outros estratos algo próximo de dez pontos percentuais do PIB para satisfazer necessidades do gasto público.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 134,
+                "char_end": 139
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "público",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  26
+                ],
+                "char_start": 140,
+                "char_end": 147
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 3335,
+          "sent_ID": "FOLHA_DOC004005_SENT018",
+          "text": "Sua importância relativa dentro dos gastos sociais (descontada a Previdência) também avançou.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 42
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sociais",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 43,
+                "char_end": 50
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4115,
+          "sent_ID": "FOLHA_DOC003212_SENT010",
+          "text": "Ademais, inflam os números dos gastos do governo americano com a política de compras de produtos nacionais e com P&D.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do governo americano",
+            "Arg1": [
+              "com a política de compras de produtos nacionais",
+              "com P&D"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": [
+              "obl",
+              "conj"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 38,
+                "char_end": 58
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 59,
+                "char_end": 106
+              },
+              {
+                "token_ids": [
+                  22,
+                  23
+                ],
+                "char_start": 109,
+                "char_end": 116
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4291,
+          "sent_ID": "FOLHA_DOC003149_SENT010",
+          "text": "Ele busca empresas que aceitem patrocinar o gasto em troca de nomear o local e realizar ações de marketing.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 44,
+                "char_end": 49
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "empresas",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 10,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4410,
+          "sent_ID": "FOLHA_DOC004005_SENT005",
+          "text": "Segundo o estudo, a área social deu uma contribuição expressiva para a expansão do gasto público federal na última década.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 83,
+                "char_end": 88
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "público federal",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": [
+              "amod",
+              "amod"
+            ],
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  18,
+                  19
+                ],
+                "char_start": 89,
+                "char_end": 104
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4440,
+          "sent_ID": "FOLHA_DOC003070_SENT012",
+          "text": "Sim, o mordomo votou o teto de gastos (que a essa altura vai se revelando uma carroça problemática à frente dos bois) e serviu alguns canapés para o mercado.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 5506,
+          "sent_ID": "FOLHA_DOC004005_SENT027",
+          "text": "No entanto, a participação da saúde no gasto social caiu de 38% para 29%.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 44
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": [
+              "da saúde",
+              "social"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": [
+              "nmod",
+              "amod"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 27,
+                "char_end": 35
+              },
+              {
+                "token_ids": [
+                  13
+                ],
+                "char_start": 45,
+                "char_end": 51
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 6584,
+          "sent_ID": "FOLHA_DOC004019_SENT018",
+          "text": "O gasto com pessoal é o segundo item da lista de despesas da União.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da União",
+            "Arg1": "com pessoal",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 58,
+                "char_end": 66
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 8,
+                "char_end": 19
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 6738,
+          "sent_ID": "FOLHA_DOC003141_SENT016",
+          "text": "Também afirmou que a decisão de votar a proposta que estabeleceu um teto de gastos para o governo antes da reforma da Previdência foi equivocada.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 82
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "para o governo",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 83,
+                "char_end": 97
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 6983,
+          "sent_ID": "FOLHA_DOC004005_SENT015",
+          "text": "Entre os itens que chamam a atenção no levantamento estão as evoluções dos gastos com educação e com saúde.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 75,
+                "char_end": 81
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": [
+              "com educação",
+              "com saúde"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": [
+              "nmod",
+              "conj"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18
+                ],
+                "char_start": 82,
+                "char_end": 94
+              },
+              {
+                "token_ids": [
+                  20,
+                  21
+                ],
+                "char_start": 97,
+                "char_end": 106
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 7197,
+          "sent_ID": "FOLHA_DOC004005_SENT013",
+          "text": "Segundo o estudo, sozinha, consumiu, em média, 46% do gasto público como um todo na última década.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 54,
+                "char_end": 59
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "público",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  17
+                ],
+                "char_start": 60,
+                "char_end": 67
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 9615,
+          "sent_ID": "FOLHA_DOC000161_SENT044",
+          "text": "Para o alinhamento e balanceamento dos pneus, o gasto será de R$ 120 para modelos populares.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 48,
+                "char_end": 53
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Para o alinhamento e balanceamento dos pneus",
+            "Arg2": null,
+            "Arg3": "de R$ 120",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "root",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 0,
+                "char_end": 44
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 10334,
+          "sent_ID": "FOLHA_DOC003166_SENT004",
+          "text": "Ao filtrar as propostas que recebeu das corretoras, Paola optou por coberturas adicionais que podem se reverter em gastos menores em caso de pequenos acidentes.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              22
+            ],
+            "spans": [
+              {
+                "char_start": 115,
+                "char_end": 121
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Paola",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "menores",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "amod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12
+                ],
+                "char_start": 52,
+                "char_end": 57
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  23
+                ],
+                "char_start": 122,
+                "char_end": 129
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 10697,
+          "sent_ID": "FOLHA_DOC001519_SENT015",
+          "text": "Em meio aos gastos robustos dos consumidores, as empresas acumularam um pouco mais de estoques do que anteriormente relatado para atender à forte demanda.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 12,
+                "char_end": 18
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos consumidores",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "robustos",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "amod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 28,
+                "char_end": 44
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  6
+                ],
+                "char_start": 19,
+                "char_end": 27
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 10718,
+          "sent_ID": "FOLHA_DOC000139_SENT021",
+          "text": "No fim do mandato, em 2016, a gestão Haddad reduziu gastos em várias áreas.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 58
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a gestão Haddad",
+            "Arg1": "em várias áreas",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 28,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 59,
+                "char_end": 74
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 11348,
+          "sent_ID": "FOLHA_DOC004019_SENT016",
+          "text": "Em relação à Previdência, a taxa de crescimento do gasto com a folha mantinha certa estabilidade desde 2010.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 51,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "com a folha",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 57,
+                "char_end": 68
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 11512,
+          "sent_ID": "FOLHA_DOC003102_SENT023",
+          "text": "Em pouco mais de uma hora no festival, os gastos já chegavam a quase R$ 600.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 48
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "a quase R$ 600",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 61,
+                "char_end": 75
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 12192,
+          "sent_ID": "FOLHA_DOC004019_SENT006",
+          "text": "A cifra superou o pico anterior da série desse gasto, que foi de R$ 272,3 bilhões, em novembro de 2014.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "gasto",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 52
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 12431,
+          "sent_ID": "FOLHA_DOC003172_SENT013",
+          "text": "Embora defenda o controle rígido dos gastos dos governos, demonstra preocupação com a falta de debate sobre como evitar prejuízo aos serviços públicos.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 37,
+                "char_end": 43
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos governos",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 44,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 14848,
+          "sent_ID": "FOLHA_DOC003161_SENT012",
+          "text": "Em outras palavras, com grande frequência e quantidade de passageiros, as companhias aéreas terão menos gastos com suas operações, já que ganham em escala.",
+          "frame_id": "f_f5621b4e976bc3b9",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gastos",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 104,
+                "char_end": 110
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "as companhias aéreas",
+            "Arg1": "com suas operações",
+            "Arg2": null,
+            "Arg3": "menos",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "advmod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 71,
+                "char_end": 91
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 111,
+                "char_end": 129
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  17
+                ],
+                "char_start": 98,
+                "char_end": 103
+              }
+            ],
+            "Arg4": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,822 @@
+{
+  "lemma": "gerente",
+  "lemma_base": "gerente",
+  "senses": [
+    {
+      "pt_roleset": "gerente.01",
+      "description": "profissional que gerencia, dirige ou administra",
+      "rolesets": [
+        {
+          "id": "f_8949f24860d05ca7",
+          "description": "profissional que gerencia, dirige ou administra",
+          "valency": 4,
+          "origin_frames": [
+            {
+              "roleset": "manager.01",
+              "resource": "English NomBank",
+              "description": "actrel/nom",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/manager.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "ocupante do cargo identificado independentemente de REL",
+              "definition": "ocupante do cargo identificado independentemente de REL"
+            },
+            {
+              "id": "Arg1",
+              "desc": "área/atividade gerida",
+              "definition": "área/atividade gerida"
+            },
+            {
+              "id": "Arg2",
+              "desc": "organização para a qual se gerencia",
+              "definition": "organização para a qual se gerencia"
+            },
+            {
+              "id": "Arg3",
+              "desc": "nível hierárquico",
+              "definition": "nível hierárquico"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj": 7,
+              "nmod": 2,
+              "parataxis": 2,
+              "punct": 1,
+              "appos": 1
+            },
+            "Arg1": {
+              "nmod": 7,
+              "amod": 2
+            },
+            "Arg2": {
+              "nmod": 8
+            },
+            "Arg3": {
+              "amod": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 100,
+          "sent_ID": "FOLHA_DOC003185_SENT007",
+          "text": "\"Afinal, você presencia acidentes de trânsito a toda hora, mas é mais raro ver uma casa pegando fogo\", explica Federico Salazar, gerente de seguros patrimoniais da Caixa Seguradora.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              28
+            ],
+            "spans": [
+              {
+                "char_start": 129,
+                "char_end": 136
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Federico Salazar",
+            "Arg1": "de seguros patrimoniais",
+            "Arg2": "da Caixa Seguradora",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  25,
+                  26
+                ],
+                "char_start": 111,
+                "char_end": 127
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  29,
+                  30,
+                  31
+                ],
+                "char_start": 137,
+                "char_end": 160
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "char_start": 161,
+                "char_end": 180
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 777,
+          "sent_ID": "FOLHA_DOC000161_SENT005",
+          "text": "O gerente de operações Eduardo Oliveira, 35, não seguiu essa recomendação.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Eduardo Oliveira, 35",
+            "Arg1": "de operações",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": [
+              "nmod",
+              "parataxis"
+            ],
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 23,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 10,
+                "char_end": 22
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 897,
+          "sent_ID": "FOLHA_DOC002034_SENT015",
+          "text": "Já o vi jogar com ferida aberta e cabeça enfaixada, afirmou outro ex-companheiro de time, o gerente comercial Gustavo Merighi Picca, 22.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 92,
+                "char_end": 99
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Gustavo Merighi Picca, 22",
+            "Arg1": "comercial",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": [
+              "nmod",
+              "punct",
+              "parataxis"
+            ],
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  21,
+                  22,
+                  23,
+                  24,
+                  25
+                ],
+                "char_start": 110,
+                "char_end": 135
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  20
+                ],
+                "char_start": 100,
+                "char_end": 109
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 1141,
+          "sent_ID": "FOLHA_DOC003242_SENT013",
+          "text": "Mas estamos verificando uma melhora, afirma Luiz Cambuhy, gerente de vendas da Valtra.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Luiz Cambuhy",
+            "Arg1": "de vendas",
+            "Arg2": "da Valtra",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 44,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  12,
+                  13
+                ],
+                "char_start": 66,
+                "char_end": 75
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 76,
+                "char_end": 85
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 1700,
+          "sent_ID": "FOLHA_DOC002029_SENT009",
+          "text": "Mas não podemos deixar nosso cliente que usa a placa para jogos ficar sem o produto por causa da mineração, diz Brandão, gerente da AMD.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 121,
+                "char_end": 128
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Brandão",
+            "Arg1": null,
+            "Arg2": "da AMD",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  24
+                ],
+                "char_start": 112,
+                "char_end": 119
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29
+                ],
+                "char_start": 129,
+                "char_end": 135
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 1854,
+          "sent_ID": "FOLHA_DOC004118_SENT139",
+          "text": "Ele era o gerente geral do estúdio, ficava atrás de Chocolate dizendo como fazer.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 17
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Ele",
+            "Arg1": null,
+            "Arg2": "do estúdio",
+            "Arg3": "geral"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": "amod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 24,
+                "char_end": 34
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  5
+                ],
+                "char_start": 18,
+                "char_end": 23
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3551,
+          "sent_ID": "FOLHA_DOC003041_SENT012",
+          "text": "\"É muito interessante ver uma tecnologia que, sem substituir o ser humano, aumentará a segurança substancialmente\", diz a gerente.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              24
+            ],
+            "spans": [
+              {
+                "char_start": 122,
+                "char_end": 129
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 4371,
+          "sent_ID": "FOLHA_DOC000019_SENT030",
+          "text": "\"Sem parâmetro, o mercado acaba ficando mais preocupado e precificando um pouco mais forte\", afirma Reginaldo Galhardo, gerente da Treviso Corretora.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              23
+            ],
+            "spans": [
+              {
+                "char_start": 120,
+                "char_end": 127
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Reginaldo Galhardo",
+            "Arg1": null,
+            "Arg2": "da Treviso Corretora",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  20,
+                  21
+                ],
+                "char_start": 100,
+                "char_end": 118
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  24,
+                  25,
+                  26,
+                  27
+                ],
+                "char_start": 128,
+                "char_end": 148
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7921,
+          "sent_ID": "FOLHA_DOC003041_SENT009",
+          "text": "Ana Paula Mikulenas, gerente de qualidade do hospital, diz que a ideia é alertar enfermeiros assim que pacientes tentarem se levantar, especialmente à noite.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 21,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Ana Paula Mikulenas",
+            "Arg1": "de qualidade",
+            "Arg2": "do hospital",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3
+                ],
+                "char_start": 0,
+                "char_end": 19
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 29,
+                "char_end": 41
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 42,
+                "char_end": 53
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9522,
+          "sent_ID": "FOLHA_DOC003027_SENT003",
+          "text": "Um gerente de aplicações diz que \"a agenda agora avança independentemente das crises de Temer\".",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de aplicações",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 11,
+                "char_end": 24
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 12876,
+          "sent_ID": "FOLHA_DOC003171_SENT010",
+          "text": "\"São animais baratos e fáceis de criar\", avalia a médica veterinária Mariana Pestelli, gerente técnica de Safári e Aquário da Petz.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 87,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a médica veterinária Mariana Pestelli",
+            "Arg1": "técnica de Safári e Aquário",
+            "Arg2": "da Petz",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": [
+              "amod",
+              "nmod"
+            ],
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 48,
+                "char_end": 85
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  19,
+                  20,
+                  21,
+                  22,
+                  23
+                ],
+                "char_start": 95,
+                "char_end": 122
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 123,
+                "char_end": 130
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 13175,
+          "sent_ID": "FOLHA_DOC001510_SENT015",
+          "text": "Vendeu tanto que, no mesmo dia, pedi mais 250, conta a gerente de compras, Mônica Peçanha.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 55,
+                "char_end": 62
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Mônica Peçanha",
+            "Arg1": "de compras",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  20,
+                  21
+                ],
+                "char_start": 75,
+                "char_end": 89
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18
+                ],
+                "char_start": 63,
+                "char_end": 73
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 13751,
+          "sent_ID": "FOLHA_DOC002015_SENT002",
+          "text": "Mariana investe em conta poupança e tem sido incentivada pelo gerente do banco a investir em aplicações mais rentáveis.",
+          "frame_id": "f_8949f24860d05ca7",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "gerente",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 62,
+                "char_end": 69
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "do banco",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 70,
+                "char_end": 78
+              }
+            ],
+            "Arg3": []
+          }
+        }
+      ]
+    }
+  ]
+}

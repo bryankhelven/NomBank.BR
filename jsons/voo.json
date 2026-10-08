@@ -1,0 +1,784 @@
+{
+  "lemma": "voo",
+  "lemma_base": "voo",
+  "senses": [
+    {
+      "pt_roleset": "voo.06",
+      "description": "viagem aérea",
+      "rolesets": [
+        {
+          "id": "f_86dfe60beb97566e",
+          "description": "viagem aérea",
+          "valency": 5,
+          "origin_frames": [
+            {
+              "roleset": "flight.01",
+              "resource": "English NomBank",
+              "description": "fly through the air, travel via air",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/flight.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "piloto/operador causador do voo, incluindo companhia conforme exemplo original",
+              "definition": "piloto/operador causador do voo, incluindo companhia conforme exemplo original"
+            },
+            {
+              "id": "Arg1",
+              "desc": "aeronave que voa",
+              "definition": "aeronave que voa"
+            },
+            {
+              "id": "Arg2",
+              "desc": "passageiro do voo",
+              "definition": "passageiro do voo"
+            },
+            {
+              "id": "Arg3",
+              "desc": "origem",
+              "definition": "origem"
+            },
+            {
+              "id": "Arg4",
+              "desc": "destino",
+              "definition": "destino"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg2": {
+              "nsubj:pass": 1,
+              "nmod": 2
+            },
+            "Arg0": {
+              "iobj": 1,
+              "nmod": 2,
+              "nsubj": 2
+            },
+            "Arg3": {
+              "obl": 2
+            },
+            "Arg4": {
+              "nmod": 3,
+              "obl": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 67,
+          "sent_ID": "FOLHA_DOC004041_SENT007",
+          "text": "São eles: Segundo a companhia, os passageiros afetados serão reacomodados em outros voos.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 84,
+                "char_end": 88
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "os passageiros afetados",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj:pass",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 31,
+                "char_end": 54
+              }
+            ],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 1175,
+          "sent_ID": "FOLHA_DOC000382_SENT019",
+          "text": "Sermos os primeiros a conduzir este voo nos dá muito orgulho.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 39
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "nos",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "iobj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 40,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 3263,
+          "sent_ID": "FOLHA_DOC000029_SENT010",
+          "text": "A maioria dos voos longos da companhia já foi cancelada.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 14,
+                "char_end": 18
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da companhia",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 26,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 3329,
+          "sent_ID": "FOLHA_DOC004068_SENT034",
+          "text": "Os voos sairiam de Guarulhos, Rio de Janeiro, Belo Horizonte, Brasília e Manaus.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de Guarulhos, Rio de Janeiro, Belo Horizonte, Brasília e Manaus",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 16,
+                "char_end": 79
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4416,
+          "sent_ID": "FOLHA_DOC000029_SENT001",
+          "text": "Insolvente, companhia aérea alemã Air Berlin vai encerrar voos neste mês.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 62
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "companhia aérea alemã Air Berlin",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 12,
+                "char_end": 44
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 8248,
+          "sent_ID": "FOLHA_DOC004066_SENT009",
+          "text": "As malas haviam recebido etiquetas simulando que seguiriam em voo para Brasília, mas tinham como destino final Portugal, segundo a PF.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 62,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "para Brasília"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 66,
+                "char_end": 79
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8930,
+          "sent_ID": "FOLHA_DOC004068_SENT033",
+          "text": "A American Airlines informou que cancelou os seis voos noturnos desta quinta-feira (7) com destino a Miami.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 50,
+                "char_end": 54
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "A American Airlines",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "a Miami"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3
+                ],
+                "char_start": 0,
+                "char_end": 19
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  19,
+                  20
+                ],
+                "char_start": 99,
+                "char_end": 106
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9291,
+          "sent_ID": "FOLHA_DOC003161_SENT008",
+          "text": "Esse é um voo com baixo tráfego de passageiros, o que ajuda a explicar a diferença.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "passageiros",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  9
+                ],
+                "char_start": 35,
+                "char_end": 46
+              }
+            ],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 9414,
+          "sent_ID": "FOLHA_DOC003161_SENT005",
+          "text": "As rotas em que há competição representam 90% de todos os voos nacionais.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 62
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 12141,
+          "sent_ID": "FOLHA_DOC004035_SENT020",
+          "text": "O voo de volta da família para o Brasil está marcado para esta sexta (8).",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 5
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "da família",
+            "Arg3": null,
+            "Arg4": "para o Brasil"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null,
+            "Arg4": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 15,
+                "char_end": 25
+              }
+            ],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 26,
+                "char_end": 39
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13179,
+          "sent_ID": "FOLHA_DOC004041_SENT012",
+          "text": "Os voos da American que partem do Brasil para Nova York, Los Angeles e Dallas não serão afetados.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da American",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "do Brasil",
+            "Arg4": "para Nova York, Los Angeles e Dallas"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl",
+            "Arg4": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 8,
+                "char_end": 19
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 31,
+                "char_end": 40
+              }
+            ],
+            "Arg4": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 41,
+                "char_end": 77
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14101,
+          "sent_ID": "FOLHA_DOC003161_SENT028",
+          "text": "De 2009, ano da entrada da Azul no mercado, a 2016, as tarifas médias das duas grandes caíram 47,7% e 37%, respectivamente, nos voos nacionais.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voos",
+            "token_ids": [
+              36
+            ],
+            "spans": [
+              {
+                "char_start": 128,
+                "char_end": 132
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 14472,
+          "sent_ID": "FOLHA_DOC003161_SENT017",
+          "text": "O desconto \"se esgota\", no entanto, se a compra for feita mais de 45 dias antes do voo.",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              24
+            ],
+            "spans": [
+              {
+                "char_start": 83,
+                "char_end": 86
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 14490,
+          "sent_ID": "FOLHA_DOC003161_SENT006",
+          "text": "O voo em que foi registrada a maior diferença de preço, uma média de R$ 2.050 entre a empresa mais cara e a mais barata, foi Navegantes (SC) Juazeiro do Norte (CE).",
+          "frame_id": "f_86dfe60beb97566e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "voo",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 5
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        }
+      ]
+    }
+  ]
+}

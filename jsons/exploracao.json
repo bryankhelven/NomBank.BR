@@ -1,0 +1,146 @@
+{
+  "lemma": "exploração",
+  "lemma_base": "exploração",
+  "senses": [
+    {
+      "pt_roleset": "exploração.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_95a8dfce6da6f2d5",
+          "description": null,
+          "valency": 2,
+          "origin_frames": [
+            {
+              "roleset": "exploration.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/exploration.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "explorer",
+              "definition": "explorer"
+            },
+            {
+              "id": "Arg1",
+              "desc": "thing (place, stuff) explored",
+              "definition": "thing (place, stuff) explored"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj": 1
+            },
+            "Arg1": {
+              "nmod": 2
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1776,
+          "sent_ID": "FOLHA_DOC000153_SENT011",
+          "text": "A Petrobras é líder mundial na exploração de águas profundas, o que requer ciência de ponta.",
+          "frame_id": "f_95a8dfce6da6f2d5",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "exploração",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "A Petrobras",
+            "Arg1": "de águas profundas"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 11,
+                "head_token_id": 2
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 42,
+                "char_end": 60,
+                "head_token_id": 10
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14940,
+          "sent_ID": "FOLHA_DOC000064_SENT015",
+          "text": "Prevê a exploração de oportunidades de negócios pelo país, ligadas ao setor de saneamento.",
+          "frame_id": "f_95a8dfce6da6f2d5",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "exploração",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 18
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de oportunidades de negócios pelo país"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 19,
+                "char_end": 57,
+                "head_token_id": 5
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

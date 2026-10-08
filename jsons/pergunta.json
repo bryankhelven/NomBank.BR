@@ -1,0 +1,950 @@
+{
+  "lemma": "pergunta",
+  "lemma_base": "pergunta",
+  "senses": [
+    {
+      "pt_roleset": "pergunta.01",
+      "description": "questão; indagação",
+      "rolesets": [
+        {
+          "id": "f_e611283b43e8cbb6",
+          "description": "questão; indagação",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "question.01",
+              "resource": "English NomBank",
+              "description": "ask a question, express doubts",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/question.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "quem pergunta",
+              "definition": "quem pergunta"
+            },
+            {
+              "id": "Arg1",
+              "desc": "conteúdo/assunto perguntado",
+              "definition": "conteúdo/assunto perguntado"
+            },
+            {
+              "id": "Arg2",
+              "desc": "pessoa a quem se pergunta, não quem comenta a questão",
+              "definition": "pessoa a quem se pergunta, não quem comenta a questão"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 3,
+              "obl:agent": 2,
+              "nsubj": 2
+            },
+            "Arg1": {
+              "acl": 1,
+              "parataxis": 2,
+              "acl:relcl": 1,
+              "nmod": 2
+            },
+            "Arg2": {
+              "nsubj": 9,
+              "obl": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 169,
+          "sent_ID": "FOLHA_DOC000173_SENT051",
+          "text": "A pergunta de Josimar ainda está sem resposta.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Josimar",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 11,
+                "char_end": 21
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 633,
+          "sent_ID": "FOLHA_DOC004084_SENT006",
+          "text": "Para responder a essa pergunta, é importante lembrar que o crescimento observado durante o milagrinho dos anos 2000 teve quatro motores principais.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 22,
+                "char_end": 30
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1967,
+          "sent_ID": "FOLHA_DOC003092_SENT030",
+          "text": "Na sua resposta, contudo, Mourão não rebateu a afirmação contida na pergunta de que uma \"intervenção\" seria constitucional e nada falou sobre fechamento do Legislativo.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 68,
+                "char_end": 76
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de que uma \"intervenção\" seria constitucional",
+            "Arg2": "Mourão"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl",
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 77,
+                "char_end": 122
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 26,
+                "char_end": 32
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4850,
+          "sent_ID": "FOLHA_DOC002015_SENT013",
+          "text": "Voltando à pergunta feita pela Mariana, é preciso dizer que uma das cotações a ela oferecidas carece de correção.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 11,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "pela Mariana",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 26,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4917,
+          "sent_ID": "FOLHA_DOC003100_SENT010",
+          "text": "Quero fazer uma pergunta para vocês: alguém aqui ganha R$ 50 mil do povo de São Paulo?",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 24
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "alguém aqui ganha R$ 50 mil do povo de São Paulo",
+            "Arg2": "para vocês"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "parataxis",
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 37,
+                "char_end": 85
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 25,
+                "char_end": 35
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6810,
+          "sent_ID": "FOLHA_DOC003092_SENT025",
+          "text": "O general respondeu a uma pergunta lida pelos organizadores do evento, segundo a qual \"a Constituição Federal de 88 admite uma intervenção constitucional com o emprego das Forças Armadas\".",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 26,
+                "char_end": 34
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "pelos organizadores do evento",
+            "Arg1": "\"a Constituição Federal de 88 admite uma intervenção constitucional com o emprego das Forças Armadas\"",
+            "Arg2": "O general"
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": "acl:relcl",
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 40,
+                "char_end": 69
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "char_start": 86,
+                "char_end": 187
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 9
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6950,
+          "sent_ID": "FOLHA_DOC000077_SENT019",
+          "text": "O problema não está nas respostas; está na pergunta, que embute um prejulgamento.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7478,
+          "sent_ID": "FOLHA_DOC003303_SENT054",
+          "text": "E eu não tenho mais tempo para perguntas, afirma, pedindo para encerrar a entrevista.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 40
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "eu"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 2,
+                "char_end": 4
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8224,
+          "sent_ID": "FOLHA_DOC000021_SENT019",
+          "text": "Mais tarde, numa entrevista coletiva num restaurante brasileiro em Boston, onde convidados tomavam caipirinhas e faziam perguntas em grande parte elogiosas, Bolsonaro repisou esses pontos.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 120,
+                "char_end": 129
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "convidados",
+            "Arg1": null,
+            "Arg2": "Bolsonaro"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  16
+                ],
+                "char_start": 80,
+                "char_end": 90
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  27
+                ],
+                "char_start": 157,
+                "char_end": 166
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8476,
+          "sent_ID": "FOLHA_DOC003213_SENT026",
+          "text": "Uma pergunta de sabor bolsonarista, que poderá fazer salivar os utilitaristas e pragmáticos sem noção.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 4,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9025,
+          "sent_ID": "FOLHA_DOC003029_SENT005",
+          "text": "Para isso, o usuário responde a quatro perguntas: qual o objetivo financeiro, em quanto tempo pretende usar o dinheiro, qual seu perfil como investidor e como ele prefere receber os rendimentos.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 48
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "qual o objetivo financeiro, em quanto tempo pretende usar o dinheiro, qual seu perfil como investidor e como ele prefere receber os rendimentos",
+            "Arg2": "o usuário"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "parataxis",
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "char_start": 50,
+                "char_end": 193
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 11,
+                "char_end": 20
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9509,
+          "sent_ID": "FOLHA_DOC000006_SENT010",
+          "text": "Apesar da pergunta, Bono e Macri se trataram de forma cordial.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 18
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10487,
+          "sent_ID": "FOLHA_DOC004079_SENT003",
+          "text": "A possível rescisão na colaboração da JBS leva alguns atores a confundir interesseiramente as respostas a estas perguntas.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              20
+            ],
+            "spans": [
+              {
+                "char_start": 112,
+                "char_end": 121
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10703,
+          "sent_ID": "FOLHA_DOC003092_SENT040",
+          "text": "Segundo o jornal \"O Estado de S. Paulo\", Mourão disse que \"não está insuflando nada\" e que \"não defendeu [intervenção], apenas respondeu a uma pergunta\".",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              34
+            ],
+            "spans": [
+              {
+                "char_start": 143,
+                "char_end": 151
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Mourão"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  12
+                ],
+                "char_start": 41,
+                "char_end": 47
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11947,
+          "sent_ID": "FOLHA_DOC002010_SENT004",
+          "text": "Quando ela concorreu em 2005, ela se surpreendeu com as perguntas dos jornalistas sobre o significado de uma mulher ter esse cargo.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 56,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos jornalistas",
+            "Arg1": "sobre o significado de uma mulher ter esse cargo",
+            "Arg2": "ela"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 66,
+                "char_end": 81
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 82,
+                "char_end": 130
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  7
+                ],
+                "char_start": 30,
+                "char_end": 33
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12493,
+          "sent_ID": "FOLHA_DOC004079_SENT016",
+          "text": "Erros e acertos contabilizados, sobram críticas, elogios e perguntas sobre o instrumento das delações premiadas.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sobre o instrumento das delações premiadas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 69,
+                "char_end": 111
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13605,
+          "sent_ID": "FOLHA_DOC003066_SENT009",
+          "text": "Júlia não sabia, mas a pergunta do motorista é comum no desembarque do aeroporto de Guarulhos e faz parte de uma estratégia para selecionar corridas mais lucrativas.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "pergunta",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 31
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do motorista",
+            "Arg1": null,
+            "Arg2": "Júlia"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 32,
+                "char_end": 44
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 5
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14051,
+          "sent_ID": "FOLHA_DOC003043_SENT051",
+          "text": "No campo da mensagem, um 'robô' vai fazer perguntas e o aluno vai respondendo.",
+          "frame_id": "f_e611283b43e8cbb6",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "perguntas",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "um 'robô'",
+            "Arg1": null,
+            "Arg2": "o aluno"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 22,
+                "char_end": 31
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16,
+                  17
+                ],
+                "char_start": 54,
+                "char_end": 61
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

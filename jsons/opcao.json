@@ -1,0 +1,1895 @@
+{
+  "lemma": "opção",
+  "lemma_base": "opção",
+  "senses": [
+    {
+      "pt_roleset": "opção.01",
+      "description": "escolha",
+      "rolesets": [
+        {
+          "id": "f_88541c3f51f3498b",
+          "description": "escolha",
+          "valency": 5,
+          "origin_frames": [
+            {
+              "roleset": "choice.01",
+              "resource": "English NomBank",
+              "description": "choose, pick",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/choice.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "quem escolhe ou dispõe da escolha",
+              "definition": "Pessoa/coletivo que realiza ou detém a possibilidade de escolha; adaptação explícita de picker à alternativa disponível, não todo provedor ou beneficiário externo."
+            },
+            {
+              "id": "Arg1",
+              "desc": "alternativa escolhida ou disponível",
+              "definition": "Entidade/pessoa/ação explicitamente identificada como alternativa, efetiva ou prospectiva; adaptação de thing picked sem duplicar REL."
+            },
+            {
+              "id": "Arg2",
+              "desc": "beneficiário da escolha",
+              "definition": "Pessoa/coletivo para quem outro agente realiza a escolha; beneficiary nominal n=2, distinto do próprio picker."
+            },
+            {
+              "id": "Arg3",
+              "desc": "conjunto ou fonte das alternativas",
+              "definition": "Grupo, classe ou fonte de onde se escolhe; group or source nominal n=3, não mera localização comercial ou cenário."
+            },
+            {
+              "id": "Arg4",
+              "desc": "atributo secundário ou uso da alternativa",
+              "definition": "Atributo ou uso explicitamente ligado à alternativa Arg1, inclusive a qualificação da alternativa disponível; não atributo de terceiro objeto nem identidade da alternativa duplicada."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg4": {
+              "amod": 6,
+              "acl": 1,
+              "nmod": 3,
+              "root": 2
+            },
+            "Arg1": {
+              "root": 3,
+              "nsubj": 3,
+              "xcomp": 1,
+              "nmod": 7,
+              "parataxis": 1,
+              "obj": 1,
+              "acl": 2,
+              "conj": 3,
+              "csubj": 1
+            },
+            "Arg3": {
+              "nmod": 3
+            },
+            "Arg0": {
+              "nmod": 4,
+              "nsubj": 5,
+              "obl": 2,
+              "det": 1,
+              "amod": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1076,
+          "sent_ID": "FOLHA_DOC003057_SENT022",
+          "text": "A Anvisa afirma que a doença AME não possuía opções terapêuticas no Brasil e que a análise do processo para registro recebeu prioridade.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "terapêuticas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  11
+                ],
+                "char_start": 52,
+                "char_end": 64
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1189,
+          "sent_ID": "FOLHA_DOC004086_SENT020",
+          "text": "Outra opção difusa pelos extremos da metrópole são os CEUs, criados desde 2003.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 6,
+                "char_end": 11
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os CEUs",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 51,
+                "char_end": 58
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 1713,
+          "sent_ID": "FOLHA_DOC003102_SENT019",
+          "text": "A canga, opção para quando bate o cansaço e esticar-se no chão torna-se a melhor alternativa, custa R$ 60.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 9,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "A canga",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "para quando bate o cansaço e esticar se em o chão torna se a melhor alternativa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "acl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 15,
+                "char_end": 92
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3153,
+          "sent_ID": "FOLHA_DOC001365_SENT033",
+          "text": "São poucas as opções de lazer, contudo.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 14,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "de lazer"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 21,
+                "char_end": 29
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3443,
+          "sent_ID": "FOLHA_DOC002042_SENT033",
+          "text": "\"A adoção não é garantida\", diz Cintra, para quem a opção traz insegurança.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 57
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "A adoção",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  2,
+                  3
+                ],
+                "char_start": 1,
+                "char_end": 9
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 3990,
+          "sent_ID": "FOLHA_DOC000085_SENT007",
+          "text": "A primeira opção deve ser buscar produtos que já tenham essa proteção cambial.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "buscar produtos que já tenham essa proteção cambial",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "xcomp",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 26,
+                "char_end": 77
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 4670,
+          "sent_ID": "FOLHA_DOC003051_SENT006",
+          "text": "Müller anunciou investimento de € 20 bilhões (R$ 74,762 bilhões) para que todos os carros do grupo,que reúne 12 marcas tenham opções limpas.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              27
+            ],
+            "spans": [
+              {
+                "char_start": 126,
+                "char_end": 132
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "limpas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  28
+                ],
+                "char_start": 133,
+                "char_end": 139
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5742,
+          "sent_ID": "FOLHA_DOC003034_SENT033",
+          "text": "Algumas opções na renda fixa, como títulos emitidos por bancos menores, que precisam captar recursos no mercado, ainda são vantajosas (veja simulação no quadro).",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "títulos emitidos por bancos menores",
+            "Arg2": null,
+            "Arg3": "na renda fixa",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "nmod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 35,
+                "char_end": 70
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "char_start": 15,
+                "char_end": 28
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 5953,
+          "sent_ID": "FOLHA_DOC003169_SENT018",
+          "text": "Gigantes como o McDonalds também já começaram a se mexer: nos EUA, a promessa é substituir suas caixinhas por opções de papel reciclado ou certificado, sem desmatamento, até 2020.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              23
+            ],
+            "spans": [
+              {
+                "char_start": 110,
+                "char_end": 116
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "de papel reciclado ou certificado"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  24,
+                  25,
+                  26,
+                  27,
+                  28
+                ],
+                "char_start": 117,
+                "char_end": 150
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6201,
+          "sent_ID": "FOLHA_DOC003111_SENT006",
+          "text": "Ela ressaltou, entretanto, que também há \"muitas opções militares na mesa\".",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 49,
+                "char_end": 55
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "militares"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  12
+                ],
+                "char_start": 56,
+                "char_end": 65
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6445,
+          "sent_ID": "FOLHA_DOC003006_SENT011",
+          "text": "Com essas medidas o resultado seria a possibilidade de uma maior alternância de poder, uma representatividade adequada, mais opções para os eleitores, maior liberdade e respeito aos recursos dos pagadores de impostos.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 125,
+                "char_end": 131
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "para os eleitores",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 132,
+                "char_end": 149
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 6730,
+          "sent_ID": "FOLHA_DOC003208_SENT025",
+          "text": "Aqui é possível encontrar opções como as clássicas Dead Pony (pale ale) e Punk IPA (R$ 22, 300 ml), ou a não tão conhecida lager Kingpin.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 26,
+                "char_end": 32
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "as clássicas Dead Pony (pale ale) e Punk IPA (R$ 22, 300 ml), ou a não tão conhecida lager Kingpin",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "char_start": 38,
+                "char_end": 136
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 7755,
+          "sent_ID": "FOLHA_DOC000095_SENT006",
+          "text": "Doria fez uma opção: colocar seu nome no balaio presidencial antes da hora.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 14,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Doria",
+            "Arg1": "colocar seu nome no balaio presidencial antes da hora",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "parataxis",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 21,
+                "char_end": 74
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 9060,
+          "sent_ID": "FOLHA_DOC004016_SENT031",
+          "text": "Quase todas as redes de cinema que operam em São Paulo também já contam com a opção de autoatendimento.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 78,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de autoatendimento",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  18,
+                  19
+                ],
+                "char_start": 84,
+                "char_end": 102
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 9485,
+          "sent_ID": "FOLHA_DOC002032_SENT003",
+          "text": "A primeira opção é o senador Antonio Anastasia (PSDB-MG), que não quer concorrer.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o senador Antonio Anastasia",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 19,
+                "char_end": 46
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 9676,
+          "sent_ID": "FOLHA_DOC003062_SENT062",
+          "text": "Ou se gravaria um disco de duetos; ou ainda algo ainda mais inesperado, como um disco com arranjos de cordas: eram opções razoáveis para uma cantora voltando de uma longa hibernação.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 115,
+                "char_end": 121
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "para uma cantora voltando de uma longa hibernação",
+            "Arg1": [
+              "um disco de duetos",
+              "um disco com arranjos de cordas"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "razoáveis"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": [
+              "obj",
+              "nmod"
+            ],
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34
+                ],
+                "char_start": 132,
+                "char_end": 181
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 15,
+                "char_end": 33
+              },
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 77,
+                "char_end": 108
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  26
+                ],
+                "char_start": 122,
+                "char_end": 131
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 10818,
+          "sent_ID": "FOLHA_DOC000166_SENT017",
+          "text": "São bairros que proporcionam aos seus moradores diversas opções de restaurantes, lojas e eventos culturais.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 57,
+                "char_end": 63
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "aos seus moradores",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de restaurantes, lojas e eventos culturais",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 29,
+                "char_end": 47
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 64,
+                "char_end": 106
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 11050,
+          "sent_ID": "FOLHA_DOC002042_SENT024",
+          "text": "Por outro lado, a pesquisa também poderá ampliar as opções dos futuros pais.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 58
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos futuros pais",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 59,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 11136,
+          "sent_ID": "FOLHA_DOC003209_SENT013",
+          "text": "O texto da Câmara prevê que os doadores tenham a opção de deduzir do IR os valores das doações até o limite de 12%, assim como as demais deduções.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 49,
+                "char_end": 54
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os doadores",
+            "Arg1": "de deduzir do IR os valores das doações até o limite de 12%",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 28,
+                "char_end": 39
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28
+                ],
+                "char_start": 55,
+                "char_end": 114
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 11379,
+          "sent_ID": "FOLHA_DOC002022_SENT026",
+          "text": "Arenas da Game XP e Digital Stage deram mais opções para quem chegava.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "para quem chegava",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 52,
+                "char_end": 69
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 12043,
+          "sent_ID": "FOLHA_DOC000170_SENT021",
+          "text": "Qualquer opção de leitura é bom entretenimento.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 9,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": [
+              "de leitura",
+              "bom entretenimento"
+            ]
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": [
+              "nmod",
+              "root"
+            ]
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 15,
+                "char_end": 25
+              },
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 28,
+                "char_end": 46
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12258,
+          "sent_ID": "FOLHA_DOC003178_SENT034",
+          "text": "Hoje os pacientes sem condições financeiras para comprar antidepressivos no mercado negro, vindos principalmente da Colômbia ou dos EUA, só têm uma opção no mercado venezuelano.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              28
+            ],
+            "spans": [
+              {
+                "char_start": 148,
+                "char_end": 153
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os pacientes sem condições financeiras para comprar antidepressivos no mercado negro",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 5,
+                "char_end": 89
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 12688,
+          "sent_ID": "FOLHA_DOC003066_SENT021",
+          "text": "A Cabify diz que o seu motorista não tem a opção de cancelar a viagem no aeroporto, onde a fila do aplicativo existe desde junho de 2016.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 48
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o seu motorista",
+            "Arg1": "de cancelar a viagem em o aeroporto",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 17,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 49,
+                "char_end": 82
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 13518,
+          "sent_ID": "FOLHA_DOC003166_SENT016",
+          "text": "No entanto, essa opção só é vantajosa se a empresa tiver o preço mais vantajoso na hora de renovar o seguro.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 17,
+                "char_end": 22
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "vantajosa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "root"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  9
+                ],
+                "char_start": 28,
+                "char_end": 37
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13585,
+          "sent_ID": "FOLHA_DOC003067_SENT012",
+          "text": "Faz-se troça da linha de defesa de Lula, que atribui a outros ao seu redor a responsabilidade por ações suspeitas, mas essa parece ser sua melhor opção nesse quadro.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 146,
+                "char_end": 151
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": "a linha de defesa de Lula que atribui a outros a o seu redor a responsabilidade por ações suspeitas",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "melhor"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  30
+                ],
+                "char_start": 135,
+                "char_end": 138
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 13,
+                "char_end": 113
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  31
+                ],
+                "char_start": 139,
+                "char_end": 145
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13679,
+          "sent_ID": "FOLHA_DOC003208_SENT065",
+          "text": "Além de conhecer as dependências da fábrica, o visitante pode tomar cinco opções de chope, com sugestões como a rauchbier, a altbier, a helles e a weizen... quase que direto do barril.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 74,
+                "char_end": 80
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o visitante",
+            "Arg1": [
+              "a rauchbier",
+              "a altbier",
+              "a helles",
+              "a weizen"
+            ],
+            "Arg2": null,
+            "Arg3": "de chope",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": [
+              "nmod",
+              "conj",
+              "conj",
+              "conj"
+            ],
+            "Arg2": null,
+            "Arg3": "nmod",
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10,
+                  11
+                ],
+                "char_start": 45,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  22,
+                  23
+                ],
+                "char_start": 110,
+                "char_end": 121
+              },
+              {
+                "token_ids": [
+                  25,
+                  26
+                ],
+                "char_start": 123,
+                "char_end": 132
+              },
+              {
+                "token_ids": [
+                  28,
+                  29
+                ],
+                "char_start": 134,
+                "char_end": 142
+              },
+              {
+                "token_ids": [
+                  31,
+                  32
+                ],
+                "char_start": 145,
+                "char_end": 153
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17
+                ],
+                "char_start": 81,
+                "char_end": 89
+              }
+            ],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 14865,
+          "sent_ID": "FOLHA_DOC003004_SENT006",
+          "text": "A opção para quem tem como destino Osasco é utilizar os trens da linha 8-diamante (Júlio Prestes-Itapevi).",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "para quem tem como destino Osasco",
+            "Arg1": "utilizar os trens da linha 8-diamante (Júlio Prestes-Itapevi)",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 8,
+                "char_end": 41
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 44,
+                "char_end": 105
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 15015,
+          "sent_ID": "FOLHA_DOC003151_SENT008",
+          "text": "Além disso, estar pronto para mudar é necessidade, não só opção, já que ninguém está seguro num emprego.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 63
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "estar pronto para mudar",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "csubj",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 12,
+                "char_end": 35
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        },
+        {
+          "instance_id": 15544,
+          "sent_ID": "FOLHA_DOC004045_SENT005",
+          "text": "Essa modalidade de empréstimo é uma das opções mais baratas do mercado.",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opções",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 40,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Essa modalidade de empréstimo",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "mais baratas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": "amod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "char_start": 0,
+                "char_end": 29
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": [
+              {
+                "token_ids": [
+                  10,
+                  11
+                ],
+                "char_start": 47,
+                "char_end": 59
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15623,
+          "sent_ID": "FOLHA_DOC002031_SENT003",
+          "text": "Jornais chineses até elogiaram a opção alemã pela \"estabilidade\".",
+          "frame_id": "f_88541c3f51f3498b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opção",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 33,
+                "char_end": 38
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "alemã",
+            "Arg1": "pela \"estabilidade\"",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7
+                ],
+                "char_start": 39,
+                "char_end": 44
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 45,
+                "char_end": 64
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          }
+        }
+      ]
+    }
+  ]
+}

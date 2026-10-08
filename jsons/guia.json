@@ -1,0 +1,209 @@
+{
+  "lemma": "guia",
+  "lemma_base": "guia",
+  "senses": [
+    {
+      "pt_roleset": "guia.07",
+      "description": "publicação de instruções ou orientação sobre algum assunto particular ou algum serviço",
+      "rolesets": [
+        {
+          "id": "f_f3c1a5f2c4b67eac",
+          "description": "publicação de instruções ou orientação sobre algum assunto particular ou algum serviço",
+          "valency": 4,
+          "origin_frames": [],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "portador/devoto",
+              "definition": "portador/devoto"
+            },
+            {
+              "id": "Arg1",
+              "desc": "guia ritual",
+              "definition": "guia ritual"
+            },
+            {
+              "id": "Arg2",
+              "desc": "orixá/entidade representada",
+              "definition": "orixá/entidade representada"
+            },
+            {
+              "id": "Arg3",
+              "desc": "material,tempo ou contexto",
+              "definition": "material,tempo ou contexto"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj:pass": 1
+            },
+            "Arg2": {
+              "obj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 5675,
+          "sent_ID": "FOLHA_DOC003055_SENT031",
+          "text": "Em outro, um pai de santo é obrigado a destruir as guias que representam os orixás.",
+          "frame_id": "f_f3c1a5f2c4b67eac",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "guias",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 51,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "um pai de santo",
+            "Arg1": null,
+            "Arg2": "os orixás",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": null,
+            "Arg2": "obj",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 10,
+                "char_end": 25,
+                "head_token_id": 5
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16,
+                  17
+                ],
+                "char_start": 73,
+                "char_end": 82,
+                "head_token_id": 17
+              }
+            ],
+            "Arg3": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "guia.15",
+      "description": "condutor",
+      "rolesets": [
+        {
+          "id": "f_601c988ed9df80b2",
+          "description": "condutor",
+          "valency": 4,
+          "origin_frames": [],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "condutor",
+              "definition": "condutor"
+            },
+            {
+              "id": "Arg1",
+              "desc": "guia/correia",
+              "definition": "guia/correia"
+            },
+            {
+              "id": "Arg2",
+              "desc": "animal conduzido",
+              "definition": "animal conduzido"
+            },
+            {
+              "id": "Arg3",
+              "desc": "local,tempo ou condição",
+              "definition": "local,tempo ou condição"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg2": {
+              "nmod": 1
+            },
+            "Arg3": {
+              "obl": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 9542,
+          "sent_ID": "FOLHA_DOC003121_SENT014",
+          "text": "Raças consideradas perigosas por lei, como pit bull, só podem entrar no café e com guia.",
+          "frame_id": "f_601c988ed9df80b2",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "guia",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 83,
+                "char_end": 87
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "pit bull",
+            "Arg3": "café"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 43,
+                "char_end": 51,
+                "head_token_id": 8
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16
+                ],
+                "char_start": 72,
+                "char_end": 76,
+                "head_token_id": 16
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

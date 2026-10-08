@@ -1,0 +1,202 @@
+{
+  "lemma": "licença",
+  "lemma_base": "licença",
+  "senses": [
+    {
+      "pt_roleset": "licença.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_a29bbcdf5dbaa42b",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "license.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/license.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "granter of license",
+              "definition": "granter of license"
+            },
+            {
+              "id": "Arg1",
+              "desc": "licensed thing",
+              "definition": "licensed thing"
+            },
+            {
+              "id": "Arg2",
+              "desc": "beneficiary, licensed-to",
+              "definition": "beneficiary, licensed-to"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "obj": 1
+            },
+            "Arg2": {
+              "nmod": 1,
+              "nsubj": 1
+            },
+            "Arg0": {
+              "obl:agent": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 4656,
+          "sent_ID": "FOLHA_DOC000049_SENT001",
+          "text": "Uber muda tática e suspende serviço mais barato sem licença na Noruega.",
+          "frame_id": "f_a29bbcdf5dbaa42b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "licença",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 59
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "serviço mais barato",
+            "Arg2": "na Noruega"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 28,
+                "char_end": 47,
+                "head_token_id": 6
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 60,
+                "char_end": 70,
+                "head_token_id": 13
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5608,
+          "sent_ID": "FOLHA_DOC004127_SENT009",
+          "text": "Parte do problema é que licenças emitidas pela CBF não são admitidas na Europa.",
+          "frame_id": "f_a29bbcdf5dbaa42b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "licenças",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 24,
+                "char_end": 32
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "pela CBF",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 42,
+                "char_end": 50,
+                "head_token_id": 11
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 6488,
+          "sent_ID": "FOLHA_DOC003057_SENT029",
+          "text": "Mesmo com essa licença em mãos, a família ainda não pensa em importar o remédio.",
+          "frame_id": "f_a29bbcdf5dbaa42b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "licença",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 15,
+                "char_end": 22
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a família"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 32,
+                "char_end": 41,
+                "head_token_id": 9
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

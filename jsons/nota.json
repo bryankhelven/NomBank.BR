@@ -1,0 +1,1133 @@
+{
+  "lemma": "nota",
+  "lemma_base": "nota",
+  "senses": [
+    {
+      "pt_roleset": "nota.03",
+      "description": "exposição sucinta; pequena notícia",
+      "rolesets": [
+        {
+          "id": "f_7f1b8761e49a65ef",
+          "description": "exposição sucinta; pequena notícia",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "note.01",
+              "resource": "English NomBank",
+              "description": "to express briefly",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/note.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "autor/emissor da nota",
+              "definition": "autor/emissor da nota"
+            },
+            {
+              "id": "Arg1",
+              "desc": "conteúdo/assunto declarado na nota",
+              "definition": "conteúdo/assunto declarado na nota"
+            },
+            {
+              "id": "Arg2",
+              "desc": "destinatário da nota",
+              "definition": "destinatário da nota"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj": 9,
+              "obl:agent": 3,
+              "nmod": 1
+            },
+            "Arg1": {
+              "acl:relcl": 1,
+              "root": 1,
+              "obj": 3,
+              "xcomp": 1,
+              "ccomp": 3,
+              "ccomp:speech": 4,
+              "obl": 2,
+              "advmod": 1
+            },
+            "Arg2": {
+              "obl": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 391,
+          "sent_ID": "FOLHA_DOC003100_SENT022",
+          "text": "A assessoria do Major Olímpio divulgou uma nota em que o deputado diz que odeia o governador, admite que o \"escracha em público\", mas que \"gostaria de fazer muito mais\".",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 47
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "A assessoria do Major Olímpio",
+            "Arg1": "em que o deputado diz que odeia o governador, admite que o \"escracha em público\", mas que \"gostaria de fazer muito mais\"",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl:relcl",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "char_start": 0,
+                "char_end": 29
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "char_start": 48,
+                "char_end": 168
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 823,
+          "sent_ID": "FOLHA_DOC003053_SENT019",
+          "text": "Segundo nota emitida pela companhia neste domingo, seria uma forma de \"fortalecer a governança\".",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "pela companhia",
+            "Arg1": "seria uma forma de \"fortalecer a governança\"",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6
+                ],
+                "char_start": 21,
+                "char_end": 35
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 51,
+                "char_end": 95
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1976,
+          "sent_ID": "FOLHA_DOC004036_SENT004",
+          "text": "Em nota, o governo mexicano considerou as ações norte-coreanas uma ameaça grave à Ásia e ao mundo.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o governo mexicano",
+            "Arg1": "as ações norte-coreanas uma ameaça grave à Ásia e ao mundo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": [
+              "obj",
+              "xcomp"
+            ],
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6
+                ],
+                "char_start": 9,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 39,
+                "char_end": 97
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3634,
+          "sent_ID": "FOLHA_DOC003161_SENT032",
+          "text": "Procurada pela reportagem, a Azul afirmou, através de nota enviada por sua assessoria de comunicação, que as tarifas praticadas pela empresa são determinadas por diferentes variáveis.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 54,
+                "char_end": 58
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": [
+              "a Azul",
+              "por sua assessoria de comunicação"
+            ],
+            "Arg1": "que as tarifas praticadas pela empresa são determinadas por diferentes variáveis",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": [
+              "nsubj",
+              "obl:agent"
+            ],
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 27,
+                "char_end": 33
+              },
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 67,
+                "char_end": 100
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31
+                ],
+                "char_start": 102,
+                "char_end": 182
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5870,
+          "sent_ID": "FOLHA_DOC000017_SENT014",
+          "text": "A defesa de Nuzman não se pronunciou até a publicação desta nota.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 60,
+                "char_end": 64
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 6027,
+          "sent_ID": "FOLHA_DOC003066_SENT066",
+          "text": "Este tipo de comportamento leva ao desligamento da plataforma, mesmo sem qualquer tipo de relato do usuário, disse a empresa, por meio de nota.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              30
+            ],
+            "spans": [
+              {
+                "char_start": 138,
+                "char_end": 142
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a empresa",
+            "Arg1": "Este tipo de comportamento leva ao desligamento da plataforma, mesmo sem qualquer tipo de relato do usuário",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp:speech",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  24,
+                  25
+                ],
+                "char_start": 115,
+                "char_end": 124
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 0,
+                "char_end": 107
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7548,
+          "sent_ID": "FOLHA_DOC003100_SENT025",
+          "text": "Alckmin é um santo do pau oco e agora a Justiça descobriu que ele também é o santo da Odebrecht, diz a nota do deputado.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 103,
+                "char_end": 107
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do deputado",
+            "Arg1": "Alckmin é um santo do pau oco e agora a Justiça descobriu que ele também é o santo da Odebrecht",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "ccomp:speech",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29
+                ],
+                "char_start": 108,
+                "char_end": 119
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 0,
+                "char_end": 95
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7946,
+          "sent_ID": "FOLHA_DOC004042_SENT018",
+          "text": "Em nota, já haviam pedido \"desculpas\" pelas declarações feitas na gravação.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "\"desculpas\" pelas declarações feitas na gravação",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": [
+              "obj",
+              "obl"
+            ],
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 26,
+                "char_end": 74
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9445,
+          "sent_ID": "FOLHA_DOC004134_SENT013",
+          "text": "Por meio de uma nota, ele e Saud pediram desculpas publicamente pelo que disseram.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "ele e Saud",
+            "Arg1": "desculpas publicamente pelo que disseram",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": [
+              "obj",
+              "advmod",
+              "obl"
+            ],
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 22,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 41,
+                "char_end": 81
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9500,
+          "sent_ID": "FOLHA_DOC004044_SENT007",
+          "text": "Isso é uma mentira!, disse Dilma em nota divulgada nesta quinta (7).",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 40
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Dilma",
+            "Arg1": "Isso é uma mentira!",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp:speech",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 27,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 0,
+                "char_end": 19
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 11083,
+          "sent_ID": "FOLHA_DOC000036_SENT010",
+          "text": "A informação foi dada por uma nota enviada pela The Weinstein Company à imprensa americana.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 30,
+                "char_end": 34
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "pela The Weinstein Company",
+            "Arg1": null,
+            "Arg2": "à imprensa americana"
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 43,
+                "char_end": 69
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 70,
+                "char_end": 90
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11781,
+          "sent_ID": "FOLHA_DOC000022_SENT016",
+          "text": "Em nota, o advogado Cristiano Zanin Martins afirma que a perícia \"irá confirmar inequivocamente\" que os recibos são \"idôneos\" e que foram \"emitidos regularmente pelo proprietário do imóvel\".",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o advogado Cristiano Zanin Martins",
+            "Arg1": "que a perícia \"irá confirmar inequivocamente\" que os recibos são \"idôneos\" e que foram \"emitidos regularmente pelo proprietário do imóvel\"",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 9,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "char_start": 51,
+                "char_end": 189
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13051,
+          "sent_ID": "FOLHA_DOC003053_SENT025",
+          "text": "Em nota, a JBS informou que a reunião do conselho de administração foi convocada dois dias antes.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a JBS",
+            "Arg1": "que a reunião do conselho de administração foi convocada dois dias antes",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 9,
+                "char_end": 14
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 24,
+                "char_end": 96
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15590,
+          "sent_ID": "FOLHA_DOC003097_SENT005",
+          "text": "A operação, realizada entre empresas privadas, faz parte da reestruturação de sua atuação na Argentina para uma melhor eficiência operacional, disse a Odebrecht, em nota.",
+          "frame_id": "f_7f1b8761e49a65ef",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              31
+            ],
+            "spans": [
+              {
+                "char_start": 165,
+                "char_end": 169
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a Odebrecht",
+            "Arg1": "A operação, realizada entre empresas privadas, faz parte da reestruturação de sua atuação na Argentina para uma melhor eficiência operacional",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp:speech",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  27,
+                  28
+                ],
+                "char_start": 149,
+                "char_end": 160
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 0,
+                "char_end": 141
+              }
+            ],
+            "Arg2": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "nota.13",
+      "description": "acento; destaque; relevo",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 2334,
+          "sent_ID": "FOLHA_DOC003081_SENT018",
+          "text": "A única nota negativa foi o subdimensionamento do show, um erro grosseiro do festival: Rodgers põe no bolso todas as atrações deste primeiro fim de semana do Rock in Rio.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "nota.11",
+      "description": "tom; timbre",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 4403,
+          "sent_ID": "FOLHA_DOC003225_SENT006",
+          "text": "Esse estilo tem notas de café e chocolate que são acentuadas com a guloseima.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "notas",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 21
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "nota.08",
+      "description": "expressão numérica ou alfabética de um julgamento, marcando valor em uma escala",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 6400,
+          "sent_ID": "FOLHA_DOC003215_SENT079",
+          "text": "O ataque aconteceu após uma discussão sobre o registro da nota do estudante.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 62
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 6684,
+          "sent_ID": "FOLHA_DOC001612_SENT019",
+          "text": "Mesmo sendo nota zero no quesito originalidade, \"Sono Mortal\" até que dá uma engrenada do meio para frente.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 12,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 14864,
+          "sent_ID": "FOLHA_DOC000181_SENT014",
+          "text": "Essa igualdade é registrada também na nota média dada pelos entrevistados aos tucanos.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "nota",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 38,
+                "char_end": 42
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

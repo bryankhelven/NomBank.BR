@@ -1,0 +1,701 @@
+{
+  "lemma": "ameaça",
+  "lemma_base": "ameaça",
+  "senses": [
+    {
+      "pt_roleset": "ameaça.01",
+      "description": "manifestação pela qual se dá a entender a alguém que se lhe prepara algum mal",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 335,
+          "sent_ID": "FOLHA_DOC003272_SENT045",
+          "text": "Tanto Samuel como Milton preferiram não revelar seus sobrenomes pois dizem sofrer ameaças constantes.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 82,
+                "char_end": 89
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 5196,
+          "sent_ID": "FOLHA_DOC003086_SENT008",
+          "text": "Uma porta-voz da promotoria disse que a suspeita não fez ameaças ou declarações extremistas.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 57,
+                "char_end": 64
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 7614,
+          "sent_ID": "FOLHA_DOC003191_SENT031",
+          "text": "Alguns casos de ofensas na internet, como de ameaça, devem ser denunciados pela própria vítima em uma delegacia de polícia.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "ameaça.03",
+      "description": "indício ou prenúncio de perigo",
+      "rolesets": [
+        {
+          "id": "f_f5eceede090e7f06",
+          "description": "indício ou prenúncio de perigo",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "menace.01",
+              "resource": "English NomBank",
+              "description": "threaten",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/menace.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "emissor da ameaça",
+              "definition": "Entidade que faz/emite ameaça quando explicitamente identificada; pessoa que considera algo perigoso não basta."
+            },
+            {
+              "id": "Arg1",
+              "desc": "perigo ou conteúdo ameaçador",
+              "definition": "Conteúdo danoso anunciado ou entidade/situação caracterizada como ameaça, conforme drugs1 de menace; atribuição e modalidade são preservadas."
+            },
+            {
+              "id": "Arg2",
+              "desc": "entidade ameaçada",
+              "definition": "Pessoa/coletivo/coisa alvo do perigo, conforme entity threatened; não beneficiário positivo apesar da grafia original."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "obj": 3,
+              "nsubj:pass": 1
+            },
+            "Arg2": {
+              "nmod": 5,
+              "nsubj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 703,
+          "sent_ID": "FOLHA_DOC000122_SENT001",
+          "text": "Publisher do grupo Slate vê 'notícia fraudulenta' como ameaça ao jornalismo.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 55,
+                "char_end": 61
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "'notícia fraudulenta'",
+            "Arg2": "ao jornalismo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 28,
+                "char_end": 49
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 62,
+                "char_end": 75
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1979,
+          "sent_ID": "FOLHA_DOC004036_SENT004",
+          "text": "Em nota, o governo mexicano considerou as ações norte-coreanas uma ameaça grave à Ásia e ao mundo.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 67,
+                "char_end": 73
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "as ações norte-coreanas",
+            "Arg2": "à Ásia e ao mundo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 39,
+                "char_end": 62
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 80,
+                "char_end": 97
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3005,
+          "sent_ID": "FOLHA_DOC002010_SENT027",
+          "text": "É uma ameaça profunda aos direitos das mulheres.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 6,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "aos direitos das mulheres"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 22,
+                "char_end": 47
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3425,
+          "sent_ID": "FOLHA_DOC003140_SENT030",
+          "text": "Os políticos usam os muros e a ameaça às fronteiras para fins eleitorais, e os partidos mais ortodoxos aderiram a esse discurso.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "às fronteiras"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 38,
+                "char_end": 51
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4227,
+          "sent_ID": "FOLHA_DOC001618_SENT012",
+          "text": "Juntos, os dois grupos combatem uma só ameaça.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 45
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7875,
+          "sent_ID": "FOLHA_DOC004085_SENT025",
+          "text": "De maioria budista, Mianmar é marcado pela influência de monges radicais que denunciam rohingyas como ameaça.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 102,
+                "char_end": 108
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "rohingyas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  16
+                ],
+                "char_start": 87,
+                "char_end": 96
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12613,
+          "sent_ID": "FOLHA_DOC003140_SENT025",
+          "text": "As pessoas têm a sensação de que é fácil fortificar suas fronteiras e que isso vai protegê-las das ameaças e riscos globais.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14488,
+          "sent_ID": "FOLHA_DOC004070_SENT027",
+          "text": "Alguns são assassinados por vingança ou por representarem uma ameaça a criminosos nos lugares onde vivem.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 62,
+                "char_end": 68
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Alguns",
+            "Arg2": "a criminosos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj:pass",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 6
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 69,
+                "char_end": 81
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15444,
+          "sent_ID": "FOLHA_DOC003089_SENT002",
+          "text": "Estranho seria se o encontro entre Johnny Hooker, Liniker e Almério não fosse uma espécie de resistência em tempos em que os direitos de LGBTs sofrem duras ameaças.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              29
+            ],
+            "spans": [
+              {
+                "char_start": 156,
+                "char_end": 163
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "os direitos de LGBTs"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  23,
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 122,
+                "char_end": 142
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15611,
+          "sent_ID": "FOLHA_DOC003120_SENT017",
+          "text": "\"Fizemos progressos consideráveis e continuaremos fazendo o nosso melhor para reduzir as ameaças nesse país\", disse Cressida também à BBC.",
+          "frame_id": "f_f5eceede090e7f06",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 96
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "ameaça.02",
+      "description": "advertência",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 3387,
+          "sent_ID": "FOLHA_DOC004039_SENT017",
+          "text": "Apesar da ameaça de punições, os parlamentares independentistas catalães dizem que não vão ceder.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "ameaça.04",
+      "description": "possibilidade",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 4350,
+          "sent_ID": "FOLHA_DOC003106_SENT009",
+          "text": "Mas em uma era de Donald Trump, ameaça de confronto nuclear e supremacistas brancos, parece haver menos espaço para filmes edificantes.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaça",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 32,
+                "char_end": 38
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 6926,
+          "sent_ID": "FOLHA_DOC004083_SENT025",
+          "text": "Mais ameaças potenciais para Temer, sem exclusividade: seria a hora também de outros políticos.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 5,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 8553,
+          "sent_ID": "FOLHA_DOC004092_SENT027",
+          "text": "Pela primeira vez desde a sua criação, o Unaids sofre sérias ameaças de cortes de verba.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "ameaças",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 61,
+                "char_end": 68
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

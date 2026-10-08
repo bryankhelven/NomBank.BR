@@ -1,0 +1,531 @@
+{
+  "lemma": "produção",
+  "lemma_base": "produção",
+  "senses": [
+    {
+      "pt_roleset": "produção.06",
+      "description": "elaboração; criação",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 934,
+          "sent_ID": "FOLHA_DOC000156_SENT001",
+          "text": "Drogas e acidente prejudicaram produção literária de Stephen King.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 39
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 10562,
+          "sent_ID": "FOLHA_DOC003050_SENT017",
+          "text": "A produção do disco será de Bem Gil, filho do artista.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "produção.03",
+      "description": "fabricação",
+      "rolesets": [
+        {
+          "id": "f_cb0f358c3c576e79",
+          "description": "fabricação",
+          "valency": 4,
+          "origin_frames": [
+            {
+              "roleset": "production.01",
+              "resource": "English NomBank",
+              "description": "create",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/production.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "fabricante",
+              "definition": "Quem fabrica."
+            },
+            {
+              "id": "Arg1",
+              "desc": "produto",
+              "definition": "Bem fabricado."
+            },
+            {
+              "id": "Arg2",
+              "desc": "beneficiário da produção",
+              "definition": "Entidade para quem se produz; público-alvo quando efetivamente identificado como beneficiário, com adaptação explícita."
+            },
+            {
+              "id": "Arg3",
+              "desc": "matéria-prima ou fonte material",
+              "definition": "Recurso transformado/usado na fabricação; source2 é metadado verbal, n3 nominal governa."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj": 1
+            },
+            "Arg1": {
+              "nmod": 5
+            },
+            "Arg3": {
+              "nsubj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1073,
+          "sent_ID": "FOLHA_DOC003193_SENT025",
+          "text": "Com a fábrica, a Boomera aumentou a produção e o número de funcionários, que agora é de 125.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 44
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a Boomera",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 15,
+                "char_end": 24
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 3246,
+          "sent_ID": "FOLHA_DOC003147_SENT029",
+          "text": "A empresa desenvolvedora, Skipping Rocks Lab, diz que sua fabricação consome cinco vezes menos gás carbônico e nove vezes menos energia que a produção de uma garrafa PET.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 142,
+                "char_end": 150
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de uma garrafa PET",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29,
+                  30
+                ],
+                "char_start": 151,
+                "char_end": 169
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 3958,
+          "sent_ID": "FOLHA_DOC003024_SENT004",
+          "text": "É o caso da infraestrutura, dos transportes, da produção e venda de bens de consumo e de máquinas.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 48,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de bens de consumo e de máquinas",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23
+                ],
+                "char_start": 65,
+                "char_end": 97
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 6959,
+          "sent_ID": "FOLHA_DOC000015_SENT010",
+          "text": "Grande parte do investimento de R$ 7 bilhões previsto até 2020 será destinado à melhoria de produção e aos fornecedores, segundo Di Si.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 92,
+                "char_end": 100
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7781,
+          "sent_ID": "FOLHA_DOC004099_SENT020",
+          "text": "A soja é a matéria-prima básica para a produção de biodiesel no país.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 47
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de biodiesel",
+            "Arg2": null,
+            "Arg3": "A soja"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11
+                ],
+                "char_start": 48,
+                "char_end": 60
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 6
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13159,
+          "sent_ID": "FOLHA_DOC000139_SENT023",
+          "text": "Até a produção de asfalto para recapeamento das vias foi paralisada.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 6,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de asfalto para recapeamento das vias",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 15,
+                "char_end": 52
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 13562,
+          "sent_ID": "FOLHA_DOC004099_SENT002",
+          "text": "A exportação está sustentando boa parte da produção e do emprego no setor de máquinas agrícolas.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 14577,
+          "sent_ID": "FOLHA_DOC004081_SENT040",
+          "text": "Concordar com a produção da bomba seria incentivar a guerra entre os países.",
+          "frame_id": "f_cb0f358c3c576e79",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 24
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da bomba",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 25,
+                "char_end": 33
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "produção.05",
+      "description": "colheita",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 2113,
+          "sent_ID": "FOLHA_DOC003232_SENT042",
+          "text": "Com isso, a produção dessa fruta deverá ser ampliada para dez meses por ano.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "produção",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 12,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

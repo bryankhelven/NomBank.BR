@@ -1,0 +1,1591 @@
+{
+  "lemma": "regra",
+  "lemma_base": "regra",
+  "senses": [
+    {
+      "pt_roleset": "regra · acepção 1",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_8f06a9bcd90a6a23",
+          "description": null,
+          "valency": 4,
+          "origin_frames": [
+            {
+              "roleset": "rule.01",
+              "resource": "English NomBank",
+              "description": "decide",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/rule.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "autoridade normativa",
+              "definition": "Entidade que estabelece a norma, não só cumpre, descumpre ou explica."
+            },
+            {
+              "id": "Arg1",
+              "desc": "conteúdo normativo",
+              "definition": "Decisão/conteúdo expresso da norma; REL e referência ao mesmo nominal não duplicados."
+            },
+            {
+              "id": "Arg2",
+              "desc": "destinatário da norma",
+              "definition": "Entidade para quem se aplica a norma, adaptação explícita de beneficiary sem pressupor benefício positivo."
+            },
+            {
+              "id": "Arg3",
+              "desc": "atributo/domínio da norma",
+              "definition": "Tema/tipo que qualifica a decisão normativa, conforme broadcast license e uptick da fonte; avaliação subjetiva não basta."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg3": {
+              "nmod": 6,
+              "obj": 1,
+              "amod": 1,
+              "acl": 1
+            },
+            "Arg1": {
+              "conj": 1,
+              "root": 1,
+              "acl:relcl": 1
+            },
+            "Arg0": {
+              "nmod": 2,
+              "nsubj": 2,
+              "obl": 1,
+              "obj": 1
+            },
+            "Arg2": {
+              "nmod": 2,
+              "conj": 2,
+              "obl": 5,
+              "nsubj": 3
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 200,
+          "sent_ID": "FOLHA_DOC002008_SENT044",
+          "text": "\"É uma triste realidade, porque quando as pessoas esquecem vão afrouxando as regras de construção\", diz López, a freira.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 77,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de construção"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17
+                ],
+                "char_start": 84,
+                "char_end": 97
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 402,
+          "sent_ID": "FOLHA_DOC003019_SENT040",
+          "text": "O ponto de virada do setor imobiliário será a publicação de regras que regularizam as devoluções de imóveis e que deem mais contrapartidas às empresas, diz França.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 60,
+                "char_end": 66
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "que deem mais contrapartidas às empresas",
+            "Arg2": null,
+            "Arg3": "as devoluções de imóveis"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "conj",
+            "Arg2": null,
+            "Arg3": "obj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27
+                ],
+                "char_start": 110,
+                "char_end": 150
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 83,
+                "char_end": 107
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 513,
+          "sent_ID": "FOLHA_DOC001603_SENT022",
+          "text": "A Operação Lava Jato não é regra, mas exceção.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 32
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 1424,
+          "sent_ID": "FOLHA_DOC003024_SENT028",
+          "text": "A elaboração, a apresentação para o debate e a implementação de um planejamento de longo prazo são obrigação do governo, para que tenhamos estabilidade e confiança nas regras, elementos fundamentais para o crescimento sustentado.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 168,
+                "char_end": 174
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 3315,
+          "sent_ID": "FOLHA_DOC000164_SENT001",
+          "text": "Advogado explica as regras sobre venda de férias para a empresa.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 26
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "sobre venda de férias para a empresa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 27,
+                "char_end": 63
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3416,
+          "sent_ID": "FOLHA_DOC003151_SENT032",
+          "text": "A única regra é não ficar prostrado: estabilidade não deve ser confundida com inércia.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "não ficar prostrado",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 16,
+                "char_end": 35
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 4252,
+          "sent_ID": "FOLHA_DOC003141_SENT017",
+          "text": "Ele acredita que o presidente deveria ter enviado ao Congresso o projeto que estabelece novas regras de aposentadoria logo no início de seu mandato.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 100
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de aposentadoria"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  18,
+                  19
+                ],
+                "char_start": 101,
+                "char_end": 117
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6096,
+          "sent_ID": "FOLHA_DOC002018_SENT009",
+          "text": "Fazer a regra em cima da hora do jogo é impossível.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 6158,
+          "sent_ID": "FOLHA_DOC003170_SENT017",
+          "text": "De cana, o etanol brasileiro se beneficia de regras da EPA, a agência de proteção ambiental dos EUA, que estabelecem consumo mínimo de biocombustíveis.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da EPA, a agência de proteção ambiental dos EUA",
+            "Arg1": "que estabelecem consumo mínimo de biocombustíveis",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl:relcl",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 52,
+                "char_end": 99
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29
+                ],
+                "char_start": 101,
+                "char_end": 150
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 6312,
+          "sent_ID": "FOLHA_DOC003186_SENT016",
+          "text": "É o caso das negociações de facilitação comercial, para eliminação de barreiras técnicas e padronização de regras.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 107,
+                "char_end": 113
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 6556,
+          "sent_ID": "FOLHA_DOC001136_SENT029",
+          "text": "Se a debatemos, é porque ela não impõe uma regra absoluta.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 48
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 6579,
+          "sent_ID": "FOLHA_DOC003023_SENT019",
+          "text": "A rodada do fim de semana foi diferente do que tem acontecido como regra.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 67,
+                "char_end": 72
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 6601,
+          "sent_ID": "FOLHA_DOC002027_SENT034",
+          "text": "\"As regras são as mesmas para um carrinho de brigadeiros e para quem vende 1.000 refeições\", avisa Berbert.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 4,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": [
+              "para um carrinho de brigadeiros",
+              "para quem vende 1.000 refeições"
+            ],
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": [
+              "nmod",
+              "conj"
+            ],
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 25,
+                "char_end": 56
+              },
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 59,
+                "char_end": 90
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7138,
+          "sent_ID": "FOLHA_DOC001374_SENT034",
+          "text": "De que o comprador dite as regras.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 33
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o comprador",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 7,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7166,
+          "sent_ID": "FOLHA_DOC003099_SENT034",
+          "text": "Para obter o melhor resultado possível, é preciso que sejam obedecidas certas regras básicas de preparo, refrigeração e armazenamento do alimento.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 78,
+                "char_end": 84
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de preparo, refrigeração e armazenamento do alimento"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 93,
+                "char_end": 145
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7241,
+          "sent_ID": "FOLHA_DOC003051_SENT022",
+          "text": "A regra vale até mesmo para um superesportivo como o Project One, com mil cavalos sob o capô, mas dotado de motores elétricos nas rodas e sistemas de recuperação de energia derivados da F1.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para um superesportivo como o Project One, com mil cavalos sob o capô, mas dotado de motores elétricos nas rodas e sistemas de recuperação de energia derivados da F1",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38
+                ],
+                "char_start": 23,
+                "char_end": 188
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7481,
+          "sent_ID": "FOLHA_DOC003154_SENT017",
+          "text": "Não há regras, mas um jeito básico é escolher um ponto focal para inserir o estampado.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 7,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7826,
+          "sent_ID": "FOLHA_DOC000171_SENT013",
+          "text": "Endiabrados ou não, baladeiros nova-iorquinos passaram anos dançando sem nunca saber da regra.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 88,
+                "char_end": 93
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "baladeiros nova-iorquinos",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 20,
+                "char_end": 45
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 8134,
+          "sent_ID": "FOLHA_DOC003042_SENT006",
+          "text": "Embora essa anistia seja difícil de defender, pela desvantagem imposta a quem cumpriu as regras, foi o compromisso possível na ocasião.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 95
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a quem",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 71,
+                "char_end": 77
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 8205,
+          "sent_ID": "FOLHA_DOC001613_SENT051",
+          "text": "De que o comprador dite as regras.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 33
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o comprador",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 7,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 8949,
+          "sent_ID": "FOLHA_DOC003066_SENT014",
+          "text": "Na prática, a estratégia que irrita e gera desconfiança dos passageiros é permitida por uma regra da Uber.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 92,
+                "char_end": 97
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da Uber",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 98,
+                "char_end": 105
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9189,
+          "sent_ID": "FOLHA_DOC003020_SENT017",
+          "text": "Ele retirou os EUA do Acordo de Paris sobre o clima, autorizou a mineração de carvão em terras antes protegidas, relaxou regras e limites para indústrias que poluem rios e lagos e cortou verbas de pesquisa.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 121,
+                "char_end": 127
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para indústrias que poluem rios e lagos",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34
+                ],
+                "char_start": 138,
+                "char_end": 177
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9196,
+          "sent_ID": "FOLHA_DOC003032_SENT005",
+          "text": "O procedimento desperta, portanto, uma discussão mais profunda: estamos diante de uma legislação burocrática e desatualizada que aplica as mesmas regras higienistas severas para a grande indústria e para o pequeno produtor.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              24
+            ],
+            "spans": [
+              {
+                "char_start": 146,
+                "char_end": 152
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "uma legislação burocrática e desatualizada",
+            "Arg1": null,
+            "Arg2": [
+              "para a grande indústria",
+              "para o pequeno produtor"
+            ],
+            "Arg3": "higienistas"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null,
+            "Arg2": [
+              "obl",
+              "conj"
+            ],
+            "Arg3": "amod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 82,
+                "char_end": 124
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29,
+                  30
+                ],
+                "char_start": 173,
+                "char_end": 196
+              },
+              {
+                "token_ids": [
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "char_start": 199,
+                "char_end": 222
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  25
+                ],
+                "char_start": 153,
+                "char_end": 164
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9423,
+          "sent_ID": "FOLHA_DOC000171_SENT001",
+          "text": "Regra dos anos 1920 sufoca vida noturna da cidade de Nova York.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "Regra",
+            "token_ids": [
+              1
+            ],
+            "spans": [
+              {
+                "char_start": 0,
+                "char_end": 5
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 10427,
+          "sent_ID": "FOLHA_DOC003051_SENT019",
+          "text": "Marcas do grupo já dão bônus a quem trocar carro a diesel por um que cumpra regras mais estritas.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 82
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "um",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  15
+                ],
+                "char_start": 62,
+                "char_end": 64
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 11242,
+          "sent_ID": "FOLHA_DOC003024_SENT015",
+          "text": "Ora não há responsáveis a serem chamados, ora temos autoridades demais a dar palpites e criar regras.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 100
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "autoridades demais",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 52,
+                "char_end": 70
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 11477,
+          "sent_ID": "FOLHA_DOC002032_SENT030",
+          "text": "O Congresso ainda votará as regras da próxima eleição e políticos podem trocar de partidos.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 28,
+                "char_end": 34
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "da próxima eleição"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 35,
+                "char_end": 53
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11709,
+          "sent_ID": "FOLHA_DOC000086_SENT028",
+          "text": "Referendo popular em fevereiro deste ano aprovou a simplificação das regras para naturalizar os netos de imigrantes.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 69,
+                "char_end": 75
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "para naturalizar os netos de imigrantes"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "acl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 76,
+                "char_end": 115
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11720,
+          "sent_ID": "FOLHA_DOC003213_SENT015",
+          "text": "O colonialismo ocidental, como regra geral, foi tanto objetivamente benéfico quanto subjetivamente legítimo na maioria dos lugares em que se encontrou [sic], usando-se medidas realistas desses conceitos.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "regra",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 36
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 13022,
+          "sent_ID": "FOLHA_DOC004110_SENT034",
+          "text": "Ele fala claramente que não gosta de seguir regras e diz que nunca será preso.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 44,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Ele",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 13181,
+          "sent_ID": "FOLHA_DOC003051_SENT002",
+          "text": "Tangidos por regras cada vez mais rígidas de emissão de fumaça e com baterias cada vez mais baratas, montadoras estão olhando para os motores elétricos como a mais viável das soluções.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 13,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "montadoras",
+            "Arg3": "de emissão de fumaça"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj",
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  20
+                ],
+                "char_start": 101,
+                "char_end": 111
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 42,
+                "char_end": 62
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15006,
+          "sent_ID": "FOLHA_DOC003182_SENT008",
+          "text": "Mas me identifico com a minha geração, que é menos ligada a regras e rotinas, diz Jonathan.",
+          "frame_id": "f_8f06a9bcd90a6a23",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "regras",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 60,
+                "char_end": 66
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a minha geração",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 22,
+                "char_end": 37
+              }
+            ],
+            "Arg3": []
+          }
+        }
+      ]
+    }
+  ]
+}

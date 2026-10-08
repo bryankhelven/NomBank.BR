@@ -1,0 +1,833 @@
+{
+  "lemma": "depoimento",
+  "lemma_base": "depoimento",
+  "senses": [
+    {
+      "pt_roleset": "depoimento.01",
+      "description": "declaração feita por quem presenciou algum delito; testemunho",
+      "rolesets": [
+        {
+          "id": "f_41f19f32db6eab57",
+          "description": "declaração feita por quem presenciou algum delito; testemunho",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "testimony.01",
+              "resource": "English NomBank",
+              "description": "give testimony, provide evidence",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/testimony.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "testemunha/depoente",
+              "definition": "testemunha/depoente"
+            },
+            {
+              "id": "Arg1",
+              "desc": "conteúdo/tema do testemunho",
+              "definition": "conteúdo/tema do testemunho"
+            },
+            {
+              "id": "Arg2",
+              "desc": "entidade para/contra quem se testemunha ou destinatário explícito conforme exemplo original",
+              "definition": "entidade para/contra quem se testemunha ou destinatário explícito conforme exemplo original"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 10,
+              "nsubj": 4
+            },
+            "Arg1": {
+              "acl": 1,
+              "ccomp:speech": 1,
+              "ccomp": 2,
+              "obj": 1
+            },
+            "Arg2": {
+              "obl": 1,
+              "nmod": 2
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 154,
+          "sent_ID": "FOLHA_DOC002005_SENT029",
+          "text": "Lucas Fernandes sentiu lesão e há o depoimento do repórter André Hernan de que Cueva chegou ao banco de reservas dizendo não aguentar mais.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do repórter André Hernan",
+            "Arg1": "de que Cueva chegou ao banco de reservas dizendo não aguentar mais",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 47,
+                "char_end": 71
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 72,
+                "char_end": 138
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3519,
+          "sent_ID": "FOLHA_DOC003162_SENT032",
+          "text": "Por WhatsApp, Oliveira envia um depoimento prestado em 2010 à Polícia Federal, de alguém convidado a assassiná-lo.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 32,
+                "char_end": 42
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de alguém convidado a assassiná-lo",
+            "Arg1": null,
+            "Arg2": "à Polícia Federal"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 79,
+                "char_end": 113
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 60,
+                "char_end": 77
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5637,
+          "sent_ID": "FOLHA_DOC003222_SENT013",
+          "text": "\"Eu não levava números para ele\", insistiu num depoimento em junho.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 57
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Eu",
+            "Arg1": "Eu não levava números para ele",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp:speech",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 1,
+                "char_end": 3
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 1,
+                "char_end": 31
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5711,
+          "sent_ID": "FOLHA_DOC002004_SENT007",
+          "text": "Em audiências e depoimentos no Congresso, em agosto e setembro, o ministro reiterou que a privatização não está nos planos.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimentos",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 27
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o ministro",
+            "Arg1": "que a privatização não está nos planos",
+            "Arg2": "no Congresso"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  14,
+                  15
+                ],
+                "char_start": 64,
+                "char_end": 74
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 84,
+                "char_end": 122
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 28,
+                "char_end": 40
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6844,
+          "sent_ID": "FOLHA_DOC004002_SENT002",
+          "text": "É deveras impressionante o depoimento de Antonio Palocci denunciando detalhes do esquema estruturado do PT para amealhar propinas.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Antonio Palocci",
+            "Arg1": "detalhes do esquema estruturado do PT para amealhar propinas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 38,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 69,
+                "char_end": 129
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7766,
+          "sent_ID": "FOLHA_DOC004042_SENT010",
+          "text": "Segundo a Folha apurou, o assunto não foi discutido no depoimento dos delatores nesta quinta.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 55,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos delatores",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 66,
+                "char_end": 79
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9883,
+          "sent_ID": "FOLHA_DOC003049_SENT026",
+          "text": "André Singer começou bem sua coluna ao reconhecer que o depoimento de Lula foi ruim para o lulismo.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 56,
+                "char_end": 66
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Lula",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 67,
+                "char_end": 74
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10878,
+          "sent_ID": "FOLHA_DOC004109_SENT002",
+          "text": "O depoimento de Antonio Palocci é devastador para a defesa, a imagem e o futuro de Lula.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Antonio Palocci",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 13,
+                "char_end": 31
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10883,
+          "sent_ID": "FOLHA_DOC003050_SENT025",
+          "text": "Um documentário de Belisario Franca trará depoimentos de ex-soldados que participaram da repressão à Guerrilha do Araguaia (1972-1975).",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimentos",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 53
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de ex-soldados que participaram da repressão à Guerrilha do Araguaia (1972-1975)",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23
+                ],
+                "char_start": 54,
+                "char_end": 134
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12406,
+          "sent_ID": "FOLHA_DOC000179_SENT012",
+          "text": "Em depoimento, o reitor negou que tentasse barrar a apuração.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o reitor",
+            "Arg1": "que tentasse barrar a apuração",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 15,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 30,
+                "char_end": 60
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14044,
+          "sent_ID": "FOLHA_DOC004002_SENT010",
+          "text": "É absurdo que se considere um depoimento de uma pessoa já presa e condenada.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 30,
+                "char_end": 40
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de uma pessoa já presa e condenada",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 41,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14657,
+          "sent_ID": "FOLHA_DOC004044_SENT016",
+          "text": "O depoimento de Palocci foi considerado devastador por petistas para a eventual candidatura de Lula à Presidência no próximo ano.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Palocci",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 13,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14794,
+          "sent_ID": "FOLHA_DOC000092_SENT042",
+          "text": "São depoimentos sensíveis, críticos, conscientes e divertidos.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimentos",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 4,
+                "char_end": 15
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15075,
+          "sent_ID": "FOLHA_DOC004079_SENT005",
+          "text": "O depoimento de delator precisa ser corroborado por outros elementos para se tornar prova de um crime.",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de delator",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 13,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15662,
+          "sent_ID": "FOLHA_DOC004078_SENT014",
+          "text": "Miller, que está em busca de um advogado criminalista, tem depoimento na Procuradoria marcado para sexta (8).",
+          "frame_id": "f_41f19f32db6eab57",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "depoimento",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 59,
+                "char_end": 69
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Miller",
+            "Arg1": null,
+            "Arg2": "na Procuradoria"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 6
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 70,
+                "char_end": 85
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

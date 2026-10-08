@@ -1,0 +1,135 @@
+{
+  "lemma": "divergência",
+  "lemma_base": "divergência",
+  "senses": [
+    {
+      "pt_roleset": "divergência.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_ce63c47895338c3c",
+          "description": null,
+          "valency": 2,
+          "origin_frames": [
+            {
+              "roleset": "divergence.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/divergence.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "first entity",
+              "definition": "first entity"
+            },
+            {
+              "id": "Arg2",
+              "desc": "second entity",
+              "definition": "second entity"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 1
+            },
+            "Arg2": {
+              "conj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 9465,
+          "sent_ID": "FOLHA_DOC003316_SENT017",
+          "text": "O lulismo garantiu a unidade por meio da virtual supressão da divergência ideológica.",
+          "frame_id": "f_ce63c47895338c3c",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "divergência",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 62,
+                "char_end": 73
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15717,
+          "sent_ID": "FOLHA_DOC003035_SENT072",
+          "text": "A divergência política entre o grupo do Rodrigo e o da Raquel é fato público e notório.",
+          "frame_id": "f_ce63c47895338c3c",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "divergência",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o grupo do Rodrigo",
+            "Arg2": "o da Raquel"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 29,
+                "char_end": 47,
+                "head_token_id": 6
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 50,
+                "char_end": 61,
+                "head_token_id": 11
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

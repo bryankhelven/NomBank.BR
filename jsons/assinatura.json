@@ -1,0 +1,144 @@
+{
+  "lemma": "assinatura",
+  "lemma_base": "assinatura",
+  "senses": [
+    {
+      "pt_roleset": "assinatura.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_b04a5ccfe25ed63d",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "signing.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/signing.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "signer",
+              "definition": "signer"
+            },
+            {
+              "id": "Arg1",
+              "desc": "document",
+              "definition": "document"
+            },
+            {
+              "id": "Arg2",
+              "desc": "signature",
+              "definition": "signature"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "nmod": 2
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 3839,
+          "sent_ID": "FOLHA_DOC003158_SENT024",
+          "text": "E assim foi, tudo no fio do bigode, sem assinatura de contrato, sem exigir nenhum tipo de royalties ou porcentagem.",
+          "frame_id": "f_b04a5ccfe25ed63d",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "assinatura",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 40,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de contrato",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  15,
+                  16
+                ],
+                "char_start": 51,
+                "char_end": 62,
+                "head_token_id": 16
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9279,
+          "sent_ID": "FOLHA_DOC003056_SENT014",
+          "text": "Temer também participará, na quarta (20), da cerimônia de assinatura do tratado sobre proibição de armas nucleares, acordado entre 122 países.",
+          "frame_id": "f_b04a5ccfe25ed63d",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "assinatura",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 68
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do tratado sobre proibição de armas nucleares",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 69,
+                "char_end": 114,
+                "head_token_id": 19
+              }
+            ],
+            "Arg2": []
+          }
+        }
+      ]
+    }
+  ]
+}

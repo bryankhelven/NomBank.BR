@@ -1,0 +1,186 @@
+{
+  "lemma": "estimativa",
+  "lemma_base": "estimativa",
+  "senses": [
+    {
+      "pt_roleset": "estimativa.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_1c31b48b085c66cf",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "estimate.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/estimate.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "estimator",
+              "definition": "estimator"
+            },
+            {
+              "id": "Arg1",
+              "desc": "thing estimated",
+              "definition": "thing estimated"
+            },
+            {
+              "id": "Arg2",
+              "desc": "estimated-to-be, attribute of arg1",
+              "definition": "estimated-to-be, attribute of arg1"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 2
+            },
+            "Arg1": {
+              "ccomp": 1,
+              "root": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 2772,
+          "sent_ID": "FOLHA_DOC003005_SENT008",
+          "text": "Estimativa mais atualizada da pasta ambiental aponta que mais de cem hectares de área do parque foram queimados.",
+          "frame_id": "f_1c31b48b085c66cf",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "Estimativa",
+            "token_ids": [
+              1
+            ],
+            "spans": [
+              {
+                "char_start": 0,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da pasta ambiental",
+            "Arg1": "que mais de cem hectares de área do parque foram queimados",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 27,
+                "char_end": 45,
+                "head_token_id": 6
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 53,
+                "char_end": 111,
+                "head_token_id": 20
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5775,
+          "sent_ID": "FOLHA_DOC004076_SENT006",
+          "text": "Segundo estimativa da Polícia Militar e Exército, cerca de 20 mil acompanharam o desfile na Esplanada.",
+          "frame_id": "f_1c31b48b085c66cf",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "estimativa",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 18
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da Polícia Militar e Exército",
+            "Arg1": "cerca de 20 mil acompanharam o desfile na Esplanada",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 19,
+                "char_end": 48,
+                "head_token_id": 5
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 50,
+                "char_end": 101,
+                "head_token_id": 14
+              }
+            ],
+            "Arg2": []
+          }
+        }
+      ]
+    }
+  ]
+}

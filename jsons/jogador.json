@@ -1,0 +1,921 @@
+{
+  "lemma": "jogador",
+  "lemma_base": "jogador",
+  "senses": [
+    {
+      "pt_roleset": "jogador · acepção 1",
+      "description": "1 pessoa que pratica al- gum jogo profissionalmente: Miller era um jogador hábil (FB); só falta querer ser jogador de futebol (EL)",
+      "rolesets": [
+        {
+          "id": "f_00b5762cd9825fa1",
+          "description": "1 pessoa que pratica al- gum jogo profissionalmente: Miller era um jogador hábil (FB); só falta querer ser jogador de futebol (EL)",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "player.01",
+              "resource": "English NomBank",
+              "description": "play a game",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/player.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "jogador",
+              "definition": "Praticante do jogo expresso independentemente do REL."
+            },
+            {
+              "id": "Arg1",
+              "desc": "jogo/música",
+              "definition": "Jogo efetivamente praticado ou música executada; afiliação de equipe não é jogo."
+            },
+            {
+              "id": "Arg2",
+              "desc": "instrumento",
+              "definition": "Instrumento utilizado na prática; clube ou posição tática não são instrumento."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nsubj": 3,
+              "xcomp": 1
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 71,
+          "sent_ID": "FOLHA_DOC001404_SENT051",
+          "text": "O mesmo foi dito aos jogadores.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 21,
+                "char_end": 30
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2415,
+          "sent_ID": "FOLHA_DOC003129_SENT030",
+          "text": "Na temporada passada, já era parte essencial da rotação, decidindo partidas, sendo eleito o melhor jogador tanto de rodadas da Euroliga como da Liga ACB espanhola.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3197,
+          "sent_ID": "FOLHA_DOC003173_SENT025",
+          "text": "Em uma análise puramente técnica, fria, sem valorizar tanto os títulos individuais e coletivos, pois dependem das equipes, Messi seria o segundo melhor jogador da história?",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              29
+            ],
+            "spans": [
+              {
+                "char_start": 152,
+                "char_end": 159
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Messi",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  24
+                ],
+                "char_start": 123,
+                "char_end": 128
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3348,
+          "sent_ID": "FOLHA_DOC001186_SENT014",
+          "text": "Diego, repito, bom jogador, possui mais prestígio do que joga.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 19,
+                "char_end": 26
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Diego",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3353,
+          "sent_ID": "FOLHA_DOC003257_SENT003",
+          "text": "Não bastassem os questionamentos, o clube agora encara problemas médicos com os jogadores da posição.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 80,
+                "char_end": 89
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4354,
+          "sent_ID": "FOLHA_DOC003253_SENT005",
+          "text": "O jogador entrou na vaga de Claudio Winck, substituído ainda no primeiro tempo.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5192,
+          "sent_ID": "FOLHA_DOC000034_SENT010",
+          "text": "Com os jogadores que temos, não precisamos puxar a orelha.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 7,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5466,
+          "sent_ID": "FOLHA_DOC002071_SENT015",
+          "text": "Os jogadores não usaram isso como justificativa, mas citaram o clima hostil no Morumbi.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5924,
+          "sent_ID": "FOLHA_DOC003023_SENT048",
+          "text": "Cuca e os jogadores do Palmeiras têm falado sobre os próximos seis jogos e a chance de título.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7127,
+          "sent_ID": "FOLHA_DOC003203_SENT002",
+          "text": "Os irmãos Batista e sua JBS foram uma grande novidade no mundo das maiores empresas brasileiras deste século, um time em que mudam mais as camisas do que os jogadores.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              35
+            ],
+            "spans": [
+              {
+                "char_start": 157,
+                "char_end": 166
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 7677,
+          "sent_ID": "FOLHA_DOC001775_SENT010",
+          "text": "Mais uma vez estamos sendo criticados por isso, mas não se monta um time de futuro gastando R$ 373 milhões em jogadores de 29 ou 30 anos.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              23
+            ],
+            "spans": [
+              {
+                "char_start": 110,
+                "char_end": 119
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 8169,
+          "sent_ID": "FOLHA_DOC003101_SENT004",
+          "text": "Os jogadores vascaínos reclamaram muito, mas o árbitro Elmo Alves Resende Cunha validou o gol diante da festa dos mais de 41 mil torcedores corintianos.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 12
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 8963,
+          "sent_ID": "FOLHA_DOC003023_SENT005",
+          "text": "É provável que esta tenha sido a frase mais importante entre as duas conversas, a primeira exclusivamente entre os jogadores, na terça, a outra, que não deveria ter acontecido, com a torcida.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 115,
+                "char_end": 124
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9309,
+          "sent_ID": "FOLHA_DOC000034_SENT003",
+          "text": "É a primeira vez que o jogador do Paris Saint-Germain usará a braçadeira da equipe principal.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 30
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9458,
+          "sent_ID": "FOLHA_DOC000178_SENT030",
+          "text": "A equipe, em todos os setores, está lotada de jogadores comuns.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 46,
+                "char_end": 55
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9548,
+          "sent_ID": "FOLHA_DOC002075_SENT002",
+          "text": "De todos os jogadores irritados com a arbitragem de Wagner Nascimento Magalhães, nenhum são-paulino superou Rodrigo Caio.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 12,
+                "char_end": 21
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12729,
+          "sent_ID": "FOLHA_DOC004003_SENT012",
+          "text": "Por exemplo, nos anos 1990 o Benfica teve um jogador romeno chamado Panduru.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 52
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Panduru",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "xcomp",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  15
+                ],
+                "char_start": 68,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13238,
+          "sent_ID": "FOLHA_DOC004127_SENT023",
+          "text": "O jogador colombiano deu mais proteção aos zagueiros, além de ajudar na saída de bola.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13363,
+          "sent_ID": "FOLHA_DOC003101_SENT024",
+          "text": "\"Vi hoje [na partida contra o Vasco da Gama] jogadores colocando mão na perna\", disse.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 54
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13834,
+          "sent_ID": "FOLHA_DOC003320_SENT006",
+          "text": "O último da lista foi o Chelsea, com um único jogador inglês.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 46,
+                "char_end": 53
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14881,
+          "sent_ID": "FOLHA_DOC002071_SENT010",
+          "text": "Se alguém se sentiu ofendido, peço perdão, afirmou o jogador do Corinthians.",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15201,
+          "sent_ID": "FOLHA_DOC001751_SENT039",
+          "text": "Como era o ambiente com as jogadoras?",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogadoras",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 36
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15305,
+          "sent_ID": "FOLHA_DOC003023_SENT002",
+          "text": "Hernanes foi o primeiro jogador do São Paulo a falar, na discutida reunião com as torcidas uniformizadas da última quarta-feira (13).",
+          "frame_id": "f_00b5762cd9825fa1",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "jogador",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 24,
+                "char_end": 31
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Hernanes",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 8
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "jogador · acepção 2",
+      "description": "3 pessoa viciada em jogo de azar: Ele era tão mau, um viciado, um jogador (OS)",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 4662,
+          "sent_ID": "FOLHA_DOC003108_SENT011",
+          "text": "Filha de um pai rigoroso, se manda para Los Angeles, entra em contato com jogadores e começa a tocar seu próprio esquema de apostas.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 74,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 7488,
+          "sent_ID": "FOLHA_DOC003108_SENT005",
+          "text": "No grupo de jogadores milionários estavam operadores do mercado financeiro, atores hollywoodianos e integrantes da máfia russa.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "jogadores",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 12,
+                "char_end": 21
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

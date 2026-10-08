@@ -1,0 +1,1875 @@
+{
+  "lemma": "apoio",
+  "lemma_base": "apoio",
+  "senses": [
+    {
+      "pt_roleset": "apoio.02",
+      "description": "estímulo; incentivo",
+      "rolesets": [
+        {
+          "id": "f_86c44e2cd50cc236",
+          "description": "estímulo; incentivo",
+          "valency": 2,
+          "origin_frames": [
+            {
+              "roleset": "support.01",
+              "resource": "English NomBank",
+              "description": "lend aid, credence to",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/support.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "apoiador",
+              "definition": "Origem humana ou coletiva explicitamente fornecedora do apoio/incentivo; coleta ou comentário não bastam."
+            },
+            {
+              "id": "Arg1",
+              "desc": "pessoa ou projeto apoiado",
+              "definition": "Pessoa, entidade, projeto ou atividade objeto do apoio; adaptação do projeto nominal a ação estimulada, sem criar novo Sense."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "nmod": 4,
+              "nsubj": 4,
+              "advcl": 2,
+              "obl": 1
+            },
+            "Arg0": {
+              "nmod": 6,
+              "obl": 3,
+              "amod": 1,
+              "det": 1,
+              "nsubj": 1,
+              "nsubj:pass": 1,
+              "obj": 1
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 443,
+          "sent_ID": "FOLHA_DOC000018_SENT033",
+          "text": "Guzmán concordou -e foi enviada de volta à capital para angariar apoio aos revolucionários e administrar suas finanças.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 65,
+                "char_end": 70
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "aos revolucionários"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 71,
+                "char_end": 90
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 2648,
+          "sent_ID": "FOLHA_DOC003087_SENT004",
+          "text": "O laço representa o apoio à União Americana pelas Liberdades Civis (Aclu, na sigla em inglês).",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 25
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "à União Americana pelas Liberdades Civis (Aclu, na sigla em inglês)"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 26,
+                "char_end": 93
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3762,
+          "sent_ID": "FOLHA_DOC001749_SENT020",
+          "text": "Mesmo que para isso não conte com o apoio do PSDB.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 36,
+                "char_end": 41
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do PSDB",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 42,
+                "char_end": 49
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 3950,
+          "sent_ID": "FOLHA_DOC004039_SENT013",
+          "text": "Nela, a independência recebeu o apoio de 80% dos votantes.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 32,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de 80% dos votantes",
+            "Arg1": "a independência"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 38,
+                "char_end": 57
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 6,
+                "char_end": 21
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4091,
+          "sent_ID": "FOLHA_DOC003021_SENT016",
+          "text": "A inclusão de um artigo como esse seria suficiente para enterrar o projeto, por falta de apoio.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 4687,
+          "sent_ID": "FOLHA_DOC003156_SENT030",
+          "text": "As críticas não ecoam entre os procuradores, com quem Janot parece manter grande base de apoio.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os procuradores",
+            "Arg1": "Janot"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 28,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11
+                ],
+                "char_start": 54,
+                "char_end": 59
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5091,
+          "sent_ID": "FOLHA_DOC003071_SENT003",
+          "text": "Além do arranjador Pretinho da Serra, a cantora deu espaço para que a líder indígena Sônia Guajajara fizesse um apelo em prol de apoio popular para barrar decreto que extingue reserva na região amazônica.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              27
+            ],
+            "spans": [
+              {
+                "char_start": 129,
+                "char_end": 134
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "popular",
+            "Arg1": "para barrar decreto que extingue reserva na região amazônica"
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": "advcl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  28
+                ],
+                "char_start": 135,
+                "char_end": 142
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38
+                ],
+                "char_start": 143,
+                "char_end": 203
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5770,
+          "sent_ID": "FOLHA_DOC003187_SENT003",
+          "text": "Os urubus do Congresso, sedentos por mais verbas, muitos deles já sabendo que não serão reeleitos, enxergam nessa nova flechada uma valorização excessiva de seu apoio.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 161,
+                "char_end": 166
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "seu",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  31
+                ],
+                "char_start": 157,
+                "char_end": 160
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 7046,
+          "sent_ID": "FOLHA_DOC003383_SENT004",
+          "text": "Coelho levou consigo o vereador paulistano Fernando Holiday (DEM), um dos representantes do MBL (Movimento Brasil Livre), que declara apoio a Doria na disputa presidencial de 2018.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              29
+            ],
+            "spans": [
+              {
+                "char_start": 134,
+                "char_end": 139
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 7674,
+          "sent_ID": "FOLHA_DOC004774_SENT008",
+          "text": "Ele já se movimenta há meses, contatando lideranças evangélicas, angariando o apoio óbvio dos donos do PIB e até consultando profissionais para eventualmente trabalhar consigo em 2018.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 78,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos donos do PIB",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 90,
+                "char_end": 106
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 7961,
+          "sent_ID": "FOLHA_DOC002043_SENT013",
+          "text": "Para aprová-la seria necessário o apoio de pelo menos 308 parlamentares.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 34,
+                "char_end": 39
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de pelo menos 308 parlamentares",
+            "Arg1": "Para aprová-la"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "advcl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 40,
+                "char_end": 71
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3
+                ],
+                "char_start": 0,
+                "char_end": 14
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8227,
+          "sent_ID": "FOLHA_DOC003187_SENT004",
+          "text": "Imaginemos quanto custaria atualmente um apoio em rede nacional e uma tatuagem ridícula de hena.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 41,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 8439,
+          "sent_ID": "FOLHA_DOC003133_SENT027",
+          "text": "Tão inacreditável como o desastre venezuelano é o inoxidável apoio de quase toda a esquerda brasileira a esse fracasso.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 61,
+                "char_end": 66
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de quase toda a esquerda brasileira",
+            "Arg1": "a esse fracasso"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 67,
+                "char_end": 102
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 103,
+                "char_end": 118
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9031,
+          "sent_ID": "FOLHA_DOC002064_SENT013",
+          "text": "A partir daí, entraremos de cabeça no apoio, independente do partido, disse Holiday.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 38,
+                "char_end": 43
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Holiday",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  19
+                ],
+                "char_start": 76,
+                "char_end": 83
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 9799,
+          "sent_ID": "FOLHA_DOC000081_SENT017",
+          "text": "E, ao menos por enquanto, concorre sozinho pelo apoio do empresariado.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 48,
+                "char_end": 53
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do empresariado",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 54,
+                "char_end": 69
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 10913,
+          "sent_ID": "FOLHA_DOC003141_SENT011",
+          "text": "O próprio Alckmin emitiu sinais trocados sobre o assunto, ora defendendo a manutenção do apoio ao presidente, ora atuando para que a sigla desembarcasse.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "ao presidente"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 95,
+                "char_end": 108
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11611,
+          "sent_ID": "FOLHA_DOC004040_SENT010",
+          "text": "Diplomatas do Conselho de Segurança afirmaram que os representantes de Pequim e Moscou foram informados da proposta, mas não demonstraram apoio.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              24
+            ],
+            "spans": [
+              {
+                "char_start": 138,
+                "char_end": 143
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os representantes de Pequim e Moscou",
+            "Arg1": "da proposta"
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 50,
+                "char_end": 86
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 104,
+                "char_end": 115
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12201,
+          "sent_ID": "FOLHA_DOC003141_SENT008",
+          "text": "O governador pretende reforçar a defesa do ajuste fiscal, que considera essencial para conquistar o apoio do mercado financeiro, mas aponta erros na condução dessa política por Temer e apresenta visões alternativas.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 100,
+                "char_end": 105
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do mercado financeiro",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 106,
+                "char_end": 127
+              }
+            ],
+            "Arg1": []
+          }
+        },
+        {
+          "instance_id": 12329,
+          "sent_ID": "FOLHA_DOC000068_SENT019",
+          "text": "Goldman conta ter recebido muitas mensagens de apoio nos últimos dias.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 52
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Goldman"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 7
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14162,
+          "sent_ID": "FOLHA_DOC000081_SENT018",
+          "text": "O candidato governista terá como base de apoio o who's who dos delatados da Lava Jato.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 41,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o who's who dos delatados da Lava Jato",
+            "Arg1": "O candidato governista"
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 47,
+                "char_end": 85
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3
+                ],
+                "char_start": 0,
+                "char_end": 22
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15028,
+          "sent_ID": "FOLHA_DOC003070_SENT004",
+          "text": "Contará para isso com o apoio de alguns medalhões políticos, a complacência de setores da opinião pública e o endosso, já não muito entusiasmado, do Partido da Economia.",
+          "frame_id": "f_86c44e2cd50cc236",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 24,
+                "char_end": 29
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de alguns medalhões políticos",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 30,
+                "char_end": 59
+              }
+            ],
+            "Arg1": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "apoio.01",
+      "description": "auxílio; ajuda; amparo",
+      "rolesets": [
+        {
+          "id": "f_36f7a7ec9d88db56",
+          "description": "auxílio; ajuda; amparo",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "assistance.01",
+              "resource": "English NomBank",
+              "description": "help, assist",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/assistance.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "entidade que ajuda",
+              "definition": "Entidade que fornece assistência, inclusive em evento hipotético explicitamente atribuído."
+            },
+            {
+              "id": "Arg1",
+              "desc": "recebedor da ajuda",
+              "definition": "Pessoa/entidade que recebe a assistência."
+            },
+            {
+              "id": "Arg2",
+              "desc": "ajuda/ação assistida",
+              "definition": "Conteúdo da ajuda ou atividade a que se presta assistência, conforme ajudar a/em."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "amod": 1,
+              "nmod": 6,
+              "nsubj": 2
+            },
+            "Arg1": {
+              "nsubj": 5,
+              "obl": 1,
+              "nmod": 1
+            },
+            "Arg2": {
+              "acl": 2,
+              "nsubj:pass": 1,
+              "nsubj": 1,
+              "nmod": 3
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1283,
+          "sent_ID": "FOLHA_DOC004067_SENT038",
+          "text": "As atividades que podem ajudar pesquisadores a estudar tópicos importantes nem sempre recebem apoio público.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 99
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "público",
+            "Arg1": "As atividades que podem ajudar pesquisadores a estudar tópicos importantes",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  15
+                ],
+                "char_start": 100,
+                "char_end": 107
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 0,
+                "char_end": 74
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2695,
+          "sent_ID": "FOLHA_DOC000041_SENT052",
+          "text": "Uma mulher lutando contra a dependência muito raramente vai ter o apoio do companheiro.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 66,
+                "char_end": 71
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do companheiro",
+            "Arg1": "Uma mulher lutando contra a dependência",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 72,
+                "char_end": 86
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "char_start": 0,
+                "char_end": 39
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4765,
+          "sent_ID": "FOLHA_DOC003123_SENT014",
+          "text": "Inaugurado em 1962 em São Paulo, o CVV percebeu a necessidade de disponibilizar um serviço de apoio emocional e prevenção do suicídio também na internet, justamente para acessar o segmento mais jovem.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 99
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o CVV",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 33,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 6140,
+          "sent_ID": "FOLHA_DOC000041_SENT067",
+          "text": "Já Gabriela não teve o apoio da família para se internar.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da família",
+            "Arg1": "Gabriela",
+            "Arg2": "para se internar"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": "acl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 29,
+                "char_end": 39
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 3,
+                "char_end": 11
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 40,
+                "char_end": 56
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7117,
+          "sent_ID": "FOLHA_DOC000050_SENT017",
+          "text": "O processo de venda da companhia está sendo discutido com apoio do BNDES.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 63
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do BNDES",
+            "Arg1": null,
+            "Arg2": "O processo de venda da companhia"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj:pass"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 64,
+                "char_end": 72
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 0,
+                "char_end": 32
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8695,
+          "sent_ID": "FOLHA_DOC003248_SENT031",
+          "text": "Contou também com o apoio do governo de Mato Grosso do Sul e da Siemens.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 25
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do governo de Mato Grosso do Sul e da Siemens",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 26,
+                "char_end": 71
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9528,
+          "sent_ID": "FOLHA_DOC003146_SENT008",
+          "text": "Esse elenco de apoio, aliás, é em grande parte entregue a atores que trabalharam em \"The Wire\".",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 15,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 9848,
+          "sent_ID": "FOLHA_DOC000044_SENT054",
+          "text": "O apoio da família nos períodos mais difíceis é fundamental para o jovem que não possui um diploma mas deseja crescer na carreira.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da família",
+            "Arg1": "para o jovem que não possui um diploma mas deseja crescer na carreira",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 8,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 60,
+                "char_end": 129
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 11100,
+          "sent_ID": "FOLHA_DOC003130_SENT035",
+          "text": "A pesquisa de Padron se desenrola, com apoio da produtora de pneus Michelin, em uma reserva particular de cerca de 3.000 hectares, com trechos de mata nativa, mantida pela empresa.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 44
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da produtora de pneus Michelin",
+            "Arg1": null,
+            "Arg2": "A pesquisa de Padron"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 45,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "char_start": 0,
+                "char_end": 20
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11587,
+          "sent_ID": "FOLHA_DOC000163_SENT040",
+          "text": "É compreensível que alguns professores talvez precisem de apoio sob a forma de desenvolvimento profissional.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 63
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "alguns professores",
+            "Arg2": "sob a forma de desenvolvimento profissional"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 20,
+                "char_end": 38
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 64,
+                "char_end": 107
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12086,
+          "sent_ID": "FOLHA_DOC003205_SENT003",
+          "text": "Com o país enfrentando dificuldades econômicas extremas, empobrecimento generalizado da população e perspectivas nebulosas sobre o desenrolar de um imbróglio político, cresce o número daqueles em busca de apoio para melhorar sua vida sexual.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              33
+            ],
+            "spans": [
+              {
+                "char_start": 205,
+                "char_end": 210
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "daqueles",
+            "Arg2": "para melhorar sua vida sexual"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "acl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  28,
+                  29
+                ],
+                "char_start": 184,
+                "char_end": 192
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  34,
+                  35,
+                  36,
+                  37,
+                  38
+                ],
+                "char_start": 211,
+                "char_end": 240
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12909,
+          "sent_ID": "FOLHA_DOC000041_SENT012",
+          "text": "Estou acostumada a ambientes masculinos, mas naquele momento eu precisava de sinceridade e apoio, afirma.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 91,
+                "char_end": 96
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "eu",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11
+                ],
+                "char_start": 61,
+                "char_end": 63
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12927,
+          "sent_ID": "FOLHA_DOC003120_SENT006",
+          "text": "A polícia investiga se o jovem carregou e instalou a bomba caseira na estação de Parsons Green ou se ele desempenhou um papel de apoio ao atentado.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 129,
+                "char_end": 134
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": null,
+            "Arg2": "ao atentado"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  21
+                ],
+                "char_start": 101,
+                "char_end": 104
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  27,
+                  28,
+                  29
+                ],
+                "char_start": 135,
+                "char_end": 146
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13196,
+          "sent_ID": "FOLHA_DOC000086_SENT033",
+          "text": "Temos projeto para dar apoio na integração de mais imigrantes.",
+          "frame_id": "f_36f7a7ec9d88db56",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "na integração de mais imigrantes"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 29,
+                "char_end": 61
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "apoio.04",
+      "description": "suporte; arrimo",
+      "rolesets": [
+        {
+          "id": "f_5761d279e1156e7e",
+          "description": "suporte; arrimo",
+          "valency": 2,
+          "origin_frames": [
+            {
+              "roleset": "support.01",
+              "resource": "English NomBank",
+              "description": "lend aid, credence to",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/support.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "agente/estrutura sustentadora",
+              "definition": "Agente que sustenta ou estrutura que dá sustentação."
+            },
+            {
+              "id": "Arg1",
+              "desc": "entidade sustentada",
+              "definition": "Pessoa/coisa apoiada fisicamente pela estrutura ou agente sustentador."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 1
+            },
+            "Arg1": {
+              "nmod": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 8198,
+          "sent_ID": "FOLHA_DOC003016_SENT015",
+          "text": "Embora já consiga dar alguns passos, com ajuda de barras de apoio, andar com o equipamento ainda não é um objetivo do DJ.",
+          "frame_id": "f_5761d279e1156e7e",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "apoio",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 60,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "barras",
+            "Arg1": "o DJ"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11
+                ],
+                "char_start": 50,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  25,
+                  26
+                ],
+                "char_start": 115,
+                "char_end": 120
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

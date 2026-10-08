@@ -1,0 +1,2096 @@
+{
+  "lemma": "relação",
+  "lemma_base": "relação",
+  "senses": [
+    {
+      "pt_roleset": "relação.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_bc8c10bd266cc56b",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "relation.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/relation.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "first party (or all parties, if together)",
+              "definition": "first party (or all parties, if together)"
+            },
+            {
+              "id": "Arg1",
+              "desc": "type of relationship / reason to know",
+              "definition": "type of relationship / reason to know"
+            },
+            {
+              "id": "Arg2",
+              "desc": "second party / relations with / beneficiary",
+              "definition": "second party / relations with / beneficiary"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 15,
+              "nsubj": 7,
+              "nsubj:pass": 2,
+              "obj": 2,
+              "det": 1
+            },
+            "Arg2": {
+              "conj": 7,
+              "nmod": 16,
+              "obl": 2
+            },
+            "Arg1": {
+              "amod": 7,
+              "nmod": 3
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 166,
+          "sent_ID": "FOLHA_DOC000159_SENT015",
+          "text": "A história é bonita, mostra a relação entre mãe e filha.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 30,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "mãe",
+            "Arg1": null,
+            "Arg2": "filha"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10
+                ],
+                "char_start": 44,
+                "char_end": 47,
+                "head_token_id": 10
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  12
+                ],
+                "char_start": 50,
+                "char_end": 55,
+                "head_token_id": 12
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 262,
+          "sent_ID": "FOLHA_DOC001605_SENT009",
+          "text": "Como a reforma trabalhista deve alterar a relação entre as empresas e seus funcionários?",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 49
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "as empresas",
+            "Arg1": null,
+            "Arg2": "seus funcionários"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10,
+                  11
+                ],
+                "char_start": 56,
+                "char_end": 67,
+                "head_token_id": 11
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 70,
+                "char_end": 87,
+                "head_token_id": 14
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1210,
+          "sent_ID": "FOLHA_DOC003140_SENT045",
+          "text": "Podemos dizer que é uma nova tendência, um novo normal nas relações internacionais.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 59,
+                "char_end": 67
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "internacionais",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  15
+                ],
+                "char_start": 68,
+                "char_end": 82,
+                "head_token_id": 15
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1263,
+          "sent_ID": "FOLHA_DOC003200_SENT053",
+          "text": "E como eu tenho uma relação com ele há anos, o esforço de me introduzir nisso é para atingí-lo.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 27
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "eu",
+            "Arg1": null,
+            "Arg2": "ele"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 7,
+                "char_end": 9,
+                "head_token_id": 3
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 32,
+                "char_end": 35,
+                "head_token_id": 8
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1426,
+          "sent_ID": "FOLHA_DOC001141_SENT043",
+          "text": "Aproveito para ressaltar: as relações são boas, amistosas e constantes.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 29,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1558,
+          "sent_ID": "FOLHA_DOC004085_SENT006",
+          "text": "Emine Erdogan será acompanhada por seu filho, Bilal Erdogan, e pelo ministro de relações exteriores, Mevlut Cavusoglu.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 80,
+                "char_end": 88
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "exteriores",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  18
+                ],
+                "char_start": 89,
+                "char_end": 99,
+                "head_token_id": 18
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1884,
+          "sent_ID": "FOLHA_DOC000016_SENT009",
+          "text": "Somente neste final de semana, três civis sem relação com os conflitos foram feridos por balas perdidas.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 46,
+                "char_end": 53
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "três civis",
+            "Arg1": null,
+            "Arg2": "os conflitos"
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 31,
+                "char_end": 41,
+                "head_token_id": 9
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 58,
+                "char_end": 70,
+                "head_token_id": 14
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 2465,
+          "sent_ID": "FOLHA_DOC003140_SENT020",
+          "text": "Trata-se de uma percepção de que a cooperação internacional que se expandiu nos anos 1990 não é a maneira ideal para navegar as relações internacionais.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 128,
+                "char_end": 136
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "internacionais",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  27
+                ],
+                "char_start": 137,
+                "char_end": 151,
+                "head_token_id": 27
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2475,
+          "sent_ID": "FOLHA_DOC000057_SENT017",
+          "text": "A relação vinha azedando desde a tentativa fracassada de golpe de Estado na Turquia, em 2016 -os turcos acusam o clérigo Fethullah Güllen, exilado nos EUA, de ter tramado o levante e pedem sem sucesso sua extradição.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2862,
+          "sent_ID": "FOLHA_DOC003216_SENT013",
+          "text": "Além disso, comprova ganho de produtividade e tem boa relação entre risco e retorno.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 54,
+                "char_end": 61
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "risco",
+            "Arg1": null,
+            "Arg2": "retorno"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  14
+                ],
+                "char_start": 68,
+                "char_end": 73,
+                "head_token_id": 14
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16
+                ],
+                "char_start": 76,
+                "char_end": 83,
+                "head_token_id": 16
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3007,
+          "sent_ID": "FOLHA_DOC000068_SENT037",
+          "text": "A relação dele com o PSDB é puramente utilitária.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de ele",
+            "Arg1": null,
+            "Arg2": "o PSDB"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4
+                ],
+                "char_start": 10,
+                "char_end": 14,
+                "head_token_id": 4
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 19,
+                "char_end": 25,
+                "head_token_id": 7
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3067,
+          "sent_ID": "FOLHA_DOC002010_SENT015",
+          "text": "Ela inicialmente não sofreu por ser mulher, e sua relação com os homens era relação entre camaradas.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Ela",
+            "Arg1": null,
+            "Arg2": "os homens"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  1
+                ],
+                "char_start": 0,
+                "char_end": 3,
+                "head_token_id": 1
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  13,
+                  14
+                ],
+                "char_start": 62,
+                "char_end": 71,
+                "head_token_id": 14
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3069,
+          "sent_ID": "FOLHA_DOC002010_SENT015",
+          "text": "Ela inicialmente não sofreu por ser mulher, e sua relação com os homens era relação entre camaradas.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "camaradas",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  18
+                ],
+                "char_start": 90,
+                "char_end": 99,
+                "head_token_id": 18
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3288,
+          "sent_ID": "FOLHA_DOC003058_SENT031",
+          "text": "Sobre a relação com a PF, sua assessoria diz que a PGR vai se basear em \"diálogo, respeito mútuo, valorização do trabalho de investigação da polícia e cooperação\".",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 15
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a PGR",
+            "Arg1": null,
+            "Arg2": "a PF"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12,
+                  13
+                ],
+                "char_start": 49,
+                "char_end": 54,
+                "head_token_id": 13
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 20,
+                "char_end": 24,
+                "head_token_id": 6
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3394,
+          "sent_ID": "FOLHA_DOC003205_SENT013",
+          "text": "Se antes a procura feminina se dava pelas dificuldades de obter o orgasmo ou sentir prazer na relação, hoje elas basicamente se concentram na falta de libido.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              20
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 101
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4247,
+          "sent_ID": "FOLHA_DOC003039_SENT007",
+          "text": "\"Os dois países estão se preparando para possíveis mudanças\", diz à Folha a analista alemã Jacqueline Hénard, especialista nas relações entre Berlim e Paris.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 127,
+                "char_end": 135
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Berlim",
+            "Arg1": null,
+            "Arg2": "Paris"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  28
+                ],
+                "char_start": 142,
+                "char_end": 148,
+                "head_token_id": 28
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  30
+                ],
+                "char_start": 151,
+                "char_end": 156,
+                "head_token_id": 30
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4550,
+          "sent_ID": "FOLHA_DOC003133_SENT023",
+          "text": "É um retrocesso chocante em qualquer circunstância, mas para um brasileiro deveria ser ainda chocante por se tratar de um vizinho com o qual há relações mais que centenárias.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              27
+            ],
+            "spans": [
+              {
+                "char_start": 144,
+                "char_end": 152
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "um vizinho"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  21,
+                  22
+                ],
+                "char_start": 119,
+                "char_end": 129,
+                "head_token_id": 22
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5512,
+          "sent_ID": "FOLHA_DOC003013_SENT029",
+          "text": "Os órgãos do sistema de administração da Justiça têm no respeito e harmonia entre as instituições a pedra angular que equilibra a relação necessária para se fazer justiça.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 130,
+                "char_end": 137
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "as instituições",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  18,
+                  19
+                ],
+                "char_start": 82,
+                "char_end": 97,
+                "head_token_id": 19
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5659,
+          "sent_ID": "FOLHA_DOC000004_SENT005",
+          "text": "A história do novo episódio continua desse ponto, e cenas do trailer mostram a relação entre Rey e Skywalker.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 79,
+                "char_end": 86
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Rey",
+            "Arg1": null,
+            "Arg2": "Skywalker"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  21
+                ],
+                "char_start": 93,
+                "char_end": 96,
+                "head_token_id": 21
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  23
+                ],
+                "char_start": 99,
+                "char_end": 108,
+                "head_token_id": 23
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6348,
+          "sent_ID": "FOLHA_DOC003301_SENT018",
+          "text": "Ao contrário, a presença de gordura na dieta guardou relação inversa com a mortalidade geral.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a presença de gordura em a dieta",
+            "Arg1": null,
+            "Arg2": "a mortalidade geral"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 14,
+                "char_end": 44,
+                "head_token_id": 6
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 73,
+                "char_end": 92,
+                "head_token_id": 17
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6618,
+          "sent_ID": "FOLHA_DOC003031_SENT026",
+          "text": "Graças à relação entre esses dois personagens, os diretores conseguem alguns momentos interessantes, principalmente pela oposição entre suas personalidades.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "esses dois personagens",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 23,
+                "char_end": 45,
+                "head_token_id": 8
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7010,
+          "sent_ID": "FOLHA_DOC003130_SENT031",
+          "text": "Se a cobra corre risco, o biólogo também está cara a cara com o perigo, às vezes literalmente, e sem relação alguma com as serpentes estudadas.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 101,
+                "char_end": 108
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o perigo",
+            "Arg1": null,
+            "Arg2": "as serpentes estudadas"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  15,
+                  16
+                ],
+                "char_start": 62,
+                "char_end": 70,
+                "head_token_id": 16
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  28,
+                  29,
+                  30
+                ],
+                "char_start": 120,
+                "char_end": 142,
+                "head_token_id": 29
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7253,
+          "sent_ID": "FOLHA_DOC003313_SENT014",
+          "text": "Com isso, quer reforçar os laços de cooperação em segurança que marcam a próspera relação de ambos.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 82,
+                "char_end": 89
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "ambos",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  18
+                ],
+                "char_start": 93,
+                "char_end": 98,
+                "head_token_id": 18
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7439,
+          "sent_ID": "FOLHA_DOC003151_SENT020",
+          "text": "E relações com empresas tendem a ser mais curtas do que com propriedades, diz ela.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "empresas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  4
+                ],
+                "char_start": 15,
+                "char_end": 23,
+                "head_token_id": 4
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7917,
+          "sent_ID": "FOLHA_DOC003140_SENT049",
+          "text": "É impossível prever, todo o paradigma das relações internacionais pode mudar de novo.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "internacionais",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11
+                ],
+                "char_start": 51,
+                "char_end": 65,
+                "head_token_id": 11
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 8811,
+          "sent_ID": "FOLHA_DOC003020_SENT019",
+          "text": "O governo vem politizando os furacões, só que na direção contrária, fingindo que não há relação com aquecimento global, diz Robert Richardson, outro cientista demitido.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 88,
+                "char_end": 95
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os furacões",
+            "Arg1": null,
+            "Arg2": "aquecimento global"
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5,
+                  6
+                ],
+                "char_start": 26,
+                "char_end": 37,
+                "head_token_id": 6
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  21,
+                  22
+                ],
+                "char_start": 100,
+                "char_end": 118,
+                "head_token_id": 21
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9140,
+          "sent_ID": "FOLHA_DOC003035_SENT142",
+          "text": "Tanto é que o Miller era enviado para as missões em nome da PGR, o que demonstrava uma relação de confiança plena.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 87,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Miller",
+            "Arg1": "confiança plena",
+            "Arg2": "PGR"
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5
+                ],
+                "char_start": 14,
+                "char_end": 20,
+                "head_token_id": 5
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  23,
+                  24
+                ],
+                "char_start": 98,
+                "char_end": 113,
+                "head_token_id": 23
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  15
+                ],
+                "char_start": 60,
+                "char_end": 63,
+                "head_token_id": 15
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9613,
+          "sent_ID": "FOLHA_DOC003205_SENT015",
+          "text": "Dugarte diz que as separações de casais pela migração forçada de um ou outro tem causado ainda mais estresse nas relações.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              23
+            ],
+            "spans": [
+              {
+                "char_start": 113,
+                "char_end": 121
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "casais",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  7
+                ],
+                "char_start": 33,
+                "char_end": 39,
+                "head_token_id": 7
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9727,
+          "sent_ID": "FOLHA_DOC003103_SENT023",
+          "text": "Ele anunciou em junho o cancelamento da iniciativa de Obama de impulsionar as relações com Cuba, com restrições a viagens de americanos à ilha e proibição de transações comerciais entre empresas americanas e entidades militares cubanas.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 78,
+                "char_end": 86
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Cuba"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  17
+                ],
+                "char_start": 91,
+                "char_end": 95,
+                "head_token_id": 17
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9918,
+          "sent_ID": "FOLHA_DOC001191_SENT023",
+          "text": "Para quem recebe, é apenas uma relação comercial.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 38
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "comercial",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  9
+                ],
+                "char_start": 39,
+                "char_end": 48,
+                "head_token_id": 9
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10934,
+          "sent_ID": "FOLHA_DOC003186_SENT007",
+          "text": "O embaixador dos EUA no Brasil, Peter Michael McKinley, nega que a relação passe por um momento difícil.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 67,
+                "char_end": 74
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "EUA",
+            "Arg1": null,
+            "Arg2": "Brasil"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  5
+                ],
+                "char_start": 17,
+                "char_end": 20,
+                "head_token_id": 5
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  8
+                ],
+                "char_start": 24,
+                "char_end": 30,
+                "head_token_id": 8
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11600,
+          "sent_ID": "FOLHA_DOC001751_SENT055",
+          "text": "Como era sua relação com o presidente?",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 13,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": null,
+            "Arg2": "o presidente"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 9,
+                "char_end": 12,
+                "head_token_id": 3
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 25,
+                "char_end": 37,
+                "head_token_id": 7
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12255,
+          "sent_ID": "FOLHA_DOC003035_SENT100",
+          "text": "O Francisco falou da relação que tinha com o Anselmo Lopes [procurador que investigava a JBS na Greenfield], mas que ele era muito difícil de convencimento.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 21,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "Francisco",
+            "Arg1": null,
+            "Arg2": "Anselmo Lopes"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 2,
+                "char_end": 11,
+                "head_token_id": 2
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 45,
+                "char_end": 58,
+                "head_token_id": 11
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13047,
+          "sent_ID": "FOLHA_DOC002029_SENT012",
+          "text": "A empresa não divulga números específicos do mercado de criptomoedas, mas afirma que há uma relação com os mineradores.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 92,
+                "char_end": 99
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "os mineradores"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  20,
+                  21
+                ],
+                "char_start": 104,
+                "char_end": 118,
+                "head_token_id": 21
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13849,
+          "sent_ID": "FOLHA_DOC000455_SENT010",
+          "text": "Uma linguagem que só por meio da mais brutal violência pode nos fazer ainda confiar nas relações de causalidade, na certeza produzida pelo efeito que segue a causa, na recognição produzida pela memória, na continuidade narrativa com sua orientação de ação pelas noções de necessidade e desenvolvimento.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 88,
+                "char_end": 96
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "causalidade",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  21
+                ],
+                "char_start": 100,
+                "char_end": 111,
+                "head_token_id": 21
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13903,
+          "sent_ID": "FOLHA_DOC002007_SENT042",
+          "text": "Nossos amigos são promotores, juízes, ministros, pessoas com as quais temos relações de vida.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 84
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "vida",
+            "Arg2": "pessoas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17
+                ],
+                "char_start": 88,
+                "char_end": 92,
+                "head_token_id": 17
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  10
+                ],
+                "char_start": 49,
+                "char_end": 56,
+                "head_token_id": 10
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14034,
+          "sent_ID": "FOLHA_DOC000041_SENT055",
+          "text": "Enquanto tentava ficar sóbria, os amigos se afastaram e a relação nunca mais foi a mesma.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 58,
+                "char_end": 65
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os amigos",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 31,
+                "char_end": 40,
+                "head_token_id": 7
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14735,
+          "sent_ID": "FOLHA_DOC003132_SENT016",
+          "text": "Ou será que simplesmente desconhecem a relação histórica inequívoca entre investimentos em ciência e tecnologia e desenvolvimento econômico das nações?",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "investimentos em ciência e tecnologia",
+            "Arg1": null,
+            "Arg2": "desenvolvimento econômico de as nações"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "conj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 74,
+                "char_end": 111,
+                "head_token_id": 11
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 114,
+                "char_end": 150,
+                "head_token_id": 17
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14833,
+          "sent_ID": "FOLHA_DOC003178_SENT021",
+          "text": "Para ele, o fenômeno tem relação direta com os problemas do país.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 25,
+                "char_end": 32
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o fenômeno",
+            "Arg1": null,
+            "Arg2": "os problemas de o país"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 10,
+                "char_end": 20,
+                "head_token_id": 5
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 44,
+                "char_end": 64,
+                "head_token_id": 11
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15022,
+          "sent_ID": "FOLHA_DOC003103_SENT007",
+          "text": "A embaixada dos Estados Unidos em Havana reabriu suas portas em 2015, sob a administração do presidente democrata Barack Obama, após meio século de ruptura nas relações diplomáticas entre os países.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 160,
+                "char_end": 168
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "os países",
+            "Arg1": "diplomáticas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  35,
+                  36
+                ],
+                "char_start": 188,
+                "char_end": 197,
+                "head_token_id": 36
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  33
+                ],
+                "char_start": 169,
+                "char_end": 181,
+                "head_token_id": 33
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15376,
+          "sent_ID": "FOLHA_DOC001751_SENT071",
+          "text": "Até uma das nossas atletas questionou o nosso coordenador da amizade que ele tinha com a outra comissão e não via essa relação com a nossa.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relação",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 119,
+                "char_end": 126
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "nosso coordenador",
+            "Arg1": null,
+            "Arg2": "a nossa"
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10
+                ],
+                "char_start": 40,
+                "char_end": 57,
+                "head_token_id": 10
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  27,
+                  28
+                ],
+                "char_start": 131,
+                "char_end": 138,
+                "head_token_id": 28
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15413,
+          "sent_ID": "FOLHA_DOC000309_SENT006",
+          "text": "Eles até nos mostraram cálculos matemáticos que acreditam provar que o míssil pode atingir a costa oeste dos Estados Unidos, disse Morozov, que é membro do comitê de relações exteriores do Parlamento russo.",
+          "frame_id": "f_bc8c10bd266cc56b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "relações",
+            "token_ids": [
+              33
+            ],
+            "spans": [
+              {
+                "char_start": 166,
+                "char_end": 174
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "exteriores",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  34
+                ],
+                "char_start": 175,
+                "char_end": 185,
+                "head_token_id": 34
+              }
+            ],
+            "Arg2": []
+          }
+        }
+      ]
+    }
+  ]
+}

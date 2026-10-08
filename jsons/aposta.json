@@ -1,0 +1,585 @@
+{
+  "lemma": "aposta",
+  "lemma_base": "aposta",
+  "senses": [
+    {
+      "pt_roleset": "aposta.02",
+      "description": "investimento; dedicação a algo em que se acredita",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        },
+        {
+          "id": "f_633baef93c18e644",
+          "description": "investimento; dedicação a algo em que se acredita",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "investment.01",
+              "resource": "English NomBank",
+              "description": "provide",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/investment.xml",
+              "adapted": true
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "investidor ou titular da aposta de confiança",
+              "definition": "Quem investe recursos ou se dedica/confia numa alternativa, por adaptação figurativa explicitada."
+            },
+            {
+              "id": "Arg1",
+              "desc": "recurso investido",
+              "definition": "Dinheiro/coisa expressamente aplicada; não confiança/dedicação implícita nem avaliação da qualidade."
+            },
+            {
+              "id": "Arg2",
+              "desc": "objeto ou finalidade da aposta de confiança",
+              "definition": "Entidade/projeto/objetivo em que se investe ou deposita confiança; recomendação/expectativa é adaptação figurativa, sem afirmar investimento financeiro não expresso."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg2": {
+              "nsubj": 3,
+              "nmod": 3,
+              "obl": 1
+            },
+            "Arg0": {
+              "nmod": 3,
+              "nsubj": 2
+            },
+            "Arg1": {
+              "obj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 18,
+          "sent_ID": "FOLHA_DOC003153_SENT027",
+          "text": "A aposta da manchete do jornal destoa da reportagem principal, que destacou as duas acusações (\"Temer obstruiu investigação e chefiou quadrilha\", diz Janot).",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 8
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 510,
+          "sent_ID": "FOLHA_DOC003052_SENT017",
+          "text": "Lapelas bordadas e até tinta roxa levaram alguma graça, não só para as apostas dos garotos, mas também para mais um tapete vermelho esquecível.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "apostas",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 71,
+                "char_end": 78
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 1834,
+          "sent_ID": "FOLHA_DOC003127_SENT005",
+          "text": "Até o dia 30/9, o Emotion Park é a aposta para os pequenos gastarem energia pulando.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 35,
+                "char_end": 41
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "o Emotion Park"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 16,
+                "char_end": 30
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 2919,
+          "sent_ID": "FOLHA_DOC003183_SENT025",
+          "text": "A aposta da Globo em Sophia Abrahão como apresentadora do \"Vídeo Show\" segue essa mesma lógica, como observei nesta semana em meu blog.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 8
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da Globo",
+            "Arg1": null,
+            "Arg2": "em Sophia Abrahão como apresentadora do \"Vídeo Show\""
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 9,
+                "char_end": 17
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 18,
+                "char_end": 70
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3135,
+          "sent_ID": "FOLHA_DOC003139_SENT002",
+          "text": "Para dar trégua no noticiário abarrotado de denúncias de corrupção e casos de violência, a Globo faz uma aposta na água com açúcar.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 105,
+                "char_end": 111
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a Globo",
+            "Arg1": null,
+            "Arg2": "na água com açúcar"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  17,
+                  18
+                ],
+                "char_start": 89,
+                "char_end": 96
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  22,
+                  23,
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 112,
+                "char_end": 130
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5246,
+          "sent_ID": "FOLHA_DOC003146_SENT004",
+          "text": "A série já seria uma aposta promissora apenas por ter saído da cabeça de David Simon e George Pelecanos.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 21,
+                "char_end": 27
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "A série"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 7
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5558,
+          "sent_ID": "FOLHA_DOC003242_SENT024",
+          "text": "A otimização de tempo também tem sido a aposta da Valtra para conquistar mercado.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 40,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da Valtra",
+            "Arg1": null,
+            "Arg2": "A otimização de tempo"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 47,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "char_start": 0,
+                "char_end": 21
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7691,
+          "sent_ID": "FOLHA_DOC002017_SENT015",
+          "text": "Tem que ser uma aposta do investidor em uma tecnologia que ele acredita.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 16,
+                "char_end": 22
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do investidor",
+            "Arg1": null,
+            "Arg2": "em uma tecnologia que ele acredita"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 23,
+                "char_end": 36
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 37,
+                "char_end": 71
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 10980,
+          "sent_ID": "FOLHA_DOC004096_SENT029",
+          "text": "Para se livrar do problema, dobrou a aposta e injetou mais R$ 2 bilhões na JBS.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 37,
+                "char_end": 43
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "mais R$ 2 bilhões",
+            "Arg2": "na JBS"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 54,
+                "char_end": 71
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 72,
+                "char_end": 78
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 13375,
+          "sent_ID": "FOLHA_DOC003034_SENT008",
+          "text": "Essa flexibilidade possibilita que eles registrem um ganho superior ao de produtos que investem puramente em renda fixa -mas pode haver perdas, se o gestor fizer uma aposta errada.",
+          "frame_id": "f_633baef93c18e644",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              31
+            ],
+            "spans": [
+              {
+                "char_start": 166,
+                "char_end": 172
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o gestor",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  27,
+                  28
+                ],
+                "char_start": 147,
+                "char_end": 155
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "aposta.01",
+      "description": "acordo em que se assume um compromisso em relação ao resultado de um evento futuro",
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 4664,
+          "sent_ID": "FOLHA_DOC003108_SENT011",
+          "text": "Filha de um pai rigoroso, se manda para Los Angeles, entra em contato com jogadores e começa a tocar seu próprio esquema de apostas.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "apostas",
+            "token_ids": [
+              26
+            ],
+            "spans": [
+              {
+                "char_start": 124,
+                "char_end": 131
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 8966,
+          "sent_ID": "FOLHA_DOC003224_SENT006",
+          "text": "Há um mês, a aposta em uma vitória da equipe paulista seria fácil.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "aposta",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 13,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

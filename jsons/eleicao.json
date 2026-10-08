@@ -1,0 +1,234 @@
+{
+  "lemma": "eleição",
+  "lemma_base": "eleição",
+  "senses": [
+    {
+      "pt_roleset": "eleição.01",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_d8e669aa471fbeb2",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "election.01",
+              "resource": "English NomBank",
+              "description": null,
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/election.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "voters",
+              "definition": "voters"
+            },
+            {
+              "id": "Arg1",
+              "desc": "candidate",
+              "definition": "candidate"
+            },
+            {
+              "id": "Arg2",
+              "desc": "office or position",
+              "definition": "office or position"
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "nmod": 1
+            },
+            "Arg1": {
+              "obj": 1,
+              "nmod": 1,
+              "det": 1
+            },
+            "Arg2": {
+              "obl": 1,
+              "nmod": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 8883,
+          "sent_ID": "FOLHA_DOC000017_SENT004",
+          "text": "Bretas entendeu que ambos ainda podem interferir nas investigações sobre a suposta compra de votos na eleição do COI (Comitê Olímpico Internacional) que escolheu o Rio como sede da Olimpíada de 2016.",
+          "frame_id": "f_d8e669aa471fbeb2",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "eleição",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 102,
+                "char_end": 109
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do COI",
+            "Arg1": "o Rio",
+            "Arg2": "como sede da Olimpíada de 2016"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj",
+            "Arg2": "obl"
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 110,
+                "char_end": 116,
+                "head_token_id": 22
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  30,
+                  31
+                ],
+                "char_start": 162,
+                "char_end": 167,
+                "head_token_id": 31
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38
+                ],
+                "char_start": 168,
+                "char_end": 198,
+                "head_token_id": 33
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 10782,
+          "sent_ID": "FOLHA_DOC004073_SENT007",
+          "text": "Usemos a eleição dos deputados federais da Câmara dos Deputados como base.",
+          "frame_id": "f_d8e669aa471fbeb2",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "eleição",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos deputados federais da Câmara dos Deputados",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 17,
+                "char_end": 63,
+                "head_token_id": 6
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15566,
+          "sent_ID": "FOLHA_DOC003104_SENT008",
+          "text": "O anúncio do Hamas acontece dias após uma visita do líder do grupo, Ismail Haniyeh, ao Cairo, em sua primeira viagem ao país desde sua eleição em maio.",
+          "frame_id": "f_d8e669aa471fbeb2",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "eleição",
+            "token_ids": [
+              34
+            ],
+            "spans": [
+              {
+                "char_start": 135,
+                "char_end": 142
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": "em maio"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": "nmod"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  26
+                ],
+                "char_start": 97,
+                "char_end": 100,
+                "head_token_id": 26
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  35,
+                  36
+                ],
+                "char_start": 143,
+                "char_end": 150,
+                "head_token_id": 36
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

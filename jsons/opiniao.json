@@ -1,0 +1,987 @@
+{
+  "lemma": "opinião",
+  "lemma_base": "opinião",
+  "senses": [
+    {
+      "pt_roleset": "opinião.01",
+      "description": "I modo pessoal de ver; parecer; idéia",
+      "rolesets": [
+        {
+          "id": "f_659af912e848cb61",
+          "description": "I modo pessoal de ver; parecer; idéia",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "opinion.01",
+              "resource": "English NomBank",
+              "description": "express an opinion",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/opinion.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "titular da opinião",
+              "definition": "Pessoa/grupo que assume ou expressa o ponto de vista; adaptação de speaker para holder sem presumir ato de fala."
+            },
+            {
+              "id": "Arg1",
+              "desc": "conteúdo da opinião",
+              "definition": "Proposição ou avaliação manifestada; tópico isolado não equivale ao conteúdo avaliado."
+            },
+            {
+              "id": "Arg2",
+              "desc": "destinatário",
+              "definition": "Pessoa a quem o ponto de vista é explicitamente comunicado."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg0": {
+              "det": 4,
+              "nmod": 5,
+              "nsubj": 1
+            },
+            "Arg1": {
+              "root": 4
+            }
+          }
+        },
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 785,
+          "sent_ID": "FOLHA_DOC003035_SENT040",
+          "text": "Na sua opinião, o que motivou o Janot na Operação Patmos?",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 7,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 3,
+                "char_end": 6
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1730,
+          "sent_ID": "FOLHA_DOC000084_SENT022",
+          "text": "Os russos da opinião pública multiplicaram-se e adquiriram certa musculatura.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 13,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 2125,
+          "sent_ID": "FOLHA_DOC004081_SENT011",
+          "text": "Nenhuma dessas notícias \"fake\" irá mudar a opinião da população sobre Lula.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "da população",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 51,
+                "char_end": 63
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2388,
+          "sent_ID": "FOLHA_DOC003038_SENT017",
+          "text": "Mas, na opinião dela, falta ao prefeito de São Paulo capacidade empática.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 8,
+                "char_end": 15
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dela",
+            "Arg1": "falta ao prefeito de São Paulo capacidade empática",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7
+                ],
+                "char_start": 16,
+                "char_end": 20
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 22,
+                "char_end": 72
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2621,
+          "sent_ID": "FOLHA_DOC003039_SENT018",
+          "text": "O diálogo entre Paris e Berlim entrará em uma nova fase com a reeleição de Merkel, hoje apontada por todas as pesquisas de opinião.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 123,
+                "char_end": 130
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2768,
+          "sent_ID": "FOLHA_DOC003047_SENT021",
+          "text": "Na opinião de Figueiredo, os pesquisadores e os órgãos de saúde devem ficar alertas, pois o combate a cada vetor pode exigir medidas específicas.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de Figueiredo",
+            "Arg1": "os pesquisadores e os órgãos de saúde devem ficar alertas, pois o combate a cada vetor pode exigir medidas específicas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 11,
+                "char_end": 24
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27
+                ],
+                "char_start": 26,
+                "char_end": 144
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2945,
+          "sent_ID": "FOLHA_DOC003018_SENT017",
+          "text": "Uma vez um cara disse que fizemos ele repensar sua opinião machista sobre mulheres que falam de futebol.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 51,
+                "char_end": 58
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  10
+                ],
+                "char_start": 47,
+                "char_end": 50
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2975,
+          "sent_ID": "FOLHA_DOC003023_SENT010",
+          "text": "Na sua opinião, a dificuldade deste ano não significa que no ano que vem haverá a mesma dificuldade.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 7,
+                "char_end": 14
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": "a dificuldade deste ano não significa que no ano que vem haverá a mesma dificuldade",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 3,
+                "char_end": 6
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 16,
+                "char_end": 99
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4809,
+          "sent_ID": "FOLHA_DOC000107_SENT024",
+          "text": "Mas é uma chance de dividir problemas e opiniões.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opiniões",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 40,
+                "char_end": 48
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5409,
+          "sent_ID": "FOLHA_DOC003055_SENT010",
+          "text": "Os clientes do Santander, os deputados do Mato Grosso e o \"cidadão comum\" de Jundiaí têm direito à opinião, ao ultraje, ao boicote.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 7147,
+          "sent_ID": "FOLHA_DOC004017_SENT007",
+          "text": "Apesar de Maduro ter dito se tratar de uma opinião, os constituintes têm aprovado todas as medidas que ele apresenta.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 43,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 9705,
+          "sent_ID": "FOLHA_DOC002037_SENT004",
+          "text": "A opinião pública nunca esteve tão bipolar em termos de imagem e reputação.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 10090,
+          "sent_ID": "FOLHA_DOC000038_SENT001",
+          "text": "Morte de reitor da UFSC não é motivo para falsear opinião, dizem entidades.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 10618,
+          "sent_ID": "FOLHA_DOC001334_SENT018",
+          "text": "Entretanto, as opiniões não são unânimes.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opiniões",
+            "token_ids": [
+              4
+            ],
+            "spans": [
+              {
+                "char_start": 15,
+                "char_end": 23
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 11221,
+          "sent_ID": "FOLHA_DOC000084_SENT016",
+          "text": "Tinha russo na opinião pública, no centrão, na mídia.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 15,
+                "char_end": 22
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 12358,
+          "sent_ID": "FOLHA_DOC003023_SENT011",
+          "text": "A saída da crise pode ser o ponto de partida de uma etapa vencedora, na sua opinião.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              20
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 83
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": "A saída da crise pode ser o ponto de partida de uma etapa vencedora",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  19
+                ],
+                "char_start": 72,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "char_start": 0,
+                "char_end": 67
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12528,
+          "sent_ID": "FOLHA_DOC003191_SENT008",
+          "text": "Feitosa escreveu: \"Encaminho o print [uma foto do comentário] para o RH [departamento de recursos humanos], questionando se a empresa compartilha de tais opiniões\".",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opiniões",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 154,
+                "char_end": 162
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "a empresa",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  27,
+                  28
+                ],
+                "char_start": 124,
+                "char_end": 133
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12720,
+          "sent_ID": "FOLHA_DOC001141_SENT038",
+          "text": "Eu respeito muito as opiniões, especialmente as do ACM Neto, cuja gestão é brilhante.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opiniões",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 21,
+                "char_end": 29
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "do ACM Neto",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11,
+                  12
+                ],
+                "char_start": 48,
+                "char_end": 59
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12873,
+          "sent_ID": "FOLHA_DOC000166_SENT006",
+          "text": "A opinião dos moradores tem sua razão de ser.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "dos moradores",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 10,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13478,
+          "sent_ID": "FOLHA_DOC003191_SENT024",
+          "text": "O peso da opinião pública é diretamente proporcional a quanto isso vai afetar a imagem da empresa.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 10,
+                "char_end": 17
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 14220,
+          "sent_ID": "FOLHA_DOC003018_SENT008",
+          "text": "São cada vez mais comuns sites independentes e páginas nas redes sociais com artigos de opinião, crônicas, vídeos e entrevistas produzidos por e para torcedoras -advogadas, jornalistas, assistentes sociais, estudantes.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 88,
+                "char_end": 95
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14364,
+          "sent_ID": "FOLHA_DOC003156_SENT028",
+          "text": "Para o político, o estrago já está feito, pois a opinião pública faz o julgamento antecipado.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 49,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 15030,
+          "sent_ID": "FOLHA_DOC003070_SENT004",
+          "text": "Contará para isso com o apoio de alguns medalhões políticos, a complacência de setores da opinião pública e o endosso, já não muito entusiasmado, do Partido da Economia.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 90,
+                "char_end": 97
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 15319,
+          "sent_ID": "FOLHA_DOC004043_SENT016",
+          "text": "Apesar do desejo do diretor dinamarquês de transcender o esporte, essa não foi a opinião que o longa colheu em Toronto.",
+          "frame_id": "f_659af912e848cb61",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "opinião",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 81,
+                "char_end": 88
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        }
+      ]
+    }
+  ]
+}

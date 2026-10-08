@@ -1,0 +1,2889 @@
+{
+  "lemma": "valor",
+  "lemma_base": "valor",
+  "senses": [
+    {
+      "pt_roleset": "valor · acepção 1",
+      "description": null,
+      "rolesets": [
+        {
+          "id": "f_60081caed86ba86b",
+          "description": null,
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "value.01",
+              "resource": "English NomBank",
+              "description": "attribute",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/value.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg1",
+              "desc": "tipo de valor",
+              "definition": "Propriedade/modalidade da valoração, como nominal, patrimonial ou de mercado; não valor numérico."
+            },
+            {
+              "id": "Arg2",
+              "desc": "montante/avaliação do valor",
+              "definition": "Quantia ou avaliação explicitamente expressa do próprio valor, sem copiar REL ou usar valor de outra grandeza."
+            },
+            {
+              "id": "Arg3",
+              "desc": "objeto/base valorada",
+              "definition": "Bem, serviço, operação ou base financeira cujo valor é medido, independentemente expresso."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "nmod": 3,
+              "amod": 6,
+              "acl": 1
+            },
+            "Arg2": {
+              "obl": 8,
+              "nmod": 1,
+              "amod": 5,
+              "obj": 2,
+              "advmod": 2,
+              "det": 2,
+              "root": 2,
+              "conj": 1,
+              "advcl": 1
+            },
+            "Arg3": {
+              "nsubj": 5,
+              "nmod": 14,
+              "nsubj:pass": 1,
+              "appos": 1,
+              "obl": 7,
+              "obj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 43,
+          "sent_ID": "FOLHA_DOC004018_SENT053",
+          "text": "Eles foram vendidos a um fundo de investimento, que repassou parte dos valores.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 71,
+                "char_end": 78
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 490,
+          "sent_ID": "FOLHA_DOC000064_SENT042",
+          "text": "Preços em contratos de curto prazo são atrelados ao valor de referência.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 52,
+                "char_end": 57
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "de referência",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  12,
+                  13
+                ],
+                "char_start": 58,
+                "char_end": 71
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 584,
+          "sent_ID": "FOLHA_DOC003226_SENT006",
+          "text": "Em julho, as vendas em valor haviam crescido 31%, para US$ 540 milhões.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "US$ 540 milhões",
+            "Arg3": "as vendas"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 55,
+                "char_end": 70
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  4,
+                  5
+                ],
+                "char_start": 10,
+                "char_end": 19
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1060,
+          "sent_ID": "FOLHA_DOC002017_SENT024",
+          "text": "As empresas que fazem a intermediação das transações cobram uma taxa, que varia de 0,3% a 0,7% do valor da operação.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              24
+            ],
+            "spans": [
+              {
+                "char_start": 98,
+                "char_end": 103
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "da operação"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  25,
+                  26,
+                  27
+                ],
+                "char_start": 104,
+                "char_end": 115
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 1584,
+          "sent_ID": "FOLHA_DOC003172_SENT039",
+          "text": "Economista gosta muito de fazer conta de valor presente, mas não pode cortar 30% de salário de uma pessoa de um mês para o outro.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 41,
+                "char_end": 46
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "presente",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  9
+                ],
+                "char_start": 47,
+                "char_end": 55
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 2366,
+          "sent_ID": "FOLHA_DOC003287_SENT005",
+          "text": "Também estão incluídos no valor do tíquete lanches como pipoca, sorvete e refrigerantes.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 26,
+                "char_end": 31
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "do tíquete"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 32,
+                "char_end": 42
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 2418,
+          "sent_ID": "FOLHA_DOC004045_SENT008",
+          "text": "O valor a ser concedido leva em consideração o benefício mensal que o aposentado ou pensionista recebe.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 2432,
+          "sent_ID": "FOLHA_DOC004075_SENT006",
+          "text": "O valor da restituição é corrigido pela taxa Selic, que acumula 4,34% entre maio e agosto.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "da restituição"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  3,
+                  4,
+                  5
+                ],
+                "char_start": 8,
+                "char_end": 22
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3014,
+          "sent_ID": "FOLHA_DOC003169_SENT016",
+          "text": "Repassar esse valor para quem compra ainda não vale a pena, afirma Brauner.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 14,
+                "char_end": 19
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 3047,
+          "sent_ID": "FOLHA_DOC003164_SENT005",
+          "text": "O prédio, na rua Líbero Badaró, 190, foi declarado de utilidade pública em 2009 -o acordo de desapropriação foi homologado quatro anos depois por R$ 42,6 milhões (valor corrigido pela inflação).",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              34
+            ],
+            "spans": [
+              {
+                "char_start": 163,
+                "char_end": 168
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "R$ 42,6 milhões",
+            "Arg3": "O prédio"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": "nsubj:pass"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  30,
+                  31,
+                  32
+                ],
+                "char_start": 146,
+                "char_end": 161
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 8
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3678,
+          "sent_ID": "FOLHA_DOC003185_SENT033",
+          "text": "No caso do valor a ser ressarcido na ocorrência de um furto ou roubo, a conta deve ser feita em cima do que é mais fácil de ser levado -aparelhos eletrônicos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "aparelhos eletrônicos"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "appos"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  36,
+                  37
+                ],
+                "char_start": 136,
+                "char_end": 157
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 3720,
+          "sent_ID": "FOLHA_DOC003019_SENT005",
+          "text": "As instituições financeiras atendem à determinação da Medida Provisória nº 788, de 24 de julho deste ano, de que os bancos devem bloquear de imediato os valores creditados em favor de falecidos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              32
+            ],
+            "spans": [
+              {
+                "char_start": 153,
+                "char_end": 160
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 3787,
+          "sent_ID": "FOLHA_DOC000024_SENT041",
+          "text": "A empresa afirmou ainda que, de janeiro a setembro deste ano, foi aplicado o valor total de R$ 862.352 em multas.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 77,
+                "char_end": 82
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "total",
+            "Arg2": "de R$ 862.352",
+            "Arg3": "em multas"
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": "nmod",
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  19
+                ],
+                "char_start": 83,
+                "char_end": 88
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 89,
+                "char_end": 102
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  23,
+                  24
+                ],
+                "char_start": 103,
+                "char_end": 112
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4151,
+          "sent_ID": "FOLHA_DOC003054_SENT003",
+          "text": "O valor corresponde ao que foi registrado em planilhas apreendidas na casa da irmã do corretor.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 4377,
+          "sent_ID": "FOLHA_DOC003057_SENT014",
+          "text": "Por causa do grande valor, os pais de Jonatas, Renato, 20, e Aline Openkoski, 21, decidiram começar uma campanha, ainda vigente, para arrecadar recursos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 25
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "grande",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5
+                ],
+                "char_start": 13,
+                "char_end": 19
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 4471,
+          "sent_ID": "FOLHA_DOC003136_SENT013",
+          "text": "É uma estratégia anticrise, já que permite o acesso ao produto, mas por um valor menor, diz Lotaif.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 75,
+                "char_end": 80
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "menor",
+            "Arg3": "ao produto"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod",
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  19
+                ],
+                "char_start": 81,
+                "char_end": 86
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 52,
+                "char_end": 62
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 4894,
+          "sent_ID": "FOLHA_DOC000099_SENT028",
+          "text": "Manter essas contas pode custar US$ 2.000 por ano, valor pouco acessível ao pequeno investidor.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 51,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "US$ 2.000 por ano",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "obj",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 32,
+                "char_end": 49
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 4946,
+          "sent_ID": "FOLHA_DOC003185_SENT029",
+          "text": "Cabe ao consumidor sozinho ou com a ajuda de um corretor calcular o valor a ser segurado.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 68,
+                "char_end": 73
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 5107,
+          "sent_ID": "FOLHA_DOC003151_SENT016",
+          "text": "Com o advento de governos neoliberais e a crença de que o mercado é o melhor determinante de valor, mudou o comportamento dos trabalhadores.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 93,
+                "char_end": 98
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 5141,
+          "sent_ID": "FOLHA_DOC003034_SENT019",
+          "text": "Muitos fundos ainda estão com preço de mercado abaixo do valor patrimonial e o índice de vacância está alto.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 57,
+                "char_end": 62
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "patrimonial",
+            "Arg2": null,
+            "Arg3": "Muitos fundos"
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  13
+                ],
+                "char_start": 63,
+                "char_end": 74
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  1,
+                  2
+                ],
+                "char_start": 0,
+                "char_end": 13
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 5845,
+          "sent_ID": "FOLHA_DOC000007_SENT007",
+          "text": "Battisti foi detido na semana passada acusado de evasão de divisas ao tentar atravessar a fronteira com a Bolívia portando dólares e euros no valor equivalente a pouco mais de R$ 23 mil.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              28
+            ],
+            "spans": [
+              {
+                "char_start": 142,
+                "char_end": 147
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "equivalente a pouco mais de R$ 23 mil",
+            "Arg3": "dólares e euros"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod",
+            "Arg3": "obj"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36
+                ],
+                "char_start": 148,
+                "char_end": 185
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  23,
+                  24,
+                  25
+                ],
+                "char_start": 123,
+                "char_end": 138
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6006,
+          "sent_ID": "FOLHA_DOC003069_SENT046",
+          "text": "Aos 50 anos, o incentivo será bem menor e o investidor receberá de juros aproximadamente o mesmo valor que investiu.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              20
+            ],
+            "spans": [
+              {
+                "char_start": 97,
+                "char_end": 102
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "aproximadamente o mesmo",
+            "Arg3": "de juros"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": [
+              "advmod",
+              "det",
+              "det"
+            ],
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 73,
+                "char_end": 96
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  15,
+                  16
+                ],
+                "char_start": 64,
+                "char_end": 72
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 6050,
+          "sent_ID": "FOLHA_DOC002012_SENT025",
+          "text": "Não são um \"repositório de valor\", como o movimento da segunda-feira demonstra.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 27,
+                "char_end": 32
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 7490,
+          "sent_ID": "FOLHA_DOC003185_SENT005",
+          "text": "O valor médio do seguro residencial no país é de R$ 325 por ano, ainda segundo o estudo da Fenseg, publicado em fevereiro deste ano.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "médio",
+            "Arg2": "de R$ 325 por ano",
+            "Arg3": "do seguro residencial"
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": "root",
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 8,
+                "char_end": 13
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15,
+                  16
+                ],
+                "char_start": 46,
+                "char_end": 63
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 14,
+                "char_end": 35
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7971,
+          "sent_ID": "FOLHA_DOC003041_SENT022",
+          "text": "A AutoAvaliar criou a AutoFlash, cabine para concessionárias e lojas que promete dizer o valor de um carro em até dois minutos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 89,
+                "char_end": 94
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de um carro"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 95,
+                "char_end": 106
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8059,
+          "sent_ID": "FOLHA_DOC003118_SENT010",
+          "text": "No Acre, o valor médio de cada ligação será de cerca de R$ 10 mil, no Tocantins, de R$ 24 mil -isso varia com as características geográficas.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "médio",
+            "Arg2": [
+              "de cerca de R$ 10 mil",
+              "de R$ 24 mil"
+            ],
+            "Arg3": "de cada ligação"
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": [
+              "root",
+              "conj"
+            ],
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  7
+                ],
+                "char_start": 17,
+                "char_end": 22
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 44,
+                "char_end": 65
+              },
+              {
+                "token_ids": [
+                  23,
+                  24,
+                  25,
+                  26
+                ],
+                "char_start": 81,
+                "char_end": 93
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 23,
+                "char_end": 38
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8090,
+          "sent_ID": "FOLHA_DOC003054_SENT025",
+          "text": "Para dar liquidez aos valores, diz a PF, Funaro recorria a doleiros, os quais, por sua vez, emitiam notas fiscais para as empresas do colaborador.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 22,
+                "char_end": 29
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 8282,
+          "sent_ID": "FOLHA_DOC001527_SENT035",
+          "text": "Conforme o delegado, no valor de mercado, os terrenos custavam aproximadamente R$ 3,5 milhões.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 24,
+                "char_end": 29
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "de mercado",
+            "Arg2": "aproximadamente R$ 3,5 milhões",
+            "Arg3": "os terrenos"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": "obj",
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  8,
+                  9
+                ],
+                "char_start": 30,
+                "char_end": 40
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14,
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 63,
+                "char_end": 93
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 42,
+                "char_end": 53
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8663,
+          "sent_ID": "FOLHA_DOC002012_SENT020",
+          "text": "Emitir moedas é um negócio lucrativo, porque os bancos centrais embolsam a diferença entre o custo de emissão da moeda ou cédula e seu valor de face.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              27
+            ],
+            "spans": [
+              {
+                "char_start": 135,
+                "char_end": 140
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "de face",
+            "Arg2": null,
+            "Arg3": "da moeda ou cédula"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  28,
+                  29
+                ],
+                "char_start": 141,
+                "char_end": 148
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 110,
+                "char_end": 128
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 8822,
+          "sent_ID": "FOLHA_DOC002029_SENT008",
+          "text": "Que empresa não quer uma demanda que paga o valor que você quiser cobrar?",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 44,
+                "char_end": 49
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 8970,
+          "sent_ID": "FOLHA_DOC000055_SENT011",
+          "text": "Desde julho, boletos com valor acima de R$ 50 mil já podiam ser pagos em qualquer banco.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 25,
+                "char_end": 30
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "acima de R$ 50 mil",
+            "Arg3": "boletos"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "advmod",
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 31,
+                "char_end": 49
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  4
+                ],
+                "char_start": 13,
+                "char_end": 20
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9039,
+          "sent_ID": "FOLHA_DOC003193_SENT018",
+          "text": "Nós vendemos certificados para mostrar que a indústria está adequada e distribuímos o valor para a cadeia de reciclagem.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 86,
+                "char_end": 91
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9163,
+          "sent_ID": "FOLHA_DOC003019_SENT002",
+          "text": "Os bancos começam a devolver ao INSS valores que haviam sido pagos após a morte de beneficiários.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 37,
+                "char_end": 44
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9608,
+          "sent_ID": "FOLHA_DOC003057_SENT012",
+          "text": "A partir do segundo ano, o número de doses e o valor caem pela metade, para US$ 375 mil.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 52
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "pela metade, para US$ 375 mil",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": [
+              "obl",
+              "obl"
+            ],
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23
+                ],
+                "char_start": 58,
+                "char_end": 87
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 9724,
+          "sent_ID": "FOLHA_DOC004096_SENT018",
+          "text": "Descontando a dívida de R$ 4 bilhões, o valor do Bertin chegava a R$ 8 bilhões.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 40,
+                "char_end": 45
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "a R$ 8 bilhões",
+            "Arg3": "do Bertin"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  15,
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 64,
+                "char_end": 78
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  11,
+                  12,
+                  13
+                ],
+                "char_start": 46,
+                "char_end": 55
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 9966,
+          "sent_ID": "FOLHA_DOC003054_SENT022",
+          "text": "Observa-se que o repasse no ano de 2014 representou a maioria dos valores, ano que Geddel foi candidato a senador [pela Bahia], diz o relatório.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 66,
+                "char_end": 73
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 10210,
+          "sent_ID": "FOLHA_DOC003169_SENT026",
+          "text": "Fui negociar com minha fornecedora, também artesã, para chegar a um bom valor pelas embalagens, afirma Eloísa Toguchi, 31, sócia da Lá do Mato.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 72,
+                "char_end": 77
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "bom",
+            "Arg3": "pelas embalagens"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod",
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14
+                ],
+                "char_start": 68,
+                "char_end": 71
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18
+                ],
+                "char_start": 78,
+                "char_end": 94
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11102,
+          "sent_ID": "FOLHA_DOC003057_SENT013",
+          "text": "A empresa diz que o valor é consistente com o custo de terapias para doenças raras e não há uma definição de preço para o Brasil.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 20,
+                "char_end": 25
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 11137,
+          "sent_ID": "FOLHA_DOC003209_SENT013",
+          "text": "O texto da Câmara prevê que os doadores tenham a opção de deduzir do IR os valores das doações até o limite de 12%, assim como as demais deduções.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              19
+            ],
+            "spans": [
+              {
+                "char_start": 75,
+                "char_end": 82
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "das doações"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 83,
+                "char_end": 94
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11361,
+          "sent_ID": "FOLHA_DOC000096_SENT007",
+          "text": "Se os valores de sete anos atrás não se mostravam sustentáveis, tampouco os atuais devem ser considerados definitivos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 6,
+                "char_end": 13
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 11441,
+          "sent_ID": "FOLHA_DOC003060_SENT020",
+          "text": "Trump já propôs cortar US$ 1 bilhão do valor aplicado nessas operações.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 39,
+                "char_end": 44
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nessas operações"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  12,
+                  13,
+                  14
+                ],
+                "char_start": 54,
+                "char_end": 70
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 11510,
+          "sent_ID": "FOLHA_DOC002027_SENT019",
+          "text": "Nos eventos, o valor varia conforme o pacote.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 15,
+                "char_end": 20
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 12126,
+          "sent_ID": "FOLHA_DOC003238_SENT014",
+          "text": "O processo, no entanto, é inviável economicamente para reprodutores de alto valor.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              15
+            ],
+            "spans": [
+              {
+                "char_start": 76,
+                "char_end": 81
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "alto",
+            "Arg3": "reprodutores"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod",
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  14
+                ],
+                "char_start": 71,
+                "char_end": 75
+              }
+            ],
+            "Arg3": [
+              {
+                "token_ids": [
+                  12
+                ],
+                "char_start": 55,
+                "char_end": 67
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12168,
+          "sent_ID": "FOLHA_DOC000172_SENT030",
+          "text": "Cobra 23% sobre o valor arrecadado.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 18,
+                "char_end": 23
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 12303,
+          "sent_ID": "FOLHA_DOC003028_SENT005",
+          "text": "Essas empresas, segundo uma pesquisa deste ano da Endeavor, respondem por mais de R$ 250 bilhões em valor adicionado ao PIB do país, ou cerca de 5% do total.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              22
+            ],
+            "spans": [
+              {
+                "char_start": 100,
+                "char_end": 105
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "adicionado",
+            "Arg2": "mais de R$ 250 bilhões",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "acl",
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  23
+                ],
+                "char_start": 106,
+                "char_end": 116
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "char_start": 74,
+                "char_end": 96
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 12342,
+          "sent_ID": "FOLHA_DOC002015_SENT021",
+          "text": "Posições de taxa prefixada ganham valor em cenário de queda dos juros.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 34,
+                "char_end": 39
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "Posições de taxa prefixada"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nsubj"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "char_start": 0,
+                "char_end": 26
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12442,
+          "sent_ID": "FOLHA_DOC002015_SENT023",
+          "text": "O prazo curto dos ativos minimiza o impacto da oscilação nas taxas de juros futuros no valor da cota do fundo.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 87,
+                "char_end": 92
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "da cota do fundo"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27
+                ],
+                "char_start": 93,
+                "char_end": 109
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12488,
+          "sent_ID": "FOLHA_DOC000005_SENT016",
+          "text": "Num primeiro momento, as conversas envolvem proposta de remuneração mais atrativa, na qual o banco pode repassar às parceiras mais do que apenas um valor pela originação de negócios.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              31
+            ],
+            "spans": [
+              {
+                "char_start": 148,
+                "char_end": 153
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "pela originação de negócios"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  32,
+                  33,
+                  34,
+                  35,
+                  36
+                ],
+                "char_start": 154,
+                "char_end": 181
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 12711,
+          "sent_ID": "FOLHA_DOC002040_SENT017",
+          "text": "O valor bruto sai de R$ 5.000 para R$ 3.600.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": "bruto",
+            "Arg2": [
+              "de R$ 5.000",
+              "para R$ 3.600"
+            ],
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": [
+              "obl",
+              "obl"
+            ],
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [
+              {
+                "token_ids": [
+                  3
+                ],
+                "char_start": 8,
+                "char_end": 13
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  5,
+                  6,
+                  7
+                ],
+                "char_start": 18,
+                "char_end": 29
+              },
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 30,
+                "char_end": 43
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 12867,
+          "sent_ID": "FOLHA_DOC003185_SENT044",
+          "text": "Se o prejuízo fosse maior que R$ 500 mil, o reembolso não excederia esse valor.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 73,
+                "char_end": 78
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": "R$ 500 mil",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "advcl",
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "token_ids": [
+                  7,
+                  8,
+                  9
+                ],
+                "char_start": 30,
+                "char_end": 40
+              }
+            ],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 13742,
+          "sent_ID": "FOLHA_DOC003029_SENT007",
+          "text": "Na sequência, o investidor poderá conhecer o valor que resgatará no vencimento do título ou saber quanto deverá depositar para alcançar a meta no prazo estipulado.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 45,
+                "char_end": 50
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 14079,
+          "sent_ID": "FOLHA_DOC004035_SENT017",
+          "text": "A corrida para estocar água e combustível levou a um aumento no valor desses itens.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 64,
+                "char_end": 69
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "desses itens"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  15,
+                  16,
+                  17
+                ],
+                "char_start": 70,
+                "char_end": 82
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14170,
+          "sent_ID": "FOLHA_DOC003118_SENT006",
+          "text": "\"A tendência é de diminuição paulatina do valor no programa\", afirma ele.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              10
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 47
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 14217,
+          "sent_ID": "FOLHA_DOC004044_SENT013",
+          "text": "Outorga é o jargão que designa o valor que a empresa oferece para ficar com um certo bem público.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 33,
+                "char_end": 38
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "um certo bem público"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19
+                ],
+                "char_start": 76,
+                "char_end": 96
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 14224,
+          "sent_ID": "FOLHA_DOC001528_SENT003",
+          "text": "Em comunicado, a Petrobras informou que o valor representa 0,8% dos investimentos previstos no Plano de Negócios 2017-2021 e será remanejado dentro do orçamento.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 47
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 15025,
+          "sent_ID": "FOLHA_DOC003019_SENT007",
+          "text": "CGU alega que o INSS tinha dificuldade para recuperar os valores pagos pelas instituições financeiras depois do óbito de beneficiários.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              11
+            ],
+            "spans": [
+              {
+                "char_start": 57,
+                "char_end": 64
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 15095,
+          "sent_ID": "FOLHA_DOC003178_SENT044",
+          "text": "Em geral, o local não cobra nada pelo tratamento, que hoje custa aproximadamente 5% do valor cobrado há dois anos.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              21
+            ],
+            "spans": [
+              {
+                "char_start": 87,
+                "char_end": 92
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "pelo tratamento"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  9,
+                  10,
+                  11
+                ],
+                "char_start": 33,
+                "char_end": 48
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15206,
+          "sent_ID": "FOLHA_DOC003057_SENT025",
+          "text": "A Biogen afirma ainda não ter previsão de valores e de prazo para envio da solicitação de definição de preço.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 42,
+                "char_end": 49
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        },
+        {
+          "instance_id": 15415,
+          "sent_ID": "FOLHA_DOC004044_SENT010",
+          "text": "Dilma diz ainda que os valores envolvidos na concessão desmentem o relato de Palocci.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 30
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "na concessão"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "obl"
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "token_ids": [
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 42,
+                "char_end": 54
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 15750,
+          "sent_ID": "FOLHA_DOC003054_SENT005",
+          "text": "Do valor pago durante a Lava Jato, R$ 1,3 milhão foram entregues por Funaro quando Cunha era o presidente da Câmara dos Deputados, em 2015.",
+          "frame_id": "f_60081caed86ba86b",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              3
+            ],
+            "spans": [
+              {
+                "char_start": 3,
+                "char_end": 8
+              }
+            ]
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "spans": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          }
+        }
+      ]
+    },
+    {
+      "pt_roleset": "valor · acepção 2",
+      "description": null,
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 305,
+          "sent_ID": "FOLHA_DOC003049_SENT024",
+          "text": "Mas, na verdade, ao tolerar a mentira, omissão e manipulação, a elite instruída está fortalecendo valores perversos que são a causa-raiz de nossos problemas que impedem o desenvolvimento do país.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              22
+            ],
+            "spans": [
+              {
+                "char_start": 98,
+                "char_end": 105
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 4374,
+          "sent_ID": "FOLHA_DOC000103_SENT109",
+          "text": "O outro é o envolvimento do paciente, entendimento de valor.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 54,
+                "char_end": 59
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 7416,
+          "sent_ID": "FOLHA_DOC000110_SENT001",
+          "text": "Muitos russos enxergam o Ocidente como legião de fracos, sem valores.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valores",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 61,
+                "char_end": 68
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 10474,
+          "sent_ID": "FOLHA_DOC003055_SENT014",
+          "text": "E a liberdade de expressão ou é valor absoluto, ou deixa de ser útil como pilar essencial da democracia.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 32,
+                "char_end": 37
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    },
+    {
+      "pt_roleset": "valor · acepção 3",
+      "description": null,
+      "rolesets": [
+        {
+          "id": null,
+          "description": null,
+          "valency": null,
+          "origin_frames": [],
+          "roles": null,
+          "syntactic_profile": {}
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1527,
+          "sent_ID": "FOLHA_DOC004086_SENT012",
+          "text": "O calor mínimo da água é de 18ºC e o valor máximo não passa dos 26ºC.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 37,
+                "char_end": 42
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        },
+        {
+          "instance_id": 11674,
+          "sent_ID": "FOLHA_DOC000164_SENT007",
+          "text": "Depois, multiplicar o valor por dez dias.",
+          "frame_id": null,
+          "annotation_status": "not_started",
+          "predicate": {
+            "form": "valor",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 22,
+                "char_end": 27
+              }
+            ]
+          },
+          "realization": {},
+          "syntax": {},
+          "spans": {}
+        }
+      ]
+    }
+  ]
+}

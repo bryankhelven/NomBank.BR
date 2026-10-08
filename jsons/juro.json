@@ -1,0 +1,1007 @@
+{
+  "lemma": "juro",
+  "lemma_base": "juro",
+  "senses": [
+    {
+      "pt_roleset": "juro.01",
+      "description": "lucro calculado sobre determinada taxa, de dinheiro emprestado ou de capital empregado; rendimento",
+      "rolesets": [
+        {
+          "id": "f_b42c1db70c952d16",
+          "description": "lucro calculado sobre determinada taxa, de dinheiro emprestado ou de capital empregado; rendimento",
+          "valency": 3,
+          "origin_frames": [
+            {
+              "roleset": "interest.02",
+              "resource": "English NomBank",
+              "description": "give a dividend",
+              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/interest.xml",
+              "adapted": false
+            }
+          ],
+          "roles": [
+            {
+              "id": "Arg0",
+              "desc": "capital/base que rende",
+              "definition": "Montante, aplicação ou obrigação que gera os juros; pagador/cobrador não é automaticamente capital gerador."
+            },
+            {
+              "id": "Arg1",
+              "desc": "rendimento/montante ou taxa",
+              "definition": "Valor, taxa ou quantificação explícita dos juros, conforme mais de1% na fonte; não preço do empréstimo nem variação de outra grandeza."
+            },
+            {
+              "id": "Arg2",
+              "desc": "recebedor dos juros",
+              "definition": "Entidade a quem cabe o rendimento, não tomador/pagador por default."
+            }
+          ],
+          "syntactic_profile": {
+            "Arg1": {
+              "amod": 4,
+              "fixed": 1,
+              "advcl": 2,
+              "nmod": 1,
+              "obj": 1,
+              "conj": 2
+            },
+            "Arg0": {
+              "obj": 1,
+              "nmod": 1,
+              "parataxis": 1
+            },
+            "Arg2": {
+              "nsubj": 1
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "instance_id": 1385,
+          "sent_ID": "FOLHA_DOC000005_SENT007",
+          "text": "O movimento marca a primeira aproximação operacional, mesmo que de forma indireta, de grandes bancos com fintechs, que nos últimos dois anos emergiram como potenciais rivais no crédito pessoal, ao oferecerem taxas de juros muito menores do que as praticadas no sistema financeiro.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              41
+            ],
+            "spans": [
+              {
+                "char_start": 217,
+                "char_end": 222
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "muito menores do que as praticadas no sistema financeiro",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  50,
+                  51,
+                  52
+                ],
+                "char_start": 223,
+                "char_end": 279
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 1641,
+          "sent_ID": "FOLHA_DOC000037_SENT015",
+          "text": "Com inflação estável, juros caindo e dólar mais ou menos estável, o empresário consegue se programar.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              5
+            ],
+            "spans": [
+              {
+                "char_start": 22,
+                "char_end": 27
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2215,
+          "sent_ID": "FOLHA_DOC002015_SENT019",
+          "text": "A denominação do fundo e a queda na taxa básica de juros ajudam a explicar o resultado favorável.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 51,
+                "char_end": 56
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2301,
+          "sent_ID": "FOLHA_DOC000087_SENT001",
+          "text": "Nova versão do cadastro positivo busca reduzir juro a consumidor.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juro",
+            "token_ids": [
+              9
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 51
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2588,
+          "sent_ID": "FOLHA_DOC002015_SENT030",
+          "text": "Será fruto, ainda, do comportamento futuro dos juros, de previsão incerta.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 47,
+                "char_end": 52
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2616,
+          "sent_ID": "FOLHA_DOC000115_SENT025",
+          "text": "O mesmo acontece com a taxa de juros, quanto mais elevada, maior será o impacto.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              8
+            ],
+            "spans": [
+              {
+                "char_start": 31,
+                "char_end": 36
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "mais elevada",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": [
+              "fixed",
+              "advcl"
+            ],
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  11,
+                  12
+                ],
+                "char_start": 45,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 2962,
+          "sent_ID": "FOLHA_DOC003034_SENT023",
+          "text": "O juro está caindo, mas a recuperação da economia é uma incógnita, afirma.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juro",
+            "token_ids": [
+              2
+            ],
+            "spans": [
+              {
+                "char_start": 2,
+                "char_end": 6
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 3693,
+          "sent_ID": "FOLHA_DOC003069_SENT032",
+          "text": "A simulação supõe uma aplicação de R$ 200 por mês, com juros nominais brutos de 8% ao ano.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 55,
+                "char_end": 60
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "uma aplicação de R$ 200 por mês",
+            "Arg1": "de 8% ao ano",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "char_start": 18,
+                "char_end": 49
+              }
+            ],
+            "Arg1": [
+              {
+                "token_ids": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21
+                ],
+                "char_start": 77,
+                "char_end": 89
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4065,
+          "sent_ID": "FOLHA_DOC000099_SENT040",
+          "text": "Brasil ainda é um dos poucos lugares do mundo com juros interessantes.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 50,
+                "char_end": 55
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "interessantes",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  14
+                ],
+                "char_start": 56,
+                "char_end": 69
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4388,
+          "sent_ID": "FOLHA_DOC000085_SENT025",
+          "text": "\"A gente olha muito para a indústria local, nos acostumamos a ter o CDI [juros médios de empréstimos entre instituições financeiras] como parâmetro para tudo\", critica o especialista.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              18
+            ],
+            "spans": [
+              {
+                "char_start": 73,
+                "char_end": 78
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "de empréstimos entre instituições financeiras",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  20,
+                  21,
+                  22,
+                  23,
+                  24
+                ],
+                "char_start": 86,
+                "char_end": 131
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 4827,
+          "sent_ID": "FOLHA_DOC003034_SENT022",
+          "text": "Quanto menor a taxa de juros, melhor o cenário para o fundo imobiliário.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              6
+            ],
+            "spans": [
+              {
+                "char_start": 23,
+                "char_end": 28
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "menor",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "advcl",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 7,
+                "char_end": 12
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 5111,
+          "sent_ID": "FOLHA_DOC003019_SENT041",
+          "text": "O mercado já começou a responder à redução da taxa de juros e à melhora no nível de desemprego.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              14
+            ],
+            "spans": [
+              {
+                "char_start": 54,
+                "char_end": 59
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 6005,
+          "sent_ID": "FOLHA_DOC003069_SENT046",
+          "text": "Aos 50 anos, o incentivo será bem menor e o investidor receberá de juros aproximadamente o mesmo valor que investiu.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              16
+            ],
+            "spans": [
+              {
+                "char_start": 67,
+                "char_end": 72
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "aproximadamente o mesmo valor que investiu",
+            "Arg2": "o investidor"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "nsubj"
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22
+                ],
+                "char_start": 73,
+                "char_end": 115
+              }
+            ],
+            "Arg2": [
+              {
+                "token_ids": [
+                  12,
+                  13
+                ],
+                "char_start": 42,
+                "char_end": 54
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": 7102,
+          "sent_ID": "FOLHA_DOC000037_SENT005",
+          "text": "Bolsa se valorizou 77% nos últimos seis meses, o risco Brasil caiu, o real está estável e as taxas de juros à metade do que eram.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 102,
+                "char_end": 107
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "à metade do que eram",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "conj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "char_start": 108,
+                "char_end": 128
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12345,
+          "sent_ID": "FOLHA_DOC002015_SENT021",
+          "text": "Posições de taxa prefixada ganham valor em cenário de queda dos juros.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 64,
+                "char_end": 69
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12441,
+          "sent_ID": "FOLHA_DOC002015_SENT023",
+          "text": "O prazo curto dos ativos minimiza o impacto da oscilação nas taxas de juros futuros no valor da cota do fundo.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 70,
+                "char_end": 75
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 12586,
+          "sent_ID": "FOLHA_DOC000023_SENT012",
+          "text": "As pessoas físicas foram muito importantes para a indústria e vão continuar sendo daqui para a frente, quando tivermos um patamar de juros mais baixo.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 133,
+                "char_end": 138
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "mais baixo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  26,
+                  27
+                ],
+                "char_start": 139,
+                "char_end": 149
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13392,
+          "sent_ID": "FOLHA_DOC003069_SENT038",
+          "text": "Importante alertar para o fato de que utilizei uma taxa nominal de juros na simulação.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              13
+            ],
+            "spans": [
+              {
+                "char_start": 67,
+                "char_end": 72
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13567,
+          "sent_ID": "FOLHA_DOC000023_SENT007",
+          "text": "Destaque para os fundos de ações e multimercados, que ganharam atratividade nesse contexto de juros em queda.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              17
+            ],
+            "spans": [
+              {
+                "char_start": 94,
+                "char_end": 99
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13924,
+          "sent_ID": "FOLHA_DOC003069_SENT027",
+          "text": "No segundo, sobre o capital inicial acrescido dos juros do primeiro mês, mais o novo depósito.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              12
+            ],
+            "spans": [
+              {
+                "char_start": 50,
+                "char_end": 55
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": "o capital inicial",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "parataxis",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [
+              {
+                "token_ids": [
+                  6,
+                  7,
+                  8
+                ],
+                "char_start": 18,
+                "char_end": 35
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 13973,
+          "sent_ID": "FOLHA_DOC000023_SENT022",
+          "text": "Outro reflexo da queda de juros é sobre as taxas de administração cobradas pelos gestores de fundos.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              7
+            ],
+            "spans": [
+              {
+                "char_start": 26,
+                "char_end": 31
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 14538,
+          "sent_ID": "FOLHA_DOC000015_SENT026",
+          "text": "Bolsa se valorizou 77% nos últimos seis meses, o risco Brasil caiu, o real está estável e as taxas de juros à metade do que eram.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "juros",
+            "token_ids": [
+              25
+            ],
+            "spans": [
+              {
+                "char_start": 102,
+                "char_end": 107
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "à metade do que eram",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "conj",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "char_start": 108,
+                "char_end": 128
+              }
+            ],
+            "Arg2": []
+          }
+        },
+        {
+          "instance_id": 15274,
+          "sent_ID": "FOLHA_DOC000099_SENT001",
+          "text": "Juro baixo no Brasil faz investidor mirar oportunidades no exterior.",
+          "frame_id": "f_b42c1db70c952d16",
+          "annotation_status": "annotated",
+          "predicate": {
+            "form": "Juro",
+            "token_ids": [
+              1
+            ],
+            "spans": [
+              {
+                "char_start": 0,
+                "char_end": 4
+              }
+            ]
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "baixo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "spans": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "token_ids": [
+                  2
+                ],
+                "char_start": 5,
+                "char_end": 10
+              }
+            ],
+            "Arg2": []
+          }
+        }
+      ]
+    }
+  ]
+}
