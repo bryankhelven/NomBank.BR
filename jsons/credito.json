@@ -1,77 +1,50 @@
 {
   "lemma": "crédito",
-  "lemma_base": "crédito",
   "senses": [
     {
       "pt_roleset": "crédito.08",
       "description": "possibilidade de conseguir adiantamento de dinheiro para fins comerciais, industriais, agrícolas, etc; financiamento",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_ce824b286e963b52",
-          "description": "possibilidade de conseguir adiantamento de dinheiro para fins comerciais, industriais, agrícolas, etc; financiamento",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "financing.01",
-              "resource": "English NomBank",
-              "description": "provide money for, get money for",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/financing.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "financiador/concedente",
-              "definition": "financiador/concedente"
-            },
-            {
-              "id": "Arg1",
-              "desc": "atividade/objeto financiado",
-              "definition": "atividade/objeto financiado"
-            },
-            {
-              "id": "Arg2",
-              "desc": "montante de financiamento",
-              "definition": "montante de financiamento"
-            },
-            {
-              "id": "Arg3",
-              "desc": "beneficiário/tomador do financiamento",
-              "definition": "beneficiário/tomador do financiamento"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 4,
-              "nsubj": 2,
-              "appos": 1
-            },
-            "Arg3": {
-              "nmod": 2,
-              "nsubj": 1
-            }
-          }
+          "roleset": "financing.01",
+          "resource": "English NomBank",
+          "description": "provide money for, get money for",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/financing.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 693,
+          "id": "Arg0",
+          "desc": "financiador/concedente",
+          "definition": "financiador/concedente"
+        },
+        {
+          "id": "Arg1",
+          "desc": "atividade/objeto financiado",
+          "definition": "atividade/objeto financiado"
+        },
+        {
+          "id": "Arg2",
+          "desc": "montante de financiamento",
+          "definition": "montante de financiamento"
+        },
+        {
+          "id": "Arg3",
+          "desc": "beneficiário/tomador do financiamento",
+          "definition": "beneficiário/tomador do financiamento"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000005_SENT019::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT019",
           "text": "A entrada do CBSS no crédito digital é motivada, dentre outros fatores, pelo interesse dos sócios em acelerar a rentabilização do negócio, disse o executivo.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 28
-              }
-            ]
+            "char_start": 21,
+            "char_end": 28
           },
           "realization": {
             "Arg0": "do CBSS",
@@ -85,14 +58,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 10,
                 "char_end": 17
               }
@@ -103,22 +71,14 @@
           }
         },
         {
-          "instance_id": 1384,
+          "instance_id": "FOLHA_DOC000005_SENT007::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT007",
           "text": "O movimento marca a primeira aproximação operacional, mesmo que de forma indireta, de grandes bancos com fintechs, que nos últimos dois anos emergiram como potenciais rivais no crédito pessoal, ao oferecerem taxas de juros muito menores do que as praticadas no sistema financeiro.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 177,
-                "char_end": 184
-              }
-            ]
+            "char_start": 177,
+            "char_end": 184
           },
           "realization": {
             "Arg0": "fintechs",
@@ -132,12 +92,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19
-                ],
                 "char_start": 105,
                 "char_end": 113
               }
@@ -148,22 +105,14 @@
           }
         },
         {
-          "instance_id": 2203,
+          "instance_id": "FOLHA_DOC000005_SENT011::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT011",
           "text": "A iniciativa acontece em meio a uma audiência pública aberta pelo Banco Central para regulamentar a atuação das plataformas digitais de crédito.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 143
-              }
-            ]
+            "char_start": 136,
+            "char_end": 143
           },
           "realization": {
             "Arg0": null,
@@ -177,7 +126,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -185,22 +134,14 @@
           }
         },
         {
-          "instance_id": 3157,
+          "instance_id": "FOLHA_DOC003128_SENT027::crédito::1",
           "sent_ID": "FOLHA_DOC003128_SENT027",
           "text": "Impõe-se o combate ao acesso privilegiado da elite a recursos públicos, do crédito subsidiado até as benesses da alta burocracia, incluindo salários e aposentadorias.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 75,
-                "char_end": 82
-              }
-            ]
+            "char_start": 75,
+            "char_end": 82
           },
           "realization": {
             "Arg0": null,
@@ -214,17 +155,12 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 42,
                 "char_end": 50
               }
@@ -232,22 +168,14 @@
           }
         },
         {
-          "instance_id": 6608,
+          "instance_id": "FOLHA_DOC003292_SENT004::crédito::1",
           "sent_ID": "FOLHA_DOC003292_SENT004",
           "text": "O objetivo na época era elevar a oferta de crédito e evitar a retração da economia.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 50
-              }
-            ]
+            "char_start": 43,
+            "char_end": 50
           },
           "realization": {
             "Arg0": null,
@@ -261,7 +189,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -269,22 +197,14 @@
           }
         },
         {
-          "instance_id": 7536,
+          "instance_id": "FOLHA_DOC000005_SENT001::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT001",
           "text": "CBSS inicia acordos com fintechs e quer 30% do crédito digital em 2018.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 54
-              }
-            ]
+            "char_start": 47,
+            "char_end": 54
           },
           "realization": {
             "Arg0": "CBSS",
@@ -298,12 +218,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 4
               }
@@ -314,22 +231,14 @@
           }
         },
         {
-          "instance_id": 7901,
+          "instance_id": "FOLHA_DOC000005_SENT006::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT006",
           "text": "Além desse acordo, já em andamento, negociações estão em curso com outras quatro fintechs especializadas em crédito: Guia Bolso, Lendico, Finanzero e Wecash, previstas para estarem operacionais ainda em 2017.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 115
-              }
-            ]
+            "char_start": 108,
+            "char_end": 115
           },
           "realization": {
             "Arg0": "Guia Bolso, Lendico, Finanzero e Wecash",
@@ -343,19 +252,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29
-                ],
                 "char_start": 117,
                 "char_end": 156
               }
@@ -366,22 +265,14 @@
           }
         },
         {
-          "instance_id": 10292,
+          "instance_id": "FOLHA_DOC003216_SENT041::crédito::1",
           "sent_ID": "FOLHA_DOC003216_SENT041",
           "text": "Não ter essa gestão é uma das razões do crédito estar mais caro.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 47
-              }
-            ]
+            "char_start": 40,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -395,7 +286,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -403,22 +294,14 @@
           }
         },
         {
-          "instance_id": 10344,
+          "instance_id": "FOLHA_DOC004018_SENT029::crédito::1",
           "sent_ID": "FOLHA_DOC004018_SENT029",
           "text": "O hospital segue em situação financeira dramática, em busca de renegociações e novos créditos.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "créditos",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 85,
-                "char_end": 93
-              }
-            ]
+            "char_start": 85,
+            "char_end": 93
           },
           "realization": {
             "Arg0": null,
@@ -432,16 +315,12 @@
             "Arg2": null,
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 10
               }
@@ -449,22 +328,14 @@
           }
         },
         {
-          "instance_id": 11274,
+          "instance_id": "FOLHA_DOC000005_SENT022::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT022",
           "text": "A partir de novembro, a Digio incluirá oferta de crédito pessoal.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 56
-              }
-            ]
+            "char_start": 49,
+            "char_end": 56
           },
           "realization": {
             "Arg0": "a Digio",
@@ -478,13 +349,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 22,
                 "char_end": 29
               }
@@ -495,22 +362,14 @@
           }
         },
         {
-          "instance_id": 11391,
+          "instance_id": "FOLHA_DOC000087_SENT015::crédito::1",
           "sent_ID": "FOLHA_DOC000087_SENT015",
           "text": "Será uma síntese do histórico do tomador de crédito.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 51
-              }
-            ]
+            "char_start": 44,
+            "char_end": 51
           },
           "realization": {
             "Arg0": null,
@@ -524,17 +383,12 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 30,
                 "char_end": 40
               }
@@ -542,22 +396,14 @@
           }
         },
         {
-          "instance_id": 12597,
+          "instance_id": "FOLHA_DOC000112_SENT026::crédito::1",
           "sent_ID": "FOLHA_DOC000112_SENT026",
           "text": "Um exemplo é o ataque à política de crédito do BNDES nos governos do PT.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 43
-              }
-            ]
+            "char_start": 36,
+            "char_end": 43
           },
           "realization": {
             "Arg0": "do BNDES",
@@ -571,14 +417,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 44,
                 "char_end": 52
               }
@@ -589,22 +430,14 @@
           }
         },
         {
-          "instance_id": 14677,
+          "instance_id": "FOLHA_DOC000005_SENT025::crédito::1",
           "sent_ID": "FOLHA_DOC000005_SENT025",
           "text": "\"As parcerias com as fintechs no crédito são um negócio que permite retorno quase imediato\", disse Giovane.",
-          "frame_id": "f_ce824b286e963b52",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 40
-              }
-            ]
+            "char_start": 33,
+            "char_end": 40
           },
           "realization": {
             "Arg0": "as fintechs",
@@ -618,13 +451,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 18,
                 "char_end": 29
               }
@@ -634,143 +463,101 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 4,
+          "nsubj": 2,
+          "appos": 1
+        },
+        "Arg3": {
+          "nmod": 2,
+          "nsubj": 1
+        }
+      }
     },
     {
       "pt_roleset": "crédito.02",
       "description": "aceitação como verdadeiro; confiança",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 1009,
+          "instance_id": "FOLHA_DOC003039_SENT015::crédito::1",
           "sent_ID": "FOLHA_DOC003039_SENT015",
           "text": "Tamanho parece ser o interesse de Macron que, para dar crédito às negociações com Berlim, seu governo abriu mão de parte de suas próprias reformas fiscais, adiando cortes nos impostos.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 62
-              }
-            ]
+            "char_start": 55,
+            "char_end": 62
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "crédito.07",
       "description": "confiança na solvabilidade",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 2877,
+          "instance_id": "FOLHA_DOC002015_SENT037::crédito::1",
           "sent_ID": "FOLHA_DOC002015_SENT037",
           "text": "Vale lembrar que Mariana corre o risco de crédito na operação de LCI, com garantia do Fundo Garantidor de Créditos limitada a R$250 mil.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 49
-              }
-            ]
+            "char_start": 42,
+            "char_end": 49
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 14748,
+          "instance_id": "FOLHA_DOC002015_SENT038::crédito::1",
           "sent_ID": "FOLHA_DOC002015_SENT038",
           "text": "No caso do fundo, o risco de crédito será representado pelos títulos da carteira.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "crédito",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 36
-              }
-            ]
+            "char_start": 29,
+            "char_end": 36
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "crédito.12",
       "description": "quantia correspondente ao que se tem direito de receber",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 4682,
+          "instance_id": "FOLHA_DOC002033_SENT005::crédito::1",
           "sent_ID": "FOLHA_DOC002033_SENT005",
           "text": "O impasse está no uso de créditos de prejuízos fiscais para abater o passivo inscrito na dívida ativa da União.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "créditos",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 33
-              }
-            ]
+            "char_start": 25,
+            "char_end": 33
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

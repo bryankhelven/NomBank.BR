@@ -1,86 +1,50 @@
 {
   "lemma": "declaração",
-  "lemma_base": "declaração",
   "senses": [
     {
       "pt_roleset": "declaração.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_ebceb048ebd589d2",
+          "roleset": "declaration.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "declaration.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/declaration.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "announcer",
-              "definition": "announcer"
-            },
-            {
-              "id": "Arg1",
-              "desc": "utterance",
-              "definition": "utterance"
-            },
-            {
-              "id": "Arg2",
-              "desc": "hearer",
-              "definition": "hearer"
-            },
-            {
-              "id": "Arg3",
-              "desc": "attributive",
-              "definition": "attributive"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obj": 1,
-              "nmod": 8,
-              "det": 2,
-              "nsubj": 2
-            },
-            "Arg1": {
-              "parataxis": 1,
-              "root": 3,
-              "acl": 1,
-              "nmod": 3,
-              "amod": 2,
-              "ccomp:speech": 1
-            },
-            "Arg2": {
-              "nmod": 1,
-              "obl": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/declaration.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 504,
+          "id": "Arg0",
+          "desc": "announcer",
+          "definition": "announcer"
+        },
+        {
+          "id": "Arg1",
+          "desc": "utterance",
+          "definition": "utterance"
+        },
+        {
+          "id": "Arg2",
+          "desc": "hearer",
+          "definition": "hearer"
+        },
+        {
+          "id": "Arg3",
+          "desc": "attributive",
+          "definition": "attributive"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001744_SENT007::declaração::1",
           "sent_ID": "FOLHA_DOC001744_SENT007",
           "text": "Ao saber disso, não me contive e fiz uma declaração indignada: Comigo, não violão!",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 51
-              }
-            ]
+            "char_start": 41,
+            "char_end": 51
           },
           "realization": {
             "Arg0": "me",
@@ -94,26 +58,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 20,
-                "char_end": 22,
-                "head_token_id": 8
+                "char_end": 22
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 63,
-                "char_end": 69,
-                "head_token_id": 17
+                "char_end": 69
               }
             ],
             "Arg2": [],
@@ -121,22 +76,14 @@
           }
         },
         {
-          "instance_id": 675,
+          "instance_id": "FOLHA_DOC003092_SENT033::declaração::1",
           "sent_ID": "FOLHA_DOC003092_SENT033",
           "text": "Esta declaração é muito grave e ganha conotação oficial na medida em que o General estava fardado e, por isso, representando formalmente o Comando da força terrestre.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 15
-              }
-            ]
+            "char_start": 5,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -150,17 +97,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5
-                ],
                 "char_start": 18,
-                "char_end": 29,
-                "head_token_id": 5
+                "char_end": 29
               }
             ],
             "Arg2": [],
@@ -168,22 +110,14 @@
           }
         },
         {
-          "instance_id": 1207,
+          "instance_id": "FOLHA_DOC003015_SENT018::declaração::1",
           "sent_ID": "FOLHA_DOC003015_SENT018",
           "text": "Colbert também reservou uma surpresa ao público, a participação do ex-porta-voz de Trump, Sean Spicer, autoironizando sua declaração de que a posse do republicano, em janeiro, teria reunido público recorde.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 122,
-                "char_end": 132
-              }
-            ]
+            "char_start": 122,
+            "char_end": 132
           },
           "realization": {
             "Arg0": "do ex-porta-voz de Trump, Sean Spicer",
@@ -197,43 +131,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  18,
-                  19
-                ],
                 "char_start": 64,
-                "char_end": 101,
-                "head_token_id": 14
+                "char_end": 101
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  32,
-                  33,
-                  35,
-                  36,
-                  37,
-                  38
-                ],
                 "char_start": 133,
-                "char_end": 205,
-                "head_token_id": 36
+                "char_end": 205
               }
             ],
             "Arg2": [],
@@ -241,22 +149,14 @@
           }
         },
         {
-          "instance_id": 2268,
+          "instance_id": "FOLHA_DOC001434_SENT021::declaração::1",
           "sent_ID": "FOLHA_DOC001434_SENT021",
           "text": "Que batem palmas pra declarações como as do tal Mourão gauchão?",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 32
-              }
-            ]
+            "char_start": 21,
+            "char_end": 32
           },
           "realization": {
             "Arg0": "do tal Mourão gauchão",
@@ -270,19 +170,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 41,
-                "char_end": 62,
-                "head_token_id": 11
+                "char_end": 62
               }
             ],
             "Arg1": [],
@@ -291,22 +183,14 @@
           }
         },
         {
-          "instance_id": 2973,
+          "instance_id": "FOLHA_DOC003217_SENT035::declaração::1",
           "sent_ID": "FOLHA_DOC003217_SENT035",
           "text": "É preciso tomar cuidado com declarações de algumas pessoas que as disparam com outras finalidades, como políticas.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 39
-              }
-            ]
+            "char_start": 28,
+            "char_end": 39
           },
           "realization": {
             "Arg0": "de algumas pessoas",
@@ -320,17 +204,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 40,
-                "char_end": 58,
-                "head_token_id": 9
+                "char_end": 58
               }
             ],
             "Arg1": [],
@@ -339,22 +217,14 @@
           }
         },
         {
-          "instance_id": 3775,
+          "instance_id": "FOLHA_DOC004017_SENT004::declaração::1",
           "sent_ID": "FOLHA_DOC004017_SENT004",
           "text": "A declaração é uma referência a seus adversários, que não reconhecem a Casa chavista e a consideram uma fraude.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ]
+            "char_start": 2,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -368,20 +238,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 15,
-                "char_end": 48,
-                "head_token_id": 5
+                "char_end": 48
               }
             ],
             "Arg2": [],
@@ -389,22 +251,14 @@
           }
         },
         {
-          "instance_id": 4326,
+          "instance_id": "FOLHA_DOC000045_SENT028::declaração::1",
           "sent_ID": "FOLHA_DOC000045_SENT028",
           "text": "O governo central espanhol em Madri não vai reconhecer nenhuma declaração unilateral de independência.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 73
-              }
-            ]
+            "char_start": 63,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -418,18 +272,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 74,
-                "char_end": 101,
-                "head_token_id": 14
+                "char_end": 101
               }
             ],
             "Arg2": [],
@@ -437,22 +285,14 @@
           }
         },
         {
-          "instance_id": 4517,
+          "instance_id": "FOLHA_DOC000143_SENT001::declaração::1",
           "sent_ID": "FOLHA_DOC000143_SENT001",
           "text": "Em homenagem a Che Guevara, Cuba reage às declarações de Trump.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 53
-              }
-            ]
+            "char_start": 42,
+            "char_end": 53
           },
           "realization": {
             "Arg0": "de Trump",
@@ -466,16 +306,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 54,
-                "char_end": 62,
-                "head_token_id": 13
+                "char_end": 62
               }
             ],
             "Arg1": [],
@@ -484,22 +319,14 @@
           }
         },
         {
-          "instance_id": 5197,
+          "instance_id": "FOLHA_DOC003086_SENT008::declaração::1",
           "sent_ID": "FOLHA_DOC003086_SENT008",
           "text": "Uma porta-voz da promotoria disse que a suspeita não fez ameaças ou declarações extremistas.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 79
-              }
-            ]
+            "char_start": 68,
+            "char_end": 79
           },
           "realization": {
             "Arg0": null,
@@ -513,7 +340,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -521,22 +348,14 @@
           }
         },
         {
-          "instance_id": 5855,
+          "instance_id": "FOLHA_DOC003092_SENT039::declaração::1",
           "sent_ID": "FOLHA_DOC003092_SENT039",
           "text": "A Folha pediu contato com o general Mourão, para que comentasse suas declarações, mas o centro de comunicação social do Exército informou que as respostas serão dadas por meio do órgão.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 80
-              }
-            ]
+            "char_start": 69,
+            "char_end": 80
           },
           "realization": {
             "Arg0": "suas",
@@ -550,15 +369,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13
-                ],
                 "char_start": 64,
-                "char_end": 68,
-                "head_token_id": 13
+                "char_end": 68
               }
             ],
             "Arg1": [],
@@ -567,22 +382,14 @@
           }
         },
         {
-          "instance_id": 7768,
+          "instance_id": "FOLHA_DOC004138_SENT016::declaração::1",
           "sent_ID": "FOLHA_DOC004138_SENT016",
           "text": "Segundo Trump Jr., Veselnitskaya fez apenas declarações \"vagas, ambíguas e sem sentido\".",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 55
-              }
-            ]
+            "char_start": 44,
+            "char_end": 55
           },
           "realization": {
             "Arg0": "Veselnitskaya",
@@ -596,29 +403,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 19,
-                "char_end": 32,
-                "head_token_id": 5
+                "char_end": 32
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 57,
-                "char_end": 86,
-                "head_token_id": 10
+                "char_end": 86
               }
             ],
             "Arg2": [],
@@ -626,22 +421,14 @@
           }
         },
         {
-          "instance_id": 7784,
+          "instance_id": "FOLHA_DOC003035_SENT066::declaração::1",
           "sent_ID": "FOLHA_DOC003035_SENT066",
           "text": "Fui preso com base em declarações contraditórias de dois delatores, em uma pseudoação controlada.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 33
-              }
-            ]
+            "char_start": 22,
+            "char_end": 33
           },
           "realization": {
             "Arg0": "de dois delatores",
@@ -655,27 +442,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 49,
-                "char_end": 66,
-                "head_token_id": 10
+                "char_end": 66
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 34,
-                "char_end": 48,
-                "head_token_id": 7
+                "char_end": 48
               }
             ],
             "Arg2": [],
@@ -683,22 +460,14 @@
           }
         },
         {
-          "instance_id": 7832,
+          "instance_id": "FOLHA_DOC002077_SENT006::declaração::1",
           "sent_ID": "FOLHA_DOC002077_SENT006",
           "text": "Merkel votou às 14h45 locais (9h45 em Brasília), mas não deu declarações à imprensa.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 72
-              }
-            ]
+            "char_start": 61,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -712,7 +481,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -720,22 +489,14 @@
           }
         },
         {
-          "instance_id": 7915,
+          "instance_id": "FOLHA_DOC004119_SENT012::declaração::1",
           "sent_ID": "FOLHA_DOC004119_SENT012",
           "text": "Suas declarações, no entender do Supremo, tipificavam o crime de obstrução da Justiça.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 16
-              }
-            ]
+            "char_start": 5,
+            "char_end": 16
           },
           "realization": {
             "Arg0": "Suas",
@@ -749,15 +510,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 4,
-                "head_token_id": 1
+                "char_end": 4
               }
             ],
             "Arg1": [],
@@ -766,22 +523,14 @@
           }
         },
         {
-          "instance_id": 7948,
+          "instance_id": "FOLHA_DOC004042_SENT018::declaração::1",
           "sent_ID": "FOLHA_DOC004042_SENT018",
           "text": "Em nota, já haviam pedido \"desculpas\" pelas declarações feitas na gravação.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 55
-              }
-            ]
+            "char_start": 44,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -795,7 +544,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -803,22 +552,14 @@
           }
         },
         {
-          "instance_id": 8252,
+          "instance_id": "FOLHA_DOC000148_SENT005::declaração::1",
           "sent_ID": "FOLHA_DOC000148_SENT005",
           "text": "O ex-prefeito faz menção direta a uma declaração de Alckmin à Rádio Bandeirantes, no mês passado.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 48
-              }
-            ]
+            "char_start": 38,
+            "char_end": 48
           },
           "realization": {
             "Arg0": "de Alckmin",
@@ -832,51 +573,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 49,
-                "char_end": 59,
-                "head_token_id": 10
+                "char_end": 59
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 60,
-                "char_end": 80,
-                "head_token_id": 13
+                "char_end": 80
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 9355,
+          "instance_id": "FOLHA_DOC003104_SENT016::declaração::1",
           "sent_ID": "FOLHA_DOC003104_SENT016",
           "text": "\"[A declaração] é um sinal positivo\", disse Aloul à agência de notícias Reuters.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 14
-              }
-            ]
+            "char_start": 4,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -890,18 +612,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 18,
-                "char_end": 35,
-                "head_token_id": 8
+                "char_end": 35
               }
             ],
             "Arg2": [],
@@ -909,22 +625,14 @@
           }
         },
         {
-          "instance_id": 10025,
+          "instance_id": "FOLHA_DOC003054_SENT006::declaração::1",
           "sent_ID": "FOLHA_DOC003054_SENT006",
           "text": "As informações extraídas de material apreendido foram comparadas com declarações que o próprio Funaro forneceu à PF na fase de negociações para seu acordo de delação.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 80
-              }
-            ]
+            "char_start": 69,
+            "char_end": 80
           },
           "realization": {
             "Arg0": "o próprio Funaro",
@@ -938,51 +646,32 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 85,
-                "char_end": 101,
-                "head_token_id": 14
+                "char_end": 101
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 111,
-                "char_end": 115,
-                "head_token_id": 18
+                "char_end": 115
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 12835,
+          "instance_id": "FOLHA_DOC001150_SENT045::declaração::1",
           "sent_ID": "FOLHA_DOC001150_SENT045",
           "text": "Ao ler essa declaração, fiquei indignado.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 22
-              }
-            ]
+            "char_start": 12,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -996,7 +685,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1004,22 +693,14 @@
           }
         },
         {
-          "instance_id": 13305,
+          "instance_id": "FOLHA_DOC003183_SENT009::declaração::1",
           "sent_ID": "FOLHA_DOC003183_SENT009",
           "text": "Esta longa introdução foi feita com o propósito de comentar uma declaração de Sophie Turner sobre este assunto.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 64,
-                "char_end": 74
-              }
-            ]
+            "char_start": 64,
+            "char_end": 74
           },
           "realization": {
             "Arg0": "de Sophie Turner",
@@ -1033,29 +714,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 75,
-                "char_end": 91,
-                "head_token_id": 14
+                "char_end": 91
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 92,
-                "char_end": 110,
-                "head_token_id": 18
+                "char_end": 110
               }
             ],
             "Arg2": [],
@@ -1063,22 +732,14 @@
           }
         },
         {
-          "instance_id": 13839,
+          "instance_id": "FOLHA_DOC000045_SENT003::declaração::1",
           "sent_ID": "FOLHA_DOC000045_SENT003",
           "text": "Uma declaração de independência na Catalunha seria unilateral, não seria reconhecida.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 14
-              }
-            ]
+            "char_start": 4,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -1092,20 +753,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 15,
-                "char_end": 44,
-                "head_token_id": 4
+                "char_end": 44
               }
             ],
             "Arg2": [],
@@ -1113,22 +766,14 @@
           }
         },
         {
-          "instance_id": 14924,
+          "instance_id": "FOLHA_DOC003100_SENT004::declaração::1",
           "sent_ID": "FOLHA_DOC003100_SENT004",
           "text": "A declaração foi uma resposta ao episódio do dia anterior, quando o governador exaltou-se e dirigiu ataques aos gritos contra o deputado federal.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declaração",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ]
+            "char_start": 2,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -1142,24 +787,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 17,
-                "char_end": 57,
-                "head_token_id": 5
+                "char_end": 57
               }
             ],
             "Arg2": [],
@@ -1167,22 +800,14 @@
           }
         },
         {
-          "instance_id": 15617,
+          "instance_id": "FOLHA_DOC003092_SENT037::declaração::1",
           "sent_ID": "FOLHA_DOC003092_SENT037",
           "text": "A Folha procurou na tarde deste domingo (17) o Comando do Exército e o Ministério da Defesa para ouvi-los sobre as declarações do general.",
-          "frame_id": "f_ebceb048ebd589d2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "declarações",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 115,
-                "char_end": 126
-              }
-            ]
+            "char_start": 115,
+            "char_end": 126
           },
           "realization": {
             "Arg0": "do general",
@@ -1196,17 +821,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 127,
-                "char_end": 137,
-                "head_token_id": 32
+                "char_end": 137
               }
             ],
             "Arg1": [],
@@ -1214,7 +833,27 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obj": 1,
+          "nmod": 8,
+          "det": 2,
+          "nsubj": 2
+        },
+        "Arg1": {
+          "parataxis": 1,
+          "root": 3,
+          "acl": 1,
+          "nmod": 3,
+          "amod": 2,
+          "ccomp:speech": 1
+        },
+        "Arg2": {
+          "nmod": 1,
+          "obl": 1
+        }
+      }
     }
   ]
 }

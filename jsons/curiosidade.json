@@ -1,71 +1,50 @@
 {
   "lemma": "curiosidade",
-  "lemma_base": "curiosidade",
   "senses": [
     {
       "pt_roleset": "curiosidade.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_455f9140f0f1a254",
+          "roleset": "interest.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "interest.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/interest.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agent, causer of interest",
-              "definition": "agent, causer of interest"
-            },
-            {
-              "id": "Arg1",
-              "desc": "interested in",
-              "definition": "interested in"
-            },
-            {
-              "id": "Arg2",
-              "desc": "interested entity",
-              "definition": "interested entity"
-            },
-            {
-              "id": "Arg3",
-              "desc": "secondary-theme",
-              "definition": "secondary-theme"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/interest.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 8181,
+          "id": "Arg0",
+          "desc": "agent, causer of interest",
+          "definition": "agent, causer of interest"
+        },
+        {
+          "id": "Arg1",
+          "desc": "interested in",
+          "definition": "interested in"
+        },
+        {
+          "id": "Arg2",
+          "desc": "interested entity",
+          "definition": "interested entity"
+        },
+        {
+          "id": "Arg3",
+          "desc": "secondary-theme",
+          "definition": "secondary-theme"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003115_SENT022::curiosidade::1",
           "sent_ID": "FOLHA_DOC003115_SENT022",
           "text": "Quem chegar cedo vai poder matar a curiosidade sobre o hip hop produzido em Portugal.",
-          "frame_id": "f_455f9140f0f1a254",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "curiosidade",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 46
-              }
-            ]
+            "char_start": 35,
+            "char_end": 46
           },
           "realization": {
             "Arg0": null,
@@ -79,22 +58,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 47,
-                "char_end": 84,
-                "head_token_id": 11
+                "char_end": 84
               }
             ],
             "Arg2": [],
@@ -102,22 +71,14 @@
           }
         },
         {
-          "instance_id": 14306,
+          "instance_id": "FOLHA_DOC003182_SENT010::curiosidade::1",
           "sent_ID": "FOLHA_DOC003182_SENT010",
           "text": "Jonathan, porém, se aprofundou na habilidade por curiosidade e rapidamente aprendeu a programar e a desvendar dispositivos eletrônicos sozinho, nunca fez curso nenhum.",
-          "frame_id": "f_455f9140f0f1a254",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "curiosidade",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 60
-              }
-            ]
+            "char_start": 49,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -131,14 +92,19 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

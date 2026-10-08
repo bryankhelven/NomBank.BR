@@ -1,85 +1,50 @@
 {
   "lemma": "renda",
-  "lemma_base": "renda",
   "senses": [
     {
       "pt_roleset": "renda · acepção 1",
       "description": "1 rendimento: Preciso aju- dar na renda familiar (ESP); Brasil exibe a pior distribuição de renda do mundo (JB); deduções de despesas financeiras e imposto de renda (ANI)",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_3b735372d24e5bd5",
-          "description": "1 rendimento: Preciso aju- dar na renda familiar (ESP); Brasil exibe a pior distribuição de renda do mundo (JB); deduções de despesas financeiras e imposto de renda (ANI)",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "income.01",
-              "resource": "English NomBank",
-              "description": "wages",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/income.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "recebedor da renda",
-              "definition": "Pessoa/grupo que aufere renda; país agregador não é automaticamente recebedor."
-            },
-            {
-              "id": "Arg1",
-              "desc": "rendimento expresso",
-              "definition": "Montante de renda expresso por span distinto do REL."
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiário",
-              "definition": "Beneficiário da renda distinto do recebedor quando lexicalmente expresso."
-            },
-            {
-              "id": "Arg3",
-              "desc": "fonte da renda",
-              "definition": "Origem produtora/pagadora do rendimento explicitamente indicada."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obj": 2,
-              "obl:agent": 1,
-              "nmod": 3,
-              "obl": 1,
-              "nsubj": 2,
-              "amod": 1,
-              "acl:relcl": 1,
-              "det": 1
-            },
-            "Arg1": {
-              "parataxis": 1
-            },
-            "Arg3": {
-              "obj": 1,
-              "advcl": 1
-            }
-          }
+          "roleset": "income.01",
+          "resource": "English NomBank",
+          "description": "wages",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/income.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 863,
+          "id": "Arg0",
+          "desc": "recebedor da renda",
+          "definition": "Pessoa/grupo que aufere renda; país agregador não é automaticamente recebedor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "rendimento expresso",
+          "definition": "Montante de renda expresso por span distinto do REL."
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiário",
+          "definition": "Beneficiário da renda distinto do recebedor quando lexicalmente expresso."
+        },
+        {
+          "id": "Arg3",
+          "desc": "fonte da renda",
+          "definition": "Origem produtora/pagadora do rendimento explicitamente indicada."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003118_SENT012::renda::1",
           "sent_ID": "FOLHA_DOC003118_SENT012",
           "text": "Além de custear a expansão da rede, ela também subsidia os consumidores de baixa renda.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 86
-              }
-            ]
+            "char_start": 81,
+            "char_end": 86
           },
           "realization": {
             "Arg0": "os consumidores",
@@ -93,13 +58,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 56,
                 "char_end": 71
               }
@@ -110,22 +71,14 @@
           }
         },
         {
-          "instance_id": 2813,
+          "instance_id": "FOLHA_DOC003046_SENT013::renda::1",
           "sent_ID": "FOLHA_DOC003046_SENT013",
           "text": "Em vários países, o legado da crise financeira forçou muitas pessoas e empresas a procurarem novas formas de gerar renda extra ou subsidiar os custos de transporte.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 115,
-                "char_end": 120
-              }
-            ]
+            "char_start": 115,
+            "char_end": 120
           },
           "realization": {
             "Arg0": "muitas pessoas e empresas",
@@ -139,15 +92,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 54,
                 "char_end": 79
               }
@@ -158,22 +105,14 @@
           }
         },
         {
-          "instance_id": 3729,
+          "instance_id": "FOLHA_DOC003172_SENT087::renda::1",
           "sent_ID": "FOLHA_DOC003172_SENT087",
           "text": "A direita me aceita porque sabe que tem que fazer alguma concessão em termos de distribuição de renda, e rápido.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 96,
-                "char_end": 101
-              }
-            ]
+            "char_start": 96,
+            "char_end": 101
           },
           "realization": {
             "Arg0": null,
@@ -187,7 +126,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -195,22 +134,14 @@
           }
         },
         {
-          "instance_id": 4498,
+          "instance_id": "FOLHA_DOC002041_SENT034::renda::1",
           "sent_ID": "FOLHA_DOC002041_SENT034",
           "text": "Por aqui, tributa-se menos renda e propriedade e mais bens e serviços.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 32
-              }
-            ]
+            "char_start": 27,
+            "char_end": 32
           },
           "realization": {
             "Arg0": null,
@@ -224,7 +155,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -232,22 +163,14 @@
           }
         },
         {
-          "instance_id": 4555,
+          "instance_id": "FOLHA_DOC003128_SENT017::renda::1",
           "sent_ID": "FOLHA_DOC003128_SENT017",
           "text": "Um trabalho publicado em 2016 pelo pesquisador Pedro Souza, por exemplo, concluiu que a renda apropriada pelos 15% mais afluentes ficou de estável a ligeiramente maior entre 2006 e 2013.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 93
-              }
-            ]
+            "char_start": 88,
+            "char_end": 93
           },
           "realization": {
             "Arg0": "pelos 15% mais afluentes",
@@ -261,17 +184,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 105,
                 "char_end": 129
               }
@@ -282,22 +197,14 @@
           }
         },
         {
-          "instance_id": 4606,
+          "instance_id": "FOLHA_DOC002036_SENT020::renda::1",
           "sent_ID": "FOLHA_DOC002036_SENT020",
           "text": "Os 40% logo abaixo, dos quais viria o grosso da arrecadação faltante, ganham só 15% da renda média dos mais ricos.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 87,
-                "char_end": 92
-              }
-            ]
+            "char_start": 87,
+            "char_end": 92
           },
           "realization": {
             "Arg0": "dos mais ricos",
@@ -311,15 +218,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28,
-                  29
-                ],
                 "char_start": 99,
                 "char_end": 113
               }
@@ -330,22 +231,14 @@
           }
         },
         {
-          "instance_id": 4743,
+          "instance_id": "FOLHA_DOC002041_SENT023::renda::1",
           "sent_ID": "FOLHA_DOC002041_SENT023",
           "text": "Foi esta combinação que permitiu a Joesley Batista pagar tão pouco imposto para tamanha renda total.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 93
-              }
-            ]
+            "char_start": 88,
+            "char_end": 93
           },
           "realization": {
             "Arg0": "Joesley Batista",
@@ -359,13 +252,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 35,
                 "char_end": 50
               }
@@ -376,22 +265,14 @@
           }
         },
         {
-          "instance_id": 5030,
+          "instance_id": "FOLHA_DOC003144_SENT012::renda::1",
           "sent_ID": "FOLHA_DOC003144_SENT012",
           "text": "Até existem razões pragmáticas para que se tente reduzir a discrepância de renda e não só a miséria.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 75,
-                "char_end": 80
-              }
-            ]
+            "char_start": 75,
+            "char_end": 80
           },
           "realization": {
             "Arg0": null,
@@ -405,7 +286,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -413,22 +294,14 @@
           }
         },
         {
-          "instance_id": 5176,
+          "instance_id": "FOLHA_DOC003140_SENT072::renda::1",
           "sent_ID": "FOLHA_DOC003140_SENT072",
           "text": "Portanto, pode ser um muro entre dois países pobres: a renda per capita no Quênia é de US$ 1.350, dez vezes mais do que a da Somália.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 60
-              }
-            ]
+            "char_start": 55,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -442,15 +315,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 84,
                 "char_end": 96
               }
@@ -460,22 +328,14 @@
           }
         },
         {
-          "instance_id": 6073,
+          "instance_id": "FOLHA_DOC003040_SENT014::renda::1",
           "sent_ID": "FOLHA_DOC003040_SENT014",
           "text": "A manobra põe em risco o que deveria ser o objetivo de todos: punir, se necessário, os maus administradores, mas preservando, tanto quanto possível, uma estrutura que gera renda e empregos.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              35
-            ],
-            "spans": [
-              {
-                "char_start": 172,
-                "char_end": 177
-              }
-            ]
+            "char_start": 172,
+            "char_end": 177
           },
           "realization": {
             "Arg0": null,
@@ -489,16 +349,12 @@
             "Arg2": null,
             "Arg3": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  31,
-                  32
-                ],
                 "char_start": 149,
                 "char_end": 162
               }
@@ -506,22 +362,14 @@
           }
         },
         {
-          "instance_id": 6505,
+          "instance_id": "FOLHA_DOC003140_SENT018::renda::1",
           "sent_ID": "FOLHA_DOC003140_SENT018",
           "text": "Há uma crise econômica, com aumento da desigualdade de renda e uma sensação de impotência das pessoas.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 60
-              }
-            ]
+            "char_start": 55,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -535,7 +383,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -543,22 +391,14 @@
           }
         },
         {
-          "instance_id": 7711,
+          "instance_id": "FOLHA_DOC003180_SENT004::renda::1",
           "sent_ID": "FOLHA_DOC003180_SENT004",
           "text": "Todos os dias, somos bombardeados por dados, estudos e pesquisas que apontam para as diversas facetas das nossas enormes iniquidades: renda, educação, saúde, saneamento, segurança, moradia.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 134,
-                "char_end": 139
-              }
-            ]
+            "char_start": 134,
+            "char_end": 139
           },
           "realization": {
             "Arg0": null,
@@ -572,7 +412,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -580,22 +420,14 @@
           }
         },
         {
-          "instance_id": 7843,
+          "instance_id": "FOLHA_DOC002017_SENT020::renda::1",
           "sent_ID": "FOLHA_DOC002017_SENT020",
           "text": "Guto Schiavon, diretor de operações da Foxbit, explica que a empresa exige ainda comprovação de renda para transações acima de R$ 25 mil.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 96,
-                "char_end": 101
-              }
-            ]
+            "char_start": 96,
+            "char_end": 101
           },
           "realization": {
             "Arg0": null,
@@ -609,7 +441,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -617,22 +449,14 @@
           }
         },
         {
-          "instance_id": 8490,
+          "instance_id": "FOLHA_DOC003118_SENT023::renda::1",
           "sent_ID": "FOLHA_DOC003118_SENT023",
           "text": "Eles usaram dados do Censo de 2010 e simularam qual seria o índice de Gini (indicador de distribuição de renda) caso os casamentos tivessem as mesmas características de heterogeneidade de 1970.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 105,
-                "char_end": 110
-              }
-            ]
+            "char_start": 105,
+            "char_end": 110
           },
           "realization": {
             "Arg0": null,
@@ -646,7 +470,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -654,22 +478,14 @@
           }
         },
         {
-          "instance_id": 8613,
+          "instance_id": "FOLHA_DOC003128_SENT006::renda::1",
           "sent_ID": "FOLHA_DOC003128_SENT006",
           "text": "Entretanto acreditava-se que a base da pirâmide social, e não o topo , havia se apropriado da maior parte da renda gerada.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 109,
-                "char_end": 114
-              }
-            ]
+            "char_start": 109,
+            "char_end": 114
           },
           "realization": {
             "Arg0": "a base da pirâmide social",
@@ -683,17 +499,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 29,
                 "char_end": 54
               }
@@ -704,22 +512,14 @@
           }
         },
         {
-          "instance_id": 8911,
+          "instance_id": "FOLHA_DOC002036_SENT018::renda::1",
           "sent_ID": "FOLHA_DOC002036_SENT018",
           "text": "Digamos que se consiga, com impostos, retirar metade da renda dos 10% mais ricos.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 61
-              }
-            ]
+            "char_start": 56,
+            "char_end": 61
           },
           "realization": {
             "Arg0": "dos 10% mais ricos",
@@ -733,17 +533,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 62,
                 "char_end": 80
               }
@@ -754,22 +546,14 @@
           }
         },
         {
-          "instance_id": 9258,
+          "instance_id": "FOLHA_DOC003144_SENT002::renda::1",
           "sent_ID": "FOLHA_DOC003144_SENT002",
           "text": "Estudo de Marc Morgan, do World Wealth and Income Database, instituto de pesquisa codirigido pelo economista Thomas Piketty, mostra que a desigualdade de renda no Brasil não caiu entre 2001 e 2015.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 154,
-                "char_end": 159
-              }
-            ]
+            "char_start": 154,
+            "char_end": 159
           },
           "realization": {
             "Arg0": null,
@@ -783,7 +567,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -791,22 +575,14 @@
           }
         },
         {
-          "instance_id": 10862,
+          "instance_id": "FOLHA_DOC002036_SENT011::renda::1",
           "sent_ID": "FOLHA_DOC002036_SENT011",
           "text": "Estatísticas sobre desigualdade de renda e patrimônio, em franco aprimoramento após trabalhos como o de Thomas Piketty, tratam esses dois mundos como se fossem um.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 40
-              }
-            ]
+            "char_start": 35,
+            "char_end": 40
           },
           "realization": {
             "Arg0": null,
@@ -820,7 +596,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -828,22 +604,14 @@
           }
         },
         {
-          "instance_id": 11043,
+          "instance_id": "FOLHA_DOC003310_SENT004::renda::1",
           "sent_ID": "FOLHA_DOC003310_SENT004",
           "text": "A desigualdade de renda, por outro lado, mudou menos do que pensávamos.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 23
-              }
-            ]
+            "char_start": 18,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -857,7 +625,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -865,22 +633,14 @@
           }
         },
         {
-          "instance_id": 11208,
+          "instance_id": "FOLHA_DOC003035_SENT160::renda::1",
           "sent_ID": "FOLHA_DOC003035_SENT160",
           "text": "Meu patrimônio é compatível com a renda familiar e vivo no limite do razoável.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 39
-              }
-            ]
+            "char_start": 34,
+            "char_end": 39
           },
           "realization": {
             "Arg0": "familiar",
@@ -894,12 +654,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 40,
                 "char_end": 48
               }
@@ -910,22 +667,14 @@
           }
         },
         {
-          "instance_id": 11683,
+          "instance_id": "FOLHA_DOC000023_SENT011::renda::1",
           "sent_ID": "FOLHA_DOC000023_SENT011",
           "text": "Os private, que são pessoas físicas de alta renda, respondiam por R$ 61,4 bilhões (27,8%).",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 49
-              }
-            ]
+            "char_start": 44,
+            "char_end": 49
           },
           "realization": {
             "Arg0": "pessoas físicas",
@@ -939,13 +688,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 20,
                 "char_end": 35
               }
@@ -956,22 +701,14 @@
           }
         },
         {
-          "instance_id": 12137,
+          "instance_id": "FOLHA_DOC004070_SENT024::renda::1",
           "sent_ID": "FOLHA_DOC004070_SENT024",
           "text": "Muitos PMs costumam fazer os chamados bicos, trabalhando principalmente como seguranças privados, para complementar suas rendas.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "rendas",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 121,
-                "char_end": 127
-              }
-            ]
+            "char_start": 121,
+            "char_end": 127
           },
           "realization": {
             "Arg0": "suas",
@@ -985,12 +722,9 @@
             "Arg2": null,
             "Arg3": "advcl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 116,
                 "char_end": 120
               }
@@ -999,13 +733,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 45,
                 "char_end": 96
               }
@@ -1013,22 +740,14 @@
           }
         },
         {
-          "instance_id": 12698,
+          "instance_id": "FOLHA_DOC003193_SENT010::renda::1",
           "sent_ID": "FOLHA_DOC003193_SENT010",
           "text": "O programa para famílias de baixa renda da SO+MA também dá benefícios a quem recicla.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 39
-              }
-            ]
+            "char_start": 34,
+            "char_end": 39
           },
           "realization": {
             "Arg0": "famílias",
@@ -1042,12 +761,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 16,
                 "char_end": 24
               }
@@ -1058,22 +774,14 @@
           }
         },
         {
-          "instance_id": 12967,
+          "instance_id": "FOLHA_DOC003144_SENT014::renda::1",
           "sent_ID": "FOLHA_DOC003144_SENT014",
           "text": "Mas o fato é que é possível reduzir a pobreza mesmo sem alterar a concentração de renda.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 87
-              }
-            ]
+            "char_start": 82,
+            "char_end": 87
           },
           "realization": {
             "Arg0": null,
@@ -1087,7 +795,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1095,22 +803,14 @@
           }
         },
         {
-          "instance_id": 13510,
+          "instance_id": "FOLHA_DOC003128_SENT028::renda::1",
           "sent_ID": "FOLHA_DOC003128_SENT028",
           "text": "É evidente, por fim, que renda e patrimônio são pouco tributados no Brasil, onde a carga de impostos se concentra em demasia no consumo de bens e serviços.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 30
-              }
-            ]
+            "char_start": 25,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -1124,7 +824,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1132,22 +832,14 @@
           }
         },
         {
-          "instance_id": 14082,
+          "instance_id": "FOLHA_DOC003128_SENT019::renda::1",
           "sent_ID": "FOLHA_DOC003128_SENT019",
           "text": "Nele se aponta que os 10% mais ricos da população ficaram com descomunais 54,3% da renda gerada em 2001 e 55,3% em 2015.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 88
-              }
-            ]
+            "char_start": 83,
+            "char_end": 88
           },
           "realization": {
             "Arg0": "os 10% mais ricos da população",
@@ -1161,19 +853,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 19,
                 "char_end": 49
               }
@@ -1184,22 +866,14 @@
           }
         },
         {
-          "instance_id": 14122,
+          "instance_id": "FOLHA_DOC003049_SENT049::renda::1",
           "sent_ID": "FOLHA_DOC003049_SENT049",
           "text": "De fato, a redistribuição de renda durante os governos petistas existiu, mas foi muito pequena.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 34
-              }
-            ]
+            "char_start": 29,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -1213,7 +887,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1221,22 +895,14 @@
           }
         },
         {
-          "instance_id": 14998,
+          "instance_id": "FOLHA_DOC001672_SENT021::renda::1",
           "sent_ID": "FOLHA_DOC001672_SENT021",
           "text": "A renda per capita de Portugal e da Espanha voltou ao seu nível de 2007.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 7
-              }
-            ]
+            "char_start": 2,
+            "char_end": 7
           },
           "realization": {
             "Arg0": null,
@@ -1250,7 +916,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1258,22 +924,14 @@
           }
         },
         {
-          "instance_id": 15396,
+          "instance_id": "FOLHA_DOC001095_SENT056::renda::1",
           "sent_ID": "FOLHA_DOC001095_SENT056",
           "text": "Estranha sociedade essa, que fica transferindo renda entre grupos que formam a metade mais rica do país.",
-          "frame_id": "f_3b735372d24e5bd5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "renda",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 52
-              }
-            ]
+            "char_start": 47,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -1287,14 +945,33 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obj": 2,
+          "obl:agent": 1,
+          "nmod": 3,
+          "obl": 1,
+          "nsubj": 2,
+          "amod": 1,
+          "acl:relcl": 1,
+          "det": 1
+        },
+        "Arg1": {
+          "parataxis": 1
+        },
+        "Arg3": {
+          "obj": 1,
+          "advcl": 1
+        }
+      }
     }
   ]
 }

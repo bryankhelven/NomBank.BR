@@ -1,63 +1,42 @@
 {
   "lemma": "pseudo-consciência",
-  "lemma_base": "pseudo-consciência",
   "senses": [
     {
       "pt_roleset": "pseudo-consciência · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_6772c970a72c024e",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 14462,
+          "instance_id": "FOLHA_DOC000094_SENT022::pseudo-consciência::1",
           "sent_ID": "FOLHA_DOC000094_SENT022",
           "text": "Para eles Caetano agora é passé, politicamente incorreto, instrumento de dominação da pseudo-consciência.",
-          "frame_id": "f_6772c970a72c024e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pseudo-consciência",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 86,
-                "char_end": 104
-              }
-            ]
+            "char_start": 86,
+            "char_end": 104
           },
           "realization": {
             "Arg0": null,
@@ -71,23 +50,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  13
-                ],
                 "char_start": 73,
-                "char_end": 82,
-                "head_token_id": 13
+                "char_end": 82
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

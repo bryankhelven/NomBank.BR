@@ -1,78 +1,50 @@
 {
   "lemma": "pagamento",
-  "lemma_base": "pagamento",
   "senses": [
     {
       "pt_roleset": "pagamento.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_61927d557f6ddd39",
+          "roleset": "payment.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "payment.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/payment.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "payer or buyer",
-              "definition": "payer or buyer"
-            },
-            {
-              "id": "Arg1",
-              "desc": "money",
-              "definition": "money"
-            },
-            {
-              "id": "Arg2",
-              "desc": "person being paid",
-              "definition": "person being paid"
-            },
-            {
-              "id": "Arg3",
-              "desc": "commodity, paid for what",
-              "definition": "commodity, paid for what"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg3": {
-              "nmod": 8
-            },
-            "Arg2": {
-              "nmod": 5
-            },
-            "Arg0": {
-              "nsubj": 3,
-              "obl:agent": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/payment.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 919,
+          "id": "Arg0",
+          "desc": "payer or buyer",
+          "definition": "payer or buyer"
+        },
+        {
+          "id": "Arg1",
+          "desc": "money",
+          "definition": "money"
+        },
+        {
+          "id": "Arg2",
+          "desc": "person being paid",
+          "definition": "person being paid"
+        },
+        {
+          "id": "Arg3",
+          "desc": "commodity, paid for what",
+          "definition": "commodity, paid for what"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002012_SENT019::pagamento::1",
           "sent_ID": "FOLHA_DOC002012_SENT019",
           "text": "Terceiro, será que os bancos centrais perderiam o controle dos pagamentos caso moedas como o bitcoin, emitidas pelo setor privado, vierem a decolar?",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 73
-              }
-            ]
+            "char_start": 63,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -86,7 +58,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -94,22 +66,14 @@
           }
         },
         {
-          "instance_id": 955,
+          "instance_id": "FOLHA_DOC003097_SENT008::pagamento::1",
           "sent_ID": "FOLHA_DOC003097_SENT008",
           "text": "A empresa brasileira está sendo investigada por pagamentos de suborno nos Estados Unidos, Suíça e vários países latino-americanos, no contexto de um escândalo de corrupção que gerou uma profunda crise política no Brasil.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 58
-              }
-            ]
+            "char_start": 48,
+            "char_end": 58
           },
           "realization": {
             "Arg0": null,
@@ -123,40 +87,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 59,
-                "char_end": 69,
-                "head_token_id": 10
+                "char_end": 69
               }
             ]
           }
         },
         {
-          "instance_id": 965,
+          "instance_id": "FOLHA_DOC002033_SENT007::pagamento::1",
           "sent_ID": "FOLHA_DOC002033_SENT007",
           "text": "Por isso, não há interesse em conceder benefícios para estimular seus pagamentos, como ocorre com os débitos com a Receita Federal.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 80
-              }
-            ]
+            "char_start": 70,
+            "char_end": 80
           },
           "realization": {
             "Arg0": null,
@@ -170,7 +121,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -178,22 +129,14 @@
           }
         },
         {
-          "instance_id": 1023,
+          "instance_id": "FOLHA_DOC000043_SENT011::pagamento::1",
           "sent_ID": "FOLHA_DOC000043_SENT011",
           "text": "Conselho Diretor não aprovou o pagamento e a nota foi cancelada.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 40
-              }
-            ]
+            "char_start": 31,
+            "char_end": 40
           },
           "realization": {
             "Arg0": null,
@@ -207,7 +150,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -215,22 +158,14 @@
           }
         },
         {
-          "instance_id": 1492,
+          "instance_id": "FOLHA_DOC003054_SENT010::pagamento::1",
           "sent_ID": "FOLHA_DOC003054_SENT010",
           "text": "Mais pagamentos ocorreram por meio de depósitos a empresas e \"laranjas\" vinculados ao doleiro Claudio Fernando Barbosa.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 15
-              }
-            ]
+            "char_start": 5,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -244,49 +179,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  12,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 48,
-                "char_end": 118,
-                "head_token_id": 9
+                "char_end": 118
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 1864,
+          "instance_id": "FOLHA_DOC003157_SENT045::pagamento::1",
           "sent_ID": "FOLHA_DOC003157_SENT045",
           "text": "O código de ética do escritório, que segue padrões dos Estados Unidos, proíbe o pagamento de passagens a funcionário público.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 89
-              }
-            ]
+            "char_start": 80,
+            "char_end": 89
           },
           "realization": {
             "Arg0": null,
@@ -300,51 +213,32 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 103,
-                "char_end": 124,
-                "head_token_id": 23
+                "char_end": 124
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 90,
-                "char_end": 102,
-                "head_token_id": 21
+                "char_end": 102
               }
             ]
           }
         },
         {
-          "instance_id": 3314,
+          "instance_id": "FOLHA_DOC000069_SENT005::pagamento::1",
           "sent_ID": "FOLHA_DOC000069_SENT005",
           "text": "O pagamento será realizado no dia 16.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -358,7 +252,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -366,22 +260,14 @@
           }
         },
         {
-          "instance_id": 5147,
+          "instance_id": "FOLHA_DOC002025_SENT038::pagamento::1",
           "sent_ID": "FOLHA_DOC002025_SENT038",
           "text": "Da obrigatoriedade de publicação das folhas de pagamento dos agentes públicos.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 56
-              }
-            ]
+            "char_start": 47,
+            "char_end": 56
           },
           "realization": {
             "Arg0": null,
@@ -395,7 +281,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -403,22 +289,14 @@
           }
         },
         {
-          "instance_id": 5720,
+          "instance_id": "FOLHA_DOC004087_SENT008::pagamento::1",
           "sent_ID": "FOLHA_DOC004087_SENT008",
           "text": "Com isso, espera-se que consiga regularizar o pagamento dos servidores, atrasado há mais de um ano.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 55
-              }
-            ]
+            "char_start": 46,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -432,41 +310,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 56,
-                "char_end": 70,
-                "head_token_id": 13
+                "char_end": 70
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 7991,
+          "instance_id": "FOLHA_DOC003182_SENT021::pagamento::1",
           "sent_ID": "FOLHA_DOC003182_SENT021",
           "text": "Foi a repercussão de suas ações no universo digital -ganhou campeonatos mundiais de hackers- que gerou o convite para trabalhar na empresa de pagamentos com sede em São Paulo.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 142,
-                "char_end": 152
-              }
-            ]
+            "char_start": 142,
+            "char_end": 152
           },
           "realization": {
             "Arg0": null,
@@ -480,7 +344,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -488,22 +352,14 @@
           }
         },
         {
-          "instance_id": 8156,
+          "instance_id": "FOLHA_DOC001412_SENT017::pagamento::1",
           "sent_ID": "FOLHA_DOC001412_SENT017",
           "text": "O então superintendente da Odebrecht no Panamá, André Rabello, aparece como ordenador dos pagamentos.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 100
-              }
-            ]
+            "char_start": 90,
+            "char_end": 100
           },
           "realization": {
             "Arg0": null,
@@ -517,7 +373,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -525,22 +381,14 @@
           }
         },
         {
-          "instance_id": 8540,
+          "instance_id": "FOLHA_DOC003028_SENT012::pagamento::1",
           "sent_ID": "FOLHA_DOC003028_SENT012",
           "text": "Foi essa capacidade de corrigir a rota durante o percurso que garantiu à Asaas, empresa de gestão de pagamentos e cobranças, seu sucesso.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 101,
-                "char_end": 111
-              }
-            ]
+            "char_start": 101,
+            "char_end": 111
           },
           "realization": {
             "Arg0": null,
@@ -554,7 +402,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -562,22 +410,14 @@
           }
         },
         {
-          "instance_id": 9511,
+          "instance_id": "FOLHA_DOC003149_SENT025::pagamento::1",
           "sent_ID": "FOLHA_DOC003149_SENT025",
           "text": "Parte do pagamento foi em dinheiro, a outra parte, em obras.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 18
-              }
-            ]
+            "char_start": 9,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -591,7 +431,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -599,22 +439,14 @@
           }
         },
         {
-          "instance_id": 9834,
+          "instance_id": "FOLHA_DOC003069_SENT040::pagamento::1",
           "sent_ID": "FOLHA_DOC003069_SENT040",
           "text": "Parte desse dinheiro também irá para a Receita Federal em pagamento do Imposto de Renda sobre os rendimentos.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 67
-              }
-            ]
+            "char_start": 58,
+            "char_end": 67
           },
           "realization": {
             "Arg0": null,
@@ -628,46 +460,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 68,
-                "char_end": 108,
-                "head_token_id": 15
+                "char_end": 108
               }
             ]
           }
         },
         {
-          "instance_id": 9910,
+          "instance_id": "FOLHA_DOC002012_SENT032::pagamento::1",
           "sent_ID": "FOLHA_DOC002012_SENT032",
           "text": "Protocolos mais eficientes para pagamentos eletrônicos certamente ajudariam, e há muito a aprender com a tecnologia do bitcoin.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 42
-              }
-            ]
+            "char_start": 32,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -681,7 +494,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -689,22 +502,14 @@
           }
         },
         {
-          "instance_id": 10032,
+          "instance_id": "FOLHA_DOC004082_SENT037::pagamento::1",
           "sent_ID": "FOLHA_DOC004082_SENT037",
           "text": "Esse movimento é negativo porque, quando a reserva é feita no site do próprio hotel, não há pagamento de comissão.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 101
-              }
-            ]
+            "char_start": 92,
+            "char_end": 101
           },
           "realization": {
             "Arg0": null,
@@ -718,40 +523,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 102,
-                "char_end": 113,
-                "head_token_id": 24
+                "char_end": 113
               }
             ]
           }
         },
         {
-          "instance_id": 10043,
+          "instance_id": "FOLHA_DOC003019_SENT010::pagamento::1",
           "sent_ID": "FOLHA_DOC003019_SENT010",
           "text": "Em média, foram quatro pagamentos mensais em cada caso em que o pagamento não foi suspenso.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 33
-              }
-            ]
+            "char_start": 23,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -765,7 +557,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -773,22 +565,14 @@
           }
         },
         {
-          "instance_id": 10045,
+          "instance_id": "FOLHA_DOC003019_SENT010::pagamento::2",
           "sent_ID": "FOLHA_DOC003019_SENT010",
           "text": "Em média, foram quatro pagamentos mensais em cada caso em que o pagamento não foi suspenso.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 64,
-                "char_end": 73
-              }
-            ]
+            "char_start": 64,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -802,7 +586,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -810,22 +594,14 @@
           }
         },
         {
-          "instance_id": 10051,
+          "instance_id": "FOLHA_DOC001394_SENT022::pagamento::1",
           "sent_ID": "FOLHA_DOC001394_SENT022",
           "text": "O Tesouro alega que o rombo em 12 meses está inflado, porque o governo antecipou o pagamento de precatórios.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 92
-              }
-            ]
+            "char_start": 83,
+            "char_end": 92
           },
           "realization": {
             "Arg0": "o governo",
@@ -839,50 +615,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 61,
-                "char_end": 70,
-                "head_token_id": 15
+                "char_end": 70
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  19,
-                  20
-                ],
                 "char_start": 93,
-                "char_end": 107,
-                "head_token_id": 20
+                "char_end": 107
               }
             ]
           }
         },
         {
-          "instance_id": 11325,
+          "instance_id": "FOLHA_DOC003269_SENT020::pagamento::1",
           "sent_ID": "FOLHA_DOC003269_SENT020",
           "text": "O governo Luiz Fernando Pezão vem atrasando salários de servidores e o pagamento de faturas de fornecedores.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 71,
-                "char_end": 80
-              }
-            ]
+            "char_start": 71,
+            "char_end": 80
           },
           "realization": {
             "Arg0": "O governo Luiz Fernando Pezão",
@@ -896,63 +654,37 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
-                "char_end": 29,
-                "head_token_id": 2
+                "char_end": 29
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 92,
-                "char_end": 107,
-                "head_token_id": 17
+                "char_end": 107
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 81,
-                "char_end": 91,
-                "head_token_id": 15
+                "char_end": 91
               }
             ]
           }
         },
         {
-          "instance_id": 11351,
+          "instance_id": "FOLHA_DOC003104_SENT013::pagamento::1",
           "sent_ID": "FOLHA_DOC003104_SENT013",
           "text": "O presidente chegou a cortar os pagamentos a Israel pela eletricidade que fornece a Gaza.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 42
-              }
-            ]
+            "char_start": 32,
+            "char_end": 42
           },
           "realization": {
             "Arg0": "O presidente",
@@ -966,65 +698,37 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 12,
-                "head_token_id": 2
+                "char_end": 12
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 43,
-                "char_end": 51,
-                "head_token_id": 9
+                "char_end": 51
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 52,
-                "char_end": 88,
-                "head_token_id": 12
+                "char_end": 88
               }
             ]
           }
         },
         {
-          "instance_id": 11534,
+          "instance_id": "FOLHA_DOC003182_SENT035::pagamento::1",
           "sent_ID": "FOLHA_DOC003182_SENT035",
           "text": "Empresas como a Pagar.me funcionam como intermediárias entre os empreendedores e lojas virtuais e as grandes empresas de pagamento (como Cielo e Rede), que possuem a maioria das máquinas para pagamento em lojas físicas.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 121,
-                "char_end": 130
-              }
-            ]
+            "char_start": 121,
+            "char_end": 130
           },
           "realization": {
             "Arg0": null,
@@ -1038,7 +742,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1046,22 +750,14 @@
           }
         },
         {
-          "instance_id": 11536,
+          "instance_id": "FOLHA_DOC003182_SENT035::pagamento::2",
           "sent_ID": "FOLHA_DOC003182_SENT035",
           "text": "Empresas como a Pagar.me funcionam como intermediárias entre os empreendedores e lojas virtuais e as grandes empresas de pagamento (como Cielo e Rede), que possuem a maioria das máquinas para pagamento em lojas físicas.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              35
-            ],
-            "spans": [
-              {
-                "char_start": 192,
-                "char_end": 201
-              }
-            ]
+            "char_start": 192,
+            "char_end": 201
           },
           "realization": {
             "Arg0": null,
@@ -1075,7 +771,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1083,22 +779,14 @@
           }
         },
         {
-          "instance_id": 11580,
+          "instance_id": "FOLHA_DOC002012_SENT005::pagamento::1",
           "sent_ID": "FOLHA_DOC002012_SENT005",
           "text": "Nos bastidores, há crescente inquietação quanto ao grau de desordenamento que a tecnologia pode causar nos bancos e no sistema de pagamentos.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 130,
-                "char_end": 140
-              }
-            ]
+            "char_start": 130,
+            "char_end": 140
           },
           "realization": {
             "Arg0": null,
@@ -1112,7 +800,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1120,22 +808,14 @@
           }
         },
         {
-          "instance_id": 11652,
+          "instance_id": "FOLHA_DOC000103_SENT081::pagamento::1",
           "sent_ID": "FOLHA_DOC000103_SENT081",
           "text": "De 10% a 15% da folha de pagamento vão para o seguro-saúde.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 34
-              }
-            ]
+            "char_start": 25,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -1149,7 +829,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1157,22 +837,14 @@
           }
         },
         {
-          "instance_id": 11934,
+          "instance_id": "FOLHA_DOC003166_SENT014::pagamento::1",
           "sent_ID": "FOLHA_DOC003166_SENT014",
           "text": "Em geral, as empresas oferecem descontos na renovação da apólice e também mais facilidades no pagamento da franquia em caso de sinistro, quando o cliente utiliza o seu cartão.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 94,
-                "char_end": 103
-              }
-            ]
+            "char_start": 94,
+            "char_end": 103
           },
           "realization": {
             "Arg0": null,
@@ -1186,41 +858,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 104,
-                "char_end": 115,
-                "head_token_id": 23
+                "char_end": 115
               }
             ]
           }
         },
         {
-          "instance_id": 12544,
+          "instance_id": "FOLHA_DOC002012_SENT009::pagamento::1",
           "sent_ID": "FOLHA_DOC002012_SENT009",
           "text": "Em lugar disso, a tecnologia levou a uma melhora acentuada nos serviços aos clientes e a uma queda forte no custo dos pagamentos.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 128
-              }
-            ]
+            "char_start": 118,
+            "char_end": 128
           },
           "realization": {
             "Arg0": null,
@@ -1234,7 +892,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1242,22 +900,14 @@
           }
         },
         {
-          "instance_id": 12550,
+          "instance_id": "FOLHA_DOC000017_SENT008::pagamento::1",
           "sent_ID": "FOLHA_DOC000017_SENT008",
           "text": "Embora o e-mail indique emissão de nota fiscal para o serviço e aprovação para o pagamento, a assessoria do Comitê Rio-16 afirma que o pagamento não foi feito.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 90
-              }
-            ]
+            "char_start": 81,
+            "char_end": 90
           },
           "realization": {
             "Arg0": null,
@@ -1271,7 +921,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1279,22 +929,14 @@
           }
         },
         {
-          "instance_id": 12552,
+          "instance_id": "FOLHA_DOC000017_SENT008::pagamento::2",
           "sent_ID": "FOLHA_DOC000017_SENT008",
           "text": "Embora o e-mail indique emissão de nota fiscal para o serviço e aprovação para o pagamento, a assessoria do Comitê Rio-16 afirma que o pagamento não foi feito.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 135,
-                "char_end": 144
-              }
-            ]
+            "char_start": 135,
+            "char_end": 144
           },
           "realization": {
             "Arg0": null,
@@ -1308,7 +950,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1316,22 +958,14 @@
           }
         },
         {
-          "instance_id": 13788,
+          "instance_id": "FOLHA_DOC002012_SENT021::pagamento::1",
           "sent_ID": "FOLHA_DOC002012_SENT021",
           "text": "Os bancos centrais também temem que sua capacidade de monitorar o sistema de pagamentos se reduziria.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamentos",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 87
-              }
-            ]
+            "char_start": 77,
+            "char_end": 87
           },
           "realization": {
             "Arg0": null,
@@ -1345,7 +979,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1353,22 +987,14 @@
           }
         },
         {
-          "instance_id": 14008,
+          "instance_id": "FOLHA_DOC000164_SENT005::pagamento::1",
           "sent_ID": "FOLHA_DOC000164_SENT005",
           "text": "O pagamento deve ser feito pela empresa até dois dias antes do recesso.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": "pela empresa",
@@ -1382,17 +1008,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 27,
-                "char_end": 39,
-                "head_token_id": 8
+                "char_end": 39
               }
             ],
             "Arg1": [],
@@ -1401,22 +1021,14 @@
           }
         },
         {
-          "instance_id": 15386,
+          "instance_id": "FOLHA_DOC002006_SENT016::pagamento::1",
           "sent_ID": "FOLHA_DOC002006_SENT016",
           "text": "Ele pede a inclusão das moedas virtuais e programas de milhagem aéreas na definição de \"arranjos de pagamento\" supervisionados pelo Banco Central.",
-          "frame_id": "f_61927d557f6ddd39",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pagamento",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 100,
-                "char_end": 109
-              }
-            ]
+            "char_start": 100,
+            "char_end": 109
           },
           "realization": {
             "Arg0": null,
@@ -1430,14 +1042,26 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg3": {
+          "nmod": 8
+        },
+        "Arg2": {
+          "nmod": 5
+        },
+        "Arg0": {
+          "nsubj": 3,
+          "obl:agent": 1
+        }
+      }
     }
   ]
 }

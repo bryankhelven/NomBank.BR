@@ -1,70 +1,45 @@
 {
   "lemma": "cotação",
-  "lemma_base": "cotação",
   "senses": [
     {
       "pt_roleset": "cotação.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_917c3496410a96d5",
+          "roleset": "quotation.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "quotation.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/quotation.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "quoter",
-              "definition": "quoter"
-            },
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            },
-            {
-              "id": "Arg2",
-              "desc": "source",
-              "definition": "source"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg1": {
-              "amod": 1,
-              "acl": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/quotation.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 826,
+          "id": "Arg0",
+          "desc": "quoter",
+          "definition": "quoter"
+        },
+        {
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        },
+        {
+          "id": "Arg2",
+          "desc": "source",
+          "definition": "source"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002015_SENT034::cotação::1",
           "sent_ID": "FOLHA_DOC002015_SENT034",
           "text": "Por fim, depois da relevante ressalva, a matemática que comprara as duas cotações.",
-          "frame_id": "f_917c3496410a96d5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cotações",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 81
-              }
-            ]
+            "char_start": 73,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -76,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1721,
+          "instance_id": "FOLHA_DOC003166_SENT017::cotação::1",
           "sent_ID": "FOLHA_DOC003166_SENT017",
           "text": "Por isso, é importante que o consumidor peça diferentes cotações ao corretor.",
-          "frame_id": "f_917c3496410a96d5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cotações",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 64
-              }
-            ]
+            "char_start": 56,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "o consumidor",
@@ -110,48 +77,31 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 27,
-                "char_end": 39,
-                "head_token_id": 8
+                "char_end": 39
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 45,
-                "char_end": 55,
-                "head_token_id": 10
+                "char_end": 55
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4851,
+          "instance_id": "FOLHA_DOC002015_SENT013::cotação::1",
           "sent_ID": "FOLHA_DOC002015_SENT013",
           "text": "Voltando à pergunta feita pela Mariana, é preciso dizer que uma das cotações a ela oferecidas carece de correção.",
-          "frame_id": "f_917c3496410a96d5",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cotações",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 76
-              }
-            ]
+            "char_start": 68,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -163,24 +113,27 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 77,
-                "char_end": 93,
-                "head_token_id": 20
+                "char_end": 93
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg1": {
+          "amod": 1,
+          "acl": 1
+        }
+      }
     }
   ]
 }

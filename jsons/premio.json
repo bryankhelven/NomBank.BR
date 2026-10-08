@@ -1,98 +1,50 @@
 {
   "lemma": "prêmio",
-  "lemma_base": "prêmio",
   "senses": [
     {
       "pt_roleset": "prêmio.03",
       "description": "recompensa conferida a quem se distingue em competição, jogo ou concurso",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_8639a0417ae43994",
-          "description": "recompensa conferida a quem se distingue em competição, jogo ou concurso",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "prize.01",
-              "resource": "English NomBank",
-              "description": "give an award",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/prize.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "quem concede a recompensa",
-              "definition": "quem concede a recompensa"
-            },
-            {
-              "id": "Arg1",
-              "desc": "recompensa/tipo/nome independente de REL",
-              "definition": "recompensa/tipo/nome independente de REL"
-            },
-            {
-              "id": "Arg2",
-              "desc": "recebedor/candidato da recompensa",
-              "definition": "recebedor/candidato da recompensa"
-            },
-            {
-              "id": "Arg3",
-              "desc": "motivo/feito pelo qual se premia",
-              "definition": "motivo/feito pelo qual se premia"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 3,
-              "obl": 1,
-              "obl:agent": 2
-            },
-            "Arg1": {
-              "amod": 2,
-              "nmod": 5
-            },
-            "Arg2": {
-              "nsubj": 3,
-              "obl": 2,
-              "iobj": 1,
-              "nmod": 1,
-              "appos": 1
-            },
-            "Arg3": {
-              "xcomp": 1,
-              "nsubj": 1,
-              "obl": 1,
-              "nmod": 1
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "prize.01",
+          "resource": "English NomBank",
+          "description": "give an award",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/prize.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 238,
+          "id": "Arg0",
+          "desc": "quem concede a recompensa",
+          "definition": "quem concede a recompensa"
+        },
+        {
+          "id": "Arg1",
+          "desc": "recompensa/tipo/nome independente de REL",
+          "definition": "recompensa/tipo/nome independente de REL"
+        },
+        {
+          "id": "Arg2",
+          "desc": "recebedor/candidato da recompensa",
+          "definition": "recebedor/candidato da recompensa"
+        },
+        {
+          "id": "Arg3",
+          "desc": "motivo/feito pelo qual se premia",
+          "definition": "motivo/feito pelo qual se premia"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003142_SENT006::prêmio::1",
           "sent_ID": "FOLHA_DOC003142_SENT006",
           "text": "Esse é o universo espelhado nas indicações do 69º Emmy, que entregou prêmios técnicos no último fim de semana e revela os vencedores das principais categorias neste domingo (17).",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmios",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 76
-              }
-            ]
+            "char_start": 69,
+            "char_end": 76
           },
           "realization": {
             "Arg0": "do 69º Emmy",
@@ -106,24 +58,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 43,
                 "char_end": 54
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 77,
                 "char_end": 85
               }
@@ -133,22 +76,14 @@
           }
         },
         {
-          "instance_id": 384,
+          "instance_id": "FOLHA_DOC003021_SENT009::prêmio::1",
           "sent_ID": "FOLHA_DOC003021_SENT009",
           "text": "Ganha o prêmio Eremildo quem conseguir definir o que seria \"indevido\" ou mesmo \"prejudicial à imagem, honra e nome\".",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 8,
-                "char_end": 14
-              }
-            ]
+            "char_start": 8,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -162,69 +97,22 @@
             "Arg2": "nsubj",
             "Arg3": "xcomp"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 15,
                 "char_end": 23
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 24,
                 "char_end": 115
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 39,
                 "char_end": 115
               }
@@ -232,22 +120,14 @@
           }
         },
         {
-          "instance_id": 2492,
+          "instance_id": "FOLHA_DOC003210_SENT019::prêmio::1",
           "sent_ID": "FOLHA_DOC003210_SENT019",
           "text": "Nossa literatura está cheia de chicharros e beldroegas que não apenas ganham todos os prêmios como também decidem a quem premiar com viagens, dinheiro e honrarias.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmios",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 86,
-                "char_end": 93
-              }
-            ]
+            "char_start": 86,
+            "char_end": 93
           },
           "realization": {
             "Arg0": null,
@@ -261,16 +141,11 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 31,
                 "char_end": 54
               }
@@ -279,22 +154,14 @@
           }
         },
         {
-          "instance_id": 3059,
+          "instance_id": "FOLHA_DOC003031_SENT005::prêmio::1",
           "sent_ID": "FOLHA_DOC003031_SENT005",
           "text": "Seu ato exemplar se torna midiático e chama também a atenção do Ministério dos Transportes, que resolve lhe conceder um prêmio.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 120,
-                "char_end": 126
-              }
-            ]
+            "char_start": 120,
+            "char_end": 126
           },
           "realization": {
             "Arg0": "do Ministério dos Transportes",
@@ -308,17 +175,9 @@
             "Arg2": "iobj",
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 61,
                 "char_end": 90
               }
@@ -326,20 +185,12 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 104,
                 "char_end": 107
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 16
               }
@@ -347,22 +198,14 @@
           }
         },
         {
-          "instance_id": 3346,
+          "instance_id": "FOLHA_DOC003031_SENT014::prêmio::1",
           "sent_ID": "FOLHA_DOC003031_SENT014",
           "text": "Este é um resumo da trama de \"Glory\", comédia búlgara que ganhou alguns prêmios em festivais de menor expressão.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmios",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 79
-              }
-            ]
+            "char_start": 72,
+            "char_end": 79
           },
           "realization": {
             "Arg0": "festivais de menor expressão",
@@ -376,15 +219,9 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 83,
                 "char_end": 111
               }
@@ -392,11 +229,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 29,
                 "char_end": 36
               }
@@ -405,22 +237,14 @@
           }
         },
         {
-          "instance_id": 8068,
+          "instance_id": "FOLHA_DOC003129_SENT031::prêmio::1",
           "sent_ID": "FOLHA_DOC003129_SENT031",
           "text": "Em ambos os casos, foi o mais jovem da história a receber tais prêmios.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmios",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 70
-              }
-            ]
+            "char_start": 63,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -434,7 +258,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -442,22 +266,14 @@
           }
         },
         {
-          "instance_id": 8497,
+          "instance_id": "FOLHA_DOC002054_SENT007::prêmio::1",
           "sent_ID": "FOLHA_DOC002054_SENT007",
           "text": "Acabou consagrado com o prêmio de melhor filme pelo júri popular.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 30
-              }
-            ]
+            "char_start": 24,
+            "char_end": 30
           },
           "realization": {
             "Arg0": "pelo júri popular",
@@ -471,26 +287,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 47,
                 "char_end": 64
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 31,
                 "char_end": 46
               }
@@ -500,22 +305,14 @@
           }
         },
         {
-          "instance_id": 10440,
+          "instance_id": "FOLHA_DOC003106_SENT003::prêmio::1",
           "sent_ID": "FOLHA_DOC003106_SENT003",
           "text": "A mostra canadense, encerrada no domingo (17), dá largada para a corrida do prêmio da Academia.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 82
-              }
-            ]
+            "char_start": 76,
+            "char_end": 82
           },
           "realization": {
             "Arg0": "da Academia",
@@ -529,14 +326,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 83,
                 "char_end": 94
               }
@@ -547,22 +339,14 @@
           }
         },
         {
-          "instance_id": 11017,
+          "instance_id": "FOLHA_DOC000003_SENT006::prêmio::1",
           "sent_ID": "FOLHA_DOC000003_SENT006",
           "text": "Ele teve neste ano 11 categorias nacionais e regionais, além de dois prêmios especiais.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmios",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 76
-              }
-            ]
+            "char_start": 69,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -576,13 +360,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16
-                ],
                 "char_start": 77,
                 "char_end": 86
               }
@@ -592,44 +373,28 @@
           }
         },
         {
-          "instance_id": 11283,
+          "instance_id": "FOLHA_DOC003015_SENT003::prêmio::1",
           "sent_ID": "FOLHA_DOC003015_SENT003",
           "text": "\"A culpa é de vocês\", zombou o apresentador Stephen Colbert, na abertura do prêmio da TV americana, responsabilizando júris e público pelo triunfo do republicano.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 82
-              }
-            ]
+            "char_start": 76,
+            "char_end": 82
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12280,
+          "instance_id": "FOLHA_DOC003015_SENT013::prêmio::1",
           "sent_ID": "FOLHA_DOC003015_SENT013",
           "text": "O prêmio de direção de série dramática também foi para \"Tale\", numa quebra da mesmice de anos anteriores que viu uma mulher, Reed Morano, ser premiada.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -649,36 +414,20 @@
             ],
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 9,
                 "char_end": 38
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 55,
                 "char_end": 61
               },
               {
-                "token_ids": [
-                  29,
-                  30
-                ],
                 "char_start": 125,
                 "char_end": 136
               }
@@ -687,22 +436,14 @@
           }
         },
         {
-          "instance_id": 13080,
+          "instance_id": "FOLHA_DOC003044_SENT018::prêmio::1",
           "sent_ID": "FOLHA_DOC003044_SENT018",
           "text": "Como no discurso das feministas da velha guarda Lily Tomlin, Jane Fonda e Dolly Parton, que foram apresentar um prêmio.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 112,
-                "char_end": 118
-              }
-            ]
+            "char_start": 112,
+            "char_end": 118
           },
           "realization": {
             "Arg0": null,
@@ -716,7 +457,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -724,22 +465,14 @@
           }
         },
         {
-          "instance_id": 13155,
+          "instance_id": "FOLHA_DOC003106_SENT007::prêmio::1",
           "sent_ID": "FOLHA_DOC003106_SENT007",
           "text": "Entregue pelo público, o prêmio reflete os humores de espectadores que ignoraram as tramas de superação de \"Stronger\" e \"Breathe\".",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {
             "Arg0": "pelo público",
@@ -753,14 +486,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 21
               }
@@ -771,22 +499,14 @@
           }
         },
         {
-          "instance_id": 13616,
+          "instance_id": "FOLHA_DOC003015_SENT011::prêmio::1",
           "sent_ID": "FOLHA_DOC003015_SENT011",
           "text": "Jean-Marc Vallée, com fértil carreira no cinema, levou o prêmio de direção pela mesma produção, coroada como minissérie do ano.",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 63
-              }
-            ]
+            "char_start": 57,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -800,36 +520,22 @@
             "Arg2": "nsubj",
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 64,
                 "char_end": 74
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 16
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 75,
                 "char_end": 94
               }
@@ -837,22 +543,14 @@
           }
         },
         {
-          "instance_id": 14651,
+          "instance_id": "FOLHA_DOC003044_SENT020::prêmio::1",
           "sent_ID": "FOLHA_DOC003044_SENT020",
           "text": "Sterling K. Brown, o único negro entre os seis indicados, levou o prêmio de melhor ator em série dramática por \"This Is Us\" (Fox Premium, no Brasil).",
-          "frame_id": "f_8639a0417ae43994",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 72
-              }
-            ]
+            "char_start": 66,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -866,170 +564,127 @@
             "Arg2": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 73,
                 "char_end": 106
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 17
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 107,
                 "char_end": 123
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 3,
+          "obl": 1,
+          "obl:agent": 2
+        },
+        "Arg1": {
+          "amod": 2,
+          "nmod": 5
+        },
+        "Arg2": {
+          "nsubj": 3,
+          "obl": 2,
+          "iobj": 1,
+          "nmod": 1,
+          "appos": 1
+        },
+        "Arg3": {
+          "xcomp": 1,
+          "nsubj": 1,
+          "obl": 1,
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "prêmio.07",
       "description": "soma paga pelo investidor como responsabilidade de risco; taxa de risco",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 10366,
+          "instance_id": "FOLHA_DOC003024_SENT018::prêmio::1",
           "sent_ID": "FOLHA_DOC003024_SENT018",
           "text": "Dito isso, é preciso encontrar um caminho para que a economia volte a crescer, o que só ocorrerá se o prêmio justificar o risco.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 102,
-                "char_end": 108
-              }
-            ]
+            "char_start": 102,
+            "char_end": 108
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 10680,
+          "instance_id": "FOLHA_DOC000154_SENT031::prêmio::1",
           "sent_ID": "FOLHA_DOC000154_SENT031",
           "text": "O segmento individual deverá representar 30% do nosso prêmio até 2019.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 60
-              }
-            ]
+            "char_start": 54,
+            "char_end": 60
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "prêmio.01",
       "description": "I recompensa; galardão",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 14155,
+          "instance_id": "FOLHA_DOC003218_SENT031::prêmio::1",
           "sent_ID": "FOLHA_DOC003218_SENT031",
           "text": "Daí decorreu a oportunidade de Janot satisfazer às críticas pelo \"prêmio\".",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 72
-              }
-            ]
+            "char_start": 66,
+            "char_end": 72
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 14588,
+          "instance_id": "FOLHA_DOC003218_SENT029::prêmio::1",
           "sent_ID": "FOLHA_DOC003218_SENT029",
           "text": "O problema começou no \"prêmio\" de imunidade judicial dado ao delator.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prêmio",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 29
-              }
-            ]
+            "char_start": 23,
+            "char_end": 29
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

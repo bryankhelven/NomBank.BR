@@ -1,93 +1,50 @@
 {
   "lemma": "resposta",
-  "lemma_base": "resposta",
   "senses": [
     {
       "pt_roleset": "resposta.01",
       "description": "ato de responder a uma pergunta, a uma inquirição ou a uma correspondência",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_fbe046b2eb131ae4",
-          "description": "ato de responder a uma pergunta, a uma inquirição ou a uma correspondência",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "answer.01",
-              "resource": "English NomBank",
-              "description": "give an answer, reply",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/answer.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "respondente",
-              "definition": "Pessoa/instituição que fornece ou é explicitamente solicitada a fornecer a resposta; realização prospectiva/negada indicada por contexto."
-            },
-            {
-              "id": "Arg1",
-              "desc": "questão ou comunicação a que se responde",
-              "definition": "Pergunta, questão ou correspondência que motiva a resposta, distinta de seu conteúdo."
-            },
-            {
-              "id": "Arg2",
-              "desc": "conteúdo da resposta",
-              "definition": "Conteúdo proposicional ou manifestação que constitui a resposta, não pergunta nem mero estilo."
-            },
-            {
-              "id": "Arg3",
-              "desc": "interrogador ou destinatário",
-              "definition": "Pessoa/instituição que pergunta ou a quem se dirige a resposta; não mero endereço/canal."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nsubj": 1,
-              "obj": 3,
-              "nmod": 1,
-              "ccomp": 1,
-              "conj": 1
-            },
-            "Arg3": {
-              "nmod": 3,
-              "obl:agent": 1,
-              "nsubj": 3
-            },
-            "Arg0": {
-              "det": 2,
-              "nmod": 4,
-              "nsubj": 3,
-              "obj": 1,
-              "obl": 3
-            },
-            "Arg2": {
-              "parataxis": 2,
-              "ccomp": 4,
-              "root": 1,
-              "obj": 1
-            }
-          }
+          "roleset": "answer.01",
+          "resource": "English NomBank",
+          "description": "give an answer, reply",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/answer.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 170,
+          "id": "Arg0",
+          "desc": "respondente",
+          "definition": "Pessoa/instituição que fornece ou é explicitamente solicitada a fornecer a resposta; realização prospectiva/negada indicada por contexto."
+        },
+        {
+          "id": "Arg1",
+          "desc": "questão ou comunicação a que se responde",
+          "definition": "Pergunta, questão ou correspondência que motiva a resposta, distinta de seu conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "conteúdo da resposta",
+          "definition": "Conteúdo proposicional ou manifestação que constitui a resposta, não pergunta nem mero estilo."
+        },
+        {
+          "id": "Arg3",
+          "desc": "interrogador ou destinatário",
+          "definition": "Pessoa/instituição que pergunta ou a quem se dirige a resposta; não mero endereço/canal."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000173_SENT051::resposta::1",
           "sent_ID": "FOLHA_DOC000173_SENT051",
           "text": "A pergunta de Josimar ainda está sem resposta.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 45
-              }
-            ]
+            "char_start": 37,
+            "char_end": 45
           },
           "realization": {
             "Arg0": null,
@@ -101,16 +58,10 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 0,
                 "char_end": 21
               }
@@ -118,10 +69,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 11,
                 "char_end": 21
               }
@@ -129,22 +76,14 @@
           }
         },
         {
-          "instance_id": 689,
+          "instance_id": "FOLHA_DOC004020_SENT012::resposta::1",
           "sent_ID": "FOLHA_DOC004020_SENT012",
           "text": "Sua resposta revelou o tamanho da mágoa: Uma vez meu pai me falou: lembre-se de Santo Antônio de Pádua.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 12
-              }
-            ]
+            "char_start": 4,
+            "char_end": 12
           },
           "realization": {
             "Arg0": "Sua",
@@ -158,12 +97,9 @@
             "Arg2": "parataxis",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 3
               }
@@ -171,22 +107,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 41,
                 "char_end": 102
               }
@@ -195,22 +115,14 @@
           }
         },
         {
-          "instance_id": 923,
+          "instance_id": "FOLHA_DOC003064_SENT021::resposta::1",
           "sent_ID": "FOLHA_DOC003064_SENT021",
           "text": "Resposta da SPPREV - Informa que o saldo já havia sido creditado, mas que realizou o reenvio em maio.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Resposta",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 8
-              }
-            ]
+            "char_start": 0,
+            "char_end": 8
           },
           "realization": {
             "Arg0": "da SPPREV",
@@ -224,14 +136,9 @@
             "Arg2": "ccomp",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 18
               }
@@ -239,23 +146,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 29,
                 "char_end": 100
               }
@@ -264,22 +154,14 @@
           }
         },
         {
-          "instance_id": 1965,
+          "instance_id": "FOLHA_DOC003092_SENT030::resposta::1",
           "sent_ID": "FOLHA_DOC003092_SENT030",
           "text": "Na sua resposta, contudo, Mourão não rebateu a afirmação contida na pergunta de que uma \"intervenção\" seria constitucional e nada falou sobre fechamento do Legislativo.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 15
-              }
-            ]
+            "char_start": 7,
+            "char_end": 15
           },
           "realization": {
             "Arg0": "Mourão",
@@ -293,34 +175,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 26,
                 "char_end": 32
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 45,
                 "char_end": 122
               }
@@ -330,22 +193,14 @@
           }
         },
         {
-          "instance_id": 2354,
+          "instance_id": "FOLHA_DOC003157_SENT038::resposta::1",
           "sent_ID": "FOLHA_DOC003157_SENT038",
           "text": "A Folha procurou a assessoria de comunicação do escritório Baker McKenzie em Nova York, mas não houve resposta às questões enviadas pela reportagem.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 102,
-                "char_end": 110
-              }
-            ]
+            "char_start": 102,
+            "char_end": 110
           },
           "realization": {
             "Arg0": "a assessoria de comunicação do escritório Baker McKenzie em Nova York",
@@ -362,38 +217,15 @@
             "Arg2": null,
             "Arg3": "obl:agent"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 17,
                 "char_end": 86
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 111,
                 "char_end": 147
               }
@@ -401,11 +233,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 132,
                 "char_end": 147
               }
@@ -413,22 +240,14 @@
           }
         },
         {
-          "instance_id": 2622,
+          "instance_id": "FOLHA_DOC003064_SENT014::resposta::1",
           "sent_ID": "FOLHA_DOC003064_SENT014",
           "text": "Resposta da Claro - Afirma que contatou a cliente e prestou as informações necessárias.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Resposta",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 8
-              }
-            ]
+            "char_start": 0,
+            "char_end": 8
           },
           "realization": {
             "Arg0": "da Claro",
@@ -442,14 +261,9 @@
             "Arg2": "ccomp",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 17
               }
@@ -457,17 +271,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 27,
                 "char_end": 86
               }
@@ -476,22 +279,14 @@
           }
         },
         {
-          "instance_id": 2682,
+          "instance_id": "FOLHA_DOC004100_SENT017::resposta::1",
           "sent_ID": "FOLHA_DOC004100_SENT017",
           "text": "A resposta convencional é que estamos diante de um sintoma do grave déficit educacional brasileiro.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -505,25 +300,11 @@
             "Arg2": "root",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 26,
                 "char_end": 98
               }
@@ -532,22 +313,14 @@
           }
         },
         {
-          "instance_id": 2943,
+          "instance_id": "FOLHA_DOC003033_SENT027::resposta::1",
           "sent_ID": "FOLHA_DOC003033_SENT027",
           "text": "A Folha perguntou à CPPU se a prefeitura seria notificada devido à instalação da peça no formato de coração, mas não teve resposta.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 122,
-                "char_end": 130
-              }
-            ]
+            "char_start": 122,
+            "char_end": 130
           },
           "realization": {
             "Arg0": "à CPPU",
@@ -561,39 +334,15 @@
             "Arg2": null,
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 18,
                 "char_end": 24
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 25,
                 "char_end": 107
               }
@@ -601,10 +350,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -612,22 +357,14 @@
           }
         },
         {
-          "instance_id": 4794,
+          "instance_id": "FOLHA_DOC004043_SENT003::resposta::1",
           "sent_ID": "FOLHA_DOC004043_SENT003",
           "text": "Assim como o esportista americano, o ator de 31 anos também é dado a berros, palavrões e respostas atravessadas a jornalistas.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 98
-              }
-            ]
+            "char_start": 89,
+            "char_end": 98
           },
           "realization": {
             "Arg0": "o ator de 31 anos",
@@ -641,16 +378,9 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 35,
                 "char_end": 52
               }
@@ -659,10 +389,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  22,
-                  23
-                ],
                 "char_start": 112,
                 "char_end": 125
               }
@@ -670,22 +396,14 @@
           }
         },
         {
-          "instance_id": 5017,
+          "instance_id": "FOLHA_DOC003133_SENT014::resposta::1",
           "sent_ID": "FOLHA_DOC003133_SENT014",
           "text": "Sua resposta foi chocante: Acho que a situação aqui [na Venezuela] é mais caótica.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 12
-              }
-            ]
+            "char_start": 4,
+            "char_end": 12
           },
           "realization": {
             "Arg0": "Sua",
@@ -699,12 +417,9 @@
             "Arg2": "parataxis",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 3
               }
@@ -712,21 +427,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 27,
                 "char_end": 81
               }
@@ -735,22 +435,14 @@
           }
         },
         {
-          "instance_id": 5857,
+          "instance_id": "FOLHA_DOC003092_SENT039::resposta::1",
           "sent_ID": "FOLHA_DOC003092_SENT039",
           "text": "A Folha pediu contato com o general Mourão, para que comentasse suas declarações, mas o centro de comunicação social do Exército informou que as respostas serão dadas por meio do órgão.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 145,
-                "char_end": 154
-              }
-            ]
+            "char_start": 145,
+            "char_end": 154
           },
           "realization": {
             "Arg0": null,
@@ -764,14 +456,10 @@
             "Arg2": null,
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 64,
                 "char_end": 80
               }
@@ -779,10 +467,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -790,22 +474,14 @@
           }
         },
         {
-          "instance_id": 6949,
+          "instance_id": "FOLHA_DOC000077_SENT019::resposta::1",
           "sent_ID": "FOLHA_DOC000077_SENT019",
           "text": "O problema não está nas respostas; está na pergunta, que embute um prejulgamento.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 33
-              }
-            ]
+            "char_start": 24,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -819,19 +495,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 40,
                 "char_end": 80
               }
@@ -841,22 +508,14 @@
           }
         },
         {
-          "instance_id": 7701,
+          "instance_id": "FOLHA_DOC000100_SENT062::resposta::1",
           "sent_ID": "FOLHA_DOC000100_SENT062",
           "text": "A Folha enviou e-mail sobre isso à Fifa, mas não obteve resposta.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 64
-              }
-            ]
+            "char_start": 56,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "à Fifa",
@@ -870,25 +529,15 @@
             "Arg2": null,
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 33,
                 "char_end": 39
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 15,
                 "char_end": 32
               }
@@ -896,10 +545,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -907,22 +552,14 @@
           }
         },
         {
-          "instance_id": 9077,
+          "instance_id": "FOLHA_DOC003064_SENT018::resposta::1",
           "sent_ID": "FOLHA_DOC003064_SENT018",
           "text": "Resposta da Caixa - Diz que a cliente tinha imóvel prévio adquirido com FGTS e que agendou reunião com ela.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Resposta",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 8
-              }
-            ]
+            "char_start": 0,
+            "char_end": 8
           },
           "realization": {
             "Arg0": "da Caixa",
@@ -936,14 +573,9 @@
             "Arg2": "ccomp",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 17
               }
@@ -951,23 +583,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 24,
                 "char_end": 106
               }
@@ -976,22 +591,14 @@
           }
         },
         {
-          "instance_id": 9349,
+          "instance_id": "FOLHA_DOC003064_SENT007::resposta::1",
           "sent_ID": "FOLHA_DOC003064_SENT007",
           "text": "Resposta da Vivo - Informa que o serviço disponível no endereço da cliente é a banda larga popular, que oferece 1 MB mesmo.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Resposta",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 8
-              }
-            ]
+            "char_start": 0,
+            "char_end": 8
           },
           "realization": {
             "Arg0": "da Vivo",
@@ -1005,14 +612,9 @@
             "Arg2": "ccomp",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 16
               }
@@ -1020,29 +622,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 27,
                 "char_end": 122
               }
@@ -1051,22 +630,14 @@
           }
         },
         {
-          "instance_id": 9915,
+          "instance_id": "FOLHA_DOC001427_SENT046::resposta::1",
           "sent_ID": "FOLHA_DOC001427_SENT046",
           "text": "Respostas são bem-vindas pelo e-mail vianafolhasp@gmail.com.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Respostas",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 9
-              }
-            ]
+            "char_start": 0,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -1080,7 +651,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1088,22 +659,14 @@
           }
         },
         {
-          "instance_id": 10643,
+          "instance_id": "FOLHA_DOC000010_SENT005::resposta::1",
           "sent_ID": "FOLHA_DOC000010_SENT005",
           "text": "Também é possível estabelecer horários específicos em que o Whatsapp estará ativo e definir uma resposta automática para os clientes.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 96,
-                "char_end": 104
-              }
-            ]
+            "char_start": 96,
+            "char_end": 104
           },
           "realization": {
             "Arg0": null,
@@ -1117,17 +680,12 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 116,
                 "char_end": 132
               }
@@ -1135,22 +693,14 @@
           }
         },
         {
-          "instance_id": 15729,
+          "instance_id": "FOLHA_DOC004052_SENT004::resposta::1",
           "sent_ID": "FOLHA_DOC004052_SENT004",
           "text": "Logo nas respostas iniciais, Doria destacou o fato de ter permanecido junto ao governador na cerimônia.",
-          "frame_id": "f_fbe046b2eb131ae4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 18
-              }
-            ]
+            "char_start": 9,
+            "char_end": 18
           },
           "realization": {
             "Arg0": "Doria",
@@ -1164,12 +714,9 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 29,
                 "char_end": 34
               }
@@ -1177,20 +724,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 44,
                 "char_end": 102
               }
@@ -1198,86 +731,74 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nsubj": 1,
+          "obj": 3,
+          "nmod": 1,
+          "ccomp": 1,
+          "conj": 1
+        },
+        "Arg3": {
+          "nmod": 3,
+          "obl:agent": 1,
+          "nsubj": 3
+        },
+        "Arg0": {
+          "det": 2,
+          "nmod": 4,
+          "nsubj": 3,
+          "obj": 1,
+          "obl": 3
+        },
+        "Arg2": {
+          "parataxis": 2,
+          "ccomp": 4,
+          "root": 1,
+          "obj": 1
+        }
+      }
     },
     {
       "pt_roleset": "resposta.06",
       "description": "reação",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_db922252ccaa001e",
-          "description": "reação",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "response.01",
-              "resource": "English NomBank",
-              "description": "give an answer, reply",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/response.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "entidade que reage",
-              "definition": "Entidade explícita de que parte a reação."
-            },
-            {
-              "id": "Arg1",
-              "desc": "estímulo",
-              "definition": "Evento/situação que motiva a reação, conforme reagir a."
-            },
-            {
-              "id": "Arg2",
-              "desc": "manifestação da reação",
-              "definition": "Comportamento/medida/manifestação concretamente expressa, conforme reagir com; mera avaliação positiva não basta."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nsubj": 5,
-              "xcomp": 1,
-              "root": 2
-            },
-            "Arg1": {
-              "nmod": 5,
-              "obl": 2,
-              "advcl": 1
-            },
-            "Arg0": {
-              "nsubj": 3,
-              "nmod": 2
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "response.01",
+          "resource": "English NomBank",
+          "description": "give an answer, reply",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/response.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 3146,
+          "id": "Arg0",
+          "desc": "entidade que reage",
+          "definition": "Entidade explícita de que parte a reação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "estímulo",
+          "definition": "Evento/situação que motiva a reação, conforme reagir a."
+        },
+        {
+          "id": "Arg2",
+          "desc": "manifestação da reação",
+          "definition": "Comportamento/medida/manifestação concretamente expressa, conforme reagir com; mera avaliação positiva não basta."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000061_SENT022::resposta::1",
           "sent_ID": "FOLHA_DOC000061_SENT022",
           "text": "Segundo Thaler, pequenos \"empurrões\" seriam a resposta.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 54
-              }
-            ]
+            "char_start": 46,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -1289,17 +810,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 16,
                 "char_end": 36
               }
@@ -1307,22 +822,14 @@
           }
         },
         {
-          "instance_id": 3406,
+          "instance_id": "FOLHA_DOC003307_SENT006::resposta::1",
           "sent_ID": "FOLHA_DOC003307_SENT006",
           "text": "Segundo Braga, a resposta à campanha tem sido \"muito positiva\".",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 25
-              }
-            ]
+            "char_start": 17,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -1334,15 +841,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 26,
                 "char_end": 36
               }
@@ -1351,22 +853,14 @@
           }
         },
         {
-          "instance_id": 3846,
+          "instance_id": "FOLHA_DOC003063_SENT014::resposta::1",
           "sent_ID": "FOLHA_DOC003063_SENT014",
           "text": "Entre 2011 e 2016, as taxas de assassinato e roubos de carro, por exemplo, começaram a mostrar respostas menos efetivas às políticas públicas adotadas.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 104
-              }
-            ]
+            "char_start": 95,
+            "char_end": 104
           },
           "realization": {
             "Arg0": "as taxas de assassinato e roubos de carro",
@@ -1378,32 +872,15 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 19,
                 "char_end": 60
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 120,
                 "char_end": 150
               }
@@ -1412,22 +889,14 @@
           }
         },
         {
-          "instance_id": 5071,
+          "instance_id": "FOLHA_DOC003140_SENT010::resposta::1",
           "sent_ID": "FOLHA_DOC003140_SENT010",
           "text": "Para ela, a multiplicação desses paredões é parte de uma resposta antiglobalização que se exacerbou nos últimos anos.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 65
-              }
-            ]
+            "char_start": 57,
+            "char_end": 65
           },
           "realization": {
             "Arg0": null,
@@ -1439,18 +908,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 10,
                 "char_end": 41
               }
@@ -1458,22 +920,14 @@
           }
         },
         {
-          "instance_id": 6581,
+          "instance_id": "FOLHA_DOC003312_SENT022::resposta::1",
           "sent_ID": "FOLHA_DOC003312_SENT022",
           "text": "Segundo Braga, a resposta à campanha tem sido \"muito positiva\".",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 25
-              }
-            ]
+            "char_start": 17,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -1485,15 +939,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 26,
                 "char_end": 36
               }
@@ -1502,22 +951,14 @@
           }
         },
         {
-          "instance_id": 9017,
+          "instance_id": "FOLHA_DOC003198_SENT009::resposta::1",
           "sent_ID": "FOLHA_DOC003198_SENT009",
           "text": "Em resposta, varejistas e a própria fabricante passaram a tratar com discrição o nome Friboi, que a JBS até então exibia ostensivamente nas propagandas de TV com celebridades de cachês milionários como Tony Ramos.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 11
-              }
-            ]
+            "char_start": 3,
+            "char_end": 11
           },
           "realization": {
             "Arg0": "varejistas e a própria fabricante",
@@ -1529,16 +970,9 @@
             "Arg1": null,
             "Arg2": "xcomp"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 13,
                 "char_end": 46
               }
@@ -1546,35 +980,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 58,
                 "char_end": 212
               }
@@ -1582,44 +987,28 @@
           }
         },
         {
-          "instance_id": 10486,
+          "instance_id": "FOLHA_DOC004079_SENT003::resposta::1",
           "sent_ID": "FOLHA_DOC004079_SENT003",
           "text": "A possível rescisão na colaboração da JBS leva alguns atores a confundir interesseiramente as respostas a estas perguntas.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 94,
-                "char_end": 103
-              }
-            ]
+            "char_start": 94,
+            "char_end": 103
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11029,
+          "instance_id": "FOLHA_DOC003178_SENT023::resposta::1",
           "sent_ID": "FOLHA_DOC003178_SENT023",
           "text": "Os ataques de pânico e as crises de ansiedade são apenas uma resposta do corpo a essa situação de absoluto estresse, é natural.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 69
-              }
-            ]
+            "char_start": 61,
+            "char_end": 69
           },
           "realization": {
             "Arg0": "do corpo",
@@ -1631,45 +1020,21 @@
             "Arg1": "nmod",
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 70,
                 "char_end": 78
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 79,
                 "char_end": 115
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 0,
                 "char_end": 45
               }
@@ -1677,22 +1042,14 @@
           }
         },
         {
-          "instance_id": 13026,
+          "instance_id": "FOLHA_DOC003198_SENT033::resposta::1",
           "sent_ID": "FOLHA_DOC003198_SENT033",
           "text": "Quando a delação de Joesley e Wesley Batista veio à tona, em maio, a primeira resposta da JBS foi suspender a propaganda de TV e esconder a marca.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 86
-              }
-            ]
+            "char_start": 78,
+            "char_end": 86
           },
           "realization": {
             "Arg0": "da JBS",
@@ -1704,50 +1061,21 @@
             "Arg1": "advcl",
             "Arg2": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 87,
                 "char_end": 93
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 7,
                 "char_end": 56
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 98,
                 "char_end": 145
               }
@@ -1755,22 +1083,14 @@
           }
         },
         {
-          "instance_id": 13758,
+          "instance_id": "FOLHA_DOC003140_SENT027::resposta::1",
           "sent_ID": "FOLHA_DOC003140_SENT027",
           "text": "Os muros e as cercas nas fronteiras são uma resposta visível e fácil para essas inseguranças da população.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 52
-              }
-            ]
+            "char_start": 44,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -1782,34 +1102,16 @@
             "Arg1": "nmod",
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 69,
                 "char_end": 105
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 0,
                 "char_end": 35
               }
@@ -1817,22 +1119,14 @@
           }
         },
         {
-          "instance_id": 14011,
+          "instance_id": "FOLHA_DOC003140_SENT054::resposta::1",
           "sent_ID": "FOLHA_DOC003140_SENT054",
           "text": "No curto prazo, mais muros serão construídos, porque se trata de uma resposta fácil.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 77
-              }
-            ]
+            "char_start": 69,
+            "char_end": 77
           },
           "realization": {
             "Arg0": null,
@@ -1844,17 +1138,11 @@
             "Arg1": null,
             "Arg2": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 16,
                 "char_end": 44
               }
@@ -1862,22 +1150,14 @@
           }
         },
         {
-          "instance_id": 14925,
+          "instance_id": "FOLHA_DOC003100_SENT004::resposta::1",
           "sent_ID": "FOLHA_DOC003100_SENT004",
           "text": "A declaração foi uma resposta ao episódio do dia anterior, quando o governador exaltou-se e dirigiu ataques aos gritos contra o deputado federal.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 29
-              }
-            ]
+            "char_start": 21,
+            "char_end": 29
           },
           "realization": {
             "Arg0": null,
@@ -1889,45 +1169,16 @@
             "Arg1": "nmod",
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 30,
                 "char_end": 144
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 12
               }
@@ -1935,22 +1186,14 @@
           }
         },
         {
-          "instance_id": 15048,
+          "instance_id": "FOLHA_DOC004012_SENT048::resposta::1",
           "sent_ID": "FOLHA_DOC004012_SENT048",
           "text": "Os próximos dias vão evidenciar se o PT conseguirá dar uma resposta política ao que está em curso.",
-          "frame_id": "f_db922252ccaa001e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 67
-              }
-            ]
+            "char_start": 59,
+            "char_end": 67
           },
           "realization": {
             "Arg0": "o PT",
@@ -1962,27 +1205,15 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 35,
                 "char_end": 39
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 77,
                 "char_end": 97
               }
@@ -1990,67 +1221,63 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nsubj": 5,
+          "xcomp": 1,
+          "root": 2
+        },
+        "Arg1": {
+          "nmod": 5,
+          "obl": 2,
+          "advcl": 1
+        },
+        "Arg0": {
+          "nsubj": 3,
+          "nmod": 2
+        }
+      }
     },
     {
       "pt_roleset": "resposta.05",
       "description": "solução",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_69f76ae118c54731",
-          "description": "solução",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "solution.01",
-              "resource": "English NomBank",
-              "description": "to find a solution to",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/solution.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "solucionador",
-              "definition": "Pessoa/entidade que encontra ou pretende oferecer solução; negação não afirma realização."
-            },
-            {
-              "id": "Arg1",
-              "desc": "problema a solucionar",
-              "definition": "Questão/problema para que se busca solução, distinta de seu conteúdo."
-            },
-            {
-              "id": "Arg2",
-              "desc": "solução ou meio de solução",
-              "definition": "Solução, instrumento ou maneira concretamente identificada de solucionar o problema."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            }
-          }
+          "roleset": "solution.01",
+          "resource": "English NomBank",
+          "description": "to find a solution to",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/solution.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 7652,
+          "id": "Arg0",
+          "desc": "solucionador",
+          "definition": "Pessoa/entidade que encontra ou pretende oferecer solução; negação não afirma realização."
+        },
+        {
+          "id": "Arg1",
+          "desc": "problema a solucionar",
+          "definition": "Questão/problema para que se busca solução, distinta de seu conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "solução ou meio de solução",
+          "definition": "Solução, instrumento ou maneira concretamente identificada de solucionar o problema."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003303_SENT031::resposta::1",
           "sent_ID": "FOLHA_DOC003303_SENT031",
           "text": "Como descobre o romance conforme ele se revela, DeLillo não escreve para dar respostas.",
-          "frame_id": "f_69f76ae118c54731",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 86
-              }
-            ]
+            "char_start": 77,
+            "char_end": 86
           },
           "realization": {
             "Arg0": "DeLillo",
@@ -2062,12 +1289,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 48,
                 "char_end": 55
               }
@@ -2077,22 +1301,14 @@
           }
         },
         {
-          "instance_id": 15277,
+          "instance_id": "FOLHA_DOC004079_SENT023::resposta::1",
           "sent_ID": "FOLHA_DOC004079_SENT023",
           "text": "As respostas a serem encontradas podem criar novos e mais fortes mecanismos para o país combater a corrupção.",
-          "frame_id": "f_69f76ae118c54731",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respostas",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 12
-              }
-            ]
+            "char_start": 3,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -2104,78 +1320,63 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        }
+      }
     },
     {
       "pt_roleset": "resposta.08",
       "description": "satisfação; explicação",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_4d722afe204a1d11",
-          "description": "satisfação; explicação",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "explanation.01",
-              "resource": "English NomBank",
-              "description": "explain",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/explanation.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "explicador",
-              "definition": "Entidade explicitamente fornecedora da explicação."
-            },
-            {
-              "id": "Arg1",
-              "desc": "fato ou matéria explicada (explanandum)",
-              "definition": "Entidade/fato/ação cuja explicação é fornecida; não confundir com a razão explicativa."
-            },
-            {
-              "id": "Arg2",
-              "desc": "destinatário da explicação",
-              "definition": "Pessoa/entidade a quem se explica, quando expressa."
-            },
-            {
-              "id": "Arg3",
-              "desc": "razão ou conteúdo explicativo (explanans)",
-              "definition": "Razão ou conteúdo que oferece explicação para um fato ou uma questão."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg3": {
-              "root": 1
-            }
-          }
+          "roleset": "explanation.01",
+          "resource": "English NomBank",
+          "description": "explain",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/explanation.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 9814,
+          "id": "Arg0",
+          "desc": "explicador",
+          "definition": "Entidade explicitamente fornecedora da explicação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "fato ou matéria explicada (explanandum)",
+          "definition": "Entidade/fato/ação cuja explicação é fornecida; não confundir com a razão explicativa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário da explicação",
+          "definition": "Pessoa/entidade a quem se explica, quando expressa."
+        },
+        {
+          "id": "Arg3",
+          "desc": "razão ou conteúdo explicativo (explanans)",
+          "definition": "Razão ou conteúdo que oferece explicação para um fato ou uma questão."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004114_SENT010::resposta::1",
           "sent_ID": "FOLHA_DOC004114_SENT010",
           "text": "Parte da resposta está nos poderes desmedidos do presidente da República em nosso sistema político.",
-          "frame_id": "f_4d722afe204a1d11",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resposta",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 17
-              }
-            ]
+            "char_start": 9,
+            "char_end": 17
           },
           "realization": {
             "Arg0": null,
@@ -2189,35 +1390,24 @@
             "Arg2": null,
             "Arg3": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 23,
                 "char_end": 98
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg3": {
+          "root": 1
+        }
+      }
     }
   ]
 }

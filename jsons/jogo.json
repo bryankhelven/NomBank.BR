@@ -1,121 +1,73 @@
 {
   "lemma": "jogo",
-  "lemma_base": "jogo",
   "senses": [
     {
       "pt_roleset": "jogo.01",
       "description": "I atividade dependente de um sistema de regras que resulta em derrota ou vitória; disputa; partida",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        },
-        {
-          "id": "f_71027801d4d6d7d7",
-          "description": "I atividade dependente de um sistema de regras que resulta em derrota ou vitória; disputa; partida",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "game.01",
-              "resource": "English NomBank",
-              "description": "nomlike",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/game.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "jogador ou conjunto de jogadores",
-              "definition": "Participante da atividade/partida, inclusive equipe ou conjunto explícito; não espectador/comentador automaticamente."
-            },
-            {
-              "id": "Arg1",
-              "desc": "tema ou modalidade do jogo",
-              "definition": "Tipo/modalidade, jogo praticado ou competição ampla de que a partida faz parte, conforme World Series/ball nominais; não prêmio ou o próprio REL."
-            },
-            {
-              "id": "Arg2",
-              "desc": "segundo participante",
-              "definition": "Outro participante independentemente expresso, inclusive adversário; não dividir conjunto simétrico por ordem."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 5,
-              "obj": 1,
-              "nsubj": 3
-            },
-            "Arg1": {
-              "nmod": 4,
-              "nsubj": 1
-            },
-            "Arg2": {
-              "nmod": 1,
-              "obj": 2,
-              "obl": 1,
-              "mark": 1,
-              "nsubj": 1
-            }
-          }
+          "roleset": "game.01",
+          "resource": "English NomBank",
+          "description": "nomlike",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/game.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 27,
+          "id": "Arg0",
+          "desc": "jogador ou conjunto de jogadores",
+          "definition": "Participante da atividade/partida, inclusive equipe ou conjunto explícito; não espectador/comentador automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "tema ou modalidade do jogo",
+          "definition": "Tipo/modalidade, jogo praticado ou competição ampla de que a partida faz parte, conforme World Series/ball nominais; não prêmio ou o próprio REL."
+        },
+        {
+          "id": "Arg2",
+          "desc": "segundo participante",
+          "definition": "Outro participante independentemente expresso, inclusive adversário; não dividir conjunto simétrico por ordem."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002047_SENT023::jogo::1",
           "sent_ID": "FOLHA_DOC002047_SENT023",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              10
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 30,
+          "instance_id": "FOLHA_DOC000100_SENT036::jogo::1",
           "sent_ID": "FOLHA_DOC000100_SENT036",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              1
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 128,
+          "instance_id": "FOLHA_DOC003101_SENT012::jogo::1",
           "sent_ID": "FOLHA_DOC003101_SENT012",
           "text": "Tenho que ser exemplo ao meu filho, afirmou o atacante após o jogo.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 66
-              }
-            ]
+            "char_start": 62,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -127,29 +79,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 214,
+          "instance_id": "FOLHA_DOC003023_SENT051::jogo::1",
           "sent_ID": "FOLHA_DOC003023_SENT051",
           "text": "Mas a responsabilidade, a partir do jogo desta segunda (18), é ganhar sempre.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 40
-              }
-            ]
+            "char_start": 36,
+            "char_end": 40
           },
           "realization": {
             "Arg0": null,
@@ -161,80 +105,63 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 316,
+          "instance_id": "FOLHA_DOC000042_SENT028::jogo::1",
           "sent_ID": "FOLHA_DOC000042_SENT028",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              8
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 336,
+          "instance_id": "FOLHA_DOC003092_SENT020::jogo::1",
           "sent_ID": "FOLHA_DOC003092_SENT020",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              21
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1180,
+          "instance_id": "FOLHA_DOC003101_SENT020::jogo::1",
           "sent_ID": "FOLHA_DOC003101_SENT020",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              3
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1338,
+          "instance_id": "FOLHA_DOC000128_SENT024::jogo::1",
           "sent_ID": "FOLHA_DOC000128_SENT024",
           "text": "O último jogo das eliminatórias da seleção interessa à Argentina.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 13
-              }
-            ]
+            "char_start": 9,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "da seleção",
@@ -246,25 +173,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 32,
                 "char_end": 42
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 14,
                 "char_end": 31
               }
@@ -273,22 +190,14 @@
           }
         },
         {
-          "instance_id": 1458,
+          "instance_id": "FOLHA_DOC003094_SENT018::jogo::1",
           "sent_ID": "FOLHA_DOC003094_SENT018",
           "text": "O primeiro gol do jogo saiu aos 7 min do segundo tempo.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 22
-              }
-            ]
+            "char_start": 18,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -300,29 +209,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1698,
+          "instance_id": "FOLHA_DOC002029_SENT009::jogo::1",
           "sent_ID": "FOLHA_DOC002029_SENT009",
           "text": "Mas não podemos deixar nosso cliente que usa a placa para jogos ficar sem o produto por causa da mineração, diz Brandão, gerente da AMD.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 63
-              }
-            ]
+            "char_start": 58,
+            "char_end": 63
           },
           "realization": {
             "Arg0": "nosso cliente que usa a placa",
@@ -334,17 +235,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 23,
                 "char_end": 52
               }
@@ -354,22 +247,14 @@
           }
         },
         {
-          "instance_id": 1845,
+          "instance_id": "FOLHA_DOC003018_SENT021::jogo::1",
           "sent_ID": "FOLHA_DOC003018_SENT021",
           "text": "Jéssica herdou a paixão pelo esporte de outra mulher: a mãe, que nunca sai de perto do rádio e sempre levou a filha aos jogos do São Paulo.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 120,
-                "char_end": 125
-              }
-            ]
+            "char_start": 120,
+            "char_end": 125
           },
           "realization": {
             "Arg0": "do São Paulo",
@@ -381,15 +266,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33,
-                  34
-                ],
                 "char_start": 126,
                 "char_end": 138
               }
@@ -399,22 +278,14 @@
           }
         },
         {
-          "instance_id": 2522,
+          "instance_id": "FOLHA_DOC003182_SENT009::jogo::1",
           "sent_ID": "FOLHA_DOC003182_SENT009",
           "text": "Parte da vocação do jovem veio do pai, Edson Marques, 49, analista de sistemas e aficionado por computadores e jogos on-line.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 111,
-                "char_end": 116
-              }
-            ]
+            "char_start": 111,
+            "char_end": 116
           },
           "realization": {
             "Arg0": null,
@@ -426,46 +297,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3077,
+          "instance_id": "FOLHA_DOC003264_SENT004::jogo::1",
           "sent_ID": "FOLHA_DOC003264_SENT004",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              2
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3508,
+          "instance_id": "FOLHA_DOC003101_SENT018::jogo::1",
           "sent_ID": "FOLHA_DOC003101_SENT018",
           "text": "O jogo também foi marcado pela volta do lateral Guilherme Arana, fora do time desde 19 de agosto após ter sofrido uma lesão na coxa.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 6
-              }
-            ]
+            "char_start": 2,
+            "char_end": 6
           },
           "realization": {
             "Arg0": "o lateral Guilherme Arana",
@@ -477,15 +337,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 37,
                 "char_end": 63
               }
@@ -495,22 +349,14 @@
           }
         },
         {
-          "instance_id": 3553,
+          "instance_id": "FOLHA_DOC003014_SENT020::jogo::1",
           "sent_ID": "FOLHA_DOC003014_SENT020",
           "text": "\"Basquete é o jogo de que eu mais gosto\", diz ele, que saiu de Niterói com a mãe, Larissa, e a tia, Lorena, para conhecer o festival.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 18
-              }
-            ]
+            "char_start": 14,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -522,13 +368,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  2
-                ],
                 "char_start": 1,
                 "char_end": 9
               }
@@ -537,22 +380,14 @@
           }
         },
         {
-          "instance_id": 4514,
+          "instance_id": "FOLHA_DOC000118_SENT001::jogo::1",
           "sent_ID": "FOLHA_DOC000118_SENT001",
           "text": "Vice dos Estados Unidos deixa jogo da NFL após protesto durante o hino.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 34
-              }
-            ]
+            "char_start": 30,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -564,15 +399,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 35,
                 "char_end": 41
               }
@@ -581,39 +411,28 @@
           }
         },
         {
-          "instance_id": 4587,
+          "instance_id": "FOLHA_DOC000008_SENT019::jogo::1",
           "sent_ID": "FOLHA_DOC000008_SENT019",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              7
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 4902,
+          "instance_id": "FOLHA_DOC004127_SENT004::jogo::1",
           "sent_ID": "FOLHA_DOC004127_SENT004",
           "text": "O jogo de volta está marcado para o dia 27, no Mineirão.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 6
-              }
-            ]
+            "char_start": 2,
+            "char_end": 6
           },
           "realization": {
             "Arg0": null,
@@ -625,46 +444,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5777,
+          "instance_id": "FOLHA_DOC003101_SENT015::jogo::1",
           "sent_ID": "FOLHA_DOC003101_SENT015",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              7
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 5793,
+          "instance_id": "FOLHA_DOC000034_SENT015::jogo::1",
           "sent_ID": "FOLHA_DOC000034_SENT015",
           "text": "O defensor será o 13º capitão da era Tite, que promove um rodízio a cada jogo.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 77
-              }
-            ]
+            "char_start": 73,
+            "char_end": 77
           },
           "realization": {
             "Arg0": null,
@@ -676,51 +484,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6098,
+          "instance_id": "FOLHA_DOC002018_SENT009::jogo::1",
           "sent_ID": "FOLHA_DOC002018_SENT009",
           "text": "Fazer a regra em cima da hora do jogo é impossível.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 37
-              }
-            ]
+            "char_start": 33,
+            "char_end": 37
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 6485,
+          "instance_id": "FOLHA_DOC002029_SENT002::jogo::1",
           "sent_ID": "FOLHA_DOC002029_SENT002",
           "text": "A volatilidade de moedas virtuais preocupa fabricantes de placas de vídeo de computador voltadas a jogos, também usadas para mineração de criptomoedas.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 99,
-                "char_end": 104
-              }
-            ]
+            "char_start": 99,
+            "char_end": 104
           },
           "realization": {
             "Arg0": null,
@@ -732,46 +524,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7530,
+          "instance_id": "FOLHA_DOC000065_SENT007::jogo::1",
           "sent_ID": "FOLHA_DOC000065_SENT007",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              15
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 7849,
+          "instance_id": "FOLHA_DOC004026_SENT016::jogo::1",
           "sent_ID": "FOLHA_DOC004026_SENT016",
           "text": "Nas arquibancadas, foram registrados novos conflitos antes do jogo, que ainda teve casos de bilhetes falsificados vendidos por cambistas.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 66
-              }
-            ]
+            "char_start": 62,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -783,29 +564,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7982,
+          "instance_id": "FOLHA_DOC003082_SENT013::jogo::1",
           "sent_ID": "FOLHA_DOC003082_SENT013",
           "text": "Tivemos uns cinco contra-ataques [no jogo contra o Vitória] que poderíamos ter trabalhado melhor e conseguido o gol.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 41
-              }
-            ]
+            "char_start": 37,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -817,16 +590,11 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 42,
                 "char_end": 58
               }
@@ -834,22 +602,14 @@
           }
         },
         {
-          "instance_id": 8936,
+          "instance_id": "FOLHA_DOC002026_SENT022::jogo::1",
           "sent_ID": "FOLHA_DOC002026_SENT022",
           "text": "Ninguém quis comprar o pacote completo da CBF para os jogos da seleção brasileira até 2022.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 59
-              }
-            ]
+            "char_start": 54,
+            "char_end": 59
           },
           "realization": {
             "Arg0": "da seleção brasileira",
@@ -861,15 +621,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 60,
                 "char_end": 81
               }
@@ -879,22 +633,14 @@
           }
         },
         {
-          "instance_id": 9913,
+          "instance_id": "FOLHA_DOC003048_SENT006::jogo::1",
           "sent_ID": "FOLHA_DOC003048_SENT006",
           "text": "Indiscutível que o Alvinegro fez por vencer o jogo, tantas chances criou e ou desperdiçou ou viu o goleiro vascaíno Martín Silva evitar.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 50
-              }
-            ]
+            "char_start": 46,
+            "char_end": 50
           },
           "realization": {
             "Arg0": "o Alvinegro",
@@ -906,13 +652,9 @@
             "Arg1": null,
             "Arg2": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 17,
                 "char_end": 28
               }
@@ -920,13 +662,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 97,
                 "char_end": 128
               }
@@ -934,22 +669,14 @@
           }
         },
         {
-          "instance_id": 10321,
+          "instance_id": "FOLHA_DOC001058_SENT043::jogo::1",
           "sent_ID": "FOLHA_DOC001058_SENT043",
           "text": "Estádio lotado em jogo do tamanho do deste domingo só com plano de fidelidade, como têm Corinthians, São Paulo e Palmeiras neste Brasileiro.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 22
-              }
-            ]
+            "char_start": 18,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -961,63 +688,49 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11203,
+          "instance_id": "FOLHA_DOC000042_SENT012::jogo::1",
           "sent_ID": "FOLHA_DOC000042_SENT012",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              9
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11336,
+          "instance_id": "FOLHA_DOC003091_SENT008::jogo::1",
           "sent_ID": "FOLHA_DOC003091_SENT008",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              3
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11502,
+          "instance_id": "FOLHA_DOC004128_SENT009::jogo::1",
           "sent_ID": "FOLHA_DOC004128_SENT009",
           "text": "Adoraríamos ter um jogo no Brasil, afirmou Mike Walters, vice-presidente de programação da ESPN.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 23
-              }
-            ]
+            "char_start": 19,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -1029,46 +742,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12138,
+          "instance_id": "FOLHA_DOC000159_SENT026::jogo::1",
           "sent_ID": "FOLHA_DOC000159_SENT026",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              13
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12222,
+          "instance_id": "FOLHA_DOC000100_SENT057::jogo::1",
           "sent_ID": "FOLHA_DOC000100_SENT057",
           "text": "Basta combinar com o adversário para que o jogo tenha mais de seis substituições.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 47
-              }
-            ]
+            "char_start": 43,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -1080,16 +782,11 @@
             "Arg1": null,
             "Arg2": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 15,
                 "char_end": 31
               }
@@ -1097,22 +794,14 @@
           }
         },
         {
-          "instance_id": 12879,
+          "instance_id": "FOLHA_DOC003014_SENT016::jogo::1",
           "sent_ID": "FOLHA_DOC003014_SENT016",
           "text": "Num outro ponto, o público se enfrenta em jogos de batalha, como o \"Leagues of Legend\", adorado por jovens.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 47
-              }
-            ]
+            "char_start": 42,
+            "char_end": 47
           },
           "realization": {
             "Arg0": "o público",
@@ -1127,31 +816,15 @@
             ],
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 17,
                 "char_end": 26
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 48,
                 "char_end": 86
               }
@@ -1160,22 +833,14 @@
           }
         },
         {
-          "instance_id": 13794,
+          "instance_id": "FOLHA_DOC004013_SENT093::jogo::1",
           "sent_ID": "FOLHA_DOC004013_SENT093",
           "text": "Houve um jogo em que ele resolveu humilhar o menino que o derrubava em todas as jogadas.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 13
-              }
-            ]
+            "char_start": 9,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "ele",
@@ -1187,12 +852,9 @@
             "Arg1": null,
             "Arg2": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 21,
                 "char_end": 24
               }
@@ -1200,17 +862,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 43,
                 "char_end": 87
               }
@@ -1218,22 +869,14 @@
           }
         },
         {
-          "instance_id": 14608,
+          "instance_id": "FOLHA_DOC003207_SENT028::jogo::1",
           "sent_ID": "FOLHA_DOC003207_SENT028",
           "text": "No entanto, o estresse do cobrador durante o jogo e o fato dos goleiros estarem cada vez mais analisando as cobranças, certamente, aumenta a chance de defesa, diz o pesquisador.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 49
-              }
-            ]
+            "char_start": 45,
+            "char_end": 49
           },
           "realization": {
             "Arg0": "do cobrador",
@@ -1248,14 +891,9 @@
               "nsubj"
             ]
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 23,
                 "char_end": 34
               }
@@ -1263,11 +901,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 59,
                 "char_end": 71
               }
@@ -1275,22 +908,14 @@
           }
         },
         {
-          "instance_id": 15011,
+          "instance_id": "FOLHA_DOC004013_SENT072::jogo::1",
           "sent_ID": "FOLHA_DOC004013_SENT072",
           "text": "Ficava tão entediado nos jogos que se sentava no meio da área, sem nada para fazer.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogos",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 30
-              }
-            ]
+            "char_start": 25,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -1302,29 +927,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15284,
+          "instance_id": "FOLHA_DOC003018_SENT030::jogo::1",
           "sent_ID": "FOLHA_DOC003018_SENT030",
           "text": "O site traz os resultados das rodadas -já que nem sempre há detalhes de cada jogo- dos campeonatos estaduais, nacionais e internacionais femininos.",
-          "frame_id": "f_71027801d4d6d7d7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogo",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 81
-              }
-            ]
+            "char_start": 77,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -1336,13 +953,31 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 5,
+          "obj": 1,
+          "nsubj": 3
+        },
+        "Arg1": {
+          "nmod": 4,
+          "nsubj": 1
+        },
+        "Arg2": {
+          "nmod": 1,
+          "obj": 2,
+          "obl": 1,
+          "mark": 1,
+          "nsubj": 1
+        }
+      }
     }
   ]
 }

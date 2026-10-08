@@ -14,9 +14,12 @@ Busque um nome e filtre por anotação, valência, papel semântico ou realizaç
 
 - `jsons/*.json`: dados de cada lema, com todas as instâncias e marcações.
 - `jsons/lemmas.jsonl` e `jsons/lemmas.zip`: conjunto completo por lema.
-- `jsons/instances.jsonl`: todas as instâncias, com REL, ARG e tokens marcados.
-- `data/senses.jsonl`, `data/frames.jsonl` e `data/sentences.jsonl`: acepções, frames e sentenças.
+- `jsons/instances.jsonl`: todas as instâncias, com REL, ARG e posições no texto.
+- `data/annotations.jsonl`: exportação técnica com os tokens exatos marcados e os núcleos explicitamente anotados.
+- `data/senses.jsonl`, `data/frames.jsonl` e `data/sentences.jsonl`: inventários científicos e sentenças com tokenização e análise UD.
 - [Formato dos dados](DATA_FORMAT.md): campos e interpretação das marcações.
+
+Os arquivos de consulta usam referências legíveis para distinguir instâncias do mesmo lema na mesma sentença. `arguments_annotated` distingue a ausência de realização anotada de uma anotação ainda não realizada. Todos os arquivos preservam as informações científicas disponíveis; a exportação técnica permite reproduzir a segmentação original por tokens.
 
 ## Interface e direitos
 

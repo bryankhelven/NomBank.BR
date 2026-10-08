@@ -1,100 +1,55 @@
 {
   "lemma": "motivo",
-  "lemma_base": "motivo",
   "senses": [
     {
       "pt_roleset": "motivo.01",
       "description": "causa; razão",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_0a1b04d371d613cd",
-          "description": "causa; razão",
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "reason.02",
-              "resource": "English NomBank",
-              "description": "justify",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "titular da decisão/justificador que apresenta motivo próprio, não qualquer relator",
-              "definition": "titular da decisão/justificador que apresenta motivo próprio, não qualquer relator"
-            },
-            {
-              "id": "Arg1",
-              "desc": "acontecimento/atitude cuja razão é apresentada",
-              "definition": "acontecimento/atitude cuja razão é apresentada"
-            },
-            {
-              "id": "Arg2",
-              "desc": "razão/fator justificativo explicitado, inclusive causal na adaptação",
-              "definition": "razão/fator justificativo explicitado, inclusive causal na adaptação"
-            },
-            {
-              "id": "Arg3",
-              "desc": "predicação secundária sobre decisão justificada",
-              "definition": "predicação secundária sobre decisão justificada"
-            },
-            {
-              "id": "Arg4",
-              "desc": "entidade a quem se justifica, não alvo de todo acontecimento",
-              "definition": "entidade a quem se justifica, não alvo de todo acontecimento"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 6,
-              "root": 5,
-              "acl": 3,
-              "xcomp": 1,
-              "conj": 1,
-              "obl": 2,
-              "parataxis": 1,
-              "advcl": 1,
-              "obj": 1
-            },
-            "Arg2": {
-              "nsubj": 5,
-              "amod": 1,
-              "root": 3,
-              "advcl": 1,
-              "ccomp:speech": 1,
-              "nmod": 1,
-              "ccomp": 1,
-              "parataxis": 1
-            },
-            "Arg0": {
-              "nsubj": 4
-            },
-            "Arg4": {
-              "iobj": 1
-            }
-          }
+          "roleset": "reason.02",
+          "resource": "English NomBank",
+          "description": "justify",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 55,
+          "id": "Arg0",
+          "desc": "titular da decisão/justificador que apresenta motivo próprio, não qualquer relator",
+          "definition": "titular da decisão/justificador que apresenta motivo próprio, não qualquer relator"
+        },
+        {
+          "id": "Arg1",
+          "desc": "acontecimento/atitude cuja razão é apresentada",
+          "definition": "acontecimento/atitude cuja razão é apresentada"
+        },
+        {
+          "id": "Arg2",
+          "desc": "razão/fator justificativo explicitado, inclusive causal na adaptação",
+          "definition": "razão/fator justificativo explicitado, inclusive causal na adaptação"
+        },
+        {
+          "id": "Arg3",
+          "desc": "predicação secundária sobre decisão justificada",
+          "definition": "predicação secundária sobre decisão justificada"
+        },
+        {
+          "id": "Arg4",
+          "desc": "entidade a quem se justifica, não alvo de todo acontecimento",
+          "definition": "entidade a quem se justifica, não alvo de todo acontecimento"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000024_SENT004::motivo::1",
           "sent_ID": "FOLHA_DOC000024_SENT004",
           "text": "A superlotação é o principal motivo de multas recebidas pelos prestadores de serviço neste ano.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 35
-              }
-            ]
+            "char_start": 29,
+            "char_end": 35
           },
           "realization": {
             "Arg0": null,
@@ -110,33 +65,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 36,
                 "char_end": 94
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 14
               }
@@ -146,22 +84,14 @@
           }
         },
         {
-          "instance_id": 493,
+          "instance_id": "FOLHA_DOC003076_SENT007::motivo::1",
           "sent_ID": "FOLHA_DOC003076_SENT007",
           "text": "Por motivos protocolares, não poderei transmitir o cargo a minha sucessora, mas desejo-lhe sorte e sobretudo energia para os anos que virão.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 11
-              }
-            ]
+            "char_start": 4,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -177,29 +107,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 26,
                 "char_end": 74
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 12,
                 "char_end": 24
               }
@@ -209,22 +126,14 @@
           }
         },
         {
-          "instance_id": 3147,
+          "instance_id": "FOLHA_DOC002004_SENT021::motivo::1",
           "sent_ID": "FOLHA_DOC002004_SENT021",
           "text": "É motivo bastante para ao menos retomar os planos de privatização da Infraero, deixando-os prontos para o próximo governo.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -240,32 +149,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 18,
                 "char_end": 121
               }
@@ -276,22 +163,14 @@
           }
         },
         {
-          "instance_id": 3302,
+          "instance_id": "FOLHA_DOC000024_SENT001::motivo::1",
           "sent_ID": "FOLHA_DOC000024_SENT001",
           "text": "Superlotação é principal motivo de multas a vans da Grande São Paulo.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -307,30 +186,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 32,
                 "char_end": 68
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 12
               }
@@ -340,22 +205,14 @@
           }
         },
         {
-          "instance_id": 3730,
+          "instance_id": "FOLHA_DOC003131_SENT016::motivo::1",
           "sent_ID": "FOLHA_DOC003131_SENT016",
           "text": "Pelo mesmo motivo, diz Fontanini, subiram as deportações do lado mexicano e mudou a situação de um vizinho.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 17
-              }
-            ]
+            "char_start": 11,
+            "char_end": 17
           },
           "realization": {
             "Arg0": null,
@@ -371,26 +228,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 34,
                 "char_end": 106
               }
@@ -401,22 +242,14 @@
           }
         },
         {
-          "instance_id": 3816,
+          "instance_id": "FOLHA_DOC004007_SENT008::motivo::1",
           "sent_ID": "FOLHA_DOC004007_SENT008",
           "text": "Em seguida meu tio paulistano me ligou para explicar os motivos que o levavam a crer que os esporões da irmã eram mentira.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 63
-              }
-            ]
+            "char_start": 56,
+            "char_end": 63
           },
           "realization": {
             "Arg0": "meu tio paulistano",
@@ -432,32 +265,15 @@
             "Arg3": null,
             "Arg4": "iobj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 11,
                 "char_end": 29
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 78,
                 "char_end": 121
               }
@@ -466,9 +282,6 @@
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 30,
                 "char_end": 32
               }
@@ -476,22 +289,14 @@
           }
         },
         {
-          "instance_id": 5416,
+          "instance_id": "FOLHA_DOC004631_SENT014::motivo::1",
           "sent_ID": "FOLHA_DOC004631_SENT014",
           "text": "Contra o Equador, Neymar jogou para ele e não para o time, se descontrolou sem motivos, pareceu mais irritado consigo mesmo, por não conseguir se dar bem nas tentativas que fez, do que com as provocações, de resto comuns dos rivais.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 79,
-                "char_end": 86
-              }
-            ]
+            "char_start": 79,
+            "char_end": 86
           },
           "realization": {
             "Arg0": "Neymar",
@@ -507,22 +312,15 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 18,
                 "char_end": 24
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 59,
                 "char_end": 74
               }
@@ -533,22 +331,14 @@
           }
         },
         {
-          "instance_id": 5639,
+          "instance_id": "FOLHA_DOC002041_SENT030::motivo::1",
           "sent_ID": "FOLHA_DOC002041_SENT030",
           "text": "Para Gobetti, o Brasil ainda não reverteu esse quadro por dois motivos básicos.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 70
-              }
-            ]
+            "char_start": 63,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -564,19 +354,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 14,
                 "char_end": 53
               }
@@ -587,22 +368,14 @@
           }
         },
         {
-          "instance_id": 6965,
+          "instance_id": "FOLHA_DOC003156_SENT025::motivo::1",
           "sent_ID": "FOLHA_DOC003156_SENT025",
           "text": "Nunca uma citação de delator poderia ser motivo suficiente para a instauração de um inquérito, mas foi assim que Janot agiu.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 47
-              }
-            ]
+            "char_start": 41,
+            "char_end": 47
           },
           "realization": {
             "Arg0": "Janot",
@@ -618,38 +391,21 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 113,
                 "char_end": 118
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 59,
                 "char_end": 93
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 6,
                 "char_end": 28
               }
@@ -659,22 +415,14 @@
           }
         },
         {
-          "instance_id": 7143,
+          "instance_id": "FOLHA_DOC004020_SENT006::motivo::1",
           "sent_ID": "FOLHA_DOC004020_SENT006",
           "text": "O motivo da crise é o fato de que os dois só pensam naquilo: a Presidência da República.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -690,39 +438,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 9,
                 "char_end": 17
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 20,
                 "char_end": 87
               }
@@ -732,22 +457,14 @@
           }
         },
         {
-          "instance_id": 7170,
+          "instance_id": "FOLHA_DOC003102_SENT016::motivo::1",
           "sent_ID": "FOLHA_DOC003102_SENT016",
           "text": "Os motivos, no entanto, não são estritamente comerciais: o local também é procurado por ser um dos poucos climatizados.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -769,39 +486,20 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 57,
                 "char_end": 83
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 45,
                 "char_end": 55
               },
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 84,
                 "char_end": 118
               }
@@ -811,22 +509,14 @@
           }
         },
         {
-          "instance_id": 9171,
+          "instance_id": "FOLHA_DOC004091_SENT042::motivo::1",
           "sent_ID": "FOLHA_DOC004091_SENT042",
           "text": "O principal motivo do aumento da criminalidade é o tráfico de drogas, diz.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 18
-              }
-            ]
+            "char_start": 12,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -842,30 +532,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 19,
                 "char_end": 46
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 49,
                 "char_end": 68
               }
@@ -875,22 +551,14 @@
           }
         },
         {
-          "instance_id": 9489,
+          "instance_id": "FOLHA_DOC002022_SENT030::motivo::1",
           "sent_ID": "FOLHA_DOC002022_SENT030",
           "text": "A ausência de Lady Gaga, por motivos de saúde.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 36
-              }
-            ]
+            "char_start": 29,
+            "char_end": 36
           },
           "realization": {
             "Arg0": null,
@@ -906,27 +574,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
                 "char_end": 23
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 37,
                 "char_end": 45
               }
@@ -936,22 +593,14 @@
           }
         },
         {
-          "instance_id": 10089,
+          "instance_id": "FOLHA_DOC000038_SENT001::motivo::1",
           "sent_ID": "FOLHA_DOC000038_SENT001",
           "text": "Morte de reitor da UFSC não é motivo para falsear opinião, dizem entidades.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 36
-              }
-            ]
+            "char_start": 30,
+            "char_end": 36
           },
           "realization": {
             "Arg0": null,
@@ -967,29 +616,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 37,
                 "char_end": 57
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 0,
                 "char_end": 23
               }
@@ -999,22 +635,14 @@
           }
         },
         {
-          "instance_id": 10141,
+          "instance_id": "FOLHA_DOC002081_SENT033::motivo::1",
           "sent_ID": "FOLHA_DOC002081_SENT033",
           "text": "Um dos motivos foi Lucas Pratto ficar responsável por puxar alguns deles.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 14
-              }
-            ]
+            "char_start": 7,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -1030,22 +658,11 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 19,
                 "char_end": 72
               }
@@ -1055,22 +672,14 @@
           }
         },
         {
-          "instance_id": 10432,
+          "instance_id": "FOLHA_DOC003033_SENT021::motivo::1",
           "sent_ID": "FOLHA_DOC003033_SENT021",
           "text": "Sobre a iluminação verde e amarela durante a noite, disseram que o motivo é a Semana da Pátria, comemorada até o dia 7 de setembro.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 73
-              }
-            ]
+            "char_start": 67,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -1086,41 +695,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 6,
                 "char_end": 50
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 76,
                 "char_end": 130
               }
@@ -1130,22 +714,14 @@
           }
         },
         {
-          "instance_id": 11618,
+          "instance_id": "FOLHA_DOC004012_SENT035::motivo::1",
           "sent_ID": "FOLHA_DOC004012_SENT035",
           "text": "É mais do que pode suportar, e por bons motivos, a mentalidade média.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 47
-              }
-            ]
+            "char_start": 40,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -1161,14 +737,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 14,
                 "char_end": 27
               }
@@ -1179,22 +751,14 @@
           }
         },
         {
-          "instance_id": 11654,
+          "instance_id": "FOLHA_DOC003159_SENT008::motivo::1",
           "sent_ID": "FOLHA_DOC003159_SENT008",
           "text": "Dentre os diversos motivos que podem explicar essa situação crítica, constam os seguidos tropeços contra concorrentes diretos na parte baixa da tabela, nesse campeonato particular anunciado por Dorival.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 26
-              }
-            ]
+            "char_start": 19,
+            "char_end": 26
           },
           "realization": {
             "Arg0": null,
@@ -1210,36 +774,16 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 46,
                 "char_end": 67
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 77,
                 "char_end": 150
               }
@@ -1249,22 +793,14 @@
           }
         },
         {
-          "instance_id": 12134,
+          "instance_id": "FOLHA_DOC003187_SENT034::motivo::1",
           "sent_ID": "FOLHA_DOC003187_SENT034",
           "text": "Parece ter havido erros do patrocinador, mas, enfim, qual o motivo para tanto temor?",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 66
-              }
-            ]
+            "char_start": 60,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -1280,15 +816,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 67,
                 "char_end": 83
               }
@@ -1299,22 +830,14 @@
           }
         },
         {
-          "instance_id": 12411,
+          "instance_id": "FOLHA_DOC000003_SENT011::motivo::1",
           "sent_ID": "FOLHA_DOC000003_SENT011",
           "text": "A população não poderia ter acesso a relatórios que explicassem, por exemplo, os motivos exatos de atrasos em obras de linhas e estações.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 88
-              }
-            ]
+            "char_start": 81,
+            "char_end": 88
           },
           "realization": {
             "Arg0": null,
@@ -1330,20 +853,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 96,
                 "char_end": 136
               }
@@ -1354,22 +867,14 @@
           }
         },
         {
-          "instance_id": 13657,
+          "instance_id": "FOLHA_DOC002081_SENT035::motivo::1",
           "sent_ID": "FOLHA_DOC002081_SENT035",
           "text": "É verdade que o técnico Dorival Júnior tem motivo para reclamar.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 49
-              }
-            ]
+            "char_start": 43,
+            "char_end": 49
           },
           "realization": {
             "Arg0": "o técnico Dorival Júnior",
@@ -1385,25 +890,15 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 14,
                 "char_end": 38
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 50,
                 "char_end": 63
               }
@@ -1414,22 +909,14 @@
           }
         },
         {
-          "instance_id": 14251,
+          "instance_id": "FOLHA_DOC003035_SENT163::motivo::1",
           "sent_ID": "FOLHA_DOC003035_SENT163",
           "text": "Por um único motivo: não cometi crimes nem tenho acesso a quem tenha cometido.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 19
-              }
-            ]
+            "char_start": 13,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -1445,23 +932,11 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 21,
                 "char_end": 77
               }
@@ -1471,22 +946,14 @@
           }
         },
         {
-          "instance_id": 15342,
+          "instance_id": "FOLHA_DOC003212_SENT017::motivo::1",
           "sent_ID": "FOLHA_DOC003212_SENT017",
           "text": "É por esse motivo que a economia americana tem mais indústria do que a australiana.",
-          "frame_id": "f_0a1b04d371d613cd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "motivo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 17
-              }
-            ]
+            "char_start": 11,
+            "char_end": 17
           },
           "realization": {
             "Arg0": null,
@@ -1502,23 +969,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 22,
                 "char_end": 82
               }
@@ -1528,7 +982,36 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 6,
+          "root": 5,
+          "acl": 3,
+          "xcomp": 1,
+          "conj": 1,
+          "obl": 2,
+          "parataxis": 1,
+          "advcl": 1,
+          "obj": 1
+        },
+        "Arg2": {
+          "nsubj": 5,
+          "amod": 1,
+          "root": 3,
+          "advcl": 1,
+          "ccomp:speech": 1,
+          "nmod": 1,
+          "ccomp": 1,
+          "parataxis": 1
+        },
+        "Arg0": {
+          "nsubj": 4
+        },
+        "Arg4": {
+          "iobj": 1
+        }
+      }
     }
   ]
 }

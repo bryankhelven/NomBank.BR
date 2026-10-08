@@ -1,71 +1,50 @@
 {
   "lemma": "descolamento",
-  "lemma_base": "descolamento",
   "senses": [
     {
       "pt_roleset": "descolamento.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_274ad2fa603abc6d",
+          "roleset": "gap.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "gap.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/gap.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "entity causing separation",
-              "definition": "entity causing separation"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing being divided",
-              "definition": "thing being divided"
-            },
-            {
-              "id": "Arg2",
-              "desc": "attribute of arg1",
-              "definition": "attribute of arg1"
-            },
-            {
-              "id": "Arg3",
-              "desc": "secondary-theme",
-              "definition": "secondary-theme"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/gap.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 6257,
+          "id": "Arg0",
+          "desc": "entity causing separation",
+          "definition": "entity causing separation"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing being divided",
+          "definition": "thing being divided"
+        },
+        {
+          "id": "Arg2",
+          "desc": "attribute of arg1",
+          "definition": "attribute of arg1"
+        },
+        {
+          "id": "Arg3",
+          "desc": "secondary-theme",
+          "definition": "secondary-theme"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000015_SENT004::descolamento::1",
           "sent_ID": "FOLHA_DOC000015_SENT004",
           "text": "Observamos um descolamento da política e da economia no país.",
-          "frame_id": "f_274ad2fa603abc6d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "descolamento",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 26
-              }
-            ]
+            "char_start": 14,
+            "char_end": 26
           },
           "realization": {
             "Arg0": null,
@@ -79,29 +58,24 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 27,
-                "char_end": 52,
-                "head_token_id": 6
+                "char_end": 52
               }
             ],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

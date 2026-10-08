@@ -1,87 +1,50 @@
 {
   "lemma": "efeito",
-  "lemma_base": "efeito",
   "senses": [
     {
       "pt_roleset": "efeito.01",
       "description": "eficácia; resultado",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_e67a44b167373f0f",
-          "description": "eficácia; resultado",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "effect.01",
-              "resource": "English NomBank",
-              "description": "have an effect on",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/effect.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "causa do efeito",
-              "definition": "causa do efeito"
-            },
-            {
-              "id": "Arg1",
-              "desc": "mudança/qualificação produzida",
-              "definition": "mudança/qualificação produzida"
-            },
-            {
-              "id": "Arg2",
-              "desc": "objeto afetado pelo efeito, inclusive impacto adverso conforme fonte",
-              "definition": "objeto afetado pelo efeito, inclusive impacto adverso conforme fonte"
-            },
-            {
-              "id": "Arg3",
-              "desc": "instrumento que produz o efeito, distinto de origem",
-              "definition": "instrumento que produz o efeito, distinto de origem"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 5,
-              "nmod": 8,
-              "obj": 2,
-              "obl": 1
-            },
-            "Arg2": {
-              "nsubj": 4,
-              "nmod": 3,
-              "obl": 1
-            },
-            "Arg1": {
-              "amod": 6,
-              "acl": 1,
-              "parataxis": 2,
-              "xcomp": 1,
-              "advcl": 1,
-              "root": 1
-            }
-          }
+          "roleset": "effect.01",
+          "resource": "English NomBank",
+          "description": "have an effect on",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/effect.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 349,
+          "id": "Arg0",
+          "desc": "causa do efeito",
+          "definition": "causa do efeito"
+        },
+        {
+          "id": "Arg1",
+          "desc": "mudança/qualificação produzida",
+          "definition": "mudança/qualificação produzida"
+        },
+        {
+          "id": "Arg2",
+          "desc": "objeto afetado pelo efeito, inclusive impacto adverso conforme fonte",
+          "definition": "objeto afetado pelo efeito, inclusive impacto adverso conforme fonte"
+        },
+        {
+          "id": "Arg3",
+          "desc": "instrumento que produz o efeito, distinto de origem",
+          "definition": "instrumento que produz o efeito, distinto de origem"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003178_SENT026::efeito::1",
           "sent_ID": "FOLHA_DOC003178_SENT026",
           "text": "Os remédios que eu estava tomando pararam de fazer efeito, eu não era dessas que pensavam em morrer ou algo assim, mas não queria fazer nada, absolutamente nada.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 57
-              }
-            ]
+            "char_start": 51,
+            "char_end": 57
           },
           "realization": {
             "Arg0": "Os remédios que eu estava tomando",
@@ -95,17 +58,9 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 0,
                 "char_end": 33
               }
@@ -113,9 +68,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 16,
                 "char_end": 18
               }
@@ -124,22 +76,14 @@
           }
         },
         {
-          "instance_id": 665,
+          "instance_id": "FOLHA_DOC004082_SENT002::efeito::1",
           "sent_ID": "FOLHA_DOC004082_SENT002",
           "text": "A Petrobras pode ser beneficiada pelos efeitos do furacão Harvey no Texas.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeitos",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 46
-              }
-            ]
+            "char_start": 39,
+            "char_end": 46
           },
           "realization": {
             "Arg0": "do furacão Harvey",
@@ -153,15 +97,9 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 47,
                 "char_end": 64
               }
@@ -169,10 +107,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 11
               }
@@ -181,22 +115,14 @@
           }
         },
         {
-          "instance_id": 1543,
+          "instance_id": "FOLHA_DOC003161_SENT038::efeito::1",
           "sent_ID": "FOLHA_DOC003161_SENT038",
           "text": "\"Esta retração, combinada a um dólar alto e ao aumento de custos por conta da inflação, tiveram um efeito nocivo nos resultados gerais de toda a indústria\", afirmou.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 99,
-                "char_end": 105
-              }
-            ]
+            "char_start": 99,
+            "char_end": 105
           },
           "realization": {
             "Arg0": "Esta retração, combinada a um dólar alto e ao aumento de custos por conta da inflação",
@@ -210,55 +136,21 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 1,
                 "char_end": 86
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  25
-                ],
                 "char_start": 106,
                 "char_end": 112
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 113,
                 "char_end": 154
               }
@@ -267,22 +159,14 @@
           }
         },
         {
-          "instance_id": 1759,
+          "instance_id": "FOLHA_DOC003159_SENT026::efeito::1",
           "sent_ID": "FOLHA_DOC003159_SENT026",
           "text": "Efeito da reação sob o comando do técnico Vagner Mancini, com direito a triunfo no Itaquerão contra o líder Corinthians, que é o rival do São Paulo na próxima rodada.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Efeito",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 6
-              }
-            ]
+            "char_start": 0,
+            "char_end": 6
           },
           "realization": {
             "Arg0": "da reação sob o comando do técnico Vagner Mancini, com direito a triunfo no Itaquerão contra o líder Corinthians, que é o rival do São Paulo na próxima rodada",
@@ -296,47 +180,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 7,
                 "char_end": 165
               }
@@ -347,22 +193,14 @@
           }
         },
         {
-          "instance_id": 4760,
+          "instance_id": "FOLHA_DOC003128_SENT024::efeito::1",
           "sent_ID": "FOLHA_DOC003128_SENT024",
           "text": "Programas como o Bolsa Família decerto tiveram papel relevante em reduzir a miséria, mas efeito minúsculo na divisão total do PIB.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 95
-              }
-            ]
+            "char_start": 89,
+            "char_end": 95
           },
           "realization": {
             "Arg0": "Programas como o Bolsa Família",
@@ -376,40 +214,21 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
                 "char_end": 30
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 96,
                 "char_end": 105
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 106,
                 "char_end": 129
               }
@@ -418,22 +237,14 @@
           }
         },
         {
-          "instance_id": 5685,
+          "instance_id": "FOLHA_DOC000058_SENT024::efeito::1",
           "sent_ID": "FOLHA_DOC000058_SENT024",
           "text": "\"Nós fizemos isso por um efeito sensacional\", disse ela à época.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {
             "Arg0": "isso",
@@ -447,21 +258,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 13,
                 "char_end": 17
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 32,
                 "char_end": 43
               }
@@ -471,22 +276,14 @@
           }
         },
         {
-          "instance_id": 5979,
+          "instance_id": "FOLHA_DOC002013_SENT008::efeito::1",
           "sent_ID": "FOLHA_DOC002013_SENT008",
           "text": "Além de divertido e didático, o efeito se tornou popular.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 38
-              }
-            ]
+            "char_start": 32,
+            "char_end": 38
           },
           "realization": {
             "Arg0": null,
@@ -500,15 +297,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 8,
                 "char_end": 28
               }
@@ -518,22 +310,14 @@
           }
         },
         {
-          "instance_id": 7302,
+          "instance_id": "FOLHA_DOC000109_SENT014::efeito::1",
           "sent_ID": "FOLHA_DOC000109_SENT014",
           "text": "Ele descobriu que, nos lugares que foram atingidos com mais força pela recessão, os efeitos ainda são duradouros: milhares de trabalhadores que perderam seus empregos tiveram dificuldades para se reposicionar no mercado e, no fim das contas, desistiram de procurar vagas.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeitos",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 84,
-                "char_end": 91
-              }
-            ]
+            "char_start": 84,
+            "char_end": 91
           },
           "realization": {
             "Arg0": "pela recessão",
@@ -547,65 +331,21 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 66,
                 "char_end": 79
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37,
-                  38,
-                  39,
-                  40,
-                  41,
-                  42,
-                  43,
-                  44,
-                  45,
-                  46,
-                  47,
-                  48,
-                  49,
-                  50,
-                  51
-                ],
                 "char_start": 114,
                 "char_end": 270
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 114,
                 "char_end": 166
               }
@@ -614,22 +354,14 @@
           }
         },
         {
-          "instance_id": 7322,
+          "instance_id": "FOLHA_DOC001382_SENT029::efeito::1",
           "sent_ID": "FOLHA_DOC001382_SENT029",
           "text": "O chamado \"efeito Trump\" transcende de longe as políticas públicas.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 17
-              }
-            ]
+            "char_start": 11,
+            "char_end": 17
           },
           "realization": {
             "Arg0": "Trump",
@@ -643,12 +375,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 18,
                 "char_end": 23
               }
@@ -659,22 +388,14 @@
           }
         },
         {
-          "instance_id": 10450,
+          "instance_id": "FOLHA_DOC000109_SENT017::efeito::1",
           "sent_ID": "FOLHA_DOC000109_SENT017",
           "text": "Os efeitos da recessão não deveriam durar tanto tempo.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeitos",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg0": "da recessão",
@@ -688,14 +409,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 11,
                 "char_end": 22
               }
@@ -706,22 +422,14 @@
           }
         },
         {
-          "instance_id": 11549,
+          "instance_id": "FOLHA_DOC002013_SENT004::efeito::1",
           "sent_ID": "FOLHA_DOC002013_SENT004",
           "text": "Sob o efeito da droga, começou a enxergar visualmente cada nota da composição no seu campo visual, à medida que ressoavam.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 12
-              }
-            ]
+            "char_start": 6,
+            "char_end": 12
           },
           "realization": {
             "Arg0": "da droga",
@@ -738,40 +446,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 13,
                 "char_end": 21
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 33,
                 "char_end": 121
               }
@@ -781,22 +464,14 @@
           }
         },
         {
-          "instance_id": 11789,
+          "instance_id": "FOLHA_DOC000237_SENT005::efeito::1",
           "sent_ID": "FOLHA_DOC000237_SENT005",
           "text": "A primeira aponta para o efeito que a interação com os animais exerce sobre nosso sistema endócrino: tê-los por perto e gozar do carinho que eles nos dão reduz a liberação dos hormônios do estresse (que também levam à hipertensão e à imunossupressão) e aumenta a produção e a descarga dos mediadores químicos responsáveis pela sensação de prazer e felicidade, como serotonina, dopamina e ocitocina.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {
             "Arg0": "a interação com os animais",
@@ -810,83 +485,21 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 36,
                 "char_end": 62
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37,
-                  38,
-                  39,
-                  40,
-                  41,
-                  42,
-                  43,
-                  44,
-                  45,
-                  46,
-                  47,
-                  48,
-                  49,
-                  50,
-                  51,
-                  52,
-                  53,
-                  54,
-                  55,
-                  56,
-                  57,
-                  58,
-                  59,
-                  60,
-                  61,
-                  62,
-                  63,
-                  64,
-                  65,
-                  66,
-                  67,
-                  68,
-                  69,
-                  70,
-                  71,
-                  72,
-                  73,
-                  74,
-                  75,
-                  76,
-                  77,
-                  78
-                ],
                 "char_start": 154,
                 "char_end": 397
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 70,
                 "char_end": 99
               }
@@ -895,22 +508,14 @@
           }
         },
         {
-          "instance_id": 12884,
+          "instance_id": "FOLHA_DOC004092_SENT034::efeito::1",
           "sent_ID": "FOLHA_DOC004092_SENT034",
           "text": "Isso dificulta a adoção de medicamentos antirretrovirais de segunda e terceira geração, com menos efeitos colaterais.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeitos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 105
-              }
-            ]
+            "char_start": 98,
+            "char_end": 105
           },
           "realization": {
             "Arg0": "de medicamentos antirretrovirais de segunda e terceira geração",
@@ -924,28 +529,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 24,
                 "char_end": 86
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 106,
                 "char_end": 116
               }
@@ -955,22 +547,14 @@
           }
         },
         {
-          "instance_id": 13851,
+          "instance_id": "FOLHA_DOC000455_SENT010::efeito::1",
           "sent_ID": "FOLHA_DOC000455_SENT010",
           "text": "Uma linguagem que só por meio da mais brutal violência pode nos fazer ainda confiar nas relações de causalidade, na certeza produzida pelo efeito que segue a causa, na recognição produzida pela memória, na continuidade narrativa com sua orientação de ação pelas noções de necessidade e desenvolvimento.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 139,
-                "char_end": 145
-              }
-            ]
+            "char_start": 139,
+            "char_end": 145
           },
           "realization": {
             "Arg0": "a causa",
@@ -984,13 +568,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  32,
-                  33
-                ],
                 "char_start": 156,
                 "char_end": 163
               }
@@ -1001,22 +581,14 @@
           }
         },
         {
-          "instance_id": 14080,
+          "instance_id": "FOLHA_DOC004012_SENT047::efeito::1",
           "sent_ID": "FOLHA_DOC004012_SENT047",
           "text": "Os eventuais efeitos, digamos, penais das acusações de Palocci não são imediatos.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeitos",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 20
-              }
-            ]
+            "char_start": 13,
+            "char_end": 20
           },
           "realization": {
             "Arg0": "das acusações de Palocci",
@@ -1030,25 +602,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 38,
                 "char_end": 62
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 31,
                 "char_end": 37
               }
@@ -1058,22 +620,14 @@
           }
         },
         {
-          "instance_id": 14262,
+          "instance_id": "FOLHA_DOC003123_SENT006::efeito::1",
           "sent_ID": "FOLHA_DOC003123_SENT006",
           "text": "Outro efeito colateral desse processo é a impaciência: os jovens estão com dificuldade de lidar com quaisquer aspectos da vida que não se resolvam em brevíssimo tempo.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 12
-              }
-            ]
+            "char_start": 6,
+            "char_end": 12
           },
           "realization": {
             "Arg0": "desse processo",
@@ -1087,34 +641,21 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 23,
                 "char_end": 37
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 40,
                 "char_end": 53
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 55,
                 "char_end": 64
               }
@@ -1123,22 +664,14 @@
           }
         },
         {
-          "instance_id": 14891,
+          "instance_id": "FOLHA_DOC003023_SENT015::efeito::1",
           "sent_ID": "FOLHA_DOC003023_SENT015",
           "text": "Mas quando um dos líderes do elenco, o único unanimemente jogando bem, protege seus colegas, isto pode ter efeito positivo no grupo.",
-          "frame_id": "f_e67a44b167373f0f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "efeito",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 107,
-                "char_end": 113
-              }
-            ]
+            "char_start": 107,
+            "char_end": 113
           },
           "realization": {
             "Arg0": "isto",
@@ -1152,32 +685,21 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 93,
                 "char_end": 97
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  25
-                ],
                 "char_start": 114,
                 "char_end": 122
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 123,
                 "char_end": 131
               }
@@ -1185,7 +707,28 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 5,
+          "nmod": 8,
+          "obj": 2,
+          "obl": 1
+        },
+        "Arg2": {
+          "nsubj": 4,
+          "nmod": 3,
+          "obl": 1
+        },
+        "Arg1": {
+          "amod": 6,
+          "acl": 1,
+          "parataxis": 2,
+          "xcomp": 1,
+          "advcl": 1,
+          "root": 1
+        }
+      }
     }
   ]
 }

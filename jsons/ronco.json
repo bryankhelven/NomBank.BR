@@ -1,66 +1,42 @@
 {
   "lemma": "ronco",
-  "lemma_base": "ronco",
   "senses": [
     {
       "pt_roleset": "ronco · acepção 1",
       "description": "1 som grave e barulhento da res- piração de quem dorme: Agora, ao ronco de Leo vêm-se jun- tar o ressonar de Luís (DES)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_cfa426753bc69bfd",
-          "description": "1 som grave e barulhento da res- piração de quem dorme: Agora, ao ronco de Leo vêm-se jun- tar o ressonar de Luís (DES)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg3": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 2281,
+          "instance_id": "FOLHA_DOC000161_SENT041::ronco::1",
           "sent_ID": "FOLHA_DOC000161_SENT041",
           "text": "A fadiga dos rolamentos de roda é identificada pelo ronco emitido com o carro em movimento.",
-          "frame_id": "f_cfa426753bc69bfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ronco",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 57
-              }
-            ]
+            "char_start": 52,
+            "char_end": 57
           },
           "realization": {
             "Arg0": "rolamentos de roda",
@@ -74,38 +50,32 @@
             "Arg2": null,
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 13,
-                "char_end": 31,
-                "head_token_id": 5
+                "char_end": 31
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 66,
-                "char_end": 90,
-                "head_token_id": 16
+                "char_end": 90
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg3": {
+          "obl": 1
+        }
+      }
     }
   ]
 }

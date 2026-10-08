@@ -1,72 +1,40 @@
 {
   "lemma": "benefício",
-  "lemma_base": "benefício",
   "senses": [
     {
       "pt_roleset": "benefício.02",
       "description": "ganho; proveito",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_117aed6b4c4783e7",
-          "description": "ganho; proveito",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "benefit.01",
-              "resource": "English NomBank",
-              "description": "give advantage to",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/benefit.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "fonte que dá vantagem",
-              "definition": "fonte que dá vantagem"
-            },
-            {
-              "id": "Arg1",
-              "desc": "entidade que recebe vantagem",
-              "definition": "entidade que recebe vantagem; conteúdo/valor do benefício não é slot novo"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "xcomp": 1,
-              "nsubj": 4,
-              "nmod": 4,
-              "obl:agent": 1
-            },
-            "Arg1": {
-              "iobj": 2,
-              "obj": 1,
-              "obl:agent": 1,
-              "nmod": 2,
-              "nsubj": 1,
-              "obl": 1
-            }
-          }
+          "roleset": "benefit.01",
+          "resource": "English NomBank",
+          "description": "give advantage to",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/benefit.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 715,
+          "id": "Arg0",
+          "desc": "fonte que dá vantagem",
+          "definition": "fonte que dá vantagem"
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade que recebe vantagem",
+          "definition": "entidade que recebe vantagem; conteúdo/valor do benefício não é slot novo"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000011_SENT013::benefício::1",
           "sent_ID": "FOLHA_DOC000011_SENT013",
           "text": "Tanto para Janot como para Dodge, houve descumprimento de uma cláusula do acordo de delação que trata de omissão de má-fé, o que justificou rever os benefícios.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 149,
-                "char_end": 159
-              }
-            ]
+            "char_start": 149,
+            "char_end": 159
           },
           "realization": {
             "Arg0": null,
@@ -76,28 +44,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 964,
+          "instance_id": "FOLHA_DOC002033_SENT007::benefício::1",
           "sent_ID": "FOLHA_DOC002033_SENT007",
           "text": "Por isso, não há interesse em conceder benefícios para estimular seus pagamentos, como ocorre com os débitos com a Receita Federal.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 49
-              }
-            ]
+            "char_start": 39,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -107,28 +67,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 1800,
+          "instance_id": "FOLHA_DOC003151_SENT024::benefício::1",
           "sent_ID": "FOLHA_DOC003151_SENT024",
           "text": "As pessoas dizem: A vida é assim, esse é o novo jogo que tenho que jogar e tenho que fazê-lo da forma que me traga mais benefícios.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              31
-            ],
-            "spans": [
-              {
-                "char_start": 120,
-                "char_end": 130
-              }
-            ]
+            "char_start": 120,
+            "char_end": 130
           },
           "realization": {
             "Arg0": "fazê-lo",
@@ -138,22 +90,15 @@
             "Arg0": "xcomp",
             "Arg1": "iobj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  22,
-                  23
-                ],
                 "char_start": 85,
                 "char_end": 92
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  28
-                ],
                 "char_start": 106,
                 "char_end": 108
               }
@@ -161,22 +106,14 @@
           }
         },
         {
-          "instance_id": 3099,
+          "instance_id": "FOLHA_DOC003035_SENT102::benefício::1",
           "sent_ID": "FOLHA_DOC003035_SENT102",
           "text": "Ele me perguntou: \"Caso a gente opte pela delação, que tipo de benefício vocês poderiam me oferecer?\".",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefício",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 72
-              }
-            ]
+            "char_start": 63,
+            "char_end": 72
           },
           "realization": {
             "Arg0": "vocês",
@@ -186,21 +123,15 @@
             "Arg0": "nsubj",
             "Arg1": "iobj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 73,
                 "char_end": 78
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  20
-                ],
                 "char_start": 88,
                 "char_end": 90
               }
@@ -208,22 +139,14 @@
           }
         },
         {
-          "instance_id": 3951,
+          "instance_id": "FOLHA_DOC003038_SENT026::benefício::1",
           "sent_ID": "FOLHA_DOC003038_SENT026",
           "text": "Um dos benefícios da Operação Lava Jato, diz, foi \"nos ensinar a ser menos crédulos e reverentes com os políticos\".",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 17
-              }
-            ]
+            "char_start": 7,
+            "char_end": 17
           },
           "realization": {
             "Arg0": "da Operação Lava Jato",
@@ -233,25 +156,15 @@
             "Arg0": "nmod",
             "Arg1": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 18,
                 "char_end": 39
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 51,
                 "char_end": 54
               }
@@ -259,22 +172,14 @@
           }
         },
         {
-          "instance_id": 6947,
+          "instance_id": "FOLHA_DOC002033_SENT008::benefício::1",
           "sent_ID": "FOLHA_DOC002033_SENT008",
           "text": "O relator da medida provisória na Câmara, deputado Newton Cardoso Jr. (PMDB-MG), argumenta que versões anteriores do Refis contemplaram o benefício.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefício",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 138,
-                "char_end": 147
-              }
-            ]
+            "char_start": 138,
+            "char_end": 147
           },
           "realization": {
             "Arg0": "versões anteriores do Refis",
@@ -284,16 +189,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 95,
                 "char_end": 122
               }
@@ -302,22 +200,14 @@
           }
         },
         {
-          "instance_id": 7369,
+          "instance_id": "FOLHA_DOC004044_SENT024::benefício::1",
           "sent_ID": "FOLHA_DOC004044_SENT024",
           "text": "Esta é uma estratégia adotada pelo delator em busca de benefícios da delação premiada.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 65
-              }
-            ]
+            "char_start": 55,
+            "char_end": 65
           },
           "realization": {
             "Arg0": "da delação premiada",
@@ -327,26 +217,15 @@
             "Arg0": "nmod",
             "Arg1": "obl:agent"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 66,
                 "char_end": 85
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 30,
                 "char_end": 42
               }
@@ -354,22 +233,14 @@
           }
         },
         {
-          "instance_id": 8370,
+          "instance_id": "FOLHA_DOC000100_SENT054::benefício::1",
           "sent_ID": "FOLHA_DOC000100_SENT054",
           "text": "Amistosos oferecem benefícios técnicos, claro.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 29
-              }
-            ]
+            "char_start": 19,
+            "char_end": 29
           },
           "realization": {
             "Arg0": "Amistosos",
@@ -379,12 +250,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 9
               }
@@ -393,22 +261,14 @@
           }
         },
         {
-          "instance_id": 8802,
+          "instance_id": "FOLHA_DOC003213_SENT019::benefício::1",
           "sent_ID": "FOLHA_DOC003213_SENT019",
           "text": "No quesito do benefício objetivo legado por colonizadores, Gilley inclui a administração racional, tecnologia agrícola, saúde pública e -talvez para provocar feministas- reconhecimento dos direitos das mulheres.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefício",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 23
-              }
-            ]
+            "char_start": 14,
+            "char_end": 23
           },
           "realization": {
             "Arg0": "por colonizadores",
@@ -418,13 +278,9 @@
             "Arg0": "obl:agent",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 40,
                 "char_end": 57
               }
@@ -433,22 +289,14 @@
           }
         },
         {
-          "instance_id": 9250,
+          "instance_id": "FOLHA_DOC003140_SENT062::benefício::1",
           "sent_ID": "FOLHA_DOC003140_SENT062",
           "text": "Havia a percepção de que a democracia, o fim das fronteiras, a liberdade de movimentos e trocas, tudo isso iria prevalecer, veríamos os benefícios disso para todos no mundo.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 146
-              }
-            ]
+            "char_start": 136,
+            "char_end": 146
           },
           "realization": {
             "Arg0": "disso",
@@ -458,26 +306,15 @@
             "Arg0": "nmod",
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  30,
-                  31
-                ],
                 "char_start": 147,
                 "char_end": 152
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  32,
-                  33,
-                  34,
-                  35,
-                  36
-                ],
                 "char_start": 153,
                 "char_end": 172
               }
@@ -485,22 +322,14 @@
           }
         },
         {
-          "instance_id": 10103,
+          "instance_id": "FOLHA_DOC003006_SENT008::benefício::1",
           "sent_ID": "FOLHA_DOC003006_SENT008",
           "text": "Evitaríamos assim o que hoje é evidente: nossos congressistas, em grande parte, legislam em causa própria ou negociam seus votos em troca de benefícios.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 141,
-                "char_end": 151
-              }
-            ]
+            "char_start": 141,
+            "char_end": 151
           },
           "realization": {
             "Arg0": null,
@@ -510,14 +339,10 @@
             "Arg0": null,
             "Arg1": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 41,
                 "char_end": 61
               }
@@ -525,22 +350,14 @@
           }
         },
         {
-          "instance_id": 11044,
+          "instance_id": "FOLHA_DOC003301_SENT022::benefício::1",
           "sent_ID": "FOLHA_DOC003301_SENT022",
           "text": "O benefício das frutas, legumes e vegetais atinge o pico com três ou quatro porções diárias.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefício",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": "das frutas, legumes e vegetais",
@@ -550,18 +367,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 12,
                 "char_end": 42
               }
@@ -570,22 +378,14 @@
           }
         },
         {
-          "instance_id": 12699,
+          "instance_id": "FOLHA_DOC003193_SENT010::benefício::1",
           "sent_ID": "FOLHA_DOC003193_SENT010",
           "text": "O programa para famílias de baixa renda da SO+MA também dá benefícios a quem recicla.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 69
-              }
-            ]
+            "char_start": 59,
+            "char_end": 69
           },
           "realization": {
             "Arg0": "O programa para famílias de baixa renda da SO+MA",
@@ -595,32 +395,15 @@
             "Arg0": "nsubj",
             "Arg1": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 0,
                 "char_end": 48
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 70,
                 "char_end": 84
               }
@@ -628,22 +411,14 @@
           }
         },
         {
-          "instance_id": 13342,
+          "instance_id": "FOLHA_DOC003046_SENT015::benefício::1",
           "sent_ID": "FOLHA_DOC003046_SENT015",
           "text": "Os benefícios para as áreas urbanas são claros, com a consequente redução do tráfego de caminhões, de congestionamentos, poluição e desgaste das vias.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 13
-              }
-            ]
+            "char_start": 3,
+            "char_end": 13
           },
           "realization": {
             "Arg0": null,
@@ -653,16 +428,10 @@
             "Arg0": null,
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 14,
                 "char_end": 35
               }
@@ -670,22 +439,14 @@
           }
         },
         {
-          "instance_id": 14766,
+          "instance_id": "FOLHA_DOC003193_SENT005::benefício::1",
           "sent_ID": "FOLHA_DOC003193_SENT005",
           "text": "\"Ao reverter a participação em benefícios, trazemos mais gente para a coleta seletiva\", diz Felipe Cury, diretor-executivo da Triciclo.",
-          "frame_id": "f_117aed6b4c4783e7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 41
-              }
-            ]
+            "char_start": 31,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -695,156 +456,116 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "xcomp": 1,
+          "nsubj": 4,
+          "nmod": 4,
+          "obl:agent": 1
+        },
+        "Arg1": {
+          "iobj": 2,
+          "obj": 1,
+          "obl:agent": 1,
+          "nmod": 2,
+          "nsubj": 1,
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "benefício.01",
       "description": "vantagem assegurada por leis trabalhistas",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 6108,
+          "instance_id": "FOLHA_DOC003118_SENT037::benefício::1",
           "sent_ID": "FOLHA_DOC003118_SENT037",
           "text": "Funcionários brasileiros também notam disparidades em relação aos benefícios concedidos para os pais.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 76
-              }
-            ]
+            "char_start": 66,
+            "char_end": 76
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 6271,
+          "instance_id": "FOLHA_DOC004081_SENT006::benefício::1",
           "sent_ID": "FOLHA_DOC004081_SENT006",
           "text": "E, se alguma falha ocorrer, existe a alternativa de suspensão dos benefícios do colaborador.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 76
-              }
-            ]
+            "char_start": 66,
+            "char_end": 76
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 15455,
+          "instance_id": "FOLHA_DOC001671_SENT007::benefício::1",
           "sent_ID": "FOLHA_DOC001671_SENT007",
           "text": "Os Correios, no entanto, oferecem 3% de aumento em salários e benefícios e parte do acordo.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 72
-              }
-            ]
+            "char_start": 62,
+            "char_end": 72
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "benefício.01;benefício.02",
       "description": "vantagem assegurada por leis trabalhistas || ganho; proveito",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_4c74dfb6a0cc7fff",
-          "description": "vantagem assegurada por leis trabalhistas || ganho; proveito",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "órgão,sistema ou instituição pagadora/concedente",
-              "definition": "órgão,sistema ou instituição pagadora/concedente"
-            },
-            {
-              "id": "Arg1",
-              "desc": "benefício/prestação previdenciária",
-              "definition": "benefício/prestação previdenciária"
-            },
-            {
-              "id": "Arg2",
-              "desc": "segurado,aposentado,pensionista ou beneficiário",
-              "definition": "segurado,aposentado,pensionista ou beneficiário"
-            },
-            {
-              "id": "Arg3",
-              "desc": "valor,periodicidade,conta,condição ou base legal quando pertinente",
-              "definition": "valor,periodicidade,conta,condição ou base legal quando pertinente"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nsubj": 1,
-              "root": 1
-            },
-            "Arg3": {
-              "amod": 1,
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "órgão,sistema ou instituição pagadora/concedente",
+          "definition": "órgão,sistema ou instituição pagadora/concedente"
+        },
+        {
+          "id": "Arg1",
+          "desc": "benefício/prestação previdenciária",
+          "definition": "benefício/prestação previdenciária"
+        },
+        {
+          "id": "Arg2",
+          "desc": "segurado,aposentado,pensionista ou beneficiário",
+          "definition": "segurado,aposentado,pensionista ou beneficiário"
+        },
+        {
+          "id": "Arg3",
+          "desc": "valor,periodicidade,conta,condição ou base legal quando pertinente",
+          "definition": "valor,periodicidade,conta,condição ou base legal quando pertinente"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 2420,
+          "instance_id": "FOLHA_DOC004045_SENT008::benefício::1",
           "sent_ID": "FOLHA_DOC004045_SENT008",
           "text": "O valor a ser concedido leva em consideração o benefício mensal que o aposentado ou pensionista recebe.",
-          "frame_id": "f_4c74dfb6a0cc7fff",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefício",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 56
-              }
-            ]
+            "char_start": 47,
+            "char_end": 56
           },
           "realization": {
             "Arg0": null,
@@ -858,50 +579,32 @@
             "Arg2": "nsubj",
             "Arg3": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 70,
-                "char_end": 95,
-                "head_token_id": 14
+                "char_end": 95
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 57,
-                "char_end": 63,
-                "head_token_id": 11
+                "char_end": 63
               }
             ]
           }
         },
         {
-          "instance_id": 5114,
+          "instance_id": "FOLHA_DOC003019_SENT009::benefício::1",
           "sent_ID": "FOLHA_DOC003019_SENT009",
           "text": "São de segurados que receberam seus benefícios em conta corrente, mesmo registrados como falecidos na base de dados.",
-          "frame_id": "f_4c74dfb6a0cc7fff",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "benefícios",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 46
-              }
-            ]
+            "char_start": 36,
+            "char_end": 46
           },
           "realization": {
             "Arg0": null,
@@ -915,34 +618,34 @@
             "Arg2": "root",
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 7,
-                "char_end": 16,
-                "head_token_id": 3
+                "char_end": 16
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 47,
-                "char_end": 64,
-                "head_token_id": 9
+                "char_end": 64
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nsubj": 1,
+          "root": 1
+        },
+        "Arg3": {
+          "amod": 1,
+          "obl": 1
+        }
+      }
     }
   ]
 }

@@ -1,66 +1,42 @@
 {
   "lemma": "soma",
-  "lemma_base": "soma",
   "senses": [
     {
       "pt_roleset": "soma · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_c01fb256f4b5d2cf",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 1226,
+          "instance_id": "FOLHA_DOC003202_SENT028::soma::1",
           "sent_ID": "FOLHA_DOC003202_SENT028",
           "text": "A escolha do endereço foi uma soma de oportunidade e do perfil do negócio.",
-          "frame_id": "f_c01fb256f4b5d2cf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "soma",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 34
-              }
-            ]
+            "char_start": 30,
+            "char_end": 34
           },
           "realization": {
             "Arg0": "A escolha de o endereço",
@@ -74,43 +50,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
-                "char_end": 21,
-                "head_token_id": 2
+                "char_end": 21
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 38,
-                "char_end": 73,
-                "head_token_id": 10
+                "char_end": 73
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

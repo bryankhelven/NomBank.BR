@@ -1,72 +1,45 @@
 {
   "lemma": "emprego",
-  "lemma_base": "emprego",
   "senses": [
     {
       "pt_roleset": "emprego.02",
       "description": "cargo; função",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_74420b2039731a8d",
-          "description": "cargo; função",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "post.01",
-              "resource": "English NomBank",
-              "description": "job",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/post.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "ocupante/pretendente da vaga",
-              "definition": "Titular ou candidato a ocupar o posto, mesmo futuro ou negado, independentemente expresso."
-            },
-            {
-              "id": "Arg1",
-              "desc": "função do emprego",
-              "definition": "Nome ou classe funcional do trabalho, sem usar público sozinho como título."
-            },
-            {
-              "id": "Arg2",
-              "desc": "instituição servida",
-              "definition": "Instituição empregadora/domínio a que o posto serve, não local físico onde se encontra."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 3,
-              "det": 2,
-              "nsubj": 6
-            },
-            "Arg2": {
-              "nmod": 2,
-              "obl": 2
-            }
-          }
+          "roleset": "post.01",
+          "resource": "English NomBank",
+          "description": "job",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/post.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 430,
+          "id": "Arg0",
+          "desc": "ocupante/pretendente da vaga",
+          "definition": "Titular ou candidato a ocupar o posto, mesmo futuro ou negado, independentemente expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "função do emprego",
+          "definition": "Nome ou classe funcional do trabalho, sem usar público sozinho como título."
+        },
+        {
+          "id": "Arg2",
+          "desc": "instituição servida",
+          "definition": "Instituição empregadora/domínio a que o posto serve, não local físico onde se encontra."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003017_SENT013::emprego::1",
           "sent_ID": "FOLHA_DOC003017_SENT013",
           "text": "Aberta a importação, o comércio de computadores cresceu, gerou empregos, as empresas de serviços com técnicos em instalação e manutenção dão exemplo de vigor do empreendedorismo.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 71
-              }
-            ]
+            "char_start": 63,
+            "char_end": 71
           },
           "realization": {
             "Arg0": null,
@@ -78,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2630,
+          "instance_id": "FOLHA_DOC003151_SENT003::emprego::1",
           "sent_ID": "FOLHA_DOC003151_SENT003",
           "text": "Em pesquisa deste ano da recrutadora Hays, 72% dos respondentes afirmaram que consideram ou querem mudar de emprego em 2017.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 115
-              }
-            ]
+            "char_start": 108,
+            "char_end": 115
           },
           "realization": {
             "Arg0": "dos respondentes",
@@ -112,14 +77,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 47,
                 "char_end": 63
               }
@@ -129,22 +89,14 @@
           }
         },
         {
-          "instance_id": 5912,
+          "instance_id": "FOLHA_DOC003174_SENT021::emprego::1",
           "sent_ID": "FOLHA_DOC003174_SENT021",
           "text": "A função do desenho é ajudar os filhos dos imigrantes ilegais estupradores mexicanos a adaptarem-se aos EUA para roubar o emprego dos americanos e quebrar o país.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 122,
-                "char_end": 129
-              }
-            ]
+            "char_start": 122,
+            "char_end": 129
           },
           "realization": {
             "Arg0": "dos americanos",
@@ -156,14 +108,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 130,
                 "char_end": 144
               }
@@ -173,22 +120,14 @@
           }
         },
         {
-          "instance_id": 6074,
+          "instance_id": "FOLHA_DOC003040_SENT014::emprego::1",
           "sent_ID": "FOLHA_DOC003040_SENT014",
           "text": "A manobra põe em risco o que deveria ser o objetivo de todos: punir, se necessário, os maus administradores, mas preservando, tanto quanto possível, uma estrutura que gera renda e empregos.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              37
-            ],
-            "spans": [
-              {
-                "char_start": 180,
-                "char_end": 188
-              }
-            ]
+            "char_start": 180,
+            "char_end": 188
           },
           "realization": {
             "Arg0": null,
@@ -200,29 +139,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7303,
+          "instance_id": "FOLHA_DOC000109_SENT014::emprego::1",
           "sent_ID": "FOLHA_DOC000109_SENT014",
           "text": "Ele descobriu que, nos lugares que foram atingidos com mais força pela recessão, os efeitos ainda são duradouros: milhares de trabalhadores que perderam seus empregos tiveram dificuldades para se reposicionar no mercado e, no fim das contas, desistiram de procurar vagas.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 158,
-                "char_end": 166
-              }
-            ]
+            "char_start": 158,
+            "char_end": 166
           },
           "realization": {
             "Arg0": "seus",
@@ -234,12 +165,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  29
-                ],
                 "char_start": 153,
                 "char_end": 157
               }
@@ -249,22 +177,14 @@
           }
         },
         {
-          "instance_id": 7517,
+          "instance_id": "FOLHA_DOC003026_SENT007::emprego::1",
           "sent_ID": "FOLHA_DOC003026_SENT007",
           "text": "A parábola servia muito bem para explicar um fenômeno tão comum quanto difícil de entender: por que as pessoas demoram tanto a pular fora de casamentos falidos, empregos deprimentes e governos autoritários.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 161,
-                "char_end": 169
-              }
-            ]
+            "char_start": 161,
+            "char_end": 169
           },
           "realization": {
             "Arg0": "as pessoas",
@@ -276,13 +196,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19,
-                  20
-                ],
                 "char_start": 100,
                 "char_end": 110
               }
@@ -292,22 +208,14 @@
           }
         },
         {
-          "instance_id": 7537,
+          "instance_id": "FOLHA_DOC001143_SENT009::emprego::1",
           "sent_ID": "FOLHA_DOC001143_SENT009",
           "text": "Sempre fico surpreso quando as pessoas me falam que em 2050 47,3% dos empregos atuais não existirão.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 78
-              }
-            ]
+            "char_start": 70,
+            "char_end": 78
           },
           "realization": {
             "Arg0": null,
@@ -319,29 +227,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8208,
+          "instance_id": "FOLHA_DOC000044_SENT022::emprego::1",
           "sent_ID": "FOLHA_DOC000044_SENT022",
           "text": "Cerca de 80% dos jovens assistidos pelo programa em um dos seus 170 cursos lançados até agora conseguem vagas formais de emprego nos primeiros três meses após a formatura, a maioria nas próprias empresas em que foram treinados.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 121,
-                "char_end": 128
-              }
-            ]
+            "char_start": 121,
+            "char_end": 128
           },
           "realization": {
             "Arg0": "dos jovens assistidos pelo programa em um dos seus 170 cursos lançados até agora",
@@ -353,28 +253,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 13,
                 "char_end": 93
               }
@@ -382,16 +263,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  38,
-                  39,
-                  40,
-                  41,
-                  42,
-                  43,
-                  44,
-                  45
-                ],
                 "char_start": 182,
                 "char_end": 226
               }
@@ -399,22 +270,14 @@
           }
         },
         {
-          "instance_id": 8290,
+          "instance_id": "FOLHA_DOC003317_SENT032::emprego::1",
           "sent_ID": "FOLHA_DOC003317_SENT032",
           "text": "Não consigo pensar em nada mais estressante do que a cada semana saber que seu emprego depende de tanta coisa, mas a cobrança recai apenas em cima de você.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 79,
-                "char_end": 86
-              }
-            ]
+            "char_start": 79,
+            "char_end": 86
           },
           "realization": {
             "Arg0": "seu",
@@ -426,12 +289,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  16
-                ],
                 "char_start": 75,
                 "char_end": 78
               }
@@ -441,22 +301,14 @@
           }
         },
         {
-          "instance_id": 8606,
+          "instance_id": "FOLHA_DOC003157_SENT029::emprego::1",
           "sent_ID": "FOLHA_DOC003157_SENT029",
           "text": "Os acordos de delação e de leniência vão diminuir, o que é um pecado porque as empresas precisam ser salvas para preservar empregos.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 123,
-                "char_end": 131
-              }
-            ]
+            "char_start": 123,
+            "char_end": 131
           },
           "realization": {
             "Arg0": null,
@@ -468,29 +320,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8820,
+          "instance_id": "FOLHA_DOC003151_SENT021::emprego::1",
           "sent_ID": "FOLHA_DOC003151_SENT021",
           "text": "Isso abriu as portas para que as pessoas ficassem mais dispostas a deixar um emprego.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 84
-              }
-            ]
+            "char_start": 77,
+            "char_end": 84
           },
           "realization": {
             "Arg0": "as pessoas",
@@ -502,13 +346,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 30,
                 "char_end": 40
               }
@@ -518,22 +358,14 @@
           }
         },
         {
-          "instance_id": 9952,
+          "instance_id": "FOLHA_DOC002011_SENT016::emprego::1",
           "sent_ID": "FOLHA_DOC002011_SENT016",
           "text": "Trata-se de corporativismo, com estabilidade no emprego e falta de metas.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 55
-              }
-            ]
+            "char_start": 48,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -545,29 +377,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10208,
+          "instance_id": "FOLHA_DOC003151_SENT017::emprego::1",
           "sent_ID": "FOLHA_DOC003151_SENT017",
           "text": "Para saber quanto você vale, é preciso consultar o mercado procurando um novo emprego.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 85
-              }
-            ]
+            "char_start": 78,
+            "char_end": 85
           },
           "realization": {
             "Arg0": "você",
@@ -579,12 +403,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 18,
                 "char_end": 22
               }
@@ -594,22 +415,14 @@
           }
         },
         {
-          "instance_id": 10500,
+          "instance_id": "FOLHA_DOC003017_SENT015::emprego::1",
           "sent_ID": "FOLHA_DOC003017_SENT015",
           "text": "Temos mais empregos espalhados em consequência da importação do que no tempo das indústrias espertalhonas que se aproveitaram da proteção da Lei de Informática jeca.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 19
-              }
-            ]
+            "char_start": 11,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -621,29 +434,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11848,
+          "instance_id": "FOLHA_DOC003017_SENT010::emprego::1",
           "sent_ID": "FOLHA_DOC003017_SENT010",
           "text": "Quando uma indústria não consegue competir, a abertura de importações abre empregos no comércio e em serviços.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 75,
-                "char_end": 83
-              }
-            ]
+            "char_start": 75,
+            "char_end": 83
           },
           "realization": {
             "Arg0": null,
@@ -655,19 +460,11 @@
             "Arg1": null,
             "Arg2": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 84,
                 "char_end": 109
               }
@@ -675,22 +472,14 @@
           }
         },
         {
-          "instance_id": 12313,
+          "instance_id": "FOLHA_DOC000103_SENT037::emprego::1",
           "sent_ID": "FOLHA_DOC000103_SENT037",
           "text": "É oportunidade de crescimento de mercado, de desoneração da saúde pública, criação de empregos.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 86,
-                "char_end": 94
-              }
-            ]
+            "char_start": 86,
+            "char_end": 94
           },
           "realization": {
             "Arg0": null,
@@ -702,29 +491,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12637,
+          "instance_id": "FOLHA_DOC000109_SENT001::emprego::1",
           "sent_ID": "FOLHA_DOC000109_SENT001",
           "text": "Crise dos Estados Unidos elimina 1,5 milhão de vagas de emprego.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 63
-              }
-            ]
+            "char_start": 56,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -736,29 +517,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12672,
+          "instance_id": "FOLHA_DOC000057_SENT012::emprego::1",
           "sent_ID": "FOLHA_DOC000057_SENT012",
           "text": "Entre as exigências de Trump estão também a contratação de mais 10 mil agentes de imigração, o uso de um sistema que dificulta que ilegais consigam empregos nos EUA e a suspensão de verbas do governo federal para as chamadas cidades-santuário -entre elas Nova York, Los Angeles e Chicago-, que se recusam a seguir a política migratória do presidente.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 148,
-                "char_end": 156
-              }
-            ]
+            "char_start": 148,
+            "char_end": 156
           },
           "realization": {
             "Arg0": "ilegais",
@@ -770,12 +543,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  26
-                ],
                 "char_start": 131,
                 "char_end": 138
               }
@@ -785,22 +555,14 @@
           }
         },
         {
-          "instance_id": 13354,
+          "instance_id": "FOLHA_DOC000021_SENT029::emprego::1",
           "sent_ID": "FOLHA_DOC000021_SENT029",
           "text": "\"O trabalhador vai ter de escolher menos direitos e emprego ou todos os direitos e desemprego\", disse.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 59
-              }
-            ]
+            "char_start": 52,
+            "char_end": 59
           },
           "realization": {
             "Arg0": "O trabalhador",
@@ -812,13 +574,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3
-                ],
                 "char_start": 1,
                 "char_end": 14
               }
@@ -828,22 +586,14 @@
           }
         },
         {
-          "instance_id": 13563,
+          "instance_id": "FOLHA_DOC004099_SENT002::emprego::1",
           "sent_ID": "FOLHA_DOC004099_SENT002",
           "text": "A exportação está sustentando boa parte da produção e do emprego no setor de máquinas agrícolas.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 64
-              }
-            ]
+            "char_start": 57,
+            "char_end": 64
           },
           "realization": {
             "Arg0": null,
@@ -855,19 +605,11 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 65,
                 "char_end": 95
               }
@@ -875,22 +617,14 @@
           }
         },
         {
-          "instance_id": 14569,
+          "instance_id": "FOLHA_DOC000044_SENT084::emprego::1",
           "sent_ID": "FOLHA_DOC000044_SENT084",
           "text": "E não só quando se trata do primeiro emprego.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 44
-              }
-            ]
+            "char_start": 37,
+            "char_end": 44
           },
           "realization": {
             "Arg0": null,
@@ -902,29 +636,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14662,
+          "instance_id": "FOLHA_DOC001276_SENT016::emprego::1",
           "sent_ID": "FOLHA_DOC001276_SENT016",
           "text": "Foi para a França, onde conseguiu emprego em uma pequena farmacêutica numa cidade próxima de Paris.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 41
-              }
-            ]
+            "char_start": 34,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -936,17 +662,11 @@
             "Arg1": null,
             "Arg2": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 42,
                 "char_end": 69
               }
@@ -954,22 +674,14 @@
           }
         },
         {
-          "instance_id": 15016,
+          "instance_id": "FOLHA_DOC003151_SENT008::emprego::1",
           "sent_ID": "FOLHA_DOC003151_SENT008",
           "text": "Além disso, estar pronto para mudar é necessidade, não só opção, já que ninguém está seguro num emprego.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 96,
-                "char_end": 103
-              }
-            ]
+            "char_start": 96,
+            "char_end": 103
           },
           "realization": {
             "Arg0": "ninguém",
@@ -981,12 +693,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 72,
                 "char_end": 79
               }
@@ -996,22 +705,14 @@
           }
         },
         {
-          "instance_id": 15219,
+          "instance_id": "FOLHA_DOC000112_SENT007::emprego::1",
           "sent_ID": "FOLHA_DOC000112_SENT007",
           "text": "Defendeu privatizações e até a extinção de algumas estatais -em suas palavras, \"cabides de emprego\".",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 91,
-                "char_end": 98
-              }
-            ]
+            "char_start": 91,
+            "char_end": 98
           },
           "realization": {
             "Arg0": null,
@@ -1023,29 +724,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15700,
+          "instance_id": "FOLHA_DOC000104_SENT016::emprego::1",
           "sent_ID": "FOLHA_DOC000104_SENT016",
           "text": "Jamais como oportunidade de geração de empregos, de inovação e de desenvolvimento para o país.",
-          "frame_id": "f_74420b2039731a8d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empregos",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 47
-              }
-            ]
+            "char_start": 39,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -1057,51 +750,47 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 3,
+          "det": 2,
+          "nsubj": 6
+        },
+        "Arg2": {
+          "nmod": 2,
+          "obl": 2
+        }
+      }
     },
     {
       "pt_roleset": "emprego.01",
       "description": "uso; aplicação",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 6814,
+          "instance_id": "FOLHA_DOC003092_SENT025::emprego::1",
           "sent_ID": "FOLHA_DOC003092_SENT025",
           "text": "O general respondeu a uma pergunta lida pelos organizadores do evento, segundo a qual \"a Constituição Federal de 88 admite uma intervenção constitucional com o emprego das Forças Armadas\".",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "emprego",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 160,
-                "char_end": 167
-              }
-            ]
+            "char_start": 160,
+            "char_end": 167
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

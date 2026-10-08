@@ -1,72 +1,55 @@
 {
   "lemma": "vendedor",
-  "lemma_base": "vendedor",
   "senses": [
     {
       "pt_roleset": "vendedor.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_6e3e843bc6ec4515",
+          "roleset": "seller.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "seller.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/seller.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "seller",
-              "definition": "seller"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing sold",
-              "definition": "thing sold"
-            },
-            {
-              "id": "Arg2",
-              "desc": "buyer",
-              "definition": "buyer"
-            },
-            {
-              "id": "Arg3",
-              "desc": "price paid",
-              "definition": "price paid"
-            },
-            {
-              "id": "Arg4",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            }
-          ],
-          "syntactic_profile": {}
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/seller.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 6155,
+          "id": "Arg0",
+          "desc": "seller",
+          "definition": "seller"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing sold",
+          "definition": "thing sold"
+        },
+        {
+          "id": "Arg2",
+          "desc": "buyer",
+          "definition": "buyer"
+        },
+        {
+          "id": "Arg3",
+          "desc": "price paid",
+          "definition": "price paid"
+        },
+        {
+          "id": "Arg4",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002065_SENT018::vendedor::1",
           "sent_ID": "FOLHA_DOC002065_SENT018",
           "text": "Mas, ultimamente, as moscas são as mais habitués do Fashion Mall, diz a vendedora.",
-          "frame_id": "f_6e3e843bc6ec4515",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vendedora",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 81
-              }
-            ]
+            "char_start": 72,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -82,7 +65,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -91,22 +74,14 @@
           }
         },
         {
-          "instance_id": 13503,
+          "instance_id": "FOLHA_DOC003246_SENT016::vendedor::1",
           "sent_ID": "FOLHA_DOC003246_SENT016",
           "text": "Eu falava com o vendedor, mas ele respondia olhando para o meu marido.",
-          "frame_id": "f_6e3e843bc6ec4515",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vendedor",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 16,
-                "char_end": 24
-              }
-            ]
+            "char_start": 16,
+            "char_end": 24
           },
           "realization": {
             "Arg0": null,
@@ -122,7 +97,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -130,7 +105,8 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

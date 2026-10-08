@@ -1,68 +1,40 @@
 {
   "lemma": "evento",
-  "lemma_base": "evento",
   "senses": [
     {
       "pt_roleset": "evento · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_6a51ece717df706a",
-          "description": null,
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "event.01",
-              "resource": "English NomBank",
-              "description": "occur, take place",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/event.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "acontecimento/conteúdo",
-              "definition": "Atividade, ocorrência ou nome explícito que caracteriza o evento, sem copiar REL."
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiário do evento",
-              "definition": "Para quem o evento acontece, não qualquer espectador, organizador ou participante automaticamente."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 5,
-              "ccomp": 1,
-              "obj": 1,
-              "amod": 2,
-              "root": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "roleset": "event.01",
+          "resource": "English NomBank",
+          "description": "occur, take place",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/event.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 292,
+          "id": "Arg1",
+          "desc": "acontecimento/conteúdo",
+          "definition": "Atividade, ocorrência ou nome explícito que caracteriza o evento, sem copiar REL."
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiário do evento",
+          "definition": "Para quem o evento acontece, não qualquer espectador, organizador ou participante automaticamente."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000132_SENT003::evento::1",
           "sent_ID": "FOLHA_DOC000132_SENT003",
           "text": "O cinquentenário da morte de Che motiva eventos na Bolívia e em Cuba.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 47
-              }
-            ]
+            "char_start": 40,
+            "char_end": 47
           },
           "realization": {
             "Arg1": null,
@@ -72,28 +44,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1147,
+          "instance_id": "FOLHA_DOC001650_SENT020::evento::1",
           "sent_ID": "FOLHA_DOC001650_SENT020",
           "text": "O espaço recebe 3,5 milhões de pessoas em cerca de 150 eventos anuais.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 62
-              }
-            ]
+            "char_start": 55,
+            "char_end": 62
           },
           "realization": {
             "Arg1": null,
@@ -103,28 +67,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3557,
+          "instance_id": "FOLHA_DOC003208_SENT053::evento::1",
           "sent_ID": "FOLHA_DOC003208_SENT053",
           "text": "Evento Dadiva2go, com food truck na fábrica, ocorre uma vez por mês.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Evento",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 6
-              }
-            ]
+            "char_start": 0,
+            "char_end": 6
           },
           "realization": {
             "Arg1": "Dadiva2go",
@@ -134,12 +90,9 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  2
-                ],
                 "char_start": 7,
                 "char_end": 16
               }
@@ -148,22 +101,14 @@
           }
         },
         {
-          "instance_id": 3757,
+          "instance_id": "FOLHA_DOC000006_SENT015::evento::1",
           "sent_ID": "FOLHA_DOC000006_SENT015",
           "text": "As pessoas pensam que esses eventos são apenas encontros com jantares luxuosos.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 35
-              }
-            ]
+            "char_start": 28,
+            "char_end": 35
           },
           "realization": {
             "Arg1": "encontros com jantares luxuosos",
@@ -173,15 +118,9 @@
             "Arg1": "ccomp",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 47,
                 "char_end": 78
               }
@@ -190,22 +129,14 @@
           }
         },
         {
-          "instance_id": 3854,
+          "instance_id": "FOLHA_DOC002022_SENT003::evento::1",
           "sent_ID": "FOLHA_DOC002022_SENT003",
           "text": "E, no entanto, após sete dias de evento, concluídos neste domingo (24), a ausência da estrela virou um detalhe.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 39
-              }
-            ]
+            "char_start": 33,
+            "char_end": 39
           },
           "realization": {
             "Arg1": null,
@@ -215,28 +146,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3858,
+          "instance_id": "FOLHA_DOC003050_SENT035::evento::1",
           "sent_ID": "FOLHA_DOC003050_SENT035",
           "text": "A Ampara Animal promove nesta segunda (18) evento de adoção de cães.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 49
-              }
-            ]
+            "char_start": 43,
+            "char_end": 49
           },
           "realization": {
             "Arg1": "de adoção de cães",
@@ -246,15 +169,9 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 50,
                 "char_end": 67
               }
@@ -263,22 +180,14 @@
           }
         },
         {
-          "instance_id": 4512,
+          "instance_id": "FOLHA_DOC004140_SENT007::evento::1",
           "sent_ID": "FOLHA_DOC004140_SENT007",
           "text": "Fui a Santarém, no Pará, convidado para falar num evento de turismo.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 56
-              }
-            ]
+            "char_start": 50,
+            "char_end": 56
           },
           "realization": {
             "Arg1": "de turismo",
@@ -288,13 +197,9 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 57,
                 "char_end": 67
               }
@@ -303,22 +208,14 @@
           }
         },
         {
-          "instance_id": 5014,
+          "instance_id": "FOLHA_DOC002027_SENT017::evento::1",
           "sent_ID": "FOLHA_DOC002027_SENT017",
           "text": "A empresa começou como uma barraca itinerante e já tem dois trailers, além de atender a eventos.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 95
-              }
-            ]
+            "char_start": 88,
+            "char_end": 95
           },
           "realization": {
             "Arg1": null,
@@ -328,28 +225,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5186,
+          "instance_id": "FOLHA_DOC003013_SENT017::evento::1",
           "sent_ID": "FOLHA_DOC003013_SENT017",
           "text": "Aliados disseram considerar uma descortesia o fato de Janot não ter sido convidado para o evento -não havia uma cadeira reservada com o nome dele, por exemplo.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 96
-              }
-            ]
+            "char_start": 90,
+            "char_end": 96
           },
           "realization": {
             "Arg1": null,
@@ -359,28 +248,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5838,
+          "instance_id": "FOLHA_DOC003050_SENT032::evento::1",
           "sent_ID": "FOLHA_DOC003050_SENT032",
           "text": "A modelo Paola Antonini e a atriz Tabata Contri compareceram ao evento, que teve show de Tiago Abravanel.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 64,
-                "char_end": 70
-              }
-            ]
+            "char_start": 64,
+            "char_end": 70
           },
           "realization": {
             "Arg1": "show de Tiago Abravanel",
@@ -390,15 +271,9 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 81,
                 "char_end": 104
               }
@@ -407,22 +282,14 @@
           }
         },
         {
-          "instance_id": 6812,
+          "instance_id": "FOLHA_DOC003092_SENT025::evento::1",
           "sent_ID": "FOLHA_DOC003092_SENT025",
           "text": "O general respondeu a uma pergunta lida pelos organizadores do evento, segundo a qual \"a Constituição Federal de 88 admite uma intervenção constitucional com o emprego das Forças Armadas\".",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 69
-              }
-            ]
+            "char_start": 63,
+            "char_end": 69
           },
           "realization": {
             "Arg1": null,
@@ -432,28 +299,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6820,
+          "instance_id": "FOLHA_DOC003100_SENT003::evento::1",
           "sent_ID": "FOLHA_DOC003100_SENT003",
           "text": "\"Na realidade, reiteradamente tem tido o espírito provocativo por parte desse parlamentar [Major Olímpio]\", disse Alckmin em evento de entrega de veículos para a Polícia Militar, em Campinas.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 125,
-                "char_end": 131
-              }
-            ]
+            "char_start": 125,
+            "char_end": 131
           },
           "realization": {
             "Arg1": "de entrega de veículos",
@@ -463,27 +322,15 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  27,
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 132,
                 "char_end": 154
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33,
-                  34
-                ],
                 "char_start": 155,
                 "char_end": 177
               }
@@ -491,22 +338,14 @@
           }
         },
         {
-          "instance_id": 8264,
+          "instance_id": "FOLHA_DOC000067_SENT004::evento::1",
           "sent_ID": "FOLHA_DOC000067_SENT004",
           "text": "Para a realização de tal evento, empreiteiras decidiram ajudar umas às outras nos trechos em que as obras estão mais atrasadas.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {
             "Arg1": null,
@@ -516,28 +355,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8846,
+          "instance_id": "FOLHA_DOC003184_SENT018::evento::1",
           "sent_ID": "FOLHA_DOC003184_SENT018",
           "text": "Grupos escolares são bem-vindos, sob agendamento, informa o site do evento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 74
-              }
-            ]
+            "char_start": 68,
+            "char_end": 74
           },
           "realization": {
             "Arg1": null,
@@ -547,28 +378,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9029,
+          "instance_id": "FOLHA_DOC004076_SENT008::evento::1",
           "sent_ID": "FOLHA_DOC004076_SENT008",
           "text": "Embora aparentemente cheias, porém, algumas das arquibancadas instaladas para o evento ainda tinham espaços vazios.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 86
-              }
-            ]
+            "char_start": 80,
+            "char_end": 86
           },
           "realization": {
             "Arg1": null,
@@ -578,28 +401,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9697,
+          "instance_id": "FOLHA_DOC003287_SENT006::evento::1",
           "sent_ID": "FOLHA_DOC003287_SENT006",
           "text": "O evento acontece entre as 20h, horário de encerramento, e as 23h.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg1": null,
@@ -609,28 +424,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10279,
+          "instance_id": "FOLHA_DOC002022_SENT034::evento::1",
           "sent_ID": "FOLHA_DOC002022_SENT034",
           "text": "Vigilância sanitária barra produtos, e chef Roberta Sudbrack fica fora do evento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 74,
-                "char_end": 80
-              }
-            ]
+            "char_start": 74,
+            "char_end": 80
           },
           "realization": {
             "Arg1": null,
@@ -640,28 +447,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10819,
+          "instance_id": "FOLHA_DOC000166_SENT017::evento::1",
           "sent_ID": "FOLHA_DOC000166_SENT017",
           "text": "São bairros que proporcionam aos seus moradores diversas opções de restaurantes, lojas e eventos culturais.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 96
-              }
-            ]
+            "char_start": 89,
+            "char_end": 96
           },
           "realization": {
             "Arg1": "culturais",
@@ -671,12 +470,9 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 97,
                 "char_end": 106
               }
@@ -685,22 +481,14 @@
           }
         },
         {
-          "instance_id": 11509,
+          "instance_id": "FOLHA_DOC002027_SENT019::evento::1",
           "sent_ID": "FOLHA_DOC002027_SENT019",
           "text": "Nos eventos, o valor varia conforme o pacote.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 11
-              }
-            ]
+            "char_start": 4,
+            "char_end": 11
           },
           "realization": {
             "Arg1": null,
@@ -710,28 +498,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11699,
+          "instance_id": "FOLHA_DOC001305_SENT009::evento::1",
           "sent_ID": "FOLHA_DOC001305_SENT009",
           "text": "Setenta versões de cabelo e maquiagem foram criadas pela LOreal para o evento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 71,
-                "char_end": 77
-              }
-            ]
+            "char_start": 71,
+            "char_end": 77
           },
           "realization": {
             "Arg1": null,
@@ -741,28 +521,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11770,
+          "instance_id": "FOLHA_DOC003013_SENT012::evento::1",
           "sent_ID": "FOLHA_DOC003013_SENT012",
           "text": "O ex-chefe de gabinete de Janot, Eduardo Pelella, só venceu a fila de entrada no meio do evento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 95
-              }
-            ]
+            "char_start": 89,
+            "char_end": 95
           },
           "realization": {
             "Arg1": null,
@@ -772,28 +544,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12140,
+          "instance_id": "FOLHA_DOC003147_SENT028::evento::1",
           "sent_ID": "FOLHA_DOC003147_SENT028",
           "text": "Está em fase de testes para água mineral em eventos esportivos e festivais na Europa.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 51
-              }
-            ]
+            "char_start": 44,
+            "char_end": 51
           },
           "realization": {
             "Arg1": "esportivos",
@@ -803,12 +567,9 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 52,
                 "char_end": 62
               }
@@ -817,22 +578,14 @@
           }
         },
         {
-          "instance_id": 12403,
+          "instance_id": "FOLHA_DOC000177_SENT016::evento::1",
           "sent_ID": "FOLHA_DOC000177_SENT016",
           "text": "Os organizadores do evento tiveram que tourear 68 órgãos públicos.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 26
-              }
-            ]
+            "char_start": 20,
+            "char_end": 26
           },
           "realization": {
             "Arg1": null,
@@ -842,28 +595,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14067,
+          "instance_id": "FOLHA_DOC004120_SENT026::evento::1",
           "sent_ID": "FOLHA_DOC004120_SENT026",
           "text": "Nesse sentido, encaixa-se o trabalho apresentado pelo grupo Cão no evento de lançamento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 73
-              }
-            ]
+            "char_start": 67,
+            "char_end": 73
           },
           "realization": {
             "Arg1": "de lançamento",
@@ -873,13 +618,9 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 74,
                 "char_end": 87
               }
@@ -888,22 +629,14 @@
           }
         },
         {
-          "instance_id": 14103,
+          "instance_id": "FOLHA_DOC000143_SENT012::evento::1",
           "sent_ID": "FOLHA_DOC000143_SENT012",
           "text": "No evento, com uma hora de duração, artistas recitaram poemas e cantaram músicas.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 9
-              }
-            ]
+            "char_start": 3,
+            "char_end": 9
           },
           "realization": {
             "Arg1": "recitaram poemas e cantaram músicas",
@@ -913,16 +646,9 @@
             "Arg1": "root",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 45,
                 "char_end": 80
               }
@@ -931,22 +657,14 @@
           }
         },
         {
-          "instance_id": 14323,
+          "instance_id": "FOLHA_DOC003197_SENT026::evento::1",
           "sent_ID": "FOLHA_DOC003197_SENT026",
           "text": "Nesta edição do evento, mais de 200 casas participam -todas com menus que custam a partir de R$ 42,90 no almoço e R$ 55,90 no jantar.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 16,
-                "char_end": 22
-              }
-            ]
+            "char_start": 16,
+            "char_end": 22
           },
           "realization": {
             "Arg1": null,
@@ -956,28 +674,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14439,
+          "instance_id": "FOLHA_DOC000135_SENT006::evento::1",
           "sent_ID": "FOLHA_DOC000135_SENT006",
           "text": "Thaís é a única representante feminina do Brasil no evento.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 58
-              }
-            ]
+            "char_start": 52,
+            "char_end": 58
           },
           "realization": {
             "Arg1": null,
@@ -987,28 +697,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14903,
+          "instance_id": "FOLHA_DOC004093_SENT023::evento::1",
           "sent_ID": "FOLHA_DOC004093_SENT023",
           "text": "Robson Caetano afirmou que não viu \"nenhuma coisa errada\" durante os eventos na Nigéria.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 76
-              }
-            ]
+            "char_start": 69,
+            "char_end": 76
           },
           "realization": {
             "Arg1": null,
@@ -1018,28 +720,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15263,
+          "instance_id": "FOLHA_DOC003219_SENT063::evento::1",
           "sent_ID": "FOLHA_DOC003219_SENT063",
           "text": "Foi-se o tempo em que as empresas se adequavam aos conceitos dos eventos.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 65,
-                "char_end": 72
-              }
-            ]
+            "char_start": 65,
+            "char_end": 72
           },
           "realization": {
             "Arg1": null,
@@ -1049,28 +743,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15573,
+          "instance_id": "FOLHA_DOC000001_SENT012::evento::1",
           "sent_ID": "FOLHA_DOC000001_SENT012",
           "text": "O ex-prefeito, que estava no evento nesta segunda, fez um discurso rápido, de menos de dez minutos, em que encerrou dizendo esperar que Lula assuma a Presidência em 2019.",
-          "frame_id": "f_6a51ece717df706a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "evento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 35
-              }
-            ]
+            "char_start": 29,
+            "char_end": 35
           },
           "realization": {
             "Arg1": null,
@@ -1080,50 +766,47 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 5,
+          "ccomp": 1,
+          "obj": 1,
+          "amod": 2,
+          "root": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "evento · acepção 2",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 9736,
+          "instance_id": "FOLHA_DOC003185_SENT015::evento::1",
           "sent_ID": "FOLHA_DOC003185_SENT015",
           "text": "Esses também são eventos que têm prejuízos mais baixos e, assim, mais fáceis de serem recuperados.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "eventos",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 24
-              }
-            ]
+            "char_start": 17,
+            "char_end": 24
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

@@ -1,66 +1,42 @@
 {
   "lemma": "ex-jogador",
-  "lemma_base": "ex-jogador",
   "senses": [
     {
       "pt_roleset": "ex-jogador · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_45d2197cdbe40b4b",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 2
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 11634,
+          "instance_id": "FOLHA_DOC003139_SENT021::ex-jogador::1",
           "sent_ID": "FOLHA_DOC003139_SENT021",
           "text": "Ex-jogador de futebol e ex-modelo na Europa, ele gravou \"O Avental Rosa\", filme de Monjardim ainda sem previsão de estreia.",
-          "frame_id": "f_45d2197cdbe40b4b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Ex-jogador",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 10
-              }
-            ]
+            "char_start": 0,
+            "char_end": 10
           },
           "realization": {
             "Arg0": "ele",
@@ -74,49 +50,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 45,
-                "char_end": 48,
-                "head_token_id": 10
+                "char_end": 48
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  2,
-                  3
-                ],
                 "char_start": 11,
-                "char_end": 21,
-                "head_token_id": 3
+                "char_end": 21
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 15239,
+          "instance_id": "FOLHA_DOC003207_SENT012::ex-jogador::1",
           "sent_ID": "FOLHA_DOC003207_SENT012",
           "text": "Mas ele treina demais aquela forma de bater e sabe muito bem fazer aquilo, afirma o ex-jogador.",
-          "frame_id": "f_45d2197cdbe40b4b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ex-jogador",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 84,
-                "char_end": 94
-              }
-            ]
+            "char_start": 84,
+            "char_end": 94
           },
           "realization": {
             "Arg0": "ele",
@@ -130,15 +89,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2
-                ],
                 "char_start": 4,
-                "char_end": 7,
-                "head_token_id": 2
+                "char_end": 7
               }
             ],
             "Arg1": [],
@@ -146,7 +101,15 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 2
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

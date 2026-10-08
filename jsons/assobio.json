@@ -1,66 +1,42 @@
 {
   "lemma": "assobio",
-  "lemma_base": "assobio",
   "senses": [
     {
       "pt_roleset": "assobio · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_a09c726287ecf313",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            },
-            "Arg3": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 15633,
+          "instance_id": "FOLHA_DOC002088_SENT007::assobio::1",
           "sent_ID": "FOLHA_DOC002088_SENT007",
           "text": "O assobio no início de \"Civil War\" pelo menos foi mais afinado.",
-          "frame_id": "f_a09c726287ecf313",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "assobio",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -74,35 +50,32 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 24,
-                "char_end": 33,
-                "head_token_id": 8
+                "char_end": 33
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 10,
-                "char_end": 19,
-                "head_token_id": 5
+                "char_end": 19
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        },
+        "Arg3": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

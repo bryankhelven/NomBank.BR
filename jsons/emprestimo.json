@@ -1,86 +1,55 @@
 {
   "lemma": "empréstimo",
-  "lemma_base": "empréstimo",
   "senses": [
     {
       "pt_roleset": "empréstimo.01",
       "description": "cessão de bem ou quantia em dinheiro para devolução posterior",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_2382351f28fd055b",
-          "description": "cessão de bem ou quantia em dinheiro para devolução posterior",
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "loan.01",
-              "resource": "English NomBank",
-              "description": "give temporarily",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/loan.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "proprietário/emprestador",
-              "definition": "Entidade que cede o bem para posterior devolução. Em empréstimos interinstitucionais agregados, o conjunto expresso pode abranger cedentes e recebedores, sem atribuir direção individual por ordem."
-            },
-            {
-              "id": "Arg1",
-              "desc": "bem emprestado",
-              "definition": "Bem/quantia cedido."
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiário",
-              "definition": "Entidade que recebe o empréstimo, não finalidade genérica. Em empréstimos interinstitucionais agregados, o conjunto expresso pode abranger cedentes e recebedores, sem atribuir direção individual por ordem."
-            },
-            {
-              "id": "Arg3",
-              "desc": "garantia do empréstimo",
-              "definition": "Bem/colateral efetivamente oferecido como garantia; sem garantia marca ausência, não bem realizado."
-            },
-            {
-              "id": "Arg4",
-              "desc": "juros ou taxa do empréstimo",
-              "definition": "Taxa/juros explicitamente vinculados ao empréstimo, inclusive índice de juros médios com adaptação financeira."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1,
-              "nsubj": 1,
-              "obl:agent": 1
-            },
-            "Arg2": {
-              "nmod": 2,
-              "obl": 1
-            },
-            "Arg4": {
-              "obj": 1,
-              "nmod": 1
-            }
-          }
+          "roleset": "loan.01",
+          "resource": "English NomBank",
+          "description": "give temporarily",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/loan.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 356,
+          "id": "Arg0",
+          "desc": "proprietário/emprestador",
+          "definition": "Entidade que cede o bem para posterior devolução. Em empréstimos interinstitucionais agregados, o conjunto expresso pode abranger cedentes e recebedores, sem atribuir direção individual por ordem."
+        },
+        {
+          "id": "Arg1",
+          "desc": "bem emprestado",
+          "definition": "Bem/quantia cedido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiário",
+          "definition": "Entidade que recebe o empréstimo, não finalidade genérica. Em empréstimos interinstitucionais agregados, o conjunto expresso pode abranger cedentes e recebedores, sem atribuir direção individual por ordem."
+        },
+        {
+          "id": "Arg3",
+          "desc": "garantia do empréstimo",
+          "definition": "Bem/colateral efetivamente oferecido como garantia; sem garantia marca ausência, não bem realizado."
+        },
+        {
+          "id": "Arg4",
+          "desc": "juros ou taxa do empréstimo",
+          "definition": "Taxa/juros explicitamente vinculados ao empréstimo, inclusive índice de juros médios com adaptação financeira."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000050_SENT001::empréstimo::1",
           "sent_ID": "FOLHA_DOC000050_SENT001",
           "text": "Tesouro reduz em R$ 600 milhões empréstimo para pagar salários no Rio.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimo",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 42
-              }
-            ]
+            "char_start": 32,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -96,7 +65,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -105,22 +74,14 @@
           }
         },
         {
-          "instance_id": 4389,
+          "instance_id": "FOLHA_DOC000085_SENT025::empréstimo::1",
           "sent_ID": "FOLHA_DOC000085_SENT025",
           "text": "\"A gente olha muito para a indústria local, nos acostumamos a ter o CDI [juros médios de empréstimos entre instituições financeiras] como parâmetro para tudo\", critica o especialista.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 100
-              }
-            ]
+            "char_start": 89,
+            "char_end": 100
           },
           "realization": {
             "Arg0": "entre instituições financeiras",
@@ -136,14 +97,9 @@
             "Arg3": null,
             "Arg4": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 101,
                 "char_end": 131
               }
@@ -151,11 +107,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 101,
                 "char_end": 131
               }
@@ -163,9 +114,6 @@
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  16
-                ],
                 "char_start": 68,
                 "char_end": 71
               }
@@ -173,22 +121,14 @@
           }
         },
         {
-          "instance_id": 7707,
+          "instance_id": "FOLHA_DOC000005_SENT009::empréstimo::1",
           "sent_ID": "FOLHA_DOC000005_SENT009",
           "text": "O CBSS, no caso, oferecerá empréstimos pessoais sem garantia com taxas a partir de 3,9% ao mês.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 38
-              }
-            ]
+            "char_start": 27,
+            "char_end": 38
           },
           "realization": {
             "Arg0": "O CBSS",
@@ -204,13 +144,9 @@
             "Arg3": null,
             "Arg4": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 6
               }
@@ -220,17 +156,6 @@
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 65,
                 "char_end": 94
               }
@@ -238,22 +163,14 @@
           }
         },
         {
-          "instance_id": 9506,
+          "instance_id": "FOLHA_DOC000013_SENT001::empréstimo::1",
           "sent_ID": "FOLHA_DOC000013_SENT001",
           "text": "BNDES descarta irregularidades nos empréstimos para JBS.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 46
-              }
-            ]
+            "char_start": 35,
+            "char_end": 46
           },
           "realization": {
             "Arg0": null,
@@ -269,15 +186,11 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 47,
                 "char_end": 55
               }
@@ -287,22 +200,14 @@
           }
         },
         {
-          "instance_id": 11167,
+          "instance_id": "FOLHA_DOC002012_SENT015::empréstimo::1",
           "sent_ID": "FOLHA_DOC002012_SENT015",
           "text": "Segundo, será que os bancos se tornarão menos importantes quando os negócios de empréstimos forem transferidos para fora do perímetro regulatório?",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 91
-              }
-            ]
+            "char_start": 80,
+            "char_end": 91
           },
           "realization": {
             "Arg0": null,
@@ -318,7 +223,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -327,22 +232,14 @@
           }
         },
         {
-          "instance_id": 12101,
+          "instance_id": "FOLHA_DOC000050_SENT013::empréstimo::1",
           "sent_ID": "FOLHA_DOC000050_SENT013",
           "text": "As propostas para a concessão do empréstimo serão recebidas no próximo dia 24.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 43
-              }
-            ]
+            "char_start": 33,
+            "char_end": 43
           },
           "realization": {
             "Arg0": null,
@@ -358,7 +255,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -367,22 +264,14 @@
           }
         },
         {
-          "instance_id": 14632,
+          "instance_id": "FOLHA_DOC000013_SENT002::empréstimo::1",
           "sent_ID": "FOLHA_DOC000013_SENT002",
           "text": "O presidente do Banco Nacional de Desenvolvimento Econômico e Social (BNDES), Paulo Rabello de Castro, negou nesta segunda-feira que tenha havido irregularidades nos empréstimos concedidos pela instituição ao grupo JBS.",
-          "frame_id": "f_2382351f28fd055b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              31
-            ],
-            "spans": [
-              {
-                "char_start": 166,
-                "char_end": 177
-              }
-            ]
+            "char_start": 166,
+            "char_end": 177
           },
           "realization": {
             "Arg0": "pela instituição",
@@ -398,14 +287,9 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  33,
-                  34,
-                  35
-                ],
                 "char_start": 189,
                 "char_end": 205
               }
@@ -413,12 +297,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  36,
-                  37,
-                  38,
-                  39
-                ],
                 "char_start": 206,
                 "char_end": 218
               }
@@ -427,133 +305,101 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1,
+          "nsubj": 1,
+          "obl:agent": 1
+        },
+        "Arg2": {
+          "nmod": 2,
+          "obl": 1
+        },
+        "Arg4": {
+          "obj": 1,
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "empréstimo.02",
       "description": "tomada de bem ou quantia provisoriamente",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 4240,
+          "instance_id": "FOLHA_DOC000013_SENT013::empréstimo::1",
           "sent_ID": "FOLHA_DOC000013_SENT013",
           "text": "Até 2007, a fonte principal era o FAT, seguida por empréstimos internacionais de órgãos multilaterais e captações domésticas.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 62
-              }
-            ]
+            "char_start": 51,
+            "char_end": 62
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 6029,
+          "instance_id": "FOLHA_DOC000005_SENT005::empréstimo::1",
           "sent_ID": "FOLHA_DOC000005_SENT005",
           "text": "A primeira parceria é com a Bom Pra Crédito, marketplace no qual cerca de 500 mil interessados em tomar empréstimo pessoal submetem todo mês pedidos que são distribuídos para cerca de 25 bancos oferecerem propostas.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "empréstimo",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 104,
-                "char_end": 114
-              }
-            ]
+            "char_start": 104,
+            "char_end": 114
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 7473,
+          "instance_id": "FOLHA_DOC000050_SENT005::empréstimo::1",
           "sent_ID": "FOLHA_DOC000050_SENT005",
           "text": "O empréstimo terá ações da Cedae como garantia.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "empréstimo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ]
+            "char_start": 2,
+            "char_end": 12
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 9659,
+          "instance_id": "FOLHA_DOC003042_SENT014::empréstimo::1",
           "sent_ID": "FOLHA_DOC003042_SENT014",
           "text": "E entidades do agronegócio já ensaiam condicionar inscrições a empréstimos subsidiados para fazer o investimento.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "empréstimos",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 74
-              }
-            ]
+            "char_start": 63,
+            "char_end": 74
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 15543,
+          "instance_id": "FOLHA_DOC004045_SENT005::empréstimo::1",
           "sent_ID": "FOLHA_DOC004045_SENT005",
           "text": "Essa modalidade de empréstimo é uma das opções mais baratas do mercado.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "empréstimo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 29
-              }
-            ]
+            "char_start": 19,
+            "char_end": 29
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

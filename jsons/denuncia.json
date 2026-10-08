@@ -1,85 +1,50 @@
 {
   "lemma": "denúncia",
-  "lemma_base": "denúncia",
   "senses": [
     {
       "pt_roleset": "denúncia.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_9fdb11870ebc9dfd",
+          "roleset": "complaint.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "complaint.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/complaint.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "claimant",
-              "definition": "claimant"
-            },
-            {
-              "id": "Arg1",
-              "desc": "reason",
-              "definition": "reason"
-            },
-            {
-              "id": "Arg2",
-              "desc": "adjudicator or listener",
-              "definition": "adjudicator or listener"
-            },
-            {
-              "id": "Arg3",
-              "desc": "defendant",
-              "definition": "defendant"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 3,
-              "nmod": 3
-            },
-            "Arg3": {
-              "nmod": 8,
-              "obj": 1,
-              "nsubj": 1
-            },
-            "Arg1": {
-              "nmod": 3,
-              "ccomp": 1
-            },
-            "Arg2": {
-              "obl": 2,
-              "obj": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/complaint.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 437,
+          "id": "Arg0",
+          "desc": "claimant",
+          "definition": "claimant"
+        },
+        {
+          "id": "Arg1",
+          "desc": "reason",
+          "definition": "reason"
+        },
+        {
+          "id": "Arg2",
+          "desc": "adjudicator or listener",
+          "definition": "adjudicator or listener"
+        },
+        {
+          "id": "Arg3",
+          "desc": "defendant",
+          "definition": "defendant"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003153_SENT005::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT005",
           "text": "\"Enquanto houver bambu, lá vai flecha\", disse Janot em julho, quando sinalizou que apresentaria nova denúncia contra o presidente antes de sair do cargo.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 101,
-                "char_end": 109
-              }
-            ]
+            "char_start": 101,
+            "char_end": 109
           },
           "realization": {
             "Arg0": "Janot",
@@ -93,50 +58,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 46,
-                "char_end": 51,
-                "head_token_id": 12
+                "char_end": 51
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 110,
-                "char_end": 129,
-                "head_token_id": 24
+                "char_end": 129
               }
             ]
           }
         },
         {
-          "instance_id": 1149,
+          "instance_id": "FOLHA_DOC002039_SENT006::denúncia::1",
           "sent_ID": "FOLHA_DOC002039_SENT006",
           "text": "Passada a CCJ, as cenas de fisiologismo explícito vistas em plenário na primeira denúncia vão se repetir.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 89
-              }
-            ]
+            "char_start": 81,
+            "char_end": 89
           },
           "realization": {
             "Arg0": null,
@@ -150,7 +97,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -158,22 +105,14 @@
           }
         },
         {
-          "instance_id": 1328,
+          "instance_id": "FOLHA_DOC003276_SENT020::denúncia::1",
           "sent_ID": "FOLHA_DOC003276_SENT020",
           "text": "No início de agosto, os deputados rejeitaram o prosseguimento de uma denúncia por corrupção contra Temer.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 77
-              }
-            ]
+            "char_start": 69,
+            "char_end": 77
           },
           "realization": {
             "Arg0": null,
@@ -187,50 +126,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 78,
-                "char_end": 91,
-                "head_token_id": 16
+                "char_end": 91
               }
             ],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 92,
-                "char_end": 104,
-                "head_token_id": 18
+                "char_end": 104
               }
             ]
           }
         },
         {
-          "instance_id": 1566,
+          "instance_id": "FOLHA_DOC002032_SENT032::denúncia::1",
           "sent_ID": "FOLHA_DOC002032_SENT032",
           "text": "Por outro lado, Pimentel sofre desgaste com denúncias na Operação Acrônimo.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 53
-              }
-            ]
+            "char_start": 44,
+            "char_end": 53
           },
           "realization": {
             "Arg0": null,
@@ -244,7 +165,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -252,22 +173,14 @@
           }
         },
         {
-          "instance_id": 1572,
+          "instance_id": "FOLHA_DOC003175_SENT002::denúncia::1",
           "sent_ID": "FOLHA_DOC003175_SENT002",
           "text": "A segunda denúncia contra Michel Temer não deveria despertar tanto entusiasmo no PT.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 18
-              }
-            ]
+            "char_start": 10,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -281,41 +194,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 19,
-                "char_end": 38,
-                "head_token_id": 5
+                "char_end": 38
               }
             ]
           }
         },
         {
-          "instance_id": 1575,
+          "instance_id": "FOLHA_DOC003276_SENT013::denúncia::1",
           "sent_ID": "FOLHA_DOC003276_SENT013",
           "text": "O entorno do presidente tem qualificado a nova denúncia como frágil, sem novidades e sem provas.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 55
-              }
-            ]
+            "char_start": 47,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -329,7 +228,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -337,22 +236,14 @@
           }
         },
         {
-          "instance_id": 2035,
+          "instance_id": "FOLHA_DOC002031_SENT011::denúncia::1",
           "sent_ID": "FOLHA_DOC002031_SENT011",
           "text": "O avanço da extrema-direita não veio seguido de denúncias de interferência russa, diferente dos EUA.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 57
-              }
-            ]
+            "char_start": 48,
+            "char_end": 57
           },
           "realization": {
             "Arg0": null,
@@ -366,18 +257,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 58,
-                "char_end": 80,
-                "head_token_id": 12
+                "char_end": 80
               }
             ],
             "Arg2": [],
@@ -385,22 +270,14 @@
           }
         },
         {
-          "instance_id": 2708,
+          "instance_id": "FOLHA_DOC003200_SENT006::denúncia::1",
           "sent_ID": "FOLHA_DOC003200_SENT006",
           "text": "Moreira falou com a Folha na última quarta (13), em Brasília, antes da formalização da nova denúncia contra o presidente.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 100
-              }
-            ]
+            "char_start": 92,
+            "char_end": 100
           },
           "realization": {
             "Arg0": null,
@@ -414,41 +291,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 101,
-                "char_end": 120,
-                "head_token_id": 27
+                "char_end": 120
               }
             ]
           }
         },
         {
-          "instance_id": 3131,
+          "instance_id": "FOLHA_DOC003139_SENT002::denúncia::1",
           "sent_ID": "FOLHA_DOC003139_SENT002",
           "text": "Para dar trégua no noticiário abarrotado de denúncias de corrupção e casos de violência, a Globo faz uma aposta na água com açúcar.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 53
-              }
-            ]
+            "char_start": 44,
+            "char_end": 53
           },
           "realization": {
             "Arg0": null,
@@ -462,17 +325,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 54,
-                "char_end": 66,
-                "head_token_id": 11
+                "char_end": 66
               }
             ],
             "Arg2": [],
@@ -480,22 +338,14 @@
           }
         },
         {
-          "instance_id": 3373,
+          "instance_id": "FOLHA_DOC003187_SENT048::denúncia::1",
           "sent_ID": "FOLHA_DOC003187_SENT048",
           "text": "Se cada um fizer a sua parte, o número de denúncias poderia diminuir.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 51
-              }
-            ]
+            "char_start": 42,
+            "char_end": 51
           },
           "realization": {
             "Arg0": null,
@@ -509,7 +359,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -517,22 +367,14 @@
           }
         },
         {
-          "instance_id": 4464,
+          "instance_id": "FOLHA_DOC003175_SENT015::denúncia::1",
           "sent_ID": "FOLHA_DOC003175_SENT015",
           "text": "A denúncia descreve a atuação de Moreira na concessão de aeroportos como \"um verdadeiro escambo com a coisa pública\".",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -546,7 +388,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -554,22 +396,14 @@
           }
         },
         {
-          "instance_id": 5305,
+          "instance_id": "FOLHA_DOC003153_SENT022::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT022",
           "text": "Na primeira denúncia contra Temer, em junho, anotei que a Folha havia sido o único dos principais jornais a não utilizar o verbo \"denunciar\" -preferindo \"acusar\"- na manchete.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 20
-              }
-            ]
+            "char_start": 12,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -583,40 +417,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 21,
-                "char_end": 33,
-                "head_token_id": 6
+                "char_end": 33
               }
             ]
           }
         },
         {
-          "instance_id": 5716,
+          "instance_id": "FOLHA_DOC003153_SENT028::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT028",
           "text": "Análise de repórter especialista considerou que \"a denúncia trata essencialmente de outro suposto crime: uma quadrilha de parlamentares comandada pelo presidente da República que usa alianças políticas 'como ferramenta para arrecadar propina'\".",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 59
-              }
-            ]
+            "char_start": 51,
+            "char_end": 59
           },
           "realization": {
             "Arg0": null,
@@ -630,7 +451,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -638,22 +459,14 @@
           }
         },
         {
-          "instance_id": 5757,
+          "instance_id": "FOLHA_DOC000152_SENT038::denúncia::1",
           "sent_ID": "FOLHA_DOC000152_SENT038",
           "text": "As denúncias contra o presidente e Aécio causaram espanto e vergonha.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 12
-              }
-            ]
+            "char_start": 3,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -667,43 +480,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 13,
-                "char_end": 40,
-                "head_token_id": 5
+                "char_end": 40
               }
             ]
           }
         },
         {
-          "instance_id": 6675,
+          "instance_id": "FOLHA_DOC002007_SENT027::denúncia::1",
           "sent_ID": "FOLHA_DOC002007_SENT027",
           "text": "Com a espetacularização das denúncias, os criminalistas viraram celebridades.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 37
-              }
-            ]
+            "char_start": 28,
+            "char_end": 37
           },
           "realization": {
             "Arg0": null,
@@ -717,7 +514,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -725,22 +522,14 @@
           }
         },
         {
-          "instance_id": 7202,
+          "instance_id": "FOLHA_DOC003156_SENT019::denúncia::1",
           "sent_ID": "FOLHA_DOC003156_SENT019",
           "text": "Sob sua gestão, a PGR pediu a abertura de 242 inquéritos de autoridades com foro privilegiado e formalizou 65 denúncias no Supremo.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncias",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 119
-              }
-            ]
+            "char_start": 110,
+            "char_end": 119
           },
           "realization": {
             "Arg0": "a PGR",
@@ -754,51 +543,32 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 16,
-                "char_end": 21,
-                "head_token_id": 6
+                "char_end": 21
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 120,
-                "char_end": 130,
-                "head_token_id": 24
+                "char_end": 130
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 8445,
+          "instance_id": "FOLHA_DOC003153_SENT025::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT025",
           "text": "Nesta segunda denúncia, a capa da Folha novamente se diferenciou dos outros jornais, não positivamente.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 22
-              }
-            ]
+            "char_start": 14,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -812,7 +582,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -820,22 +590,14 @@
           }
         },
         {
-          "instance_id": 8603,
+          "instance_id": "FOLHA_DOC000022_SENT013::denúncia::1",
           "sent_ID": "FOLHA_DOC000022_SENT013",
           "text": "Em audiência no dia 13 de setembro, o juiz havia demonstrado contrariedade com o fato de o petista não ter apresentado os recibos de aluguel desde a apresentação da denúncia, em dezembro de 2016.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 165,
-                "char_end": 173
-              }
-            ]
+            "char_start": 165,
+            "char_end": 173
           },
           "realization": {
             "Arg0": null,
@@ -849,7 +611,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -857,22 +619,14 @@
           }
         },
         {
-          "instance_id": 8832,
+          "instance_id": "FOLHA_DOC003276_SENT021::denúncia::1",
           "sent_ID": "FOLHA_DOC003276_SENT021",
           "text": "Temer não tem tido conversas apenas sobre a nova denúncia de que é alvo.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 57
-              }
-            ]
+            "char_start": 49,
+            "char_end": 57
           },
           "realization": {
             "Arg0": null,
@@ -886,7 +640,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -894,22 +648,14 @@
           }
         },
         {
-          "instance_id": 9677,
+          "instance_id": "FOLHA_DOC003191_SENT019::denúncia::1",
           "sent_ID": "FOLHA_DOC003191_SENT019",
           "text": "Profissionais de RH aconselham a empresa que recebe denúncia a não tomar decisões pautadas só no calor do momento.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 60
-              }
-            ]
+            "char_start": 52,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -923,40 +669,27 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 31,
-                "char_end": 40,
-                "head_token_id": 6
+                "char_end": 40
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 10738,
+          "instance_id": "FOLHA_DOC003153_SENT004::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT004",
           "text": "A denúncia encaminhada ao Supremo Tribunal Federal acusa o presidente de chefiar uma organização criminosa, da qual fariam parte ministros e políticos próximos do PMDB.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -970,53 +703,32 @@
             "Arg2": "obl",
             "Arg3": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 23,
-                "char_end": 50,
-                "head_token_id": 6
+                "char_end": 50
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 57,
-                "char_end": 69,
-                "head_token_id": 11
+                "char_end": 69
               }
             ]
           }
         },
         {
-          "instance_id": 10991,
+          "instance_id": "FOLHA_DOC003138_SENT002::denúncia::1",
           "sent_ID": "FOLHA_DOC003138_SENT002",
           "text": "Na semana que passou, Joesley foi de colaborador a investigado preso, Lula chamou Palocci de frio e calculista e Temer sofreu segunda denúncia de Janot; entenda o que aconteceu.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 134,
-                "char_end": 142
-              }
-            ]
+            "char_start": 134,
+            "char_end": 142
           },
           "realization": {
             "Arg0": "de Janot",
@@ -1030,49 +742,32 @@
             "Arg2": null,
             "Arg3": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  27,
-                  28
-                ],
                 "char_start": 143,
-                "char_end": 151,
-                "head_token_id": 28
+                "char_end": 151
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  23
-                ],
                 "char_start": 113,
-                "char_end": 118,
-                "head_token_id": 23
+                "char_end": 118
               }
             ]
           }
         },
         {
-          "instance_id": 11961,
+          "instance_id": "FOLHA_DOC000022_SENT007::denúncia::1",
           "sent_ID": "FOLHA_DOC000022_SENT007",
           "text": "Na denúncia, o Ministério Público Federal diz que Lula não pagou pela locação do imóvel, comprado pelo empresário Glaucos da Costamarques em 2010.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 11
-              }
-            ]
+            "char_start": 3,
+            "char_end": 11
           },
           "realization": {
             "Arg0": "o Ministério Público Federal",
@@ -1086,37 +781,17 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 13,
-                "char_end": 41,
-                "head_token_id": 6
+                "char_end": 41
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 46,
-                "char_end": 87,
-                "head_token_id": 13
+                "char_end": 87
               }
             ],
             "Arg2": [],
@@ -1124,22 +799,14 @@
           }
         },
         {
-          "instance_id": 12027,
+          "instance_id": "FOLHA_DOC003070_SENT002::denúncia::1",
           "sent_ID": "FOLHA_DOC003070_SENT002",
           "text": "Boa ou ruim, a segunda denúncia da Procuradoria-Geral da República contra o presidente Michel Temer será rejeitada pela Câmara.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 31
-              }
-            ]
+            "char_start": 23,
+            "char_end": 31
           },
           "realization": {
             "Arg0": "da Procuradoria-Geral da República",
@@ -1153,57 +820,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 32,
-                "char_end": 66,
-                "head_token_id": 10
+                "char_end": 66
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 67,
-                "char_end": 99,
-                "head_token_id": 16
+                "char_end": 99
               }
             ]
           }
         },
         {
-          "instance_id": 12685,
+          "instance_id": "FOLHA_DOC000025_SENT008::denúncia::1",
           "sent_ID": "FOLHA_DOC000025_SENT008",
           "text": "O cinema pode ser firme, fazer uma denúncia, trazer um questionamento.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 43
-              }
-            ]
+            "char_start": 35,
+            "char_end": 43
           },
           "realization": {
             "Arg0": null,
@@ -1217,7 +859,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1225,22 +867,14 @@
           }
         },
         {
-          "instance_id": 13831,
+          "instance_id": "FOLHA_DOC004083_SENT023::denúncia::1",
           "sent_ID": "FOLHA_DOC004083_SENT023",
           "text": "A homologação encerra a espera do procurador-geral Rodrigo Janot para liberar nova denúncia criminal contra Temer.",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 91
-              }
-            ]
+            "char_start": 83,
+            "char_end": 91
           },
           "realization": {
             "Arg0": "do procurador-geral Rodrigo Janot",
@@ -1254,53 +888,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 31,
-                "char_end": 64,
-                "head_token_id": 8
+                "char_end": 64
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 101,
-                "char_end": 113,
-                "head_token_id": 17
+                "char_end": 113
               }
             ]
           }
         },
         {
-          "instance_id": 14979,
+          "instance_id": "FOLHA_DOC003153_SENT014::denúncia::1",
           "sent_ID": "FOLHA_DOC003153_SENT014",
           "text": "Um ano depois, na última sexta-feira, 15 de setembro de 2017, a manchete foi: \"Janot acusa Temer de obstruir a Justiça; presidente ataca denúncia\".",
-          "frame_id": "f_9fdb11870ebc9dfd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "denúncia",
-            "token_ids": [
-              31
-            ],
-            "spans": [
-              {
-                "char_start": 137,
-                "char_end": 145
-              }
-            ]
+            "char_start": 137,
+            "char_end": 145
           },
           "realization": {
             "Arg0": null,
@@ -1314,14 +927,33 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 3,
+          "nmod": 3
+        },
+        "Arg3": {
+          "nmod": 8,
+          "obj": 1,
+          "nsubj": 1
+        },
+        "Arg1": {
+          "nmod": 3,
+          "ccomp": 1
+        },
+        "Arg2": {
+          "obl": 2,
+          "obj": 1
+        }
+      }
     }
   ]
 }

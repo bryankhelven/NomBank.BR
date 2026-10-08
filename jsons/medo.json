@@ -1,69 +1,40 @@
 {
   "lemma": "medo",
-  "lemma_base": "medo",
   "senses": [
     {
       "pt_roleset": "medo.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_f6eb2483aa0eb24b",
+          "roleset": "fear.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "fear.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/fear.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "experiencer",
-              "definition": "experiencer"
-            },
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "acl": 6,
-              "root": 1,
-              "parataxis": 1,
-              "nmod": 3
-            },
-            "Arg0": {
-              "nsubj": 2,
-              "det": 2,
-              "obl": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/fear.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 221,
+          "id": "Arg0",
+          "desc": "experiencer",
+          "definition": "experiencer"
+        },
+        {
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002065_SENT022::medo::1",
           "sent_ID": "FOLHA_DOC002065_SENT022",
           "text": "Pior do que o medo real é o imaginário, afirma.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 18
-              }
-            ]
+            "char_start": 14,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -73,28 +44,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 806,
+          "instance_id": "FOLHA_DOC003066_SENT034::medo::1",
           "sent_ID": "FOLHA_DOC003066_SENT034",
           "text": "Ele não quis dar o sobrenome com medo de ser dispensado pela Uber.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 37
-              }
-            ]
+            "char_start": 33,
+            "char_end": 37
           },
           "realization": {
             "Arg0": null,
@@ -104,42 +67,25 @@
             "Arg0": null,
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 38,
-                "char_end": 65,
-                "head_token_id": 11
+                "char_end": 65
               }
             ]
           }
         },
         {
-          "instance_id": 1027,
+          "instance_id": "FOLHA_DOC003038_SENT035::medo::1",
           "sent_ID": "FOLHA_DOC003038_SENT035",
           "text": "O problema inicial da maioria, segundo ela, é \"ter medo de ser humano\".",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 55
-              }
-            ]
+            "char_start": 51,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -149,39 +95,25 @@
             "Arg0": null,
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 56,
-                "char_end": 69,
-                "head_token_id": 17
+                "char_end": 69
               }
             ]
           }
         },
         {
-          "instance_id": 1102,
+          "instance_id": "FOLHA_DOC001769_SENT012::medo::1",
           "sent_ID": "FOLHA_DOC001769_SENT012",
           "text": "Turistas, curiosos e clientes do asfalto aos poucos perderam o medo de circular por suas vielas.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 67
-              }
-            ]
+            "char_start": 63,
+            "char_end": 67
           },
           "realization": {
             "Arg0": "Turistas, curiosos e clientes do asfalto",
@@ -191,56 +123,30 @@
             "Arg0": "nsubj",
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 0,
-                "char_end": 40,
-                "head_token_id": 1
+                "char_end": 40
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 68,
-                "char_end": 95,
-                "head_token_id": 16
+                "char_end": 95
               }
             ]
           }
         },
         {
-          "instance_id": 1362,
+          "instance_id": "FOLHA_DOC003188_SENT030::medo::1",
           "sent_ID": "FOLHA_DOC003188_SENT030",
           "text": "Meu medo era de não suportá-la e de entregar informações sobre meus camaradas.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 8
-              }
-            ]
+            "char_start": 4,
+            "char_end": 8
           },
           "realization": {
             "Arg0": "Meu",
@@ -250,47 +156,30 @@
             "Arg0": "det",
             "Arg1": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 3,
-                "head_token_id": 1
+                "char_end": 3
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 16,
-                "char_end": 30,
-                "head_token_id": 6
+                "char_end": 30
               }
             ]
           }
         },
         {
-          "instance_id": 2304,
+          "instance_id": "FOLHA_DOC000097_SENT037::medo::1",
           "sent_ID": "FOLHA_DOC000097_SENT037",
           "text": "Além de tudo, se prepara para agora enfrentar seu maior medo: completar 30 anos.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 60
-              }
-            ]
+            "char_start": 56,
+            "char_end": 60
           },
           "realization": {
             "Arg0": "seu",
@@ -300,48 +189,30 @@
             "Arg0": "det",
             "Arg1": "parataxis"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 46,
-                "char_end": 49,
-                "head_token_id": 10
+                "char_end": 49
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 62,
-                "char_end": 79,
-                "head_token_id": 14
+                "char_end": 79
               }
             ]
           }
         },
         {
-          "instance_id": 2900,
+          "instance_id": "FOLHA_DOC003142_SENT013::medo::1",
           "sent_ID": "FOLHA_DOC003142_SENT013",
           "text": "A transição de uma vida divertida, com experiências que incluem expedições pela África, para uma vida de responsabilidade e medos se configura no primeiro episódio.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medos",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 124,
-                "char_end": 129
-              }
-            ]
+            "char_start": 124,
+            "char_end": 129
           },
           "realization": {
             "Arg0": null,
@@ -351,28 +222,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 3617,
+          "instance_id": "FOLHA_DOC000073_SENT003::medo::1",
           "sent_ID": "FOLHA_DOC000073_SENT003",
           "text": "A rivalidade explica, além do medo de enfrentá-la por se tratar de adversário duro de roer.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 34
-              }
-            ]
+            "char_start": 30,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -382,37 +245,25 @@
             "Arg0": null,
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 38,
-                "char_end": 49,
-                "head_token_id": 10
+                "char_end": 49
               }
             ]
           }
         },
         {
-          "instance_id": 6770,
+          "instance_id": "FOLHA_DOC002008_SENT013::medo::1",
           "sent_ID": "FOLHA_DOC002008_SENT013",
           "text": "O medo é latente, mas minha consciência diz que, se em 1985 não aconteceu nada, agora também não vai.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 6
-              }
-            ]
+            "char_start": 2,
+            "char_end": 6
           },
           "realization": {
             "Arg0": null,
@@ -422,28 +273,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 7192,
+          "instance_id": "FOLHA_DOC004049_SENT015::medo::1",
           "sent_ID": "FOLHA_DOC004049_SENT015",
           "text": "Também disse que não tem medo de ser alvo de agressões tanto de apoiadores quanto de críticos do ex-presidente.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 29
-              }
-            ]
+            "char_start": 25,
+            "char_end": 29
           },
           "realization": {
             "Arg0": null,
@@ -453,50 +296,25 @@
             "Arg0": null,
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 30,
-                "char_end": 110,
-                "head_token_id": 9
+                "char_end": 110
               }
             ]
           }
         },
         {
-          "instance_id": 7579,
+          "instance_id": "FOLHA_DOC004067_SENT016::medo::1",
           "sent_ID": "FOLHA_DOC004067_SENT016",
           "text": "Temos medo de perder o controle, de cedermos nossa autonomia a algoritmos, empresas de tecnologia e pesquisadores científicos.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 10
-              }
-            ]
+            "char_start": 6,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -506,28 +324,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 8868,
+          "instance_id": "FOLHA_DOC002012_SENT002::medo::1",
           "sent_ID": "FOLHA_DOC002012_SENT002",
           "text": "Poucas questões despertam mais ansiedade nos bancos centrais do que o medo de perder o controle das moedas pelas quais são responsáveis.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 74
-              }
-            ]
+            "char_start": 70,
+            "char_end": 74
           },
           "realization": {
             "Arg0": "nos bancos centrais",
@@ -537,60 +347,30 @@
             "Arg0": "obl",
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 41,
-                "char_end": 60,
-                "head_token_id": 8
+                "char_end": 60
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 75,
-                "char_end": 135,
-                "head_token_id": 16
+                "char_end": 135
               }
             ]
           }
         },
         {
-          "instance_id": 9376,
+          "instance_id": "FOLHA_DOC000001_SENT009::medo::1",
           "sent_ID": "FOLHA_DOC000001_SENT009",
           "text": "O ex-presidente disse ainda não ter \"medo\" dos investigadores que, de acordo com ele, estão acostumados a \"mexer com deputados e senadores\" que temem as apurações.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 41
-              }
-            ]
+            "char_start": 37,
+            "char_end": 41
           },
           "realization": {
             "Arg0": "O ex-presidente",
@@ -600,49 +380,30 @@
             "Arg0": "nsubj",
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 15,
-                "head_token_id": 2
+                "char_end": 15
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 43,
-                "char_end": 61,
-                "head_token_id": 12
+                "char_end": 61
               }
             ]
           }
         },
         {
-          "instance_id": 9525,
+          "instance_id": "FOLHA_DOC000071_SENT043::medo::1",
           "sent_ID": "FOLHA_DOC000071_SENT043",
           "text": "Com medo de represálias, a família não foi ao enterro.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 8
-              }
-            ]
+            "char_start": 4,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -652,38 +413,25 @@
             "Arg0": null,
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 9,
-                "char_end": 23,
-                "head_token_id": 4
+                "char_end": 23
               }
             ]
           }
         },
         {
-          "instance_id": 10681,
+          "instance_id": "FOLHA_DOC003192_SENT039::medo::1",
           "sent_ID": "FOLHA_DOC003192_SENT039",
           "text": "O medo de um fim apocalíptico expõe nossa fragilidade perante as forças da natureza.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 6
-              }
-            ]
+            "char_start": 2,
+            "char_end": 6
           },
           "realization": {
             "Arg0": null,
@@ -693,40 +441,25 @@
             "Arg0": null,
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 7,
-                "char_end": 29,
-                "head_token_id": 5
+                "char_end": 29
               }
             ]
           }
         },
         {
-          "instance_id": 10721,
+          "instance_id": "FOLHA_DOC003272_SENT036::medo::1",
           "sent_ID": "FOLHA_DOC003272_SENT036",
           "text": "E isso dá medo, aponta Alves, morador do município fluminense de Niterói.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 14
-              }
-            ]
+            "char_start": 10,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -736,28 +469,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 14646,
+          "instance_id": "FOLHA_DOC003192_SENT042::medo::1",
           "sent_ID": "FOLHA_DOC003192_SENT042",
           "text": "Usar o medo como agente de mudança, como faz a tradição apocalíptica, não funcionou no passado e certamente funciona menos ainda agora.",
-          "frame_id": "f_f6eb2483aa0eb24b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "medo",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 11
-              }
-            ]
+            "char_start": 7,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -767,12 +492,25 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "acl": 6,
+          "root": 1,
+          "parataxis": 1,
+          "nmod": 3
+        },
+        "Arg0": {
+          "nsubj": 2,
+          "det": 2,
+          "obl": 1
+        }
+      }
     }
   ]
 }

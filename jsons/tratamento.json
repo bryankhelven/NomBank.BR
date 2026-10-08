@@ -1,70 +1,45 @@
 {
   "lemma": "tratamento",
-  "lemma_base": "tratamento",
   "senses": [
     {
       "pt_roleset": "tratamento.11",
       "description": "modo de considerar; trato",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_211ea840fe284aa4",
-          "description": "modo de considerar; trato",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "treatment.04",
-              "resource": "English NomBank",
-              "description": "handle",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/treatment.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agente do trato",
-              "definition": "Entidade que trata/considera o objeto."
-            },
-            {
-              "id": "Arg1",
-              "desc": "entidade tratada",
-              "definition": "Coisa/entidade que recebe tratamento/consideração."
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiário do trato",
-              "definition": "Pessoa/entidade para quem se dá tratamento/consideração, distinta do tema tratado; não atributo do objeto nem modo diferente."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg1": {
-              "obl": 1,
-              "nmod": 1
-            }
-          }
+          "roleset": "treatment.04",
+          "resource": "English NomBank",
+          "description": "handle",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/treatment.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 31,
+          "id": "Arg0",
+          "desc": "agente do trato",
+          "definition": "Entidade que trata/considera o objeto."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade tratada",
+          "definition": "Coisa/entidade que recebe tratamento/consideração."
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiário do trato",
+          "definition": "Pessoa/entidade para quem se dá tratamento/consideração, distinta do tema tratado; não atributo do objeto nem modo diferente."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003153_SENT021::tratamento::1",
           "sent_ID": "FOLHA_DOC003153_SENT021",
           "text": "Em críticas internas, por diversas vezes exemplifiquei tratamentos diferenciados que a Folha deu a situações que podem ser interpretadas como correspondentes.",
-          "frame_id": "f_211ea840fe284aa4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamentos",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 66
-              }
-            ]
+            "char_start": 55,
+            "char_end": 66
           },
           "realization": {
             "Arg0": "a Folha",
@@ -76,29 +51,15 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 85,
                 "char_end": 92
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 97,
                 "char_end": 157
               }
@@ -107,22 +68,14 @@
           }
         },
         {
-          "instance_id": 2270,
+          "instance_id": "FOLHA_DOC000115_SENT009::tratamento::1",
           "sent_ID": "FOLHA_DOC000115_SENT009",
           "text": "Está se perguntando por que o tratamento fiscal desse produto é diferente dos demais?",
-          "frame_id": "f_211ea840fe284aa4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 40
-              }
-            ]
+            "char_start": 30,
+            "char_end": 40
           },
           "realization": {
             "Arg0": null,
@@ -134,15 +87,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 48,
                 "char_end": 61
               }
@@ -150,80 +98,61 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg1": {
+          "obl": 1,
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "tratamento.01",
       "description": "conjunto de meios terapêuticos utilizados para manutenção ou recuperação da saúde",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_7a2e8fed31494e14",
-          "description": "conjunto de meios terapêuticos utilizados para manutenção ou recuperação da saúde",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "treatment.02",
-              "resource": "English NomBank",
-              "description": "medical treatment",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/treatment.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "médico/tratador",
-              "definition": "Agente que administra cuidado, não fabricante de medicamento ou financiador automaticamente."
-            },
-            {
-              "id": "Arg1",
-              "desc": "entidade tratada",
-              "definition": "Pessoa/coisa submetida ou explicitamente prevista para o cuidado clínico."
-            },
-            {
-              "id": "Arg2",
-              "desc": "doença/condição",
-              "definition": "Doença/condição tratada, conforme tratar doença/de/contra."
-            },
-            {
-              "id": "Arg3",
-              "desc": "método/remédio",
-              "definition": "Método, remédio ou alimento explicitamente utilizado como cuidado, conforme tratar com."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nsubj": 6,
-              "advcl": 1,
-              "nmod": 1
-            },
-            "Arg2": {
-              "nmod": 3
-            },
-            "Arg3": {
-              "nmod": 1
-            }
-          }
+          "roleset": "treatment.02",
+          "resource": "English NomBank",
+          "description": "medical treatment",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/treatment.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 94,
+          "id": "Arg0",
+          "desc": "médico/tratador",
+          "definition": "Agente que administra cuidado, não fabricante de medicamento ou financiador automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade tratada",
+          "definition": "Pessoa/coisa submetida ou explicitamente prevista para o cuidado clínico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "doença/condição",
+          "definition": "Doença/condição tratada, conforme tratar doença/de/contra."
+        },
+        {
+          "id": "Arg3",
+          "desc": "método/remédio",
+          "definition": "Método, remédio ou alimento explicitamente utilizado como cuidado, conforme tratar com."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003086_SENT006::tratamento::1",
           "sent_ID": "FOLHA_DOC003086_SENT006",
           "text": "Um diretor da Boston College, onde estudam, informou que as jovens estão bem, apesar de necessitarem de tratamento adicional para as queimaduras.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 104,
-                "char_end": 114
-              }
-            ]
+            "char_start": 104,
+            "char_end": 114
           },
           "realization": {
             "Arg0": null,
@@ -237,25 +166,16 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 57,
                 "char_end": 66
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 125,
                 "char_end": 144
               }
@@ -264,22 +184,14 @@
           }
         },
         {
-          "instance_id": 730,
+          "instance_id": "FOLHA_DOC003057_SENT016::tratamento::1",
           "sent_ID": "FOLHA_DOC003057_SENT016",
           "text": "Com doações até de desconhecidos de fora do país, o casal de Joinville, em Santa Catarina, já arrecadou R$ 3,6 milhões, o suficiente para um ano de tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 148,
-                "char_end": 158
-              }
-            ]
+            "char_start": 148,
+            "char_end": 158
           },
           "realization": {
             "Arg0": null,
@@ -293,7 +205,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -301,22 +213,14 @@
           }
         },
         {
-          "instance_id": 884,
+          "instance_id": "FOLHA_DOC004124_SENT008::tratamento::1",
           "sent_ID": "FOLHA_DOC004124_SENT008",
           "text": "Muitas delas remetem às minhas questões com hospitalização, tratamento, doença.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 70
-              }
-            ]
+            "char_start": 60,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -330,7 +234,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -338,22 +242,14 @@
           }
         },
         {
-          "instance_id": 2539,
+          "instance_id": "FOLHA_DOC000041_SENT025::tratamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT025",
           "text": "O problema é que, na prática, as mulheres acabam tendo menos sucesso nos tratamentos do que os homens.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamentos",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 84
-              }
-            ]
+            "char_start": 73,
+            "char_end": 84
           },
           "realization": {
             "Arg0": null,
@@ -373,22 +269,14 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 30,
                 "char_end": 41
               },
               {
-                "token_ids": [
-                  22,
-                  23
-                ],
                 "char_start": 92,
                 "char_end": 101
               }
@@ -398,22 +286,14 @@
           }
         },
         {
-          "instance_id": 2828,
+          "instance_id": "FOLHA_DOC000041_SENT034::tratamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT034",
           "text": "Segundo Kátia Gomes, o próprio planejamento dos horários do tratamento pode prejudicar as mulheres.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 70
-              }
-            ]
+            "char_start": 60,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -427,7 +307,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -435,22 +315,14 @@
           }
         },
         {
-          "instance_id": 3000,
+          "instance_id": "FOLHA_DOC000041_SENT069::tratamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT069",
           "text": "Não me deu um centavo para o tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 39
-              }
-            ]
+            "char_start": 29,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -464,7 +336,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -472,22 +344,14 @@
           }
         },
         {
-          "instance_id": 3360,
+          "instance_id": "FOLHA_DOC000134_SENT034::tratamento::1",
           "sent_ID": "FOLHA_DOC000134_SENT034",
           "text": "De acordo com a prefeitura, foi Damião quem não se apresentou para procurar o tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 88
-              }
-            ]
+            "char_start": 78,
+            "char_end": 88
           },
           "realization": {
             "Arg0": null,
@@ -501,13 +365,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 32,
                 "char_end": 38
               }
@@ -517,22 +378,14 @@
           }
         },
         {
-          "instance_id": 3750,
+          "instance_id": "FOLHA_DOC004029_SENT012::tratamento::1",
           "sent_ID": "FOLHA_DOC004029_SENT012",
           "text": "Suas habilidades foram contidas nos últimos meses, quando já estava em tratamento contra o câncer.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 71,
-                "char_end": 81
-              }
-            ]
+            "char_start": 71,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -546,16 +399,11 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 82,
                 "char_end": 97
               }
@@ -564,22 +412,14 @@
           }
         },
         {
-          "instance_id": 5220,
+          "instance_id": "FOLHA_DOC000064_SENT030::tratamento::1",
           "sent_ID": "FOLHA_DOC000064_SENT030",
           "text": "Depois de atingir a liderança em medicamentos para diabetes no país, com 16,8% de market share nos mercados público e privado, a Novo Nordisk alcançou a principal posição no tratamento da obesidade.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              36
-            ],
-            "spans": [
-              {
-                "char_start": 174,
-                "char_end": 184
-              }
-            ]
+            "char_start": 174,
+            "char_end": 184
           },
           "realization": {
             "Arg0": null,
@@ -593,16 +433,11 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  37,
-                  38,
-                  39
-                ],
                 "char_start": 185,
                 "char_end": 197
               }
@@ -611,22 +446,14 @@
           }
         },
         {
-          "instance_id": 10252,
+          "instance_id": "FOLHA_DOC003257_SENT008::tratamento::1",
           "sent_ID": "FOLHA_DOC003257_SENT008",
           "text": "Inicialmente o tratamento é conservador, mas em muitos casos só pode reverter isso em uma conduta cirúrgica.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 25
-              }
-            ]
+            "char_start": 15,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -640,7 +467,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -648,22 +475,14 @@
           }
         },
         {
-          "instance_id": 10764,
+          "instance_id": "FOLHA_DOC000041_SENT021::tratamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT021",
           "text": "As mulheres se calavam e depois de algumas semanas, desistiam do tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 65,
-                "char_end": 75
-              }
-            ]
+            "char_start": 65,
+            "char_end": 75
           },
           "realization": {
             "Arg0": null,
@@ -677,14 +496,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 11
               }
@@ -694,22 +509,14 @@
           }
         },
         {
-          "instance_id": 11972,
+          "instance_id": "FOLHA_DOC004092_SENT019::tratamento::1",
           "sent_ID": "FOLHA_DOC004092_SENT019",
           "text": "Esconde o sofrimento das pessoas que ainda não têm acesso ao tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 71
-              }
-            ]
+            "char_start": 61,
+            "char_end": 71
           },
           "realization": {
             "Arg0": null,
@@ -723,20 +530,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 21,
                 "char_end": 57
               }
@@ -746,22 +543,14 @@
           }
         },
         {
-          "instance_id": 14043,
+          "instance_id": "FOLHA_DOC000041_SENT013::tratamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT013",
           "text": "De tão desconfortável, Gabriela acabou abandonando as reuniões e parou o tratamento.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 83
-              }
-            ]
+            "char_start": 73,
+            "char_end": 83
           },
           "realization": {
             "Arg0": null,
@@ -775,13 +564,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 23,
                 "char_end": 31
               }
@@ -791,22 +577,14 @@
           }
         },
         {
-          "instance_id": 14417,
+          "instance_id": "FOLHA_DOC003178_SENT007::tratamento::1",
           "sent_ID": "FOLHA_DOC003178_SENT007",
           "text": "Mildred afirma ter quase certeza de que, se precisasse passar por um novo tratamento com quimioterapia, cirurgia e radioterapia, suas chances de sobrevivência seriam muito baixas.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 74,
-                "char_end": 84
-              }
-            ]
+            "char_start": 74,
+            "char_end": 84
           },
           "realization": {
             "Arg0": null,
@@ -820,13 +598,10 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -834,14 +609,6 @@
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 85,
                 "char_end": 127
               }
@@ -849,22 +616,14 @@
           }
         },
         {
-          "instance_id": 15094,
+          "instance_id": "FOLHA_DOC003178_SENT044::tratamento::1",
           "sent_ID": "FOLHA_DOC003178_SENT044",
           "text": "Em geral, o local não cobra nada pelo tratamento, que hoje custa aproximadamente 5% do valor cobrado há dois anos.",
-          "frame_id": "f_7a2e8fed31494e14",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 48
-              }
-            ]
+            "char_start": 38,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -878,112 +637,87 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nsubj": 6,
+          "advcl": 1,
+          "nmod": 1
+        },
+        "Arg2": {
+          "nmod": 3
+        },
+        "Arg3": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "tratamento.09",
       "description": "acolhimento; recepção",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 241,
+          "instance_id": "FOLHA_DOC003035_SENT030::tratamento::1",
           "sent_ID": "FOLHA_DOC003035_SENT030",
           "text": "E aí eu vi que o Rodrigo mudou o tratamento comigo e com a minha família.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 43
-              }
-            ]
+            "char_start": 33,
+            "char_end": 43
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3802,
+          "instance_id": "FOLHA_DOC001533_SENT011::tratamento::1",
           "sent_ID": "FOLHA_DOC001533_SENT011",
           "text": "Nem o nosso uso nem o tratamento dado a eles tinha importância moral ou legal.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 32
-              }
-            ]
+            "char_start": 22,
+            "char_end": 32
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "tratamento.06",
       "description": "conjunto de cuidados ou operações para tornar um objeto utilizável ou consumível; preparo",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 8341,
+          "instance_id": "FOLHA_DOC003118_SENT025::tratamento::1",
           "sent_ID": "FOLHA_DOC003118_SENT025",
           "text": "Antes de comparar, eles aplicaram um tratamento aos dados para que fatores como a alta generalizada da escolaridade e a presença de mulheres no mercado de trabalho não alterassem o cálculo.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "tratamento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 47
-              }
-            ]
+            "char_start": 37,
+            "char_end": 47
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

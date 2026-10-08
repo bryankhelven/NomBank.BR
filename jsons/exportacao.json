@@ -1,71 +1,45 @@
 {
   "lemma": "exportação",
-  "lemma_base": "exportação",
   "senses": [
     {
       "pt_roleset": "exportação.01",
       "description": "I envio, geralmente para fora de um país, para venda",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_d961bbf884df3295",
-          "description": "I envio, geralmente para fora de um país, para venda",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "export.01",
-              "resource": "English NomBank",
-              "description": "ship out commodities",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/export.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "exportador",
-              "definition": "Entidade que envia para venda externa."
-            },
-            {
-              "id": "Arg1",
-              "desc": "mercadoria/valor exportado",
-              "definition": "Bem ou valor de mercadorias exportadas."
-            },
-            {
-              "id": "Arg2",
-              "desc": "importador",
-              "definition": "Destinatário importador explicitamente indicado, não finalidade ou mercado presumido."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1,
-              "amod": 1
-            },
-            "Arg1": {
-              "nmod": 5,
-              "amod": 1
-            }
-          }
+          "roleset": "export.01",
+          "resource": "English NomBank",
+          "description": "ship out commodities",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/export.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1849,
+          "id": "Arg0",
+          "desc": "exportador",
+          "definition": "Entidade que envia para venda externa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "mercadoria/valor exportado",
+          "definition": "Bem ou valor de mercadorias exportadas."
+        },
+        {
+          "id": "Arg2",
+          "desc": "importador",
+          "definition": "Destinatário importador explicitamente indicado, não finalidade ou mercado presumido."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003244_SENT007::exportação::1",
           "sent_ID": "FOLHA_DOC003244_SENT007",
           "text": "Era um incentivo às exportações para reduzir o deficit da balança comercial.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 31
-              }
-            ]
+            "char_start": 20,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -77,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2132,
+          "instance_id": "FOLHA_DOC000015_SENT019::exportação::1",
           "sent_ID": "FOLHA_DOC000015_SENT019",
           "text": "A empresa é hoje líder em exportações, mas está na terceira posição em vendas no mercado nacional, com 12% de participação.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 37
-              }
-            ]
+            "char_start": 26,
+            "char_end": 37
           },
           "realization": {
             "Arg0": "A empresa",
@@ -111,13 +77,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 9
               }
@@ -127,22 +89,14 @@
           }
         },
         {
-          "instance_id": 2584,
+          "instance_id": "FOLHA_DOC003244_SENT013::exportação::1",
           "sent_ID": "FOLHA_DOC003244_SENT013",
           "text": "Outro ponto que incentivaria a exportação de alimentos seria um avanço na diplomacia comercial.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 41
-              }
-            ]
+            "char_start": 31,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -154,14 +108,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 42,
                 "char_end": 54
               }
@@ -170,22 +120,14 @@
           }
         },
         {
-          "instance_id": 4102,
+          "instance_id": "FOLHA_DOC004024_SENT009::exportação::1",
           "sent_ID": "FOLHA_DOC004024_SENT009",
           "text": "As vendas de automóveis nacionais (exportações mais mercado doméstico) cresceram 19%.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 46
-              }
-            ]
+            "char_start": 35,
+            "char_end": 46
           },
           "realization": {
             "Arg0": null,
@@ -197,15 +139,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 10,
                 "char_end": 33
               }
@@ -214,22 +151,14 @@
           }
         },
         {
-          "instance_id": 7270,
+          "instance_id": "FOLHA_DOC003198_SENT027::exportação::1",
           "sent_ID": "FOLHA_DOC003198_SENT027",
           "text": "As exportações de carne bovina subiram mais de 30% em julho, com faturamento de US$ 540 milhões.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 14
-              }
-            ]
+            "char_start": 3,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -241,15 +170,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 15,
                 "char_end": 30
               }
@@ -258,22 +182,14 @@
           }
         },
         {
-          "instance_id": 10060,
+          "instance_id": "FOLHA_DOC003212_SENT005::exportação::1",
           "sent_ID": "FOLHA_DOC003212_SENT005",
           "text": "Para boa parcela dos economistas brasileiros, o que caracteriza as repúblicas de bananas são as bananas, ou melhor, a exportação de matérias-primas.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportação",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 128
-              }
-            ]
+            "char_start": 118,
+            "char_end": 128
           },
           "realization": {
             "Arg0": null,
@@ -285,14 +201,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  25,
-                  26
-                ],
                 "char_start": 129,
                 "char_end": 147
               }
@@ -301,22 +213,14 @@
           }
         },
         {
-          "instance_id": 10476,
+          "instance_id": "FOLHA_DOC004024_SENT010::exportação::1",
           "sent_ID": "FOLHA_DOC004024_SENT010",
           "text": "As exportações de veículos tiram as montadoras do buraco até com certa rapidez.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 14
-              }
-            ]
+            "char_start": 3,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -328,14 +232,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 15,
                 "char_end": 26
               }
@@ -344,22 +244,14 @@
           }
         },
         {
-          "instance_id": 11072,
+          "instance_id": "FOLHA_DOC003111_SENT008::exportação::1",
           "sent_ID": "FOLHA_DOC003111_SENT008",
           "text": "O teste aconteceu dias após a ONU impor novas sanções a Pyongyang, que proíbem as exportações têxteis norte-coreanas e restringem o seu abastecimento em petróleo e gás.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportações",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 93
-              }
-            ]
+            "char_start": 82,
+            "char_end": 93
           },
           "realization": {
             "Arg0": "norte-coreanas",
@@ -371,21 +263,15 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19
-                ],
                 "char_start": 102,
                 "char_end": 116
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 94,
                 "char_end": 101
               }
@@ -394,22 +280,14 @@
           }
         },
         {
-          "instance_id": 13560,
+          "instance_id": "FOLHA_DOC004099_SENT002::exportação::1",
           "sent_ID": "FOLHA_DOC004099_SENT002",
           "text": "A exportação está sustentando boa parte da produção e do emprego no setor de máquinas agrícolas.",
-          "frame_id": "f_d961bbf884df3295",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ]
+            "char_start": 2,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -421,13 +299,23 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1,
+          "amod": 1
+        },
+        "Arg1": {
+          "nmod": 5,
+          "amod": 1
+        }
+      }
     }
   ]
 }

@@ -1,75 +1,45 @@
 {
   "lemma": "protesto",
-  "lemma_base": "protesto",
   "senses": [
     {
       "pt_roleset": "protesto · acepção 1",
       "description": "1 declaração pública contra alguma coisa: os metalúr- gicos do ABC paulista, uma das categorias mais fortes do sin- dicalismo brasileiro, voltaram a agitar a bandeira do protes- to (VEJ); cederam a pressões e abriram o consórcio ao capital internacional, apesar do protesto de grupos nacionalistas (AVL)",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_145f2f114e2728de",
-          "description": "1 declaração pública contra alguma coisa: os metalúr- gicos do ABC paulista, uma das categorias mais fortes do sin- dicalismo brasileiro, voltaram a agitar a bandeira do protes- to (VEJ); cederam a pressões e abriram o consórcio ao capital internacional, apesar do protesto de grupos nacionalistas (AVL)",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "protest.01",
-              "resource": "English NomBank",
-              "description": "manner of speaking",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/protest.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "quem protesta",
-              "definition": "Entidade que expressa a objeção, inclusive participantes coletivos de manifestação."
-            },
-            {
-              "id": "Arg1",
-              "desc": "conteúdo/alvo contestado",
-              "definition": "O que se contesta ou a proposição declarada, sem tomar consequência por alvo."
-            },
-            {
-              "id": "Arg2",
-              "desc": "destinatário da objeção",
-              "definition": "A quem se dirige o protesto; não qualquer presença no lugar."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 4,
-              "acl": 1,
-              "acl:relcl": 1
-            },
-            "Arg0": {
-              "nsubj": 4,
-              "nmod": 2
-            },
-            "Arg2": {
-              "nsubj:pass": 1
-            }
-          }
+          "roleset": "protest.01",
+          "resource": "English NomBank",
+          "description": "manner of speaking",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/protest.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 288,
+          "id": "Arg0",
+          "desc": "quem protesta",
+          "definition": "Entidade que expressa a objeção, inclusive participantes coletivos de manifestação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo/alvo contestado",
+          "definition": "O que se contesta ou a proposição declarada, sem tomar consequência por alvo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário da objeção",
+          "definition": "A quem se dirige o protesto; não qualquer presença no lugar."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003135_SENT012::protesto::1",
           "sent_ID": "FOLHA_DOC003135_SENT012",
           "text": "No primeiro dia de trabalho, Juan encontrou o posto de saúde ocupado por protestos contra a escassez de medicamentos e alimentos e problemas na entrega do Bolsa Família.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 82
-              }
-            ]
+            "char_start": 73,
+            "char_end": 82
           },
           "realization": {
             "Arg0": null,
@@ -81,28 +51,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 83,
                 "char_end": 168
               }
@@ -111,22 +63,14 @@
           }
         },
         {
-          "instance_id": 659,
+          "instance_id": "FOLHA_DOC002070_SENT018::protesto::1",
           "sent_ID": "FOLHA_DOC002070_SENT018",
           "text": "Neste domingo (24), o show do Capital Inicial também foi marcado por protestos.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 78
-              }
-            ]
+            "char_start": 69,
+            "char_end": 78
           },
           "realization": {
             "Arg0": null,
@@ -138,29 +82,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 711,
+          "instance_id": "FOLHA_DOC000048_SENT051::protesto::1",
           "sent_ID": "FOLHA_DOC000048_SENT051",
           "text": "O ministro disse que não viu o protesto, mas que o considera \"absolutamente normal\".",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 39
-              }
-            ]
+            "char_start": 31,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -172,29 +108,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1254,
+          "instance_id": "FOLHA_DOC003077_SENT007::protesto::1",
           "sent_ID": "FOLHA_DOC003077_SENT007",
           "text": "O protesto começou silencioso, durante a tarde, em frente ao departamento de polícia.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -206,29 +134,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1284,
+          "instance_id": "FOLHA_DOC003071_SENT007::protesto::1",
           "sent_ID": "FOLHA_DOC003071_SENT007",
           "text": "Antes do protesto, Alicia entrou no palco Mundo vestida com um macacão preto brilhante, brinco losangular do tamanho de um palmo e cabelo trançado rosa e laranja.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 17
-              }
-            ]
+            "char_start": 9,
+            "char_end": 17
           },
           "realization": {
             "Arg0": "Alicia",
@@ -240,12 +160,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 19,
                 "char_end": 25
               }
@@ -255,22 +172,14 @@
           }
         },
         {
-          "instance_id": 1387,
+          "instance_id": "FOLHA_DOC003077_SENT006::protesto::1",
           "sent_ID": "FOLHA_DOC003077_SENT006",
           "text": "Nesta terceira noite de protestos, organizadores se disseram frustrados com a ocorrência que \"dificulta a propagação da mensagem não violenta\".",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 33
-              }
-            ]
+            "char_start": 24,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -282,29 +191,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1596,
+          "instance_id": "FOLHA_DOC001557_SENT013::protesto::1",
           "sent_ID": "FOLHA_DOC001557_SENT013",
           "text": "Fortemente motivado ao nascer pelas manifestações de junho de 2013, o Bom Senso também se esvaiu, como os protestos de então se diluíram.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 106,
-                "char_end": 115
-              }
-            ]
+            "char_start": 106,
+            "char_end": 115
           },
           "realization": {
             "Arg0": null,
@@ -316,29 +217,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1674,
+          "instance_id": "FOLHA_DOC003114_SENT010::protesto::1",
           "sent_ID": "FOLHA_DOC003114_SENT010",
           "text": "Na sexta-feira (15), Saint Louis já havia sido palco de protesto e pelo menos 33 pessoas foram detidas e 11 policiais ficaram feridos durante confronto.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 64
-              }
-            ]
+            "char_start": 56,
+            "char_end": 64
           },
           "realization": {
             "Arg0": null,
@@ -350,29 +243,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1903,
+          "instance_id": "FOLHA_DOC000006_SENT005::protesto::1",
           "sent_ID": "FOLHA_DOC000006_SENT005",
           "text": "Marchas e protestos vêm ocorrendo em várias cidades desde então, e há cartazes pedindo o \"reaparecimento com vida\" do ativista.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 19
-              }
-            ]
+            "char_start": 10,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -384,22 +269,10 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 79,
                 "char_end": 126
               }
@@ -408,22 +281,14 @@
           }
         },
         {
-          "instance_id": 4515,
+          "instance_id": "FOLHA_DOC000118_SENT001::protesto::1",
           "sent_ID": "FOLHA_DOC000118_SENT001",
           "text": "Vice dos Estados Unidos deixa jogo da NFL após protesto durante o hino.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 55
-              }
-            ]
+            "char_start": 47,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -435,29 +300,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4625,
+          "instance_id": "FOLHA_DOC003003_SENT003::protesto::1",
           "sent_ID": "FOLHA_DOC003003_SENT003",
           "text": "Assim como nos dois dias anteriores, os protestos deste domingo terminaram em depredação e confronto.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 49
-              }
-            ]
+            "char_start": 40,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -469,29 +326,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5343,
+          "instance_id": "FOLHA_DOC003289_SENT015::protesto::1",
           "sent_ID": "FOLHA_DOC003289_SENT015",
           "text": "Esta não é a primeira vez que St. Louis é palco de protestos por questões raciais.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 60
-              }
-            ]
+            "char_start": 51,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -503,15 +352,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 61,
                 "char_end": 81
               }
@@ -520,22 +364,14 @@
           }
         },
         {
-          "instance_id": 5966,
+          "instance_id": "FOLHA_DOC000048_SENT048::protesto::1",
           "sent_ID": "FOLHA_DOC000048_SENT048",
           "text": "Mendes foi recebido com protesto no IDP.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 32
-              }
-            ]
+            "char_start": 24,
+            "char_end": 32
           },
           "realization": {
             "Arg0": null,
@@ -547,14 +383,11 @@
             "Arg1": null,
             "Arg2": "nsubj:pass"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 6
               }
@@ -562,22 +395,14 @@
           }
         },
         {
-          "instance_id": 7666,
+          "instance_id": "FOLHA_DOC003077_SENT010::protesto::1",
           "sent_ID": "FOLHA_DOC003077_SENT010",
           "text": "Denunciando o racismo institucional, os manifestantes anunciaram que pretendiam levar a cabo ações de bloqueio e protesto durante vários dias contra o veredicto de absolvição.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 113,
-                "char_end": 121
-              }
-            ]
+            "char_start": 113,
+            "char_end": 121
           },
           "realization": {
             "Arg0": "os manifestantes",
@@ -589,26 +414,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 37,
                 "char_end": 53
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 142,
                 "char_end": 174
               }
@@ -617,22 +431,14 @@
           }
         },
         {
-          "instance_id": 9297,
+          "instance_id": "FOLHA_DOC003003_SENT012::protesto::1",
           "sent_ID": "FOLHA_DOC003003_SENT012",
           "text": "Na época, o episódio também deu início a uma série de protestos.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 63
-              }
-            ]
+            "char_start": 54,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -644,29 +450,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9367,
+          "instance_id": "FOLHA_DOC000056_SENT001::protesto::1",
           "sent_ID": "FOLHA_DOC000056_SENT001",
           "text": "Grupo atira tomates em protesto contra Gilmar Mendes em São Paulo.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 31
-              }
-            ]
+            "char_start": 23,
+            "char_end": 31
           },
           "realization": {
             "Arg0": "Grupo",
@@ -678,23 +476,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 5
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 32,
                 "char_end": 52
               }
@@ -703,22 +493,14 @@
           }
         },
         {
-          "instance_id": 11154,
+          "instance_id": "FOLHA_DOC004105_SENT002::protesto::1",
           "sent_ID": "FOLHA_DOC004105_SENT002",
           "text": "Os recentes protestos de racistas brancos em Charlottesville escancararam as feridas ainda abertas da Guerra Civil americana.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protestos",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 21
-              }
-            ]
+            "char_start": 12,
+            "char_end": 21
           },
           "realization": {
             "Arg0": "de racistas brancos",
@@ -730,14 +512,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 22,
                 "char_end": 41
               }
@@ -747,22 +524,14 @@
           }
         },
         {
-          "instance_id": 12070,
+          "instance_id": "FOLHA_DOC000006_SENT006::protesto::1",
           "sent_ID": "FOLHA_DOC000006_SENT006",
           "text": "Maldonado havia se juntado a um protesto de indígenas mapuche que reivindicam um território na Província de Chubut, no sul do país, hoje sob posse da companhia italiana Benetton.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 40
-              }
-            ]
+            "char_start": 32,
+            "char_end": 40
           },
           "realization": {
             "Arg0": [
@@ -780,53 +549,19 @@
             "Arg1": "acl:relcl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 9
               },
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 41,
                 "char_end": 61
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35
-                ],
                 "char_start": 66,
                 "char_end": 177
               }
@@ -835,22 +570,14 @@
           }
         },
         {
-          "instance_id": 12952,
+          "instance_id": "FOLHA_DOC000056_SENT007::protesto::1",
           "sent_ID": "FOLHA_DOC000056_SENT007",
           "text": "O protesto começou por volta das 8h30 da manhã, segundo funcionários do instituto.",
-          "frame_id": "f_145f2f114e2728de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "protesto",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -862,13 +589,27 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 4,
+          "acl": 1,
+          "acl:relcl": 1
+        },
+        "Arg0": {
+          "nsubj": 4,
+          "nmod": 2
+        },
+        "Arg2": {
+          "nsubj:pass": 1
+        }
+      }
     }
   ]
 }

@@ -1,69 +1,45 @@
 {
   "lemma": "postagem",
-  "lemma_base": "postagem",
   "senses": [
     {
       "pt_roleset": "postagem.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_47d94f1a97f68857",
+          "roleset": "posting.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "posting.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/posting.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "poster",
-              "definition": "poster"
-            },
-            {
-              "id": "Arg1",
-              "desc": "posted",
-              "definition": "posted"
-            },
-            {
-              "id": "Arg2",
-              "desc": "posted-to",
-              "definition": "posted-to"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg1": {
-              "acl": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/posting.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 7029,
+          "id": "Arg0",
+          "desc": "poster",
+          "definition": "poster"
+        },
+        {
+          "id": "Arg1",
+          "desc": "posted",
+          "definition": "posted"
+        },
+        {
+          "id": "Arg2",
+          "desc": "posted-to",
+          "definition": "posted-to"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003191_SENT007::postagem::1",
           "sent_ID": "FOLHA_DOC003191_SENT007",
           "text": "O advogado emprestou a ideia do escritor Aislan Feitosa, que fez uma postagem narrando como tinha achado uma nova função para a rede social corporativa LinkedIn.",
-          "frame_id": "f_47d94f1a97f68857",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "postagem",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 77
-              }
-            ]
+            "char_start": 69,
+            "char_end": 77
           },
           "realization": {
             "Arg0": "O advogado",
@@ -75,44 +51,31 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 10,
-                "head_token_id": 2
+                "char_end": 10
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 78,
-                "char_end": 160,
-                "head_token_id": 16
+                "char_end": 160
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg1": {
+          "acl": 1
+        }
+      }
     }
   ]
 }

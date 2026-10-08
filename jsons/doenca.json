@@ -1,77 +1,40 @@
 {
   "lemma": "doença",
-  "lemma_base": "doença",
   "senses": [
     {
       "pt_roleset": "doença · acepção 1",
       "description": "1 moléstia; enfermidade: A febre aftosa é uma doença que causa emagrecimento do ani- mal (AGF); não se obtêm níveis plasmáticos suficientes para a cura dessa doença (ANT)",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_810f4b481fd857de",
-          "description": "1 moléstia; enfermidade: A febre aftosa é uma doença que causa emagrecimento do ani- mal (AGF); não se obtêm níveis plasmáticos suficientes para a cura dessa doença (ANT)",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "disease.01",
-              "resource": "English NomBank",
-              "description": "attribute",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/disease.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "portador/grupo afetado pela doença, conforme pediatric da fonte",
-              "definition": "portador/grupo afetado pela doença, conforme pediatric da fonte"
-            },
-            {
-              "id": "Arg2",
-              "desc": "tipo/atributo clínico da doença, conforme kidney/respiratory",
-              "definition": "tipo/atributo clínico da doença, conforme kidney/respiratory; não quantidade de doentes"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1,
-              "obl": 1,
-              "amod": 4
-            },
-            "Arg1": {
-              "nsubj": 3,
-              "nsubj:pass": 1,
-              "obj": 1,
-              "obl": 1
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "disease.01",
+          "resource": "English NomBank",
+          "description": "attribute",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/disease.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 885,
+          "id": "Arg1",
+          "desc": "portador/grupo afetado pela doença, conforme pediatric da fonte",
+          "definition": "portador/grupo afetado pela doença, conforme pediatric da fonte"
+        },
+        {
+          "id": "Arg2",
+          "desc": "tipo/atributo clínico da doença, conforme kidney/respiratory",
+          "definition": "tipo/atributo clínico da doença, conforme kidney/respiratory; não quantidade de doentes"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004124_SENT008::doença::1",
           "sent_ID": "FOLHA_DOC004124_SENT008",
           "text": "Muitas delas remetem às minhas questões com hospitalização, tratamento, doença.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 78
-              }
-            ]
+            "char_start": 72,
+            "char_end": 78
           },
           "realization": {
             "Arg1": null,
@@ -81,28 +44,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1075,
+          "instance_id": "FOLHA_DOC003057_SENT022::doença::1",
           "sent_ID": "FOLHA_DOC003057_SENT022",
           "text": "A Anvisa afirma que a doença AME não possuía opções terapêuticas no Brasil e que a análise do processo para registro recebeu prioridade.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 28
-              }
-            ]
+            "char_start": 22,
+            "char_end": 28
           },
           "realization": {
             "Arg1": null,
@@ -112,13 +67,10 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 29,
                 "char_end": 32
               }
@@ -126,44 +78,28 @@
           }
         },
         {
-          "instance_id": 1085,
+          "instance_id": "FOLHA_DOC000109_SENT026::doença::1",
           "sent_ID": "FOLHA_DOC000109_SENT026",
           "text": "Se a economia fraca é a doença, uma economia forte seria a cura.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 30
-              }
-            ]
+            "char_start": 24,
+            "char_end": 30
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1738,
+          "instance_id": "FOLHA_DOC000041_SENT048::doença::1",
           "sent_ID": "FOLHA_DOC000041_SENT048",
           "text": "As mulheres, em sua maioria, estão sozinhas enfrentando suas doenças, conta Katia.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 68
-              }
-            ]
+            "char_start": 61,
+            "char_end": 68
           },
           "realization": {
             "Arg1": "As mulheres",
@@ -173,13 +109,9 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 11
               }
@@ -188,22 +120,14 @@
           }
         },
         {
-          "instance_id": 2063,
+          "instance_id": "FOLHA_DOC003057_SENT034::doença::1",
           "sent_ID": "FOLHA_DOC003057_SENT034",
           "text": "É preciso ter em mente que a perda de força muscular é proporcional ao avanço da doença, que não tem cura, diz.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 87
-              }
-            ]
+            "char_start": 81,
+            "char_end": 87
           },
           "realization": {
             "Arg1": null,
@@ -213,28 +137,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2715,
+          "instance_id": "FOLHA_DOC003001_SENT014::doença::1",
           "sent_ID": "FOLHA_DOC003001_SENT014",
           "text": "Posteriormente, esses casos foram acompanhados e assistidos de perto pelo poder público, o que certamente contribuiu para que não houvesse nenhuma morte em decorrência dessas doenças.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 175,
-                "char_end": 182
-              }
-            ]
+            "char_start": 175,
+            "char_end": 182
           },
           "realization": {
             "Arg1": "esses casos",
@@ -244,13 +160,9 @@
             "Arg1": "nsubj:pass",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 16,
                 "char_end": 27
               }
@@ -259,22 +171,14 @@
           }
         },
         {
-          "instance_id": 3470,
+          "instance_id": "FOLHA_DOC003057_SENT007::doença::1",
           "sent_ID": "FOLHA_DOC003057_SENT007",
           "text": "A doença não tem cura, mas em dezembro do ano passado a empresa suíça Biogen conseguiu a aprovação na FDA (órgão regulador dos medicamentos nos EUA) do remédio Spinraza.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg1": null,
@@ -284,28 +188,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3780,
+          "instance_id": "FOLHA_DOC000111_SENT019::doença::1",
           "sent_ID": "FOLHA_DOC000111_SENT019",
           "text": "A doença o impediu, por exemplo, de ir à escola até os nove anos de idade.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg1": "o",
@@ -315,12 +211,9 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 9,
                 "char_end": 10
               }
@@ -329,22 +222,14 @@
           }
         },
         {
-          "instance_id": 5603,
+          "instance_id": "FOLHA_DOC004074_SENT007::doença::1",
           "sent_ID": "FOLHA_DOC004074_SENT007",
           "text": "A doença é caracterizada pelo excesso de enjoos e vômitos, mais comuns nos três primeiros meses de gestação.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg1": null,
@@ -354,19 +239,10 @@
             "Arg1": null,
             "Arg2": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 25,
                 "char_end": 57
               }
@@ -374,22 +250,14 @@
           }
         },
         {
-          "instance_id": 8118,
+          "instance_id": "FOLHA_DOC003001_SENT028::doença::1",
           "sent_ID": "FOLHA_DOC003001_SENT028",
           "text": "Diante da tragédia que vivemos, não ter nenhuma morte decorrente de doenças hídricas é uma vitória.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 75
-              }
-            ]
+            "char_start": 68,
+            "char_end": 75
           },
           "realization": {
             "Arg1": null,
@@ -399,13 +267,10 @@
             "Arg1": null,
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 76,
                 "char_end": 84
               }
@@ -413,22 +278,14 @@
           }
         },
         {
-          "instance_id": 11105,
+          "instance_id": "FOLHA_DOC003057_SENT013::doença::1",
           "sent_ID": "FOLHA_DOC003057_SENT013",
           "text": "A empresa diz que o valor é consistente com o custo de terapias para doenças raras e não há uma definição de preço para o Brasil.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 76
-              }
-            ]
+            "char_start": 69,
+            "char_end": 76
           },
           "realization": {
             "Arg1": null,
@@ -438,13 +295,10 @@
             "Arg1": null,
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  16
-                ],
                 "char_start": 77,
                 "char_end": 82
               }
@@ -452,22 +306,14 @@
           }
         },
         {
-          "instance_id": 11569,
+          "instance_id": "FOLHA_DOC000003_SENT027::doença::1",
           "sent_ID": "FOLHA_DOC000003_SENT027",
           "text": "O especial ainda discute o impacto da doença nos EUA e as novidades no combate ao mosquito Aedes aegypti e à doença propriamente dita.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 44
-              }
-            ]
+            "char_start": 38,
+            "char_end": 44
           },
           "realization": {
             "Arg1": null,
@@ -477,28 +323,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11571,
+          "instance_id": "FOLHA_DOC000003_SENT027::doença::2",
           "sent_ID": "FOLHA_DOC000003_SENT027",
           "text": "O especial ainda discute o impacto da doença nos EUA e as novidades no combate ao mosquito Aedes aegypti e à doença propriamente dita.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 109,
-                "char_end": 115
-              }
-            ]
+            "char_start": 109,
+            "char_end": 115
           },
           "realization": {
             "Arg1": null,
@@ -508,28 +346,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11746,
+          "instance_id": "FOLHA_DOC000170_SENT008::doença::1",
           "sent_ID": "FOLHA_DOC000170_SENT008",
           "text": "Conseguem assim espaço para um grupo diversificado de vítimas da misteriosa doença.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 82
-              }
-            ]
+            "char_start": 76,
+            "char_end": 82
           },
           "realization": {
             "Arg1": "um grupo diversificado de vítimas",
@@ -539,16 +369,9 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 28,
                 "char_end": 61
               }
@@ -557,22 +380,14 @@
           }
         },
         {
-          "instance_id": 13004,
+          "instance_id": "FOLHA_DOC000111_SENT022::doença::1",
           "sent_ID": "FOLHA_DOC000111_SENT022",
           "text": "A doença fez com que ele tivesse uma infância regrada, com dietas, horários para dormir e descansar.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg1": "ele",
@@ -582,12 +397,9 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 21,
                 "char_end": 24
               }
@@ -596,22 +408,14 @@
           }
         },
         {
-          "instance_id": 13107,
+          "instance_id": "FOLHA_DOC003057_SENT003::doença::1",
           "sent_ID": "FOLHA_DOC003057_SENT003",
           "text": "Vítima de uma doença genética, essas são as ações que ele consegue fazer.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doença",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 20
-              }
-            ]
+            "char_start": 14,
+            "char_end": 20
           },
           "realization": {
             "Arg1": "ele",
@@ -621,21 +425,15 @@
             "Arg1": "nsubj",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 54,
                 "char_end": 57
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 21,
                 "char_end": 29
               }
@@ -643,22 +441,14 @@
           }
         },
         {
-          "instance_id": 14923,
+          "instance_id": "FOLHA_DOC000103_SENT025::doença::1",
           "sent_ID": "FOLHA_DOC000103_SENT025",
           "text": "Isso é previsível em estudos estatísticos, baseado em uma lista de procedimentos e doenças que costumam acontecer.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 90
-              }
-            ]
+            "char_start": 83,
+            "char_end": 90
           },
           "realization": {
             "Arg1": null,
@@ -668,28 +458,20 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15088,
+          "instance_id": "FOLHA_DOC003001_SENT012::doença::1",
           "sent_ID": "FOLHA_DOC003001_SENT012",
           "text": "Porém, após o alerta de emergência vindo do alto volume de chuvas, as doenças hídrica também tornaram-se prioridade.",
-          "frame_id": "f_810f4b481fd857de",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "doenças",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 77
-              }
-            ]
+            "char_start": 70,
+            "char_end": 77
           },
           "realization": {
             "Arg1": null,
@@ -699,20 +481,30 @@
             "Arg1": null,
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 78,
                 "char_end": 85
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1,
+          "obl": 1,
+          "amod": 4
+        },
+        "Arg1": {
+          "nsubj": 3,
+          "nsubj:pass": 1,
+          "obj": 1,
+          "obl": 1
+        }
+      }
     }
   ]
 }

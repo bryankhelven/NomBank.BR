@@ -1,86 +1,45 @@
 {
   "lemma": "reação",
-  "lemma_base": "reação",
   "senses": [
     {
       "pt_roleset": "reação.01",
       "description": "resposta a uma provocação, ameaça ou estímulo",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_17cdafd3eacc0fa2",
-          "description": "resposta a uma provocação, ameaça ou estímulo",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "reaction.01",
-              "resource": "English NomBank",
-              "description": "nom/attribute/discourse-connective-in-reaction-to",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reaction.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "entidade que reage",
-              "definition": "Experienciador ou origem explícita da resposta, com realização não humana/eventiva por adaptação contextual."
-            },
-            {
-              "id": "Arg1",
-              "desc": "causa ou tema da reação",
-              "definition": "Estímulo, situação ou objeto a que se reage, sem confundir cronologia e a própria resposta."
-            },
-            {
-              "id": "Arg2",
-              "desc": "manifestação ou valor da reação",
-              "definition": "Comportamento/conteúdo reativo concreto ou qualidade/valor explicitamente atribuído à reação, conforme reaction/value; não atributo de outro referente."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1,
-              "nmod": 1,
-              "obl": 1
-            },
-            "Arg1": {
-              "nmod": 4,
-              "obj": 1,
-              "nsubj": 3
-            },
-            "Arg2": {
-              "root": 2,
-              "conj": 1,
-              "amod": 1
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "reaction.01",
+          "resource": "English NomBank",
+          "description": "nom/attribute/discourse-connective-in-reaction-to",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reaction.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 217,
+          "id": "Arg0",
+          "desc": "entidade que reage",
+          "definition": "Experienciador ou origem explícita da resposta, com realização não humana/eventiva por adaptação contextual."
+        },
+        {
+          "id": "Arg1",
+          "desc": "causa ou tema da reação",
+          "definition": "Estímulo, situação ou objeto a que se reage, sem confundir cronologia e a própria resposta."
+        },
+        {
+          "id": "Arg2",
+          "desc": "manifestação ou valor da reação",
+          "definition": "Comportamento/conteúdo reativo concreto ou qualidade/valor explicitamente atribuído à reação, conforme reaction/value; não atributo de outro referente."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003090_SENT010::reação::1",
           "sent_ID": "FOLHA_DOC003090_SENT010",
           "text": "Segundo a atriz, em reação ao cancelamento, o público também permaneceu à porta do teatro após a apresentação de ontem, \"para conversar\".",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 26
-              }
-            ]
+            "char_start": 20,
+            "char_end": 26
           },
           "realization": {
             "Arg0": "o público",
@@ -92,49 +51,21 @@
             "Arg1": "nmod",
             "Arg2": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 44,
                 "char_end": 53
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 27,
                 "char_end": 42
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 61,
                 "char_end": 136
               }
@@ -142,22 +73,14 @@
           }
         },
         {
-          "instance_id": 1760,
+          "instance_id": "FOLHA_DOC003159_SENT026::reação::1",
           "sent_ID": "FOLHA_DOC003159_SENT026",
           "text": "Efeito da reação sob o comando do técnico Vagner Mancini, com direito a triunfo no Itaquerão contra o líder Corinthians, que é o rival do São Paulo na próxima rodada.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 16
-              }
-            ]
+            "char_start": 10,
+            "char_end": 16
           },
           "realization": {
             "Arg0": null,
@@ -169,29 +92,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2090,
+          "instance_id": "FOLHA_DOC000102_SENT002::reação::1",
           "sent_ID": "FOLHA_DOC000102_SENT002",
           "text": "De todas as reações envolvendo as exposições \"profanas\", duas coisas me deixaram muito espantado.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reações",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 19
-              }
-            ]
+            "char_start": 12,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -203,17 +118,10 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 31,
                 "char_end": 55
               }
@@ -222,44 +130,28 @@
           }
         },
         {
-          "instance_id": 3249,
+          "instance_id": "FOLHA_DOC003099_SENT006::reação::1",
           "sent_ID": "FOLHA_DOC003099_SENT006",
           "text": "O segredo está nos próprios alimentos, seus ingredientes e as reações químicas que neles acontecem durante o cozimento, refrigeração e reaquecimento.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "reações",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 69
-              }
-            ]
+            "char_start": 62,
+            "char_end": 69
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3873,
+          "instance_id": "FOLHA_DOC003122_SENT011::reação::1",
           "sent_ID": "FOLHA_DOC003122_SENT011",
           "text": "\"Nós viajamos o mundo inteiro, mas o Brasil é o nosso lugar favorito, as pessoas do seu país são maravilhosas, a reação com nossas músicas é incrível\", retribuiu Levine.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 113,
-                "char_end": 119
-              }
-            ]
+            "char_start": 113,
+            "char_end": 119
           },
           "realization": {
             "Arg0": null,
@@ -271,24 +163,16 @@
             "Arg1": "nmod",
             "Arg2": "conj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 120,
                 "char_end": 138
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  32
-                ],
                 "char_start": 141,
                 "char_end": 149
               }
@@ -296,22 +180,14 @@
           }
         },
         {
-          "instance_id": 8399,
+          "instance_id": "FOLHA_DOC003140_SENT017::reação::1",
           "sent_ID": "FOLHA_DOC003140_SENT017",
           "text": "O fator desencadeador, o gatilho para a multiplicação de muros foi essa reação contra a globalização e a crise de identidade ligada a isso.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 78
-              }
-            ]
+            "char_start": 72,
+            "char_end": 78
           },
           "realization": {
             "Arg0": null,
@@ -323,15 +199,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 79,
                 "char_end": 100
               }
@@ -340,44 +211,28 @@
           }
         },
         {
-          "instance_id": 8693,
+          "instance_id": "FOLHA_DOC003099_SENT016::reação::1",
           "sent_ID": "FOLHA_DOC003099_SENT016",
           "text": "Durante o processo de cozimento, esses elementos sofrem uma série de reações químicas dentro de um ambiente complexo.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "reações",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 76
-              }
-            ]
+            "char_start": 69,
+            "char_end": 76
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 9710,
+          "instance_id": "FOLHA_DOC002005_SENT036::reação::1",
           "sent_ID": "FOLHA_DOC002005_SENT036",
           "text": "O problema é que a reação demorou muito a acontecer.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 25
-              }
-            ]
+            "char_start": 19,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -389,51 +244,35 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10770,
+          "instance_id": "FOLHA_DOC003099_SENT018::reação::1",
           "sent_ID": "FOLHA_DOC003099_SENT018",
           "text": "Quando o prato esfria, é refrigerado e depois requentado, algumas dessas reações voltam a ocorrer, resultando em um melhor sabor.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "reações",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 80
-              }
-            ]
+            "char_start": 73,
+            "char_end": 80
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11412,
+          "instance_id": "FOLHA_DOC003131_SENT029::reação::1",
           "sent_ID": "FOLHA_DOC003131_SENT029",
           "text": "Nem sempre a reação dos mexicanos aos vizinhos é solidária, embora eles sejam os principais prejudicados com as restrições migratórias e o muro que Trump pretende construir na fronteira.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 19
-              }
-            ]
+            "char_start": 13,
+            "char_end": 19
           },
           "realization": {
             "Arg0": "dos mexicanos",
@@ -445,34 +284,21 @@
             "Arg1": "nmod",
             "Arg2": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 20,
                 "char_end": 33
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 34,
                 "char_end": 46
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 49,
                 "char_end": 58
               }
@@ -480,22 +306,14 @@
           }
         },
         {
-          "instance_id": 11976,
+          "instance_id": "FOLHA_DOC000038_SENT013::reação::1",
           "sent_ID": "FOLHA_DOC000038_SENT013",
           "text": "A morte causou reação em círculos acadêmicos e políticos.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 21
-              }
-            ]
+            "char_start": 15,
+            "char_end": 21
           },
           "realization": {
             "Arg0": "em círculos acadêmicos e políticos",
@@ -507,26 +325,15 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 22,
                 "char_end": 56
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -535,22 +342,14 @@
           }
         },
         {
-          "instance_id": 13344,
+          "instance_id": "FOLHA_DOC001189_SENT008::reação::1",
           "sent_ID": "FOLHA_DOC001189_SENT008",
           "text": "Comida mais barata é o principal motor da reação.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 48
-              }
-            ]
+            "char_start": 42,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -562,15 +361,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 18
               }
@@ -579,22 +373,14 @@
           }
         },
         {
-          "instance_id": 13917,
+          "instance_id": "FOLHA_DOC003055_SENT011::reação::1",
           "sent_ID": "FOLHA_DOC003055_SENT011",
           "text": "Arte que cria discussão pública, reação forte, questionamento, é arte que move o mundo, é arte que cumpre ao menos uma de suas muitas possíveis missões.",
-          "frame_id": "f_17cdafd3eacc0fa2",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 39
-              }
-            ]
+            "char_start": 33,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -606,22 +392,16 @@
             "Arg1": "nsubj",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 4
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 40,
                 "char_end": 45
               }
@@ -629,28 +409,37 @@
           }
         },
         {
-          "instance_id": 14950,
+          "instance_id": "FOLHA_DOC003099_SENT036::reação::1",
           "sent_ID": "FOLHA_DOC003099_SENT036",
           "text": "Isso provoca a chamada reação de Maillard, uma série de interações químicas entre os açúcares e os aminoácidos presentes no alimento que transforma o sabor, o aroma e a cor da comida.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "reação",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 29
-              }
-            ]
+            "char_start": 23,
+            "char_end": 29
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1,
+          "nmod": 1,
+          "obl": 1
+        },
+        "Arg1": {
+          "nmod": 4,
+          "obj": 1,
+          "nsubj": 3
+        },
+        "Arg2": {
+          "root": 2,
+          "conj": 1,
+          "amod": 1
+        }
+      }
     }
   ]
 }

@@ -1,79 +1,45 @@
 {
   "lemma": "colaboração",
-  "lemma_base": "colaboração",
   "senses": [
     {
       "pt_roleset": "colaboração.01",
       "description": "trabalho em comum com uma ou mais pessoas; cooperação",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_46270fd46ba93990",
-          "description": "trabalho em comum com uma ou mais pessoas; cooperação",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "cooperation.01",
-              "resource": "English NomBank",
-              "description": "work with",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/cooperation.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "colaborador",
-              "definition": "Entidade colaboradora explicitamente responsável pela cooperação, inclusive coletivo focal."
-            },
-            {
-              "id": "Arg1",
-              "desc": "contraparte",
-              "definition": "Pessoa/entidade com quem se colabora, expressa independentemente do colaborador focal."
-            },
-            {
-              "id": "Arg2",
-              "desc": "tarefa conjunta",
-              "definition": "Atividade/objetivo concretamente indicado como objeto da cooperação, sem copiar o REL ou apenas o tipo de acordo."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "obl": 1,
-              "nmod": 2
-            },
-            "Arg0": {
-              "nsubj": 5,
-              "nmod": 2
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "cooperation.01",
+          "resource": "English NomBank",
+          "description": "work with",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/cooperation.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2086,
+          "id": "Arg0",
+          "desc": "colaborador",
+          "definition": "Entidade colaboradora explicitamente responsável pela cooperação, inclusive coletivo focal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "contraparte",
+          "definition": "Pessoa/entidade com quem se colabora, expressa independentemente do colaborador focal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "tarefa conjunta",
+          "definition": "Atividade/objetivo concretamente indicado como objeto da cooperação, sem copiar o REL ou apenas o tipo de acordo."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003058_SENT027::colaboração::1",
           "sent_ID": "FOLHA_DOC003058_SENT027",
           "text": "Janot fechou 159 acordos de colaboração, deixando para Dodge uma série de inquéritos em curso.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 39
-              }
-            ]
+            "char_start": 28,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -85,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2153,
+          "instance_id": "FOLHA_DOC000011_SENT020::colaboração::1",
           "sent_ID": "FOLHA_DOC000011_SENT020",
           "text": "Ela diz ainda que o acordo de colaboração premiada firmado com o Ministério Público Federal \"não pode ser utilizado para blindar o colaborador de forma absoluta da aplicação da lei\".",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 41
-              }
-            ]
+            "char_start": 30,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -119,17 +77,10 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 59,
                 "char_end": 91
               }
@@ -138,22 +89,14 @@
           }
         },
         {
-          "instance_id": 4691,
+          "instance_id": "FOLHA_DOC004079_SENT020::colaboração::1",
           "sent_ID": "FOLHA_DOC004079_SENT020",
           "text": "A colaboração foi anulada porque os delatores mentiram ou porque a delação foi induzida?",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 13
-              }
-            ]
+            "char_start": 2,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "os delatores",
@@ -165,13 +108,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 33,
                 "char_end": 45
               }
@@ -181,22 +120,14 @@
           }
         },
         {
-          "instance_id": 6402,
+          "instance_id": "FOLHA_DOC003035_SENT133::colaboração::1",
           "sent_ID": "FOLHA_DOC003035_SENT133",
           "text": "Eu tinha o interesse profissional em capitanear essa colaboração e comecei a sentir que estavam me cozinhando.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 53,
-                "char_end": 64
-              }
-            ]
+            "char_start": 53,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "Eu",
@@ -208,12 +139,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 2
               }
@@ -223,22 +151,14 @@
           }
         },
         {
-          "instance_id": 7333,
+          "instance_id": "FOLHA_DOC003035_SENT113::colaboração::1",
           "sent_ID": "FOLHA_DOC003035_SENT113",
           "text": "Num dado momento, o Anselmo fala: \"Quanto você quer que eu desbloqueie do seu dinheiro para você falar e fazer a colaboração?\".",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 113,
-                "char_end": 124
-              }
-            ]
+            "char_start": 113,
+            "char_end": 124
           },
           "realization": {
             "Arg0": "você",
@@ -250,12 +170,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  22
-                ],
                 "char_start": 92,
                 "char_end": 96
               }
@@ -265,44 +182,28 @@
           }
         },
         {
-          "instance_id": 7829,
+          "instance_id": "FOLHA_DOC000114_SENT009::colaboração::1",
           "sent_ID": "FOLHA_DOC000114_SENT009",
           "text": "Algumas atividades, como as rodas de samba semanais, receberão colaborações voluntárias para a manutenção do espaço.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "colaborações",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 75
-              }
-            ]
+            "char_start": 63,
+            "char_end": 75
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 10485,
+          "instance_id": "FOLHA_DOC004079_SENT003::colaboração::1",
           "sent_ID": "FOLHA_DOC004079_SENT003",
           "text": "A possível rescisão na colaboração da JBS leva alguns atores a confundir interesseiramente as respostas a estas perguntas.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 34
-              }
-            ]
+            "char_start": 23,
+            "char_end": 34
           },
           "realization": {
             "Arg0": "da JBS",
@@ -314,14 +215,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 35,
                 "char_end": 41
               }
@@ -331,22 +227,14 @@
           }
         },
         {
-          "instance_id": 10561,
+          "instance_id": "FOLHA_DOC004079_SENT009::colaboração::1",
           "sent_ID": "FOLHA_DOC004079_SENT009",
           "text": "Desde o início das investigações, de fato, as arestas na colaboração premiada se somavam.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 68
-              }
-            ]
+            "char_start": 57,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -358,29 +246,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10805,
+          "instance_id": "FOLHA_DOC003035_SENT121::colaboração::1",
           "sent_ID": "FOLHA_DOC003035_SENT121",
           "text": "Resolvi utilizar a gravação como elemento de pressão para a JBS fazer a colaboração.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 83
-              }
-            ]
+            "char_start": 72,
+            "char_end": 83
           },
           "realization": {
             "Arg0": "a JBS",
@@ -392,13 +272,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 58,
                 "char_end": 63
               }
@@ -408,22 +284,14 @@
           }
         },
         {
-          "instance_id": 11803,
+          "instance_id": "FOLHA_DOC004096_SENT045::colaboração::1",
           "sent_ID": "FOLHA_DOC004096_SENT045",
           "text": "Procurada, a J&F disse que o assunto está sob sigilo da colaboração premiada.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 67
-              }
-            ]
+            "char_start": 56,
+            "char_end": 67
           },
           "realization": {
             "Arg0": null,
@@ -435,29 +303,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11901,
+          "instance_id": "FOLHA_DOC003035_SENT047::colaboração::1",
           "sent_ID": "FOLHA_DOC003035_SENT047",
           "text": "JBS abriu duas frentes de colaboração, uma mais tímida, comigo e Willer.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 37
-              }
-            ]
+            "char_start": 26,
+            "char_end": 37
           },
           "realization": {
             "Arg0": "JBS",
@@ -469,24 +329,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 3
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 56,
                 "char_end": 71
               }
@@ -495,22 +346,14 @@
           }
         },
         {
-          "instance_id": 13529,
+          "instance_id": "FOLHA_DOC003276_SENT017::colaboração::1",
           "sent_ID": "FOLHA_DOC003276_SENT017",
           "text": "Os advogados afirmam que a colaboração de executivos da empresa foi direcionada por integrantes da PGR.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 38
-              }
-            ]
+            "char_start": 27,
+            "char_end": 38
           },
           "realization": {
             "Arg0": "de executivos da empresa",
@@ -522,16 +365,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 39,
                 "char_end": 63
               }
@@ -541,22 +377,14 @@
           }
         },
         {
-          "instance_id": 14003,
+          "instance_id": "FOLHA_DOC004067_SENT018::colaboração::1",
           "sent_ID": "FOLHA_DOC004067_SENT018",
           "text": "Isso pode se dar de várias maneiras, que incluem a participação em projetos de pesquisa e a colaboração com cientistas.",
-          "frame_id": "f_46270fd46ba93990",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "colaboração",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 103
-              }
-            ]
+            "char_start": 92,
+            "char_end": 103
           },
           "realization": {
             "Arg0": null,
@@ -568,14 +396,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 104,
                 "char_end": 118
               }
@@ -583,7 +407,17 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "obl": 1,
+          "nmod": 2
+        },
+        "Arg0": {
+          "nsubj": 5,
+          "nmod": 2
+        }
+      }
     }
   ]
 }

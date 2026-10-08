@@ -1,80 +1,55 @@
 {
   "lemma": "leilão",
-  "lemma_base": "leilão",
   "senses": [
     {
       "pt_roleset": "leilão.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_5861e9538418dcdf",
+          "roleset": "trade.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "trade.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trade.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "seller",
-              "definition": "seller"
-            },
-            {
-              "id": "Arg1",
-              "desc": "sold",
-              "definition": "sold"
-            },
-            {
-              "id": "Arg2",
-              "desc": "highest bidder",
-              "definition": "highest bidder"
-            },
-            {
-              "id": "Arg3",
-              "desc": "price paid",
-              "definition": "price paid"
-            },
-            {
-              "id": "Arg4",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1,
-              "obj": 2
-            },
-            "Arg0": {
-              "nsubj": 2
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trade.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 35,
+          "id": "Arg0",
+          "desc": "seller",
+          "definition": "seller"
+        },
+        {
+          "id": "Arg1",
+          "desc": "sold",
+          "definition": "sold"
+        },
+        {
+          "id": "Arg2",
+          "desc": "highest bidder",
+          "definition": "highest bidder"
+        },
+        {
+          "id": "Arg3",
+          "desc": "price paid",
+          "definition": "price paid"
+        },
+        {
+          "id": "Arg4",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003200_SENT021::leilão::1",
           "sent_ID": "FOLHA_DOC003200_SENT021",
           "text": "Ele queria que fosse suspenso um critério adotado para os leilões dos aeroportos.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilões",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 65
-              }
-            ]
+            "char_start": 58,
+            "char_end": 65
           },
           "realization": {
             "Arg0": null,
@@ -90,18 +65,12 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 66,
-                "char_end": 80,
-                "head_token_id": 14
+                "char_end": 80
               }
             ],
             "Arg2": [],
@@ -110,22 +79,14 @@
           }
         },
         {
-          "instance_id": 3013,
+          "instance_id": "FOLHA_DOC001695_SENT003::leilão::1",
           "sent_ID": "FOLHA_DOC001695_SENT003",
           "text": "Vice-presidente da Câmara, o deputado Fábio Ramalho (PMDB-MG) criticou o resultado do leilão.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilão",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 86,
-                "char_end": 92
-              }
-            ]
+            "char_start": 86,
+            "char_end": 92
           },
           "realization": {
             "Arg0": null,
@@ -141,7 +102,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -150,22 +111,14 @@
           }
         },
         {
-          "instance_id": 6157,
+          "instance_id": "FOLHA_DOC002004_SENT005::leilão::1",
           "sent_ID": "FOLHA_DOC002004_SENT005",
           "text": "As vencedoras dos leilões, em um primeiro momento, absorveriam os funcionários atuais.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilões",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 25
-              }
-            ]
+            "char_start": 18,
+            "char_end": 25
           },
           "realization": {
             "Arg0": "As vencedoras",
@@ -181,16 +134,11 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 13,
-                "head_token_id": 2
+                "char_end": 13
               }
             ],
             "Arg1": [],
@@ -200,22 +148,14 @@
           }
         },
         {
-          "instance_id": 8261,
+          "instance_id": "FOLHA_DOC003233_SENT012::leilão::1",
           "sent_ID": "FOLHA_DOC003233_SENT012",
           "text": "O salto, diz, ocorreu em 2000, quando os leilões chegaram à TV.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilões",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 48
-              }
-            ]
+            "char_start": 41,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -231,7 +171,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -240,22 +180,14 @@
           }
         },
         {
-          "instance_id": 9744,
+          "instance_id": "FOLHA_DOC001573_SENT018::leilão::1",
           "sent_ID": "FOLHA_DOC001573_SENT018",
           "text": "Este, por sua vez, havia comprado o frigorífico em leilão.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilão",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 57
-              }
-            ]
+            "char_start": 51,
+            "char_end": 57
           },
           "realization": {
             "Arg0": null,
@@ -271,17 +203,12 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 34,
-                "char_end": 47,
-                "head_token_id": 10
+                "char_end": 47
               }
             ],
             "Arg2": [],
@@ -290,22 +217,14 @@
           }
         },
         {
-          "instance_id": 11407,
+          "instance_id": "FOLHA_DOC003233_SENT018::leilão::1",
           "sent_ID": "FOLHA_DOC003233_SENT018",
           "text": "Além disso, os leilões permitem pagar o animal em até 50 parcelas.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilões",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 22
-              }
-            ]
+            "char_start": 15,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -321,17 +240,12 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 38,
-                "char_end": 46,
-                "head_token_id": 10
+                "char_end": 46
               }
             ],
             "Arg2": [],
@@ -340,22 +254,14 @@
           }
         },
         {
-          "instance_id": 12742,
+          "instance_id": "FOLHA_DOC003019_SENT019::leilão::1",
           "sent_ID": "FOLHA_DOC003019_SENT019",
           "text": "A prefeitura ainda prevê uma segunda rodada de leilões no início de 2018.",
-          "frame_id": "f_5861e9538418dcdf",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "leilões",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 54
-              }
-            ]
+            "char_start": 47,
+            "char_end": 54
           },
           "realization": {
             "Arg0": "A prefeitura",
@@ -371,16 +277,11 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 12,
-                "head_token_id": 2
+                "char_end": 12
               }
             ],
             "Arg1": [],
@@ -389,7 +290,16 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1,
+          "obj": 2
+        },
+        "Arg0": {
+          "nsubj": 2
+        }
+      }
     }
   ]
 }

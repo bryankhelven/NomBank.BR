@@ -1,64 +1,40 @@
 {
   "lemma": "divergência",
-  "lemma_base": "divergência",
   "senses": [
     {
       "pt_roleset": "divergência.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_ce63c47895338c3c",
+          "roleset": "divergence.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "divergence.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/divergence.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "first entity",
-              "definition": "first entity"
-            },
-            {
-              "id": "Arg2",
-              "desc": "second entity",
-              "definition": "second entity"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg2": {
-              "conj": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/divergence.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 9465,
+          "id": "Arg0",
+          "desc": "first entity",
+          "definition": "first entity"
+        },
+        {
+          "id": "Arg2",
+          "desc": "second entity",
+          "definition": "second entity"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003316_SENT017::divergência::1",
           "sent_ID": "FOLHA_DOC003316_SENT017",
           "text": "O lulismo garantiu a unidade por meio da virtual supressão da divergência ideológica.",
-          "frame_id": "f_ce63c47895338c3c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "divergência",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 73
-              }
-            ]
+            "char_start": 62,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -68,28 +44,20 @@
             "Arg0": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15717,
+          "instance_id": "FOLHA_DOC003035_SENT072::divergência::1",
           "sent_ID": "FOLHA_DOC003035_SENT072",
           "text": "A divergência política entre o grupo do Rodrigo e o da Raquel é fato público e notório.",
-          "frame_id": "f_ce63c47895338c3c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "divergência",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 13
-              }
-            ]
+            "char_start": 2,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "o grupo do Rodrigo",
@@ -99,37 +67,30 @@
             "Arg0": "nmod",
             "Arg2": "conj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 29,
-                "char_end": 47,
-                "head_token_id": 6
+                "char_end": 47
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 50,
-                "char_end": 61,
-                "head_token_id": 11
+                "char_end": 61
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg2": {
+          "conj": 1
+        }
+      }
     }
   ]
 }

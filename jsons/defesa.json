@@ -1,74 +1,50 @@
 {
   "lemma": "defesa",
-  "lemma_base": "defesa",
   "senses": [
     {
       "pt_roleset": "defesa · acepção 1",
       "description": "advogado ou conjunto de advogados de réu/acusado; representação jurídica",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_af423b8f0a6b75fb",
-          "description": "advogado ou conjunto de advogados de réu/acusado; representação jurídica",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "defense.01",
-              "resource": "English NomBank",
-              "description": "defend",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/defense.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "defensor identificado independentemente de REL",
-              "definition": "defensor identificado independentemente de REL"
-            },
-            {
-              "id": "Arg1",
-              "desc": "pessoa/entidade defendida",
-              "definition": "pessoa/entidade defendida"
-            },
-            {
-              "id": "Arg2",
-              "desc": "instrumento empregado na defesa",
-              "definition": "instrumento empregado na defesa"
-            },
-            {
-              "id": "Arg3",
-              "desc": "acusação/adversário contra o qual se defende",
-              "definition": "acusação/adversário contra o qual se defende"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 11
-            },
-            "Arg0": {
-              "obl:agent": 1
-            }
-          }
+          "roleset": "defense.01",
+          "resource": "English NomBank",
+          "description": "defend",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/defense.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 179,
+          "id": "Arg0",
+          "desc": "defensor identificado independentemente de REL",
+          "definition": "defensor identificado independentemente de REL"
+        },
+        {
+          "id": "Arg1",
+          "desc": "pessoa/entidade defendida",
+          "definition": "pessoa/entidade defendida"
+        },
+        {
+          "id": "Arg2",
+          "desc": "instrumento empregado na defesa",
+          "definition": "instrumento empregado na defesa"
+        },
+        {
+          "id": "Arg3",
+          "desc": "acusação/adversário contra o qual se defende",
+          "definition": "acusação/adversário contra o qual se defende"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003305_SENT031::defesa::1",
           "sent_ID": "FOLHA_DOC003305_SENT031",
           "text": "A defesa também lembra que ele foi integrante desse grupo desde a sua criação, em 2014.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -82,7 +58,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -90,22 +66,14 @@
           }
         },
         {
-          "instance_id": 961,
+          "instance_id": "FOLHA_DOC000070_SENT039::defesa::1",
           "sent_ID": "FOLHA_DOC000070_SENT039",
           "text": "A defesa do ex-deputado Rodrigo Rocha Loures nega as acusações.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -119,18 +87,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 9,
                 "char_end": 44
               }
@@ -140,22 +100,14 @@
           }
         },
         {
-          "instance_id": 3349,
+          "instance_id": "FOLHA_DOC001538_SENT013::defesa::1",
           "sent_ID": "FOLHA_DOC001538_SENT013",
           "text": "Defesa do Lula dá recibos de aluguel com datas inexistentes.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Defesa",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 6
-              }
-            ]
+            "char_start": 0,
+            "char_end": 6
           },
           "realization": {
             "Arg0": null,
@@ -169,15 +121,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 7,
                 "char_end": 14
               }
@@ -187,22 +134,14 @@
           }
         },
         {
-          "instance_id": 3806,
+          "instance_id": "FOLHA_DOC003109_SENT013::defesa::1",
           "sent_ID": "FOLHA_DOC003109_SENT013",
           "text": "Como há grande quantidade de testemunhas arroladas por Promotoria e defesa (são mais de 40), a juíza responsável, Élia Kinosita Bulman, reservou o plenário por 12 dias.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 74
-              }
-            ]
+            "char_start": 68,
+            "char_end": 74
           },
           "realization": {
             "Arg0": null,
@@ -216,7 +155,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -224,22 +163,14 @@
           }
         },
         {
-          "instance_id": 4637,
+          "instance_id": "FOLHA_DOC000022_SENT015::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT015",
           "text": "A defesa afirma que o imóvel nunca foi de propriedade do ex-presidente.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -253,7 +184,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -261,22 +192,14 @@
           }
         },
         {
-          "instance_id": 4948,
+          "instance_id": "FOLHA_DOC000007_SENT014::defesa::1",
           "sent_ID": "FOLHA_DOC000007_SENT014",
           "text": "A defesa do italiano já vinha afirmando que não há impedimento para que ele, na condição de refugiado, realize viagem, mesmo que seja para o exterior.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -290,15 +213,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 9,
                 "char_end": 20
               }
@@ -308,22 +226,14 @@
           }
         },
         {
-          "instance_id": 5867,
+          "instance_id": "FOLHA_DOC003109_SENT018::defesa::1",
           "sent_ID": "FOLHA_DOC003109_SENT018",
           "text": "A certeza de vitória demonstrada pelos advogados de defesa não é a mesma, porém, encontrada na Promotoria.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 58
-              }
-            ]
+            "char_start": 52,
+            "char_end": 58
           },
           "realization": {
             "Arg0": "advogados",
@@ -337,12 +247,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 39,
                 "char_end": 48
               }
@@ -353,22 +260,14 @@
           }
         },
         {
-          "instance_id": 5868,
+          "instance_id": "FOLHA_DOC000017_SENT014::defesa::1",
           "sent_ID": "FOLHA_DOC000017_SENT014",
           "text": "A defesa de Nuzman não se pronunciou até a publicação desta nota.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -382,14 +281,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 18
               }
@@ -399,22 +294,14 @@
           }
         },
         {
-          "instance_id": 6888,
+          "instance_id": "FOLHA_DOC004058_SENT011::defesa::1",
           "sent_ID": "FOLHA_DOC004058_SENT011",
           "text": "A Folha não conseguiu contato com a defesa da prefeita nem com a assessoria da prefeitura.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 42
-              }
-            ]
+            "char_start": 36,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -428,15 +315,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 43,
                 "char_end": 54
               }
@@ -446,22 +328,14 @@
           }
         },
         {
-          "instance_id": 8097,
+          "instance_id": "FOLHA_DOC000022_SENT009::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT009",
           "text": "A defesa do empresário apresentou petição afirmando que todos os recibos foram assinados no mesmo dia, em dezembro de 2015, quando estava internado no Hospital Sírio-Libanês, em São Paulo.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -475,15 +349,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 9,
                 "char_end": 22
               }
@@ -493,22 +362,14 @@
           }
         },
         {
-          "instance_id": 8922,
+          "instance_id": "FOLHA_DOC000022_SENT019::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT019",
           "text": "Para observar a igualdade, esperamos que o juiz Sergio Moro autorize a realização de perícia também nos documentos que o MPF apresentou e que tiveram a idoneidade questionada pela defesa do ex-presidente Lula.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 180,
-                "char_end": 186
-              }
-            ]
+            "char_start": 180,
+            "char_end": 186
           },
           "realization": {
             "Arg0": null,
@@ -522,16 +383,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 187,
                 "char_end": 208
               }
@@ -541,22 +396,14 @@
           }
         },
         {
-          "instance_id": 9179,
+          "instance_id": "FOLHA_DOC000022_SENT006::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT006",
           "text": "No despacho, Moro também pediu que a defesa de Lula esclareça se tem provas a requerer quanto ao incidente.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 43
-              }
-            ]
+            "char_start": 37,
+            "char_end": 43
           },
           "realization": {
             "Arg0": null,
@@ -570,14 +417,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 44,
                 "char_end": 51
               }
@@ -587,22 +430,14 @@
           }
         },
         {
-          "instance_id": 10084,
+          "instance_id": "FOLHA_DOC002044_SENT014::defesa::1",
           "sent_ID": "FOLHA_DOC002044_SENT014",
           "text": "Logo, conclui a defesa, o processo não deveria estar em Curitiba.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 16,
-                "char_end": 22
-              }
-            ]
+            "char_start": 16,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -616,7 +451,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -624,22 +459,14 @@
           }
         },
         {
-          "instance_id": 10460,
+          "instance_id": "FOLHA_DOC003109_SENT006::defesa::1",
           "sent_ID": "FOLHA_DOC003109_SENT006",
           "text": "A defesa dos outros três réus preferiu não recorrer de decisão porque afirma acreditar na absolvição de todos os réus por absoluta falta de provas.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -653,17 +480,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 9,
                 "char_end": 29
               }
@@ -673,22 +493,14 @@
           }
         },
         {
-          "instance_id": 10981,
+          "instance_id": "FOLHA_DOC000022_SENT018::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT018",
           "text": "A defesa lembra, ainda, que pediu investigação de documentos apresentados pela força-tarefa da Lava Jato.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -702,7 +514,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -710,22 +522,14 @@
           }
         },
         {
-          "instance_id": 12565,
+          "instance_id": "FOLHA_DOC000022_SENT004::defesa::1",
           "sent_ID": "FOLHA_DOC000022_SENT004",
           "text": "Na semana passada, o Ministério Público Federal apresentou incidente de falsidade questionando a veracidade de 26 recibos apresentados pela defesa do ex-presidente.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 140,
-                "char_end": 146
-              }
-            ]
+            "char_start": 140,
+            "char_end": 146
           },
           "realization": {
             "Arg0": null,
@@ -739,15 +543,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 147,
                 "char_end": 163
               }
@@ -757,22 +556,14 @@
           }
         },
         {
-          "instance_id": 12930,
+          "instance_id": "FOLHA_DOC004093_SENT017::defesa::1",
           "sent_ID": "FOLHA_DOC004093_SENT017",
           "text": "A defesa de Nuzman afirmou que só comentaria os fatos após ter acesso ao processo.",
-          "frame_id": "f_af423b8f0a6b75fb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -786,14 +577,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 18
               }
@@ -802,477 +589,307 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 11
+        },
+        "Arg0": {
+          "obl:agent": 1
+        }
+      }
     },
     {
       "pt_roleset": "defesa · acepção 2",
       "description": "1 ato de defender-se visando à proteção: Estava em jogo a defesa pessoal de Collor (VEJ) ★ [Abstrato de estado] [Compl: contra+nome]",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 1343,
+          "instance_id": "FOLHA_DOC004042_SENT017::defesa::1",
           "sent_ID": "FOLHA_DOC004042_SENT017",
           "text": "Em sua defesa, os delatores alegam que fizeram considerações genéricas sobre os magistrados e que não possuem nenhuma informação comprometedora sobre eles.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 13
-              }
-            ]
+            "char_start": 7,
+            "char_end": 13
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1927,
+          "instance_id": "FOLHA_DOC002025_SENT042::defesa::1",
           "sent_ID": "FOLHA_DOC002025_SENT042",
           "text": "Isto por lhe caber \"a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis\" (art. 127).",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 28
-              }
-            ]
+            "char_start": 22,
+            "char_end": 28
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12447,
+          "instance_id": "FOLHA_DOC003159_SENT019::defesa::1",
           "sent_ID": "FOLHA_DOC003159_SENT019",
           "text": "Em sua defesa, Dorival ao menos pode argumentar que, desde que assumiu a empreitada, conduziu o São Paulo a desempenho superior ao de quatro de seus concorrentes mais próximos.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 13
-              }
-            ]
+            "char_start": 7,
+            "char_end": 13
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 15721,
+          "instance_id": "FOLHA_DOC003087_SENT007::defesa::1",
           "sent_ID": "FOLHA_DOC003087_SENT007",
           "text": "A defesa foi feita, inclusive, no tribunal, com advogados da Aclu tendo conseguido a autorização para que a marcha que terminou com uma morte em agosto ocorresse.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "defesa · acepção 3",
       "description": "5 favorável: [havia] torneios de oratória em defesa de posições teóricas (AR-O) ★ [Núcleo de construção adverbial] [em+~. Compl: de+nome]",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 3278,
+          "instance_id": "FOLHA_DOC000182_SENT008::defesa::1",
           "sent_ID": "FOLHA_DOC000182_SENT008",
           "text": "Isso significa que combater o bom combate em defesa dos dados científicos é perda de tempo?",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 51
-              }
-            ]
+            "char_start": 45,
+            "char_end": 51
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3952,
+          "instance_id": "FOLHA_DOC004088_SENT018::defesa::1",
           "sent_ID": "FOLHA_DOC004088_SENT018",
           "text": "Em defesa da ação, Geraldo Alckmin (PSDB) disse que os portadores de fuzis não estariam querendo conversar.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 9
-              }
-            ]
+            "char_start": 3,
+            "char_end": 9
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 10776,
+          "instance_id": "FOLHA_DOC003021_SENT017::defesa::1",
           "sent_ID": "FOLHA_DOC003021_SENT017",
           "text": "Afinal, a maioria absoluta das ações judiciais em defesa \"da honra\" são propostas por personalidades públicas, em especial políticos.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 56
-              }
-            ]
+            "char_start": 50,
+            "char_end": 56
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13777,
+          "instance_id": "FOLHA_DOC003292_SENT019::defesa::1",
           "sent_ID": "FOLHA_DOC003292_SENT019",
           "text": "Esse aumento de caixa é um dos principais argumentos do governo em defesa da devolução.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 73
-              }
-            ]
+            "char_start": 67,
+            "char_end": 73
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "defesa · acepção 4",
       "description": "exposição, argumentação ou peça jurídica apresentada em favor de acusado; posição defensiva",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 6089,
+          "instance_id": "FOLHA_DOC003065_SENT021::defesa::1",
           "sent_ID": "FOLHA_DOC003065_SENT021",
           "text": "Ele prefere enganar os (e)leitores com textos melífluos e argumentos falsos como os da defesa de Lula e Dilma nos processos da Lava Jato.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 87,
-                "char_end": 93
-              }
-            ]
+            "char_start": 87,
+            "char_end": 93
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 10879,
+          "instance_id": "FOLHA_DOC004109_SENT002::defesa::1",
           "sent_ID": "FOLHA_DOC004109_SENT002",
           "text": "O depoimento de Antonio Palocci é devastador para a defesa, a imagem e o futuro de Lula.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 58
-              }
-            ]
+            "char_start": 52,
+            "char_end": 58
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12054,
+          "instance_id": "FOLHA_DOC003153_SENT033::defesa::1",
           "sent_ID": "FOLHA_DOC003153_SENT033",
           "text": "Em decisão rara, a Folha usou parte da manchete para a defesa do presidente, no mesmo enunciado em que o acusava.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 61
-              }
-            ]
+            "char_start": 55,
+            "char_end": 61
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12445,
+          "instance_id": "FOLHA_DOC003277_SENT003::defesa::1",
           "sent_ID": "FOLHA_DOC003277_SENT003",
           "text": "O ex-ministro terá prazo para apresentação de defesa caso pretenda manter-se filiado ao partido.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 52
-              }
-            ]
+            "char_start": 46,
+            "char_end": 52
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13581,
+          "instance_id": "FOLHA_DOC003067_SENT012::defesa::1",
           "sent_ID": "FOLHA_DOC003067_SENT012",
           "text": "Faz-se troça da linha de defesa de Lula, que atribui a outros ao seu redor a responsabilidade por ações suspeitas, mas essa parece ser sua melhor opção nesse quadro.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 31
-              }
-            ]
+            "char_start": 25,
+            "char_end": 31
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "defesa · acepção 5",
       "description": "manifestação argumentativa pública em favor de ideia, política ou posição; advocacy",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 8993,
+          "instance_id": "FOLHA_DOC000020_SENT007::defesa::1",
           "sent_ID": "FOLHA_DOC000020_SENT007",
           "text": "Em sua mesa, Serra fez uma defesa enfática da adoção do parlamentarismo no Brasil.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 33
-              }
-            ]
+            "char_start": 27,
+            "char_end": 33
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12199,
+          "instance_id": "FOLHA_DOC003141_SENT008::defesa::1",
           "sent_ID": "FOLHA_DOC003141_SENT008",
           "text": "O governador pretende reforçar a defesa do ajuste fiscal, que considera essencial para conquistar o apoio do mercado financeiro, mas aponta erros na condução dessa política por Temer e apresenta visões alternativas.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 39
-              }
-            ]
+            "char_start": 33,
+            "char_end": 39
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "defesa · acepção 6",
       "description": "3 nos esportes coletivos, conjunto de joga- dores com a função de neutralizar o ataque adversário: é um time que marca bem, sólido na defesa (CPO) [Não-anima- do]",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 10758,
+          "instance_id": "FOLHA_DOC003023_SENT034::defesa::1",
           "sent_ID": "FOLHA_DOC003023_SENT034",
           "text": "O Corinthians correu risco de sofrer gol do Vasco, na primeira etapa, embora tenha trocado mais passes, empurrado o adversário para seu campo de defesa.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 145,
-                "char_end": 151
-              }
-            ]
+            "char_start": 145,
+            "char_end": 151
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "defesa · acepção 7",
       "description": "ação de impedir gol ou pontuação; defesa esportiva",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 14611,
+          "instance_id": "FOLHA_DOC003207_SENT028::defesa::1",
           "sent_ID": "FOLHA_DOC003207_SENT028",
           "text": "No entanto, o estresse do cobrador durante o jogo e o fato dos goleiros estarem cada vez mais analisando as cobranças, certamente, aumenta a chance de defesa, diz o pesquisador.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "defesa",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 151,
-                "char_end": 157
-              }
-            ]
+            "char_start": 151,
+            "char_end": 157
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

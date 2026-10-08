@@ -1,66 +1,42 @@
 {
   "lemma": "franquia",
-  "lemma_base": "franquia",
   "senses": [
     {
       "pt_roleset": "franquia · acepção 1",
       "description": "1 abertura; liberação de taxas alfandegárias: A franquia dos portos e a transformação de hábitos estimu- lam largamente as necessidades e o consumo do país (H)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_e239d9874840bbbb",
-          "description": "1 abertura; liberação de taxas alfandegárias: A franquia dos portos e a transformação de hábitos estimu- lam largamente as necessidades e o consumo do país (H)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 2356,
+          "instance_id": "FOLHA_DOC003190_SENT007::franquia::1",
           "sent_ID": "FOLHA_DOC003190_SENT007",
           "text": "Evair Evaristo Lima, técnico da Acquazero, franquia de lavagem a seco, ensina a fazer a limpeza em casa.",
-          "frame_id": "f_e239d9874840bbbb",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "franquia",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 51
-              }
-            ]
+            "char_start": 43,
+            "char_end": 51
           },
           "realization": {
             "Arg0": "Acquazero",
@@ -74,73 +50,55 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 32,
-                "char_end": 41,
-                "head_token_id": 8
+                "char_end": 41
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 52,
-                "char_end": 69,
-                "head_token_id": 12
+                "char_end": 69
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "franquia · acepção 2",
       "description": "parcela de prejuízo coberta pelo próprio segurado em contrato de seguro",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 11935,
+          "instance_id": "FOLHA_DOC003166_SENT014::franquia::1",
           "sent_ID": "FOLHA_DOC003166_SENT014",
           "text": "Em geral, as empresas oferecem descontos na renovação da apólice e também mais facilidades no pagamento da franquia em caso de sinistro, quando o cliente utiliza o seu cartão.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "franquia",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 107,
-                "char_end": 115
-              }
-            ]
+            "char_start": 107,
+            "char_end": 115
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

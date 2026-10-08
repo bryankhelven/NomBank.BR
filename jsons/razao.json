@@ -1,60 +1,35 @@
 {
   "lemma": "razão",
-  "lemma_base": "razão",
   "senses": [
     {
       "pt_roleset": "razão.04",
       "description": "causa aparente; motivo",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_272ef3d1fa92018d",
-          "description": "causa aparente; motivo",
-          "valency": 1,
-          "origin_frames": [
-            {
-              "roleset": "reason.01",
-              "resource": "English NomBank",
-              "description": "ability-without-agent",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "ação/acontecimento cuja razão é considerada; fonte reason.01 não inclui novo slot para causa",
-              "definition": "ação/acontecimento cuja razão é considerada; fonte reason.01 não inclui novo slot para causa"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 2,
-              "acl": 4,
-              "obl": 1,
-              "root": 2,
-              "advcl": 1
-            }
-          }
+          "roleset": "reason.01",
+          "resource": "English NomBank",
+          "description": "ability-without-agent",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 140,
+          "id": "Arg1",
+          "desc": "ação/acontecimento cuja razão é considerada; fonte reason.01 não inclui novo slot para causa",
+          "definition": "ação/acontecimento cuja razão é considerada; fonte reason.01 não inclui novo slot para causa"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000103_SENT070::razão::1",
           "sent_ID": "FOLHA_DOC000103_SENT070",
           "text": "Vejo razões de insatisfação em todas as partes.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 11
-              }
-            ]
+            "char_start": 5,
+            "char_end": 11
           },
           "realization": {
             "Arg1": "de insatisfação"
@@ -62,13 +37,9 @@
           "syntax": {
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 12,
                 "char_end": 27
               }
@@ -76,22 +47,14 @@
           }
         },
         {
-          "instance_id": 1951,
+          "instance_id": "FOLHA_DOC002044_SENT016::razão::1",
           "sent_ID": "FOLHA_DOC002044_SENT016",
           "text": "Qual a razão, então, de serem eles investigados em Curitiba, no Estado do Paraná?",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 12
-              }
-            ]
+            "char_start": 7,
+            "char_end": 12
           },
           "realization": {
             "Arg1": "de serem eles investigados em Curitiba, no Estado do Paraná"
@@ -99,24 +62,9 @@
           "syntax": {
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 21,
                 "char_end": 80
               }
@@ -124,22 +72,14 @@
           }
         },
         {
-          "instance_id": 4003,
+          "instance_id": "FOLHA_DOC000160_SENT013::razão::1",
           "sent_ID": "FOLHA_DOC000160_SENT013",
           "text": "As principais razões para a queda de popularidade do prefeito são a crescente percepção dos paulistanos de que Doria frustra expectativas de governo como também a sensação de que o tucano se preocupa mais consigo do que com a cidade.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 20
-              }
-            ]
+            "char_start": 14,
+            "char_end": 20
           },
           "realization": {
             "Arg1": "para a queda de popularidade do prefeito"
@@ -147,19 +87,9 @@
           "syntax": {
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 21,
                 "char_end": 61
               }
@@ -167,22 +97,14 @@
           }
         },
         {
-          "instance_id": 4066,
+          "instance_id": "FOLHA_DOC003023_SENT021::razão::1",
           "sent_ID": "FOLHA_DOC003023_SENT021",
           "text": "Ninguém aqui quer dizer que a única razão de ganhar ou perder é ter ou não a bola.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 41
-              }
-            ]
+            "char_start": 36,
+            "char_end": 41
           },
           "realization": {
             "Arg1": "de ganhar ou perder"
@@ -190,15 +112,9 @@
           "syntax": {
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 42,
                 "char_end": 61
               }
@@ -206,22 +122,14 @@
           }
         },
         {
-          "instance_id": 4348,
+          "instance_id": "FOLHA_DOC002015_SENT033::razão::1",
           "sent_ID": "FOLHA_DOC002015_SENT033",
           "text": "A razão é simples: não é possível prever o futuro.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 7
-              }
-            ]
+            "char_start": 2,
+            "char_end": 7
           },
           "realization": {
             "Arg1": null
@@ -229,27 +137,19 @@
           "syntax": {
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": []
           }
         },
         {
-          "instance_id": 5028,
+          "instance_id": "FOLHA_DOC003144_SENT012::razão::1",
           "sent_ID": "FOLHA_DOC003144_SENT012",
           "text": "Até existem razões pragmáticas para que se tente reduzir a discrepância de renda e não só a miséria.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 18
-              }
-            ]
+            "char_start": 12,
+            "char_end": 18
           },
           "realization": {
             "Arg1": "para que se tente reduzir a discrepância de renda e não só a miséria"
@@ -257,25 +157,9 @@
           "syntax": {
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 31,
                 "char_end": 99
               }
@@ -283,22 +167,14 @@
           }
         },
         {
-          "instance_id": 5475,
+          "instance_id": "FOLHA_DOC000098_SENT023::razão::1",
           "sent_ID": "FOLHA_DOC000098_SENT023",
           "text": "E isso é apontado como uma razão importante para a qualidade de vida local.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 32
-              }
-            ]
+            "char_start": 27,
+            "char_end": 32
           },
           "realization": {
             "Arg1": "para a qualidade de vida local"
@@ -306,17 +182,9 @@
           "syntax": {
             "Arg1": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 44,
                 "char_end": 74
               }
@@ -324,22 +192,14 @@
           }
         },
         {
-          "instance_id": 7733,
+          "instance_id": "FOLHA_DOC002017_SENT008::razão::1",
           "sent_ID": "FOLHA_DOC002017_SENT008",
           "text": "Uma das razões é a forte oscilação que a moeda sofre.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 8,
-                "char_end": 14
-              }
-            ]
+            "char_start": 8,
+            "char_end": 14
           },
           "realization": {
             "Arg1": null
@@ -347,27 +207,19 @@
           "syntax": {
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": []
           }
         },
         {
-          "instance_id": 8528,
+          "instance_id": "FOLHA_DOC003128_SENT014::razão::1",
           "sent_ID": "FOLHA_DOC003128_SENT014",
           "text": "Remunerações do gênero muitas vezes não são informadas aos pesquisadores por razões diferentes, incluindo o mero desconhecimento das cifras precisas.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 83
-              }
-            ]
+            "char_start": 77,
+            "char_end": 83
           },
           "realization": {
             "Arg1": "Remunerações do gênero muitas vezes não são informadas aos pesquisadores"
@@ -375,23 +227,9 @@
           "syntax": {
             "Arg1": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 0,
                 "char_end": 72
               }
@@ -399,22 +237,14 @@
           }
         },
         {
-          "instance_id": 10178,
+          "instance_id": "FOLHA_DOC003042_SENT003::razão::1",
           "sent_ID": "FOLHA_DOC003042_SENT003",
           "text": "Há razões para acreditar que tardará a continuidade do julgamento, para a qual não há nem data marcada.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 9
-              }
-            ]
+            "char_start": 3,
+            "char_end": 9
           },
           "realization": {
             "Arg1": "para acreditar que tardará a continuidade do julgamento, para a qual não há nem data marcada"
@@ -422,29 +252,9 @@
           "syntax": {
             "Arg1": "advcl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 10,
                 "char_end": 102
               }
@@ -452,22 +262,14 @@
           }
         },
         {
-          "instance_id": 10291,
+          "instance_id": "FOLHA_DOC003216_SENT041::razão::1",
           "sent_ID": "FOLHA_DOC003216_SENT041",
           "text": "Não ter essa gestão é uma das razões do crédito estar mais caro.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 36
-              }
-            ]
+            "char_start": 30,
+            "char_end": 36
           },
           "realization": {
             "Arg1": "do crédito estar mais caro"
@@ -475,17 +277,9 @@
           "syntax": {
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 37,
                 "char_end": 63
               }
@@ -493,22 +287,14 @@
           }
         },
         {
-          "instance_id": 13136,
+          "instance_id": "FOLHA_DOC003099_SENT037::razão::1",
           "sent_ID": "FOLHA_DOC003099_SENT037",
           "text": "Por razões de saúde, alimentos cozidos que não forem consumidos até cerca de duas horas após o preparo devem ser refrigerados imediatamente.",
-          "frame_id": "f_272ef3d1fa92018d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "razões",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 10
-              }
-            ]
+            "char_start": 4,
+            "char_end": 10
           },
           "realization": {
             "Arg1": "alimentos cozidos que não forem consumidos até cerca de duas horas após o preparo devem ser refrigerados imediatamente"
@@ -516,156 +302,99 @@
           "syntax": {
             "Arg1": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 21,
                 "char_end": 139
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 2,
+          "acl": 4,
+          "obl": 1,
+          "root": 2,
+          "advcl": 1
+        }
+      }
     },
     {
       "pt_roleset": "razão.02",
       "description": "raciocínio correto, digno de crédito",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 7392,
+          "instance_id": "FOLHA_DOC002026_SENT009::razão::1",
           "sent_ID": "FOLHA_DOC002026_SENT009",
           "text": "Choraram tanto pelos supostos erros da arbitragem que até prejudicaram a razão que têm na anulação do segundo gol tricolor, que liquidaria a fatura.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 78
-              }
-            ]
+            "char_start": 73,
+            "char_end": 78
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 8907,
+          "instance_id": "FOLHA_DOC004089_SENT014::razão::1",
           "sent_ID": "FOLHA_DOC004089_SENT014",
           "text": "Seja como for, Patrícia tem razão ao associar a história de Branca de Neve com a inveja materna.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 33
-              }
-            ]
+            "char_start": 28,
+            "char_end": 33
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12875,
+          "instance_id": "FOLHA_DOC000166_SENT006::razão::1",
           "sent_ID": "FOLHA_DOC000166_SENT006",
           "text": "A opinião dos moradores tem sua razão de ser.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 37
-              }
-            ]
+            "char_start": 32,
+            "char_end": 37
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "razão.01",
       "description": "raciocínio; juízo",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 13865,
+          "instance_id": "FOLHA_DOC003049_SENT038::razão::1",
           "sent_ID": "FOLHA_DOC003049_SENT038",
           "text": "Se antes se diziam liberais, não mais escondem seu fundamentalismo, e, avessos à razão sensível, rejeitam as artes numa confissão clara de ignorância.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "razão",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 86
-              }
-            ]
+            "char_start": 81,
+            "char_end": 86
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

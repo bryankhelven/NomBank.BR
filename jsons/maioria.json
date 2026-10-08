@@ -1,63 +1,40 @@
 {
   "lemma": "maioria",
-  "lemma_base": "maioria",
   "senses": [
     {
       "pt_roleset": "maioria.01",
       "description": "a maior parte ou o maior número",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_ab905aee004712c3",
-          "description": "a maior parte ou o maior número",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "majority.01",
-              "resource": "English NomBank",
-              "description": "partitive-quant",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/majority.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "conjunto quantificado",
-              "definition": "Conjunto do qual o nominal seleciona a maior parte."
-            },
-            {
-              "id": "Arg3",
-              "desc": "tema secundário",
-              "definition": "Tema secundário da partitiva conforme majority.01, não contexto genérico."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 23,
-              "obj": 1,
-              "det": 2
-            }
-          }
+          "roleset": "majority.01",
+          "resource": "English NomBank",
+          "description": "partitive-quant",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/majority.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 473,
+          "id": "Arg1",
+          "desc": "conjunto quantificado",
+          "definition": "Conjunto do qual o nominal seleciona a maior parte."
+        },
+        {
+          "id": "Arg3",
+          "desc": "tema secundário",
+          "definition": "Tema secundário da partitiva conforme majority.01, não contexto genérico."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002030_SENT013::maioria::1",
           "sent_ID": "FOLHA_DOC002030_SENT013",
           "text": "Não posso concordar, contudo, que a maioria dos brasileiros não deseja a volta dos militares.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 43
-              }
-            ]
+            "char_start": 36,
+            "char_end": 43
           },
           "realization": {
             "Arg1": "dos brasileiros",
@@ -67,14 +44,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 44,
                 "char_end": 59
               }
@@ -83,22 +55,14 @@
           }
         },
         {
-          "instance_id": 723,
+          "instance_id": "FOLHA_DOC004090_SENT038::maioria::1",
           "sent_ID": "FOLHA_DOC004090_SENT038",
           "text": "Em alguns roteiros, como na Croácia, é preciso pagar na maioria dos trajetos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 63
-              }
-            ]
+            "char_start": 56,
+            "char_end": 63
           },
           "realization": {
             "Arg1": "dos trajetos",
@@ -108,14 +72,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 64,
                 "char_end": 76
               }
@@ -124,22 +83,14 @@
           }
         },
         {
-          "instance_id": 1026,
+          "instance_id": "FOLHA_DOC003038_SENT035::maioria::1",
           "sent_ID": "FOLHA_DOC003038_SENT035",
           "text": "O problema inicial da maioria, segundo ela, é \"ter medo de ser humano\".",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 29
-              }
-            ]
+            "char_start": 22,
+            "char_end": 29
           },
           "realization": {
             "Arg1": null,
@@ -149,28 +100,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 1410,
+          "instance_id": "FOLHA_DOC004063_SENT027::maioria::1",
           "sent_ID": "FOLHA_DOC004063_SENT027",
           "text": "Juntas, essas três ondas de violência somaram 297 ocorrências, segundo a Polícia Militar, a maioria contra instalações da segurança pública.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 99
-              }
-            ]
+            "char_start": 92,
+            "char_end": 99
           },
           "realization": {
             "Arg1": "297 ocorrências",
@@ -180,13 +123,9 @@
             "Arg1": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 46,
                 "char_end": 61
               }
@@ -195,22 +134,14 @@
           }
         },
         {
-          "instance_id": 1737,
+          "instance_id": "FOLHA_DOC000041_SENT048::maioria::1",
           "sent_ID": "FOLHA_DOC000041_SENT048",
           "text": "As mulheres, em sua maioria, estão sozinhas enfrentando suas doenças, conta Katia.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 27
-              }
-            ]
+            "char_start": 20,
+            "char_end": 27
           },
           "realization": {
             "Arg1": "sua",
@@ -220,12 +151,9 @@
             "Arg1": "det",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 16,
                 "char_end": 19
               }
@@ -234,22 +162,14 @@
           }
         },
         {
-          "instance_id": 3262,
+          "instance_id": "FOLHA_DOC000029_SENT010::maioria::1",
           "sent_ID": "FOLHA_DOC000029_SENT010",
           "text": "A maioria dos voos longos da companhia já foi cancelada.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg1": "dos voos longos da companhia",
@@ -259,18 +179,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 10,
                 "char_end": 38
               }
@@ -279,22 +190,14 @@
           }
         },
         {
-          "instance_id": 4063,
+          "instance_id": "FOLHA_DOC003200_SENT069::maioria::1",
           "sent_ID": "FOLHA_DOC003200_SENT069",
           "text": "Está bichado no que é essencial: na capacidade de fortalecer e de ser fortalecido pela maioria.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 87,
-                "char_end": 94
-              }
-            ]
+            "char_start": 87,
+            "char_end": 94
           },
           "realization": {
             "Arg1": null,
@@ -304,28 +207,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 4143,
+          "instance_id": "FOLHA_DOC003173_SENT012::maioria::1",
           "sent_ID": "FOLHA_DOC003173_SENT012",
           "text": "Real Madrid e Barcelona atuam, na maioria das vezes, com o mesmo sistema tático, com quatro defensores, três no meio e três na frente.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 41
-              }
-            ]
+            "char_start": 34,
+            "char_end": 41
           },
           "realization": {
             "Arg1": "das vezes",
@@ -335,14 +230,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 42,
                 "char_end": 51
               }
@@ -351,22 +241,14 @@
           }
         },
         {
-          "instance_id": 4210,
+          "instance_id": "FOLHA_DOC003109_SENT034::maioria::1",
           "sent_ID": "FOLHA_DOC003109_SENT034",
           "text": "O filho único de dona Zilda estava no bar do Juvenal, na divisa de Osasco com Barueri, onde ocorreu a maioria das mortes -foram oito vítimas fatais e dois feridos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 102,
-                "char_end": 109
-              }
-            ]
+            "char_start": 102,
+            "char_end": 109
           },
           "realization": {
             "Arg1": "das mortes",
@@ -376,14 +258,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  27,
-                  28,
-                  29
-                ],
                 "char_start": 110,
                 "char_end": 120
               }
@@ -392,22 +269,14 @@
           }
         },
         {
-          "instance_id": 4641,
+          "instance_id": "FOLHA_DOC000138_SENT008::maioria::1",
           "sent_ID": "FOLHA_DOC000138_SENT008",
           "text": "A maioria teve ferimentos nas pernas e na cabeça.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg1": null,
@@ -417,28 +286,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 4936,
+          "instance_id": "FOLHA_DOC003075_SENT009::maioria::1",
           "sent_ID": "FOLHA_DOC003075_SENT009",
           "text": "Há a expectativa de que Trump durma na sua residência privada, no topo da Trump Tower, mas o hotel abrigará a maioria de seus compromissos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 117
-              }
-            ]
+            "char_start": 110,
+            "char_end": 117
           },
           "realization": {
             "Arg1": "de seus compromissos",
@@ -448,14 +309,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 118,
                 "char_end": 138
               }
@@ -464,22 +320,14 @@
           }
         },
         {
-          "instance_id": 5986,
+          "instance_id": "FOLHA_DOC003296_SENT011::maioria::1",
           "sent_ID": "FOLHA_DOC003296_SENT011",
           "text": "\"Já formamos 2.000 profissionais, e a maioria está atuando no mercado\", diz Kevin.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 45
-              }
-            ]
+            "char_start": 38,
+            "char_end": 45
           },
           "realization": {
             "Arg1": null,
@@ -489,28 +337,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 6373,
+          "instance_id": "FOLHA_DOC004067_SENT010::maioria::1",
           "sent_ID": "FOLHA_DOC004067_SENT010",
           "text": "Inovações nascem em corporações, universidades e laboratórios distantes do cotidiano da maioria das pessoas.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 95
-              }
-            ]
+            "char_start": 88,
+            "char_end": 95
           },
           "realization": {
             "Arg1": "das pessoas",
@@ -520,14 +360,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 96,
                 "char_end": 107
               }
@@ -536,22 +371,14 @@
           }
         },
         {
-          "instance_id": 8210,
+          "instance_id": "FOLHA_DOC000044_SENT022::maioria::1",
           "sent_ID": "FOLHA_DOC000044_SENT022",
           "text": "Cerca de 80% dos jovens assistidos pelo programa em um dos seus 170 cursos lançados até agora conseguem vagas formais de emprego nos primeiros três meses após a formatura, a maioria nas próprias empresas em que foram treinados.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              37
-            ],
-            "spans": [
-              {
-                "char_start": 174,
-                "char_end": 181
-              }
-            ]
+            "char_start": 174,
+            "char_end": 181
           },
           "realization": {
             "Arg1": null,
@@ -561,28 +388,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 8971,
+          "instance_id": "FOLHA_DOC003140_SENT064::maioria::1",
           "sent_ID": "FOLHA_DOC003140_SENT064",
           "text": "Na maioria dos casos, qual é o objetivo dos muros?",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg1": "dos casos",
@@ -592,14 +411,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 11,
                 "char_end": 20
               }
@@ -608,22 +422,14 @@
           }
         },
         {
-          "instance_id": 9429,
+          "instance_id": "FOLHA_DOC003036_SENT022::maioria::1",
           "sent_ID": "FOLHA_DOC003036_SENT022",
           "text": "E, visto que a maioria da população, na época, apoiou o impeachment, não há como vencer sem conquistar gente que apoiou a derrubada de Dilma.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 22
-              }
-            ]
+            "char_start": 15,
+            "char_end": 22
           },
           "realization": {
             "Arg1": "da população",
@@ -633,14 +439,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 23,
                 "char_end": 35
               }
@@ -649,22 +450,14 @@
           }
         },
         {
-          "instance_id": 9568,
+          "instance_id": "FOLHA_DOC000161_SENT003::maioria::1",
           "sent_ID": "FOLHA_DOC000161_SENT003",
           "text": "Na maioria das vezes, os ruídos indicam que há algo de errado.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg1": "das vezes",
@@ -674,14 +467,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 11,
                 "char_end": 20
               }
@@ -690,22 +478,14 @@
           }
         },
         {
-          "instance_id": 9826,
+          "instance_id": "FOLHA_DOC002036_SENT003::maioria::1",
           "sent_ID": "FOLHA_DOC002036_SENT003",
           "text": "No primeiro, onde vive a maioria dos humanos, riquezas não brotam nem desaparecem num átimo.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 32
-              }
-            ]
+            "char_start": 25,
+            "char_end": 32
           },
           "realization": {
             "Arg1": "dos humanos",
@@ -715,14 +495,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 33,
                 "char_end": 44
               }
@@ -731,22 +506,14 @@
           }
         },
         {
-          "instance_id": 9965,
+          "instance_id": "FOLHA_DOC003054_SENT022::maioria::1",
           "sent_ID": "FOLHA_DOC003054_SENT022",
           "text": "Observa-se que o repasse no ano de 2014 representou a maioria dos valores, ano que Geddel foi candidato a senador [pela Bahia], diz o relatório.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 61
-              }
-            ]
+            "char_start": 54,
+            "char_end": 61
           },
           "realization": {
             "Arg1": "dos valores",
@@ -756,14 +523,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 62,
                 "char_end": 73
               }
@@ -772,22 +534,14 @@
           }
         },
         {
-          "instance_id": 10704,
+          "instance_id": "FOLHA_DOC000161_SENT046::maioria::1",
           "sent_ID": "FOLHA_DOC000161_SENT046",
           "text": "Na maioria dos casos, o som indica que a pastilha está gasta e precisa ser trocada.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg1": "dos casos",
@@ -797,14 +551,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 11,
                 "char_end": 20
               }
@@ -813,22 +562,14 @@
           }
         },
         {
-          "instance_id": 10774,
+          "instance_id": "FOLHA_DOC003021_SENT017::maioria::1",
           "sent_ID": "FOLHA_DOC003021_SENT017",
           "text": "Afinal, a maioria absoluta das ações judiciais em defesa \"da honra\" são propostas por personalidades públicas, em especial políticos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 17
-              }
-            ]
+            "char_start": 10,
+            "char_end": 17
           },
           "realization": {
             "Arg1": "das ações judiciais em defesa \"da honra\"",
@@ -838,22 +579,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 27,
                 "char_end": 67
               }
@@ -862,22 +590,14 @@
           }
         },
         {
-          "instance_id": 11114,
+          "instance_id": "FOLHA_DOC003003_SENT007::maioria::1",
           "sent_ID": "FOLHA_DOC003003_SENT007",
           "text": "A prefeita de St. Louis, Lyda Krewson, disse que \"a imensa maioria dos manifestantes é não violenta\" e culpou um \"grupo de agitadores\" pela violência.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 66
-              }
-            ]
+            "char_start": 59,
+            "char_end": 66
           },
           "realization": {
             "Arg1": "dos manifestantes",
@@ -887,14 +607,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 67,
                 "char_end": 84
               }
@@ -903,22 +618,14 @@
           }
         },
         {
-          "instance_id": 11286,
+          "instance_id": "FOLHA_DOC003203_SENT022::maioria::1",
           "sent_ID": "FOLHA_DOC003203_SENT022",
           "text": "A maioria da tropa de elite, uns 80%, parece ter um comportamento mais discreto (Petrobras, a número um, e Eletrobras, entre as dez mais, são casos à parte).",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg1": "da tropa de elite",
@@ -928,16 +635,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 10,
                 "char_end": 27
               }
@@ -946,22 +646,14 @@
           }
         },
         {
-          "instance_id": 11535,
+          "instance_id": "FOLHA_DOC003182_SENT035::maioria::1",
           "sent_ID": "FOLHA_DOC003182_SENT035",
           "text": "Empresas como a Pagar.me funcionam como intermediárias entre os empreendedores e lojas virtuais e as grandes empresas de pagamento (como Cielo e Rede), que possuem a maioria das máquinas para pagamento em lojas físicas.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 166,
-                "char_end": 173
-              }
-            ]
+            "char_start": 166,
+            "char_end": 173
           },
           "realization": {
             "Arg1": "das máquinas para pagamento em lojas físicas",
@@ -971,19 +663,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37,
-                  38
-                ],
                 "char_start": 174,
                 "char_end": 218
               }
@@ -992,22 +674,14 @@
           }
         },
         {
-          "instance_id": 11721,
+          "instance_id": "FOLHA_DOC003213_SENT015::maioria::1",
           "sent_ID": "FOLHA_DOC003213_SENT015",
           "text": "O colonialismo ocidental, como regra geral, foi tanto objetivamente benéfico quanto subjetivamente legítimo na maioria dos lugares em que se encontrou [sic], usando-se medidas realistas desses conceitos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 111,
-                "char_end": 118
-              }
-            ]
+            "char_start": 111,
+            "char_end": 118
           },
           "realization": {
             "Arg1": "dos lugares em que se encontrou [sic]",
@@ -1017,21 +691,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 119,
                 "char_end": 156
               }
@@ -1040,22 +702,14 @@
           }
         },
         {
-          "instance_id": 11892,
+          "instance_id": "FOLHA_DOC003025_SENT025::maioria::1",
           "sent_ID": "FOLHA_DOC003025_SENT025",
           "text": "Os cargos judiciários públicos, na maioria das vezes, detêm a única forma legítima de violência no Estado moderno.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 42
-              }
-            ]
+            "char_start": 35,
+            "char_end": 42
           },
           "realization": {
             "Arg1": "das vezes",
@@ -1065,14 +719,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 43,
                 "char_end": 52
               }
@@ -1081,22 +730,14 @@
           }
         },
         {
-          "instance_id": 12145,
+          "instance_id": "FOLHA_DOC003131_SENT008::maioria::1",
           "sent_ID": "FOLHA_DOC003131_SENT008",
           "text": "A maioria chega agora em balsas feitas de câmaras de pneus e pallets que aportam à beira do rio Suchiate a menos de um quilômetro dali, por onde passa o contrabando de mercadorias e pessoas.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg1": null,
@@ -1106,28 +747,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 12401,
+          "instance_id": "FOLHA_DOC000041_SENT037::maioria::1",
           "sent_ID": "FOLHA_DOC000041_SENT037",
           "text": "As mulheres com adicção, na maioria das vezes, não têm com quem deixar, diz.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 35
-              }
-            ]
+            "char_start": 28,
+            "char_end": 35
           },
           "realization": {
             "Arg1": "das vezes",
@@ -1137,14 +770,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 36,
                 "char_end": 45
               }
@@ -1153,22 +781,14 @@
           }
         },
         {
-          "instance_id": 14007,
+          "instance_id": "FOLHA_DOC000138_SENT015::maioria::1",
           "sent_ID": "FOLHA_DOC000138_SENT015",
           "text": "\"Felizmente, não há ferimentos graves com a maioria agora alta do hospital\".",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 51
-              }
-            ]
+            "char_start": 44,
+            "char_end": 51
           },
           "realization": {
             "Arg1": null,
@@ -1178,28 +798,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 14111,
+          "instance_id": "FOLHA_DOC003207_SENT006::maioria::1",
           "sent_ID": "FOLHA_DOC003207_SENT006",
           "text": "Na maioria das vezes, o índice de erros fica entre 20% e 30%.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg1": "das vezes",
@@ -1209,14 +821,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 11,
                 "char_end": 20
               }
@@ -1225,22 +832,14 @@
           }
         },
         {
-          "instance_id": 14500,
+          "instance_id": "FOLHA_DOC000150_SENT018::maioria::1",
           "sent_ID": "FOLHA_DOC000150_SENT018",
           "text": "As células serão compradas de fornecedores, em sua maioria asiáticos.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 58
-              }
-            ]
+            "char_start": 51,
+            "char_end": 58
           },
           "realization": {
             "Arg1": "sua",
@@ -1250,12 +849,9 @@
             "Arg1": "det",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  9
-                ],
                 "char_start": 47,
                 "char_end": 50
               }
@@ -1264,22 +860,14 @@
           }
         },
         {
-          "instance_id": 14932,
+          "instance_id": "FOLHA_DOC003134_SENT005::maioria::1",
           "sent_ID": "FOLHA_DOC003134_SENT005",
           "text": "\"Memória afetiva é algo complicado, a maioria ainda associa pão aos sacos de papel e café ao coador, ou, numa versão mais moderna, às cápsulas\", diz Rossi.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 45
-              }
-            ]
+            "char_start": 38,
+            "char_end": 45
           },
           "realization": {
             "Arg1": null,
@@ -1289,28 +877,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 15003,
+          "instance_id": "FOLHA_DOC000017_SENT006::maioria::1",
           "sent_ID": "FOLHA_DOC000017_SENT006",
           "text": "O investigado ocupa a presidência do COB há mais de 20 anos, exercendo grande poder e influência sobre seus integrantes, provavelmente, a maioria lá colocada por ele.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 138,
-                "char_end": 145
-              }
-            ]
+            "char_start": 138,
+            "char_end": 145
           },
           "realization": {
             "Arg1": null,
@@ -1320,28 +900,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 15078,
+          "instance_id": "FOLHA_DOC003203_SENT023::maioria::1",
           "sent_ID": "FOLHA_DOC003203_SENT023",
           "text": "A maioria dessas empresas está no topo pelo menos desde o início do século; as mais novatas surgiram há mais de 30 anos, em geral muito mais.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg1": "dessas empresas",
@@ -1351,14 +923,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 10,
                 "char_end": 25
               }
@@ -1367,22 +934,14 @@
           }
         },
         {
-          "instance_id": 15110,
+          "instance_id": "FOLHA_DOC004063_SENT029::maioria::1",
           "sent_ID": "FOLHA_DOC004063_SENT029",
           "text": "Neste ano, a maioria dos ataques foi contra prédios e agentes da segurança pública.",
-          "frame_id": "f_ab905aee004712c3",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 20
-              }
-            ]
+            "char_start": 13,
+            "char_end": 20
           },
           "realization": {
             "Arg1": "dos ataques",
@@ -1392,14 +951,9 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 21,
                 "char_end": 32
               }
@@ -1407,143 +961,97 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 23,
+          "obj": 1,
+          "det": 2
+        }
+      }
     },
     {
       "pt_roleset": "maioria.03",
       "description": "a parte ou o partido mais numeroso numa corporação ou assembléia e que sustenta idéias semelhantes",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 1516,
+          "instance_id": "FOLHA_DOC000020_SENT015::maioria::1",
           "sent_ID": "FOLHA_DOC000020_SENT015",
           "text": "Essa tarefa é desempenhada por um primeiro-ministro, que forma uma maioria no Congresso, comentou.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 74
-              }
-            ]
+            "char_start": 67,
+            "char_end": 74
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3102,
+          "instance_id": "FOLHA_DOC003200_SENT073::maioria::1",
           "sent_ID": "FOLHA_DOC003200_SENT073",
           "text": "Para atingir maioria numa casa de 513, só na conversa individual.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 20
-              }
-            ]
+            "char_start": 13,
+            "char_end": 20
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "maioria.04",
       "description": "grupo de pessoas que, por características físicas, origem ou idéias semelhantes, constituem mais que 50% e formam uma classe dentro de uma instituição, sociedade ou país",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 7873,
+          "instance_id": "FOLHA_DOC004085_SENT025::maioria::1",
           "sent_ID": "FOLHA_DOC004085_SENT025",
           "text": "De maioria budista, Mianmar é marcado pela influência de monges radicais que denunciam rohingyas como ameaça.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "maioria.02",
       "description": "o maior número de sufrágios",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 8458,
+          "instance_id": "FOLHA_DOC004055_SENT015::maioria::1",
           "sent_ID": "FOLHA_DOC004055_SENT015",
           "text": "Nós respeitamos a PGR e temos a soberania de decidir por maioria.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "maioria",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 64
-              }
-            ]
+            "char_start": 57,
+            "char_end": 64
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

@@ -1,71 +1,45 @@
 {
   "lemma": "comissão",
-  "lemma_base": "comissão",
   "senses": [
     {
       "pt_roleset": "comissão.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_41b94af3166a4a1b",
+          "roleset": "commission.02",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "commission.02",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/commission.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "granter, agent",
-              "definition": "granter, agent"
-            },
-            {
-              "id": "Arg1",
-              "desc": "task",
-              "definition": "task"
-            },
-            {
-              "id": "Arg2",
-              "desc": "recipient",
-              "definition": "recipient"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "root": 1,
-              "nmod": 3,
-              "amod": 1
-            },
-            "Arg0": {
-              "nsubj": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/commission.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 822,
+          "id": "Arg0",
+          "desc": "granter, agent",
+          "definition": "granter, agent"
+        },
+        {
+          "id": "Arg1",
+          "desc": "task",
+          "definition": "task"
+        },
+        {
+          "id": "Arg2",
+          "desc": "recipient",
+          "definition": "recipient"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001746_SENT015::comissão::1",
           "sent_ID": "FOLHA_DOC001746_SENT015",
           "text": "Além da CCJ, o texto precisa passar pelo crivo de três comissões do Senado.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissões",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 64
-              }
-            ]
+            "char_start": 55,
+            "char_end": 64
           },
           "realization": {
             "Arg0": null,
@@ -77,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1598,
+          "instance_id": "FOLHA_DOC004115_SENT014::comissão::1",
           "sent_ID": "FOLHA_DOC004115_SENT014",
           "text": "O projeto deve ser enviado às comissões da Câmara na semana que vem.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissões",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 39
-              }
-            ]
+            "char_start": 30,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -111,29 +77,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5560,
+          "instance_id": "FOLHA_DOC002006_SENT015::comissão::1",
           "sent_ID": "FOLHA_DOC002006_SENT015",
           "text": "Na Câmara, uma comissão especial analisa um projeto de lei de 2015 do deputado Aureo (SD-RJ).",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 23
-              }
-            ]
+            "char_start": 15,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -145,44 +103,26 @@
             "Arg1": "root",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 33,
-                "char_end": 66,
-                "head_token_id": 8
+                "char_end": 66
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7189,
+          "instance_id": "FOLHA_DOC004065_SENT010::comissão::1",
           "sent_ID": "FOLHA_DOC004065_SENT010",
           "text": "A proposta já obteve pareceres favoráveis em comissões e ainda será votada no plenário.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissões",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 54
-              }
-            ]
+            "char_start": 45,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -194,29 +134,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7468,
+          "instance_id": "FOLHA_DOC000013_SENT009::comissão::1",
           "sent_ID": "FOLHA_DOC000013_SENT009",
           "text": "Após a operação Bullish, da Polícia Federal, apontar supostos favorecimentos no repasse de recursos à JBS, o banco montou uma comissão interna sobre o assunto, mas não encontrou desvios cometidos por funcionários.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 126,
-                "char_end": 134
-              }
-            ]
+            "char_start": 126,
+            "char_end": 134
           },
           "realization": {
             "Arg0": "o banco",
@@ -228,50 +160,31 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 107,
-                "char_end": 114,
-                "head_token_id": 24
+                "char_end": 114
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 143,
-                "char_end": 158,
-                "head_token_id": 31
+                "char_end": 158
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9186,
+          "instance_id": "FOLHA_DOC004014_SENT018::comissão::1",
           "sent_ID": "FOLHA_DOC004014_SENT018",
           "text": "Além disso, os últimos três participaram da comissão de avaliação do PNLD de 2015.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 52
-              }
-            ]
+            "char_start": 44,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -283,44 +196,26 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 53,
-                "char_end": 81,
-                "head_token_id": 13
+                "char_end": 81
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14535,
+          "instance_id": "FOLHA_DOC003033_SENT026::comissão::1",
           "sent_ID": "FOLHA_DOC003033_SENT026",
           "text": "De acordo com a lei Cidade Limpa, no entanto, mesmo instalações de esculturas e de arte pública necessitam de aprovação prévia da comissão de proteção à paisagem.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 130,
-                "char_end": 138
-              }
-            ]
+            "char_start": 130,
+            "char_end": 138
           },
           "realization": {
             "Arg0": null,
@@ -332,38 +227,26 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  29
-                ],
                 "char_start": 142,
-                "char_end": 150,
-                "head_token_id": 29
+                "char_end": 150
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14599,
+          "instance_id": "FOLHA_DOC000178_SENT012::comissão::1",
           "sent_ID": "FOLHA_DOC000178_SENT012",
           "text": "O inchaço das comissões técnicas é progressivo, em todo o mundo.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissões",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 23
-              }
-            ]
+            "char_start": 14,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -375,29 +258,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15375,
+          "instance_id": "FOLHA_DOC001751_SENT071::comissão::1",
           "sent_ID": "FOLHA_DOC001751_SENT071",
           "text": "Até uma das nossas atletas questionou o nosso coordenador da amizade que ele tinha com a outra comissão e não via essa relação com a nossa.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 103
-              }
-            ]
+            "char_start": 95,
+            "char_end": 103
           },
           "realization": {
             "Arg0": null,
@@ -409,29 +284,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15408,
+          "instance_id": "FOLHA_DOC002017_SENT028::comissão::1",
           "sent_ID": "FOLHA_DOC002017_SENT028",
           "text": "Na Câmara, um projeto de lei para colocar moedas digitais sob supervisão do Banco Central está sob análise de uma comissão especial desde 2015.",
-          "frame_id": "f_41b94af3166a4a1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comissão",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 114,
-                "char_end": 122
-              }
-            ]
+            "char_start": 114,
+            "char_end": 122
           },
           "realization": {
             "Arg0": null,
@@ -443,22 +310,28 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  25
-                ],
                 "char_start": 123,
-                "char_end": 131,
-                "head_token_id": 25
+                "char_end": 131
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "root": 1,
+          "nmod": 3,
+          "amod": 1
+        },
+        "Arg0": {
+          "nsubj": 1
+        }
+      }
     }
   ]
 }

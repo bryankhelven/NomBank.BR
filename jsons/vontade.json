@@ -1,76 +1,40 @@
 {
   "lemma": "vontade",
-  "lemma_base": "vontade",
   "senses": [
     {
       "pt_roleset": "vontade.12",
       "description": "desejo ou disposição de ânimo",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_98d1241933da9982",
-          "description": "desejo ou disposição de ânimo",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "desire.01",
-              "resource": "English NomBank",
-              "description": "want, crave",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/desire.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "titular da vontade",
-              "definition": "Quem deseja."
-            },
-            {
-              "id": "Arg1",
-              "desc": "coisa desejada",
-              "definition": "Ação/coisa pretendida."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 2,
-              "nmod": 1,
-              "det": 1,
-              "iobj": 1
-            },
-            "Arg1": {
-              "acl": 4,
-              "root": 1
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "desire.01",
+          "resource": "English NomBank",
+          "description": "want, crave",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/desire.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2505,
+          "id": "Arg0",
+          "desc": "titular da vontade",
+          "definition": "Quem deseja."
+        },
+        {
+          "id": "Arg1",
+          "desc": "coisa desejada",
+          "definition": "Ação/coisa pretendida."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000044_SENT019::vontade::1",
           "sent_ID": "FOLHA_DOC000044_SENT019",
           "text": "O nosso jovem-alvo é aquele que possui indicadores sociais desfavoráveis, mas também muita vontade de crescer.",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 91,
-                "char_end": 98
-              }
-            ]
+            "char_start": 91,
+            "char_end": 98
           },
           "realization": {
             "Arg0": "O nosso jovem-alvo",
@@ -80,24 +44,15 @@
             "Arg0": "nsubj",
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 18
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 99,
                 "char_end": 109
               }
@@ -105,22 +60,14 @@
           }
         },
         {
-          "instance_id": 2561,
+          "instance_id": "FOLHA_DOC003069_SENT029::vontade::1",
           "sent_ID": "FOLHA_DOC003069_SENT029",
           "text": "No início parece pouco, dá vontade de desistir, como já fez outras vezes.",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 34
-              }
-            ]
+            "char_start": 27,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -130,14 +77,10 @@
             "Arg0": null,
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 35,
                 "char_end": 46
               }
@@ -145,22 +88,14 @@
           }
         },
         {
-          "instance_id": 3906,
+          "instance_id": "FOLHA_DOC001194_SENT018::vontade::1",
           "sent_ID": "FOLHA_DOC001194_SENT018",
           "text": "E, claro, a vontade de cada um de participar.",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 19
-              }
-            ]
+            "char_start": 12,
+            "char_end": 19
           },
           "realization": {
             "Arg0": "de cada um",
@@ -170,24 +105,15 @@
             "Arg0": "nmod",
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 20,
                 "char_end": 30
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 31,
                 "char_end": 44
               }
@@ -195,22 +121,14 @@
           }
         },
         {
-          "instance_id": 7871,
+          "instance_id": "FOLHA_DOC002061_SENT024::vontade::1",
           "sent_ID": "FOLHA_DOC002061_SENT024",
           "text": "Minha vontade é dar um abraço e dizer que já passou.",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 13
-              }
-            ]
+            "char_start": 6,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "Minha",
@@ -220,28 +138,15 @@
             "Arg0": "det",
             "Arg1": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 5
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 16,
                 "char_end": 51
               }
@@ -249,22 +154,14 @@
           }
         },
         {
-          "instance_id": 9183,
+          "instance_id": "FOLHA_DOC003127_SENT009::vontade::1",
           "sent_ID": "FOLHA_DOC003127_SENT009",
           "text": "Os adultos que não quiserem passar vontade podem \"mergulhar\" em uma piscina com mais de 3.000 blocos de espuma.",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 42
-              }
-            ]
+            "char_start": 35,
+            "char_end": 42
           },
           "realization": {
             "Arg0": "Os adultos",
@@ -274,13 +171,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 10
               }
@@ -289,44 +182,28 @@
           }
         },
         {
-          "instance_id": 9264,
+          "instance_id": "FOLHA_DOC003176_SENT005::vontade::1",
           "sent_ID": "FOLHA_DOC003176_SENT005",
           "text": "A alternativa que me ficou foi acompanhar com má vontade as misérias da Lava Jato.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 56
-              }
-            ]
+            "char_start": 49,
+            "char_end": 56
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13403,
+          "instance_id": "FOLHA_DOC003188_SENT051::vontade::1",
           "sent_ID": "FOLHA_DOC003188_SENT051",
           "text": "E até hoje, quando vejo alguém sofrendo um surto psicótico, me dá vontade de dizer: \"Experimenta vitamina C\".",
-          "frame_id": "f_98d1241933da9982",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 73
-              }
-            ]
+            "char_start": 66,
+            "char_end": 73
           },
           "realization": {
             "Arg0": "me",
@@ -336,99 +213,71 @@
             "Arg0": "iobj",
             "Arg1": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13
-                ],
                 "char_start": 60,
                 "char_end": 62
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 74,
                 "char_end": 108
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 2,
+          "nmod": 1,
+          "det": 1,
+          "iobj": 1
+        },
+        "Arg1": {
+          "acl": 4,
+          "root": 1
+        }
+      }
     },
     {
       "pt_roleset": "vontade.12",
       "description": "desejo ou disposição de ânimo",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_289f961df624868e",
-          "description": "desejo ou disposição de ânimo",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agente/experienciador",
-              "definition": "agente/experienciador"
-            },
-            {
-              "id": "Arg1",
-              "desc": "estado `à vontade`",
-              "definition": "estado `à vontade`"
-            },
-            {
-              "id": "Arg2",
-              "desc": "atividade/ambiente",
-              "definition": "atividade/ambiente"
-            },
-            {
-              "id": "Arg3",
-              "desc": "grau,tempo ou contexto",
-              "definition": "grau,tempo ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj:pass": 1,
-              "cop": 1
-            },
-            "Arg3": {
-              "obl": 1
-            },
-            "Arg2": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "agente/experienciador",
+          "definition": "agente/experienciador"
+        },
+        {
+          "id": "Arg1",
+          "desc": "estado `à vontade`",
+          "definition": "estado `à vontade`"
+        },
+        {
+          "id": "Arg2",
+          "desc": "atividade/ambiente",
+          "definition": "atividade/ambiente"
+        },
+        {
+          "id": "Arg3",
+          "desc": "grau,tempo ou contexto",
+          "definition": "grau,tempo ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 9352,
+          "instance_id": "FOLHA_DOC003208_SENT072::vontade::1",
           "sent_ID": "FOLHA_DOC003208_SENT072",
           "text": "Em 11 de novembro, mais de 30 marcas de IPAs são disponibilizadas à vontade (para quem pagar o ingresso, por R$ 210), além de barracas gastronômicas e shows o dia inteiro.",
-          "frame_id": "f_289f961df624868e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 75
-              }
-            ]
+            "char_start": 68,
+            "char_end": 75
           },
           "realization": {
             "Arg0": "mais de 30 marcas de IPAs",
@@ -442,57 +291,32 @@
             "Arg2": null,
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 19,
-                "char_end": 44,
-                "head_token_id": 9
+                "char_end": 44
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 77,
-                "char_end": 103,
-                "head_token_id": 19
+                "char_end": 103
               }
             ]
           }
         },
         {
-          "instance_id": 15144,
+          "instance_id": "FOLHA_DOC003124_SENT009::vontade::1",
           "sent_ID": "FOLHA_DOC003124_SENT009",
           "text": "Sei que carne atualmente é um tema delicado, mas como falo de comida e não de política estou à vontade.",
-          "frame_id": "f_289f961df624868e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 102
-              }
-            ]
+            "char_start": 95,
+            "char_end": 102
           },
           "realization": {
             "Arg0": "estou",
@@ -506,92 +330,73 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19
-                ],
                 "char_start": 87,
-                "char_end": 92,
-                "head_token_id": 19
+                "char_end": 92
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14
-                ],
                 "char_start": 62,
-                "char_end": 68,
-                "head_token_id": 14
+                "char_end": 68
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj:pass": 1,
+          "cop": 1
+        },
+        "Arg3": {
+          "obl": 1
+        },
+        "Arg2": {
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "vontade.10",
       "description": "propensão natural e mais ou menos irresistível para a prática de certo ato",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 11061,
+          "instance_id": "FOLHA_DOC001618_SENT015::vontade::1",
           "sent_ID": "FOLHA_DOC001618_SENT015",
           "text": "Má a ponto de dar vontade de bater na atriz, se cruzar com ela no supermercado.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 25
-              }
-            ]
+            "char_start": 18,
+            "char_end": 25
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13611,
+          "instance_id": "FOLHA_DOC001607_SENT040::vontade::1",
           "sent_ID": "FOLHA_DOC001607_SENT040",
           "text": "A vontade de polemizar invariavelmente afeta as (boas) ideias do colunista.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "vontade",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

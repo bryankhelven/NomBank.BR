@@ -1,72 +1,45 @@
 {
   "lemma": "treinador",
-  "lemma_base": "treinador",
   "senses": [
     {
       "pt_roleset": "treinador · acepção 1",
       "description": "1 profissional que treina ou dirige treino esportivo: fui enganado pelo treinador do time da universidade (PLA); dois competentes treinadores (TAF)",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_723a889646169526",
-          "description": "1 profissional que treina ou dirige treino esportivo: fui enganado pelo treinador do time da universidade (PLA); dois competentes treinadores (TAF)",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "trainer.01",
-              "resource": "English NomBank",
-              "description": "teach a skill",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trainer.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "pessoa que treina independentemente de REL",
-              "definition": "pessoa que treina independentemente de REL"
-            },
-            {
-              "id": "Arg1",
-              "desc": "habilidade/modalidade ensinada",
-              "definition": "habilidade/modalidade ensinada"
-            },
-            {
-              "id": "Arg2",
-              "desc": "pessoa/grupo treinado, não apenas pessoa que contrata",
-              "definition": "pessoa/grupo treinado, não apenas pessoa que contrata"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nsubj": 2,
-              "nmod": 2
-            },
-            "Arg0": {
-              "nsubj": 1,
-              "nmod": 1,
-              "appos": 1
-            }
-          }
+          "roleset": "trainer.01",
+          "resource": "English NomBank",
+          "description": "teach a skill",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trainer.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1804,
+          "id": "Arg0",
+          "desc": "pessoa que treina independentemente de REL",
+          "definition": "pessoa que treina independentemente de REL"
+        },
+        {
+          "id": "Arg1",
+          "desc": "habilidade/modalidade ensinada",
+          "definition": "habilidade/modalidade ensinada"
+        },
+        {
+          "id": "Arg2",
+          "desc": "pessoa/grupo treinado, não apenas pessoa que contrata",
+          "definition": "pessoa/grupo treinado, não apenas pessoa que contrata"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000042_SENT014::treinador::1",
           "sent_ID": "FOLHA_DOC000042_SENT014",
           "text": "Mas temos o mesmo tipo de individualidade, disse o treinador nascido na Argentina.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 60
-              }
-            ]
+            "char_start": 51,
+            "char_end": 60
           },
           "realization": {
             "Arg0": null,
@@ -78,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2178,
+          "instance_id": "FOLHA_DOC003018_SENT035::treinador::1",
           "sent_ID": "FOLHA_DOC003018_SENT035",
           "text": "Há quase dois anos, elas contam a história de atletas, treinadoras, árbitras e dirigentes esportivas por meio de entrevistas em podcasts semanais.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinadoras",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 66
-              }
-            ]
+            "char_start": 55,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -112,29 +77,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2966,
+          "instance_id": "FOLHA_DOC003159_SENT004::treinador::1",
           "sent_ID": "FOLHA_DOC003159_SENT004",
           "text": "Quando apresentado como sucessor de Rogério Ceni em 10 de julho, o treinador disse que a equipe disputava um campeonato à parte.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 76
-              }
-            ]
+            "char_start": 67,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -146,15 +103,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 87,
                 "char_end": 95
               }
@@ -162,22 +115,14 @@
           }
         },
         {
-          "instance_id": 3270,
+          "instance_id": "FOLHA_DOC000008_SENT008::treinador::1",
           "sent_ID": "FOLHA_DOC000008_SENT008",
           "text": "Eu cobiço o que a Alemanha tem, que consegue deixar tanto tempo um treinador para trabalhar, afirmou Tite.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 76
-              }
-            ]
+            "char_start": 67,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -189,29 +134,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6153,
+          "instance_id": "FOLHA_DOC003206_SENT007::treinador::1",
           "sent_ID": "FOLHA_DOC003206_SENT007",
           "text": "Quem ouviu julgou que o treinador estava perdido e isto ajudou na demissão.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 33
-              }
-            ]
+            "char_start": 24,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -223,29 +160,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6546,
+          "instance_id": "FOLHA_DOC000008_SENT005::treinador::1",
           "sent_ID": "FOLHA_DOC000008_SENT005",
           "text": "O treinador ainda coleciona mais duas vitórias e uma derrota em jogos amistosos.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -257,29 +186,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6832,
+          "instance_id": "FOLHA_DOC003320_SENT026::treinador::1",
           "sent_ID": "FOLHA_DOC003320_SENT026",
           "text": "Dos 20 clubes da liga inglesa, 14 têm treinadores de fora do Reino Unido.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinadores",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 38,
-                "char_end": 49
-              }
-            ]
+            "char_start": 38,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -291,29 +212,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7463,
+          "instance_id": "FOLHA_DOC002075_SENT020::treinador::1",
           "sent_ID": "FOLHA_DOC002075_SENT020",
           "text": "O São Paulo se dispôs a uma marcação, o Corinthians teve poucas infiltrações, definiu o treinador.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 97
-              }
-            ]
+            "char_start": 88,
+            "char_end": 97
           },
           "realization": {
             "Arg0": null,
@@ -325,29 +238,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8050,
+          "instance_id": "FOLHA_DOC002034_SENT023::treinador::1",
           "sent_ID": "FOLHA_DOC002034_SENT023",
           "text": "Matheus comentava em roda de amigos e com um dos principais treinadores da carreira o desejo de partir para uma pós-graduação na Austrália.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinadores",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 71
-              }
-            ]
+            "char_start": 60,
+            "char_end": 71
           },
           "realization": {
             "Arg0": null,
@@ -359,14 +264,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
@@ -374,22 +276,14 @@
           }
         },
         {
-          "instance_id": 8368,
+          "instance_id": "FOLHA_DOC000008_SENT017::treinador::1",
           "sent_ID": "FOLHA_DOC000008_SENT017",
           "text": "Os outros vão colher o fruto do trabalho que fizeram, disse o treinador.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 71
-              }
-            ]
+            "char_start": 62,
+            "char_end": 71
           },
           "realization": {
             "Arg0": null,
@@ -401,29 +295,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9069,
+          "instance_id": "FOLHA_DOC000034_SENT024::treinador::1",
           "sent_ID": "FOLHA_DOC000034_SENT024",
           "text": "O conflito foi normal, foi até bom para os treinadores que querem assumir a responsabilidade.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinadores",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 54
-              }
-            ]
+            "char_start": 43,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -435,29 +321,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9420,
+          "instance_id": "FOLHA_DOC003207_SENT022::treinador::1",
           "sent_ID": "FOLHA_DOC003207_SENT022",
           "text": "Valdir Joaquim de Moraes, treinador de goleiros, mapeou o jeito deles baterem.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 35
-              }
-            ]
+            "char_start": 26,
+            "char_end": 35
           },
           "realization": {
             "Arg0": "Valdir Joaquim de Moraes",
@@ -469,15 +347,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 0,
                 "char_end": 24
               }
@@ -485,10 +357,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 36,
                 "char_end": 47
               }
@@ -496,22 +364,14 @@
           }
         },
         {
-          "instance_id": 10792,
+          "instance_id": "FOLHA_DOC000088_SENT010::treinador::1",
           "sent_ID": "FOLHA_DOC000088_SENT010",
           "text": "Entre Bielsa e Sampaoli, teve o também argentino Claudio Borghi como treinador, sem sucesso.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 78
-              }
-            ]
+            "char_start": 69,
+            "char_end": 78
           },
           "realization": {
             "Arg0": "Claudio Borghi",
@@ -523,13 +383,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 49,
                 "char_end": 63
               }
@@ -539,22 +395,14 @@
           }
         },
         {
-          "instance_id": 13069,
+          "instance_id": "FOLHA_DOC003018_SENT036::treinador::1",
           "sent_ID": "FOLHA_DOC003018_SENT036",
           "text": "Já participaram a treinadora da seleção brasileira, Emily Lima, a meio-campista Formiga e a atacante Cristiane.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinadora",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 28
-              }
-            ]
+            "char_start": 18,
+            "char_end": 28
           },
           "realization": {
             "Arg0": "Emily Lima",
@@ -566,13 +414,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 52,
                 "char_end": 62
               }
@@ -580,12 +424,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 29,
                 "char_end": 50
               }
@@ -593,22 +431,14 @@
           }
         },
         {
-          "instance_id": 13577,
+          "instance_id": "FOLHA_DOC000042_SENT023::treinador::1",
           "sent_ID": "FOLHA_DOC000042_SENT023",
           "text": "O treinador sabe que sua reputação está em jogo.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -620,29 +450,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14057,
+          "instance_id": "FOLHA_DOC003101_SENT023::treinador::1",
           "sent_ID": "FOLHA_DOC003101_SENT023",
           "text": "O treinador afirmou que antes de definir quem vai atuar fará uma consulta ao departamento médico.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -654,29 +476,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14796,
+          "instance_id": "FOLHA_DOC001114_SENT008::treinador::1",
           "sent_ID": "FOLHA_DOC001114_SENT008",
           "text": "Quando falo que problemas não me faltam, disse o treinador.",
-          "frame_id": "f_723a889646169526",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "treinador",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 58
-              }
-            ]
+            "char_start": 49,
+            "char_end": 58
           },
           "realization": {
             "Arg0": null,
@@ -688,13 +502,24 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nsubj": 2,
+          "nmod": 2
+        },
+        "Arg0": {
+          "nsubj": 1,
+          "nmod": 1,
+          "appos": 1
+        }
+      }
     }
   ]
 }

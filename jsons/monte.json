@@ -1,61 +1,40 @@
 {
   "lemma": "monte",
-  "lemma_base": "monte",
   "senses": [
     {
       "pt_roleset": "monte.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_ecb8ea449b18a64b",
+          "roleset": "lot.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "lot.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/lot.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "quantified",
-              "definition": "quantified"
-            },
-            {
-              "id": "Arg3",
-              "desc": "secondary theme",
-              "definition": "secondary theme"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 2
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/lot.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2869,
+          "id": "Arg1",
+          "desc": "quantified",
+          "definition": "quantified"
+        },
+        {
+          "id": "Arg3",
+          "desc": "secondary theme",
+          "definition": "secondary theme"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003069_SENT007::monte::1",
           "sent_ID": "FOLHA_DOC003069_SENT007",
           "text": "Aliás, nem sente falta, descobriu um monte de coisa esquecida no armário, encontrada na organização do guarda-roupa.",
-          "frame_id": "f_ecb8ea449b18a64b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "monte",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 42
-              }
-            ]
+            "char_start": 37,
+            "char_end": 42
           },
           "realization": {
             "Arg1": "de coisa esquecida no armário",
@@ -65,42 +44,25 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 43,
-                "char_end": 72,
-                "head_token_id": 11
+                "char_end": 72
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 9287,
+          "instance_id": "FOLHA_DOC001578_SENT020::monte::1",
           "sent_ID": "FOLHA_DOC001578_SENT020",
           "text": "Enquanto não houver uma fiscalização que consiga dar conta desse monte de queimadas, a gente vai lidar com incêndios florestais.",
-          "frame_id": "f_ecb8ea449b18a64b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "monte",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 65,
-                "char_end": 70
-              }
-            ]
+            "char_start": 65,
+            "char_end": 70
           },
           "realization": {
             "Arg1": "de queimadas",
@@ -110,22 +72,22 @@
             "Arg1": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 71,
-                "char_end": 83,
-                "head_token_id": 14
+                "char_end": 83
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 2
+        }
+      }
     }
   ]
 }

@@ -1,73 +1,45 @@
 {
   "lemma": "sugestão",
-  "lemma_base": "sugestão",
   "senses": [
     {
       "pt_roleset": "sugestão.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_55d5865dc0605914",
+          "roleset": "suggestion.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "suggestion.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/suggestion.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "sayer",
-              "definition": "sayer"
-            },
-            {
-              "id": "Arg2",
-              "desc": "utterance (suggestion)",
-              "definition": "utterance (suggestion)"
-            },
-            {
-              "id": "Arg3",
-              "desc": "hearer",
-              "definition": "hearer"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 4,
-              "nsubj": 1,
-              "advcl": 1
-            },
-            "Arg1": {
-              "nsubj": 1,
-              "nmod": 1,
-              "root": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/suggestion.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1353,
+          "id": "Arg1",
+          "desc": "sayer",
+          "definition": "sayer"
+        },
+        {
+          "id": "Arg2",
+          "desc": "utterance (suggestion)",
+          "definition": "utterance (suggestion)"
+        },
+        {
+          "id": "Arg3",
+          "desc": "hearer",
+          "definition": "hearer"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003035_SENT152::sugestão::1",
           "sent_ID": "FOLHA_DOC003035_SENT152",
           "text": "No meu, não há sugestão de captação de voz nem direcionamento de delação nem orientação do que fazer.",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestão",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 23
-              }
-            ]
+            "char_start": 15,
+            "char_end": 23
           },
           "realization": {
             "Arg1": null,
@@ -79,41 +51,26 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 24,
-                "char_end": 42,
-                "head_token_id": 9
+                "char_end": 42
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 3520,
+          "instance_id": "FOLHA_DOC004061_SENT006::sugestão::1",
           "sent_ID": "FOLHA_DOC004061_SENT006",
           "text": "Eles colocaram como sugestões, mas é fora de qualquer propósito, ainda mais a Uerj que é uma universidade de excelência.",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestões",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 29
-              }
-            ]
+            "char_start": 20,
+            "char_end": 29
           },
           "realization": {
             "Arg1": "Eles",
@@ -125,15 +82,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 4,
-                "head_token_id": 1
+                "char_end": 4
               }
             ],
             "Arg2": [],
@@ -141,22 +94,14 @@
           }
         },
         {
-          "instance_id": 6701,
+          "instance_id": "FOLHA_DOC000061_SENT024::sugestão::1",
           "sent_ID": "FOLHA_DOC000061_SENT024",
           "text": "Entre as sugestões dos pesquisadores, está, por exemplo, a formulação de contratos de trabalho nos quais a adesão a planos de pensão seja a escolha padrão.",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 18
-              }
-            ]
+            "char_start": 9,
+            "char_end": 18
           },
           "realization": {
             "Arg1": "dos pesquisadores",
@@ -168,54 +113,31 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 19,
-                "char_end": 36,
-                "head_token_id": 6
+                "char_end": 36
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 57,
-                "char_end": 94,
-                "head_token_id": 14
+                "char_end": 94
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 8700,
+          "instance_id": "FOLHA_DOC004017_SENT008::sugestão::1",
           "sent_ID": "FOLHA_DOC004017_SENT008",
           "text": "Se a sugestão virar lei, cria-se um novo empecilho à coalizão opositora Mesa de Unidade Democrática (MUD).",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestão",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 13
-              }
-            ]
+            "char_start": 5,
+            "char_end": 13
           },
           "realization": {
             "Arg1": null,
@@ -227,39 +149,26 @@
             "Arg2": "advcl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5
-                ],
                 "char_start": 14,
-                "char_end": 23,
-                "head_token_id": 4
+                "char_end": 23
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 12787,
+          "instance_id": "FOLHA_DOC003197_SENT002::sugestão::1",
           "sent_ID": "FOLHA_DOC003197_SENT002",
           "text": "Veja abaixo sugestões de programas na cidade de São Paulo para curtir a semana que vai de domingo (17) a sábado (23).",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 21
-              }
-            ]
+            "char_start": 12,
+            "char_end": 21
           },
           "realization": {
             "Arg1": null,
@@ -271,45 +180,26 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 22,
-                "char_end": 57,
-                "head_token_id": 5
+                "char_end": 57
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 13680,
+          "instance_id": "FOLHA_DOC003208_SENT065::sugestão::1",
           "sent_ID": "FOLHA_DOC003208_SENT065",
           "text": "Além de conhecer as dependências da fábrica, o visitante pode tomar cinco opções de chope, com sugestões como a rauchbier, a altbier, a helles e a weizen... quase que direto do barril.",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestões",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 104
-              }
-            ]
+            "char_start": 95,
+            "char_end": 104
           },
           "realization": {
             "Arg1": null,
@@ -321,47 +211,26 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  25,
-                  26,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 105,
-                "char_end": 153,
-                "head_token_id": 23
+                "char_end": 153
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 15681,
+          "instance_id": "FOLHA_DOC000112_SENT014::sugestão::1",
           "sent_ID": "FOLHA_DOC000112_SENT014",
           "text": "E também de colaboradores dispostos a dar sugestões para a elaboração de sua plataforma eleitoral.",
-          "frame_id": "f_55d5865dc0605914",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sugestões",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 51
-              }
-            ]
+            "char_start": 42,
+            "char_end": 51
           },
           "realization": {
             "Arg1": "de colaboradores",
@@ -373,38 +242,35 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 9,
-                "char_end": 25,
-                "head_token_id": 4
+                "char_end": 25
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 52,
-                "char_end": 97,
-                "head_token_id": 11
+                "char_end": 97
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 4,
+          "nsubj": 1,
+          "advcl": 1
+        },
+        "Arg1": {
+          "nsubj": 1,
+          "nmod": 1,
+          "root": 1
+        }
+      }
     }
   ]
 }

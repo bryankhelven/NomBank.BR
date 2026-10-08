@@ -1,81 +1,45 @@
 {
   "lemma": "adversário",
-  "lemma_base": "adversário",
   "senses": [
     {
       "pt_roleset": "adversário.01",
       "description": "antagonista; concorrente; contendor; êmulo",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_59ded58592832bf7",
-          "description": "antagonista; concorrente; contendor; êmulo",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "opponent.01",
-              "resource": "English NomBank",
-              "description": "oppose, object to",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/opponent.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "oponente identificado independentemente de REL",
-              "definition": "oponente identificado independentemente de REL"
-            },
-            {
-              "id": "Arg1",
-              "desc": "questão/atividade disputada, não qualquer avaliação",
-              "definition": "questão/atividade disputada, não qualquer avaliação"
-            },
-            {
-              "id": "Arg2",
-              "desc": "contraparte a quem se opõe, não adversário REL copiado",
-              "definition": "contraparte a quem se opõe, não adversário REL copiado"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obj": 2,
-              "nsubj": 1,
-              "acl": 1,
-              "conj": 1,
-              "nmod": 3,
-              "obl:agent": 1,
-              "appos": 1
-            },
-            "Arg2": {
-              "nsubj": 4,
-              "nmod": 7,
-              "det": 2
-            },
-            "Arg1": {
-              "amod": 2,
-              "nmod": 2
-            }
-          }
+          "roleset": "opponent.01",
+          "resource": "English NomBank",
+          "description": "oppose, object to",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/opponent.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 530,
+          "id": "Arg0",
+          "desc": "oponente identificado independentemente de REL",
+          "definition": "oponente identificado independentemente de REL"
+        },
+        {
+          "id": "Arg1",
+          "desc": "questão/atividade disputada, não qualquer avaliação",
+          "definition": "questão/atividade disputada, não qualquer avaliação"
+        },
+        {
+          "id": "Arg2",
+          "desc": "contraparte a quem se opõe, não adversário REL copiado",
+          "definition": "contraparte a quem se opõe, não adversário REL copiado"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003272_SENT034::adversário::1",
           "sent_ID": "FOLHA_DOC003272_SENT034",
           "text": "Tudo para dividir, para enxergar o próximo como adversário: é Fla-Flu, Palmeiras versus Corinthians.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 58
-              }
-            ]
+            "char_start": 48,
+            "char_end": 58
           },
           "realization": {
             "Arg0": "o próximo",
@@ -87,13 +51,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 33,
                 "char_end": 42
               }
@@ -103,22 +63,14 @@
           }
         },
         {
-          "instance_id": 1334,
+          "instance_id": "FOLHA_DOC004017_SENT015::adversário::1",
           "sent_ID": "FOLHA_DOC004017_SENT015",
           "text": "Para o mandatário, as reuniões na Europa provam que o adversário deve ser condenado por traição à pátria.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 64
-              }
-            ]
+            "char_start": 54,
+            "char_end": 64
           },
           "realization": {
             "Arg0": null,
@@ -130,29 +82,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1925,
+          "instance_id": "FOLHA_DOC003261_SENT008::adversário::1",
           "sent_ID": "FOLHA_DOC003261_SENT008",
           "text": "Em outubro e novembro, o São Paulo levará os adversários para o Pacaembu.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 56
-              }
-            ]
+            "char_start": 45,
+            "char_end": 56
           },
           "realization": {
             "Arg0": null,
@@ -164,16 +108,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 23,
                 "char_end": 34
               }
@@ -181,22 +120,14 @@
           }
         },
         {
-          "instance_id": 2604,
+          "instance_id": "FOLHA_DOC003023_SENT030::adversário::1",
           "sent_ID": "FOLHA_DOC003023_SENT030",
           "text": "São 24 rodadas e, em metade, o líder teve mais posse de bola do que o adversário.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 80
-              }
-            ]
+            "char_start": 70,
+            "char_end": 80
           },
           "realization": {
             "Arg0": null,
@@ -208,15 +139,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 29,
                 "char_end": 36
               }
@@ -224,22 +151,14 @@
           }
         },
         {
-          "instance_id": 3001,
+          "instance_id": "FOLHA_DOC003058_SENT006::adversário::1",
           "sent_ID": "FOLHA_DOC003058_SENT006",
           "text": "Adversário de sua sucessora, ele alega que não foi convidado para a posse.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Adversário",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 10
-              }
-            ]
+            "char_start": 0,
+            "char_end": 10
           },
           "realization": {
             "Arg0": "ele",
@@ -251,12 +170,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 29,
                 "char_end": 32
               }
@@ -264,11 +180,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 11,
                 "char_end": 27
               }
@@ -276,22 +187,14 @@
           }
         },
         {
-          "instance_id": 3618,
+          "instance_id": "FOLHA_DOC000073_SENT003::adversário::1",
           "sent_ID": "FOLHA_DOC000073_SENT003",
           "text": "A rivalidade explica, além do medo de enfrentá-la por se tratar de adversário duro de roer.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 77
-              }
-            ]
+            "char_start": 67,
+            "char_end": 77
           },
           "realization": {
             "Arg0": "enfrentá-la",
@@ -303,13 +206,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 38,
                 "char_end": 49
               }
@@ -319,22 +218,14 @@
           }
         },
         {
-          "instance_id": 3724,
+          "instance_id": "FOLHA_DOC003035_SENT108::adversário::1",
           "sent_ID": "FOLHA_DOC003035_SENT108",
           "text": "O primeiro, sobre a reunião informal com o Anselmo, o ex-sócio da Eldorado, Mário Celso [adversário de Joesley Batista], o filho dele e eu.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 99
-              }
-            ]
+            "char_start": 89,
+            "char_end": 99
           },
           "realization": {
             "Arg0": "Mário Celso",
@@ -346,13 +237,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  18,
-                  19
-                ],
                 "char_start": 76,
                 "char_end": 87
               }
@@ -360,11 +247,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 100,
                 "char_end": 118
               }
@@ -372,22 +254,14 @@
           }
         },
         {
-          "instance_id": 3777,
+          "instance_id": "FOLHA_DOC004017_SENT004::adversário::1",
           "sent_ID": "FOLHA_DOC004017_SENT004",
           "text": "A declaração é uma referência a seus adversários, que não reconhecem a Casa chavista e a consideram uma fraude.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 48
-              }
-            ]
+            "char_start": 37,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -399,14 +273,11 @@
             "Arg1": null,
             "Arg2": "det"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 32,
                 "char_end": 36
               }
@@ -414,22 +285,14 @@
           }
         },
         {
-          "instance_id": 4636,
+          "instance_id": "FOLHA_DOC003035_SENT042::adversário::1",
           "sent_ID": "FOLHA_DOC003035_SENT042",
           "text": "Janot interpretou que eu havia mudado de lado também para apoiar a Raquel Dodge, a principal e mais importante adversária política dele.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversária",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 111,
-                "char_end": 121
-              }
-            ]
+            "char_start": 111,
+            "char_end": 121
           },
           "realization": {
             "Arg0": "a Raquel Dodge",
@@ -441,33 +304,21 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 65,
                 "char_end": 79
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  22
-                ],
                 "char_start": 122,
                 "char_end": 130
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 131,
                 "char_end": 135
               }
@@ -475,22 +326,14 @@
           }
         },
         {
-          "instance_id": 6467,
+          "instance_id": "FOLHA_DOC000095_SENT004::adversário::1",
           "sent_ID": "FOLHA_DOC000095_SENT004",
           "text": "Isso não significa, como seus adversários comemoraram, o ensacamento de sua viola.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 41
-              }
-            ]
+            "char_start": 30,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -502,14 +345,11 @@
             "Arg1": null,
             "Arg2": "det"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 25,
                 "char_end": 29
               }
@@ -517,22 +357,14 @@
           }
         },
         {
-          "instance_id": 8195,
+          "instance_id": "FOLHA_DOC003159_SENT002::adversário::1",
           "sent_ID": "FOLHA_DOC003159_SENT002",
           "text": "Em sua luta para se livrar da zona de rebaixamento do Brasileiro, São Paulo tem fracassado justamente contra os adversários que mais precisava vencer.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 112,
-                "char_end": 123
-              }
-            ]
+            "char_start": 112,
+            "char_end": 123
           },
           "realization": {
             "Arg0": null,
@@ -544,15 +376,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 66,
                 "char_end": 75
               }
@@ -560,22 +388,14 @@
           }
         },
         {
-          "instance_id": 8230,
+          "instance_id": "FOLHA_DOC003058_SENT020::adversário::1",
           "sent_ID": "FOLHA_DOC003058_SENT020",
           "text": "Enquanto adversários apostam que a nova gestão pode diminuir o ritmo das investigações, aliados da procuradora-geral defendem que seu estilo discreto não é nada incompatível com um comportamento \"linha dura\".",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 20
-              }
-            ]
+            "char_start": 9,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -587,29 +407,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10756,
+          "instance_id": "FOLHA_DOC003023_SENT034::adversário::1",
           "sent_ID": "FOLHA_DOC003023_SENT034",
           "text": "O Corinthians correu risco de sofrer gol do Vasco, na primeira etapa, embora tenha trocado mais passes, empurrado o adversário para seu campo de defesa.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 116,
-                "char_end": 126
-              }
-            ]
+            "char_start": 116,
+            "char_end": 126
           },
           "realization": {
             "Arg0": "do Vasco",
@@ -621,14 +433,9 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 41,
                 "char_end": 49
               }
@@ -636,10 +443,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 13
               }
@@ -647,22 +450,14 @@
           }
         },
         {
-          "instance_id": 10809,
+          "instance_id": "FOLHA_DOC001053_SENT027::adversário::1",
           "sent_ID": "FOLHA_DOC001053_SENT027",
           "text": "Porém, o objetivo é não se desgarrar das adversárias.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversárias",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 52
-              }
-            ]
+            "char_start": 41,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -674,29 +469,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11995,
+          "instance_id": "FOLHA_DOC002075_SENT012::adversário::1",
           "sent_ID": "FOLHA_DOC002075_SENT012",
           "text": "É a segunda rodada seguida que adversários do Corinthians reclamam da arbitragem.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversários",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 42
-              }
-            ]
+            "char_start": 31,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -708,16 +495,11 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 43,
                 "char_end": 57
               }
@@ -725,22 +507,14 @@
           }
         },
         {
-          "instance_id": 12048,
+          "instance_id": "FOLHA_DOC003058_SENT017::adversário::1",
           "sent_ID": "FOLHA_DOC003058_SENT017",
           "text": "Seu nome teria sido costurado no Planalto pelo ministro Gilmar Mendes (STF), adversário declarado de Janot.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 87
-              }
-            ]
+            "char_start": 77,
+            "char_end": 87
           },
           "realization": {
             "Arg0": "pelo ministro Gilmar Mendes (STF)",
@@ -752,19 +526,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 42,
                 "char_end": 75
               }
@@ -772,10 +536,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 98,
                 "char_end": 106
               }
@@ -783,22 +543,14 @@
           }
         },
         {
-          "instance_id": 12221,
+          "instance_id": "FOLHA_DOC000100_SENT057::adversário::1",
           "sent_ID": "FOLHA_DOC000100_SENT057",
           "text": "Basta combinar com o adversário para que o jogo tenha mais de seis substituições.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 31
-              }
-            ]
+            "char_start": 21,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -810,29 +562,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12482,
+          "instance_id": "FOLHA_DOC003082_SENT006::adversário::1",
           "sent_ID": "FOLHA_DOC003082_SENT006",
           "text": "A própria comparação com o líder Corinthians, adversário da próxima rodada, mostra o problema defensivo da equipe.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 56
-              }
-            ]
+            "char_start": 46,
+            "char_end": 56
           },
           "realization": {
             "Arg0": "o líder Corinthians",
@@ -844,14 +588,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 25,
                 "char_end": 44
               }
@@ -861,22 +600,14 @@
           }
         },
         {
-          "instance_id": 13228,
+          "instance_id": "FOLHA_DOC003013_SENT005::adversário::1",
           "sent_ID": "FOLHA_DOC003013_SENT005",
           "text": "A Lava Jato, na visão de aliados, é marca da gestão anterior, de Rodrigo Janot, adversário de Dodge na PGR.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 90
-              }
-            ]
+            "char_start": 80,
+            "char_end": 90
           },
           "realization": {
             "Arg0": "de Rodrigo Janot",
@@ -888,35 +619,21 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 62,
                 "char_end": 78
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 100,
                 "char_end": 106
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 91,
                 "char_end": 99
               }
@@ -924,22 +641,14 @@
           }
         },
         {
-          "instance_id": 13723,
+          "instance_id": "FOLHA_DOC003141_SENT018::adversário::1",
           "sent_ID": "FOLHA_DOC003141_SENT018",
           "text": "O distanciamento em relação a Temer é também uma estratégia de Alckmin para se diferenciar de seu adversário interno no PSDB, o prefeito paulistano João Doria, que optou pelo antipetismo.",
-          "frame_id": "f_59ded58592832bf7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "adversário",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 108
-              }
-            ]
+            "char_start": 98,
+            "char_end": 108
           },
           "realization": {
             "Arg0": "o prefeito paulistano João Doria",
@@ -954,45 +663,48 @@
             ],
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 126,
                 "char_end": 158
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 109,
                 "char_end": 124
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 60,
                 "char_end": 70
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obj": 2,
+          "nsubj": 1,
+          "acl": 1,
+          "conj": 1,
+          "nmod": 3,
+          "obl:agent": 1,
+          "appos": 1
+        },
+        "Arg2": {
+          "nsubj": 4,
+          "nmod": 7,
+          "det": 2
+        },
+        "Arg1": {
+          "amod": 2,
+          "nmod": 2
+        }
+      }
     }
   ]
 }

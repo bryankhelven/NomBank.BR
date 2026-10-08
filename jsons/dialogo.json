@@ -1,73 +1,45 @@
 {
   "lemma": "diálogo",
-  "lemma_base": "diálogo",
   "senses": [
     {
       "pt_roleset": "diálogo · acepção 1",
       "description": "1 conversa entre duas pessoas; discussão: [os detratores) já iniciaram o diálogo com o interventor (CB); O diálogo fora rápido, quase um atropelo de frases (A) ★ [Abs- trato de estado]",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_b9878679e1fb2f75",
-          "description": "1 conversa entre duas pessoas; discussão: [os detratores) já iniciaram o diálogo com o interventor (CB); O diálogo fora rápido, quase um atropelo de frases (A) ★ [Abs- trato de estado]",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "dialogue.01",
-              "resource": "English NomBank",
-              "description": "talk about",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/dialogue.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "interlocutor iniciador ou grupo conjunto de interlocutores conforme exemplo original",
-              "definition": "interlocutor iniciador ou grupo conjunto de interlocutores conforme exemplo original"
-            },
-            {
-              "id": "Arg1",
-              "desc": "assunto discutido",
-              "definition": "assunto discutido"
-            },
-            {
-              "id": "Arg2",
-              "desc": "contraparte independente quando há direção discursiva identificável",
-              "definition": "contraparte independente quando há direção discursiva identificável"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 3,
-              "nsubj": 3
-            },
-            "Arg2": {
-              "nmod": 4
-            },
-            "Arg1": {
-              "obj": 1
-            }
-          }
+          "roleset": "dialogue.01",
+          "resource": "English NomBank",
+          "description": "talk about",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/dialogue.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 913,
+          "id": "Arg0",
+          "desc": "interlocutor iniciador ou grupo conjunto de interlocutores conforme exemplo original",
+          "definition": "interlocutor iniciador ou grupo conjunto de interlocutores conforme exemplo original"
+        },
+        {
+          "id": "Arg1",
+          "desc": "assunto discutido",
+          "definition": "assunto discutido"
+        },
+        {
+          "id": "Arg2",
+          "desc": "contraparte independente quando há direção discursiva identificável",
+          "definition": "contraparte independente quando há direção discursiva identificável"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000291_SENT012::diálogo::1",
           "sent_ID": "FOLHA_DOC000291_SENT012",
           "text": "Vestidos de branco e sem bandeiras, o grupo pedia \"um diálogo antes que nos percamos\", como disse Yurena Díaz, 36, médica.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 61
-              }
-            ]
+            "char_start": 54,
+            "char_end": 61
           },
           "realization": {
             "Arg0": null,
@@ -79,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2618,
+          "instance_id": "FOLHA_DOC003039_SENT018::diálogo::1",
           "sent_ID": "FOLHA_DOC003039_SENT018",
           "text": "O diálogo entre Paris e Berlim entrará em uma nova fase com a reeleição de Merkel, hoje apontada por todas as pesquisas de opinião.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg0": "entre Paris e Berlim",
@@ -113,15 +77,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 10,
                 "char_end": 30
               }
@@ -131,22 +89,14 @@
           }
         },
         {
-          "instance_id": 3290,
+          "instance_id": "FOLHA_DOC003058_SENT031::diálogo::1",
           "sent_ID": "FOLHA_DOC003058_SENT031",
           "text": "Sobre a relação com a PF, sua assessoria diz que a PGR vai se basear em \"diálogo, respeito mútuo, valorização do trabalho de investigação da polícia e cooperação\".",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 80
-              }
-            ]
+            "char_start": 73,
+            "char_end": 80
           },
           "realization": {
             "Arg0": "a PGR",
@@ -158,13 +108,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 49,
                 "char_end": 54
               }
@@ -172,11 +118,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 16,
                 "char_end": 24
               }
@@ -184,22 +125,14 @@
           }
         },
         {
-          "instance_id": 3422,
+          "instance_id": "FOLHA_DOC004062_SENT023::diálogo::1",
           "sent_ID": "FOLHA_DOC004062_SENT023",
           "text": "Parte do diálogo do petista com os policiais também foi revelado em reportagem da revista \"Veja\", em fevereiro.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 16
-              }
-            ]
+            "char_start": 9,
+            "char_end": 16
           },
           "realization": {
             "Arg0": "do petista",
@@ -211,14 +144,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 17,
                 "char_end": 27
               }
@@ -226,11 +154,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 28,
                 "char_end": 44
               }
@@ -238,22 +161,14 @@
           }
         },
         {
-          "instance_id": 4881,
+          "instance_id": "FOLHA_DOC003111_SENT005::diálogo::1",
           "sent_ID": "FOLHA_DOC003111_SENT005",
           "text": "De acordo com Haley, os EUA estão tentando \"todas as possibilidades\" por um diálogo com o ditador Kim Jong-un.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 83
-              }
-            ]
+            "char_start": 76,
+            "char_end": 83
           },
           "realization": {
             "Arg0": "os EUA",
@@ -265,13 +180,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 21,
                 "char_end": 27
               }
@@ -279,13 +190,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 84,
                 "char_end": 109
               }
@@ -293,22 +197,14 @@
           }
         },
         {
-          "instance_id": 7497,
+          "instance_id": "FOLHA_DOC001774_SENT013::diálogo::1",
           "sent_ID": "FOLHA_DOC001774_SENT013",
           "text": "A Coreia do Norte no momento tem sete convites como esse em aberto, envolvendo organizações que sediaram diálogos anteriores.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogos",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 105,
-                "char_end": 113
-              }
-            ]
+            "char_start": 105,
+            "char_end": 113
           },
           "realization": {
             "Arg0": null,
@@ -320,29 +216,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7670,
+          "instance_id": "FOLHA_DOC003186_SENT008::diálogo::1",
           "sent_ID": "FOLHA_DOC003186_SENT008",
           "text": "\"Nossos estreitos laços comerciais e de investimento são bem conhecidos; e vários de nossos ministérios se engajam em diálogos regulares e trabalham para resolver as diferenças quando elas surgem\", disse à Folha.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogos",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 126
-              }
-            ]
+            "char_start": 118,
+            "char_end": 126
           },
           "realization": {
             "Arg0": "vários de nossos ministérios",
@@ -354,25 +242,15 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 75,
                 "char_end": 103
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  27,
-                  28
-                ],
                 "char_start": 163,
                 "char_end": 176
               }
@@ -381,22 +259,14 @@
           }
         },
         {
-          "instance_id": 8021,
+          "instance_id": "FOLHA_DOC003111_SENT011::diálogo::1",
           "sent_ID": "FOLHA_DOC003111_SENT011",
           "text": "No sábado (16), o embaixador da China em Washington disse que os EUA devem parar de ameaçar a Coreia do Norte e \"fazer mais\" pelo diálogo.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              35
-            ],
-            "spans": [
-              {
-                "char_start": 130,
-                "char_end": 137
-              }
-            ]
+            "char_start": 130,
+            "char_end": 137
           },
           "realization": {
             "Arg0": null,
@@ -408,29 +278,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10929,
+          "instance_id": "FOLHA_DOC003023_SENT003::diálogo::1",
           "sent_ID": "FOLHA_DOC003023_SENT003",
           "text": "Disse acreditar no bom nível do diálogo, mas frisou: Não aceitamos cobranças individuais.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 39
-              }
-            ]
+            "char_start": 32,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -442,29 +304,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12723,
+          "instance_id": "FOLHA_DOC003108_SENT022::diálogo::1",
           "sent_ID": "FOLHA_DOC003108_SENT022",
           "text": "Na Justiça, a luta da paciente, que poderia abrir precedente para outros doentes mentais, era por mais diálogo com os psiquiatras e pelo direito de recusar medicamentos, se fosse o caso.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 103,
-                "char_end": 110
-              }
-            ]
+            "char_start": 103,
+            "char_end": 110
           },
           "realization": {
             "Arg0": "da paciente",
@@ -476,14 +330,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 19,
                 "char_end": 30
               }
@@ -491,11 +340,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 111,
                 "char_end": 129
               }
@@ -503,22 +347,14 @@
           }
         },
         {
-          "instance_id": 13603,
+          "instance_id": "FOLHA_DOC003266_SENT013::diálogo::1",
           "sent_ID": "FOLHA_DOC003266_SENT013",
           "text": "À Folha, a assessoria do grupo disse que vai aguardar esse diálogo para decidir os próximos passos.",
-          "frame_id": "f_b9878679e1fb2f75",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "diálogo",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 66
-              }
-            ]
+            "char_start": 59,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -530,13 +366,25 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 3,
+          "nsubj": 3
+        },
+        "Arg2": {
+          "nmod": 4
+        },
+        "Arg1": {
+          "obj": 1
+        }
+      }
     }
   ]
 }

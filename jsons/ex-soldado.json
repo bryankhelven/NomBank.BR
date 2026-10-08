@@ -1,63 +1,42 @@
 {
   "lemma": "ex-soldado",
-  "lemma_base": "ex-soldado",
   "senses": [
     {
       "pt_roleset": "ex-soldado · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_84e8533625e2b9aa",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 10884,
+          "instance_id": "FOLHA_DOC003050_SENT025::ex-soldado::1",
           "sent_ID": "FOLHA_DOC003050_SENT025",
           "text": "Um documentário de Belisario Franca trará depoimentos de ex-soldados que participaram da repressão à Guerrilha do Araguaia (1972-1975).",
-          "frame_id": "f_84e8533625e2b9aa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ex-soldados",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 68
-              }
-            ]
+            "char_start": 57,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -71,23 +50,24 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14
-                ],
                 "char_start": 89,
-                "char_end": 98,
-                "head_token_id": 14
+                "char_end": 98
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "obl": 1
+        }
+      }
     }
   ]
 }

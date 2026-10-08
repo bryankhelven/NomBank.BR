@@ -1,94 +1,55 @@
 {
   "lemma": "reunião",
-  "lemma_base": "reunião",
   "senses": [
     {
       "pt_roleset": "reunião.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_4f075619288f7d72",
-          "description": null,
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "meeting.01",
-              "resource": "English NomBank",
-              "description": "get together with",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/meeting.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "one party",
-              "definition": "one party"
-            },
-            {
-              "id": "Arg1",
-              "desc": "reason to meet",
-              "definition": "reason to meet"
-            },
-            {
-              "id": "Arg2",
-              "desc": "other party",
-              "definition": "other party"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time of meeting",
-              "definition": "time of meeting"
-            },
-            {
-              "id": "Arg4",
-              "desc": "location of meeting",
-              "definition": "location of meeting"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 3,
-              "nmod": 1,
-              "det": 1
-            },
-            "Arg2": {
-              "nmod": 11,
-              "obl": 1
-            },
-            "Arg3": {
-              "obl": 3,
-              "nmod": 2
-            },
-            "Arg4": {
-              "nmod": 3,
-              "obl": 3
-            },
-            "Arg1": {
-              "acl": 1,
-              "obl": 1
-            }
-          }
+          "roleset": "meeting.01",
+          "resource": "English NomBank",
+          "description": "get together with",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/meeting.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 812,
+          "id": "Arg0",
+          "desc": "one party",
+          "definition": "one party"
+        },
+        {
+          "id": "Arg1",
+          "desc": "reason to meet",
+          "definition": "reason to meet"
+        },
+        {
+          "id": "Arg2",
+          "desc": "other party",
+          "definition": "other party"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time of meeting",
+          "definition": "time of meeting"
+        },
+        {
+          "id": "Arg4",
+          "desc": "location of meeting",
+          "definition": "location of meeting"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004134_SENT023::reunião::1",
           "sent_ID": "FOLHA_DOC004134_SENT023",
           "text": "Segundo assessores da J&F, Assis teve uma reunião com Anselmo na segunda-feira, dia 20.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 49
-              }
-            ]
+            "char_start": 42,
+            "char_end": 49
           },
           "realization": {
             "Arg0": "Assis",
@@ -104,63 +65,38 @@
             "Arg3": "obl",
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 27,
-                "char_end": 32,
-                "head_token_id": 7
+                "char_end": 32
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 50,
-                "char_end": 61,
-                "head_token_id": 12
+                "char_end": 61
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  17,
-                  18
-                ],
                 "char_start": 62,
-                "char_end": 86,
-                "head_token_id": 15
+                "char_end": 86
               }
             ],
             "Arg4": []
           }
         },
         {
-          "instance_id": 1313,
+          "instance_id": "FOLHA_DOC003141_SENT014::reunião::1",
           "sent_ID": "FOLHA_DOC003141_SENT014",
           "text": "O tucano já testou o discurso crítico em reuniões com potenciais aliados e com o mercado financeiro.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 49
-              }
-            ]
+            "char_start": 41,
+            "char_end": 49
           },
           "realization": {
             "Arg0": "O tucano",
@@ -176,34 +112,18 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 8,
-                "head_token_id": 2
+                "char_end": 8
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 50,
-                "char_end": 99,
-                "head_token_id": 12
+                "char_end": 99
               }
             ],
             "Arg3": [],
@@ -211,22 +131,14 @@
           }
         },
         {
-          "instance_id": 1333,
+          "instance_id": "FOLHA_DOC004017_SENT015::reunião::1",
           "sent_ID": "FOLHA_DOC004017_SENT015",
           "text": "Para o mandatário, as reuniões na Europa provam que o adversário deve ser condenado por traição à pátria.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 30
-              }
-            ]
+            "char_start": 22,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -242,7 +154,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -251,22 +163,14 @@
           }
         },
         {
-          "instance_id": 1717,
+          "instance_id": "FOLHA_DOC000107_SENT014::reunião::1",
           "sent_ID": "FOLHA_DOC000107_SENT014",
           "text": "Fazemos uma reunião quinzenal, mas o follow-up acontece no dia a dia.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 19
-              }
-            ]
+            "char_start": 12,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -282,7 +186,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -291,22 +195,14 @@
           }
         },
         {
-          "instance_id": 1803,
+          "instance_id": "FOLHA_DOC003078_SENT002::reunião::1",
           "sent_ID": "FOLHA_DOC003078_SENT002",
           "text": "\"Todos os olhos estão em Trump na reunião de líderes mundiais na ONU\", trombeteou o \"New York Times\", em manchete.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 41
-              }
-            ]
+            "char_start": 34,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -322,53 +218,33 @@
             "Arg3": null,
             "Arg4": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 42,
-                "char_end": 61,
-                "head_token_id": 12
+                "char_end": 61
               }
             ],
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 62,
-                "char_end": 68,
-                "head_token_id": 16
+                "char_end": 68
               }
             ]
           }
         },
         {
-          "instance_id": 3440,
+          "instance_id": "FOLHA_DOC000107_SENT006::reunião::1",
           "sent_ID": "FOLHA_DOC000107_SENT006",
           "text": "Reuniões diárias, de 15 minutos, são uma alternativa.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Reuniões",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 8
-              }
-            ]
+            "char_start": 0,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -384,7 +260,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -393,22 +269,14 @@
           }
         },
         {
-          "instance_id": 3723,
+          "instance_id": "FOLHA_DOC003035_SENT108::reunião::1",
           "sent_ID": "FOLHA_DOC003035_SENT108",
           "text": "O primeiro, sobre a reunião informal com o Anselmo, o ex-sócio da Eldorado, Mário Celso [adversário de Joesley Batista], o filho dele e eu.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 27
-              }
-            ]
+            "char_start": 20,
+            "char_end": 27
           },
           "realization": {
             "Arg0": null,
@@ -424,19 +292,13 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 37,
-                "char_end": 50,
-                "head_token_id": 10
+                "char_end": 50
               }
             ],
             "Arg3": [],
@@ -444,22 +306,14 @@
           }
         },
         {
-          "instance_id": 4029,
+          "instance_id": "FOLHA_DOC003112_SENT007::reunião::1",
           "sent_ID": "FOLHA_DOC003112_SENT007",
           "text": "Ele criticou a reunião realizada \"na calada da noite\" e disse que \"a administração da JBS está escrevendo um compêndio completo de má governança\".",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 22
-              }
-            ]
+            "char_start": 15,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -475,7 +329,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -484,22 +338,14 @@
           }
         },
         {
-          "instance_id": 4184,
+          "instance_id": "FOLHA_DOC003035_SENT048::reunião::1",
           "sent_ID": "FOLHA_DOC003035_SENT048",
           "text": "Depois, eles batem na porta do Anselmo Lopes [procurador que atua na Greenfield] para uma reunião com a PGR e conseguem.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 97
-              }
-            ]
+            "char_start": 90,
+            "char_end": 97
           },
           "realization": {
             "Arg0": null,
@@ -515,19 +361,13 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 98,
-                "char_end": 107,
-                "head_token_id": 25
+                "char_end": 107
               }
             ],
             "Arg3": [],
@@ -535,22 +375,14 @@
           }
         },
         {
-          "instance_id": 4788,
+          "instance_id": "FOLHA_DOC003084_SENT002::reunião::1",
           "sent_ID": "FOLHA_DOC003084_SENT002",
           "text": "A reunião das cantoras Maria Rita e Melody Gardot no Palco Sunset do Rock in Rio teve origem numa grande influência para ambas: a diva Ella Fitzgerald (1917-1996).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg0": "das cantoras Maria Rita e Melody Gardot",
@@ -566,22 +398,11 @@
             "Arg3": null,
             "Arg4": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 10,
-                "char_end": 49,
-                "head_token_id": 5
+                "char_end": 49
               }
             ],
             "Arg1": [],
@@ -589,41 +410,21 @@
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 50,
-                "char_end": 80,
-                "head_token_id": 13
+                "char_end": 80
               }
             ]
           }
         },
         {
-          "instance_id": 6323,
+          "instance_id": "FOLHA_DOC003112_SENT013::reunião::1",
           "sent_ID": "FOLHA_DOC003112_SENT013",
           "text": "A reunião extraordinária do conselho da JBS para discutir a sucessão de Wesley começou às 19 horas de sábado (16) e durou até a 1h deste domingo (17).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -639,73 +440,38 @@
             "Arg3": "obl",
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 44,
-                "char_end": 78,
-                "head_token_id": 11
+                "char_end": 78
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 25,
-                "char_end": 43,
-                "head_token_id": 6
+                "char_end": 43
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  24
-                ],
                 "char_start": 87,
-                "char_end": 112,
-                "head_token_id": 20
+                "char_end": 112
               }
             ],
             "Arg4": []
           }
         },
         {
-          "instance_id": 6499,
+          "instance_id": "FOLHA_DOC000021_SENT007::reunião::1",
           "sent_ID": "FOLHA_DOC000021_SENT007",
           "text": "Ele chegou a um estacionamento vazio e foi direto para uma reunião com líderes evangélicos, que o esperavam de mãos dadas, para uma oração, num estúdio fotográfico em cima de uma barbearia.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 66
-              }
-            ]
+            "char_start": 59,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -721,30 +487,18 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 123,
-                "char_end": 138,
-                "head_token_id": 26
+                "char_end": 138
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 67,
-                "char_end": 90,
-                "head_token_id": 14
+                "char_end": 90
               }
             ],
             "Arg3": [],
@@ -752,22 +506,14 @@
           }
         },
         {
-          "instance_id": 7149,
+          "instance_id": "FOLHA_DOC003053_SENT010::reunião::1",
           "sent_ID": "FOLHA_DOC003053_SENT010",
           "text": "Na reunião que definiu a sucessão de Wesley Batista, a família chegou a propor o nome do filho do empresário, Wesley Batista Filho, mas houve forte resistência da representante do BNDES.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -783,7 +529,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -792,22 +538,14 @@
           }
         },
         {
-          "instance_id": 7413,
+          "instance_id": "FOLHA_DOC003035_SENT111::reunião::1",
           "sent_ID": "FOLHA_DOC003035_SENT111",
           "text": "No final da reunião, surpreendentemente, o Anselmo passa a adotar um comportamento mais duro, pressionando para delação.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 19
-              }
-            ]
+            "char_start": 12,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -823,7 +561,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -832,22 +570,14 @@
           }
         },
         {
-          "instance_id": 8351,
+          "instance_id": "FOLHA_DOC000006_SENT013::reunião::1",
           "sent_ID": "FOLHA_DOC000006_SENT013",
           "text": "Além disso, Bono afirmou que ambos trataram de alguns temas da pauta da próxima reunião do G-20, que ocorrerá na Argentina no ano que vem.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 87
-              }
-            ]
+            "char_start": 80,
+            "char_end": 87
           },
           "realization": {
             "Arg0": null,
@@ -863,66 +593,38 @@
             "Arg3": "obl",
             "Arg4": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 88,
-                "char_end": 95,
-                "head_token_id": 22
+                "char_end": 95
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  29,
-                  30,
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 123,
-                "char_end": 137,
-                "head_token_id": 31
+                "char_end": 137
               }
             ],
             "Arg4": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 110,
-                "char_end": 122,
-                "head_token_id": 28
+                "char_end": 122
               }
             ]
           }
         },
         {
-          "instance_id": 9078,
+          "instance_id": "FOLHA_DOC003064_SENT018::reunião::1",
           "sent_ID": "FOLHA_DOC003064_SENT018",
           "text": "Resposta da Caixa - Diz que a cliente tinha imóvel prévio adquirido com FGTS e que agendou reunião com ela.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 91,
-                "char_end": 98
-              }
-            ]
+            "char_start": 91,
+            "char_end": 98
           },
           "realization": {
             "Arg0": null,
@@ -938,7 +640,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -947,22 +649,14 @@
           }
         },
         {
-          "instance_id": 9107,
+          "instance_id": "FOLHA_DOC000018_SENT029::reunião::1",
           "sent_ID": "FOLHA_DOC000018_SENT029",
           "text": "Conta que não fazia ideia com quem seria a reunião.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 50
-              }
-            ]
+            "char_start": 43,
+            "char_end": 50
           },
           "realization": {
             "Arg0": null,
@@ -978,7 +672,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -987,22 +681,14 @@
           }
         },
         {
-          "instance_id": 9259,
+          "instance_id": "FOLHA_DOC003150_SENT021::reunião::1",
           "sent_ID": "FOLHA_DOC003150_SENT021",
           "text": "Fazemos as reuniões por Skype ou telefone, mas o contato próximo com o cliente é fundamental.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 19
-              }
-            ]
+            "char_start": 11,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -1018,43 +704,28 @@
             "Arg3": null,
             "Arg4": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 20,
-                "char_end": 41,
-                "head_token_id": 5
+                "char_end": 41
               }
             ]
           }
         },
         {
-          "instance_id": 9368,
+          "instance_id": "FOLHA_DOC000041_SENT007::reunião::1",
           "sent_ID": "FOLHA_DOC000041_SENT007",
           "text": "Entre os que participavam das reuniões havia apenas duas mulheres -ela e uma senhora de meia idade.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 38
-              }
-            ]
+            "char_start": 30,
+            "char_end": 38
           },
           "realization": {
             "Arg0": null,
@@ -1070,7 +741,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1079,22 +750,14 @@
           }
         },
         {
-          "instance_id": 10973,
+          "instance_id": "FOLHA_DOC003053_SENT003::reunião::1",
           "sent_ID": "FOLHA_DOC003053_SENT003",
           "text": "Ele afirmou que estuda as medidas jurídicas cabíveis e criticou a reunião do colegiado, que teria ocorrido \"na calada da noite\".",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 73
-              }
-            ]
+            "char_start": 66,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -1110,7 +773,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1119,22 +782,14 @@
           }
         },
         {
-          "instance_id": 11034,
+          "instance_id": "FOLHA_DOC003141_SENT004::reunião::1",
           "sent_ID": "FOLHA_DOC003141_SENT004",
           "text": "Em reuniões políticas reservadas, Alckmin confidenciou que não enxerga espaço para um discurso de continuidade na próxima disputa presidencial.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 11
-              }
-            ]
+            "char_start": 3,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -1150,7 +805,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1159,22 +814,14 @@
           }
         },
         {
-          "instance_id": 11434,
+          "instance_id": "FOLHA_DOC000019_SENT014::reunião::1",
           "sent_ID": "FOLHA_DOC000019_SENT014",
           "text": "Fora isso, os investidores acompanham a divulgação da ata da última reunião do Fed (banco central americano), na próxima quarta (11).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 75
-              }
-            ]
+            "char_start": 68,
+            "char_end": 75
           },
           "realization": {
             "Arg0": null,
@@ -1190,7 +837,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1199,22 +846,14 @@
           }
         },
         {
-          "instance_id": 11800,
+          "instance_id": "FOLHA_DOC004139_SENT019::reunião::1",
           "sent_ID": "FOLHA_DOC004139_SENT019",
           "text": "Ele não participou, por exemplo, de nenhuma reunião minha com o Marcelo, disse.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 51
-              }
-            ]
+            "char_start": 44,
+            "char_end": 51
           },
           "realization": {
             "Arg0": "minha",
@@ -1230,28 +869,18 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 52,
-                "char_end": 57,
-                "head_token_id": 11
+                "char_end": 57
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 58,
-                "char_end": 71,
-                "head_token_id": 14
+                "char_end": 71
               }
             ],
             "Arg3": [],
@@ -1259,22 +888,14 @@
           }
         },
         {
-          "instance_id": 11990,
+          "instance_id": "FOLHA_DOC003039_SENT005::reunião::1",
           "sent_ID": "FOLHA_DOC003039_SENT005",
           "text": "Não à toa Macron nomeou ministros falantes de alemão para seu gabinete, incluindo o premiê Édouard Philippe, que esteve em reunião em Berlim na sexta-feira (15).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 123,
-                "char_end": 130
-              }
-            ]
+            "char_start": 123,
+            "char_end": 130
           },
           "realization": {
             "Arg0": null,
@@ -1290,53 +911,33 @@
             "Arg3": "nmod",
             "Arg4": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  27,
-                  28,
-                  29,
-                  31
-                ],
                 "char_start": 141,
-                "char_end": 159,
-                "head_token_id": 29
+                "char_end": 159
               }
             ],
             "Arg4": [
               {
-                "token_ids": [
-                  25,
-                  26
-                ],
                 "char_start": 131,
-                "char_end": 140,
-                "head_token_id": 26
+                "char_end": 140
               }
             ]
           }
         },
         {
-          "instance_id": 12359,
+          "instance_id": "FOLHA_DOC002019_SENT007::reunião::1",
           "sent_ID": "FOLHA_DOC002019_SENT007",
           "text": "Na reunião, descreve ele, o Conselho \"foi ambíguo\".",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 10
-              }
-            ]
+            "char_start": 3,
+            "char_end": 10
           },
           "realization": {
             "Arg0": null,
@@ -1352,7 +953,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1361,22 +962,14 @@
           }
         },
         {
-          "instance_id": 12726,
+          "instance_id": "FOLHA_DOC003206_SENT006::reunião::1",
           "sent_ID": "FOLHA_DOC003206_SENT006",
           "text": "Numa das últimas reuniões de Rogério Ceni com a diretoria, ele avisou que pretendia substituir o goleiro Renan Ribeiro.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 25
-              }
-            ]
+            "char_start": 17,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -1392,7 +985,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1401,22 +994,14 @@
           }
         },
         {
-          "instance_id": 13052,
+          "instance_id": "FOLHA_DOC003053_SENT025::reunião::1",
           "sent_ID": "FOLHA_DOC003053_SENT025",
           "text": "Em nota, a JBS informou que a reunião do conselho de administração foi convocada dois dias antes.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 37
-              }
-            ]
+            "char_start": 30,
+            "char_end": 37
           },
           "realization": {
             "Arg0": null,
@@ -1432,7 +1017,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1441,22 +1026,14 @@
           }
         },
         {
-          "instance_id": 13397,
+          "instance_id": "FOLHA_DOC000014_SENT002::reunião::1",
           "sent_ID": "FOLHA_DOC000014_SENT002",
           "text": "O presidente-executivo da Apple, Tim Cook, destacou nesta segunda-feira (9) o papel de uma pequena empresa francesa por trás de recursos inovadores nos mais recentes iPhones, antes de uma reunião com o presidente Emmanuel Macron, que tem defendido maior rigor nos impostos sobre empresas de tecnologia.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              38
-            ],
-            "spans": [
-              {
-                "char_start": 188,
-                "char_end": 195
-              }
-            ]
+            "char_start": 188,
+            "char_end": 195
           },
           "realization": {
             "Arg0": null,
@@ -1472,21 +1049,13 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  39,
-                  40,
-                  41,
-                  42,
-                  43
-                ],
                 "char_start": 196,
-                "char_end": 228,
-                "head_token_id": 41
+                "char_end": 228
               }
             ],
             "Arg3": [],
@@ -1494,22 +1063,14 @@
           }
         },
         {
-          "instance_id": 13878,
+          "instance_id": "FOLHA_DOC003035_SENT095::reunião::1",
           "sent_ID": "FOLHA_DOC003035_SENT095",
           "text": "A PGR usa como elemento para lhe atribuir os crimes uma reunião que o sr. teve no escritório de Willer Tomaz com a presença de Francisco Assis e Silva (JBS).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 63
-              }
-            ]
+            "char_start": 56,
+            "char_end": 63
           },
           "realization": {
             "Arg0": "o sr.",
@@ -1525,72 +1086,38 @@
             "Arg3": null,
             "Arg4": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 68,
-                "char_end": 73,
-                "head_token_id": 15
+                "char_end": 73
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  32
-                ],
                 "char_start": 109,
-                "char_end": 155,
-                "head_token_id": 25
+                "char_end": 155
               }
             ],
             "Arg3": [],
             "Arg4": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 79,
-                "char_end": 108,
-                "head_token_id": 19
+                "char_end": 108
               }
             ]
           }
         },
         {
-          "instance_id": 14042,
+          "instance_id": "FOLHA_DOC000041_SENT013::reunião::1",
           "sent_ID": "FOLHA_DOC000041_SENT013",
           "text": "De tão desconfortável, Gabriela acabou abandonando as reuniões e parou o tratamento.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 62
-              }
-            ]
+            "char_start": 54,
+            "char_end": 62
           },
           "realization": {
             "Arg0": null,
@@ -1606,7 +1133,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1615,22 +1142,14 @@
           }
         },
         {
-          "instance_id": 14083,
+          "instance_id": "FOLHA_DOC003156_SENT008::reunião::1",
           "sent_ID": "FOLHA_DOC003156_SENT008",
           "text": "Saí da reunião já sabendo que não teríamos anos fáceis pela frente.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 14
-              }
-            ]
+            "char_start": 7,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -1646,7 +1165,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1655,22 +1174,14 @@
           }
         },
         {
-          "instance_id": 14930,
+          "instance_id": "FOLHA_DOC003060_SENT009::reunião::1",
           "sent_ID": "FOLHA_DOC003060_SENT009",
           "text": "Como nas últimas reuniões gerais da Assembleia, a Coreia do Norte deverá ser representada neste ano pelo chanceler, Ri Yong-ho.",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reuniões",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 25
-              }
-            ]
+            "char_start": 17,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -1686,7 +1197,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1695,22 +1206,14 @@
           }
         },
         {
-          "instance_id": 15306,
+          "instance_id": "FOLHA_DOC003023_SENT002::reunião::1",
           "sent_ID": "FOLHA_DOC003023_SENT002",
           "text": "Hernanes foi o primeiro jogador do São Paulo a falar, na discutida reunião com as torcidas uniformizadas da última quarta-feira (13).",
-          "frame_id": "f_4f075619288f7d72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reunião",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 74
-              }
-            ]
+            "char_start": 67,
+            "char_end": 74
           },
           "realization": {
             "Arg0": null,
@@ -1726,40 +1229,48 @@
             "Arg3": "nmod",
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 75,
-                "char_end": 104,
-                "head_token_id": 19
+                "char_end": 104
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24,
-                  26
-                ],
                 "char_start": 105,
-                "char_end": 131,
-                "head_token_id": 24
+                "char_end": 131
               }
             ],
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 3,
+          "nmod": 1,
+          "det": 1
+        },
+        "Arg2": {
+          "nmod": 11,
+          "obl": 1
+        },
+        "Arg3": {
+          "obl": 3,
+          "nmod": 2
+        },
+        "Arg4": {
+          "nmod": 3,
+          "obl": 3
+        },
+        "Arg1": {
+          "acl": 1,
+          "obl": 1
+        }
+      }
     }
   ]
 }

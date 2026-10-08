@@ -1,63 +1,42 @@
 {
   "lemma": "repaginada",
-  "lemma_base": "repaginada",
   "senses": [
     {
       "pt_roleset": "repaginada · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_81146ac49b8d6f58",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "amod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 11763,
+          "instance_id": "FOLHA_DOC000162_SENT024::repaginada::1",
           "sent_ID": "FOLHA_DOC000162_SENT024",
           "text": "Para isso, vale uma repaginada arquitetônica e o investimento na promoção de artes.",
-          "frame_id": "f_81146ac49b8d6f58",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "repaginada",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 30
-              }
-            ]
+            "char_start": 20,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -71,23 +50,24 @@
             "Arg2": "amod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 31,
-                "char_end": 44,
-                "head_token_id": 7
+                "char_end": 44
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "amod": 1
+        }
+      }
     }
   ]
 }

@@ -1,67 +1,50 @@
 {
   "lemma": "fusão",
-  "lemma_base": "fusão",
   "senses": [
     {
       "pt_roleset": "fusão.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_4a2d0e5cbdb63b4a",
+          "roleset": "fusion.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "fusion.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/fusion.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agent, mixer",
-              "definition": "agent, mixer"
-            },
-            {
-              "id": "Arg1",
-              "desc": "ingredient one",
-              "definition": "ingredient one"
-            },
-            {
-              "id": "Arg2",
-              "desc": "ingredient two",
-              "definition": "ingredient two"
-            },
-            {
-              "id": "Arg3",
-              "desc": "end product",
-              "definition": "end product"
-            }
-          ],
-          "syntactic_profile": {}
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/fusion.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 3526,
+          "id": "Arg0",
+          "desc": "agent, mixer",
+          "definition": "agent, mixer"
+        },
+        {
+          "id": "Arg1",
+          "desc": "ingredient one",
+          "definition": "ingredient one"
+        },
+        {
+          "id": "Arg2",
+          "desc": "ingredient two",
+          "definition": "ingredient two"
+        },
+        {
+          "id": "Arg3",
+          "desc": "end product",
+          "definition": "end product"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001698_SENT014::fusão::1",
           "sent_ID": "FOLHA_DOC001698_SENT014",
           "text": "Poupart-Lafarge comandará a empresa criada pela fusão, que continuará a ter suas ações cotadas em Paris.",
-          "frame_id": "f_4a2d0e5cbdb63b4a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fusão",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 53
-              }
-            ]
+            "char_start": 48,
+            "char_end": 53
           },
           "realization": {
             "Arg0": null,
@@ -75,7 +58,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -83,22 +66,14 @@
           }
         },
         {
-          "instance_id": 10216,
+          "instance_id": "FOLHA_DOC003203_SENT013::fusão::1",
           "sent_ID": "FOLHA_DOC003203_SENT013",
           "text": "Neste século, não mudou muito a composição do grupo das 50 maiores, se consideradas fusões e aquisições.",
-          "frame_id": "f_4a2d0e5cbdb63b4a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fusões",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 84,
-                "char_end": 90
-              }
-            ]
+            "char_start": 84,
+            "char_end": 90
           },
           "realization": {
             "Arg0": null,
@@ -112,14 +87,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

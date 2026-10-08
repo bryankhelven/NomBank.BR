@@ -1,66 +1,42 @@
 {
   "lemma": "oração",
-  "lemma_base": "oração",
   "senses": [
     {
       "pt_roleset": "oração · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_fd33dd306ab46c27",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg3": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 6501,
+          "instance_id": "FOLHA_DOC000021_SENT007::oração::1",
           "sent_ID": "FOLHA_DOC000021_SENT007",
           "text": "Ele chegou a um estacionamento vazio e foi direto para uma reunião com líderes evangélicos, que o esperavam de mãos dadas, para uma oração, num estúdio fotográfico em cima de uma barbearia.",
-          "frame_id": "f_fd33dd306ab46c27",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "oração",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 132,
-                "char_end": 138
-              }
-            ]
+            "char_start": 132,
+            "char_end": 138
           },
           "realization": {
             "Arg0": "líderes evangélicos",
@@ -74,36 +50,32 @@
             "Arg2": null,
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 71,
-                "char_end": 90,
-                "head_token_id": 14
+                "char_end": 90
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  28,
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 140,
-                "char_end": 163,
-                "head_token_id": 30
+                "char_end": 163
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg3": {
+          "obl": 1
+        }
+      }
     }
   ]
 }

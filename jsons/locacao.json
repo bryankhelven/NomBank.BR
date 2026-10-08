@@ -1,62 +1,45 @@
 {
   "lemma": "locação",
-  "lemma_base": "locação",
   "senses": [
     {
       "pt_roleset": "locação.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_e7556fb31096e68e",
+          "roleset": "allocation.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "allocation.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/allocation.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "granter",
-              "definition": "granter"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing granted",
-              "definition": "thing granted"
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            }
-          ],
-          "syntactic_profile": {}
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/allocation.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 4216,
+          "id": "Arg0",
+          "desc": "granter",
+          "definition": "granter"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing granted",
+          "definition": "thing granted"
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003179_SENT011::locação::1",
           "sent_ID": "FOLHA_DOC003179_SENT011",
           "text": "A Lei do Inquilinato de 1942 controlou o reajuste dos aluguéis e desestimulou a construção de prédios para locação, prejudicando quem não tinha recursos para comprar a sua casa.",
-          "frame_id": "f_e7556fb31096e68e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "locação",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 107,
-                "char_end": 114
-              }
-            ]
+            "char_start": 107,
+            "char_end": 114
           },
           "realization": {
             "Arg0": null,
@@ -68,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11962,
+          "instance_id": "FOLHA_DOC000022_SENT007::locação::1",
           "sent_ID": "FOLHA_DOC000022_SENT007",
           "text": "Na denúncia, o Ministério Público Federal diz que Lula não pagou pela locação do imóvel, comprado pelo empresário Glaucos da Costamarques em 2010.",
-          "frame_id": "f_e7556fb31096e68e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "locação",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 77
-              }
-            ]
+            "char_start": 70,
+            "char_end": 77
           },
           "realization": {
             "Arg0": null,
@@ -102,13 +77,14 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

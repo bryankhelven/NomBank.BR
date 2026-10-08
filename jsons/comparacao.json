@@ -1,72 +1,45 @@
 {
   "lemma": "comparação",
-  "lemma_base": "comparação",
   "senses": [
     {
       "pt_roleset": "comparação.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_3d275ec9521c4d43",
+          "roleset": "comparison.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "comparison.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/comparison.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "entity making comparison",
-              "definition": "entity making comparison"
-            },
-            {
-              "id": "Arg1",
-              "desc": "first item in comparison",
-              "definition": "first item in comparison"
-            },
-            {
-              "id": "Arg2",
-              "desc": "second item incomparison, usually prepositional",
-              "definition": "second item incomparison, usually prepositional"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 5
-            },
-            "Arg2": {
-              "nmod": 6
-            },
-            "Arg0": {
-              "obl:agent": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/comparison.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 299,
+          "id": "Arg0",
+          "desc": "entity making comparison",
+          "definition": "entity making comparison"
+        },
+        {
+          "id": "Arg1",
+          "desc": "first item in comparison",
+          "definition": "first item in comparison"
+        },
+        {
+          "id": "Arg2",
+          "desc": "second item incomparison, usually prepositional",
+          "definition": "second item incomparison, usually prepositional"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003063_SENT010::comparação::1",
           "sent_ID": "FOLHA_DOC003063_SENT010",
           "text": "Os dados oficiais já provaram que houve até aqui aumento de 15% nos registros de homicídios na comparação de 2017 com 2016.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 105
-              }
-            ]
+            "char_start": 95,
+            "char_end": 105
           },
           "realization": {
             "Arg0": null,
@@ -78,48 +51,31 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  23
-                ],
                 "char_start": 109,
-                "char_end": 113,
-                "head_token_id": 23
+                "char_end": 113
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25
-                ],
                 "char_start": 114,
-                "char_end": 122,
-                "head_token_id": 25
+                "char_end": 122
               }
             ]
           }
         },
         {
-          "instance_id": 2001,
+          "instance_id": "FOLHA_DOC000023_SENT015::comparação::1",
           "sent_ID": "FOLHA_DOC000023_SENT015",
           "text": "Os multimercados ficaram em segundo lugar, com total de R$ 75,5 bilhões -aumento de 384% na comparação com o mesmo intervalo de 2016.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 102
-              }
-            ]
+            "char_start": 92,
+            "char_end": 102
           },
           "realization": {
             "Arg0": null,
@@ -131,43 +87,26 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 103,
-                "char_end": 132,
-                "head_token_id": 25
+                "char_end": 132
               }
             ]
           }
         },
         {
-          "instance_id": 3487,
+          "instance_id": "FOLHA_DOC002017_SENT005::comparação::1",
           "sent_ID": "FOLHA_DOC002017_SENT005",
           "text": "Como comparação, a Bolsa brasileira acumula alta de 25% no mesmo período.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 15
-              }
-            ]
+            "char_start": 5,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -179,29 +118,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4538,
+          "instance_id": "FOLHA_DOC003212_SENT014::comparação::1",
           "sent_ID": "FOLHA_DOC003212_SENT014",
           "text": "A história econômica mostra que não há diferença na trajetória de crescimento da economia americana em comparação aos casos canadense ou australiano.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 103,
-                "char_end": 113
-              }
-            ]
+            "char_start": 103,
+            "char_end": 113
           },
           "realization": {
             "Arg0": null,
@@ -213,55 +144,31 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 78,
-                "char_end": 99,
-                "head_token_id": 16
+                "char_end": 99
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 114,
-                "char_end": 148,
-                "head_token_id": 22
+                "char_end": 148
               }
             ]
           }
         },
         {
-          "instance_id": 8321,
+          "instance_id": "FOLHA_DOC003133_SENT010::comparação::1",
           "sent_ID": "FOLHA_DOC003133_SENT010",
           "text": "A comparação é feita por um brilhante repórter, Yan Boechat, colaborador desta Folha, com a experiência de quem conhece ambas as situações.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ]
+            "char_start": 2,
+            "char_end": 12
           },
           "realization": {
             "Arg0": "por um brilhante repórter, Yan Boechat",
@@ -273,20 +180,11 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  10,
-                  11
-                ],
                 "char_start": 21,
-                "char_end": 59,
-                "head_token_id": 8
+                "char_end": 59
               }
             ],
             "Arg1": [],
@@ -294,22 +192,14 @@
           }
         },
         {
-          "instance_id": 8991,
+          "instance_id": "FOLHA_DOC003118_SENT002::comparação::1",
           "sent_ID": "FOLHA_DOC003118_SENT002",
           "text": "O orçamento inicial de 2018 para o programa Luz para Todos diminuiu 4,3% na comparação com o número de 2017.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 86
-              }
-            ]
+            "char_start": 76,
+            "char_end": 86
           },
           "realization": {
             "Arg0": null,
@@ -321,42 +211,26 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 87,
-                "char_end": 107,
-                "head_token_id": 20
+                "char_end": 107
               }
             ]
           }
         },
         {
-          "instance_id": 10284,
+          "instance_id": "FOLHA_DOC003115_SENT011::comparação::1",
           "sent_ID": "FOLHA_DOC003115_SENT011",
           "text": "Ele também ataca de ator de vez em quando e se sai bem, daí a comparação com o Sinatra.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 72
-              }
-            ]
+            "char_start": 62,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -368,40 +242,26 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 73,
-                "char_end": 86,
-                "head_token_id": 21
+                "char_end": 86
               }
             ]
           }
         },
         {
-          "instance_id": 11255,
+          "instance_id": "FOLHA_DOC003181_SENT020::comparação::1",
           "sent_ID": "FOLHA_DOC003181_SENT020",
           "text": "Sem grandes pretensões, a comédia se mostra um ensaio interessante sobre o componente daninho das redes sociais de instigar comparações nem sempre fidedignas entre pessoas de um mesmo meio.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparações",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 124,
-                "char_end": 135
-              }
-            ]
+            "char_start": 124,
+            "char_end": 135
           },
           "realization": {
             "Arg0": null,
@@ -413,43 +273,26 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 158,
-                "char_end": 188,
-                "head_token_id": 27
+                "char_end": 188
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11529,
+          "instance_id": "FOLHA_DOC004069_SENT004::comparação::1",
           "sent_ID": "FOLHA_DOC004069_SENT004",
           "text": "O escritório de estatísticas revisou para cima os números sobre o crescimento da zona do euro em uma base de comparação anual.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 109,
-                "char_end": 119
-              }
-            ]
+            "char_start": 109,
+            "char_end": 119
           },
           "realization": {
             "Arg0": null,
@@ -461,29 +304,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12481,
+          "instance_id": "FOLHA_DOC003082_SENT006::comparação::1",
           "sent_ID": "FOLHA_DOC003082_SENT006",
           "text": "A própria comparação com o líder Corinthians, adversário da próxima rodada, mostra o problema defensivo da equipe.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 20
-              }
-            ]
+            "char_start": 10,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -495,41 +330,26 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 21,
-                "char_end": 44,
-                "head_token_id": 6
+                "char_end": 44
               }
             ]
           }
         },
         {
-          "instance_id": 12646,
+          "instance_id": "FOLHA_DOC000169_SENT042::comparação::1",
           "sent_ID": "FOLHA_DOC000169_SENT042",
           "text": "O veredicto é que a comparação entre as duas festas é (ainda) quase cruel.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 30
-              }
-            ]
+            "char_start": 20,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -541,41 +361,26 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 31,
-                "char_end": 51,
-                "head_token_id": 10
+                "char_end": 51
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 13943,
+          "instance_id": "FOLHA_DOC003161_SENT015::comparação::1",
           "sent_ID": "FOLHA_DOC003161_SENT015",
           "text": "Para o passageiro que prioriza preços, a garantia para não fazer mau negócio é a comparação das tarifas.",
-          "frame_id": "f_3d275ec9521c4d43",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comparação",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 91
-              }
-            ]
+            "char_start": 81,
+            "char_end": 91
           },
           "realization": {
             "Arg0": null,
@@ -587,24 +392,29 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 92,
-                "char_end": 103,
-                "head_token_id": 20
+                "char_end": 103
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 5
+        },
+        "Arg2": {
+          "nmod": 6
+        },
+        "Arg0": {
+          "obl:agent": 1
+        }
+      }
     }
   ]
 }

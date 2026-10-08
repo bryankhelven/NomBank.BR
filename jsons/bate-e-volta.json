@@ -1,69 +1,42 @@
 {
   "lemma": "bate-e-volta",
-  "lemma_base": "bate-e-volta",
   "senses": [
     {
       "pt_roleset": "bate-e-volta · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_207f0f77e92a8351",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obl": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            },
-            "Arg3": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 15578,
+          "instance_id": "FOLHA_DOC002007_SENT010::bate-e-volta::1",
           "sent_ID": "FOLHA_DOC002007_SENT010",
           "text": "A audiência às vésperas da festança custou ao defensor um bate-e-volta Lisboa-Brasília-Lisboa em jatinho particular.",
-          "frame_id": "f_207f0f77e92a8351",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "bate-e-volta",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 70
-              }
-            ]
+            "char_start": 58,
+            "char_end": 70
           },
           "realization": {
             "Arg0": "o defensor",
@@ -77,44 +50,40 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11,
-                  12
-                ],
                 "char_start": 43,
-                "char_end": 54,
-                "head_token_id": 12
+                "char_end": 54
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 71,
-                "char_end": 93,
-                "head_token_id": 15
+                "char_end": 93
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 94,
-                "char_end": 115,
-                "head_token_id": 17
+                "char_end": 115
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obl": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        },
+        "Arg3": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

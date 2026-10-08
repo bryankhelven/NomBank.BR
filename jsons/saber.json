@@ -1,63 +1,42 @@
 {
   "lemma": "saber",
-  "lemma_base": "saber",
   "senses": [
     {
       "pt_roleset": "saber · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_5d633beaadb671d1",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg3": {
-              "root": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 9836,
+          "instance_id": "FOLHA_DOC004011_SENT007::saber::1",
           "sent_ID": "FOLHA_DOC004011_SENT007",
           "text": "O próprio saber é, nesse caso, essencialmente coletivo em um sentido especial.",
-          "frame_id": "f_5d633beaadb671d1",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "saber",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 15
-              }
-            ]
+            "char_start": 10,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -71,24 +50,24 @@
             "Arg2": null,
             "Arg3": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 31,
-                "char_end": 54,
-                "head_token_id": 11
+                "char_end": 54
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg3": {
+          "root": 1
+        }
+      }
     }
   ]
 }

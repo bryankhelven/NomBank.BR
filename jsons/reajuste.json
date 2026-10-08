@@ -1,79 +1,55 @@
 {
   "lemma": "reajuste",
-  "lemma_base": "reajuste",
   "senses": [
     {
       "pt_roleset": "reajuste.03",
       "description": "aumento; correção",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_1a16a3487c222062",
-          "description": "aumento; correção",
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "adjustment.01",
-              "resource": "English NomBank",
-              "description": "change (slightly",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/adjustment.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agente da correção",
-              "definition": "Quem corrige/reajusta o valor."
-            },
-            {
-              "id": "Arg1",
-              "desc": "coisa corrigida",
-              "definition": "Valor/objeto que sofre correção."
-            },
-            {
-              "id": "Arg2",
-              "desc": "estado final",
-              "definition": "Valor/estado após correção."
-            },
-            {
-              "id": "Arg3",
-              "desc": "estado inicial",
-              "definition": "Valor/estado antes da correção."
-            },
-            {
-              "id": "Arg4",
-              "desc": "motivo ou finalidade do reajuste",
-              "definition": "Propósito/motivo expressamente ligado à correção, conforme purpose/reason; não taxa/magnitude nem beneficiário isolado por default."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 2
-            },
-            "Arg0": {
-              "nsubj": 3
-            }
-          }
+          "roleset": "adjustment.01",
+          "resource": "English NomBank",
+          "description": "change (slightly",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/adjustment.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1868,
+          "id": "Arg0",
+          "desc": "agente da correção",
+          "definition": "Quem corrige/reajusta o valor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "coisa corrigida",
+          "definition": "Valor/objeto que sofre correção."
+        },
+        {
+          "id": "Arg2",
+          "desc": "estado final",
+          "definition": "Valor/estado após correção."
+        },
+        {
+          "id": "Arg3",
+          "desc": "estado inicial",
+          "definition": "Valor/estado antes da correção."
+        },
+        {
+          "id": "Arg4",
+          "desc": "motivo ou finalidade do reajuste",
+          "definition": "Propósito/motivo expressamente ligado à correção, conforme purpose/reason; não taxa/magnitude nem beneficiário isolado por default."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000103_SENT016::reajuste::1",
           "sent_ID": "FOLHA_DOC000103_SENT016",
           "text": "Mas há muito abuso em relação a reajustes dos planos coletivos.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 41
-              }
-            ]
+            "char_start": 32,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -89,16 +65,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 42,
                 "char_end": 62
               }
@@ -109,22 +79,14 @@
           }
         },
         {
-          "instance_id": 3305,
+          "instance_id": "FOLHA_DOC004019_SENT035::reajuste::1",
           "sent_ID": "FOLHA_DOC004019_SENT035",
           "text": "\"Não estou dizendo que os funcionários não merecessem os reajustes, mas o governo falhou na negociação\", diz Marconi.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 66
-              }
-            ]
+            "char_start": 57,
+            "char_end": 66
           },
           "realization": {
             "Arg0": null,
@@ -140,7 +102,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -149,22 +111,14 @@
           }
         },
         {
-          "instance_id": 4214,
+          "instance_id": "FOLHA_DOC003179_SENT011::reajuste::1",
           "sent_ID": "FOLHA_DOC003179_SENT011",
           "text": "A Lei do Inquilinato de 1942 controlou o reajuste dos aluguéis e desestimulou a construção de prédios para locação, prejudicando quem não tinha recursos para comprar a sua casa.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajuste",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 49
-              }
-            ]
+            "char_start": 41,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -180,15 +134,10 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 50,
                 "char_end": 62
               }
@@ -199,22 +148,14 @@
           }
         },
         {
-          "instance_id": 4800,
+          "instance_id": "FOLHA_DOC004019_SENT037::reajuste::1",
           "sent_ID": "FOLHA_DOC004019_SENT037",
           "text": "Agora, o governo não tem dinheiro para investir e os reajustes aumentam o deficit nas contas públicas.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 53,
-                "char_end": 62
-              }
-            ]
+            "char_start": 53,
+            "char_end": 62
           },
           "realization": {
             "Arg0": null,
@@ -230,7 +171,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -239,22 +180,14 @@
           }
         },
         {
-          "instance_id": 7771,
+          "instance_id": "FOLHA_DOC004019_SENT023::reajuste::1",
           "sent_ID": "FOLHA_DOC004019_SENT023",
           "text": "Dilma cedeu e concedeu os reajustes, mas deixou o governo antes que fossem oficializados.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 35
-              }
-            ]
+            "char_start": 26,
+            "char_end": 35
           },
           "realization": {
             "Arg0": "Dilma",
@@ -270,12 +203,9 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 5
               }
@@ -287,22 +217,14 @@
           }
         },
         {
-          "instance_id": 8084,
+          "instance_id": "FOLHA_DOC003249_SENT008::reajuste::1",
           "sent_ID": "FOLHA_DOC003249_SENT008",
           "text": "\"Quero dizer que nós vamos dar o reajuste aos nossos servidores civis e militares\".",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajuste",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 41
-              }
-            ]
+            "char_start": 33,
+            "char_end": 41
           },
           "realization": {
             "Arg0": "nós",
@@ -318,12 +240,9 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 17,
                 "char_end": 20
               }
@@ -335,22 +254,14 @@
           }
         },
         {
-          "instance_id": 9207,
+          "instance_id": "FOLHA_DOC004019_SENT009::reajuste::1",
           "sent_ID": "FOLHA_DOC004019_SENT009",
           "text": "Chegou a R$ 262,5 bilhões em outubro do ano passado -quando os reajustes foram aprovados e lhe deram novo fôlego.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 72
-              }
-            ]
+            "char_start": 63,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -366,7 +277,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -375,22 +286,14 @@
           }
         },
         {
-          "instance_id": 9269,
+          "instance_id": "FOLHA_DOC004019_SENT024::reajuste::1",
           "sent_ID": "FOLHA_DOC004019_SENT024",
           "text": "Nesse contexto, em junho de 2016, o governo de Michel Temer, ainda interino, decidiu levar adiante os reajustes.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajustes",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 102,
-                "char_end": 111
-              }
-            ]
+            "char_start": 102,
+            "char_end": 111
           },
           "realization": {
             "Arg0": "o governo de Michel Temer, ainda interino",
@@ -406,19 +309,9 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 34,
                 "char_end": 75
               }
@@ -430,22 +323,14 @@
           }
         },
         {
-          "instance_id": 11602,
+          "instance_id": "FOLHA_DOC000103_SENT082::reajuste::1",
           "sent_ID": "FOLHA_DOC000103_SENT082",
           "text": "O médico diz que não recebe reajuste.",
-          "frame_id": "f_1a16a3487c222062",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reajuste",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 36
-              }
-            ]
+            "char_start": 28,
+            "char_end": 36
           },
           "realization": {
             "Arg0": null,
@@ -461,7 +346,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -469,7 +354,15 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 2
+        },
+        "Arg0": {
+          "nsubj": 3
+        }
+      }
     }
   ]
 }

@@ -1,67 +1,40 @@
 {
   "lemma": "cara",
-  "lemma_base": "cara",
   "senses": [
     {
       "pt_roleset": "cara.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_17b6433038b0914e",
+          "roleset": "appearance.02",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "appearance.02",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/appearance.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            },
-            {
-              "id": "Arg2",
-              "desc": "value",
-              "definition": "value"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nsubj": 3,
-              "obj": 2,
-              "amod": 1
-            },
-            "Arg2": {
-              "nmod": 5,
-              "det": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/appearance.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1093,
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        },
+        {
+          "id": "Arg2",
+          "desc": "value",
+          "definition": "value"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003188_SENT012::cara::1",
           "sent_ID": "FOLHA_DOC003188_SENT012",
           "text": "Meu pai foi até lá e voltou com a cara mais calma do mundo, dizendo que tinha conversado com o oficial responsável e que o sobrinho estava sendo muito bem tratado.",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cara",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 38
-              }
-            ]
+            "char_start": 34,
+            "char_end": 38
           },
           "realization": {
             "Arg1": "Meu pai",
@@ -71,51 +44,30 @@
             "Arg1": "nsubj",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 7,
-                "head_token_id": 2
+                "char_end": 7
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 39,
-                "char_end": 58,
-                "head_token_id": 15
+                "char_end": 58
               }
             ]
           }
         },
         {
-          "instance_id": 4603,
+          "instance_id": "FOLHA_DOC003069_SENT009::cara::1",
           "sent_ID": "FOLHA_DOC003069_SENT009",
           "text": "Um bom sapateiro do bairro recuperou alguns calçados que ficaram com cara de novos.",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cara",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 73
-              }
-            ]
+            "char_start": 69,
+            "char_end": 73
           },
           "realization": {
             "Arg1": "alguns calçados",
@@ -125,48 +77,30 @@
             "Arg1": "obj",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 37,
-                "char_end": 52,
-                "head_token_id": 9
+                "char_end": 52
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 74,
-                "char_end": 82,
-                "head_token_id": 15
+                "char_end": 82
               }
             ]
           }
         },
         {
-          "instance_id": 5487,
+          "instance_id": "FOLHA_DOC003168_SENT005::cara::1",
           "sent_ID": "FOLHA_DOC003168_SENT005",
           "text": "\"Meu objetivo é mostrar que dá para deixar a casa com a sua cara de um jeito fácil e acessível\", afirma.",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cara",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 64
-              }
-            ]
+            "char_start": 60,
+            "char_end": 64
           },
           "realization": {
             "Arg1": "a casa",
@@ -176,48 +110,30 @@
             "Arg1": "obj",
             "Arg2": "det"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 43,
-                "char_end": 49,
-                "head_token_id": 11
+                "char_end": 49
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 54,
-                "char_end": 59,
-                "head_token_id": 13
+                "char_end": 59
               }
             ]
           }
         },
         {
-          "instance_id": 10810,
+          "instance_id": "FOLHA_DOC001341_SENT003::cara::1",
           "sent_ID": "FOLHA_DOC001341_SENT003",
           "text": "Magrela, Magali está com cara de nervosa.",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cara",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 29
-              }
-            ]
+            "char_start": 25,
+            "char_end": 29
           },
           "realization": {
             "Arg1": "Magali",
@@ -227,47 +143,30 @@
             "Arg1": "nsubj",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 9,
-                "char_end": 15,
-                "head_token_id": 3
+                "char_end": 15
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 30,
-                "char_end": 40,
-                "head_token_id": 8
+                "char_end": 40
               }
             ]
           }
         },
         {
-          "instance_id": 11630,
+          "instance_id": "FOLHA_DOC000001_SENT014::cara::1",
           "sent_ID": "FOLHA_DOC000001_SENT014",
           "text": "Lula voltou a fazer um discurso mais agressivo em relação ao mercado e disse que \"não tem cara de demônio\", mas quer que o respeitem \"como se fosse\".",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cara",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 94
-              }
-            ]
+            "char_start": 90,
+            "char_end": 94
           },
           "realization": {
             "Arg1": "Lula",
@@ -277,47 +176,30 @@
             "Arg1": "nsubj",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 4,
-                "head_token_id": 1
+                "char_end": 4
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22
-                ],
                 "char_start": 95,
-                "char_end": 105,
-                "head_token_id": 22
+                "char_end": 105
               }
             ]
           }
         },
         {
-          "instance_id": 11644,
+          "instance_id": "FOLHA_DOC000248_SENT003::cara::1",
           "sent_ID": "FOLHA_DOC000248_SENT003",
           "text": "Com séculos de serviços que punham risos nas caras humanas de cansaço e desengano, o bom papagaio viu-se abandonado pelas pessoas áridas que nos tornamos.",
-          "frame_id": "f_17b6433038b0914e",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "caras",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 50
-              }
-            ]
+            "char_start": 45,
+            "char_end": 50
           },
           "realization": {
             "Arg1": "humanas",
@@ -327,33 +209,33 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 51,
-                "char_end": 58,
-                "head_token_id": 11
+                "char_end": 58
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 59,
-                "char_end": 81,
-                "head_token_id": 13
+                "char_end": 81
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nsubj": 3,
+          "obj": 2,
+          "amod": 1
+        },
+        "Arg2": {
+          "nmod": 5,
+          "det": 1
+        }
+      }
     }
   ]
 }

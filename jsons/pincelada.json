@@ -1,63 +1,42 @@
 {
   "lemma": "pincelada",
-  "lemma_base": "pincelada",
   "senses": [
     {
       "pt_roleset": "pincelada · acepção 1",
       "description": "1 ação de pincelar: Tra- çou com pinceladas rápidas um círculo meio deformado, com um olho desvairado no centro (CP); As pinceladas devem ser longas e largas; devem dar-se duas ou três mãos de esmalte (CCE)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_a88b5894c5bb1734",
-          "description": "1 ação de pincelar: Tra- çou com pinceladas rápidas um círculo meio deformado, com um olho desvairado no centro (CP); As pinceladas devem ser longas e largas; devem dar-se duas ou três mãos de esmalte (CCE)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 9342,
+          "instance_id": "FOLHA_DOC003203_SENT017::pincelada::1",
           "sent_ID": "FOLHA_DOC003203_SENT017",
           "text": "Empresas de petróleo, alimentos e varejo subiram, empurrando para baixo fabricantes de veículos, indústrias e elétricas, pincelada do que foi a história econômica do período.",
-          "frame_id": "f_a88b5894c5bb1734",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "pincelada",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 121,
-                "char_end": 130
-              }
-            ]
+            "char_start": 121,
+            "char_end": 130
           },
           "realization": {
             "Arg0": null,
@@ -71,32 +50,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 131,
-                "char_end": 173,
-                "head_token_id": 23
+                "char_end": 173
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

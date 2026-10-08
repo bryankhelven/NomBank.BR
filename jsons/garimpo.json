@@ -1,63 +1,42 @@
 {
   "lemma": "garimpo",
-  "lemma_base": "garimpo",
   "senses": [
     {
       "pt_roleset": "garimpo · acepção 1",
       "description": "3 atividade de exploração de minas: o problema da poluição por mercúrio no Brasil está-se tornando cada vez mais grave por causa do ga- rimpo do ouro (GU); Eu pensei que esse negócio de garimpo fosse mais positivo (CAS)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_40ece72ee15763a4",
-          "description": "3 atividade de exploração de minas: o problema da poluição por mercúrio no Brasil está-se tornando cada vez mais grave por causa do ga- rimpo do ouro (GU); Eu pensei que esse negócio de garimpo fosse mais positivo (CAS)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "participante principal",
-              "definition": "participante principal"
-            },
-            {
-              "id": "Arg1",
-              "desc": "predicação nominal",
-              "definition": "predicação nominal"
-            },
-            {
-              "id": "Arg2",
-              "desc": "alvo,conteúdo,tema ou entidade relacionada",
-              "definition": "alvo,conteúdo,tema ou entidade relacionada"
-            },
-            {
-              "id": "Arg3",
-              "desc": "tempo,local,grau,meio ou contexto",
-              "definition": "tempo,local,grau,meio ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "participante principal",
+          "definition": "participante principal"
+        },
+        {
+          "id": "Arg1",
+          "desc": "predicação nominal",
+          "definition": "predicação nominal"
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo,conteúdo,tema ou entidade relacionada",
+          "definition": "alvo,conteúdo,tema ou entidade relacionada"
+        },
+        {
+          "id": "Arg3",
+          "desc": "tempo,local,grau,meio ou contexto",
+          "definition": "tempo,local,grau,meio ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 9684,
+          "instance_id": "FOLHA_DOC003069_SENT012::garimpo::1",
           "sent_ID": "FOLHA_DOC003069_SENT012",
           "text": "O garimpo no armário revelou valiosos e úteis acessórios, escondidos ou esquecidos.",
-          "frame_id": "f_40ece72ee15763a4",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "garimpo",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ]
+            "char_start": 2,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -71,25 +50,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 10,
-                "char_end": 20,
-                "head_token_id": 5
+                "char_end": 20
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

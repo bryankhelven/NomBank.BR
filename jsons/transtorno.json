@@ -1,66 +1,42 @@
 {
   "lemma": "transtorno",
-  "lemma_base": "transtorno",
   "senses": [
     {
       "pt_roleset": "transtorno · acepção 1",
       "description": "1 contrariedade; contratempo: A viagem se fez sem nenhum transtorno (CA); Estendi-lhe a licença, já pensando no transtorno que seria ter de ir à Corte, justificar-me, pagar a multa (CV)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_9772d5e42e442410",
-          "description": "1 contrariedade; contratempo: A viagem se fez sem nenhum transtorno (CA); Estendi-lhe a licença, já pensando no transtorno que seria ter de ir à Corte, justificar-me, pagar a multa (CV)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            },
-            "Arg3": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 910,
+          "instance_id": "FOLHA_DOC003178_SENT019::transtorno::1",
           "sent_ID": "FOLHA_DOC003178_SENT019",
           "text": "Presidente da Sociedade Venezuelana de Psiquiatria, Rodríguez diz haver uma explosão nos casos de ansiedade e transtorno do pânico no país.",
-          "frame_id": "f_9772d5e42e442410",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "transtorno",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 120
-              }
-            ]
+            "char_start": 110,
+            "char_end": 120
           },
           "realization": {
             "Arg0": null,
@@ -74,72 +50,55 @@
             "Arg2": "nmod",
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  23
-                ],
                 "char_start": 124,
-                "char_end": 130,
-                "head_token_id": 23
+                "char_end": 130
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 131,
-                "char_end": 138,
-                "head_token_id": 26
+                "char_end": 138
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        },
+        "Arg3": {
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "transtorno · acepção 2",
       "description": "1 contrariedade; contratempo: A viagem se fez sem nenhum transtorno (CA); Estendi-lhe a licença, já pensando no transtorno que seria ter de ir à Corte, justificar-me, pagar a multa (CV)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 14518,
+          "instance_id": "FOLHA_DOC004035_SENT016::transtorno::1",
           "sent_ID": "FOLHA_DOC004035_SENT016",
           "text": "O excesso de precaução, contudo, já causou alguns transtornos para turistas e locais.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "transtornos",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 61
-              }
-            ]
+            "char_start": 50,
+            "char_end": 61
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

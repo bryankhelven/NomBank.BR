@@ -1,63 +1,42 @@
 {
   "lemma": "escrutínio",
-  "lemma_base": "escrutínio",
   "senses": [
     {
       "pt_roleset": "escrutínio · acepção 1",
       "description": "2 voto: o poder é consentido pelo escrutínio direto, uni- versal e secreto (SIM)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_dcf7074e1448d8f9",
-          "description": "2 voto: o poder é consentido pelo escrutínio direto, uni- versal e secreto (SIM)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "participante principal",
-              "definition": "participante principal"
-            },
-            {
-              "id": "Arg1",
-              "desc": "predicação nominal",
-              "definition": "predicação nominal"
-            },
-            {
-              "id": "Arg2",
-              "desc": "participante,alvo ou conteúdo relacionado",
-              "definition": "participante,alvo ou conteúdo relacionado"
-            },
-            {
-              "id": "Arg3",
-              "desc": "tempo,local,grau ou contexto",
-              "definition": "tempo,local,grau ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj:pass": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "participante principal",
+          "definition": "participante principal"
+        },
+        {
+          "id": "Arg1",
+          "desc": "predicação nominal",
+          "definition": "predicação nominal"
+        },
+        {
+          "id": "Arg2",
+          "desc": "participante,alvo ou conteúdo relacionado",
+          "definition": "participante,alvo ou conteúdo relacionado"
+        },
+        {
+          "id": "Arg3",
+          "desc": "tempo,local,grau ou contexto",
+          "definition": "tempo,local,grau ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 11997,
+          "instance_id": "FOLHA_DOC000039_SENT011::escrutínio::1",
           "sent_ID": "FOLHA_DOC000039_SENT011",
           "text": "Também evitava o escrutínio a que o Facebook foi submetido.",
-          "frame_id": "f_dcf7074e1448d8f9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "escrutínio",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 27
-              }
-            ]
+            "char_start": 17,
+            "char_end": 27
           },
           "realization": {
             "Arg0": "Facebook",
@@ -71,15 +50,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 36,
-                "char_end": 44,
-                "head_token_id": 8
+                "char_end": 44
               }
             ],
             "Arg1": [],
@@ -87,7 +62,12 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj:pass": 1
+        }
+      }
     }
   ]
 }

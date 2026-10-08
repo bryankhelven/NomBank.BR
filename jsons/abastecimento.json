@@ -1,74 +1,50 @@
 {
   "lemma": "abastecimento",
-  "lemma_base": "abastecimento",
   "senses": [
     {
       "pt_roleset": "abastecimento.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_2a499ca0fecddf0b",
+          "roleset": "supply.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "supply.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/supply.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "provider",
-              "definition": "provider"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing provided",
-              "definition": "thing provided"
-            },
-            {
-              "id": "Arg2",
-              "desc": "entity provided for (beneficiary)",
-              "definition": "entity provided for (beneficiary)"
-            },
-            {
-              "id": "Arg3",
-              "desc": "value",
-              "definition": "value"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 3
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/supply.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 65,
+          "id": "Arg0",
+          "desc": "provider",
+          "definition": "provider"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing provided",
+          "definition": "thing provided"
+        },
+        {
+          "id": "Arg2",
+          "desc": "entity provided for (beneficiary)",
+          "definition": "entity provided for (beneficiary)"
+        },
+        {
+          "id": "Arg3",
+          "desc": "value",
+          "definition": "value"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000003_SENT016::abastecimento::1",
           "sent_ID": "FOLHA_DOC000003_SENT016",
           "text": "Entre elas estavam dados sobre procedimentos e projetos técnicos e operacionais do abastecimento de água de São Paulo, além de dados da Polícia Militar e da Administração Penitenciária.",
-          "frame_id": "f_2a499ca0fecddf0b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "abastecimento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 96
-              }
-            ]
+            "char_start": 83,
+            "char_end": 96
           },
           "realization": {
             "Arg0": null,
@@ -82,51 +58,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 97,
-                "char_end": 104,
-                "head_token_id": 16
+                "char_end": 104
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 105,
-                "char_end": 117,
-                "head_token_id": 18
+                "char_end": 117
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 5829,
+          "instance_id": "FOLHA_DOC004068_SENT012::abastecimento::1",
           "sent_ID": "FOLHA_DOC004068_SENT012",
           "text": "Já em Porto Rico 900 mil pessoas ficaram sem energia e cerca de 50 mil sem abastecimento de água.",
-          "frame_id": "f_2a499ca0fecddf0b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "abastecimento",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 75,
-                "char_end": 88
-              }
-            ]
+            "char_start": 75,
+            "char_end": 88
           },
           "realization": {
             "Arg0": null,
@@ -140,17 +97,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19
-                ],
                 "char_start": 89,
-                "char_end": 96,
-                "head_token_id": 19
+                "char_end": 96
               }
             ],
             "Arg2": [],
@@ -158,22 +110,14 @@
           }
         },
         {
-          "instance_id": 11073,
+          "instance_id": "FOLHA_DOC003111_SENT008::abastecimento::1",
           "sent_ID": "FOLHA_DOC003111_SENT008",
           "text": "O teste aconteceu dias após a ONU impor novas sanções a Pyongyang, que proíbem as exportações têxteis norte-coreanas e restringem o seu abastecimento em petróleo e gás.",
-          "frame_id": "f_2a499ca0fecddf0b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "abastecimento",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 149
-              }
-            ]
+            "char_start": 136,
+            "char_end": 149
           },
           "realization": {
             "Arg0": null,
@@ -187,26 +131,27 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27,
-                  28
-                ],
                 "char_start": 150,
-                "char_end": 167,
-                "head_token_id": 26
+                "char_end": 167
               }
             ],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 3
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

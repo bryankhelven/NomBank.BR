@@ -1,77 +1,50 @@
 {
   "lemma": "transferência",
-  "lemma_base": "transferência",
   "senses": [
     {
       "pt_roleset": "transferência.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_060ea8b702f9b04a",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "transfer.01",
-              "resource": "English NomBank",
-              "description": "send",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/transfer.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agent",
-              "definition": "agent"
-            },
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            },
-            {
-              "id": "Arg2",
-              "desc": "recipient",
-              "definition": "recipient"
-            },
-            {
-              "id": "Arg3",
-              "desc": "source",
-              "definition": "source"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg1": {
-              "nmod": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "roleset": "transfer.01",
+          "resource": "English NomBank",
+          "description": "send",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/transfer.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 14964,
+          "id": "Arg0",
+          "desc": "agent",
+          "definition": "agent"
+        },
+        {
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        },
+        {
+          "id": "Arg2",
+          "desc": "recipient",
+          "definition": "recipient"
+        },
+        {
+          "id": "Arg3",
+          "desc": "source",
+          "definition": "source"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003064_SENT003::transferência::1",
           "sent_ID": "FOLHA_DOC003064_SENT003",
           "text": "Além disso, ela afirma que a empresa fez o processo de transferência tanto da linha de telefone fixo como da conexão de internet para o município de Guarulhos sem que houvesse pedido para tal.",
-          "frame_id": "f_060ea8b702f9b04a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "transferência",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 68
-              }
-            ]
+            "char_start": 55,
+            "char_end": 68
           },
           "realization": {
             "Arg0": "a empresa",
@@ -85,51 +58,40 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 27,
-                "char_end": 36,
-                "head_token_id": 9
+                "char_end": 36
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 75,
-                "char_end": 100,
-                "head_token_id": 18
+                "char_end": 100
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  28,
-                  29,
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 129,
-                "char_end": 158,
-                "head_token_id": 30
+                "char_end": 158
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg1": {
+          "nmod": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

@@ -1,75 +1,45 @@
 {
   "lemma": "especialista",
-  "lemma_base": "especialista",
   "senses": [
     {
       "pt_roleset": "especialista.01",
       "description": "quem tem conhecimento ou preparo específico",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_6e10203059043c29",
-          "description": "quem tem conhecimento ou preparo específico",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "expert.01",
-              "resource": "English NomBank",
-              "description": "nomadj-expert",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/expert.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "pessoa especialista independente",
-              "definition": "Identidade independente de quem detém saber; REL especialista não copiado."
-            },
-            {
-              "id": "Arg1",
-              "desc": "área de especialidade",
-              "definition": "Assunto em que se tem conhecimento específico."
-            },
-            {
-              "id": "Arg2",
-              "desc": "instituição/domínio servido",
-              "definition": "Organização/setor para o qual se atua como especialista, conforme universidade e lado comercial na fonte; não local de toda ação."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 7
-            },
-            "Arg2": {
-              "obl": 1,
-              "nmod": 1
-            },
-            "Arg0": {
-              "nmod": 2,
-              "nsubj": 3,
-              "obl": 1
-            }
-          }
+          "roleset": "expert.01",
+          "resource": "English NomBank",
+          "description": "nomadj-expert",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/expert.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 641,
+          "id": "Arg0",
+          "desc": "pessoa especialista independente",
+          "definition": "Identidade independente de quem detém saber; REL especialista não copiado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "área de especialidade",
+          "definition": "Assunto em que se tem conhecimento específico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "instituição/domínio servido",
+          "definition": "Organização/setor para o qual se atua como especialista, conforme universidade e lado comercial na fonte; não local de toda ação."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000085_SENT013::especialista::1",
           "sent_ID": "FOLHA_DOC000085_SENT013",
           "text": "A avaliação de alguns especialistas é que casas com ramificações globais têm vantagem competitiva ante aquelas com atuação local.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 35
-              }
-            ]
+            "char_start": 22,
+            "char_end": 35
           },
           "realization": {
             "Arg0": null,
@@ -81,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1898,
+          "instance_id": "FOLHA_DOC003020_SENT011::especialista::1",
           "sent_ID": "FOLHA_DOC003020_SENT011",
           "text": "Além do caso da EPA, foi desmembrado um conselho de 15 especialistas responsável por elaborar um relatório sobre o clima à Casa Branca a cada quatro anos.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 68
-              }
-            ]
+            "char_start": 55,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -115,27 +77,16 @@
             "Arg1": "nmod",
             "Arg2": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 107,
                 "char_end": 120
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 121,
                 "char_end": 134
               }
@@ -143,22 +94,14 @@
           }
         },
         {
-          "instance_id": 3563,
+          "instance_id": "FOLHA_DOC003157_SENT011::especialista::1",
           "sent_ID": "FOLHA_DOC003157_SENT011",
           "text": "Sem o acordo nos EUA, o cenário mais provável é que os irmãos Joesley e Wesley Batista, sócios que controlam o negócio, sejam afastados da empresa, segundo cinco especialistas ouvidos pela Folha.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              35
-            ],
-            "spans": [
-              {
-                "char_start": 162,
-                "char_end": 175
-              }
-            ]
+            "char_start": 162,
+            "char_end": 175
           },
           "realization": {
             "Arg0": null,
@@ -170,29 +113,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3689,
+          "instance_id": "FOLHA_DOC000178_SENT010::especialista::1",
           "sent_ID": "FOLHA_DOC000178_SENT010",
           "text": "Há todos os tipos de especialistas, menos um psicólogo.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 34
-              }
-            ]
+            "char_start": 21,
+            "char_end": 34
           },
           "realization": {
             "Arg0": "um psicólogo",
@@ -204,13 +139,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 42,
                 "char_end": 54
               }
@@ -220,22 +151,14 @@
           }
         },
         {
-          "instance_id": 4246,
+          "instance_id": "FOLHA_DOC003039_SENT007::especialista::1",
           "sent_ID": "FOLHA_DOC003039_SENT007",
           "text": "\"Os dois países estão se preparando para possíveis mudanças\", diz à Folha a analista alemã Jacqueline Hénard, especialista nas relações entre Berlim e Paris.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 122
-              }
-            ]
+            "char_start": 110,
+            "char_end": 122
           },
           "realization": {
             "Arg0": "a analista alemã Jacqueline Hénard",
@@ -247,31 +170,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 74,
                 "char_end": 108
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 123,
                 "char_end": 156
               }
@@ -280,22 +187,14 @@
           }
         },
         {
-          "instance_id": 4391,
+          "instance_id": "FOLHA_DOC000085_SENT025::especialista::1",
           "sent_ID": "FOLHA_DOC000085_SENT025",
           "text": "\"A gente olha muito para a indústria local, nos acostumamos a ter o CDI [juros médios de empréstimos entre instituições financeiras] como parâmetro para tudo\", critica o especialista.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              34
-            ],
-            "spans": [
-              {
-                "char_start": 170,
-                "char_end": 182
-              }
-            ]
+            "char_start": 170,
+            "char_end": 182
           },
           "realization": {
             "Arg0": null,
@@ -307,29 +206,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4840,
+          "instance_id": "FOLHA_DOC002017_SENT029::especialista::1",
           "sent_ID": "FOLHA_DOC002017_SENT029",
           "text": "A falta de proteção ao pequeno investidor é questionada por especialistas.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 73
-              }
-            ]
+            "char_start": 60,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -341,29 +232,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4871,
+          "instance_id": "FOLHA_DOC003172_SENT009::especialista::1",
           "sent_ID": "FOLHA_DOC003172_SENT009",
           "text": "Ex-sócia do banco BBM, especialista em gestão de risco, a economista deixou o setor privado para assumir a Secretaria Municipal de Fazenda do Rio em 2009.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 35
-              }
-            ]
+            "char_start": 23,
+            "char_end": 35
           },
           "realization": {
             "Arg0": "a economista",
@@ -375,25 +258,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 56,
                 "char_end": 68
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 36,
                 "char_end": 54
               }
@@ -402,22 +275,14 @@
           }
         },
         {
-          "instance_id": 4957,
+          "instance_id": "FOLHA_DOC003157_SENT018::especialista::1",
           "sent_ID": "FOLHA_DOC003157_SENT018",
           "text": "Com a prisão de Joesley e Wesley e a rescisão do contrato de delação, as perspectivas para a JBS são as piores possíveis no Brasil e nos EUA, de acordo com especialistas.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              37
-            ],
-            "spans": [
-              {
-                "char_start": 156,
-                "char_end": 169
-              }
-            ]
+            "char_start": 156,
+            "char_end": 169
           },
           "realization": {
             "Arg0": null,
@@ -429,29 +294,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5715,
+          "instance_id": "FOLHA_DOC003153_SENT028::especialista::1",
           "sent_ID": "FOLHA_DOC003153_SENT028",
           "text": "Análise de repórter especialista considerou que \"a denúncia trata essencialmente de outro suposto crime: uma quadrilha de parlamentares comandada pelo presidente da República que usa alianças políticas 'como ferramenta para arrecadar propina'\".",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 32
-              }
-            ]
+            "char_start": 20,
+            "char_end": 32
           },
           "realization": {
             "Arg0": "repórter",
@@ -463,12 +320,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 11,
                 "char_end": 19
               }
@@ -478,22 +332,14 @@
           }
         },
         {
-          "instance_id": 5806,
+          "instance_id": "FOLHA_DOC003007_SENT005::especialista::1",
           "sent_ID": "FOLHA_DOC003007_SENT005",
           "text": "Especialistas acreditam que 16 mortes estão relacionadas com dispositivos defeituosos em todo o mundo.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Especialistas",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 13
-              }
-            ]
+            "char_start": 0,
+            "char_end": 13
           },
           "realization": {
             "Arg0": null,
@@ -505,29 +351,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7120,
+          "instance_id": "FOLHA_DOC003169_SENT007::especialista::1",
           "sent_ID": "FOLHA_DOC003169_SENT007",
           "text": "E segundo especialistas, não é preciso investir muito para entrar no jogo.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 23
-              }
-            ]
+            "char_start": 10,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -539,29 +377,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7763,
+          "instance_id": "FOLHA_DOC000024_SENT043::especialista::1",
           "sent_ID": "FOLHA_DOC000024_SENT043",
           "text": "Sobre a crítica do especialista, a EMTU disse que há 45 km de corredores e faixa preferencial para ônibus no sistema ABD (região do ABC).",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 31
-              }
-            ]
+            "char_start": 19,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -573,29 +403,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7883,
+          "instance_id": "FOLHA_DOC003157_SENT024::especialista::1",
           "sent_ID": "FOLHA_DOC003157_SENT024",
           "text": "Os cinco especialistas ouvidos pela Folha dizem crer que o acordo de leniência será anulado, o que geraria um caos jurídico e econômico para a JBS.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 22
-              }
-            ]
+            "char_start": 9,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -607,29 +429,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8924,
+          "instance_id": "FOLHA_DOC003198_SENT019::especialista::1",
           "sent_ID": "FOLHA_DOC003198_SENT019",
           "text": "Para Marco Quintarelli, especialista em varejo da consultoria Azo, é precipitado voltar a explorar já a marca Friboi.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 36
-              }
-            ]
+            "char_start": 24,
+            "char_end": 36
           },
           "realization": {
             "Arg0": "Marco Quintarelli",
@@ -641,35 +455,21 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3
-                ],
                 "char_start": 5,
                 "char_end": 22
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 37,
                 "char_end": 46
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 47,
                 "char_end": 65
               }
@@ -677,22 +477,14 @@
           }
         },
         {
-          "instance_id": 9670,
+          "instance_id": "FOLHA_DOC001307_SENT020::especialista::1",
           "sent_ID": "FOLHA_DOC001307_SENT020",
           "text": "É especialista em direito do trabalho e interesses difusos e coletivos.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -704,22 +496,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 15,
                 "char_end": 70
               }
@@ -728,22 +508,14 @@
           }
         },
         {
-          "instance_id": 10246,
+          "instance_id": "FOLHA_DOC000041_SENT044::especialista::1",
           "sent_ID": "FOLHA_DOC000041_SENT044",
           "text": "Segundo os especialistas, até profissionais de saúde muitas vezes reproduzem preconceitos e julgamentos.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 24
-              }
-            ]
+            "char_start": 11,
+            "char_end": 24
           },
           "realization": {
             "Arg0": null,
@@ -755,29 +527,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12363,
+          "instance_id": "FOLHA_DOC000163_SENT019::especialista::1",
           "sent_ID": "FOLHA_DOC000163_SENT019",
           "text": "Há também um descontentamento crescente com instituições e uma desconfiança crescente em relação a especialistas e elites.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 99,
-                "char_end": 112
-              }
-            ]
+            "char_start": 99,
+            "char_end": 112
           },
           "realization": {
             "Arg0": null,
@@ -789,29 +553,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 13145,
+          "instance_id": "FOLHA_DOC003248_SENT020::especialista::1",
           "sent_ID": "FOLHA_DOC003248_SENT020",
           "text": "Os especialistas apontam também que problemas regulatórios e insegurança jurídica afastam os investimentos em infraestrutura.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 16
-              }
-            ]
+            "char_start": 3,
+            "char_end": 16
           },
           "realization": {
             "Arg0": null,
@@ -823,29 +579,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15271,
+          "instance_id": "FOLHA_DOC000024_SENT019::especialista::1",
           "sent_ID": "FOLHA_DOC000024_SENT019",
           "text": "Horácio Augusto Figueira, especialista em transporte, afirma que as vans em trajetos intermunicipais deveriam ser abolidas.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 38
-              }
-            ]
+            "char_start": 26,
+            "char_end": 38
           },
           "realization": {
             "Arg0": "Horácio Augusto Figueira",
@@ -857,24 +605,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 24
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 39,
                 "char_end": 52
               }
@@ -883,22 +622,14 @@
           }
         },
         {
-          "instance_id": 15474,
+          "instance_id": "FOLHA_DOC003198_SENT032::especialista::1",
           "sent_ID": "FOLHA_DOC003198_SENT032",
           "text": "No caso da Friboi, a estratégia que será usada para preservar sua imagem ainda é considerada um mistério por publicitários e especialistas em marcas.",
-          "frame_id": "f_6e10203059043c29",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "especialistas",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 125,
-                "char_end": 138
-              }
-            ]
+            "char_start": 125,
+            "char_end": 138
           },
           "realization": {
             "Arg0": null,
@@ -910,14 +641,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  26,
-                  27
-                ],
                 "char_start": 139,
                 "char_end": 148
               }
@@ -925,45 +652,44 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 7
+        },
+        "Arg2": {
+          "obl": 1,
+          "nmod": 1
+        },
+        "Arg0": {
+          "nmod": 2,
+          "nsubj": 3,
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "especialista.03",
       "description": "médico que se especializou em determinado ramo de sua profissão",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 15062,
+          "instance_id": "FOLHA_DOC001404_SENT030::especialista::1",
           "sent_ID": "FOLHA_DOC001404_SENT030",
           "text": "Procurou especialista enquanto continuava trabalhando.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "especialista",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 21
-              }
-            ]
+            "char_start": 9,
+            "char_end": 21
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

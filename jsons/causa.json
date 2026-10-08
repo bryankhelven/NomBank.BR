@@ -1,74 +1,50 @@
 {
   "lemma": "causa",
-  "lemma_base": "causa",
   "senses": [
     {
       "pt_roleset": "causa.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_f42a5737eb290186",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "reason.02",
-              "resource": "English NomBank",
-              "description": "justify",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "parte/proponente quando pertinente",
-              "definition": "parte/proponente quando pertinente"
-            },
-            {
-              "id": "Arg1",
-              "desc": "causa judicial",
-              "definition": "causa judicial"
-            },
-            {
-              "id": "Arg2",
-              "desc": "matéria/direito discutido",
-              "definition": "matéria/direito discutido"
-            },
-            {
-              "id": "Arg3",
-              "desc": "foro,instância ou contexto",
-              "definition": "foro,instância ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "conj": 1
-            },
-            "Arg3": {
-              "nmod": 1
-            }
-          }
+          "roleset": "reason.02",
+          "resource": "English NomBank",
+          "description": "justify",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2209,
+          "id": "Arg0",
+          "desc": "parte/proponente quando pertinente",
+          "definition": "parte/proponente quando pertinente"
+        },
+        {
+          "id": "Arg1",
+          "desc": "causa judicial",
+          "definition": "causa judicial"
+        },
+        {
+          "id": "Arg2",
+          "desc": "matéria/direito discutido",
+          "definition": "matéria/direito discutido"
+        },
+        {
+          "id": "Arg3",
+          "desc": "foro,instância ou contexto",
+          "definition": "foro,instância ou contexto"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003058_SENT013::causa::1",
           "sent_ID": "FOLHA_DOC003058_SENT013",
           "text": "A procuradora tem dito que dará visibilidade a outros temas, como questões ligadas a indígenas e minorias, causas cíveis no STF (Supremo Tribunal Federal) e direitos humanos.",
-          "frame_id": "f_f42a5737eb290186",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causas",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 107,
-                "char_end": 113
-              }
-            ]
+            "char_start": 107,
+            "char_end": 113
           },
           "realization": {
             "Arg0": null,
@@ -82,107 +58,82 @@
             "Arg2": "conj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  31,
-                  32
-                ],
                 "char_start": 157,
-                "char_end": 173,
-                "head_token_id": 31
+                "char_end": 173
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  24
-                ],
                 "char_start": 124,
-                "char_end": 127,
-                "head_token_id": 24
+                "char_end": 127
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "conj": 1
+        },
+        "Arg3": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "causa.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_7a7d9162246a8141",
-          "description": null,
-          "valency": 5,
-          "origin_frames": [
-            {
-              "roleset": "reason.02",
-              "resource": "English NomBank",
-              "description": "justify",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "justifier",
-              "definition": "justifier"
-            },
-            {
-              "id": "Arg1",
-              "desc": "decision or attitude being shown to be right",
-              "definition": "decision or attitude being shown to be right"
-            },
-            {
-              "id": "Arg2",
-              "desc": "explicit instrument",
-              "definition": "explicit instrument"
-            },
-            {
-              "id": "Arg3",
-              "desc": "secondary predication on arg1",
-              "definition": "secondary predication on arg1"
-            },
-            {
-              "id": "Arg4",
-              "desc": "justified to, beneficiary",
-              "definition": "justified to, beneficiary"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "ccomp": 1,
-              "nmod": 2
-            },
-            "Arg0": {
-              "nsubj": 1
-            }
-          }
+          "roleset": "reason.02",
+          "resource": "English NomBank",
+          "description": "justify",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 3998,
+          "id": "Arg0",
+          "desc": "justifier",
+          "definition": "justifier"
+        },
+        {
+          "id": "Arg1",
+          "desc": "decision or attitude being shown to be right",
+          "definition": "decision or attitude being shown to be right"
+        },
+        {
+          "id": "Arg2",
+          "desc": "explicit instrument",
+          "definition": "explicit instrument"
+        },
+        {
+          "id": "Arg3",
+          "desc": "secondary predication on arg1",
+          "definition": "secondary predication on arg1"
+        },
+        {
+          "id": "Arg4",
+          "desc": "justified to, beneficiary",
+          "definition": "justified to, beneficiary"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003017_SENT023::causa::1",
           "sent_ID": "FOLHA_DOC003017_SENT023",
           "text": "Não se pode dizer que isso acontece por uma causa única, nem mesmo que seus engenheiros de trânsito são melhores do que o Brasil.",
-          "frame_id": "f_7a7d9162246a8141",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 49
-              }
-            ]
+            "char_start": 44,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -198,17 +149,12 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 22,
-                "char_end": 35,
-                "head_token_id": 7
+                "char_end": 35
               }
             ],
             "Arg2": [],
@@ -217,22 +163,14 @@
           }
         },
         {
-          "instance_id": 7373,
+          "instance_id": "FOLHA_DOC000161_SENT045::causa::1",
           "sent_ID": "FOLHA_DOC000161_SENT045",
           "text": "O atrito entre os componentes é a causa daquele apito chato que se ouve ao frear.",
-          "frame_id": "f_7a7d9162246a8141",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 39
-              }
-            ]
+            "char_start": 34,
+            "char_end": 39
           },
           "realization": {
             "Arg0": "O atrito entre os componentes",
@@ -248,37 +186,17 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
-                "char_end": 29,
-                "head_token_id": 2
+                "char_end": 29
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 40,
-                "char_end": 80,
-                "head_token_id": 11
+                "char_end": 80
               }
             ],
             "Arg2": [],
@@ -287,22 +205,14 @@
           }
         },
         {
-          "instance_id": 13459,
+          "instance_id": "FOLHA_DOC002025_SENT003::causa::1",
           "sent_ID": "FOLHA_DOC002025_SENT003",
           "text": "Divide um Brasil multissecularmente patrimonialista e um Brasil que decidiu extirpar de si essa primeira e mais grave causa de sua fragilidade estrutural.",
-          "frame_id": "f_7a7d9162246a8141",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 123
-              }
-            ]
+            "char_start": 118,
+            "char_end": 123
           },
           "realization": {
             "Arg0": null,
@@ -318,19 +228,12 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 124,
-                "char_end": 153,
-                "head_token_id": 22
+                "char_end": 153
               }
             ],
             "Arg2": [],
@@ -339,22 +242,14 @@
           }
         },
         {
-          "instance_id": 13852,
+          "instance_id": "FOLHA_DOC000455_SENT010::causa::1",
           "sent_ID": "FOLHA_DOC000455_SENT010",
           "text": "Uma linguagem que só por meio da mais brutal violência pode nos fazer ainda confiar nas relações de causalidade, na certeza produzida pelo efeito que segue a causa, na recognição produzida pela memória, na continuidade narrativa com sua orientação de ação pelas noções de necessidade e desenvolvimento.",
-          "frame_id": "f_7a7d9162246a8141",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 158,
-                "char_end": 163
-              }
-            ]
+            "char_start": 158,
+            "char_end": 163
           },
           "realization": {
             "Arg0": null,
@@ -370,7 +265,7 @@
             "Arg3": null,
             "Arg4": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -378,76 +273,61 @@
             "Arg4": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "ccomp": 1,
+          "nmod": 2
+        },
+        "Arg0": {
+          "nsubj": 1
+        }
+      }
     },
     {
       "pt_roleset": "causa.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_f51c4676e3844a85",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "reason.02",
-              "resource": "English NomBank",
-              "description": "justify",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agente/grupo que apoia",
-              "definition": "agente/grupo que apoia"
-            },
-            {
-              "id": "Arg1",
-              "desc": "causa/ideal",
-              "definition": "causa/ideal"
-            },
-            {
-              "id": "Arg2",
-              "desc": "objetivo,grupo ou valor defendido",
-              "definition": "objetivo,grupo ou valor defendido"
-            },
-            {
-              "id": "Arg3",
-              "desc": "meio,grau,tempo ou contexto",
-              "definition": "meio,grau,tempo ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1,
-              "obj": 1
-            },
-            "Arg2": {
-              "amod": 2
-            }
-          }
+          "roleset": "reason.02",
+          "resource": "English NomBank",
+          "description": "justify",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 5618,
+          "id": "Arg0",
+          "desc": "agente/grupo que apoia",
+          "definition": "agente/grupo que apoia"
+        },
+        {
+          "id": "Arg1",
+          "desc": "causa/ideal",
+          "definition": "causa/ideal"
+        },
+        {
+          "id": "Arg2",
+          "desc": "objetivo,grupo ou valor defendido",
+          "definition": "objetivo,grupo ou valor defendido"
+        },
+        {
+          "id": "Arg3",
+          "desc": "meio,grau,tempo ou contexto",
+          "definition": "meio,grau,tempo ou contexto"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002010_SENT024::causa::1",
           "sent_ID": "FOLHA_DOC002010_SENT024",
           "text": "A chanceler, porém, também deixou escapar gestos importantes para a causa, avalia Schwarzer.",
-          "frame_id": "f_f51c4676e3844a85",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 73
-              }
-            ]
+            "char_start": 68,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -461,7 +341,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -469,22 +349,14 @@
           }
         },
         {
-          "instance_id": 7318,
+          "instance_id": "FOLHA_DOC003006_SENT019::causa::1",
           "sent_ID": "FOLHA_DOC003006_SENT019",
           "text": "Temos um longo caminho para reconstrução do Brasil e será a nossa determinação e engajamento, nas causas prioritárias, que definirão a velocidade e o sucesso das mudanças que queremos.",
-          "frame_id": "f_f51c4676e3844a85",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causas",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 104
-              }
-            ]
+            "char_start": 98,
+            "char_end": 104
           },
           "realization": {
             "Arg0": "nossa determinação e engajamento",
@@ -498,51 +370,32 @@
             "Arg2": "amod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 60,
-                "char_end": 92,
-                "head_token_id": 14
+                "char_end": 92
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 105,
-                "char_end": 117,
-                "head_token_id": 21
+                "char_end": 117
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 11909,
+          "instance_id": "FOLHA_DOC004105_SENT023::causa::1",
           "sent_ID": "FOLHA_DOC004105_SENT023",
           "text": "\"Não me acho melhor por me importar com causas sociais\", afirma o ator.",
-          "frame_id": "f_f51c4676e3844a85",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causas",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 46
-              }
-            ]
+            "char_start": 40,
+            "char_end": 46
           },
           "realization": {
             "Arg0": "me",
@@ -556,48 +409,32 @@
             "Arg2": "amod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 5,
-                "char_end": 7,
-                "head_token_id": 3
+                "char_end": 7
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 47,
-                "char_end": 54,
-                "head_token_id": 11
+                "char_end": 54
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 14209,
+          "instance_id": "FOLHA_DOC003001_SENT020::causa::1",
           "sent_ID": "FOLHA_DOC003001_SENT020",
           "text": "A campanha em si, por meio das mensagens, já desperta nas famílias o sentimento de sensibilidade para com a causa.",
-          "frame_id": "f_f51c4676e3844a85",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 113
-              }
-            ]
+            "char_start": 108,
+            "char_end": 113
           },
           "realization": {
             "Arg0": null,
@@ -611,7 +448,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -619,22 +456,14 @@
           }
         },
         {
-          "instance_id": 14383,
+          "instance_id": "FOLHA_DOC003162_SENT003::causa::1",
           "sent_ID": "FOLHA_DOC003162_SENT003",
           "text": "Aconteceu em 2006, quando uma entidade internacional quis homenagear personalidades assassinadas em nome de uma causa.",
-          "frame_id": "f_f51c4676e3844a85",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 112,
-                "char_end": 117
-              }
-            ]
+            "char_start": 112,
+            "char_end": 117
           },
           "realization": {
             "Arg0": null,
@@ -648,82 +477,68 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1,
+          "obj": 1
+        },
+        "Arg2": {
+          "amod": 2
+        }
+      }
     },
     {
       "pt_roleset": "causa.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_3c7823d2427c1b1d",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "reason.02",
-              "resource": "English NomBank",
-              "description": "justify",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "autoridade/empregador que aplica sanção",
-              "definition": "autoridade/empregador que aplica sanção"
-            },
-            {
-              "id": "Arg1",
-              "desc": "justa causa/fundamento jurídico",
-              "definition": "justa causa/fundamento jurídico"
-            },
-            {
-              "id": "Arg2",
-              "desc": "sancionado/empregado",
-              "definition": "sancionado/empregado"
-            },
-            {
-              "id": "Arg3",
-              "desc": "ato,fato,tempo ou base legal",
-              "definition": "ato,fato,tempo ou base legal"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj:pass": 1
-            },
-            "Arg3": {
-              "obl": 1
-            }
-          }
+          "roleset": "reason.02",
+          "resource": "English NomBank",
+          "description": "justify",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/reason.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 5932,
+          "id": "Arg0",
+          "desc": "autoridade/empregador que aplica sanção",
+          "definition": "autoridade/empregador que aplica sanção"
+        },
+        {
+          "id": "Arg1",
+          "desc": "justa causa/fundamento jurídico",
+          "definition": "justa causa/fundamento jurídico"
+        },
+        {
+          "id": "Arg2",
+          "desc": "sancionado/empregado",
+          "definition": "sancionado/empregado"
+        },
+        {
+          "id": "Arg3",
+          "desc": "ato,fato,tempo ou base legal",
+          "definition": "ato,fato,tempo ou base legal"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004039_SENT008::causa::1",
           "sent_ID": "FOLHA_DOC004039_SENT008",
           "text": "Segundo Maza, os servidores públicos que participarem dessas atividades serão punidos com multa ou demissão por justa causa.",
-          "frame_id": "f_3c7823d2427c1b1d",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "causa",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 123
-              }
-            ]
+            "char_start": 118,
+            "char_end": 123
           },
           "realization": {
             "Arg0": "servidores públicos",
@@ -737,34 +552,32 @@
             "Arg2": null,
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 17,
-                "char_end": 36,
-                "head_token_id": 5
+                "char_end": 36
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 54,
-                "char_end": 71,
-                "head_token_id": 11
+                "char_end": 71
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj:pass": 1
+        },
+        "Arg3": {
+          "obl": 1
+        }
+      }
     }
   ]
 }

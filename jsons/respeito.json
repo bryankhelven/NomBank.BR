@@ -1,73 +1,45 @@
 {
   "lemma": "respeito",
-  "lemma_base": "respeito",
   "senses": [
     {
       "pt_roleset": "respeito.01",
       "description": "reverência; consideração",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_3f7b5926b66d3849",
-          "description": "reverência; consideração",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "respect.01",
-              "resource": "English NomBank",
-              "description": "to regard highly",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/respect.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "respeitador",
-              "definition": "Entidade que tem/demonstra respeito. Em relações recíprocas agregadas expressas como entre instituições, ambos os papéis podem receber o mesmo conjunto, sem fabricar membros ou pareamentos."
-            },
-            {
-              "id": "Arg1",
-              "desc": "entidade respeitada",
-              "definition": "Pessoa/coisa à qual se dirige respeito. Em relações recíprocas agregadas expressas como entre instituições, ambos os papéis podem receber o mesmo conjunto, sem fabricar membros ou pareamentos."
-            },
-            {
-              "id": "Arg2",
-              "desc": "atributo respeitado",
-              "definition": "Papel pelo qual a entidade é respeitada, conforme respeitar como."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 2,
-              "nmod": 1,
-              "conj": 1
-            },
-            "Arg1": {
-              "nmod": 5,
-              "obj": 1,
-              "obl": 1
-            }
-          }
+          "roleset": "respect.01",
+          "resource": "English NomBank",
+          "description": "to regard highly",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/respect.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 575,
+          "id": "Arg0",
+          "desc": "respeitador",
+          "definition": "Entidade que tem/demonstra respeito. Em relações recíprocas agregadas expressas como entre instituições, ambos os papéis podem receber o mesmo conjunto, sem fabricar membros ou pareamentos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade respeitada",
+          "definition": "Pessoa/coisa à qual se dirige respeito. Em relações recíprocas agregadas expressas como entre instituições, ambos os papéis podem receber o mesmo conjunto, sem fabricar membros ou pareamentos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo respeitado",
+          "definition": "Papel pelo qual a entidade é respeitada, conforme respeitar como."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002025_SENT009::respeito::1",
           "sent_ID": "FOLHA_DOC002025_SENT009",
           "text": "Também perceptível que ética na política é a mais bonita arte de se dar ao respeito.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 75,
-                "char_end": 83
-              }
-            ]
+            "char_start": 75,
+            "char_end": 83
           },
           "realization": {
             "Arg0": null,
@@ -79,29 +51,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3291,
+          "instance_id": "FOLHA_DOC003058_SENT031::respeito::1",
           "sent_ID": "FOLHA_DOC003058_SENT031",
           "text": "Sobre a relação com a PF, sua assessoria diz que a PGR vai se basear em \"diálogo, respeito mútuo, valorização do trabalho de investigação da polícia e cooperação\".",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 90
-              }
-            ]
+            "char_start": 82,
+            "char_end": 90
           },
           "realization": {
             "Arg0": "a PGR",
@@ -113,23 +77,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 49,
                 "char_end": 54
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 20,
                 "char_end": 24
               }
@@ -138,22 +94,14 @@
           }
         },
         {
-          "instance_id": 3976,
+          "instance_id": "FOLHA_DOC003306_SENT010::respeito::1",
           "sent_ID": "FOLHA_DOC003306_SENT010",
           "text": "Na quinta-feira (14), público e orquestra o receberam com respeito solene.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 66
-              }
-            ]
+            "char_start": 58,
+            "char_end": 66
           },
           "realization": {
             "Arg0": "público e orquestra",
@@ -165,23 +113,15 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 22,
                 "char_end": 41
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 42,
                 "char_end": 43
               }
@@ -190,22 +130,14 @@
           }
         },
         {
-          "instance_id": 5509,
+          "instance_id": "FOLHA_DOC003013_SENT029::respeito::1",
           "sent_ID": "FOLHA_DOC003013_SENT029",
           "text": "Os órgãos do sistema de administração da Justiça têm no respeito e harmonia entre as instituições a pedra angular que equilibra a relação necessária para se fazer justiça.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 64
-              }
-            ]
+            "char_start": 56,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "entre as instituições",
@@ -217,25 +149,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 76,
                 "char_end": 97
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 76,
                 "char_end": 97
               }
@@ -244,22 +166,14 @@
           }
         },
         {
-          "instance_id": 6447,
+          "instance_id": "FOLHA_DOC003006_SENT011::respeito::1",
           "sent_ID": "FOLHA_DOC003006_SENT011",
           "text": "Com essas medidas o resultado seria a possibilidade de uma maior alternância de poder, uma representatividade adequada, mais opções para os eleitores, maior liberdade e respeito aos recursos dos pagadores de impostos.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 169,
-                "char_end": 177
-              }
-            ]
+            "char_start": 169,
+            "char_end": 177
           },
           "realization": {
             "Arg0": null,
@@ -271,20 +185,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 178,
                 "char_end": 216
               }
@@ -293,22 +197,14 @@
           }
         },
         {
-          "instance_id": 9583,
+          "instance_id": "FOLHA_DOC001102_SENT004::respeito::1",
           "sent_ID": "FOLHA_DOC001102_SENT004",
           "text": "Qual é o respeito devido a símbolos nacionais como hinos e bandeiras?",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 17
-              }
-            ]
+            "char_start": 9,
+            "char_end": 17
           },
           "realization": {
             "Arg0": null,
@@ -320,19 +216,10 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 25,
                 "char_end": 68
               }
@@ -341,22 +228,14 @@
           }
         },
         {
-          "instance_id": 10104,
+          "instance_id": "FOLHA_DOC003172_SENT057::respeito::1",
           "sent_ID": "FOLHA_DOC003172_SENT057",
           "text": "Perdi todo o respeito pelo PSDB quando ele votou contra a reforma tributária que a [ex-presidente] Dilma [Rousseff] apresentou.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 21
-              }
-            ]
+            "char_start": 13,
+            "char_end": 21
           },
           "realization": {
             "Arg0": null,
@@ -368,15 +247,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 22,
                 "char_end": 31
               }
@@ -385,22 +259,14 @@
           }
         },
         {
-          "instance_id": 12750,
+          "instance_id": "FOLHA_DOC002034_SENT020::respeito::1",
           "sent_ID": "FOLHA_DOC002034_SENT020",
           "text": "Tratava ele como um irmão mais novo, e ele com o respeito do mais velho.",
-          "frame_id": "f_3f7b5926b66d3849",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 57
-              }
-            ]
+            "char_start": 49,
+            "char_end": 57
           },
           "realization": {
             "Arg0": "ele",
@@ -412,24 +278,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 39,
                 "char_end": 42
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 58,
                 "char_end": 71
               }
@@ -437,64 +294,56 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 2,
+          "nmod": 1,
+          "conj": 1
+        },
+        "Arg1": {
+          "nmod": 5,
+          "obj": 1,
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "respeito.02",
       "description": "consideração",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_9fc428b9993e8590",
-          "description": "consideração",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "enunciado,ato ou conhecimento",
-              "definition": "enunciado,ato ou conhecimento"
-            },
-            {
-              "id": "Arg1",
-              "desc": "relação `a respeito de`",
-              "definition": "relação `a respeito de`"
-            },
-            {
-              "id": "Arg2",
-              "desc": "tema/assunto",
-              "definition": "tema/assunto"
-            },
-            {
-              "id": "Arg3",
-              "desc": "tempo,meio ou contexto",
-              "definition": "tempo,meio ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 4
-            }
-          }
+          "id": "Arg0",
+          "desc": "enunciado,ato ou conhecimento",
+          "definition": "enunciado,ato ou conhecimento"
+        },
+        {
+          "id": "Arg1",
+          "desc": "relação `a respeito de`",
+          "definition": "relação `a respeito de`"
+        },
+        {
+          "id": "Arg2",
+          "desc": "tema/assunto",
+          "definition": "tema/assunto"
+        },
+        {
+          "id": "Arg3",
+          "desc": "tempo,meio ou contexto",
+          "definition": "tempo,meio ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 4077,
+          "instance_id": "FOLHA_DOC003301_SENT029::respeito::1",
           "sent_ID": "FOLHA_DOC003301_SENT029",
           "text": "O oposto seja dito a respeito dos que têm à mesa mais carnes e menos carboidratos.",
-          "frame_id": "f_9fc428b9993e8590",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 29
-              }
-            ]
+            "char_start": 21,
+            "char_end": 29
           },
           "realization": {
             "Arg0": null,
@@ -508,7 +357,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -516,22 +365,14 @@
           }
         },
         {
-          "instance_id": 5258,
+          "instance_id": "FOLHA_DOC000048_SENT030::respeito::1",
           "sent_ID": "FOLHA_DOC000048_SENT030",
           "text": "Como exemplo, citou deliberações do Supremo a respeito do aborto e da vaquejada.",
-          "frame_id": "f_9fc428b9993e8590",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 54
-              }
-            ]
+            "char_start": 46,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -545,45 +386,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 55,
-                "char_end": 79,
-                "head_token_id": 13
+                "char_end": 79
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 5518,
+          "instance_id": "FOLHA_DOC003128_SENT031::respeito::1",
           "sent_ID": "FOLHA_DOC003128_SENT031",
           "text": "Com enorme atraso, constatamos que ainda sabemos pouco a respeito da desigualdade que é marca do país desde seus primórdios.",
-          "frame_id": "f_9fc428b9993e8590",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 65
-              }
-            ]
+            "char_start": 57,
+            "char_end": 65
           },
           "realization": {
             "Arg0": null,
@@ -597,50 +420,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 66,
-                "char_end": 123,
-                "head_token_id": 14
+                "char_end": 123
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 6789,
+          "instance_id": "FOLHA_DOC003213_SENT005::respeito::1",
           "sent_ID": "FOLHA_DOC003213_SENT005",
           "text": "Esta coluna não foi capaz, contudo, de encontrar manifestação do linguista e paladino do anti-imperialismo a respeito do artigo.",
-          "frame_id": "f_9fc428b9993e8590",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 109,
-                "char_end": 117
-              }
-            ]
+            "char_start": 109,
+            "char_end": 117
           },
           "realization": {
             "Arg0": null,
@@ -654,41 +454,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 118,
-                "char_end": 127,
-                "head_token_id": 24
+                "char_end": 127
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 12398,
+          "instance_id": "FOLHA_DOC002019_SENT020::respeito::1",
           "sent_ID": "FOLHA_DOC002019_SENT020",
           "text": "\"Este é um momento crítico de definição a respeito do VOD, tem que se falar as coisas agora\", diz Klotzel.",
-          "frame_id": "f_9fc428b9993e8590",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "respeito",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 50
-              }
-            ]
+            "char_start": 42,
+            "char_end": 50
           },
           "realization": {
             "Arg0": null,
@@ -702,25 +488,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 51,
-                "char_end": 57,
-                "head_token_id": 13
+                "char_end": 57
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 4
+        }
+      }
     }
   ]
 }

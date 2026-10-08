@@ -1,71 +1,42 @@
 {
   "lemma": "recall",
-  "lemma_base": "recall",
   "senses": [
     {
       "pt_roleset": "recall · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_761134517337b63b",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj:pass": 1,
-              "nsubj": 2
-            },
-            "Arg2": {
-              "obj": 1,
-              "nmod": 1
-            },
-            "Arg3": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 414,
+          "instance_id": "FOLHA_DOC003007_SENT008::recall::1",
           "sent_ID": "FOLHA_DOC003007_SENT008",
           "text": "O defeito, que a Takata demorou a reconhecer, foi revelado em 2014 e, desde então, várias montadoras foram obrigadas a anunciar uma série de recalls, que afetaram quase 100 milhões de veículos.",
-          "frame_id": "f_761134517337b63b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recalls",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 141,
-                "char_end": 148
-              }
-            ]
+            "char_start": 141,
+            "char_end": 148
           },
           "realization": {
             "Arg0": "várias montadoras",
@@ -79,53 +50,32 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 83,
-                "char_end": 100,
-                "head_token_id": 21
+                "char_end": 100
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  33,
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 163,
-                "char_end": 192,
-                "head_token_id": 35
+                "char_end": 192
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 1705,
+          "instance_id": "FOLHA_DOC003007_SENT003::recall::1",
           "sent_ID": "FOLHA_DOC003007_SENT003",
           "text": "A marca GM, como o sócio local Shanghai GM, vai iniciar o recall em 29 de outubro, anunciou a agência chinesa de consumo.",
-          "frame_id": "f_761134517337b63b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recall",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 58,
-                "char_end": 64
-              }
-            ]
+            "char_start": 58,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "A marca GM",
@@ -139,52 +89,32 @@
             "Arg2": null,
             "Arg3": "obl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
-                "char_end": 10,
-                "head_token_id": 2
+                "char_end": 10
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 68,
-                "char_end": 81,
-                "head_token_id": 17
+                "char_end": 81
               }
             ]
           }
         },
         {
-          "instance_id": 6282,
+          "instance_id": "FOLHA_DOC003007_SENT009::recall::1",
           "sent_ID": "FOLHA_DOC003007_SENT009",
           "text": "Na semana passada, a agência chinesa anunciou que a Volkswagen e seus sócios locais convocarão um recall de 4,86 milhões de carros.",
-          "frame_id": "f_761134517337b63b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recall",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 104
-              }
-            ]
+            "char_start": 98,
+            "char_end": 104
           },
           "realization": {
             "Arg0": "Volkswagen e seus sócios locais",
@@ -198,99 +128,74 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 52,
-                "char_end": 83,
-                "head_token_id": 12
+                "char_end": 83
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 108,
-                "char_end": 130,
-                "head_token_id": 22
+                "char_end": 130
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj:pass": 1,
+          "nsubj": 2
+        },
+        "Arg2": {
+          "obj": 1,
+          "nmod": 1
+        },
+        "Arg3": {
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "recall · acepção 2",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_b901fa8fcfa633f9",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg2": {
-              "obl": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 5046,
+          "instance_id": "FOLHA_DOC001731_SENT031::recall::1",
           "sent_ID": "FOLHA_DOC001731_SENT031",
           "text": "O 'recall' que esse menino tem nas redes sociais é algo incrível.",
-          "frame_id": "f_b901fa8fcfa633f9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recall",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 9
-              }
-            ]
+            "char_start": 3,
+            "char_end": 9
           },
           "realization": {
             "Arg0": "esse menino",
@@ -304,93 +209,69 @@
             "Arg2": "obl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 15,
-                "char_end": 26,
-                "head_token_id": 7
+                "char_end": 26
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 31,
-                "char_end": 48,
-                "head_token_id": 11
+                "char_end": 48
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg2": {
+          "obl": 1
+        }
+      }
     },
     {
       "pt_roleset": "recall · acepção 3",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_1ff7d3496e2afb72",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nsubj": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 6615,
+          "instance_id": "FOLHA_DOC002037_SENT012::recall::1",
           "sent_ID": "FOLHA_DOC002037_SENT012",
           "text": "Toda delação é um vai-e-volta: tem recall.",
-          "frame_id": "f_1ff7d3496e2afb72",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recall",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 41
-              }
-            ]
+            "char_start": 35,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -404,23 +285,24 @@
             "Arg2": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  2
-                ],
                 "char_start": 5,
-                "char_end": 12,
-                "head_token_id": 2
+                "char_end": 12
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nsubj": 1
+        }
+      }
     }
   ]
 }

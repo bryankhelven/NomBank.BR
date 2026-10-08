@@ -1,75 +1,45 @@
 {
   "lemma": "fornecedor",
-  "lemma_base": "fornecedor",
   "senses": [
     {
       "pt_roleset": "fornecedor · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_f178aaf54d93b913",
-          "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "supplier.01",
-              "resource": "English NomBank",
-              "description": "provide",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/supplier.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "empresa/pessoa que fornece, independente de REL",
-              "definition": "empresa/pessoa que fornece, independente de REL"
-            },
-            {
-              "id": "Arg1",
-              "desc": "produto fornecido",
-              "definition": "produto fornecido"
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiário do fornecimento",
-              "definition": "beneficiário do fornecimento"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 2
-            },
-            "Arg1": {
-              "nmod": 3,
-              "nsubj:pass": 1
-            },
-            "Arg2": {
-              "nmod": 1,
-              "nsubj": 3,
-              "det": 1
-            }
-          }
+          "roleset": "supplier.01",
+          "resource": "English NomBank",
+          "description": "provide",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/supplier.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2241,
+          "id": "Arg0",
+          "desc": "empresa/pessoa que fornece, independente de REL",
+          "definition": "empresa/pessoa que fornece, independente de REL"
+        },
+        {
+          "id": "Arg1",
+          "desc": "produto fornecido",
+          "definition": "produto fornecido"
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiário do fornecimento",
+          "definition": "beneficiário do fornecimento"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003059_SENT004::fornecedor::1",
           "sent_ID": "FOLHA_DOC003059_SENT004",
           "text": "Pouco tempo depois, Zé Mineiro passou a ser o fornecedor de carne para toda Anápolis, que à época consumia de 25 a 30 bois diariamente.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedor",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 56
-              }
-            ]
+            "char_start": 46,
+            "char_end": 56
           },
           "realization": {
             "Arg0": "Zé Mineiro",
@@ -81,34 +51,21 @@
             "Arg1": "nmod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 20,
                 "char_end": 30
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 57,
                 "char_end": 65
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 66,
                 "char_end": 84
               }
@@ -116,22 +73,14 @@
           }
         },
         {
-          "instance_id": 3220,
+          "instance_id": "FOLHA_DOC003059_SENT007::fornecedor::1",
           "sent_ID": "FOLHA_DOC003059_SENT007",
           "text": "Zé Mineiro aproveitou o incentivo de Juscelino Kubitschek, que dava quatro anos de isenção fiscal a fornecedores, para ampliar sua atividade na nova capital.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 100,
-                "char_end": 112
-              }
-            ]
+            "char_start": 100,
+            "char_end": 112
           },
           "realization": {
             "Arg0": "Zé Mineiro",
@@ -143,13 +92,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 10
               }
@@ -159,22 +104,14 @@
           }
         },
         {
-          "instance_id": 5421,
+          "instance_id": "FOLHA_DOC000043_SENT008::fornecedor::1",
           "sent_ID": "FOLHA_DOC000043_SENT008",
           "text": "O Comitê Organizador da Rio-2016 acumula mais de R$ 110 milhões em dívidas com fornecedores.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 79,
-                "char_end": 91
-              }
-            ]
+            "char_start": 79,
+            "char_end": 91
           },
           "realization": {
             "Arg0": null,
@@ -186,19 +123,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 0,
                 "char_end": 32
               }
@@ -206,22 +135,14 @@
           }
         },
         {
-          "instance_id": 5880,
+          "instance_id": "FOLHA_DOC000015_SENT013::fornecedor::1",
           "sent_ID": "FOLHA_DOC000015_SENT013",
           "text": "Em relação ao fim do Inovar-Auto e uma possibilidade de aumento das importações de componentes, Di Si afirma que é preciso que os fornecedores locais tenham mais competitividade.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 130,
-                "char_end": 142
-              }
-            ]
+            "char_start": 130,
+            "char_end": 142
           },
           "realization": {
             "Arg0": null,
@@ -233,29 +154,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6960,
+          "instance_id": "FOLHA_DOC000015_SENT010::fornecedor::1",
           "sent_ID": "FOLHA_DOC000015_SENT010",
           "text": "Grande parte do investimento de R$ 7 bilhões previsto até 2020 será destinado à melhoria de produção e aos fornecedores, segundo Di Si.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 107,
-                "char_end": 119
-              }
-            ]
+            "char_start": 107,
+            "char_end": 119
           },
           "realization": {
             "Arg0": null,
@@ -267,29 +180,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8302,
+          "instance_id": "FOLHA_DOC000014_SENT001::fornecedor::1",
           "sent_ID": "FOLHA_DOC000014_SENT001",
           "text": "Apple cita fornecedor francês antes de discutir impostos com Macron.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedor",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 21
-              }
-            ]
+            "char_start": 11,
+            "char_end": 21
           },
           "realization": {
             "Arg0": null,
@@ -301,29 +206,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9284,
+          "instance_id": "FOLHA_DOC000050_SENT012::fornecedor::1",
           "sent_ID": "FOLHA_DOC000050_SENT012",
           "text": "Desde 2016, o estado vem atrasando salários e faturas de fornecedores.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 57,
-                "char_end": 69
-              }
-            ]
+            "char_start": 57,
+            "char_end": 69
           },
           "realization": {
             "Arg0": null,
@@ -335,15 +232,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5
-                ],
                 "char_start": 12,
                 "char_end": 20
               }
@@ -351,22 +244,14 @@
           }
         },
         {
-          "instance_id": 9753,
+          "instance_id": "FOLHA_DOC003136_SENT004::fornecedor::1",
           "sent_ID": "FOLHA_DOC003136_SENT004",
           "text": "Achou, em comunidades ribeirinhas, fornecedores de cuias com desenhos marajoaras, que viraram embalagens fechadas.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 47
-              }
-            ]
+            "char_start": 35,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -378,22 +263,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 48,
                 "char_end": 113
               }
@@ -402,22 +275,14 @@
           }
         },
         {
-          "instance_id": 10209,
+          "instance_id": "FOLHA_DOC003169_SENT026::fornecedor::1",
           "sent_ID": "FOLHA_DOC003169_SENT026",
           "text": "Fui negociar com minha fornecedora, também artesã, para chegar a um bom valor pelas embalagens, afirma Eloísa Toguchi, 31, sócia da Lá do Mato.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedora",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 34
-              }
-            ]
+            "char_start": 23,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -429,22 +294,16 @@
             "Arg1": "nmod",
             "Arg2": "det"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 84,
                 "char_end": 94
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 17,
                 "char_end": 22
               }
@@ -452,22 +311,14 @@
           }
         },
         {
-          "instance_id": 11123,
+          "instance_id": "FOLHA_DOC003169_SENT019::fornecedor::1",
           "sent_ID": "FOLHA_DOC003169_SENT019",
           "text": "Apesar dos altos custos, com um pouco de criatividade e negociação com pequenos fornecedores, empreendedores de menor porte podem incorporar elementos naturais às embalagens.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 92
-              }
-            ]
+            "char_start": 80,
+            "char_end": 92
           },
           "realization": {
             "Arg0": null,
@@ -479,29 +330,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11327,
+          "instance_id": "FOLHA_DOC003269_SENT020::fornecedor::1",
           "sent_ID": "FOLHA_DOC003269_SENT020",
           "text": "O governo Luiz Fernando Pezão vem atrasando salários de servidores e o pagamento de faturas de fornecedores.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 107
-              }
-            ]
+            "char_start": 95,
+            "char_end": 107
           },
           "realization": {
             "Arg0": null,
@@ -513,18 +356,11 @@
             "Arg1": null,
             "Arg2": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
                 "char_end": 29
               }
@@ -532,22 +368,14 @@
           }
         },
         {
-          "instance_id": 14499,
+          "instance_id": "FOLHA_DOC000150_SENT018::fornecedor::1",
           "sent_ID": "FOLHA_DOC000150_SENT018",
           "text": "As células serão compradas de fornecedores, em sua maioria asiáticos.",
-          "frame_id": "f_f178aaf54d93b913",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fornecedores",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 42
-              }
-            ]
+            "char_start": 30,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -559,14 +387,10 @@
             "Arg1": "nsubj:pass",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 10
               }
@@ -574,7 +398,21 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 2
+        },
+        "Arg1": {
+          "nmod": 3,
+          "nsubj:pass": 1
+        },
+        "Arg2": {
+          "nmod": 1,
+          "nsubj": 3,
+          "det": 1
+        }
+      }
     }
   ]
 }

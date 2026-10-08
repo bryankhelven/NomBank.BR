@@ -1,63 +1,42 @@
 {
   "lemma": "megaprojeto",
-  "lemma_base": "megaprojeto",
   "senses": [
     {
       "pt_roleset": "megaprojeto · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_7ae7e06b5540de31",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 9794,
+          "instance_id": "FOLHA_DOC004053_SENT019::megaprojeto::1",
           "sent_ID": "FOLHA_DOC004053_SENT019",
           "text": "Novos megaprojetos com torres altíssimas (ao invés de várias mais baixas) estão em andamento.",
-          "frame_id": "f_7ae7e06b5540de31",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "megaprojetos",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 18
-              }
-            ]
+            "char_start": 6,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -71,25 +50,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 19,
-                "char_end": 40,
-                "head_token_id": 4
+                "char_end": 40
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

@@ -1,76 +1,45 @@
 {
   "lemma": "ideia",
-  "lemma_base": "ideia",
   "senses": [
     {
       "pt_roleset": "ideia.03",
       "description": "conceito; noção",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_93e43209ee3e48dd",
-          "description": "conceito; noção",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "idea.01",
-              "resource": "English NomBank",
-              "description": "work-of-art/nomadjlike-acceptable/attribute",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/idea.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "formulador/titular da ideia",
-              "definition": "formulador/titular da ideia"
-            },
-            {
-              "id": "Arg1",
-              "desc": "conteúdo/objeto da ideia",
-              "definition": "conteúdo/objeto da ideia"
-            },
-            {
-              "id": "Arg2",
-              "desc": "avaliação/valor explícito",
-              "definition": "avaliação/valor explícito"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 3,
-              "acl": 1,
-              "parataxis": 1
-            },
-            "Arg0": {
-              "nmod": 3,
-              "det": 1
-            },
-            "Arg2": {
-              "amod": 2,
-              "conj": 1
-            }
-          }
+          "roleset": "idea.01",
+          "resource": "English NomBank",
+          "description": "work-of-art/nomadjlike-acceptable/attribute",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/idea.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1019,
+          "id": "Arg0",
+          "desc": "formulador/titular da ideia",
+          "definition": "formulador/titular da ideia"
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo/objeto da ideia",
+          "definition": "conteúdo/objeto da ideia"
+        },
+        {
+          "id": "Arg2",
+          "desc": "avaliação/valor explícito",
+          "definition": "avaliação/valor explícito"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004121_SENT027::ideia::1",
           "sent_ID": "FOLHA_DOC004121_SENT027",
           "text": "E o pior de tudo isso é que não temos nem ideia da real dimensão do problema.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 47
-              }
-            ]
+            "char_start": 42,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -82,19 +51,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 48,
                 "char_end": 76
               }
@@ -103,22 +63,14 @@
           }
         },
         {
-          "instance_id": 1067,
+          "instance_id": "FOLHA_DOC001408_SENT033::ideia::1",
           "sent_ID": "FOLHA_DOC001408_SENT033",
           "text": "Escola é lugar de debate e de confronto de ideias, não de repressão do Estado ou de milicianos.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 49
-              }
-            ]
+            "char_start": 43,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -130,29 +82,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1187,
+          "instance_id": "FOLHA_DOC000094_SENT003::ideia::1",
           "sent_ID": "FOLHA_DOC000094_SENT003",
           "text": "Caetano é um cirurgião de ideias, disseca conceitos, esquarteja clichês.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 26,
-                "char_end": 32
-              }
-            ]
+            "char_start": 26,
+            "char_end": 32
           },
           "realization": {
             "Arg0": null,
@@ -164,29 +108,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 2254,
+          "instance_id": "FOLHA_DOC000074_SENT033::ideia::1",
           "sent_ID": "FOLHA_DOC000074_SENT033",
           "text": "A obra reúne ideias do médico sobre temas como relacionamentos e vaidade.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 19
-              }
-            ]
+            "char_start": 13,
+            "char_end": 19
           },
           "realization": {
             "Arg0": "do médico",
@@ -198,28 +134,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 20,
                 "char_end": 29
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 30,
                 "char_end": 72
               }
@@ -228,22 +151,14 @@
           }
         },
         {
-          "instance_id": 2375,
+          "instance_id": "FOLHA_DOC000132_SENT009::ideia::1",
           "sent_ID": "FOLHA_DOC000132_SENT009",
           "text": "\"Podem morrer as pessoas, mas nunca suas ideias\".",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 47
-              }
-            ]
+            "char_start": 41,
+            "char_end": 47
           },
           "realization": {
             "Arg0": "suas",
@@ -255,12 +170,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9
-                ],
                 "char_start": 36,
                 "char_end": 40
               }
@@ -270,22 +182,14 @@
           }
         },
         {
-          "instance_id": 3496,
+          "instance_id": "FOLHA_DOC003272_SENT042::ideia::1",
           "sent_ID": "FOLHA_DOC003272_SENT042",
           "text": "Por outro lado, a teoria do globo exclui a ideia de Deus.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 48
-              }
-            ]
+            "char_start": 43,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -297,14 +201,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 49,
                 "char_end": 56
               }
@@ -313,22 +213,14 @@
           }
         },
         {
-          "instance_id": 5516,
+          "instance_id": "FOLHA_DOC000068_SENT039::ideia::1",
           "sent_ID": "FOLHA_DOC000068_SENT039",
           "text": "Doria não tem vínculo, não tem compromisso com o PSDB nem com as ideias do partido.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 65,
-                "char_end": 71
-              }
-            ]
+            "char_start": 65,
+            "char_end": 71
           },
           "realization": {
             "Arg0": "do partido",
@@ -340,14 +232,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 72,
                 "char_end": 82
               }
@@ -357,22 +244,14 @@
           }
         },
         {
-          "instance_id": 6665,
+          "instance_id": "FOLHA_DOC000182_SENT021::ideia::1",
           "sent_ID": "FOLHA_DOC000182_SENT021",
           "text": "Caçoar de adeptos de ideias malucas é fácil, mas contraproducente.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 27
-              }
-            ]
+            "char_start": 21,
+            "char_end": 27
           },
           "realization": {
             "Arg0": null,
@@ -384,14 +263,11 @@
             "Arg1": null,
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 28,
                 "char_end": 35
               }
@@ -399,22 +275,14 @@
           }
         },
         {
-          "instance_id": 7155,
+          "instance_id": "FOLHA_DOC001102_SENT015::ideia::1",
           "sent_ID": "FOLHA_DOC001102_SENT015",
           "text": "Por mais que eu tente entender os sentimentos patrióticos, não consigo levar muito a sério a ideia -que não fica a dever nada às legislações de bruxaria da Idade Média- de que um pedaço de pano deva ser protegido contra maus-tratos e outras formas de profanação.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 93,
-                "char_end": 98
-              }
-            ]
+            "char_start": 93,
+            "char_end": 98
           },
           "realization": {
             "Arg0": null,
@@ -426,28 +294,10 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  36,
-                  37,
-                  38,
-                  39,
-                  40,
-                  41,
-                  42,
-                  43,
-                  44,
-                  45,
-                  46,
-                  47,
-                  48,
-                  49,
-                  50,
-                  51
-                ],
                 "char_start": 169,
                 "char_end": 261
               }
@@ -456,22 +306,14 @@
           }
         },
         {
-          "instance_id": 11358,
+          "instance_id": "FOLHA_DOC002007_SENT056::ideia::1",
           "sent_ID": "FOLHA_DOC002007_SENT056",
           "text": "Na terra do poeta, eu pratiquei o socialismo das ideias e dos afetos.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 55
-              }
-            ]
+            "char_start": 49,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -483,29 +325,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11681,
+          "instance_id": "FOLHA_DOC002014_SENT020::ideia::1",
           "sent_ID": "FOLHA_DOC002014_SENT020",
           "text": "Há o que se criticar na experiência das UPPs, mas sua ideia central é indiscutível: todo carioca deve ter policiamento em seu bairro.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 59
-              }
-            ]
+            "char_start": 54,
+            "char_end": 59
           },
           "realization": {
             "Arg0": null,
@@ -517,29 +351,16 @@
             "Arg1": "parataxis",
             "Arg2": "conj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 84,
                 "char_end": 132
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 70,
                 "char_end": 82
               }
@@ -547,22 +368,14 @@
           }
         },
         {
-          "instance_id": 13612,
+          "instance_id": "FOLHA_DOC001607_SENT040::ideia::1",
           "sent_ID": "FOLHA_DOC001607_SENT040",
           "text": "A vontade de polemizar invariavelmente afeta as (boas) ideias do colunista.",
-          "frame_id": "f_93e43209ee3e48dd",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ideias",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 61
-              }
-            ]
+            "char_start": 55,
+            "char_end": 61
           },
           "realization": {
             "Arg0": "do colunista",
@@ -574,14 +387,9 @@
             "Arg1": null,
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 62,
                 "char_end": 74
               }
@@ -589,114 +397,88 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  9
-                ],
                 "char_start": 49,
                 "char_end": 53
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 3,
+          "acl": 1,
+          "parataxis": 1
+        },
+        "Arg0": {
+          "nmod": 3,
+          "det": 1
+        },
+        "Arg2": {
+          "amod": 2,
+          "conj": 1
+        }
+      }
     },
     {
       "pt_roleset": "ideia.02",
       "description": "pensamento; plano",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 6772,
+          "instance_id": "FOLHA_DOC004118_SENT033::ideia::1",
           "sent_ID": "FOLHA_DOC004118_SENT033",
           "text": "Já vim de lá com a ideia de que o próximo trabalho se chamaria \"Refavela\".",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 24
-              }
-            ]
+            "char_start": 19,
+            "char_end": 24
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12002,
+          "instance_id": "FOLHA_DOC001055_SENT015::ideia::1",
           "sent_ID": "FOLHA_DOC001055_SENT015",
           "text": "Desde então, a ideia de expandir a história atormentou McGuire.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 15,
-                "char_end": 20
-              }
-            ]
+            "char_start": 15,
+            "char_end": 20
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "ideia.04",
       "description": "concepção primária que dá origem a uma obra de literatura ou arte",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 9578,
+          "instance_id": "FOLHA_DOC003139_SENT010::ideia::1",
           "sent_ID": "FOLHA_DOC003139_SENT010",
           "text": "Quem escreve o novo folhetim é Alcides Nogueira, mas a ideia original não é dele.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "ideia",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 60
-              }
-            ]
+            "char_start": 55,
+            "char_end": 60
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

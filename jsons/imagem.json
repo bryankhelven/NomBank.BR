@@ -1,85 +1,45 @@
 {
   "lemma": "imagem",
-  "lemma_base": "imagem",
   "senses": [
     {
       "pt_roleset": "imagem.06",
       "description": "conceito genérico resultante da avaliação de todas as expe-\nriências ligadas à uma pessoa, coisa ou empresa",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_8cbeb7f2e7203c65",
-          "description": "conceito genérico resultante da avaliação de todas as expe-\nriências ligadas à uma pessoa, coisa ou empresa",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "image.01",
-              "resource": "English NomBank",
-              "description": "nom/work-of-art",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/image.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "quem cria/apresenta representação, não objeto representado por default",
-              "definition": "quem cria/apresenta representação, não objeto representado por default"
-            },
-            {
-              "id": "Arg1",
-              "desc": "pessoa/objeto cuja imagem se representa",
-              "definition": "pessoa/objeto cuja imagem se representa"
-            },
-            {
-              "id": "Arg2",
-              "desc": "atributo da imagem, conforme tarnished",
-              "definition": "atributo da imagem, conforme tarnished"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "det": 4,
-              "nmod": 6,
-              "conj": 1,
-              "nsubj": 1
-            },
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg2": {
-              "amod": 3,
-              "root": 1,
-              "nmod": 1
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "image.01",
+          "resource": "English NomBank",
+          "description": "nom/work-of-art",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/image.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 76,
+          "id": "Arg0",
+          "desc": "quem cria/apresenta representação, não objeto representado por default",
+          "definition": "quem cria/apresenta representação, não objeto representado por default"
+        },
+        {
+          "id": "Arg1",
+          "desc": "pessoa/objeto cuja imagem se representa",
+          "definition": "pessoa/objeto cuja imagem se representa"
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo da imagem, conforme tarnished",
+          "definition": "atributo da imagem, conforme tarnished"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003198_SENT024::imagem::1",
           "sent_ID": "FOLHA_DOC003198_SENT024",
           "text": "Com estratégias para salvar sua imagem, a indústria de carnes ainda se esforça para reagir ao pesadelo de escândalos em série que a assombrou neste ano.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 38
-              }
-            ]
+            "char_start": 32,
+            "char_end": 38
           },
           "realization": {
             "Arg0": null,
@@ -91,13 +51,10 @@
             "Arg1": "det",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 28,
                 "char_end": 31
               }
@@ -106,22 +63,14 @@
           }
         },
         {
-          "instance_id": 385,
+          "instance_id": "FOLHA_DOC003021_SENT009::imagem::1",
           "sent_ID": "FOLHA_DOC003021_SENT009",
           "text": "Ganha o prêmio Eremildo quem conseguir definir o que seria \"indevido\" ou mesmo \"prejudicial à imagem, honra e nome\".",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 94,
-                "char_end": 100
-              }
-            ]
+            "char_start": 94,
+            "char_end": 100
           },
           "realization": {
             "Arg0": null,
@@ -133,29 +82,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 1989,
+          "instance_id": "FOLHA_DOC002040_SENT004::imagem::1",
           "sent_ID": "FOLHA_DOC002040_SENT004",
           "text": "Formado por jovens liberais, o grupo é impulsionador da imagem do prefeito nas redes sociais.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 62
-              }
-            ]
+            "char_start": 56,
+            "char_end": 62
           },
           "realization": {
             "Arg0": "o grupo",
@@ -167,24 +108,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 29,
                 "char_end": 36
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 63,
                 "char_end": 74
               }
@@ -193,22 +125,14 @@
           }
         },
         {
-          "instance_id": 3948,
+          "instance_id": "FOLHA_DOC003141_SENT003::imagem::1",
           "sent_ID": "FOLHA_DOC003141_SENT003",
           "text": "Depois de oscilar no debate sobre o rompimento do PSDB com o presidente, o tucano deu início a um movimento gradual para se descolar da imagem desgastada e impopular do peemedebista.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 142
-              }
-            ]
+            "char_start": 136,
+            "char_end": 142
           },
           "realization": {
             "Arg0": null,
@@ -220,26 +144,16 @@
             "Arg1": "nmod",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  34,
-                  35,
-                  36
-                ],
                 "char_start": 166,
                 "char_end": 181
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 143,
                 "char_end": 165
               }
@@ -247,22 +161,14 @@
           }
         },
         {
-          "instance_id": 5353,
+          "instance_id": "FOLHA_DOC003038_SENT005::imagem::1",
           "sent_ID": "FOLHA_DOC003038_SENT005",
           "text": "As pessoas não aguentam mais essa gritaria, afirma a jornalista, que há 15 anos auxilia políticos em campanha, pessoas convocadas para CPIs e executivos e empresas encalacrados em crises de imagem.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              34
-            ],
-            "spans": [
-              {
-                "char_start": 190,
-                "char_end": 196
-              }
-            ]
+            "char_start": 190,
+            "char_end": 196
           },
           "realization": {
             "Arg0": null,
@@ -274,16 +180,10 @@
             "Arg1": "conj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  27,
-                  28,
-                  29,
-                  30
-                ],
                 "char_start": 142,
                 "char_end": 176
               }
@@ -292,22 +192,14 @@
           }
         },
         {
-          "instance_id": 9147,
+          "instance_id": "FOLHA_DOC003058_SENT018::imagem::1",
           "sent_ID": "FOLHA_DOC003058_SENT018",
           "text": "A imagem de Dodge se desgastou depois da revelação de um encontro secreto (não registrado em agenda oficial) que teve com o presidente, após sua nomeação, no Palácio do Jaburu.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -319,24 +211,16 @@
             "Arg1": "nmod",
             "Arg2": "root"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 9,
                 "char_end": 17
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 18,
                 "char_end": 30
               }
@@ -344,22 +228,14 @@
           }
         },
         {
-          "instance_id": 9493,
+          "instance_id": "FOLHA_DOC003065_SENT006::imagem::1",
           "sent_ID": "FOLHA_DOC003065_SENT006",
           "text": "Político que carrega a imagem do intelectual sofisticado, Bonduki virou um Chacrinha das palavras, pois faz de seu letramento uma arma usada mais para confundir do que explicar.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 29
-              }
-            ]
+            "char_start": 23,
+            "char_end": 29
           },
           "realization": {
             "Arg0": null,
@@ -371,25 +247,16 @@
             "Arg1": "nsubj",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 58,
                 "char_end": 65
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 30,
                 "char_end": 56
               }
@@ -397,22 +264,14 @@
           }
         },
         {
-          "instance_id": 9649,
+          "instance_id": "FOLHA_DOC003021_SENT007::imagem::1",
           "sent_ID": "FOLHA_DOC003021_SENT007",
           "text": "Nas palavras do próprio texto, a lei permitiria a \"retirada de dados pessoais que sejam considerados indevidos ou prejudiciais\" à \"imagem, honra e nome\".",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 131,
-                "char_end": 137
-              }
-            ]
+            "char_start": 131,
+            "char_end": 137
           },
           "realization": {
             "Arg0": null,
@@ -424,29 +283,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9706,
+          "instance_id": "FOLHA_DOC002037_SENT004::imagem::1",
           "sent_ID": "FOLHA_DOC002037_SENT004",
           "text": "A opinião pública nunca esteve tão bipolar em termos de imagem e reputação.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 62
-              }
-            ]
+            "char_start": 56,
+            "char_end": 62
           },
           "realization": {
             "Arg0": null,
@@ -458,29 +309,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10556,
+          "instance_id": "FOLHA_DOC000021_SENT024::imagem::1",
           "sent_ID": "FOLHA_DOC000021_SENT024",
           "text": "Tentando suavizar sua imagem agressiva, disse que há cinco anos \"teria rachado no meio\" o sujeito que o alvejou com um ovo em Ribeirão Preto, no interior paulista.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 28
-              }
-            ]
+            "char_start": 22,
+            "char_end": 28
           },
           "realization": {
             "Arg0": null,
@@ -492,22 +335,16 @@
             "Arg1": "det",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 18,
                 "char_end": 21
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 29,
                 "char_end": 38
               }
@@ -515,22 +352,14 @@
           }
         },
         {
-          "instance_id": 10880,
+          "instance_id": "FOLHA_DOC004109_SENT002::imagem::1",
           "sent_ID": "FOLHA_DOC004109_SENT002",
           "text": "O depoimento de Antonio Palocci é devastador para a defesa, a imagem e o futuro de Lula.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 68
-              }
-            ]
+            "char_start": 62,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -542,14 +371,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 80,
                 "char_end": 87
               }
@@ -558,44 +383,28 @@
           }
         },
         {
-          "instance_id": 12581,
+          "instance_id": "FOLHA_DOC002003_SENT016::imagem::1",
           "sent_ID": "FOLHA_DOC002003_SENT016",
           "text": "Outra etiqueta das mais clássicas do calendário, a Bottega Venetta construiu com base nas pintas de leopardo a imagem de amazona moderna.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 111,
-                "char_end": 117
-              }
-            ]
+            "char_start": 111,
+            "char_end": 117
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13479,
+          "instance_id": "FOLHA_DOC003191_SENT024::imagem::1",
           "sent_ID": "FOLHA_DOC003191_SENT024",
           "text": "O peso da opinião pública é diretamente proporcional a quanto isso vai afetar a imagem da empresa.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 80,
-                "char_end": 86
-              }
-            ]
+            "char_start": 80,
+            "char_end": 86
           },
           "realization": {
             "Arg0": null,
@@ -607,15 +416,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 87,
                 "char_end": 97
               }
@@ -624,22 +428,14 @@
           }
         },
         {
-          "instance_id": 13572,
+          "instance_id": "FOLHA_DOC003198_SENT010::imagem::1",
           "sent_ID": "FOLHA_DOC003198_SENT010",
           "text": "Menos associadas à imagem dos Batista, outras marcas da JBS, como Seara e Doriana, não tiveram seus anúncios descontinuados.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 25
-              }
-            ]
+            "char_start": 19,
+            "char_end": 25
           },
           "realization": {
             "Arg0": null,
@@ -651,15 +447,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 26,
                 "char_end": 37
               }
@@ -668,22 +459,14 @@
           }
         },
         {
-          "instance_id": 14334,
+          "instance_id": "FOLHA_DOC004001_SENT022::imagem::1",
           "sent_ID": "FOLHA_DOC004001_SENT022",
           "text": "Enquanto lida com a contínua erosão de sua imagem pública pela Operação Lava Jato, Lula segue costurando a estratégia para 2018.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 49
-              }
-            ]
+            "char_start": 43,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -695,22 +478,16 @@
             "Arg1": "det",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 39,
                 "char_end": 42
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 50,
                 "char_end": 57
               }
@@ -718,22 +495,14 @@
           }
         },
         {
-          "instance_id": 15472,
+          "instance_id": "FOLHA_DOC003198_SENT032::imagem::1",
           "sent_ID": "FOLHA_DOC003198_SENT032",
           "text": "No caso da Friboi, a estratégia que será usada para preservar sua imagem ainda é considerada um mistério por publicitários e especialistas em marcas.",
-          "frame_id": "f_8cbeb7f2e7203c65",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 72
-              }
-            ]
+            "char_start": 66,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -745,13 +514,10 @@
             "Arg1": "det",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 62,
                 "char_end": 65
               }
@@ -759,67 +525,60 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "det": 4,
+          "nmod": 6,
+          "conj": 1,
+          "nsubj": 1
+        },
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg2": {
+          "amod": 3,
+          "root": 1,
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "imagem.03",
       "description": "representação mental de qualquer forma; impres-\nsão de um objeto no espírito",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 8791,
+          "instance_id": "FOLHA_DOC003155_SENT022::imagem::1",
           "sent_ID": "FOLHA_DOC003155_SENT022",
           "text": "O brechó Capricho à Toa foge da imagem caricata desses ambientes e traz roupas novas e seminovas de coleções recentes.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 38
-              }
-            ]
+            "char_start": 32,
+            "char_end": 38
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11912,
+          "instance_id": "FOLHA_DOC004043_SENT011::imagem::1",
           "sent_ID": "FOLHA_DOC004043_SENT011",
           "text": "Em \"Borg/McEnroe\", a imagem que a história do esporte consagrou sobre os dois tenistas é rapidamente desmontada.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "imagem",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 27
-              }
-            ]
+            "char_start": 21,
+            "char_end": 27
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

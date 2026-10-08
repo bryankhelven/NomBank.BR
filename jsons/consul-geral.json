@@ -1,66 +1,42 @@
 {
   "lemma": "cônsul-geral",
-  "lemma_base": "cônsul-geral",
   "senses": [
     {
       "pt_roleset": "cônsul-geral · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_ff88d940a50d8605",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "appos": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 14355,
+          "instance_id": "FOLHA_DOC002074_SENT015::cônsul-geral::1",
           "sent_ID": "FOLHA_DOC002074_SENT015",
           "text": "O cônsul-geral da Alemanha em São Paulo, Axel Zeidler, prefere ver o resultado por outro ângulo.",
-          "frame_id": "f_ff88d940a50d8605",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "cônsul-geral",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": "Axel Zeidler",
@@ -74,38 +50,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 41,
-                "char_end": 53,
-                "head_token_id": 10
+                "char_end": 53
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 15,
-                "char_end": 39,
-                "head_token_id": 5
+                "char_end": 39
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "appos": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

@@ -1,81 +1,50 @@
 {
   "lemma": "candidato",
-  "lemma_base": "candidato",
   "senses": [
     {
       "pt_roleset": "candidato.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_fd2d7ab069237d1b",
+          "roleset": "candidate.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "candidate.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/candidate.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "nominator",
-              "definition": "nominator"
-            },
-            {
-              "id": "Arg1",
-              "desc": "candidate",
-              "definition": "candidate"
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            },
-            {
-              "id": "Arg3",
-              "desc": "role of arg1",
-              "definition": "role of arg1"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obl:agent": 1,
-              "nsubj": 3,
-              "nmod": 2
-            },
-            "Arg3": {
-              "nmod": 12,
-              "acl": 1,
-              "amod": 2
-            },
-            "Arg2": {
-              "nmod": 2
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/candidate.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 728,
+          "id": "Arg0",
+          "desc": "nominator",
+          "definition": "nominator"
+        },
+        {
+          "id": "Arg1",
+          "desc": "candidate",
+          "definition": "candidate"
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        },
+        {
+          "id": "Arg3",
+          "desc": "role of arg1",
+          "definition": "role of arg1"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004073_SENT013::candidato::1",
           "sent_ID": "FOLHA_DOC004073_SENT013",
           "text": "Ela seria montada e divulgada pelos partidos, e traria candidatos pré-ordenados, de cima para baixo.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 65
-              }
-            ]
+            "char_start": 55,
+            "char_end": 65
           },
           "realization": {
             "Arg0": "pelos partidos",
@@ -89,17 +58,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 30,
-                "char_end": 44,
-                "head_token_id": 8
+                "char_end": 44
               }
             ],
             "Arg1": [],
@@ -108,22 +71,14 @@
           }
         },
         {
-          "instance_id": 1042,
+          "instance_id": "FOLHA_DOC004001_SENT014::candidato::1",
           "sent_ID": "FOLHA_DOC004001_SENT014",
           "text": "PT considera que ele será, de qualquer modo, candidato no ano que vem.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 54
-              }
-            ]
+            "char_start": 45,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -137,7 +92,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -145,22 +100,14 @@
           }
         },
         {
-          "instance_id": 1064,
+          "instance_id": "FOLHA_DOC002032_SENT010::candidato::1",
           "sent_ID": "FOLHA_DOC002032_SENT010",
           "text": "\"Sem candidato não vamos ficar\", diz.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 14
-              }
-            ]
+            "char_start": 5,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -174,7 +121,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -182,22 +129,14 @@
           }
         },
         {
-          "instance_id": 1744,
+          "instance_id": "FOLHA_DOC000081_SENT012::candidato::1",
           "sent_ID": "FOLHA_DOC000081_SENT012",
           "text": "Qual a viabilidade de um candidato de situação em 2018?",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 34
-              }
-            ]
+            "char_start": 25,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -211,40 +150,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 35,
-                "char_end": 46,
-                "head_token_id": 8
+                "char_end": 46
               }
             ]
           }
         },
         {
-          "instance_id": 2371,
+          "instance_id": "FOLHA_DOC003033_SENT005::candidato::1",
           "sent_ID": "FOLHA_DOC003033_SENT005",
           "text": "Para ser candidato ao Planalto ou ao governo paulista em 2018, o prefeito terá de deixar o cargo até o início de abril (seis meses antes da eleição).",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 18
-              }
-            ]
+            "char_start": 9,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -258,41 +184,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 19,
-                "char_end": 30,
-                "head_token_id": 6
+                "char_end": 30
               }
             ]
           }
         },
         {
-          "instance_id": 2573,
+          "instance_id": "FOLHA_DOC000068_SENT010::candidato::1",
           "sent_ID": "FOLHA_DOC000068_SENT010",
           "text": "A única coisa que nasceu até agora foi um candidato à Presidência da República.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 51
-              }
-            ]
+            "char_start": 42,
+            "char_end": 51
           },
           "realization": {
             "Arg0": null,
@@ -306,43 +218,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 52,
-                "char_end": 78,
-                "head_token_id": 13
+                "char_end": 78
               }
             ]
           }
         },
         {
-          "instance_id": 2677,
+          "instance_id": "FOLHA_DOC003067_SENT003::candidato::1",
           "sent_ID": "FOLHA_DOC003067_SENT003",
           "text": "O poder que acusa não deveria interferir na produção de provas judiciais pelo candidato a delator.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 87
-              }
-            ]
+            "char_start": 78,
+            "char_end": 87
           },
           "realization": {
             "Arg0": null,
@@ -356,40 +252,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 88,
-                "char_end": 97,
-                "head_token_id": 18
+                "char_end": 97
               }
             ]
           }
         },
         {
-          "instance_id": 3225,
+          "instance_id": "FOLHA_DOC003035_SENT122::candidato::1",
           "sent_ID": "FOLHA_DOC003035_SENT122",
           "text": "O que eu estava dizendo é que o cliente dele [a JBS] poderia passar de candidato a delator a delatado.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 71,
-                "char_end": 80
-              }
-            ]
+            "char_start": 71,
+            "char_end": 80
           },
           "realization": {
             "Arg0": null,
@@ -403,40 +286,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 81,
-                "char_end": 90,
-                "head_token_id": 21
+                "char_end": 90
               }
             ]
           }
         },
         {
-          "instance_id": 3860,
+          "instance_id": "FOLHA_DOC000092_SENT026::candidato::1",
           "sent_ID": "FOLHA_DOC000092_SENT026",
           "text": "Só que dos candidatos a presidência, ele é o menos pior.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 21
-              }
-            ]
+            "char_start": 11,
+            "char_end": 21
           },
           "realization": {
             "Arg0": null,
@@ -450,40 +320,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 22,
-                "char_end": 35,
-                "head_token_id": 7
+                "char_end": 35
               }
             ]
           }
         },
         {
-          "instance_id": 4883,
+          "instance_id": "FOLHA_DOC001802_SENT016::candidato::1",
           "sent_ID": "FOLHA_DOC001802_SENT016",
           "text": "João, se pesquisa valesse, você não era candidato.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 49
-              }
-            ]
+            "char_start": 40,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -497,7 +354,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -505,22 +362,14 @@
           }
         },
         {
-          "instance_id": 4915,
+          "instance_id": "FOLHA_DOC004017_SENT012::candidato::1",
           "sent_ID": "FOLHA_DOC004017_SENT012",
           "text": "Os opositores farão primárias no próximo domingo (10) para definir seus candidatos.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 82
-              }
-            ]
+            "char_start": 72,
+            "char_end": 82
           },
           "realization": {
             "Arg0": "Os opositores",
@@ -534,16 +383,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 13,
-                "head_token_id": 2
+                "char_end": 13
               }
             ],
             "Arg1": [],
@@ -552,22 +396,14 @@
           }
         },
         {
-          "instance_id": 5976,
+          "instance_id": "FOLHA_DOC000077_SENT004::candidato::1",
           "sent_ID": "FOLHA_DOC000077_SENT004",
           "text": "É o candidato da mais expressiva parcela da população brasileira.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 13
-              }
-            ]
+            "char_start": 4,
+            "char_end": 13
           },
           "realization": {
             "Arg0": null,
@@ -581,47 +417,27 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 14,
-                "char_end": 64,
-                "head_token_id": 8
+                "char_end": 64
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 6492,
+          "instance_id": "FOLHA_DOC004073_SENT018::candidato::1",
           "sent_ID": "FOLHA_DOC004073_SENT018",
           "text": "Se houver um péssimo candidato antes do seu escolhido, seu voto pode ir para este, e não chegar no seu.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 30
-              }
-            ]
+            "char_start": 21,
+            "char_end": 30
           },
           "realization": {
             "Arg0": null,
@@ -635,7 +451,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -643,22 +459,14 @@
           }
         },
         {
-          "instance_id": 6566,
+          "instance_id": "FOLHA_DOC000154_SENT018::candidato::1",
           "sent_ID": "FOLHA_DOC000154_SENT018",
           "text": "Brasil era o candidato natural a receber a fábrica, afirma o executivo.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 22
-              }
-            ]
+            "char_start": 13,
+            "char_end": 22
           },
           "realization": {
             "Arg0": null,
@@ -672,42 +480,27 @@
             "Arg2": null,
             "Arg3": "acl"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 31,
-                "char_end": 50,
-                "head_token_id": 7
+                "char_end": 50
               }
             ]
           }
         },
         {
-          "instance_id": 6697,
+          "instance_id": "FOLHA_DOC000001_SENT006::candidato::1",
           "sent_ID": "FOLHA_DOC000001_SENT006",
           "text": "Eles [investigadores] chegam a dizer: 'Ah, se o Lula não for candidato, ele não vai ter força como cabo eleitoral'.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 70
-              }
-            ]
+            "char_start": 61,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -721,7 +514,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -729,22 +522,14 @@
           }
         },
         {
-          "instance_id": 6700,
+          "instance_id": "FOLHA_DOC004138_SENT005::candidato::1",
           "sent_ID": "FOLHA_DOC004138_SENT005",
           "text": "Alguns poucos citavam os nomes dos candidatos Hillary Clinton (democrata) e Donald Trump (republicano).",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 45
-              }
-            ]
+            "char_start": 35,
+            "char_end": 45
           },
           "realization": {
             "Arg0": null,
@@ -758,7 +543,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -766,22 +551,14 @@
           }
         },
         {
-          "instance_id": 7384,
+          "instance_id": "FOLHA_DOC000068_SENT032::candidato::1",
           "sent_ID": "FOLHA_DOC000068_SENT032",
           "text": "Goldman acredita que sejam poucas as chances de Doria ser o candidato do partido.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 69
-              }
-            ]
+            "char_start": 60,
+            "char_end": 69
           },
           "realization": {
             "Arg0": "do partido",
@@ -795,17 +572,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 70,
-                "char_end": 80,
-                "head_token_id": 15
+                "char_end": 80
               }
             ],
             "Arg1": [],
@@ -814,22 +585,14 @@
           }
         },
         {
-          "instance_id": 8374,
+          "instance_id": "FOLHA_DOC001802_SENT005::candidato::1",
           "sent_ID": "FOLHA_DOC001802_SENT005",
           "text": "Como alguém que não é candidato está fazendo o que ele está fazendo?",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 31
-              }
-            ]
+            "char_start": 22,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -843,7 +606,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -851,22 +614,14 @@
           }
         },
         {
-          "instance_id": 8520,
+          "instance_id": "FOLHA_DOC004073_SENT030::candidato::1",
           "sent_ID": "FOLHA_DOC004073_SENT030",
           "text": "Isso protege o distrito de um candidato popular, mas com alta taxa de rejeição.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 39
-              }
-            ]
+            "char_start": 30,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -880,7 +635,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -888,22 +643,14 @@
           }
         },
         {
-          "instance_id": 8938,
+          "instance_id": "FOLHA_DOC003026_SENT023::candidato::1",
           "sent_ID": "FOLHA_DOC003026_SENT023",
           "text": "Candidato que quer cancelar tratados de direitos humanos é o que mais cresce nas pesquisas.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "Candidato",
-            "token_ids": [
-              1
-            ],
-            "spans": [
-              {
-                "char_start": 0,
-                "char_end": 9
-              }
-            ]
+            "char_start": 0,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -917,7 +664,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -925,22 +672,14 @@
           }
         },
         {
-          "instance_id": 9967,
+          "instance_id": "FOLHA_DOC003054_SENT022::candidato::1",
           "sent_ID": "FOLHA_DOC003054_SENT022",
           "text": "Observa-se que o repasse no ano de 2014 representou a maioria dos valores, ano que Geddel foi candidato a senador [pela Bahia], diz o relatório.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 94,
-                "char_end": 103
-              }
-            ]
+            "char_start": 94,
+            "char_end": 103
           },
           "realization": {
             "Arg0": null,
@@ -954,40 +693,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 104,
-                "char_end": 113,
-                "head_token_id": 24
+                "char_end": 113
               }
             ]
           }
         },
         {
-          "instance_id": 10286,
+          "instance_id": "FOLHA_DOC003141_SENT005::candidato::1",
           "sent_ID": "FOLHA_DOC003141_SENT005",
           "text": "Ele compara a eleição de 2018 à de 1989, quando candidatos de oposição a José Sarney tiveram melhor desempenho nas urnas.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 58
-              }
-            ]
+            "char_start": 48,
+            "char_end": 58
           },
           "realization": {
             "Arg0": null,
@@ -1001,7 +727,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1009,22 +735,14 @@
           }
         },
         {
-          "instance_id": 10711,
+          "instance_id": "FOLHA_DOC003033_SENT003::candidato::1",
           "sent_ID": "FOLHA_DOC003033_SENT003",
           "text": "Doria trava disputa interna no PSDB com o governador Geraldo Alckmin para a escolha do candidato do partido nas eleições à Presidência no ano que vem.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 87,
-                "char_end": 96
-              }
-            ]
+            "char_start": 87,
+            "char_end": 96
           },
           "realization": {
             "Arg0": "do partido",
@@ -1038,51 +756,32 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 97,
-                "char_end": 107,
-                "head_token_id": 21
+                "char_end": 107
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  26,
-                  27
-                ],
                 "char_start": 121,
-                "char_end": 134,
-                "head_token_id": 27
+                "char_end": 134
               }
             ]
           }
         },
         {
-          "instance_id": 11345,
+          "instance_id": "FOLHA_DOC004001_SENT021::candidato::1",
           "sent_ID": "FOLHA_DOC004001_SENT021",
           "text": "O ex-presidente tem grande penetração em eleitorado pobre e conservador, que pode ser atraído por candidatos de outras faixas do espectro político.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidatos",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 108
-              }
-            ]
+            "char_start": 98,
+            "char_end": 108
           },
           "realization": {
             "Arg0": null,
@@ -1096,7 +795,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1104,22 +803,14 @@
           }
         },
         {
-          "instance_id": 11715,
+          "instance_id": "FOLHA_DOC003033_SENT004::candidato::1",
           "sent_ID": "FOLHA_DOC003033_SENT004",
           "text": "Alckmin teve papel decisivo na escolha de Doria como candidato tucano na disputa municipal.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 53,
-                "char_end": 62
-              }
-            ]
+            "char_start": 53,
+            "char_end": 62
           },
           "realization": {
             "Arg0": "Alckmin",
@@ -1133,48 +824,32 @@
             "Arg2": null,
             "Arg3": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 7,
-                "head_token_id": 1
+                "char_end": 7
               }
             ],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 63,
-                "char_end": 69,
-                "head_token_id": 12
+                "char_end": 69
               }
             ]
           }
         },
         {
-          "instance_id": 11873,
+          "instance_id": "FOLHA_DOC000083_SENT017::candidato::1",
           "sent_ID": "FOLHA_DOC000083_SENT017",
           "text": "\"A única coisa que nasceu até agora foi um candidato à Presidência\", declarou.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 52
-              }
-            ]
+            "char_start": 43,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -1188,40 +863,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 53,
-                "char_end": 66,
-                "head_token_id": 14
+                "char_end": 66
               }
             ]
           }
         },
         {
-          "instance_id": 12171,
+          "instance_id": "FOLHA_DOC000001_SENT011::candidato::1",
           "sent_ID": "FOLHA_DOC000001_SENT011",
           "text": "De acordo com aliados, Lula não gosta de discutir, mesmo que nos bastidores, a chance de não ser candidato ao Planalto e a projeção do nome de Haddad como plano B do PT tem incomodado os mais próximos ao ex-presidente.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 97,
-                "char_end": 106
-              }
-            ]
+            "char_start": 97,
+            "char_end": 106
           },
           "realization": {
             "Arg0": null,
@@ -1235,41 +897,27 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 107,
-                "char_end": 118,
-                "head_token_id": 26
+                "char_end": 118
               }
             ]
           }
         },
         {
-          "instance_id": 12181,
+          "instance_id": "FOLHA_DOC004073_SENT019::candidato::1",
           "sent_ID": "FOLHA_DOC004073_SENT019",
           "text": "E se o seu candidato preferido é colocado no fim da lista, de nada adianta votar nela.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 11,
-                "char_end": 20
-              }
-            ]
+            "char_start": 11,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -1283,7 +931,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1291,22 +939,14 @@
           }
         },
         {
-          "instance_id": 12503,
+          "instance_id": "FOLHA_DOC004020_SENT007::candidato::1",
           "sent_ID": "FOLHA_DOC004020_SENT007",
           "text": "Como o PSDB só pode lançar um candidato, governador e prefeito passaram a se bicar como estranhos no ninho.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 39
-              }
-            ]
+            "char_start": 30,
+            "char_end": 39
           },
           "realization": {
             "Arg0": "o PSDB",
@@ -1320,16 +960,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  2,
-                  3
-                ],
                 "char_start": 5,
-                "char_end": 11,
-                "head_token_id": 3
+                "char_end": 11
               }
             ],
             "Arg1": [],
@@ -1338,22 +973,14 @@
           }
         },
         {
-          "instance_id": 13041,
+          "instance_id": "FOLHA_DOC000112_SENT019::candidato::1",
           "sent_ID": "FOLHA_DOC000112_SENT019",
           "text": "A pauta liberal, porém, ainda carece de substância, reconhece o próprio candidato.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 81
-              }
-            ]
+            "char_start": 72,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -1367,7 +994,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1375,22 +1002,14 @@
           }
         },
         {
-          "instance_id": 13313,
+          "instance_id": "FOLHA_DOC000006_SENT009::candidato::1",
           "sent_ID": "FOLHA_DOC000006_SENT009",
           "text": "A ex-presidente Cristina Kirchner, candidata ao Senado pela oposição, tem usado a imagem de Maldonado em campanha, dizendo ser o \"primeiro desaparecido político do governo Macri\".",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidata",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 44
-              }
-            ]
+            "char_start": 35,
+            "char_end": 44
           },
           "realization": {
             "Arg0": null,
@@ -1404,52 +1023,32 @@
             "Arg2": "nmod",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 55,
-                "char_end": 68,
-                "head_token_id": 12
+                "char_end": 68
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 45,
-                "char_end": 54,
-                "head_token_id": 9
+                "char_end": 54
               }
             ]
           }
         },
         {
-          "instance_id": 13371,
+          "instance_id": "FOLHA_DOC004001_SENT018::candidato::1",
           "sent_ID": "FOLHA_DOC004001_SENT018",
           "text": "Se houver uma reviravolta jurídica, naturalmente ele será o candidato, apesar do desgaste.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 69
-              }
-            ]
+            "char_start": 60,
+            "char_end": 69
           },
           "realization": {
             "Arg0": null,
@@ -1463,7 +1062,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1471,22 +1070,14 @@
           }
         },
         {
-          "instance_id": 14160,
+          "instance_id": "FOLHA_DOC000081_SENT018::candidato::1",
           "sent_ID": "FOLHA_DOC000081_SENT018",
           "text": "O candidato governista terá como base de apoio o who's who dos delatados da Lava Jato.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 11
-              }
-            ]
+            "char_start": 2,
+            "char_end": 11
           },
           "realization": {
             "Arg0": null,
@@ -1500,39 +1091,27 @@
             "Arg2": null,
             "Arg3": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  3
-                ],
                 "char_start": 12,
-                "char_end": 22,
-                "head_token_id": 3
+                "char_end": 22
               }
             ]
           }
         },
         {
-          "instance_id": 15295,
+          "instance_id": "FOLHA_DOC000046_SENT031::candidato::1",
           "sent_ID": "FOLHA_DOC000046_SENT031",
           "text": "Os tucanos travam disputa interna para ver quem será o candidato à presidência em 2018.",
-          "frame_id": "f_fd2d7ab069237d1b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "candidato",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 64
-              }
-            ]
+            "char_start": 55,
+            "char_end": 64
           },
           "realization": {
             "Arg0": null,
@@ -1546,24 +1125,34 @@
             "Arg2": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
             "Arg3": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 65,
-                "char_end": 78,
-                "head_token_id": 14
+                "char_end": 78
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obl:agent": 1,
+          "nsubj": 3,
+          "nmod": 2
+        },
+        "Arg3": {
+          "nmod": 12,
+          "acl": 1,
+          "amod": 2
+        },
+        "Arg2": {
+          "nmod": 2
+        }
+      }
     }
   ]
 }

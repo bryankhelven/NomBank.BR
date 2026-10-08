@@ -1,66 +1,40 @@
 {
   "lemma": "propaganda",
-  "lemma_base": "propaganda",
   "senses": [
     {
       "pt_roleset": "propaganda.01",
       "description": "propagação de princípios, idéias, conhecimentos ou teorias",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_03ffc68ac507f99a",
-          "description": "propagação de princípios, idéias, conhecimentos ou teorias",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "propaganda.01",
-              "resource": "English NomBank",
-              "description": "work-of-art",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/propaganda.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "divulgador ou classe de divulgadores",
-              "definition": "Agente/classe institucional ou ideológica que divulga, por adaptação nominal dirigida; manter atribuição discursiva. Adjetivo ideológico não afirma indivíduo particular."
-            },
-            {
-              "id": "Arg1",
-              "desc": "coisa divulgada",
-              "definition": "Princípio/ideia/conteúdo difundido."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "amod": 2,
-              "nsubj": 3,
-              "nmod": 1
-            },
-            "Arg1": {
-              "obj": 1
-            }
-          }
+          "roleset": "propaganda.01",
+          "resource": "English NomBank",
+          "description": "work-of-art",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/propaganda.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 803,
+          "id": "Arg0",
+          "desc": "divulgador ou classe de divulgadores",
+          "definition": "Agente/classe institucional ou ideológica que divulga, por adaptação nominal dirigida; manter atribuição discursiva. Adjetivo ideológico não afirma indivíduo particular."
+        },
+        {
+          "id": "Arg1",
+          "desc": "coisa divulgada",
+          "definition": "Princípio/ideia/conteúdo difundido."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003033_SENT023::propaganda::1",
           "sent_ID": "FOLHA_DOC003033_SENT023",
           "text": "A escultura a que se refere a Folha -uma obra de arte móvel doada- não se trata de propaganda ou placa fixa que demande parecer da CPPU.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 83,
-                "char_end": 93
-              }
-            ]
+            "char_start": 83,
+            "char_end": 93
           },
           "realization": {
             "Arg0": null,
@@ -70,28 +44,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 1748,
+          "instance_id": "FOLHA_DOC003174_SENT022::propaganda::1",
           "sent_ID": "FOLHA_DOC003174_SENT022",
           "text": "Felizmente, os EUA têm um presidente forte que está revertendo a invasão, mas a criança brasileira que já é bombardeada de todos os lados pela propaganda esquerdista assiste e acaba achando que imigrante é algo positivo.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 143,
-                "char_end": 153
-              }
-            ]
+            "char_start": 143,
+            "char_end": 153
           },
           "realization": {
             "Arg0": "esquerdista",
@@ -101,12 +67,9 @@
             "Arg0": "amod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  30
-                ],
                 "char_start": 154,
                 "char_end": 165
               }
@@ -115,22 +78,14 @@
           }
         },
         {
-          "instance_id": 4770,
+          "instance_id": "FOLHA_DOC003144_SENT003::propaganda::1",
           "sent_ID": "FOLHA_DOC003144_SENT003",
           "text": "Isso joga um pouco de água na propaganda petista, mas não significa que, sob Lula, o país não tenha enriquecido, melhorando também a situação dos pobres.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 40
-              }
-            ]
+            "char_start": 30,
+            "char_end": 40
           },
           "realization": {
             "Arg0": "petista",
@@ -140,12 +95,9 @@
             "Arg0": "amod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 41,
                 "char_end": 48
               }
@@ -154,22 +106,14 @@
           }
         },
         {
-          "instance_id": 5297,
+          "instance_id": "FOLHA_DOC003033_SENT015::propaganda::1",
           "sent_ID": "FOLHA_DOC003033_SENT015",
           "text": "Em agosto, a prefeitura já havia passado por cima da lei que regulou a publicidade na cidade ao instalar 12 placas de propaganda na avenida Brasil sem autorização da CPPU.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 118,
-                "char_end": 128
-              }
-            ]
+            "char_start": 118,
+            "char_end": 128
           },
           "realization": {
             "Arg0": "a prefeitura",
@@ -179,13 +123,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4,
-                  5
-                ],
                 "char_start": 11,
                 "char_end": 23
               }
@@ -194,22 +134,14 @@
           }
         },
         {
-          "instance_id": 6545,
+          "instance_id": "FOLHA_DOC000058_SENT001::propaganda::1",
           "sent_ID": "FOLHA_DOC000058_SENT001",
           "text": "Dove pede desculpas por propaganda acusada de racismo nas redes.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 34
-              }
-            ]
+            "char_start": 24,
+            "char_end": 34
           },
           "realization": {
             "Arg0": "Dove",
@@ -219,12 +151,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 4
               }
@@ -233,22 +162,14 @@
           }
         },
         {
-          "instance_id": 9020,
+          "instance_id": "FOLHA_DOC003198_SENT009::propaganda::1",
           "sent_ID": "FOLHA_DOC003198_SENT009",
           "text": "Em resposta, varejistas e a própria fabricante passaram a tratar com discrição o nome Friboi, que a JBS até então exibia ostensivamente nas propagandas de TV com celebridades de cachês milionários como Tony Ramos.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propagandas",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 140,
-                "char_end": 151
-              }
-            ]
+            "char_start": 140,
+            "char_end": 151
           },
           "realization": {
             "Arg0": "a JBS",
@@ -258,24 +179,15 @@
             "Arg0": "nsubj",
             "Arg1": "obj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  19,
-                  20
-                ],
                 "char_start": 98,
                 "char_end": 103
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 79,
                 "char_end": 92
               }
@@ -283,22 +195,14 @@
           }
         },
         {
-          "instance_id": 10009,
+          "instance_id": "FOLHA_DOC003033_SENT009::propaganda::1",
           "sent_ID": "FOLHA_DOC003033_SENT009",
           "text": "Procurada pela Folha, a gestão João Doria afirmou que o coração não é uma peça de propaganda, mas uma obra de arte móvel, doada pelo empresário Michel Farah.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 92
-              }
-            ]
+            "char_start": 82,
+            "char_end": 92
           },
           "realization": {
             "Arg0": null,
@@ -308,28 +212,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 13027,
+          "instance_id": "FOLHA_DOC003198_SENT033::propaganda::1",
           "sent_ID": "FOLHA_DOC003198_SENT033",
           "text": "Quando a delação de Joesley e Wesley Batista veio à tona, em maio, a primeira resposta da JBS foi suspender a propaganda de TV e esconder a marca.",
-          "frame_id": "f_03ffc68ac507f99a",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "propaganda",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 120
-              }
-            ]
+            "char_start": 110,
+            "char_end": 120
           },
           "realization": {
             "Arg0": "da JBS",
@@ -339,14 +235,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 87,
                 "char_end": 93
               }
@@ -354,7 +245,17 @@
             "Arg1": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "amod": 2,
+          "nsubj": 3,
+          "nmod": 1
+        },
+        "Arg1": {
+          "obj": 1
+        }
+      }
     }
   ]
 }

@@ -1,66 +1,42 @@
 {
   "lemma": "sede",
-  "lemma_base": "sede",
   "senses": [
     {
       "pt_roleset": "sede.03",
       "description": "desejo veemente; ânsia",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_2f033895eacb795b",
-          "description": "desejo veemente; ânsia",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "participante principal",
-              "definition": "participante principal"
-            },
-            {
-              "id": "Arg1",
-              "desc": "predicação nominal",
-              "definition": "predicação nominal"
-            },
-            {
-              "id": "Arg2",
-              "desc": "alvo,conteúdo,tema ou entidade relacionada",
-              "definition": "alvo,conteúdo,tema ou entidade relacionada"
-            },
-            {
-              "id": "Arg3",
-              "desc": "tempo,local,grau,meio ou contexto",
-              "definition": "tempo,local,grau,meio ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obj": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "participante principal",
+          "definition": "participante principal"
+        },
+        {
+          "id": "Arg1",
+          "desc": "predicação nominal",
+          "definition": "predicação nominal"
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo,conteúdo,tema ou entidade relacionada",
+          "definition": "alvo,conteúdo,tema ou entidade relacionada"
+        },
+        {
+          "id": "Arg3",
+          "desc": "tempo,local,grau,meio ou contexto",
+          "definition": "tempo,local,grau,meio ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 8884,
+          "instance_id": "FOLHA_DOC000017_SENT004::sede::1",
           "sent_ID": "FOLHA_DOC000017_SENT004",
           "text": "Bretas entendeu que ambos ainda podem interferir nas investigações sobre a suposta compra de votos na eleição do COI (Comitê Olímpico Internacional) que escolheu o Rio como sede da Olimpíada de 2016.",
-          "frame_id": "f_2f033895eacb795b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "sede",
-            "token_ids": [
-              33
-            ],
-            "spans": [
-              {
-                "char_start": 173,
-                "char_end": 177
-              }
-            ]
+            "char_start": 173,
+            "char_end": 177
           },
           "realization": {
             "Arg0": "Rio",
@@ -74,72 +50,55 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  31
-                ],
                 "char_start": 164,
-                "char_end": 167,
-                "head_token_id": 31
+                "char_end": 167
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  36,
-                  37,
-                  38
-                ],
                 "char_start": 181,
-                "char_end": 198,
-                "head_token_id": 36
+                "char_end": 198
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obj": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "sede.03",
       "description": "desejo veemente; ânsia",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 11684,
+          "instance_id": "FOLHA_DOC003031_SENT022::sede::1",
           "sent_ID": "FOLHA_DOC003031_SENT022",
           "text": "Vemos a sede doentia pelo poder e o que se faz quando o objetivo é se manter no poder a todo custo.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "sede",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 8,
-                "char_end": 12
-              }
-            ]
+            "char_start": 8,
+            "char_end": 12
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

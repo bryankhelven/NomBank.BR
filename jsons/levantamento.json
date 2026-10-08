@@ -1,80 +1,50 @@
 {
   "lemma": "levantamento",
-  "lemma_base": "levantamento",
   "senses": [
     {
       "pt_roleset": "levantamento.03",
       "description": "arrolamento; inventário",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_765a855e3b6b1d9c",
-          "description": "arrolamento; inventário",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "survey.01",
-              "resource": "English NomBank",
-              "description": "to examine, inspect carefully",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/survey.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "pesquisador",
-              "definition": "Entidade que efetua o levantamento/inventário; pessoa citada ou estudo que o apresenta não equivale automaticamente a executor."
-            },
-            {
-              "id": "Arg1",
-              "desc": "tema pesquisado",
-              "definition": "Objeto/questão explicitamente investigado ou inventariado; resultado informado não é por si tema expresso do levantamento."
-            },
-            {
-              "id": "Arg2",
-              "desc": "interlocutor ou população consultada",
-              "definition": "Hearer nominal: pessoa/grupo explicitamente consultado na pesquisa; entidade contada ou descrita em resultado não prova por si consulta."
-            },
-            {
-              "id": "Arg3",
-              "desc": "beneficiário do levantamento",
-              "definition": "Pessoa/entidade explicitamente beneficiária da pesquisa; divulgar, apresentar ou figurar nos resultados não basta."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obl:agent": 2,
-              "nmod": 1,
-              "nsubj": 1,
-              "obl": 1
-            },
-            "Arg1": {
-              "nsubj": 3,
-              "obj": 1,
-              "ccomp": 1,
-              "nmod": 3
-            }
-          }
+          "roleset": "survey.01",
+          "resource": "English NomBank",
+          "description": "to examine, inspect carefully",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/survey.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 613,
+          "id": "Arg0",
+          "desc": "pesquisador",
+          "definition": "Entidade que efetua o levantamento/inventário; pessoa citada ou estudo que o apresenta não equivale automaticamente a executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "tema pesquisado",
+          "definition": "Objeto/questão explicitamente investigado ou inventariado; resultado informado não é por si tema expresso do levantamento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "interlocutor ou população consultada",
+          "definition": "Hearer nominal: pessoa/grupo explicitamente consultado na pesquisa; entidade contada ou descrita em resultado não prova por si consulta."
+        },
+        {
+          "id": "Arg3",
+          "desc": "beneficiário do levantamento",
+          "definition": "Pessoa/entidade explicitamente beneficiária da pesquisa; divulgar, apresentar ou figurar nos resultados não basta."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003028_SENT010::levantamento::1",
           "sent_ID": "FOLHA_DOC003028_SENT010",
           "text": "Parece difícil, mas, segundo o levantamento, 92% das scale-ups são pequenas ou médias.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 43
-              }
-            ]
+            "char_start": 31,
+            "char_end": 43
           },
           "realization": {
             "Arg0": null,
@@ -88,7 +58,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -96,22 +66,14 @@
           }
         },
         {
-          "instance_id": 4314,
+          "instance_id": "FOLHA_DOC003161_SENT002::levantamento::1",
           "sent_ID": "FOLHA_DOC003161_SENT002",
           "text": "A diferença entre as tarifas cobradas pelas empresas aéreas em uma mesma rota nacional pode ultrapassar os R$ 2.000, mostra levantamento feito pelo ITA (Instituto Tecnológico de Aeronáutica).",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 124,
-                "char_end": 136
-              }
-            ]
+            "char_start": 124,
+            "char_end": 136
           },
           "realization": {
             "Arg0": "pelo ITA (Instituto Tecnológico de Aeronáutica)",
@@ -125,43 +87,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 143,
                 "char_end": 190
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 0,
                 "char_end": 86
               }
@@ -171,22 +105,14 @@
           }
         },
         {
-          "instance_id": 5252,
+          "instance_id": "FOLHA_DOC000091_SENT004::levantamento::1",
           "sent_ID": "FOLHA_DOC000091_SENT004",
           "text": "A seguir, veja mais detalhes sobre o levantamento que abordou a violência na capital fluminense.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 49
-              }
-            ]
+            "char_start": 37,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -200,18 +126,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 62,
                 "char_end": 95
               }
@@ -221,22 +139,14 @@
           }
         },
         {
-          "instance_id": 5834,
+          "instance_id": "FOLHA_DOC000166_SENT003::levantamento::1",
           "sent_ID": "FOLHA_DOC000166_SENT003",
           "text": "Ao menos para 63% de seus próprios moradores, segundo levantamento feito pelo Datafolha.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 66
-              }
-            ]
+            "char_start": 54,
+            "char_end": 66
           },
           "realization": {
             "Arg0": "pelo Datafolha",
@@ -250,14 +160,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 73,
                 "char_end": 87
               }
@@ -268,22 +173,14 @@
           }
         },
         {
-          "instance_id": 5908,
+          "instance_id": "FOLHA_DOC000059_SENT028::levantamento::1",
           "sent_ID": "FOLHA_DOC000059_SENT028",
           "text": "Relatar corrupção é um ato de coragem na América Latina, de acordo com o levantamento.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 85
-              }
-            ]
+            "char_start": 73,
+            "char_end": 85
           },
           "realization": {
             "Arg0": null,
@@ -297,7 +194,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -305,22 +202,14 @@
           }
         },
         {
-          "instance_id": 6835,
+          "instance_id": "FOLHA_DOC000091_SENT018::levantamento::1",
           "sent_ID": "FOLHA_DOC000091_SENT018",
           "text": "Entre os dois levantamentos, a preocupação com a saúde cresceu, de 21% para 27%.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamentos",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 27
-              }
-            ]
+            "char_start": 14,
+            "char_end": 27
           },
           "realization": {
             "Arg0": null,
@@ -334,7 +223,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -342,22 +231,14 @@
           }
         },
         {
-          "instance_id": 6981,
+          "instance_id": "FOLHA_DOC004005_SENT015::levantamento::1",
           "sent_ID": "FOLHA_DOC004005_SENT015",
           "text": "Entre os itens que chamam a atenção no levantamento estão as evoluções dos gastos com educação e com saúde.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 51
-              }
-            ]
+            "char_start": 39,
+            "char_end": 51
           },
           "realization": {
             "Arg0": null,
@@ -371,22 +252,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 58,
                 "char_end": 106
               }
@@ -396,22 +265,14 @@
           }
         },
         {
-          "instance_id": 7448,
+          "instance_id": "FOLHA_DOC004126_SENT015::levantamento::1",
           "sent_ID": "FOLHA_DOC004126_SENT015",
           "text": "Segundo levantamento do museu, a cidade e seus moradores inspiraram mais de 70 obras do artista.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 8,
-                "char_end": 20
-              }
-            ]
+            "char_start": 8,
+            "char_end": 20
           },
           "realization": {
             "Arg0": "do museu",
@@ -425,14 +286,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 21,
                 "char_end": 29
               }
@@ -443,22 +299,14 @@
           }
         },
         {
-          "instance_id": 7930,
+          "instance_id": "FOLHA_DOC002048_SENT006::levantamento::1",
           "sent_ID": "FOLHA_DOC002048_SENT006",
           "text": "O levantamento de 2020 deve mostrar um crescimento maior: estamos vivendo uma verdadeira revolução urbana nesta década.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -472,7 +320,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -480,22 +328,14 @@
           }
         },
         {
-          "instance_id": 8329,
+          "instance_id": "FOLHA_DOC003128_SENT018::levantamento::1",
           "sent_ID": "FOLHA_DOC003128_SENT018",
           "text": "Agora, um estudo de Marc Morgan, do World Wealth and Income Database (instituto codirigido pelo economista Thomas Piketty) apresenta um levantamento mais extenso.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 148
-              }
-            ]
+            "char_start": 136,
+            "char_end": 148
           },
           "realization": {
             "Arg0": null,
@@ -509,7 +349,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -517,22 +357,14 @@
           }
         },
         {
-          "instance_id": 9750,
+          "instance_id": "FOLHA_DOC000181_SENT011::levantamento::1",
           "sent_ID": "FOLHA_DOC000181_SENT011",
           "text": "A avaliação dos dois tucanos, aliás, se igualou no levantamento feito agora na capital.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 63
-              }
-            ]
+            "char_start": 51,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -546,18 +378,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 0,
                 "char_end": 28
               }
@@ -567,22 +391,14 @@
           }
         },
         {
-          "instance_id": 11583,
+          "instance_id": "FOLHA_DOC000083_SENT005::levantamento::1",
           "sent_ID": "FOLHA_DOC000083_SENT005",
           "text": "O levantamento foi feito em 4 e 5 de outubro.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -596,7 +412,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -604,22 +420,14 @@
           }
         },
         {
-          "instance_id": 12887,
+          "instance_id": "FOLHA_DOC000129_SENT022::levantamento::1",
           "sent_ID": "FOLHA_DOC000129_SENT022",
           "text": "O levantamento revela que 67% das pessoas ouviram algum tiro recentemente.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -633,16 +441,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 42,
                 "char_end": 73
               }
@@ -652,22 +454,14 @@
           }
         },
         {
-          "instance_id": 13097,
+          "instance_id": "FOLHA_DOC004001_SENT017::levantamento::1",
           "sent_ID": "FOLHA_DOC004001_SENT017",
           "text": "Com 30% das intenções de voto, Lula lidera os levantamentos disponíveis.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamentos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 46,
-                "char_end": 59
-              }
-            ]
+            "char_start": 46,
+            "char_end": 59
           },
           "realization": {
             "Arg0": null,
@@ -681,15 +475,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 12,
                 "char_end": 29
               }
@@ -699,22 +488,14 @@
           }
         },
         {
-          "instance_id": 13270,
+          "instance_id": "FOLHA_DOC003198_SENT007::levantamento::1",
           "sent_ID": "FOLHA_DOC003198_SENT007",
           "text": "A partir de agosto voltaram a ser mais frequentes, diz Marília Taboada, administradora do site Ofertas de Supermercados, que fez levantamento da presença da marca Friboi nos tabloides.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 129,
-                "char_end": 141
-              }
-            ]
+            "char_start": 129,
+            "char_end": 141
           },
           "realization": {
             "Arg0": "Marília Taboada, administradora do site Ofertas de Supermercados",
@@ -728,39 +509,15 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 55,
                 "char_end": 119
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35
-                ],
                 "char_start": 142,
                 "char_end": 183
               }
@@ -770,22 +527,14 @@
           }
         },
         {
-          "instance_id": 14886,
+          "instance_id": "FOLHA_DOC003161_SENT016::levantamento::1",
           "sent_ID": "FOLHA_DOC003161_SENT016",
           "text": "Oliveira aponta que um levantamento feito também pelo Nectar mostra que, nas compras feitas com antecedência, as tarifas podem ser até 55% menores.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 35
-              }
-            ]
+            "char_start": 23,
+            "char_end": 35
           },
           "realization": {
             "Arg0": "pelo Nectar",
@@ -799,14 +548,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 49,
                 "char_end": 60
               }
@@ -817,22 +561,14 @@
           }
         },
         {
-          "instance_id": 15010,
+          "instance_id": "FOLHA_DOC003150_SENT043::levantamento::1",
           "sent_ID": "FOLHA_DOC003150_SENT043",
           "text": "Em 2014, foi feito um levantamento de todas as empresas de design que tinham CNPJ.",
-          "frame_id": "f_765a855e3b6b1d9c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "levantamento",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 34
-              }
-            ]
+            "char_start": 22,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -846,21 +582,10 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 35,
                 "char_end": 81
               }
@@ -869,7 +594,21 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obl:agent": 2,
+          "nmod": 1,
+          "nsubj": 1,
+          "obl": 1
+        },
+        "Arg1": {
+          "nsubj": 3,
+          "obj": 1,
+          "ccomp": 1,
+          "nmod": 3
+        }
+      }
     }
   ]
 }

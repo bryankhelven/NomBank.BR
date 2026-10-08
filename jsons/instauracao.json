@@ -1,71 +1,50 @@
 {
   "lemma": "instauração",
-  "lemma_base": "instauração",
   "senses": [
     {
       "pt_roleset": "instauração.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_e3226660a34e7664",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "establishment.02",
-              "resource": "English NomBank",
-              "description": "establish",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/establishment.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agent",
-              "definition": "agent"
-            },
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            },
-            {
-              "id": "Arg3",
-              "desc": "attribute",
-              "definition": "attribute"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "roleset": "establishment.02",
+          "resource": "English NomBank",
+          "description": "establish",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/establishment.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 6966,
+          "id": "Arg0",
+          "desc": "agent",
+          "definition": "agent"
+        },
+        {
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        },
+        {
+          "id": "Arg3",
+          "desc": "attribute",
+          "definition": "attribute"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003156_SENT025::instauração::1",
           "sent_ID": "FOLHA_DOC003156_SENT025",
           "text": "Nunca uma citação de delator poderia ser motivo suficiente para a instauração de um inquérito, mas foi assim que Janot agiu.",
-          "frame_id": "f_e3226660a34e7664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "instauração",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 66,
-                "char_end": 77
-              }
-            ]
+            "char_start": 66,
+            "char_end": 77
           },
           "realization": {
             "Arg0": null,
@@ -79,24 +58,24 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 81,
-                "char_end": 93,
-                "head_token_id": 15
+                "char_end": 93
               }
             ],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

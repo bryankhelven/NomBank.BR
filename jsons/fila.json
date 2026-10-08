@@ -1,67 +1,40 @@
 {
   "lemma": "fila",
-  "lemma_base": "fila",
   "senses": [
     {
       "pt_roleset": "fila · acepção 1",
       "description": "1 série de pessoas ou coisas dispostas lado a lado ou uma atrás da outra; fileira: Duas filas de carros que iam, duas que vinham (REA); um novo ritual tecnológi- co acabou com as filas nos caixas dos supermercados (VEJ)",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_5c788774ac73fbf9",
-          "description": "1 série de pessoas ou coisas dispostas lado a lado ou uma atrás da outra; fileira: Duas filas de carros que iam, duas que vinham (REA); um novo ritual tecnológi- co acabou com as filas nos caixas dos supermercados (VEJ)",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "line.01",
-              "resource": "English NomBank",
-              "description": "partitive-quant",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/line.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg1",
-              "desc": "pessoas/coisas que integram a fila",
-              "definition": "pessoas/coisas que integram a fila"
-            },
-            {
-              "id": "Arg3",
-              "desc": "base secundária da fila/serviço a que se vincula",
-              "definition": "base secundária da fila/serviço a que se vincula"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nsubj": 10,
-              "obj": 1,
-              "nsubj:pass": 2
-            },
-            "Arg3": {
-              "nmod": 8,
-              "acl": 1
-            }
-          }
+          "roleset": "line.01",
+          "resource": "English NomBank",
+          "description": "partitive-quant",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/line.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 789,
+          "id": "Arg1",
+          "desc": "pessoas/coisas que integram a fila",
+          "definition": "pessoas/coisas que integram a fila"
+        },
+        {
+          "id": "Arg3",
+          "desc": "base secundária da fila/serviço a que se vincula",
+          "definition": "base secundária da fila/serviço a que se vincula"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003066_SENT020::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT020",
           "text": "A empresa confirmou o procedimento e afirmou que a fila virtual foi iniciada em agosto.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 51,
-                "char_end": 55
-              }
-            ]
+            "char_start": 51,
+            "char_end": 55
           },
           "realization": {
             "Arg1": null,
@@ -71,28 +44,20 @@
             "Arg1": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": []
           }
         },
         {
-          "instance_id": 971,
+          "instance_id": "FOLHA_DOC000024_SENT010::fila::1",
           "sent_ID": "FOLHA_DOC000024_SENT010",
           "text": "Os próprios passageiros fazem duas filas: uma para quem quer ir sentado e outra, em pé.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "filas",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 35,
-                "char_end": 40
-              }
-            ]
+            "char_start": 35,
+            "char_end": 40
           },
           "realization": {
             "Arg1": "Os próprios passageiros",
@@ -108,35 +73,19 @@
               "acl"
             ]
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
                 "char_end": 23
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 46,
                 "char_end": 71
               },
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 81,
                 "char_end": 86
               }
@@ -144,22 +93,14 @@
           }
         },
         {
-          "instance_id": 1817,
+          "instance_id": "FOLHA_DOC000021_SENT006::fila::1",
           "sent_ID": "FOLHA_DOC000021_SENT006",
           "text": "Debaixo de chuva, sua recepção na cidade com uma das maiores comunidades brasileiras nos EUA foi menos efusiva do que em Miami, onde esteve no fim de semana, atraindo longas filas de espera para um encontro com ele.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "filas",
-            "token_ids": [
-              39
-            ],
-            "spans": [
-              {
-                "char_start": 174,
-                "char_end": 179
-              }
-            ]
+            "char_start": 174,
+            "char_end": 179
           },
           "realization": {
             "Arg1": null,
@@ -169,17 +110,10 @@
             "Arg1": null,
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [],
             "Arg3": [
               {
-                "token_ids": [
-                  42,
-                  43,
-                  44,
-                  45,
-                  46
-                ],
                 "char_start": 190,
                 "char_end": 214
               }
@@ -187,22 +121,14 @@
           }
         },
         {
-          "instance_id": 3194,
+          "instance_id": "FOLHA_DOC003066_SENT015::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT015",
           "text": "Segundo motoristas da empresa, eles podem cancelar até três viagens sem perder o lugar na fila virtual do aeroporto.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 94
-              }
-            ]
+            "char_start": 90,
+            "char_end": 94
           },
           "realization": {
             "Arg1": "eles",
@@ -212,23 +138,15 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 31,
                 "char_end": 35
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 103,
                 "char_end": 115
               }
@@ -236,22 +154,14 @@
           }
         },
         {
-          "instance_id": 4183,
+          "instance_id": "FOLHA_DOC003066_SENT030::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT030",
           "text": "No bolsão informal que se formou ao lado do aeroporto, motoristas que aguardavam a vez na fila ficaram indignados.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 90,
-                "char_end": 94
-              }
-            ]
+            "char_start": 90,
+            "char_end": 94
           },
           "realization": {
             "Arg1": "motoristas",
@@ -261,12 +171,9 @@
             "Arg1": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 55,
                 "char_end": 65
               }
@@ -275,22 +182,14 @@
           }
         },
         {
-          "instance_id": 6138,
+          "instance_id": "FOLHA_DOC003014_SENT006::fila::1",
           "sent_ID": "FOLHA_DOC003014_SENT006",
           "text": "Às 15h do domingo (17), havia mais pessoas nessas filas do que interessados no show de rappers portugueses no palco Sunset.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "filas",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 55
-              }
-            ]
+            "char_start": 50,
+            "char_end": 55
           },
           "realization": {
             "Arg1": "mais pessoas",
@@ -300,13 +199,9 @@
             "Arg1": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 30,
                 "char_end": 42
               }
@@ -315,22 +210,14 @@
           }
         },
         {
-          "instance_id": 7218,
+          "instance_id": "FOLHA_DOC003066_SENT011::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT011",
           "text": "Como a fila virtual é longa, os motoristas precisam de corridas maiores para compensar o tempo de espera.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 11
-              }
-            ]
+            "char_start": 7,
+            "char_end": 11
           },
           "realization": {
             "Arg1": "os motoristas",
@@ -340,13 +227,9 @@
             "Arg1": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 29,
                 "char_end": 42
               }
@@ -355,22 +238,14 @@
           }
         },
         {
-          "instance_id": 9781,
+          "instance_id": "FOLHA_DOC003066_SENT019::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT019",
           "text": "\"Se o motorista rejeitar, sai da fila\", conta ele, que já esperava em Cumbica por três horas.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 37
-              }
-            ]
+            "char_start": 33,
+            "char_end": 37
           },
           "realization": {
             "Arg1": "o motorista",
@@ -380,13 +255,9 @@
             "Arg1": "nsubj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 4,
                 "char_end": 15
               }
@@ -395,22 +266,14 @@
           }
         },
         {
-          "instance_id": 11767,
+          "instance_id": "FOLHA_DOC003013_SENT012::fila::1",
           "sent_ID": "FOLHA_DOC003013_SENT012",
           "text": "O ex-chefe de gabinete de Janot, Eduardo Pelella, só venceu a fila de entrada no meio do evento.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 66
-              }
-            ]
+            "char_start": 62,
+            "char_end": 66
           },
           "realization": {
             "Arg1": "O ex-chefe de gabinete de Janot, Eduardo Pelella",
@@ -420,30 +283,15 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 0,
                 "char_end": 48
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 67,
                 "char_end": 77
               }
@@ -451,22 +299,14 @@
           }
         },
         {
-          "instance_id": 12680,
+          "instance_id": "FOLHA_DOC003066_SENT053::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT053",
           "text": "Na prioridade, caso cancelem a corrida, eles são colocados no fim da fila.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 73
-              }
-            ]
+            "char_start": 69,
+            "char_end": 73
           },
           "realization": {
             "Arg1": "eles",
@@ -476,12 +316,9 @@
             "Arg1": "nsubj:pass",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 40,
                 "char_end": 44
               }
@@ -490,22 +327,14 @@
           }
         },
         {
-          "instance_id": 12690,
+          "instance_id": "FOLHA_DOC003066_SENT021::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT021",
           "text": "A Cabify diz que o seu motorista não tem a opção de cancelar a viagem no aeroporto, onde a fila do aplicativo existe desde junho de 2016.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 91,
-                "char_end": 95
-              }
-            ]
+            "char_start": 91,
+            "char_end": 95
           },
           "realization": {
             "Arg1": "o seu motorista",
@@ -515,25 +344,15 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 17,
                 "char_end": 32
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 96,
                 "char_end": 109
               }
@@ -541,22 +360,14 @@
           }
         },
         {
-          "instance_id": 12868,
+          "instance_id": "FOLHA_DOC003066_SENT050::fila::1",
           "sent_ID": "FOLHA_DOC003066_SENT050",
           "text": "\"É muito bom, mas se você não for chamado em 15 minutos, vai para o final da fila\", afirma o motorista Cassio Silva, 40.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 77,
-                "char_end": 81
-              }
-            ]
+            "char_start": 77,
+            "char_end": 81
           },
           "realization": {
             "Arg1": "você",
@@ -566,12 +377,9 @@
             "Arg1": "nsubj:pass",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 21,
                 "char_end": 25
               }
@@ -580,22 +388,14 @@
           }
         },
         {
-          "instance_id": 13588,
+          "instance_id": "FOLHA_DOC003014_SENT005::fila::1",
           "sent_ID": "FOLHA_DOC003014_SENT005",
           "text": "Quem tem espírito de Disneylândia já engrossa as filas da roda-gigante ou da montanha-russa.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "filas",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 49,
-                "char_end": 54
-              }
-            ]
+            "char_start": 49,
+            "char_end": 54
           },
           "realization": {
             "Arg1": "Quem tem espírito de Disneylândia",
@@ -605,31 +405,15 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-                ],
                 "char_start": 0,
                 "char_end": 33
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 55,
                 "char_end": 91
               }
@@ -637,22 +421,14 @@
           }
         },
         {
-          "instance_id": 14215,
+          "instance_id": "FOLHA_DOC003014_SENT019::fila::1",
           "sent_ID": "FOLHA_DOC003014_SENT019",
           "text": "Pedro Botelho, 10, tirava uma foto antes de entrar na fila para o lounge da NBA, o mais lotado na tarde de domingo.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 58
-              }
-            ]
+            "char_start": 54,
+            "char_end": 58
           },
           "realization": {
             "Arg1": "Pedro Botelho, 10",
@@ -662,29 +438,15 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4
-                ],
                 "char_start": 0,
                 "char_end": 17
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 59,
                 "char_end": 79
               }
@@ -692,22 +454,14 @@
           }
         },
         {
-          "instance_id": 15409,
+          "instance_id": "FOLHA_DOC003074_SENT023::fila::1",
           "sent_ID": "FOLHA_DOC003074_SENT023",
           "text": "Algumas pessoas na fila da delegacia móvel cogitavam processar a organização pelo ocorrido.",
-          "frame_id": "f_5c788774ac73fbf9",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "fila",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 23
-              }
-            ]
+            "char_start": 19,
+            "char_end": 23
           },
           "realization": {
             "Arg1": "Algumas pessoas",
@@ -717,32 +471,33 @@
             "Arg1": "nsubj",
             "Arg3": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 15
               }
             ],
             "Arg3": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 24,
                 "char_end": 42
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nsubj": 10,
+          "obj": 1,
+          "nsubj:pass": 2
+        },
+        "Arg3": {
+          "nmod": 8,
+          "acl": 1
+        }
+      }
     }
   ]
 }

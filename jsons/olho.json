@@ -1,67 +1,45 @@
 {
   "lemma": "olho",
-  "lemma_base": "olho",
   "senses": [
     {
       "pt_roleset": "olho.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_57564b533df53a25",
+          "roleset": "monitoring.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "monitoring.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/monitoring.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "observer",
-              "definition": "observer"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing looked at",
-              "definition": "thing looked at"
-            },
-            {
-              "id": "Arg2",
-              "desc": "looking for what",
-              "definition": "looking for what"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "ccomp:speech": 1,
-              "obl": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/monitoring.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1802,
+          "id": "Arg0",
+          "desc": "observer",
+          "definition": "observer"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing looked at",
+          "definition": "thing looked at"
+        },
+        {
+          "id": "Arg2",
+          "desc": "looking for what",
+          "definition": "looking for what"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003078_SENT002::olho::1",
           "sent_ID": "FOLHA_DOC003078_SENT002",
           "text": "\"Todos os olhos estão em Trump na reunião de líderes mundiais na ONU\", trombeteou o \"New York Times\", em manchete.",
-          "frame_id": "f_57564b533df53a25",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "olhos",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 15
-              }
-            ]
+            "char_start": 10,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -73,38 +51,26 @@
             "Arg1": "ccomp:speech",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 25,
-                "char_end": 30,
-                "head_token_id": 7
+                "char_end": 30
               }
             ],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5822,
+          "instance_id": "FOLHA_DOC003118_SENT017::olho::1",
           "sent_ID": "FOLHA_DOC003118_SENT017",
           "text": "\"Hoje, há mais oportunidades a curto prazo na Ásia, mas isso não significa que tiraremos os olhos do Brasil.\"",
-          "frame_id": "f_57564b533df53a25",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "olhos",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 92,
-                "char_end": 97
-              }
-            ]
+            "char_start": 92,
+            "char_end": 97
           },
           "realization": {
             "Arg0": null,
@@ -116,24 +82,24 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 98,
-                "char_end": 107,
-                "head_token_id": 24
+                "char_end": 107
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "ccomp:speech": 1,
+          "obl": 1
+        }
+      }
     }
   ]
 }

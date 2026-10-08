@@ -1,66 +1,42 @@
 {
   "lemma": "saída",
-  "lemma_base": "saída",
   "senses": [
     {
       "pt_roleset": "saída.12",
       "description": "início; começo",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_12d3535750b8f2fa",
-          "description": "início; começo",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "equipe/jogadores",
-              "definition": "equipe/jogadores"
-            },
-            {
-              "id": "Arg1",
-              "desc": "saída de jogo/bola",
-              "definition": "saída de jogo/bola"
-            },
-            {
-              "id": "Arg2",
-              "desc": "zona defensiva/origem",
-              "definition": "zona defensiva/origem"
-            },
-            {
-              "id": "Arg3",
-              "desc": "meio,esquema,tempo ou contexto",
-              "definition": "meio,esquema,tempo ou contexto"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 2
-            },
-            "Arg2": {
-              "nmod": 2
-            }
-          }
+          "id": "Arg0",
+          "desc": "equipe/jogadores",
+          "definition": "equipe/jogadores"
+        },
+        {
+          "id": "Arg1",
+          "desc": "saída de jogo/bola",
+          "definition": "saída de jogo/bola"
+        },
+        {
+          "id": "Arg2",
+          "desc": "zona defensiva/origem",
+          "definition": "zona defensiva/origem"
+        },
+        {
+          "id": "Arg3",
+          "desc": "meio,esquema,tempo ou contexto",
+          "definition": "meio,esquema,tempo ou contexto"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 7952,
+          "instance_id": "FOLHA_DOC002073_SENT012::saída::1",
           "sent_ID": "FOLHA_DOC002073_SENT012",
           "text": "Assim, o Palmeiras adiantou a marcação, diminuindo os espaços da saída de jogo do Fluminense.",
-          "frame_id": "f_12d3535750b8f2fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "saída",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 65,
-                "char_end": 70
-              }
-            ]
+            "char_start": 65,
+            "char_end": 70
           },
           "realization": {
             "Arg0": "Palmeiras",
@@ -74,50 +50,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 9,
-                "char_end": 18,
-                "head_token_id": 4
+                "char_end": 18
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 79,
-                "char_end": 92,
-                "head_token_id": 19
+                "char_end": 92
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 13240,
+          "instance_id": "FOLHA_DOC004127_SENT023::saída::1",
           "sent_ID": "FOLHA_DOC004127_SENT023",
           "text": "O jogador colombiano deu mais proteção aos zagueiros, além de ajudar na saída de bola.",
-          "frame_id": "f_12d3535750b8f2fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "saída",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 77
-              }
-            ]
+            "char_start": 72,
+            "char_end": 77
           },
           "realization": {
             "Arg0": "O jogador colombiano",
@@ -131,35 +89,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3
-                ],
                 "char_start": 0,
-                "char_end": 20,
-                "head_token_id": 2
+                "char_end": 20
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 78,
-                "char_end": 85,
-                "head_token_id": 18
+                "char_end": 85
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 2
+        },
+        "Arg2": {
+          "nmod": 2
+        }
+      }
     }
   ]
 }

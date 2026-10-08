@@ -1,63 +1,42 @@
 {
   "lemma": "carão",
-  "lemma_base": "carão",
   "senses": [
     {
       "pt_roleset": "carão · acepção 1",
       "description": "carão, Nm [Abstrato de ação] repreensão; advertência: de mamãe levei um carão sem tamanho (ANA); Dias antes, era dele o nariz em que Itamar espetava o dedo, num carão tele- visionado (VEJ)",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_3da1151e38cf9bb7",
-          "description": "carão, Nm [Abstrato de ação] repreensão; advertência: de mamãe levei um carão sem tamanho (ANA); Dias antes, era dele o nariz em que Itamar espetava o dedo, num carão tele- visionado (VEJ)",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 15503,
+          "instance_id": "FOLHA_DOC003155_SENT005::carão::1",
           "sent_ID": "FOLHA_DOC003155_SENT005",
           "text": "Festa com ambiente livre de preconceitos, composto por ativistas do movimento negro e LGBTQ+ das periferias da cidade, a Batekoo é zero carão.",
-          "frame_id": "f_3da1151e38cf9bb7",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "carão",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 136,
-                "char_end": 141
-              }
-            ]
+            "char_start": 136,
+            "char_end": 141
           },
           "realization": {
             "Arg0": null,
@@ -71,26 +50,24 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 10,
-                "char_end": 40,
-                "head_token_id": 3
+                "char_end": 40
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

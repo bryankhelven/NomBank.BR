@@ -1,78 +1,50 @@
 {
   "lemma": "viagem",
-  "lemma_base": "viagem",
   "senses": [
     {
       "pt_roleset": "viagem.04",
       "description": "transporte",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_751ad4fdd4c6ca1c",
-          "description": "transporte",
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "transportation.01",
-              "resource": "English NomBank",
-              "description": "move from one place to   another",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/transportation.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "transportador",
-              "definition": "Motorista/agente do serviço de transporte, inclusive corrida designada e cancelada; não passageiro."
-            },
-            {
-              "id": "Arg1",
-              "desc": "pessoa ou coisa transportada",
-              "definition": "Passageiro/carga em deslocamento efetivo ou previsto, por adaptação da coisa em movimento nominal."
-            },
-            {
-              "id": "Arg2",
-              "desc": "destino do transporte",
-              "definition": "Lugar de chegada, inclusive variável de destino explicitamente referida mas sem valor informado; não mero local de cancelamento."
-            },
-            {
-              "id": "Arg3",
-              "desc": "origem do transporte",
-              "definition": "Lugar de partida explicitamente identificado; distância a aeroporto não estabelece origem."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg2": {
-              "obj": 1,
-              "nmod": 1
-            },
-            "Arg0": {
-              "nsubj": 4
-            },
-            "Arg1": {
-              "nsubj": 1
-            }
-          }
+          "roleset": "transportation.01",
+          "resource": "English NomBank",
+          "description": "move from one place to   another",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/transportation.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 608,
+          "id": "Arg0",
+          "desc": "transportador",
+          "definition": "Motorista/agente do serviço de transporte, inclusive corrida designada e cancelada; não passageiro."
+        },
+        {
+          "id": "Arg1",
+          "desc": "pessoa ou coisa transportada",
+          "definition": "Passageiro/carga em deslocamento efetivo ou previsto, por adaptação da coisa em movimento nominal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destino do transporte",
+          "definition": "Lugar de chegada, inclusive variável de destino explicitamente referida mas sem valor informado; não mero local de cancelamento."
+        },
+        {
+          "id": "Arg3",
+          "desc": "origem do transporte",
+          "definition": "Lugar de partida explicitamente identificado; distância a aeroporto não estabelece origem."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003066_SENT043::viagem::1",
           "sent_ID": "FOLHA_DOC003066_SENT043",
           "text": "No outro lado da linha, o motorista da Uber queria saber o destino da viagem.",
-          "frame_id": "f_751ad4fdd4c6ca1c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 70,
-                "char_end": 76
-              }
-            ]
+            "char_start": 70,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -86,15 +58,11 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 57,
                 "char_end": 66
               }
@@ -103,22 +71,14 @@
           }
         },
         {
-          "instance_id": 3193,
+          "instance_id": "FOLHA_DOC003066_SENT015::viagem::1",
           "sent_ID": "FOLHA_DOC003066_SENT015",
           "text": "Segundo motoristas da empresa, eles podem cancelar até três viagens sem perder o lugar na fila virtual do aeroporto.",
-          "frame_id": "f_751ad4fdd4c6ca1c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 67
-              }
-            ]
+            "char_start": 60,
+            "char_end": 67
           },
           "realization": {
             "Arg0": "eles",
@@ -132,12 +92,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 31,
                 "char_end": 35
               }
@@ -148,22 +105,14 @@
           }
         },
         {
-          "instance_id": 12689,
+          "instance_id": "FOLHA_DOC003066_SENT021::viagem::1",
           "sent_ID": "FOLHA_DOC003066_SENT021",
           "text": "A Cabify diz que o seu motorista não tem a opção de cancelar a viagem no aeroporto, onde a fila do aplicativo existe desde junho de 2016.",
-          "frame_id": "f_751ad4fdd4c6ca1c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 69
-              }
-            ]
+            "char_start": 63,
+            "char_end": 69
           },
           "realization": {
             "Arg0": "o seu motorista",
@@ -177,14 +126,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 17,
                 "char_end": 32
               }
@@ -195,22 +139,14 @@
           }
         },
         {
-          "instance_id": 14468,
+          "instance_id": "FOLHA_DOC003066_SENT024::viagem::1",
           "sent_ID": "FOLHA_DOC003066_SENT024",
           "text": "Fica difícil, disse Júlia, antes de embarcar no carro -o motorista tinha aceitado a viagem, para a Casa Verde, bairro da zona norte de São Paulo a 25 km do aeroporto.",
-          "frame_id": "f_751ad4fdd4c6ca1c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 84,
-                "char_end": 90
-              }
-            ]
+            "char_start": 84,
+            "char_end": 90
           },
           "realization": {
             "Arg0": "o motorista",
@@ -224,49 +160,21 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14,
-                  15
-                ],
                 "char_start": 55,
                 "char_end": 66
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 20,
                 "char_end": 25
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37,
-                  38,
-                  39
-                ],
                 "char_start": 92,
                 "char_end": 165
               }
@@ -275,22 +183,14 @@
           }
         },
         {
-          "instance_id": 14593,
+          "instance_id": "FOLHA_DOC003066_SENT065::viagem::1",
           "sent_ID": "FOLHA_DOC003066_SENT065",
           "text": "Motoristas parceiros que recorrentemente cancelam viagens prejudicam o uso da plataforma e violam os termos de uso.",
-          "frame_id": "f_751ad4fdd4c6ca1c",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 57
-              }
-            ]
+            "char_start": 50,
+            "char_end": 57
           },
           "realization": {
             "Arg0": "Motoristas parceiros",
@@ -304,13 +204,9 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 20
               }
@@ -320,74 +216,59 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg2": {
+          "obj": 1,
+          "nmod": 1
+        },
+        "Arg0": {
+          "nsubj": 4
+        },
+        "Arg1": {
+          "nsubj": 1
+        }
+      }
     },
     {
       "pt_roleset": "viagem.01",
       "description": "percurso para se chegar a lugar distante",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_eaea6d592b7b71fa",
-          "description": "percurso para se chegar a lugar distante",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "trip.01",
-              "resource": "English NomBank",
-              "description": "travel",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trip.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "viajante",
-              "definition": "Participante viajante expresso independentemente do REL, inclusive em viagem prospectiva."
-            },
-            {
-              "id": "Arg1",
-              "desc": "destino/percurso",
-              "definition": "Lugar/rota explicitamente associado como destino ou percurso da viagem; propósito isolado e lugar de outra ação não bastam."
-            },
-            {
-              "id": "Arg2",
-              "desc": "origem da viagem",
-              "definition": "Lugar de partida explicitamente identificado; primeiro trecho ou lugar de outro evento não bastam por si só."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 6,
-              "advcl": 1,
-              "obl": 2
-            },
-            "Arg0": {
-              "nsubj": 3,
-              "nmod": 3,
-              "det": 1
-            }
-          }
+          "roleset": "trip.01",
+          "resource": "English NomBank",
+          "description": "travel",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/trip.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2493,
+          "id": "Arg0",
+          "desc": "viajante",
+          "definition": "Participante viajante expresso independentemente do REL, inclusive em viagem prospectiva."
+        },
+        {
+          "id": "Arg1",
+          "desc": "destino/percurso",
+          "definition": "Lugar/rota explicitamente associado como destino ou percurso da viagem; propósito isolado e lugar de outra ação não bastam."
+        },
+        {
+          "id": "Arg2",
+          "desc": "origem da viagem",
+          "definition": "Lugar de partida explicitamente identificado; primeiro trecho ou lugar de outro evento não bastam por si só."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003210_SENT019::viagem::1",
           "sent_ID": "FOLHA_DOC003210_SENT019",
           "text": "Nossa literatura está cheia de chicharros e beldroegas que não apenas ganham todos os prêmios como também decidem a quem premiar com viagens, dinheiro e honrarias.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 133,
-                "char_end": 140
-              }
-            ]
+            "char_start": 133,
+            "char_end": 140
           },
           "realization": {
             "Arg0": null,
@@ -399,29 +280,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 4309,
+          "instance_id": "FOLHA_DOC004111_SENT011::viagem::1",
           "sent_ID": "FOLHA_DOC004111_SENT011",
           "text": "Como se sabe, Gil concebeu o trabalho após uma viagem à Nigéria.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 53
-              }
-            ]
+            "char_start": 47,
+            "char_end": 53
           },
           "realization": {
             "Arg0": null,
@@ -433,15 +306,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 54,
                 "char_end": 63
               }
@@ -450,22 +318,14 @@
           }
         },
         {
-          "instance_id": 4950,
+          "instance_id": "FOLHA_DOC000007_SENT014::viagem::1",
           "sent_ID": "FOLHA_DOC000007_SENT014",
           "text": "A defesa do italiano já vinha afirmando que não há impedimento para que ele, na condição de refugiado, realize viagem, mesmo que seja para o exterior.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 111,
-                "char_end": 117
-              }
-            ]
+            "char_start": 111,
+            "char_end": 117
           },
           "realization": {
             "Arg0": "ele",
@@ -477,23 +337,15 @@
             "Arg1": "advcl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 72,
                 "char_end": 75
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 134,
                 "char_end": 149
               }
@@ -502,22 +354,14 @@
           }
         },
         {
-          "instance_id": 5407,
+          "instance_id": "FOLHA_DOC000256_SENT004::viagem::1",
           "sent_ID": "FOLHA_DOC000256_SENT004",
           "text": "Para quem, como eu, lavou pratos em Frankfurt nos idos alternativos dos anos 1970, a viagem foi uma mordomia inesquecível -e instrutiva.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 85,
-                "char_end": 91
-              }
-            ]
+            "char_start": 85,
+            "char_end": 91
           },
           "realization": {
             "Arg0": null,
@@ -529,29 +373,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6858,
+          "instance_id": "FOLHA_DOC003181_SENT019::viagem::1",
           "sent_ID": "FOLHA_DOC003181_SENT019",
           "text": "Uma viagem para Boston com o filho o forçará a reavaliar essa frustração sem fim.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 10
-              }
-            ]
+            "char_start": 4,
+            "char_end": 10
           },
           "realization": {
             "Arg0": "com o filho",
@@ -563,24 +399,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 23,
                 "char_end": 34
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 11,
                 "char_end": 22
               }
@@ -589,22 +416,14 @@
           }
         },
         {
-          "instance_id": 6962,
+          "instance_id": "FOLHA_DOC003131_SENT023::viagem::1",
           "sent_ID": "FOLHA_DOC003131_SENT023",
           "text": "A primeira parte da viagem dos centro-americanos pelo México começa por Chiapas e Oaxaca, Estados mais afetados pelo terremoto de magnitude 8,1 que matou quase cem pessoas no dia 7.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 26
-              }
-            ]
+            "char_start": 20,
+            "char_end": 26
           },
           "realization": {
             "Arg0": "dos centro-americanos",
@@ -622,35 +441,19 @@
             ],
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 27,
                 "char_end": 48
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 49,
                 "char_end": 60
               },
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 68,
                 "char_end": 88
               }
@@ -659,22 +462,14 @@
           }
         },
         {
-          "instance_id": 7129,
+          "instance_id": "FOLHA_DOC004047_SENT011::viagem::1",
           "sent_ID": "FOLHA_DOC004047_SENT011",
           "text": "A programação de viagens é, para petistas, uma tentativa de reanimar o ex-presidente.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 17,
-                "char_end": 24
-              }
-            ]
+            "char_start": 17,
+            "char_end": 24
           },
           "realization": {
             "Arg0": null,
@@ -686,29 +481,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8817,
+          "instance_id": "FOLHA_DOC000092_SENT005::viagem::1",
           "sent_ID": "FOLHA_DOC000092_SENT005",
           "text": "Doria parece que agora tenta ser mais político que gestor, fazendo viagens aparentemente inúteis para São Paulo.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 74
-              }
-            ]
+            "char_start": 67,
+            "char_end": 74
           },
           "realization": {
             "Arg0": "Doria",
@@ -720,12 +507,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 5
               }
@@ -735,22 +519,14 @@
           }
         },
         {
-          "instance_id": 8839,
+          "instance_id": "FOLHA_DOC000083_SENT015::viagem::1",
           "sent_ID": "FOLHA_DOC000083_SENT015",
           "text": "Alvo da ira, Goldman havia criticado as viagens.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 40,
-                "char_end": 47
-              }
-            ]
+            "char_start": 40,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -762,29 +538,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8847,
+          "instance_id": "FOLHA_DOC002007_SENT012::viagem::1",
           "sent_ID": "FOLHA_DOC002007_SENT012",
           "text": "A viagem de última hora interrompeu por 24 horas a intensa programação dos festejos ao longo da semana passada na terrinha.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -796,29 +564,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9729,
+          "instance_id": "FOLHA_DOC003103_SENT023::viagem::1",
           "sent_ID": "FOLHA_DOC003103_SENT023",
           "text": "Ele anunciou em junho o cancelamento da iniciativa de Obama de impulsionar as relações com Cuba, com restrições a viagens de americanos à ilha e proibição de transações comerciais entre empresas americanas e entidades militares cubanas.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 114,
-                "char_end": 121
-              }
-            ]
+            "char_start": 114,
+            "char_end": 121
           },
           "realization": {
             "Arg0": "de americanos",
@@ -830,24 +590,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  23,
-                  24
-                ],
                 "char_start": 122,
                 "char_end": 135
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 136,
                 "char_end": 142
               }
@@ -856,22 +607,14 @@
           }
         },
         {
-          "instance_id": 10571,
+          "instance_id": "FOLHA_DOC003101_SENT025::viagem::1",
           "sent_ID": "FOLHA_DOC003101_SENT025",
           "text": "Após a viagem que definirá o futuro do time na competição continental, o Corinthians terá o clássico contra o São Paulo, no domingo (24).",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 7,
-                "char_end": 13
-              }
-            ]
+            "char_start": 7,
+            "char_end": 13
           },
           "realization": {
             "Arg0": null,
@@ -883,29 +626,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10962,
+          "instance_id": "FOLHA_DOC004090_SENT007::viagem::1",
           "sent_ID": "FOLHA_DOC004090_SENT007",
           "text": "Mas, ainda que não tenha sido uma viagem barata, é um luxo possível que vale cada centavo.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 40
-              }
-            ]
+            "char_start": 34,
+            "char_end": 40
           },
           "realization": {
             "Arg0": null,
@@ -917,29 +652,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12391,
+          "instance_id": "FOLHA_DOC000021_SENT002::viagem::1",
           "sent_ID": "FOLHA_DOC000021_SENT002",
           "text": "Trump serve de exemplo para mim, disse o pré-candidato à Presidência, deputado Jair Bolsonaro, do PSC, numa viagem pelos Estados Unidos nesta semana.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 114
-              }
-            ]
+            "char_start": 108,
+            "char_end": 114
           },
           "realization": {
             "Arg0": "o pré-candidato à Presidência, deputado Jair Bolsonaro, do PSC",
@@ -951,36 +678,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 39,
                 "char_end": 101
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  26,
-                  27,
-                  28,
-                  29
-                ],
                 "char_start": 115,
                 "char_end": 135
               }
@@ -989,22 +695,14 @@
           }
         },
         {
-          "instance_id": 14504,
+          "instance_id": "FOLHA_DOC004013_SENT084::viagem::1",
           "sent_ID": "FOLHA_DOC004013_SENT084",
           "text": "As histórias que mais divertem os ex-companheiros são as de viagens para jogar torneios em outras cidades.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 60,
-                "char_end": 67
-              }
-            ]
+            "char_start": 60,
+            "char_end": 67
           },
           "realization": {
             "Arg0": null,
@@ -1016,15 +714,10 @@
             "Arg1": "obl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 88,
                 "char_end": 105
               }
@@ -1033,22 +726,14 @@
           }
         },
         {
-          "instance_id": 15565,
+          "instance_id": "FOLHA_DOC003104_SENT008::viagem::1",
           "sent_ID": "FOLHA_DOC003104_SENT008",
           "text": "O anúncio do Hamas acontece dias após uma visita do líder do grupo, Ismail Haniyeh, ao Cairo, em sua primeira viagem ao país desde sua eleição em maio.",
-          "frame_id": "f_eaea6d592b7b71fa",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 110,
-                "char_end": 116
-              }
-            ]
+            "char_start": 110,
+            "char_end": 116
           },
           "realization": {
             "Arg0": "sua",
@@ -1060,23 +745,15 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  26
-                ],
                 "char_start": 97,
                 "char_end": 100
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  29,
-                  30,
-                  31
-                ],
                 "char_start": 117,
                 "char_end": 124
               }
@@ -1084,95 +761,68 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 6,
+          "advcl": 1,
+          "obl": 2
+        },
+        "Arg0": {
+          "nsubj": 3,
+          "nmod": 3,
+          "det": 1
+        }
+      }
     },
     {
       "pt_roleset": "viagem.02",
       "description": "percurso",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        },
-        {
-          "id": "f_c17488eb95622a89",
-          "description": "percurso",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "journey.01",
-              "resource": "English NomBank",
-              "description": "travel",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/journey.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "quem percorre",
-              "definition": "Participante que percorre a área/distância."
-            },
-            {
-              "id": "Arg1",
-              "desc": "área/distância percorrida",
-              "definition": "Área, rota ou distância percorrida; duração não é distância. Percurso simulado preserva modalidade não factual."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "roleset": "journey.01",
+          "resource": "English NomBank",
+          "description": "travel",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/journey.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 3274,
+          "id": "Arg0",
+          "desc": "quem percorre",
+          "definition": "Participante que percorre a área/distância."
+        },
+        {
+          "id": "Arg1",
+          "desc": "área/distância percorrida",
+          "definition": "Área, rota ou distância percorrida; duração não é distância. Percurso simulado preserva modalidade não factual."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002037_SENT036::viagem::1",
           "sent_ID": "FOLHA_DOC002037_SENT036",
           "text": "Ser colaborador foi uma mudança de vida, uma viagem sem volta, uma quebra definitiva, um ato de grandeza.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 51
-              }
-            ]
+            "char_start": 45,
+            "char_end": 51
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 4229,
+          "instance_id": "FOLHA_DOC003135_SENT024::viagem::1",
           "sent_ID": "FOLHA_DOC003135_SENT024",
           "text": "O que, no caso de algumas aldeias, significa viagens de até três horas.",
-          "frame_id": "f_c17488eb95622a89",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 45,
-                "char_end": 52
-              }
-            ]
+            "char_start": 45,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -1182,28 +832,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 10001,
+          "instance_id": "FOLHA_DOC004072_SENT005::viagem::1",
           "sent_ID": "FOLHA_DOC004072_SENT005",
           "text": "Tanto a CPTM quanto o Metrô recomendam que os usuários consultem a programação e planejem suas viagens com antecedência para evitar atrasos.",
-          "frame_id": "f_c17488eb95622a89",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 102
-              }
-            ]
+            "char_start": 95,
+            "char_end": 102
           },
           "realization": {
             "Arg0": "os usuários",
@@ -1213,13 +855,9 @@
             "Arg0": "nsubj",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 43,
                 "char_end": 54
               }
@@ -1228,22 +866,14 @@
           }
         },
         {
-          "instance_id": 13730,
+          "instance_id": "FOLHA_DOC003149_SENT011::viagem::1",
           "sent_ID": "FOLHA_DOC003149_SENT011",
           "text": "\"Queremos usar projetores mais modernos do que temos em São Paulo hoje, capazes de simular viagens pelas galáxias com imagens em alta resolução\", planeja Francisco.",
-          "frame_id": "f_c17488eb95622a89",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "viagens",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 91,
-                "char_end": 98
-              }
-            ]
+            "char_start": 91,
+            "char_end": 98
           },
           "realization": {
             "Arg0": null,
@@ -1253,60 +883,48 @@
             "Arg0": null,
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 99,
                 "char_end": 113
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "viagem · acepção 4",
       "description": "morte; falecimento, na locução eufemística 'última viagem'",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 15462,
+          "instance_id": "FOLHA_DOC001558_SENT002::viagem::1",
           "sent_ID": "FOLHA_DOC001558_SENT002",
           "text": "Aí uma hora chega aquela última viagem.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "viagem",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 38
-              }
-            ]
+            "char_start": 32,
+            "char_end": 38
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

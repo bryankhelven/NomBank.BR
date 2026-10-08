@@ -1,104 +1,65 @@
 {
   "lemma": "eco",
-  "lemma_base": "eco",
   "senses": [
     {
       "pt_roleset": "eco · acepção 1",
       "description": "repetição, repercussão ou resposta coletiva de palavras/ideias",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 7012,
+          "instance_id": "FOLHA_DOC003071_SENT005::eco::1",
           "sent_ID": "FOLHA_DOC003071_SENT005",
           "text": "\"Demarcação, já!\", pediu, gerando eco de \"fora, Temer\" na multidão que a assistia.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "eco",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 37
-              }
-            ]
+            "char_start": 34,
+            "char_end": 37
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "eco · acepção 2",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_2d722449f3cac6cc",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nsubj": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 7534,
+          "instance_id": "FOLHA_DOC003085_SENT004::eco::1",
           "sent_ID": "FOLHA_DOC003085_SENT004",
           "text": "A bateria meio marcial e os vocais agudos de Nicholas Petricca têm ecos de bandas dos anos 1980.",
-          "frame_id": "f_2d722449f3cac6cc",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "ecos",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 71
-              }
-            ]
+            "char_start": 67,
+            "char_end": 71
           },
           "realization": {
             "Arg0": "A bateria meio marcial e os vocais agudos de Nicholas Petricca",
@@ -112,47 +73,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 0,
-                "char_end": 62,
-                "head_token_id": 2
+                "char_end": 62
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 72,
-                "char_end": 95,
-                "head_token_id": 15
+                "char_end": 95
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nsubj": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

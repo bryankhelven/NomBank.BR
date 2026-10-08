@@ -1,152 +1,96 @@
 {
   "lemma": "educação",
-  "lemma_base": "educação",
   "senses": [
     {
       "pt_roleset": "educação.03",
       "description": "formação das novas gerações segundo certos ideais de uma comunidade cultural",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 1241,
+          "instance_id": "FOLHA_DOC000163_SENT014::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT014",
           "text": "A educação para a cidadania global é essencial para vivermos em um mundo inclusivo de forma sustentável.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11045,
+          "instance_id": "FOLHA_DOC000163_SENT024::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT024",
           "text": "Também é provável que a educação para a cidadania global se torne mais contenciosa.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 32
-              }
-            ]
+            "char_start": 24,
+            "char_end": 32
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 14976,
+          "instance_id": "FOLHA_DOC004008_SENT011::educação::1",
           "sent_ID": "FOLHA_DOC004008_SENT011",
           "text": "Aliás, esta é uma das funções da educação: ensinar a viver em sociedade.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 41
-              }
-            ]
+            "char_start": 33,
+            "char_end": 41
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "educação.02",
       "description": "instrução; ensino",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_775a6bf643ebfe44",
-          "description": "instrução; ensino",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "education.01",
-              "resource": "English NomBank",
-              "description": "teach",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/education.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "professor ou educador",
-              "definition": "Quem ministra o ensino, inclusive participante designado no cenário educativo."
-            },
-            {
-              "id": "Arg1",
-              "desc": "aluno ou destinatário do ensino",
-              "definition": "Quem recebe ou é explicitamente previsto para receber educação; negação de acesso não afirma ensino efetivo."
-            },
-            {
-              "id": "Arg2",
-              "desc": "assunto ensinado",
-              "definition": "Conteúdo da instrução quando expresso independentemente; discutir educação ou possuir título em sua psicologia não basta."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nsubj": 4,
-              "obj": 1
-            },
-            "Arg0": {
-              "obj": 1
-            }
-          }
+          "roleset": "education.01",
+          "resource": "English NomBank",
+          "description": "teach",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/education.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2722,
+          "id": "Arg0",
+          "desc": "professor ou educador",
+          "definition": "Quem ministra o ensino, inclusive participante designado no cenário educativo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "aluno ou destinatário do ensino",
+          "definition": "Quem recebe ou é explicitamente previsto para receber educação; negação de acesso não afirma ensino efetivo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "assunto ensinado",
+          "definition": "Conteúdo da instrução quando expresso independentemente; discutir educação ou possuir título em sua psicologia não basta."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000163_SENT043::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT043",
           "text": "Esse equívoco sobre o papel da educação ocorre com frequência?",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 31,
-                "char_end": 39
-              }
-            ]
+            "char_start": 31,
+            "char_end": 39
           },
           "realization": {
             "Arg0": null,
@@ -158,29 +102,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 3902,
+          "instance_id": "FOLHA_DOC003180_SENT021::educação::1",
           "sent_ID": "FOLHA_DOC003180_SENT021",
           "text": "Doutora em psicologia da educação, preside os conselhos da Fundação Tide Setubal e do GIFE.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 33
-              }
-            ]
+            "char_start": 25,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -192,29 +128,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6597,
+          "instance_id": "FOLHA_DOC001629_SENT011::educação::1",
           "sent_ID": "FOLHA_DOC001629_SENT011",
           "text": "\"A gente precisa é de visibilidade, saúde e educação\", cobrou ela, que pediu para não ter seu nome divulgado.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 52
-              }
-            ]
+            "char_start": 44,
+            "char_end": 52
           },
           "realization": {
             "Arg0": null,
@@ -226,14 +154,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  2,
-                  3
-                ],
                 "char_start": 1,
                 "char_end": 8
               }
@@ -242,22 +166,14 @@
           }
         },
         {
-          "instance_id": 6984,
+          "instance_id": "FOLHA_DOC004005_SENT015::educação::1",
           "sent_ID": "FOLHA_DOC004005_SENT015",
           "text": "Entre os itens que chamam a atenção no levantamento estão as evoluções dos gastos com educação e com saúde.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              18
-            ],
-            "spans": [
-              {
-                "char_start": 86,
-                "char_end": 94
-              }
-            ]
+            "char_start": 86,
+            "char_end": 94
           },
           "realization": {
             "Arg0": null,
@@ -269,29 +185,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 7410,
+          "instance_id": "FOLHA_DOC003143_SENT008::educação::1",
           "sent_ID": "FOLHA_DOC003143_SENT008",
           "text": "Com isso, os sistemas de saúde e de educação operam no limite e por vezes faltam recursos para atender o público.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 36,
-                "char_end": 44
-              }
-            ]
+            "char_start": 36,
+            "char_end": 44
           },
           "realization": {
             "Arg0": null,
@@ -303,14 +211,10 @@
             "Arg1": "obj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  22,
-                  23
-                ],
                 "char_start": 103,
                 "char_end": 112
               }
@@ -319,22 +223,14 @@
           }
         },
         {
-          "instance_id": 7712,
+          "instance_id": "FOLHA_DOC003180_SENT004::educação::1",
           "sent_ID": "FOLHA_DOC003180_SENT004",
           "text": "Todos os dias, somos bombardeados por dados, estudos e pesquisas que apontam para as diversas facetas das nossas enormes iniquidades: renda, educação, saúde, saneamento, segurança, moradia.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              27
-            ],
-            "spans": [
-              {
-                "char_start": 141,
-                "char_end": 149
-              }
-            ]
+            "char_start": 141,
+            "char_end": 149
           },
           "realization": {
             "Arg0": null,
@@ -346,29 +242,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8579,
+          "instance_id": "FOLHA_DOC000001_SENT005::educação::1",
           "sent_ID": "FOLHA_DOC000001_SENT005",
           "text": "Eu não quero nem que Moro me absolva, eu só quero que ele peça desculpas, disse Lula durante um seminário sobre educação em Brasília.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 112,
-                "char_end": 120
-              }
-            ]
+            "char_start": 112,
+            "char_end": 120
           },
           "realization": {
             "Arg0": null,
@@ -380,29 +268,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8740,
+          "instance_id": "FOLHA_DOC000163_SENT025::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT025",
           "text": "Por que o debate sobre a importância das chamadas habilidades socioemocionais na educação tem ganhado fôlego?",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 89
-              }
-            ]
+            "char_start": 81,
+            "char_end": 89
           },
           "realization": {
             "Arg0": null,
@@ -414,29 +294,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9134,
+          "instance_id": "FOLHA_DOC003049_SENT015::educação::1",
           "sent_ID": "FOLHA_DOC003049_SENT015",
           "text": "Talvez não seja errado afirmar ainda que esses alunos, ao aviltar professores, também estejam reproduzindo o desprezo do Estado e da sociedade pela educação.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 148,
-                "char_end": 156
-              }
-            ]
+            "char_start": 148,
+            "char_end": 156
           },
           "realization": {
             "Arg0": "professores",
@@ -448,22 +320,15 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  14
-                ],
                 "char_start": 66,
                 "char_end": 77
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 41,
                 "char_end": 53
               }
@@ -472,22 +337,14 @@
           }
         },
         {
-          "instance_id": 9411,
+          "instance_id": "FOLHA_DOC004056_SENT006::educação::1",
           "sent_ID": "FOLHA_DOC004056_SENT006",
           "text": "Também foi definido que os recursos recebidos retroativamente deverão ser destinados apenas para a educação.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 99,
-                "char_end": 107
-              }
-            ]
+            "char_start": 99,
+            "char_end": 107
           },
           "realization": {
             "Arg0": null,
@@ -499,29 +356,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10626,
+          "instance_id": "FOLHA_DOC003209_SENT017::educação::1",
           "sent_ID": "FOLHA_DOC003209_SENT017",
           "text": "Outras áreas têm incentivos fiscais que a educação não tem, como a Lei Rouanet [incentivo à cultura], incentivo ao esporte.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 50
-              }
-            ]
+            "char_start": 42,
+            "char_end": 50
           },
           "realization": {
             "Arg0": null,
@@ -533,29 +382,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 10890,
+          "instance_id": "FOLHA_DOC004011_SENT010::educação::1",
           "sent_ID": "FOLHA_DOC004011_SENT010",
           "text": "Esses dois casos se referem a dois pontos centrais de uma conversa sobre educação que está posta na nossa sociedade atual.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 73,
-                "char_end": 81
-              }
-            ]
+            "char_start": 73,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -567,29 +408,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 11455,
+          "instance_id": "FOLHA_DOC004085_SENT028::educação::1",
           "sent_ID": "FOLHA_DOC004085_SENT028",
           "text": "Como apátridas, eles não têm acesso a serviços básicos, como educação e saúde, e são proibidos de votar.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 69
-              }
-            ]
+            "char_start": 61,
+            "char_end": 69
           },
           "realization": {
             "Arg0": null,
@@ -601,13 +434,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4
-                ],
                 "char_start": 16,
                 "char_end": 20
               }
@@ -616,22 +446,14 @@
           }
         },
         {
-          "instance_id": 13427,
+          "instance_id": "FOLHA_DOC000018_SENT013::educação::1",
           "sent_ID": "FOLHA_DOC000018_SENT013",
           "text": "Na Venezuela, o movimento de inspiração socialista encabeçado pelo falecido presidente Hugo Chávez trouxe avanços na educação e saúde, mas o país mergulhou em uma situação de carestia, turbulência e ditadura.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 117,
-                "char_end": 125
-              }
-            ]
+            "char_start": 117,
+            "char_end": 125
           },
           "realization": {
             "Arg0": null,
@@ -643,29 +465,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 13886,
+          "instance_id": "FOLHA_DOC000163_SENT049::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT049",
           "text": "Isso é lamentável porque reduz a profissionalização da educação e as oportunidades para que os alunos aprendam.",
-          "frame_id": "f_775a6bf643ebfe44",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 63
-              }
-            ]
+            "char_start": 55,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -677,14 +491,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17
-                ],
                 "char_start": 92,
                 "char_end": 101
               }
@@ -692,149 +502,104 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nsubj": 4,
+          "obj": 1
+        },
+        "Arg0": {
+          "obj": 1
+        }
+      }
     },
     {
       "pt_roleset": "educação.11",
       "description": "nível ou tipo de ensino",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 8313,
+          "instance_id": "FOLHA_DOC000163_SENT044::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT044",
           "text": "A educação pública é a maior organização em muitos países.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 8504,
+          "instance_id": "FOLHA_DOC003192_SENT041::educação::1",
           "sent_ID": "FOLHA_DOC003192_SENT041",
           "text": "O que podemos é tentar, coletivamente, fazer uma diferença no que vemos à nossa volta, das injustiças sociais à falta de acesso a uma educação de bom nível.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              32
-            ],
-            "spans": [
-              {
-                "char_start": 134,
-                "char_end": 142
-              }
-            ]
+            "char_start": 134,
+            "char_end": 142
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 8902,
+          "instance_id": "FOLHA_DOC000163_SENT008::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT008",
           "text": "A educação global tem se tornado mais importante?",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ]
+            "char_start": 2,
+            "char_end": 10
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12518,
+          "instance_id": "FOLHA_DOC000163_SENT016::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT016",
           "text": "Isso reduz o apelo por uma educação desse tipo?",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 35
-              }
-            ]
+            "char_start": 27,
+            "char_end": 35
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "educação.01",
       "description": "aperfeiçoamento e desenvolvimento das faculdades humanas",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 10340,
+          "instance_id": "FOLHA_DOC000163_SENT026::educação::1",
           "sent_ID": "FOLHA_DOC000163_SENT026",
           "text": "Há um crescente reconhecimento de que a boa educação precisa ser holística.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "educação",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 44,
-                "char_end": 52
-              }
-            ]
+            "char_start": 44,
+            "char_end": 52
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

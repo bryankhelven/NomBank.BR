@@ -1,71 +1,45 @@
 {
   "lemma": "prisão",
-  "lemma_base": "prisão",
   "senses": [
     {
       "pt_roleset": "prisão · acepção 1",
       "description": "1 ato de prender; captura: Hermes Machado fora en- carregado da prisão de Climério (AGO); deram parte à Poli- cia, pediram a prisão do criminoso (AM); Não houve prisões. Mas abriram inquérito (QDE) ★ [Abstrato de estado] [±Classif: de+nome abstrato]",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_359706af88767dd0",
-          "description": "1 ato de prender; captura: Hermes Machado fora en- carregado da prisão de Climério (AGO); deram parte à Poli- cia, pediram a prisão do criminoso (AM); Não houve prisões. Mas abriram inquérito (QDE) ★ [Abstrato de estado] [±Classif: de+nome abstrato]",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "arrest.01",
-              "resource": "English NomBank",
-              "description": "like a criminal",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/arrest.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "autoridade que captura",
-              "definition": "Autoridade que efetua a captura; requerente ou juiz que ordena não é automaticamente executor."
-            },
-            {
-              "id": "Arg1",
-              "desc": "pessoa presa",
-              "definition": "Pessoa sobre quem recai o evento de prisão; rótulo source criminal não afirma culpabilidade."
-            },
-            {
-              "id": "Arg2",
-              "desc": "motivo criminal da captura",
-              "definition": "Crime explicitamente atribuído como razão dessa captura."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 10,
-              "det": 1,
-              "nsubj": 1
-            },
-            "Arg0": {
-              "nmod": 1
-            }
-          }
+          "roleset": "arrest.01",
+          "resource": "English NomBank",
+          "description": "like a criminal",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/arrest.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 683,
+          "id": "Arg0",
+          "desc": "autoridade que captura",
+          "definition": "Autoridade que efetua a captura; requerente ou juiz que ordena não é automaticamente executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "pessoa presa",
+          "definition": "Pessoa sobre quem recai o evento de prisão; rótulo source criminal não afirma culpabilidade."
+        },
+        {
+          "id": "Arg2",
+          "desc": "motivo criminal da captura",
+          "definition": "Crime explicitamente atribuído como razão dessa captura."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000030_SENT001::prisão::1",
           "sent_ID": "FOLHA_DOC000030_SENT001",
           "text": "MPF pede que prisão de Nuzman seja prolongada por tempo indeterminado.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 19
-              }
-            ]
+            "char_start": 13,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -77,14 +51,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 20,
                 "char_end": 29
               }
@@ -93,22 +63,14 @@
           }
         },
         {
-          "instance_id": 3828,
+          "instance_id": "FOLHA_DOC000017_SENT001::prisão::1",
           "sent_ID": "FOLHA_DOC000017_SENT001",
           "text": "Juiz decreta prisão de Nuzman por tempo indeterminado.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 19
-              }
-            ]
+            "char_start": 13,
+            "char_end": 19
           },
           "realization": {
             "Arg0": null,
@@ -120,14 +82,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5
-                ],
                 "char_start": 20,
                 "char_end": 29
               }
@@ -136,22 +94,14 @@
           }
         },
         {
-          "instance_id": 4951,
+          "instance_id": "FOLHA_DOC003157_SENT018::prisão::1",
           "sent_ID": "FOLHA_DOC003157_SENT018",
           "text": "Com a prisão de Joesley e Wesley e a rescisão do contrato de delação, as perspectivas para a JBS são as piores possíveis no Brasil e nos EUA, de acordo com especialistas.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 12
-              }
-            ]
+            "char_start": 6,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -163,16 +113,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 13,
                 "char_end": 32
               }
@@ -181,22 +125,14 @@
           }
         },
         {
-          "instance_id": 4986,
+          "instance_id": "FOLHA_DOC004110_SENT033::prisão::1",
           "sent_ID": "FOLHA_DOC004110_SENT033",
           "text": "A índole que ele revela nessas gravações mostra que o pedido de prisão é necessário.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 64,
-                "char_end": 70
-              }
-            ]
+            "char_start": 64,
+            "char_end": 70
           },
           "realization": {
             "Arg0": null,
@@ -208,29 +144,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5006,
+          "instance_id": "FOLHA_DOC003035_SENT037::prisão::1",
           "sent_ID": "FOLHA_DOC003035_SENT037",
           "text": "No dia em que pede a minha prisão, ele me pediu um favor no TSE, numa questão de multas, algo que não tinha nada a ver com minhas atribuições.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 27,
-                "char_end": 33
-              }
-            ]
+            "char_start": 27,
+            "char_end": 33
           },
           "realization": {
             "Arg0": null,
@@ -242,13 +170,10 @@
             "Arg1": "det",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 21,
                 "char_end": 26
               }
@@ -257,22 +182,14 @@
           }
         },
         {
-          "instance_id": 5665,
+          "instance_id": "FOLHA_DOC001782_SENT004::prisão::1",
           "sent_ID": "FOLHA_DOC001782_SENT004",
           "text": "\"Foi o pior dia da minha vida\", lembra, sobre a prisão, em 2015.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 54
-              }
-            ]
+            "char_start": 48,
+            "char_end": 54
           },
           "realization": {
             "Arg0": null,
@@ -284,29 +201,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5709,
+          "instance_id": "FOLHA_DOC000011_SENT017::prisão::1",
           "sent_ID": "FOLHA_DOC000011_SENT017",
           "text": "Ela também destaca que possivelmente os delatores não tinham a intenção de entregar um áudio de uma conversa gravada acidentalmente e que embasou a prisão.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 148,
-                "char_end": 154
-              }
-            ]
+            "char_start": 148,
+            "char_end": 154
           },
           "realization": {
             "Arg0": null,
@@ -318,29 +227,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 5949,
+          "instance_id": "FOLHA_DOC003112_SENT003::prisão::1",
           "sent_ID": "FOLHA_DOC003112_SENT003",
           "text": "Ele vai substituir Wesley Batista no comando do grupo, após a prisão do empresário na última quarta-feira (13).",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 68
-              }
-            ]
+            "char_start": 62,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -352,15 +253,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 69,
                 "char_end": 82
               }
@@ -369,22 +265,14 @@
           }
         },
         {
-          "instance_id": 6034,
+          "instance_id": "FOLHA_DOC000017_SENT011::prisão::1",
           "sent_ID": "FOLHA_DOC000017_SENT011",
           "text": "A prisão encerrou as negociações do COI para ajudar na quitação dos débitos.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -396,29 +284,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 6102,
+          "instance_id": "FOLHA_DOC000007_SENT021::prisão::1",
           "sent_ID": "FOLHA_DOC000007_SENT021",
           "text": "Antes da prisão na semana passada, o Ministério da Justiça já havia encaminhado ao presidente Michel Temer um parecer no qual tratava sobre a extradição de Battisti.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 9,
-                "char_end": 15
-              }
-            ]
+            "char_start": 9,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -430,29 +310,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 8363,
+          "instance_id": "FOLHA_DOC003008_SENT010::prisão::1",
           "sent_ID": "FOLHA_DOC003008_SENT010",
           "text": "O primeiro foi preso em flagrante por porte de arma e o segundo, em cumprimento de um mandado de prisão.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              21
-            ],
-            "spans": [
-              {
-                "char_start": 97,
-                "char_end": 103
-              }
-            ]
+            "char_start": 97,
+            "char_end": 103
           },
           "realization": {
             "Arg0": null,
@@ -464,29 +336,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 9563,
+          "instance_id": "FOLHA_DOC000017_SENT003::prisão::1",
           "sent_ID": "FOLHA_DOC000017_SENT003",
           "text": "Na mesma decisão, o magistrado renovou a prisão temporária de Leonardo Gryner.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 47
-              }
-            ]
+            "char_start": 41,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -498,15 +362,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 59,
                 "char_end": 77
               }
@@ -515,22 +374,14 @@
           }
         },
         {
-          "instance_id": 9892,
+          "instance_id": "FOLHA_DOC000043_SENT004::prisão::1",
           "sent_ID": "FOLHA_DOC000043_SENT004",
           "text": "A Procuradoria também pediu a renovação da prisão temporária de Leonardo Gryner, braço-direito do cartola.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 43,
-                "char_end": 49
-              }
-            ]
+            "char_start": 43,
+            "char_end": 49
           },
           "realization": {
             "Arg0": null,
@@ -542,15 +393,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 61,
                 "char_end": 79
               }
@@ -559,22 +405,14 @@
           }
         },
         {
-          "instance_id": 10870,
+          "instance_id": "FOLHA_DOC003156_SENT015::prisão::1",
           "sent_ID": "FOLHA_DOC003156_SENT015",
           "text": "Janot pediu o afastamento do cargo e a prisão de um presidente da Câmara (Eduardo Cunha) e do líder do governo Dilma no Senado (Delcídio do Amaral).",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 45
-              }
-            ]
+            "char_start": 39,
+            "char_end": 45
           },
           "realization": {
             "Arg0": null,
@@ -586,39 +424,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33,
-                  34,
-                  35,
-                  36,
-                  37
-                ],
                 "char_start": 46,
                 "char_end": 147
               }
@@ -627,22 +436,14 @@
           }
         },
         {
-          "instance_id": 12041,
+          "instance_id": "FOLHA_DOC003290_SENT003::prisão::1",
           "sent_ID": "FOLHA_DOC003290_SENT003",
           "text": "De acordo com a polícia, trata-se de uma \"prisão significativa\" para as investigações.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 48
-              }
-            ]
+            "char_start": 42,
+            "char_end": 48
           },
           "realization": {
             "Arg0": null,
@@ -654,29 +455,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12453,
+          "instance_id": "FOLHA_DOC003120_SENT007::prisão::1",
           "sent_ID": "FOLHA_DOC003120_SENT007",
           "text": "As duas prisões indicam que a polícia e os serviços de segurança britânicos acreditam que o ataque na estação Parsons Green foi parte de uma ação coordenada, e não realizado por uma única pessoa.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisões",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 8,
-                "char_end": 15
-              }
-            ]
+            "char_start": 8,
+            "char_end": 15
           },
           "realization": {
             "Arg0": null,
@@ -688,29 +481,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 12785,
+          "instance_id": "FOLHA_DOC003198_SENT004::prisão::1",
           "sent_ID": "FOLHA_DOC003198_SENT004",
           "text": "A rede Guanabara, do Rio, também voltou a expor a marca -a mais recente foi na quinta-feira (14), já após a prisão de Wesley Batista, presidente da JBS.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              30
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 114
-              }
-            ]
+            "char_start": 108,
+            "char_end": 114
           },
           "realization": {
             "Arg0": null,
@@ -722,15 +507,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 115,
                 "char_end": 132
               }
@@ -739,22 +519,14 @@
           }
         },
         {
-          "instance_id": 12807,
+          "instance_id": "FOLHA_DOC000011_SENT002::prisão::1",
           "sent_ID": "FOLHA_DOC000011_SENT002",
           "text": "A procuradora-geral da República, Raquel Dodge, defendeu a manutenção das prisões de Joesley Batista e Ricardo Saud, executivos da JBS.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisões",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 74,
-                "char_end": 81
-              }
-            ]
+            "char_start": 74,
+            "char_end": 81
           },
           "realization": {
             "Arg0": null,
@@ -766,18 +538,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 82,
                 "char_end": 115
               }
@@ -786,22 +550,14 @@
           }
         },
         {
-          "instance_id": 13103,
+          "instance_id": "FOLHA_DOC004058_SENT004::prisão::1",
           "sent_ID": "FOLHA_DOC004058_SENT004",
           "text": "A prisão foi determinada após um parecer favorável da Procuradoria de Justiça do Estado, responsável por investigar agentes com foro privilegiado.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ]
+            "char_start": 2,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -813,29 +569,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 13358,
+          "instance_id": "FOLHA_DOC001065_SENT029::prisão::1",
           "sent_ID": "FOLHA_DOC001065_SENT029",
           "text": "Garotinho também reclamou de outras atitudes da Polícia Federal ao realizar a prisão.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 84
-              }
-            ]
+            "char_start": 78,
+            "char_end": 84
           },
           "realization": {
             "Arg0": "da Polícia Federal",
@@ -847,15 +595,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 45,
                 "char_end": 63
               }
@@ -865,22 +607,14 @@
           }
         },
         {
-          "instance_id": 13899,
+          "instance_id": "FOLHA_DOC000017_SENT012::prisão::1",
           "sent_ID": "FOLHA_DOC000017_SENT012",
           "text": "Gryner teve a prisão temporária renovada porque a Polícia Federal ainda não conseguiu acessar o e-mail da ex-secretária de Nuzman, Maria Celeste, para quem o senegalês Papa Massata Diack enviou mensagens cobrando a suposta propina.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 14,
-                "char_end": 20
-              }
-            ]
+            "char_start": 14,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -892,13 +626,10 @@
             "Arg1": "nsubj",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 6
               }
@@ -907,22 +638,14 @@
           }
         },
         {
-          "instance_id": 14284,
+          "instance_id": "FOLHA_DOC000011_SENT005::prisão::1",
           "sent_ID": "FOLHA_DOC000011_SENT005",
           "text": "Em 14 de setembro, o ministro Edson Fachin, relator do caso JBS no Supremo, converteu a prisão de Batista e de Saud de temporária (5 dias) para preventiva, sem prazo definido.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 88,
-                "char_end": 94
-              }
-            ]
+            "char_start": 88,
+            "char_end": 94
           },
           "realization": {
             "Arg0": null,
@@ -934,17 +657,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 95,
                 "char_end": 115
               }
@@ -953,22 +669,14 @@
           }
         },
         {
-          "instance_id": 14670,
+          "instance_id": "FOLHA_DOC001640_SENT021::prisão::1",
           "sent_ID": "FOLHA_DOC001640_SENT021",
           "text": "Portanto, é o Congresso Nacional que definiu que essa não é uma hipótese de prisão.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 82
-              }
-            ]
+            "char_start": 76,
+            "char_end": 82
           },
           "realization": {
             "Arg0": null,
@@ -980,29 +688,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 14905,
+          "instance_id": "FOLHA_DOC000011_SENT012::prisão::1",
           "sent_ID": "FOLHA_DOC000011_SENT012",
           "text": "Ela destaca que as decisões pelas prisões preventivas foram feitas de maneira correta, uma vez que seu antecessor, Rodrigo Janot, rescindiu os acordos de delação de Batista e Saud.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisões",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 41
-              }
-            ]
+            "char_start": 34,
+            "char_end": 41
           },
           "realization": {
             "Arg0": null,
@@ -1014,29 +714,21 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         },
         {
-          "instance_id": 15486,
+          "instance_id": "FOLHA_DOC004063_SENT013::prisão::1",
           "sent_ID": "FOLHA_DOC004063_SENT013",
           "text": "Para ele, as prisões desta quinta \"devem fazer cessar ou diminuir\" a onda de ataques.",
-          "frame_id": "f_359706af88767dd0",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "prisões",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 20
-              }
-            ]
+            "char_start": 13,
+            "char_end": 20
           },
           "realization": {
             "Arg0": null,
@@ -1048,111 +740,83 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 10,
+          "det": 1,
+          "nsubj": 1
+        },
+        "Arg0": {
+          "nmod": 1
+        }
+      }
     },
     {
       "pt_roleset": "prisão · acepção 2",
       "description": "pena de detenção ou reclusão imposta a alguém",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 5087,
+          "instance_id": "FOLHA_DOC003314_SENT036::prisão::1",
           "sent_ID": "FOLHA_DOC003314_SENT036",
           "text": "A pena para organização criminosa é de três a oito anos de prisão, além de multa.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 65
-              }
-            ]
+            "char_start": 59,
+            "char_end": 65
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 8246,
+          "instance_id": "FOLHA_DOC000082_SENT021::prisão::1",
           "sent_ID": "FOLHA_DOC000082_SENT021",
           "text": "O mesmo sujeito que virou herói nos anos 1950 e 1960, sob a liderança de Nikita Krushev, havia sido condenado à prisão e a trabalhos forçados durante os anos de Joseph Stálin, entre 1938 e 1944.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 112,
-                "char_end": 118
-              }
-            ]
+            "char_start": 112,
+            "char_end": 118
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "prisão · acepção 3",
       "description": "estado ou condição de quem se encontra privado de liberdade; encarceramento/custódia",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": null,
+      "instances": [
         {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
-        }
-      ],
-      "examples": [
-        {
-          "instance_id": 10920,
+          "instance_id": "FOLHA_DOC004028_SENT013::prisão::1",
           "sent_ID": "FOLHA_DOC004028_SENT013",
           "text": "Atualmente, o ex-ministro cumpre prisão domiciliar, após conseguir um habeas corpus na Justiça.",
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
             "form": "prisão",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 39
-              }
-            ]
+            "char_start": 33,
+            "char_end": 39
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         }
-      ]
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

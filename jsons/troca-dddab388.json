@@ -1,82 +1,50 @@
 {
   "lemma": "troca",
-  "lemma_base": "troca",
   "senses": [
     {
       "pt_roleset": "troca.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_1fd36b29ef197dca",
+          "roleset": "change.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "change.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/change.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "causer of transformation",
-              "definition": "causer of transformation"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing changing",
-              "definition": "thing changing"
-            },
-            {
-              "id": "Arg2",
-              "desc": "end state",
-              "definition": "end state"
-            },
-            {
-              "id": "Arg3",
-              "desc": "start state",
-              "definition": "start state"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 9,
-              "obj": 3,
-              "acl": 2
-            },
-            "Arg2": {
-              "nmod": 4,
-              "acl": 1,
-              "obj": 1,
-              "xcomp": 1
-            },
-            "Arg0": {
-              "nsubj": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/change.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1932,
+          "id": "Arg0",
+          "desc": "causer of transformation",
+          "definition": "causer of transformation"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing changing",
+          "definition": "thing changing"
+        },
+        {
+          "id": "Arg2",
+          "desc": "end state",
+          "definition": "end state"
+        },
+        {
+          "id": "Arg3",
+          "desc": "start state",
+          "definition": "start state"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003201_SENT023::troca::1",
           "sent_ID": "FOLHA_DOC003201_SENT023",
           "text": "Enquanto as colombianas se apoiam num grupo de taxistas que garante clientela em troca de uma parte do que ganham, as venezuelanas criaram suas próprias redes.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 86
-              }
-            ]
+            "char_start": 81,
+            "char_end": 86
           },
           "realization": {
             "Arg0": null,
@@ -90,21 +58,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 90,
-                "char_end": 113,
-                "head_token_id": 18
+                "char_end": 113
               }
             ],
             "Arg2": [],
@@ -112,22 +71,14 @@
           }
         },
         {
-          "instance_id": 2726,
+          "instance_id": "FOLHA_DOC003008_SENT004::troca::1",
           "sent_ID": "FOLHA_DOC003008_SENT004",
           "text": "Um suspeito, ainda não identificado, foi morto em troca de tiros com os policiais.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 50,
-                "char_end": 55
-              }
-            ]
+            "char_start": 50,
+            "char_end": 55
           },
           "realization": {
             "Arg0": null,
@@ -141,51 +92,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 56,
-                "char_end": 64,
-                "head_token_id": 13
+                "char_end": 64
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  14,
-                  15,
-                  16
-                ],
                 "char_start": 65,
-                "char_end": 81,
-                "head_token_id": 16
+                "char_end": 81
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 3877,
+          "instance_id": "FOLHA_DOC000018_SENT050::troca::1",
           "sent_ID": "FOLHA_DOC000018_SENT050",
           "text": "No dia 8 de outubro começou uma troca de tiros entre soldados bolivianos e um grupo de guerrilheiros.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 32,
-                "char_end": 37
-              }
-            ]
+            "char_start": 32,
+            "char_end": 37
           },
           "realization": {
             "Arg0": null,
@@ -199,56 +131,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 38,
-                "char_end": 46,
-                "head_token_id": 11
+                "char_end": 46
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 47,
-                "char_end": 100,
-                "head_token_id": 13
+                "char_end": 100
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 4186,
+          "instance_id": "FOLHA_DOC003089_SENT006::troca::1",
           "sent_ID": "FOLHA_DOC003089_SENT006",
           "text": "Sozinha, a cantora dedicou \"Zero\" a \"todas as afetividades, todas as formas de amor e de troca\".",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 94
-              }
-            ]
+            "char_start": 89,
+            "char_end": 94
           },
           "realization": {
             "Arg0": null,
@@ -262,7 +170,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -270,22 +178,14 @@
           }
         },
         {
-          "instance_id": 4292,
+          "instance_id": "FOLHA_DOC003149_SENT010::troca::1",
           "sent_ID": "FOLHA_DOC003149_SENT010",
           "text": "Ele busca empresas que aceitem patrocinar o gasto em troca de nomear o local e realizar ações de marketing.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 53,
-                "char_end": 58
-              }
-            ]
+            "char_start": 53,
+            "char_end": 58
           },
           "realization": {
             "Arg0": null,
@@ -299,56 +199,32 @@
             "Arg2": "acl",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 42,
-                "char_end": 49,
-                "head_token_id": 8
+                "char_end": 49
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 62,
-                "char_end": 106,
-                "head_token_id": 12
+                "char_end": 106
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 6292,
+          "instance_id": "FOLHA_DOC003105_SENT049::troca::1",
           "sent_ID": "FOLHA_DOC003105_SENT049",
           "text": "O britânico fez a troca apenas quando Daniel Ricciardo decidiu fazer, mantendo uma vantagem superior a 12 segundos.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 23
-              }
-            ]
+            "char_start": 18,
+            "char_end": 23
           },
           "realization": {
             "Arg0": "O britânico",
@@ -362,16 +238,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
-                "char_end": 11,
-                "head_token_id": 2
+                "char_end": 11
               }
             ],
             "Arg1": [],
@@ -380,22 +251,14 @@
           }
         },
         {
-          "instance_id": 6651,
+          "instance_id": "FOLHA_DOC000057_SENT005::troca::1",
           "sent_ID": "FOLHA_DOC000057_SENT005",
           "text": "Em troca de não deportar os sonhadores, como são chamados os filhos desses imigrantes sem documentos, o presidente pede a reforma completa do sistema de \"green card\" (a autorização de residência nos EUA), medidas severas para impedir que menores de idade, em especial da América Central, entrem no país e a construção do muro na fronteira com o México.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 8
-              }
-            ]
+            "char_start": 3,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -409,59 +272,32 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 12,
-                "char_end": 38,
-                "head_token_id": 5
+                "char_end": 38
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25,
-                  26,
-                  27,
-                  28,
-                  29,
-                  31,
-                  32
-                ],
                 "char_start": 120,
-                "char_end": 164,
-                "head_token_id": 24
+                "char_end": 164
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 7235,
+          "instance_id": "FOLHA_DOC003105_SENT040::troca::1",
           "sent_ID": "FOLHA_DOC003105_SENT040",
           "text": "Depois, foi o segundo piloto do grid a arriscar o ultra macio, o \"pneu certo\", como avaliou o brasileiro ao ser questionado pela Williams pelo rádio após a troca.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              38
-            ],
-            "spans": [
-              {
-                "char_start": 156,
-                "char_end": 161
-              }
-            ]
+            "char_start": 156,
+            "char_end": 161
           },
           "realization": {
             "Arg0": null,
@@ -475,7 +311,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -483,22 +319,14 @@
           }
         },
         {
-          "instance_id": 8173,
+          "instance_id": "FOLHA_DOC000057_SENT001::troca::1",
           "sent_ID": "FOLHA_DOC000057_SENT001",
           "text": "Em troca de proteção aos 'dreamers', Trump quer restringir imigração.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 3,
-                "char_end": 8
-              }
-            ]
+            "char_start": 3,
+            "char_end": 8
           },
           "realization": {
             "Arg0": null,
@@ -512,52 +340,32 @@
             "Arg2": "xcomp",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  8
-                ],
                 "char_start": 12,
-                "char_end": 34,
-                "head_token_id": 4
+                "char_end": 34
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 48,
-                "char_end": 68,
-                "head_token_id": 13
+                "char_end": 68
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 8854,
+          "instance_id": "FOLHA_DOC003070_SENT010::troca::1",
           "sent_ID": "FOLHA_DOC003070_SENT010",
           "text": "Não por desnecessária, mas por ser melhor que entre em pauta pelas mãos de um governo eleito -e não urdida em gabinetes como moeda de troca para planos de fuga.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 134,
-                "char_end": 139
-              }
-            ]
+            "char_start": 134,
+            "char_end": 139
           },
           "realization": {
             "Arg0": null,
@@ -571,7 +379,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -579,22 +387,14 @@
           }
         },
         {
-          "instance_id": 8897,
+          "instance_id": "FOLHA_DOC000128_SENT030::troca::1",
           "sent_ID": "FOLHA_DOC000128_SENT030",
           "text": "Desde então, houve uma troca no comando técnico.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 28
-              }
-            ]
+            "char_start": 23,
+            "char_end": 28
           },
           "realization": {
             "Arg0": null,
@@ -608,19 +408,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 29,
-                "char_end": 47,
-                "head_token_id": 9
+                "char_end": 47
               }
             ],
             "Arg2": [],
@@ -628,22 +421,14 @@
           }
         },
         {
-          "instance_id": 9066,
+          "instance_id": "FOLHA_DOC000095_SENT016::troca::1",
           "sent_ID": "FOLHA_DOC000095_SENT016",
           "text": "Por que então o alvoroço tucano pela troca de animosidades entre os dois?",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 37,
-                "char_end": 42
-              }
-            ]
+            "char_start": 37,
+            "char_end": 42
           },
           "realization": {
             "Arg0": null,
@@ -657,7 +442,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -665,22 +450,14 @@
           }
         },
         {
-          "instance_id": 9129,
+          "instance_id": "FOLHA_DOC002083_SENT028::troca::1",
           "sent_ID": "FOLHA_DOC002083_SENT028",
           "text": "Houve trocas de tiros também em ao menos outras sete comunidades do Rio.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "trocas",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 12
-              }
-            ]
+            "char_start": 6,
+            "char_end": 12
           },
           "realization": {
             "Arg0": null,
@@ -694,17 +471,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 13,
-                "char_end": 21,
-                "head_token_id": 4
+                "char_end": 21
               }
             ],
             "Arg2": [],
@@ -712,22 +484,14 @@
           }
         },
         {
-          "instance_id": 9225,
+          "instance_id": "FOLHA_DOC003210_SENT026::troca::1",
           "sent_ID": "FOLHA_DOC003210_SENT026",
           "text": "Como a área é tombada pelo Iphan, havia a promessa da prefeitura de que a troca seria provisória.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 74,
-                "char_end": 79
-              }
-            ]
+            "char_start": 74,
+            "char_end": 79
           },
           "realization": {
             "Arg0": null,
@@ -741,16 +505,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 86,
-                "char_end": 96,
-                "head_token_id": 21
+                "char_end": 96
               }
             ],
             "Arg2": [],
@@ -758,22 +518,14 @@
           }
         },
         {
-          "instance_id": 9249,
+          "instance_id": "FOLHA_DOC003140_SENT062::troca::1",
           "sent_ID": "FOLHA_DOC003140_SENT062",
           "text": "Havia a percepção de que a democracia, o fim das fronteiras, a liberdade de movimentos e trocas, tudo isso iria prevalecer, veríamos os benefícios disso para todos no mundo.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "trocas",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 89,
-                "char_end": 95
-              }
-            ]
+            "char_start": 89,
+            "char_end": 95
           },
           "realization": {
             "Arg0": null,
@@ -787,7 +539,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -795,22 +547,14 @@
           }
         },
         {
-          "instance_id": 9265,
+          "instance_id": "FOLHA_DOC004017_SENT005::troca::1",
           "sent_ID": "FOLHA_DOC004017_SENT005",
           "text": "Embora rejeitem a troca da Constituição, os opositores se candidataram às eleições para governador.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 18,
-                "char_end": 23
-              }
-            ]
+            "char_start": 18,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -824,18 +568,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7
-                ],
                 "char_start": 24,
-                "char_end": 39,
-                "head_token_id": 7
+                "char_end": 39
               }
             ],
             "Arg2": [],
@@ -843,22 +581,14 @@
           }
         },
         {
-          "instance_id": 9331,
+          "instance_id": "FOLHA_DOC000092_SENT020::troca::1",
           "sent_ID": "FOLHA_DOC000092_SENT020",
           "text": "Abdicarão em troca de maior autonomia tributária em relação a Madri, como os bascos fizeram.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 18
-              }
-            ]
+            "char_start": 13,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -872,22 +602,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 22,
-                "char_end": 67,
-                "head_token_id": 6
+                "char_end": 67
               }
             ],
             "Arg2": [],
@@ -895,22 +615,14 @@
           }
         },
         {
-          "instance_id": 10102,
+          "instance_id": "FOLHA_DOC003006_SENT008::troca::1",
           "sent_ID": "FOLHA_DOC003006_SENT008",
           "text": "Evitaríamos assim o que hoje é evidente: nossos congressistas, em grande parte, legislam em causa própria ou negociam seus votos em troca de benefícios.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 132,
-                "char_end": 137
-              }
-            ]
+            "char_start": 132,
+            "char_end": 137
           },
           "realization": {
             "Arg0": null,
@@ -924,49 +636,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  22,
-                  23
-                ],
                 "char_start": 118,
-                "char_end": 128,
-                "head_token_id": 23
+                "char_end": 128
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  27
-                ],
                 "char_start": 141,
-                "char_end": 151,
-                "head_token_id": 27
+                "char_end": 151
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 12186,
+          "instance_id": "FOLHA_DOC000161_SENT011::troca::1",
           "sent_ID": "FOLHA_DOC000161_SENT011",
           "text": "Se o ruído vier do limpador de para-brisa, a solução é fazer a troca da peça.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 68
-              }
-            ]
+            "char_start": 63,
+            "char_end": 68
           },
           "realization": {
             "Arg0": null,
@@ -980,18 +675,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 69,
-                "char_end": 76,
-                "head_token_id": 19
+                "char_end": 76
               }
             ],
             "Arg2": [],
@@ -999,22 +688,14 @@
           }
         },
         {
-          "instance_id": 13740,
+          "instance_id": "FOLHA_DOC002012_SENT026::troca::1",
           "sent_ID": "FOLHA_DOC002012_SENT026",
           "text": "Não são aceitas de maneira ampla o suficiente para que sejam meio de troca útil.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 74
-              }
-            ]
+            "char_start": 69,
+            "char_end": 74
           },
           "realization": {
             "Arg0": null,
@@ -1028,7 +709,7 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [],
             "Arg2": [],
@@ -1036,22 +717,14 @@
           }
         },
         {
-          "instance_id": 15553,
+          "instance_id": "FOLHA_DOC003145_SENT017::troca::1",
           "sent_ID": "FOLHA_DOC003145_SENT017",
           "text": "Ela é a cantora Natasha, que vende a alma ao vampiro Vlad (Ney) em troca de sucesso na carreira.",
-          "frame_id": "f_1fd36b29ef197dca",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "troca",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 67,
-                "char_end": 72
-              }
-            ]
+            "char_start": 67,
+            "char_end": 72
           },
           "realization": {
             "Arg0": null,
@@ -1065,36 +738,40 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 35,
-                "char_end": 41,
-                "head_token_id": 10
+                "char_end": 41
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 76,
-                "char_end": 95,
-                "head_token_id": 21
+                "char_end": 95
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 9,
+          "obj": 3,
+          "acl": 2
+        },
+        "Arg2": {
+          "nmod": 4,
+          "acl": 1,
+          "obj": 1,
+          "xcomp": 1
+        },
+        "Arg0": {
+          "nsubj": 1
+        }
+      }
     }
   ]
 }

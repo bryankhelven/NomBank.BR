@@ -1,56 +1,35 @@
 {
   "lemma": "deliberação",
-  "lemma_base": "deliberação",
   "senses": [
     {
       "pt_roleset": "deliberação.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_7b13ba0c3135b426",
+          "roleset": "deliberation.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 1,
-          "origin_frames": [
-            {
-              "roleset": "deliberation.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/deliberation.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "thinker",
-              "definition": "thinker"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/deliberation.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 5257,
+          "id": "Arg0",
+          "desc": "thinker",
+          "definition": "thinker"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000048_SENT030::deliberação::1",
           "sent_ID": "FOLHA_DOC000048_SENT030",
           "text": "Como exemplo, citou deliberações do Supremo a respeito do aborto e da vaquejada.",
-          "frame_id": "f_7b13ba0c3135b426",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "deliberações",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 20,
-                "char_end": 32
-              }
-            ]
+            "char_start": 20,
+            "char_end": 32
           },
           "realization": {
             "Arg0": "do Supremo"
@@ -58,22 +37,21 @@
           "syntax": {
             "Arg0": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8
-                ],
                 "char_start": 33,
-                "char_end": 43,
-                "head_token_id": 8
+                "char_end": 43
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

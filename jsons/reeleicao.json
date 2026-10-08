@@ -1,66 +1,45 @@
 {
   "lemma": "reeleição",
-  "lemma_base": "reeleição",
   "senses": [
     {
       "pt_roleset": "reeleição.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_025680303dca50f8",
+          "roleset": "election.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "election.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/election.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "voters",
-              "definition": "voters"
-            },
-            {
-              "id": "Arg1",
-              "desc": "candidate",
-              "definition": "candidate"
-            },
-            {
-              "id": "Arg2",
-              "desc": "office or position",
-              "definition": "office or position"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/election.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 2619,
+          "id": "Arg0",
+          "desc": "voters",
+          "definition": "voters"
+        },
+        {
+          "id": "Arg1",
+          "desc": "candidate",
+          "definition": "candidate"
+        },
+        {
+          "id": "Arg2",
+          "desc": "office or position",
+          "definition": "office or position"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003039_SENT018::reeleição::1",
           "sent_ID": "FOLHA_DOC003039_SENT018",
           "text": "O diálogo entre Paris e Berlim entrará em uma nova fase com a reeleição de Merkel, hoje apontada por todas as pesquisas de opinião.",
-          "frame_id": "f_025680303dca50f8",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "reeleição",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 62,
-                "char_end": 71
-              }
-            ]
+            "char_start": 62,
+            "char_end": 71
           },
           "realization": {
             "Arg0": null,
@@ -72,22 +51,23 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16
-                ],
                 "char_start": 75,
-                "char_end": 81,
-                "head_token_id": 16
+                "char_end": 81
               }
             ],
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

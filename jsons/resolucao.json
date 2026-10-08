@@ -1,71 +1,50 @@
 {
   "lemma": "resolução",
-  "lemma_base": "resolução",
   "senses": [
     {
       "pt_roleset": "resolução.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_03e58f8193cc62be",
+          "roleset": "resolution.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "resolution.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/resolution.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "agent",
-              "definition": "agent"
-            },
-            {
-              "id": "Arg1",
-              "desc": "theme",
-              "definition": "theme"
-            },
-            {
-              "id": "Arg2",
-              "desc": "beneficiary",
-              "definition": "beneficiary"
-            },
-            {
-              "id": "Arg3",
-              "desc": "instrument",
-              "definition": "instrument"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/resolution.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 11211,
+          "id": "Arg0",
+          "desc": "agent",
+          "definition": "agent"
+        },
+        {
+          "id": "Arg1",
+          "desc": "theme",
+          "definition": "theme"
+        },
+        {
+          "id": "Arg2",
+          "desc": "beneficiary",
+          "definition": "beneficiary"
+        },
+        {
+          "id": "Arg3",
+          "desc": "instrument",
+          "definition": "instrument"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001561_SENT010::resolução::1",
           "sent_ID": "FOLHA_DOC001561_SENT010",
           "text": "Segundo Nóbrega, por ser pouco invasiva, trata-se da melhor alternativa para a resolução do problema.",
-          "frame_id": "f_03e58f8193cc62be",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "resolução",
-            "token_ids": [
-              17
-            ],
-            "spans": [
-              {
-                "char_start": 79,
-                "char_end": 88
-              }
-            ]
+            "char_start": 79,
+            "char_end": 88
           },
           "realization": {
             "Arg0": null,
@@ -79,25 +58,24 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 89,
-                "char_end": 100,
-                "head_token_id": 20
+                "char_end": 100
               }
             ],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

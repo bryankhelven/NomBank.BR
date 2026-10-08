@@ -1,73 +1,40 @@
 {
   "lemma": "comportamento",
-  "lemma_base": "comportamento",
   "senses": [
     {
       "pt_roleset": "comportamento.01",
       "description": "modo de comportar-se; procedimento; conduta",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_98d0aa119cce9f59",
-          "description": "modo de comportar-se; procedimento; conduta",
-          "valency": 2,
-          "origin_frames": [
-            {
-              "roleset": "behavior.01",
-              "resource": "English NomBank",
-              "description": "to conduct (oneself) in a specified way",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/behavior.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "entidade que se comporta",
-              "definition": "entidade que se comporta"
-            },
-            {
-              "id": "Arg1",
-              "desc": "modo/atividade que caracteriza a conduta",
-              "definition": "modo/atividade que caracteriza a conduta"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "amod": 2,
-              "nmod": 7,
-              "nsubj": 5,
-              "obl": 1
-            },
-            "Arg1": {
-              "acl:relcl": 2,
-              "conj": 1,
-              "nsubj": 1,
-              "amod": 3,
-              "advcl": 1,
-              "nmod": 3,
-              "ccomp": 1
-            }
-          }
+          "roleset": "behavior.01",
+          "resource": "English NomBank",
+          "description": "to conduct (oneself) in a specified way",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/behavior.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 1256,
+          "id": "Arg0",
+          "desc": "entidade que se comporta",
+          "definition": "entidade que se comporta"
+        },
+        {
+          "id": "Arg1",
+          "desc": "modo/atividade que caracteriza a conduta",
+          "definition": "modo/atividade que caracteriza a conduta"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000163_SENT012::comportamento::1",
           "sent_ID": "FOLHA_DOC000163_SENT012",
           "text": "É fácil ver como o comportamento humano está no centro de cada um deles.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 19,
-                "char_end": 32
-              }
-            ]
+            "char_start": 19,
+            "char_end": 32
           },
           "realization": {
             "Arg0": "humano",
@@ -77,12 +44,9 @@
             "Arg0": "amod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7
-                ],
                 "char_start": 33,
                 "char_end": 39
               }
@@ -91,22 +55,14 @@
           }
         },
         {
-          "instance_id": 2587,
+          "instance_id": "FOLHA_DOC002015_SENT030::comportamento::1",
           "sent_ID": "FOLHA_DOC002015_SENT030",
           "text": "Será fruto, ainda, do comportamento futuro dos juros, de previsão incerta.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 35
-              }
-            ]
+            "char_start": 22,
+            "char_end": 35
           },
           "realization": {
             "Arg0": "dos juros",
@@ -116,14 +72,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 43,
                 "char_end": 52
               }
@@ -132,22 +83,14 @@
           }
         },
         {
-          "instance_id": 4284,
+          "instance_id": "FOLHA_DOC000085_SENT008::comportamento::1",
           "sent_ID": "FOLHA_DOC000085_SENT008",
           "text": "Desta forma, o investidor só fica suscetível ao comportamento do ativo.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 61
-              }
-            ]
+            "char_start": 48,
+            "char_end": 61
           },
           "realization": {
             "Arg0": "do ativo",
@@ -157,14 +100,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 62,
                 "char_end": 70
               }
@@ -173,22 +111,14 @@
           }
         },
         {
-          "instance_id": 5108,
+          "instance_id": "FOLHA_DOC003151_SENT016::comportamento::1",
           "sent_ID": "FOLHA_DOC003151_SENT016",
           "text": "Com o advento de governos neoliberais e a crença de que o mercado é o melhor determinante de valor, mudou o comportamento dos trabalhadores.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 108,
-                "char_end": 121
-              }
-            ]
+            "char_start": 108,
+            "char_end": 121
           },
           "realization": {
             "Arg0": "dos trabalhadores",
@@ -198,14 +128,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 122,
                 "char_end": 139
               }
@@ -214,22 +139,14 @@
           }
         },
         {
-          "instance_id": 5310,
+          "instance_id": "FOLHA_DOC003146_SENT010::comportamento::1",
           "sent_ID": "FOLHA_DOC003146_SENT010",
           "text": "Vincent é o que arregaça as mangas e se vira, ainda que longe de ser um modelo de comportamento; é o pragmático que tenta.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 95
-              }
-            ]
+            "char_start": 82,
+            "char_end": 95
           },
           "realization": {
             "Arg0": "Vincent",
@@ -245,36 +162,19 @@
               "conj"
             ]
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 7
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 16,
                 "char_end": 44
               },
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 99,
                 "char_end": 121
               }
@@ -282,22 +182,14 @@
           }
         },
         {
-          "instance_id": 6022,
+          "instance_id": "FOLHA_DOC003066_SENT066::comportamento::1",
           "sent_ID": "FOLHA_DOC003066_SENT066",
           "text": "Este tipo de comportamento leva ao desligamento da plataforma, mesmo sem qualquer tipo de relato do usuário, disse a empresa, por meio de nota.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 26
-              }
-            ]
+            "char_start": 13,
+            "char_end": 26
           },
           "realization": {
             "Arg0": null,
@@ -307,14 +199,10 @@
             "Arg0": null,
             "Arg1": "nsubj"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 9
               }
@@ -322,22 +210,14 @@
           }
         },
         {
-          "instance_id": 7024,
+          "instance_id": "FOLHA_DOC002048_SENT014::comportamento::1",
           "sent_ID": "FOLHA_DOC002048_SENT014",
           "text": "Morar no centro exige mudanças de comportamento e mesmo de visão de mundo.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 34,
-                "char_end": 47
-              }
-            ]
+            "char_start": 34,
+            "char_end": 47
           },
           "realization": {
             "Arg0": null,
@@ -347,28 +227,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 7414,
+          "instance_id": "FOLHA_DOC003035_SENT111::comportamento::1",
           "sent_ID": "FOLHA_DOC003035_SENT111",
           "text": "No final da reunião, surpreendentemente, o Anselmo passa a adotar um comportamento mais duro, pressionando para delação.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 82
-              }
-            ]
+            "char_start": 69,
+            "char_end": 82
           },
           "realization": {
             "Arg0": "o Anselmo",
@@ -381,27 +253,15 @@
               "advcl"
             ]
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 41,
                 "char_end": 50
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22
-                ],
                 "char_start": 83,
                 "char_end": 119
               }
@@ -409,22 +269,14 @@
           }
         },
         {
-          "instance_id": 7420,
+          "instance_id": "FOLHA_DOC000061_SENT002::comportamento::1",
           "sent_ID": "FOLHA_DOC000061_SENT002",
           "text": "O estudo da economia depende da compreensão do comportamento humano.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 47,
-                "char_end": 60
-              }
-            ]
+            "char_start": 47,
+            "char_end": 60
           },
           "realization": {
             "Arg0": "humano",
@@ -434,12 +286,9 @@
             "Arg0": "amod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13
-                ],
                 "char_start": 61,
                 "char_end": 67
               }
@@ -448,22 +297,14 @@
           }
         },
         {
-          "instance_id": 8235,
+          "instance_id": "FOLHA_DOC003058_SENT020::comportamento::1",
           "sent_ID": "FOLHA_DOC003058_SENT020",
           "text": "Enquanto adversários apostam que a nova gestão pode diminuir o ritmo das investigações, aliados da procuradora-geral defendem que seu estilo discreto não é nada incompatível com um comportamento \"linha dura\".",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              31
-            ],
-            "spans": [
-              {
-                "char_start": 181,
-                "char_end": 194
-              }
-            ]
+            "char_start": 181,
+            "char_end": 194
           },
           "realization": {
             "Arg0": "da procuradora-geral",
@@ -473,26 +314,15 @@
             "Arg0": "nmod",
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 96,
                 "char_end": 116
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  32,
-                  33,
-                  34,
-                  35
-                ],
                 "char_start": 195,
                 "char_end": 207
               }
@@ -500,22 +330,14 @@
           }
         },
         {
-          "instance_id": 10948,
+          "instance_id": "FOLHA_DOC000082_SENT022::comportamento::1",
           "sent_ID": "FOLHA_DOC000082_SENT022",
           "text": "\"Meu pai entendia que o comportamento de alguns políticos era errado\", diz Koroleva.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 24,
-                "char_end": 37
-              }
-            ]
+            "char_start": 24,
+            "char_end": 37
           },
           "realization": {
             "Arg0": "de alguns políticos",
@@ -525,23 +347,15 @@
             "Arg0": "nmod",
             "Arg1": "ccomp"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 38,
                 "char_end": 57
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 62,
                 "char_end": 68
               }
@@ -549,22 +363,14 @@
           }
         },
         {
-          "instance_id": 11287,
+          "instance_id": "FOLHA_DOC003203_SENT022::comportamento::1",
           "sent_ID": "FOLHA_DOC003203_SENT022",
           "text": "A maioria da tropa de elite, uns 80%, parece ter um comportamento mais discreto (Petrobras, a número um, e Eletrobras, entre as dez mais, são casos à parte).",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 52,
-                "char_end": 65
-              }
-            ]
+            "char_start": 52,
+            "char_end": 65
           },
           "realization": {
             "Arg0": "A maioria da tropa de elite, uns 80%",
@@ -574,32 +380,15 @@
             "Arg0": "nsubj",
             "Arg1": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-                ],
                 "char_start": 0,
                 "char_end": 36
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 66,
                 "char_end": 79
               }
@@ -607,22 +396,14 @@
           }
         },
         {
-          "instance_id": 11353,
+          "instance_id": "FOLHA_DOC003152_SENT009::comportamento::1",
           "sent_ID": "FOLHA_DOC003152_SENT009",
           "text": "Sem romantizar o passado ou julgar e analisar o comportamento dos próprios pais, Walls narra a sua história com aceitação e sensibilidade.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              10
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 61
-              }
-            ]
+            "char_start": 48,
+            "char_end": 61
           },
           "realization": {
             "Arg0": "dos próprios pais",
@@ -632,15 +413,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 62,
                 "char_end": 79
               }
@@ -649,22 +424,14 @@
           }
         },
         {
-          "instance_id": 12337,
+          "instance_id": "FOLHA_DOC000061_SENT001::comportamento::1",
           "sent_ID": "FOLHA_DOC000061_SENT001",
           "text": "Estudo do comportamento na tomada de decisões rende Nobel de Economia.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 10,
-                "char_end": 23
-              }
-            ]
+            "char_start": 10,
+            "char_end": 23
           },
           "realization": {
             "Arg0": null,
@@ -674,17 +441,10 @@
             "Arg0": null,
             "Arg1": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5,
-                  6,
-                  7,
-                  8,
-                  9
-                ],
                 "char_start": 24,
                 "char_end": 45
               }
@@ -692,22 +452,14 @@
           }
         },
         {
-          "instance_id": 13039,
+          "instance_id": "FOLHA_DOC000179_SENT026::comportamento::1",
           "sent_ID": "FOLHA_DOC000179_SENT026",
           "text": "Esse comportamento não é exclusivo desse caso.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 18
-              }
-            ]
+            "char_start": 5,
+            "char_end": 18
           },
           "realization": {
             "Arg0": null,
@@ -717,28 +469,20 @@
             "Arg0": null,
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": []
           }
         },
         {
-          "instance_id": 15153,
+          "instance_id": "FOLHA_DOC003043_SENT040::comportamento::1",
           "sent_ID": "FOLHA_DOC003043_SENT040",
           "text": "Na sua vez, Mirella de Paula, 5 anos, passou em todas as salas de aula para ver o comportamento dos amigos.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 95
-              }
-            ]
+            "char_start": 82,
+            "char_end": 95
           },
           "realization": {
             "Arg0": "dos amigos",
@@ -748,14 +492,9 @@
             "Arg0": "nmod",
             "Arg1": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 96,
                 "char_end": 106
               }
@@ -764,22 +503,14 @@
           }
         },
         {
-          "instance_id": 15679,
+          "instance_id": "FOLHA_DOC000179_SENT033::comportamento::1",
           "sent_ID": "FOLHA_DOC000179_SENT033",
           "text": "Certo comportamento de manada, em que um faz algo porque outro fez, deve ser vigiado e combatido.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 19
-              }
-            ]
+            "char_start": 6,
+            "char_end": 19
           },
           "realization": {
             "Arg0": [
@@ -798,38 +529,19 @@
               "acl:relcl"
             ]
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8
-                ],
                 "char_start": 38,
                 "char_end": 40
               },
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 57,
                 "char_end": 62
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 20,
                 "char_end": 66
               }
@@ -837,22 +549,14 @@
           }
         },
         {
-          "instance_id": 15755,
+          "instance_id": "FOLHA_DOC000173_SENT052::comportamento::1",
           "sent_ID": "FOLHA_DOC000173_SENT052",
           "text": "Mas há episódios que indicam em Damião um comportamento estranho.",
-          "frame_id": "f_98d0aa119cce9f59",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "comportamento",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 55
-              }
-            ]
+            "char_start": 42,
+            "char_end": 55
           },
           "realization": {
             "Arg0": "em Damião",
@@ -862,29 +566,39 @@
             "Arg0": "obl",
             "Arg1": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 29,
                 "char_end": 38
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 56,
                 "char_end": 64
               }
             ]
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "amod": 2,
+          "nmod": 7,
+          "nsubj": 5,
+          "obl": 1
+        },
+        "Arg1": {
+          "acl:relcl": 2,
+          "conj": 1,
+          "nsubj": 1,
+          "amod": 3,
+          "advcl": 1,
+          "nmod": 3,
+          "ccomp": 1
+        }
+      }
     }
   ]
 }

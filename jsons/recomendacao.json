@@ -1,76 +1,50 @@
 {
   "lemma": "recomendação",
-  "lemma_base": "recomendação",
   "senses": [
     {
       "pt_roleset": "recomendação.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_bf439a03fec1ac3f",
+          "roleset": "recommendation.01",
+          "resource": "English NomBank",
           "description": null,
-          "valency": 4,
-          "origin_frames": [
-            {
-              "roleset": "recommendation.01",
-              "resource": "English NomBank",
-              "description": null,
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/recommendation.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "recommender",
-              "definition": "recommender"
-            },
-            {
-              "id": "Arg1",
-              "desc": "thing recommended",
-              "definition": "thing recommended"
-            },
-            {
-              "id": "Arg2",
-              "desc": "recommended to",
-              "definition": "recommended to"
-            },
-            {
-              "id": "Arg3",
-              "desc": "secondary attribute",
-              "definition": "secondary attribute"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "det": 1,
-              "root": 1,
-              "csubj": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/recommendation.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 779,
+          "id": "Arg0",
+          "desc": "recommender",
+          "definition": "recommender"
+        },
+        {
+          "id": "Arg1",
+          "desc": "thing recommended",
+          "definition": "thing recommended"
+        },
+        {
+          "id": "Arg2",
+          "desc": "recommended to",
+          "definition": "recommended to"
+        },
+        {
+          "id": "Arg3",
+          "desc": "secondary attribute",
+          "definition": "secondary attribute"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000161_SENT005::recomendação::1",
           "sent_ID": "FOLHA_DOC000161_SENT005",
           "text": "O gerente de operações Eduardo Oliveira, 35, não seguiu essa recomendação.",
-          "frame_id": "f_bf439a03fec1ac3f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recomendação",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 73
-              }
-            ]
+            "char_start": 61,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -84,16 +58,12 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 56,
-                "char_end": 60,
-                "head_token_id": 12
+                "char_end": 60
               }
             ],
             "Arg2": [],
@@ -101,22 +71,14 @@
           }
         },
         {
-          "instance_id": 1342,
+          "instance_id": "FOLHA_DOC003034_SENT024::recomendação::1",
           "sent_ID": "FOLHA_DOC003034_SENT024",
           "text": "A recomendação para quem quer aplicar nesses fundos é diversificar, escolhendo produtos que tenham imóveis de setores e regiões diferentes.",
-          "frame_id": "f_bf439a03fec1ac3f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recomendação",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 2,
-                "char_end": 14
-              }
-            ]
+            "char_start": 2,
+            "char_end": 14
           },
           "realization": {
             "Arg0": null,
@@ -130,49 +92,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 54,
-                "char_end": 66,
-                "head_token_id": 11
+                "char_end": 66
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  3,
-                  4
-                ],
                 "char_start": 15,
-                "char_end": 24,
-                "head_token_id": 4
+                "char_end": 24
               }
             ],
             "Arg3": []
           }
         },
         {
-          "instance_id": 9585,
+          "instance_id": "FOLHA_DOC003151_SENT038::recomendação::1",
           "sent_ID": "FOLHA_DOC003151_SENT038",
           "text": "Manter-se atento ao mercado e atualizado são as recomendações para se sentir menos vulnerável.",
-          "frame_id": "f_bf439a03fec1ac3f",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "recomendações",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 48,
-                "char_end": 61
-              }
-            ]
+            "char_start": 48,
+            "char_end": 61
           },
           "realization": {
             "Arg0": null,
@@ -186,23 +131,29 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
-                "char_end": 9,
-                "head_token_id": 1
+                "char_end": 9
               }
             ],
             "Arg2": [],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "det": 1,
+          "root": 1,
+          "csubj": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

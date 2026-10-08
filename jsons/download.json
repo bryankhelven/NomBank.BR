@@ -1,66 +1,42 @@
 {
   "lemma": "download",
-  "lemma_base": "download",
   "senses": [
     {
       "pt_roleset": "download · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_6a35a11a0db0a403",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg2": {
-              "obj": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 3622,
+          "instance_id": "FOLHA_DOC000010_SENT002::download::1",
           "sent_ID": "FOLHA_DOC000010_SENT002",
           "text": "O aplicativo de mensagens instantâneas WhatsApp disponibilizou para download sua versão para negócios anunciada em setembro.",
-          "frame_id": "f_6a35a11a0db0a403",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "download",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 68,
-                "char_end": 76
-              }
-            ]
+            "char_start": 68,
+            "char_end": 76
           },
           "realization": {
             "Arg0": "WhatsApp",
@@ -74,35 +50,32 @@
             "Arg2": "obj",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6
-                ],
                 "char_start": 39,
-                "char_end": 47,
-                "head_token_id": 6
+                "char_end": 47
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 77,
-                "char_end": 101,
-                "head_token_id": 11
+                "char_end": 101
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg2": {
+          "obj": 1
+        }
+      }
     }
   ]
 }

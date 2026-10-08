@@ -1,66 +1,42 @@
 {
   "lemma": "controlador",
-  "lemma_base": "controlador",
   "senses": [
     {
       "pt_roleset": "controlador.01",
       "description": "dispositivo que controla o funcionamento de um aparelho",
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_28faa79e65b62a51",
-          "description": "dispositivo que controla o funcionamento de um aparelho",
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant or holder",
-              "definition": "principal participant or holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation/state/event",
-              "definition": "nominal relation/state/event"
-            },
-            {
-              "id": "Arg2",
-              "desc": "target, content, object, counterpart or domain",
-              "definition": "target, content, object, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner, cause or context",
-              "definition": "time, place, degree, manner, cause or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            },
-            "Arg2": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant or holder",
+          "definition": "principal participant or holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation/state/event",
+          "definition": "nominal relation/state/event"
+        },
+        {
+          "id": "Arg2",
+          "desc": "target, content, object, counterpart or domain",
+          "definition": "target, content, object, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner, cause or context",
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 5479,
+          "instance_id": "FOLHA_DOC000064_SENT014::controlador::1",
           "sent_ID": "FOLHA_DOC000064_SENT014",
           "text": "Permite a criação de uma holding controladora da empresa, que pode criar subsidiárias.",
-          "frame_id": "f_28faa79e65b62a51",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "controladora",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 45
-              }
-            ]
+            "char_start": 33,
+            "char_end": 45
           },
           "realization": {
             "Arg0": "uma holding",
@@ -74,35 +50,32 @@
             "Arg2": "nmod",
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  5,
-                  6
-                ],
                 "char_start": 21,
-                "char_end": 32,
-                "head_token_id": 6
+                "char_end": 32
               }
             ],
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10
-                ],
                 "char_start": 46,
-                "char_end": 56,
-                "head_token_id": 10
+                "char_end": 56
               }
             ],
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        },
+        "Arg2": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }

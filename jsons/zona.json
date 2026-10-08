@@ -1,82 +1,45 @@
 {
   "lemma": "zona",
-  "lemma_base": "zona",
   "senses": [
     {
       "pt_roleset": "zona.01",
       "description": null,
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_72ad93d66f54f82b",
-          "description": null,
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "zone.01",
-              "resource": "English NomBank",
-              "description": "environment for proposition",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/zone.xml",
-              "adapted": false
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "atividade/caracterização operativa que define região, fonte EN Arg1 → PT Arg0",
-              "definition": "atividade/caracterização operativa que define região, fonte EN Arg1 → PT Arg0"
-            },
-            {
-              "id": "Arg1",
-              "desc": "qualificação de valor/direção da zona, fonte EN Arg2 → PT Arg1",
-              "definition": "qualificação de valor/direção da zona, fonte EN Arg2 → PT Arg1"
-            },
-            {
-              "id": "Arg2",
-              "desc": "região/base secundária que contém o espaço, fonte EN Arg3 → PT Arg2",
-              "definition": "região/base secundária que contém o espaço, fonte EN Arg3 → PT Arg2"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg1": {
-              "amod": 19,
-              "nmod": 1
-            },
-            "Arg2": {
-              "nmod": 12,
-              "amod": 2
-            },
-            "Arg0": {
-              "nmod": 8
-            }
-          }
-        },
-        {
-          "id": null,
-          "description": null,
-          "valency": null,
-          "origin_frames": [],
-          "roles": null,
-          "syntactic_profile": {}
+          "roleset": "zone.01",
+          "resource": "English NomBank",
+          "description": "environment for proposition",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/zone.xml",
+          "adapted": false
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 603,
+          "id": "Arg0",
+          "desc": "atividade/caracterização operativa que define região, fonte EN Arg1 → PT Arg0",
+          "definition": "atividade/caracterização operativa que define região, fonte EN Arg1 → PT Arg0"
+        },
+        {
+          "id": "Arg1",
+          "desc": "qualificação de valor/direção da zona, fonte EN Arg2 → PT Arg1",
+          "definition": "qualificação de valor/direção da zona, fonte EN Arg2 → PT Arg1"
+        },
+        {
+          "id": "Arg2",
+          "desc": "região/base secundária que contém o espaço, fonte EN Arg3 → PT Arg2",
+          "definition": "região/base secundária que contém o espaço, fonte EN Arg3 → PT Arg2"
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000016_SENT003::zona::1",
           "sent_ID": "FOLHA_DOC000016_SENT003",
           "text": "Rogério é um dos chefes do tráfico da favela da Rocinha, em São Conrado, na zona sul do Rio e continua foragido.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              23
-            ],
-            "spans": [
-              {
-                "char_start": 76,
-                "char_end": 80
-              }
-            ]
+            "char_start": 76,
+            "char_end": 80
           },
           "realization": {
             "Arg0": null,
@@ -88,24 +51,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  24
-                ],
                 "char_start": 81,
                 "char_end": 84
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 85,
                 "char_end": 91
               }
@@ -113,22 +68,14 @@
           }
         },
         {
-          "instance_id": 793,
+          "instance_id": "FOLHA_DOC000025_SENT013::zona::1",
           "sent_ID": "FOLHA_DOC000025_SENT013",
           "text": "Diretor de \"Jean Charles\" (2009), Goldman recua ao fim da adolescência de Santana, garoto da zona rural criado à beira do rio Tocantins.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              25
-            ],
-            "spans": [
-              {
-                "char_start": 93,
-                "char_end": 97
-              }
-            ]
+            "char_start": 93,
+            "char_end": 97
           },
           "realization": {
             "Arg0": null,
@@ -140,13 +87,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  26
-                ],
                 "char_start": 98,
                 "char_end": 103
               }
@@ -155,22 +99,14 @@
           }
         },
         {
-          "instance_id": 1124,
+          "instance_id": "FOLHA_DOC002027_SENT010::zona::1",
           "sent_ID": "FOLHA_DOC002027_SENT010",
           "text": "Circulando, atinjo diferentes públicos, e percebi que a aceitação na zona norte é menor do que em Pinheiros e no Morumbi, conta Paola.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 69,
-                "char_end": 73
-              }
-            ]
+            "char_start": 69,
+            "char_end": 73
           },
           "realization": {
             "Arg0": null,
@@ -182,13 +118,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 74,
                 "char_end": 79
               }
@@ -197,56 +130,42 @@
           }
         },
         {
-          "instance_id": 1179,
+          "instance_id": "FOLHA_DOC000024_SENT009::zona::1",
           "sent_ID": "FOLHA_DOC000024_SENT009",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              23
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1245,
+          "instance_id": "FOLHA_DOC003008_SENT030::zona::1",
           "sent_ID": "FOLHA_DOC003008_SENT030",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              29
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 1296,
+          "instance_id": "FOLHA_DOC003063_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC003063_SENT002",
           "text": "O aumento da violência pode ser sentido por meio dos ouvidos por grande parte dos moradores da zona sul do Rio.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 95,
-                "char_end": 99
-              }
-            ]
+            "char_start": 95,
+            "char_end": 99
           },
           "realization": {
             "Arg0": null,
@@ -258,24 +177,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  23
-                ],
                 "char_start": 100,
                 "char_end": 103
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  24,
-                  25,
-                  26
-                ],
                 "char_start": 104,
                 "char_end": 110
               }
@@ -283,39 +194,28 @@
           }
         },
         {
-          "instance_id": 1495,
+          "instance_id": "FOLHA_DOC003074_SENT013::zona::1",
           "sent_ID": "FOLHA_DOC003074_SENT013",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              16
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 2448,
+          "instance_id": "FOLHA_DOC003066_SENT026::zona::1",
           "sent_ID": "FOLHA_DOC003066_SENT026",
           "text": "Ele pediu o Uber para Vila Mariana, na zona sul e a quase 30 km de Cumbica, e o motorista recusou.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 39,
-                "char_end": 43
-              }
-            ]
+            "char_start": 39,
+            "char_end": 43
           },
           "realization": {
             "Arg0": null,
@@ -327,13 +227,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  12
-                ],
                 "char_start": 44,
                 "char_end": 47
               }
@@ -342,22 +239,14 @@
           }
         },
         {
-          "instance_id": 2527,
+          "instance_id": "FOLHA_DOC003193_SENT011::zona::1",
           "sent_ID": "FOLHA_DOC003193_SENT011",
           "text": "As famílias cadastradas levam embalagens aos postos de coleta nos bairros Capão Redondo e Grajaú (zona sul de São Paulo), que são revertidas em pontos, trocados por alimentos ou cursos.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 98,
-                "char_end": 102
-              }
-            ]
+            "char_start": 98,
+            "char_end": 102
           },
           "realization": {
             "Arg0": null,
@@ -369,24 +258,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  20
-                ],
                 "char_start": 103,
                 "char_end": 106
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 107,
                 "char_end": 119
               }
@@ -394,22 +275,14 @@
           }
         },
         {
-          "instance_id": 2681,
+          "instance_id": "FOLHA_DOC003008_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC003008_SENT002",
           "text": "Após um domingo de guerra entre traficantes, a Polícia Militar realiza nesta segunda-feira (18) uma operação na favela da Rocinha, zona sul do Rio.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 131,
-                "char_end": 135
-              }
-            ]
+            "char_start": 131,
+            "char_end": 135
           },
           "realization": {
             "Arg0": null,
@@ -421,24 +294,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  29
-                ],
                 "char_start": 136,
                 "char_end": 139
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 140,
                 "char_end": 146
               }
@@ -446,39 +311,28 @@
           }
         },
         {
-          "instance_id": 2881,
+          "instance_id": "FOLHA_DOC003094_SENT005::zona::1",
           "sent_ID": "FOLHA_DOC003094_SENT005",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              19
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 3869,
+          "instance_id": "FOLHA_DOC003094_SENT011::zona::1",
           "sent_ID": "FOLHA_DOC003094_SENT011",
           "text": "O Vitória, também na zona de rebaixamento, tem oito derrotas em casa.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 21,
-                "char_end": 25
-              }
-            ]
+            "char_start": 21,
+            "char_end": 25
           },
           "realization": {
             "Arg0": "de rebaixamento",
@@ -490,13 +344,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  8,
-                  9
-                ],
                 "char_start": 26,
                 "char_end": 41
               }
@@ -506,22 +356,14 @@
           }
         },
         {
-          "instance_id": 3916,
+          "instance_id": "FOLHA_DOC000022_SENT014::zona::1",
           "sent_ID": "FOLHA_DOC000022_SENT014",
           "text": "No mesmo processo, Lula é acusado de aceitar como propina da Odebrecht um terreno na zona sul de São Paulo para o Instituto Lula.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 85,
-                "char_end": 89
-              }
-            ]
+            "char_start": 85,
+            "char_end": 89
           },
           "realization": {
             "Arg0": null,
@@ -533,24 +375,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 90,
                 "char_end": 93
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  22,
-                  23,
-                  24
-                ],
                 "char_start": 94,
                 "char_end": 106
               }
@@ -558,73 +392,56 @@
           }
         },
         {
-          "instance_id": 4138,
+          "instance_id": "FOLHA_DOC003110_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC003110_SENT002",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              9
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 4816,
+          "instance_id": "FOLHA_DOC003185_SENT019::zona::1",
           "sent_ID": "FOLHA_DOC003185_SENT019",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              19
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 5215,
+          "instance_id": "FOLHA_DOC000166_SENT005::zona::1",
           "sent_ID": "FOLHA_DOC000166_SENT005",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              2
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 5967,
+          "instance_id": "FOLHA_DOC000046_SENT024::zona::1",
           "sent_ID": "FOLHA_DOC000046_SENT024",
           "text": "Nas zonas norte e leste, o número dos que tinham esperança por algo mais da gestão ficou nos 64%.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zonas",
-            "token_ids": [
-              3
-            ],
-            "spans": [
-              {
-                "char_start": 4,
-                "char_end": 9
-              }
-            ]
+            "char_start": 4,
+            "char_end": 9
           },
           "realization": {
             "Arg0": null,
@@ -636,15 +453,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6
-                ],
                 "char_start": 10,
                 "char_end": 23
               }
@@ -653,39 +465,28 @@
           }
         },
         {
-          "instance_id": 6058,
+          "instance_id": "FOLHA_DOC004118_SENT075::zona::1",
           "sent_ID": "FOLHA_DOC004118_SENT075",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              12
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 6646,
+          "instance_id": "FOLHA_DOC004066_SENT003::zona::1",
           "sent_ID": "FOLHA_DOC004066_SENT003",
           "text": "A apreensão levou os agentes a encontrarem em um depósito da zona norte da cidade outros 213 tabletes de cocaína.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 61,
-                "char_end": 65
-              }
-            ]
+            "char_start": 61,
+            "char_end": 65
           },
           "realization": {
             "Arg0": null,
@@ -697,24 +498,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14
-                ],
                 "char_start": 66,
                 "char_end": 71
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 72,
                 "char_end": 81
               }
@@ -722,22 +515,14 @@
           }
         },
         {
-          "instance_id": 6742,
+          "instance_id": "FOLHA_DOC003127_SENT003::zona::1",
           "sent_ID": "FOLHA_DOC003127_SENT003",
           "text": "O Dia da Criança é só no mês que vem, mas o Santana Parque Shopping, na zona norte, já entrou no clima das comemorações.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              22
-            ],
-            "spans": [
-              {
-                "char_start": 72,
-                "char_end": 76
-              }
-            ]
+            "char_start": 72,
+            "char_end": 76
           },
           "realization": {
             "Arg0": null,
@@ -749,13 +534,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  23
-                ],
                 "char_start": 77,
                 "char_end": 82
               }
@@ -764,22 +546,14 @@
           }
         },
         {
-          "instance_id": 6749,
+          "instance_id": "FOLHA_DOC003023_SENT018::zona::1",
           "sent_ID": "FOLHA_DOC003023_SENT018",
           "text": "É o time de maior índice de posse de bola do Brasileiro e mesmo assim ocupa a zona de rebaixamento.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              19
-            ],
-            "spans": [
-              {
-                "char_start": 78,
-                "char_end": 82
-              }
-            ]
+            "char_start": 78,
+            "char_end": 82
           },
           "realization": {
             "Arg0": "de rebaixamento",
@@ -791,13 +565,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  20,
-                  21
-                ],
                 "char_start": 83,
                 "char_end": 98
               }
@@ -805,11 +575,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 42,
                 "char_end": 55
               }
@@ -817,22 +582,14 @@
           }
         },
         {
-          "instance_id": 6952,
+          "instance_id": "FOLHA_DOC000172_SENT001::zona::1",
           "sent_ID": "FOLHA_DOC000172_SENT001",
           "text": "Moradores recuperam praça no Jardim das Bandeiras, na zona oeste de SP.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              13
-            ],
-            "spans": [
-              {
-                "char_start": 54,
-                "char_end": 58
-              }
-            ]
+            "char_start": 54,
+            "char_end": 58
           },
           "realization": {
             "Arg0": null,
@@ -844,23 +601,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  14
-                ],
                 "char_start": 59,
                 "char_end": 64
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  15,
-                  16
-                ],
                 "char_start": 65,
                 "char_end": 70
               }
@@ -868,22 +618,14 @@
           }
         },
         {
-          "instance_id": 7609,
+          "instance_id": "FOLHA_DOC003066_SENT035::zona::1",
           "sent_ID": "FOLHA_DOC003066_SENT035",
           "text": "No desembarque, o empresário Marcelo Camacho, 52, pediu um Uber para Santana, na zona norte.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              20
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 85
-              }
-            ]
+            "char_start": 81,
+            "char_end": 85
           },
           "realization": {
             "Arg0": null,
@@ -895,13 +637,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  21
-                ],
                 "char_start": 86,
                 "char_end": 91
               }
@@ -910,39 +649,28 @@
           }
         },
         {
-          "instance_id": 8072,
+          "instance_id": "FOLHA_DOC000166_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC000166_SENT002",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              2
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 8193,
+          "instance_id": "FOLHA_DOC003159_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC003159_SENT002",
           "text": "Em sua luta para se livrar da zona de rebaixamento do Brasileiro, São Paulo tem fracassado justamente contra os adversários que mais precisava vencer.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 34
-              }
-            ]
+            "char_start": 30,
+            "char_end": 34
           },
           "realization": {
             "Arg0": "de rebaixamento",
@@ -954,13 +682,9 @@
             "Arg1": null,
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10,
-                  11
-                ],
                 "char_start": 35,
                 "char_end": 50
               }
@@ -968,11 +692,6 @@
             "Arg1": [],
             "Arg2": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 51,
                 "char_end": 64
               }
@@ -980,22 +699,14 @@
           }
         },
         {
-          "instance_id": 9394,
+          "instance_id": "FOLHA_DOC003159_SENT006::zona::1",
           "sent_ID": "FOLHA_DOC003159_SENT006",
           "text": "Tirar o time da zona de descenso era o objetivo preeminente, praticamente único.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 16,
-                "char_end": 20
-              }
-            ]
+            "char_start": 16,
+            "char_end": 20
           },
           "realization": {
             "Arg0": "de descenso",
@@ -1007,13 +718,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 21,
                 "char_end": 32
               }
@@ -1023,22 +730,14 @@
           }
         },
         {
-          "instance_id": 9435,
+          "instance_id": "FOLHA_DOC003105_SENT008::zona::1",
           "sent_ID": "FOLHA_DOC003105_SENT008",
           "text": "Com uma estratégia confusa, Felipe Massa ficou fora da zona de pontuação e terminou na 11ª posição.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 59
-              }
-            ]
+            "char_start": 55,
+            "char_end": 59
           },
           "realization": {
             "Arg0": "de pontuação",
@@ -1050,13 +749,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14
-                ],
                 "char_start": 60,
                 "char_end": 72
               }
@@ -1066,22 +761,14 @@
           }
         },
         {
-          "instance_id": 10121,
+          "instance_id": "FOLHA_DOC003159_SENT034::zona::1",
           "sent_ID": "FOLHA_DOC003159_SENT034",
           "text": "O São Paulo pode escapar mais uma vez da zona de rebaixamento nesta rodada.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 41,
-                "char_end": 45
-              }
-            ]
+            "char_start": 41,
+            "char_end": 45
           },
           "realization": {
             "Arg0": "de rebaixamento",
@@ -1093,13 +780,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  12,
-                  13
-                ],
                 "char_start": 46,
                 "char_end": 61
               }
@@ -1109,22 +792,14 @@
           }
         },
         {
-          "instance_id": 10318,
+          "instance_id": "FOLHA_DOC002027_SENT007::zona::1",
           "sent_ID": "FOLHA_DOC002027_SENT007",
           "text": "Desde 2013, são produzidos em fábrica própria, no Tatuapé (zona leste).",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 59,
-                "char_end": 63
-              }
-            ]
+            "char_start": 59,
+            "char_end": 63
           },
           "realization": {
             "Arg0": null,
@@ -1136,13 +811,10 @@
             "Arg1": "amod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  15
-                ],
                 "char_start": 64,
                 "char_end": 69
               }
@@ -1151,39 +823,28 @@
           }
         },
         {
-          "instance_id": 11485,
+          "instance_id": "FOLHA_DOC000044_SENT046::zona::1",
           "sent_ID": "FOLHA_DOC000044_SENT046",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              9
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 11527,
+          "instance_id": "FOLHA_DOC004069_SENT004::zona::1",
           "sent_ID": "FOLHA_DOC004069_SENT004",
           "text": "O escritório de estatísticas revisou para cima os números sobre o crescimento da zona do euro em uma base de comparação anual.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              15
-            ],
-            "spans": [
-              {
-                "char_start": 81,
-                "char_end": 85
-              }
-            ]
+            "char_start": 81,
+            "char_end": 85
           },
           "realization": {
             "Arg0": null,
@@ -1195,15 +856,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  16,
-                  17,
-                  18
-                ],
                 "char_start": 86,
                 "char_end": 93
               }
@@ -1212,22 +868,14 @@
           }
         },
         {
-          "instance_id": 11855,
+          "instance_id": "FOLHA_DOC000166_SENT001::zona::1",
           "sent_ID": "FOLHA_DOC000166_SENT001",
           "text": "Moradores da zona oeste são os mais satisfeitos de São Paulo, diz pesquisa.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              4
-            ],
-            "spans": [
-              {
-                "char_start": 13,
-                "char_end": 17
-              }
-            ]
+            "char_start": 13,
+            "char_end": 17
           },
           "realization": {
             "Arg0": null,
@@ -1239,24 +887,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  5
-                ],
                 "char_start": 18,
                 "char_end": 23
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  10,
-                  11,
-                  12
-                ],
                 "char_start": 48,
                 "char_end": 60
               }
@@ -1264,39 +904,28 @@
           }
         },
         {
-          "instance_id": 11956,
+          "instance_id": "FOLHA_DOC003110_SENT013::zona::1",
           "sent_ID": "FOLHA_DOC003110_SENT013",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              25
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 12012,
+          "instance_id": "FOLHA_DOC003121_SENT003::zona::1",
           "sent_ID": "FOLHA_DOC003121_SENT003",
           "text": "É com essa estrutura que o espaço Quintal Animal, em Moema, na zona sul paulistana, recebe seus clientes -de duas e de quatro patas.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 67
-              }
-            ]
+            "char_start": 63,
+            "char_end": 67
           },
           "realization": {
             "Arg0": null,
@@ -1308,22 +937,16 @@
             "Arg1": "amod",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17
-                ],
                 "char_start": 68,
                 "char_end": 71
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  18
-                ],
                 "char_start": 72,
                 "char_end": 82
               }
@@ -1331,39 +954,28 @@
           }
         },
         {
-          "instance_id": 13230,
+          "instance_id": "FOLHA_DOC003088_SENT006::zona::1",
           "sent_ID": "FOLHA_DOC003088_SENT006",
           "text": null,
-          "frame_id": null,
-          "annotation_status": "not_started",
+          "arguments_annotated": false,
           "predicate": {
-            "form": "",
-            "token_ids": [
-              9
-            ],
-            "spans": []
+            "form": null,
+            "char_start": null,
+            "char_end": null
           },
           "realization": {},
           "syntax": {},
-          "spans": {}
+          "argument_positions": {}
         },
         {
-          "instance_id": 13432,
+          "instance_id": "FOLHA_DOC003048_SENT019::zona::1",
           "sent_ID": "FOLHA_DOC003048_SENT019",
           "text": "O São Paulo fez uma apresentação segura em Salvador para vencer o Vitória por 2 a 1 e subir duas posições na zona do rebaixamento.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              24
-            ],
-            "spans": [
-              {
-                "char_start": 109,
-                "char_end": 113
-              }
-            ]
+            "char_start": 109,
+            "char_end": 113
           },
           "realization": {
             "Arg0": "do rebaixamento",
@@ -1375,14 +987,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  25,
-                  26,
-                  27
-                ],
                 "char_start": 114,
                 "char_end": 129
               }
@@ -1392,22 +999,14 @@
           }
         },
         {
-          "instance_id": 14300,
+          "instance_id": "FOLHA_DOC003095_SENT002::zona::1",
           "sent_ID": "FOLHA_DOC003095_SENT002",
           "text": "Um miliciano teria sido morto pelos próprios comparsas após transmitir ao vivo por redes sociais a tomada da comunidade Nogueira, em Realengo, zona oeste da cidade.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              28
-            ],
-            "spans": [
-              {
-                "char_start": 143,
-                "char_end": 147
-              }
-            ]
+            "char_start": 143,
+            "char_end": 147
           },
           "realization": {
             "Arg0": null,
@@ -1419,24 +1018,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  29
-                ],
                 "char_start": 148,
                 "char_end": 153
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  30,
-                  31,
-                  32
-                ],
                 "char_start": 154,
                 "char_end": 163
               }
@@ -1444,22 +1035,14 @@
           }
         },
         {
-          "instance_id": 14469,
+          "instance_id": "FOLHA_DOC003066_SENT024::zona::1",
           "sent_ID": "FOLHA_DOC003066_SENT024",
           "text": "Fica difícil, disse Júlia, antes de embarcar no carro -o motorista tinha aceitado a viagem, para a Casa Verde, bairro da zona norte de São Paulo a 25 km do aeroporto.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              29
-            ],
-            "spans": [
-              {
-                "char_start": 121,
-                "char_end": 125
-              }
-            ]
+            "char_start": 121,
+            "char_end": 125
           },
           "realization": {
             "Arg0": null,
@@ -1471,24 +1054,16 @@
             "Arg1": "amod",
             "Arg2": "nmod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  30
-                ],
                 "char_start": 126,
                 "char_end": 131
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 132,
                 "char_end": 144
               }
@@ -1496,22 +1071,14 @@
           }
         },
         {
-          "instance_id": 15046,
+          "instance_id": "FOLHA_DOC003202_SENT033::zona::1",
           "sent_ID": "FOLHA_DOC003202_SENT033",
           "text": "Atala mora no Sumaré, na zona oeste paulistana, e conta que um clássico dia de folga na vida dele é um domingão.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              9
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 29
-              }
-            ]
+            "char_start": 25,
+            "char_end": 29
           },
           "realization": {
             "Arg0": null,
@@ -1523,22 +1090,16 @@
             "Arg1": "amod",
             "Arg2": "amod"
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 30,
                 "char_end": 35
               }
             ],
             "Arg2": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 36,
                 "char_end": 46
               }
@@ -1546,22 +1107,14 @@
           }
         },
         {
-          "instance_id": 15103,
+          "instance_id": "FOLHA_DOC001037_SENT007::zona::1",
           "sent_ID": "FOLHA_DOC001037_SENT007",
           "text": "Derrota a deixaria na zona de rebaixamento.",
-          "frame_id": "f_72ad93d66f54f82b",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "zona",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 22,
-                "char_end": 26
-              }
-            ]
+            "char_start": 22,
+            "char_end": 26
           },
           "realization": {
             "Arg0": "de rebaixamento",
@@ -1573,13 +1126,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 27,
                 "char_end": 42
               }
@@ -1588,7 +1137,20 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg1": {
+          "amod": 19,
+          "nmod": 1
+        },
+        "Arg2": {
+          "nmod": 12,
+          "amod": 2
+        },
+        "Arg0": {
+          "nmod": 8
+        }
+      }
     }
   ]
 }

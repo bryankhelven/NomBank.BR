@@ -1,76 +1,45 @@
 {
   "lemma": "intenção",
-  "lemma_base": "intenção",
   "senses": [
     {
       "pt_roleset": "intenção.01",
       "description": "intento; propósito",
-      "rolesets": [
+      "origin_frames": [
         {
-          "id": "f_05475b25dfe79664",
-          "description": "intento; propósito",
-          "valency": 3,
-          "origin_frames": [
-            {
-              "roleset": "intention.01",
-              "resource": "English NomBank",
-              "description": "intend, plan",
-              "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/intention.xml",
-              "adapted": true
-            }
-          ],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "titular da intenção",
-              "definition": "Entidade que explicitamente detém o intento, mesmo negado/hipotético."
-            },
-            {
-              "id": "Arg1",
-              "desc": "coisa pretendida",
-              "definition": "Ação/coisa pretendida expressa; não confundir contagem de intenções com conteúdo."
-            },
-            {
-              "id": "Arg2",
-              "desc": "sujeito extraído do plano",
-              "definition": "Participante explicitamente expresso como sujeito extraído da ação pretendida, conforme extracted subject nominal; não repetição automática do planejador."
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "obl": 1,
-              "nmod": 3,
-              "det": 2,
-              "nsubj": 4
-            },
-            "Arg1": {
-              "acl": 6,
-              "root": 1,
-              "nmod": 4,
-              "xcomp": 1,
-              "advcl": 1
-            }
-          }
+          "roleset": "intention.01",
+          "resource": "English NomBank",
+          "description": "intend, plan",
+          "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/intention.xml",
+          "adapted": true
         }
       ],
-      "examples": [
+      "roles": [
         {
-          "instance_id": 886,
+          "id": "Arg0",
+          "desc": "titular da intenção",
+          "definition": "Entidade que explicitamente detém o intento, mesmo negado/hipotético."
+        },
+        {
+          "id": "Arg1",
+          "desc": "coisa pretendida",
+          "definition": "Ação/coisa pretendida expressa; não confundir contagem de intenções com conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "sujeito extraído do plano",
+          "definition": "Participante explicitamente expresso como sujeito extraído da ação pretendida, conforme extracted subject nominal; não repetição automática do planejador."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000091_SENT003::intenção::1",
           "sent_ID": "FOLHA_DOC000091_SENT003",
           "text": "Essa intenção é maior entre os que possuem diploma do ensino superior.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 5,
-                "char_end": 13
-              }
-            ]
+            "char_start": 5,
+            "char_end": 13
           },
           "realization": {
             "Arg0": "os que possuem diploma do ensino superior",
@@ -82,19 +51,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13
-                ],
                 "char_start": 28,
                 "char_end": 69
               }
@@ -104,22 +63,14 @@
           }
         },
         {
-          "instance_id": 1604,
+          "instance_id": "FOLHA_DOC002026_SENT014::intenção::1",
           "sent_ID": "FOLHA_DOC002026_SENT014",
           "text": "O goleiro só a recolhe com as mãos pela óbvia falta de intenção do zagueiro em recuá-la.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              14
-            ],
-            "spans": [
-              {
-                "char_start": 55,
-                "char_end": 63
-              }
-            ]
+            "char_start": 55,
+            "char_end": 63
           },
           "realization": {
             "Arg0": "do zagueiro",
@@ -131,25 +82,15 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  15,
-                  16,
-                  17
-                ],
                 "char_start": 64,
                 "char_end": 75
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 76,
                 "char_end": 87
               }
@@ -158,22 +99,14 @@
           }
         },
         {
-          "instance_id": 4568,
+          "instance_id": "FOLHA_DOC000080_SENT013::intenção::1",
           "sent_ID": "FOLHA_DOC000080_SENT013",
           "text": "Minha intenção é contribuir com isso, trazendo uma análise mais qualificada para o leitor.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              2
-            ],
-            "spans": [
-              {
-                "char_start": 6,
-                "char_end": 14
-              }
-            ]
+            "char_start": 6,
+            "char_end": 14
           },
           "realization": {
             "Arg0": "Minha",
@@ -185,32 +118,15 @@
             "Arg1": "root",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1
-                ],
                 "char_start": 0,
                 "char_end": 5
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 17,
                 "char_end": 89
               }
@@ -219,22 +135,14 @@
           }
         },
         {
-          "instance_id": 5462,
+          "instance_id": "FOLHA_DOC000108_SENT017::intenção::1",
           "sent_ID": "FOLHA_DOC000108_SENT017",
           "text": "Lula, com cinco candidaturas presidenciais e dois mandatos no Planalto, lidera as intenções de voto.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenções",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 91
-              }
-            ]
+            "char_start": 82,
+            "char_end": 91
           },
           "realization": {
             "Arg0": null,
@@ -246,14 +154,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18
-                ],
                 "char_start": 92,
                 "char_end": 99
               }
@@ -262,22 +166,14 @@
           }
         },
         {
-          "instance_id": 5707,
+          "instance_id": "FOLHA_DOC000011_SENT017::intenção::1",
           "sent_ID": "FOLHA_DOC000011_SENT017",
           "text": "Ela também destaca que possivelmente os delatores não tinham a intenção de entregar um áudio de uma conversa gravada acidentalmente e que embasou a prisão.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              11
-            ],
-            "spans": [
-              {
-                "char_start": 63,
-                "char_end": 71
-              }
-            ]
+            "char_start": 63,
+            "char_end": 71
           },
           "realization": {
             "Arg0": "os delatores",
@@ -289,35 +185,15 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 37,
                 "char_end": 49
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 72,
                 "char_end": 154
               }
@@ -326,22 +202,14 @@
           }
         },
         {
-          "instance_id": 6164,
+          "instance_id": "FOLHA_DOC003162_SENT020::intenção::1",
           "sent_ID": "FOLHA_DOC003162_SENT020",
           "text": "Em pesquisas locais de intenção de voto, aparece entre os primeiros lugares para Senado e governo, em disputa embolada com oponentes da região.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              5
-            ],
-            "spans": [
-              {
-                "char_start": 23,
-                "char_end": 31
-              }
-            ]
+            "char_start": 23,
+            "char_end": 31
           },
           "realization": {
             "Arg0": null,
@@ -353,14 +221,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  6,
-                  7
-                ],
                 "char_start": 32,
                 "char_end": 39
               }
@@ -369,22 +233,14 @@
           }
         },
         {
-          "instance_id": 6574,
+          "instance_id": "FOLHA_DOC000143_SENT015::intenção::1",
           "sent_ID": "FOLHA_DOC000143_SENT015",
           "text": "\"Agora também estamos diante das intenções do presidente dos EUA... e Che nos deu o ensino desde o início deste processo revolucionário no México: para o imperialismo, dizemos que não é um pouco assim\", disse Felix Rodriguez à AFP, uma ex-guerrilha da Sierra Maestra.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenções",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 33,
-                "char_end": 42
-              }
-            ]
+            "char_start": 33,
+            "char_end": 42
           },
           "realization": {
             "Arg0": "do presidente dos EUA",
@@ -396,17 +252,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14
-                ],
                 "char_start": 43,
                 "char_end": 64
               }
@@ -416,22 +264,14 @@
           }
         },
         {
-          "instance_id": 6726,
+          "instance_id": "FOLHA_DOC000077_SENT010::intenção::1",
           "sent_ID": "FOLHA_DOC000077_SENT010",
           "text": "E também tem o dobro das intenções de voto na antipolítica que Marina Silva representa hoje.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenções",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 25,
-                "char_end": 34
-              }
-            ]
+            "char_start": 25,
+            "char_end": 34
           },
           "realization": {
             "Arg0": null,
@@ -443,14 +283,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  9,
-                  10
-                ],
                 "char_start": 35,
                 "char_end": 42
               }
@@ -459,22 +295,14 @@
           }
         },
         {
-          "instance_id": 6886,
+          "instance_id": "FOLHA_DOC002034_SENT006::intenção::1",
           "sent_ID": "FOLHA_DOC002034_SENT006",
           "text": "Tínhamos, desde pequenos, a intenção de jogar fora do país e nos profissionalizarmos na modalidade.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 28,
-                "char_end": 36
-              }
-            ]
+            "char_start": 28,
+            "char_end": 36
           },
           "realization": {
             "Arg0": null,
@@ -486,24 +314,10 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19
-                ],
                 "char_start": 37,
                 "char_end": 98
               }
@@ -512,22 +326,14 @@
           }
         },
         {
-          "instance_id": 11175,
+          "instance_id": "FOLHA_DOC004052_SENT006::intenção::1",
           "sent_ID": "FOLHA_DOC004052_SENT006",
           "text": "Indagado sobre a possibilidade de deixar o partido, Doria respondeu que não tem a intenção de mudar de legenda.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 82,
-                "char_end": 90
-              }
-            ]
+            "char_start": 82,
+            "char_end": 90
           },
           "realization": {
             "Arg0": "Doria",
@@ -539,24 +345,15 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 52,
                 "char_end": 57
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20
-                ],
                 "char_start": 91,
                 "char_end": 110
               }
@@ -565,22 +362,14 @@
           }
         },
         {
-          "instance_id": 12292,
+          "instance_id": "FOLHA_DOC003049_SENT028::intenção::1",
           "sent_ID": "FOLHA_DOC003049_SENT028",
           "text": "Ele chega ao extremo de sua ilusão ao ver intenções obscuras na delação de Palocci, acreditando que busca beneficiar o PSDB.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenções",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 42,
-                "char_end": 51
-              }
-            ]
+            "char_start": 42,
+            "char_end": 51
           },
           "realization": {
             "Arg0": null,
@@ -592,15 +381,10 @@
             "Arg1": "xcomp",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  23,
-                  24,
-                  25
-                ],
                 "char_start": 106,
                 "char_end": 123
               }
@@ -609,22 +393,14 @@
           }
         },
         {
-          "instance_id": 12374,
+          "instance_id": "FOLHA_DOC003298_SENT009::intenção::1",
           "sent_ID": "FOLHA_DOC003298_SENT009",
           "text": "Não importava o conhecimento técnico, mas a atitude e a intenção do artista.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              12
-            ],
-            "spans": [
-              {
-                "char_start": 56,
-                "char_end": 64
-              }
-            ]
+            "char_start": 56,
+            "char_end": 64
           },
           "realization": {
             "Arg0": "do artista",
@@ -636,14 +412,9 @@
             "Arg1": null,
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  13,
-                  14,
-                  15
-                ],
                 "char_start": 65,
                 "char_end": 75
               }
@@ -653,22 +424,14 @@
           }
         },
         {
-          "instance_id": 12472,
+          "instance_id": "FOLHA_DOC003082_SENT014::intenção::1",
           "sent_ID": "FOLHA_DOC003082_SENT014",
           "text": "O técnico afirmou que não tem intenção de mudar o esquema tático de jogo do São Paulo para torná-lo mais defensivo.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              7
-            ],
-            "spans": [
-              {
-                "char_start": 30,
-                "char_end": 38
-              }
-            ]
+            "char_start": 30,
+            "char_end": 38
           },
           "realization": {
             "Arg0": "O técnico",
@@ -680,37 +443,15 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  1,
-                  2
-                ],
                 "char_start": 0,
                 "char_end": 9
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  8,
-                  9,
-                  10,
-                  11,
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17,
-                  18,
-                  19,
-                  20,
-                  21,
-                  22,
-                  23
-                ],
                 "char_start": 39,
                 "char_end": 114
               }
@@ -719,22 +460,14 @@
           }
         },
         {
-          "instance_id": 12633,
+          "instance_id": "FOLHA_DOC000007_SENT012::intenção::1",
           "sent_ID": "FOLHA_DOC000007_SENT012",
           "text": "O país onde estou protegido é aqui, afirmou ele, negando que tivesse a intenção de fugir do país.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              16
-            ],
-            "spans": [
-              {
-                "char_start": 71,
-                "char_end": 79
-              }
-            ]
+            "char_start": 71,
+            "char_end": 79
           },
           "realization": {
             "Arg0": "ele",
@@ -746,25 +479,15 @@
             "Arg1": "acl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  10
-                ],
                 "char_start": 44,
                 "char_end": 47
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  17,
-                  18,
-                  19,
-                  20,
-                  21
-                ],
                 "char_start": 80,
                 "char_end": 96
               }
@@ -773,22 +496,14 @@
           }
         },
         {
-          "instance_id": 12899,
+          "instance_id": "FOLHA_DOC000182_SENT012::intenção::1",
           "sent_ID": "FOLHA_DOC000182_SENT012",
           "text": "Todos nós, em maior ou menor grau, somos portadores dessas distorções sistemáticas de raciocínio, que são uma porcaria se a sua intenção é buscar a verdade de modo objetivo, mas serviram bastante bem aos nossos ancestrais (e ainda nos servem) na hora de fazer o serviço pesado da sobrevivência num mundo complicado e imprevisível.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenção",
-            "token_ids": [
-              26
-            ],
-            "spans": [
-              {
-                "char_start": 128,
-                "char_end": 136
-              }
-            ]
+            "char_start": 128,
+            "char_end": 136
           },
           "realization": {
             "Arg0": "sua",
@@ -800,26 +515,15 @@
             "Arg1": "advcl",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  25
-                ],
                 "char_start": 124,
                 "char_end": 127
               }
             ],
             "Arg1": [
               {
-                "token_ids": [
-                  28,
-                  29,
-                  30,
-                  31,
-                  32,
-                  33
-                ],
                 "char_start": 139,
                 "char_end": 172
               }
@@ -828,22 +532,14 @@
           }
         },
         {
-          "instance_id": 13095,
+          "instance_id": "FOLHA_DOC004001_SENT017::intenção::1",
           "sent_ID": "FOLHA_DOC004001_SENT017",
           "text": "Com 30% das intenções de voto, Lula lidera os levantamentos disponíveis.",
-          "frame_id": "f_05475b25dfe79664",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "intenções",
-            "token_ids": [
-              6
-            ],
-            "spans": [
-              {
-                "char_start": 12,
-                "char_end": 21
-              }
-            ]
+            "char_start": 12,
+            "char_end": 21
           },
           "realization": {
             "Arg0": null,
@@ -855,14 +551,10 @@
             "Arg1": "nmod",
             "Arg2": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [],
             "Arg1": [
               {
-                "token_ids": [
-                  7,
-                  8
-                ],
                 "char_start": 22,
                 "char_end": 29
               }
@@ -870,7 +562,22 @@
             "Arg2": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "obl": 1,
+          "nmod": 3,
+          "det": 2,
+          "nsubj": 4
+        },
+        "Arg1": {
+          "acl": 6,
+          "root": 1,
+          "nmod": 4,
+          "xcomp": 1,
+          "advcl": 1
+        }
+      }
     }
   ]
 }

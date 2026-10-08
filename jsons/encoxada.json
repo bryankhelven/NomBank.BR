@@ -1,63 +1,42 @@
 {
   "lemma": "encoxada",
-  "lemma_base": "encoxada",
   "senses": [
     {
       "pt_roleset": "encoxada · acepção 1",
       "description": null,
-      "rolesets": [
+      "origin_frames": [],
+      "roles": [
         {
-          "id": "f_530b2a2fc0571691",
-          "description": null,
-          "valency": 4,
-          "origin_frames": [],
-          "roles": [
-            {
-              "id": "Arg0",
-              "desc": "principal participant/holder",
-              "definition": "principal participant/holder"
-            },
-            {
-              "id": "Arg1",
-              "desc": "nominal relation or state",
-              "definition": "nominal relation or state"
-            },
-            {
-              "id": "Arg2",
-              "desc": "object, target, content, counterpart or domain",
-              "definition": "object, target, content, counterpart or domain"
-            },
-            {
-              "id": "Arg3",
-              "desc": "time, place, degree, manner or context",
-              "definition": "time, place, degree, manner or context"
-            }
-          ],
-          "syntactic_profile": {
-            "Arg0": {
-              "nmod": 1
-            }
-          }
+          "id": "Arg0",
+          "desc": "principal participant/holder",
+          "definition": "principal participant/holder"
+        },
+        {
+          "id": "Arg1",
+          "desc": "nominal relation or state",
+          "definition": "nominal relation or state"
+        },
+        {
+          "id": "Arg2",
+          "desc": "object, target, content, counterpart or domain",
+          "definition": "object, target, content, counterpart or domain"
+        },
+        {
+          "id": "Arg3",
+          "desc": "time, place, degree, manner or context",
+          "definition": "time, place, degree, manner or context"
         }
       ],
-      "examples": [
+      "instances": [
         {
-          "instance_id": 6815,
+          "instance_id": "FOLHA_DOC000024_SENT038::encoxada::1",
           "sent_ID": "FOLHA_DOC000024_SENT038",
           "text": "Além, é claro de ainda levar encoxadas dos homens.",
-          "frame_id": "f_530b2a2fc0571691",
-          "annotation_status": "annotated",
+          "arguments_annotated": true,
           "predicate": {
             "form": "encoxadas",
-            "token_ids": [
-              8
-            ],
-            "spans": [
-              {
-                "char_start": 29,
-                "char_end": 38
-              }
-            ]
+            "char_start": 29,
+            "char_end": 38
           },
           "realization": {
             "Arg0": "homens",
@@ -71,15 +50,11 @@
             "Arg2": null,
             "Arg3": null
           },
-          "spans": {
+          "argument_positions": {
             "Arg0": [
               {
-                "token_ids": [
-                  11
-                ],
                 "char_start": 43,
-                "char_end": 49,
-                "head_token_id": 11
+                "char_end": 49
               }
             ],
             "Arg1": [],
@@ -87,7 +62,12 @@
             "Arg3": []
           }
         }
-      ]
+      ],
+      "syntactic_profile": {
+        "Arg0": {
+          "nmod": 1
+        }
+      }
     }
   ]
 }
