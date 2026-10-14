@@ -6,37 +6,269 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_f897b2da1122abfb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f897b2da1122abfb",
+      "frame_id": "f_dd5bafb71efc21e5",
+      "pt_roleset": "bônus.04",
+      "sense_label": "bônus.04",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "bonus.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/bonus.xml",
+          "source_xml_url": "data/nombank_sources/bonus.xml",
+          "source_xml_sha256": "490d186644bbd815a6cce58ed99eed19314e90fab7fa25a3b9f3e20d1ed62beb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Ofertante do bônus",
+          "definition": "Giver que concede vantagem/prêmio, incluindo marcas metonímicas de empresas.",
+          "desc_pt": "Ofertante do bônus",
+          "definition_pt": "Giver que concede vantagem/prêmio, incluindo marcas metonímicas de empresas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Vantagem oferecida",
+          "definition": "Thing given incluindo pacote não monetário retomado por bônus, sem carro trocado como prêmio.",
+          "desc_pt": "Vantagem oferecida",
+          "definition_pt": "Thing given incluindo pacote não monetário retomado por bônus, sem carro trocado como prêmio."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Recebedor do bônus",
+          "definition": "Entity given to sob oferta/condição/recusa, não recepção efetiva necessariamente.",
+          "desc_pt": "Recebedor do bônus",
+          "definition_pt": "Entity given to sob oferta/condição/recusa, não recepção efetiva necessariamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003166_SENT012::bônus::1",
           "sent_ID": "FOLHA_DOC003166_SENT012",
           "text": "Esses pacotes são em geral gratuitos, mas cabe ao consumidor checar se a empresa dá algum desconto caso ele não queira usufruir desse \"bônus\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "bônus",
             "char_start": 135,
             "char_end": 140
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Esses pacotes",
+            "Arg2": "ele"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 13
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 104,
+                "char_end": 107
+              }
+            ]
+          },
+          "target_instance_id": 5223,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dd5bafb71efc21e5",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 140
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 13,
+                    "head_token_id": 2,
+                    "head_form": "pacotes",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21
+                    ],
+                    "char_start": 104,
+                    "char_end": 107,
+                    "head_token_id": 21,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003051_SENT019::bônus::1",
           "sent_ID": "FOLHA_DOC003051_SENT019",
           "text": "Marcas do grupo já dão bônus a quem trocar carro a diesel por um que cumpra regras mais estritas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "bônus",
             "char_start": 23,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Marcas do grupo",
+            "Arg1": null,
+            "Arg2": "a quem trocar carro a diesel por um que cumpra regras mais estritas"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 15
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 29,
+                "char_end": 96
+              }
+            ]
+          },
+          "target_instance_id": 10426,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dd5bafb71efc21e5",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 15,
+                    "head_token_id": 1,
+                    "head_form": "Marcas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 29,
+                    "char_end": 96,
+                    "head_token_id": 9,
+                    "head_form": "quem",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 1
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

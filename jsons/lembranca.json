@@ -6,76 +6,459 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003188_SENT038::lembrança::1",
-          "sent_ID": "FOLHA_DOC003188_SENT038",
-          "text": "Cheguei à casa do meu pai meio carregada e vi meu rosto num espelho, uma das poucas lembranças que tenho da época.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "lembranças",
-            "char_start": 84,
-            "char_end": 94
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002008_SENT017::lembrança::1",
-          "sent_ID": "FOLHA_DOC002008_SENT017",
-          "text": "Sua vizinha, Yolanda Vargas, também tem lembranças vívidas de 1985.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "lembranças",
-            "char_start": 40,
-            "char_end": 50
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000121_SENT007::lembrança::1",
-          "sent_ID": "FOLHA_DOC000121_SENT007",
-          "text": "Gradualmente, Guarda concretizava-se como lembrança, não projeto.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "lembrança",
-            "char_start": 42,
-            "char_end": 51
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "lembrança · acepção 1"
+      "sense_label": "lembrança · acepção 1",
+      "sense_id": "s_c325c8237d36aef1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "lembrança · acepção 2",
+      "sense_id": "s_5d93f96258883922",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_c325c8237d36aef1",
+      "frame_id": "f_c1ff685e82e6b5a8",
+      "pt_roleset": null,
+      "sense_label": "lembrança · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "memory.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/memory.xml",
+          "source_xml_url": "data/nombank_sources/memory.xml",
+          "source_xml_sha256": "2a52bcc3480c56be453d8240153a6025eb2f8974bcef4a13129ff2277de81efc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem lembra",
+          "definition": "Pessoa ou coletivo detentor da recordação, agent original.",
+          "desc_pt": "Quem lembra",
+          "definition_pt": "Pessoa ou coletivo detentor da recordação, agent original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo lembrado",
+          "definition": "Objeto, episódio ou período de que se tem recordação.",
+          "desc_pt": "Conteúdo lembrado",
+          "definition_pt": "Objeto, episódio ou período de que se tem recordação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo secundário do conteúdo",
+          "definition": "Predicação secundária daquilo lembrado; vivacidade ou quantidade da memória não basta.",
+          "desc_pt": "Atributo secundário do conteúdo",
+          "definition_pt": "Predicação secundária daquilo lembrado; vivacidade ou quantidade da memória não basta."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003188_SENT038::lembrança::1",
+          "sent_ID": "FOLHA_DOC003188_SENT038",
+          "text": "Cheguei à casa do meu pai meio carregada e vi meu rosto num espelho, uma das poucas lembranças que tenho da época.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "lembranças",
+            "char_start": 84,
+            "char_end": 94
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Cheguei à casa do meu pai meio carregada e vi meu rosto num espelho",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 67
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 445,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c1ff685e82e6b5a8",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 84,
+                "char_end": 94
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 0,
+                    "char_end": 67,
+                    "head_token_id": 1,
+                    "head_form": "Cheguei",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002008_SENT017::lembrança::1",
+          "sent_ID": "FOLHA_DOC002008_SENT017",
+          "text": "Sua vizinha, Yolanda Vargas, também tem lembranças vívidas de 1985.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "lembranças",
+            "char_start": 40,
+            "char_end": 50
+          },
+          "realization": {
+            "Arg0": "Sua vizinha, Yolanda Vargas",
+            "Arg1": "de 1985",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1887,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c1ff685e82e6b5a8",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 50
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 27,
+                    "head_token_id": 2,
+                    "head_form": "vizinha",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 59,
+                    "char_end": 66,
+                    "head_token_id": 12,
+                    "head_form": "1985",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000121_SENT007::lembrança::1",
+          "sent_ID": "FOLHA_DOC000121_SENT007",
+          "text": "Gradualmente, Guarda concretizava-se como lembrança, não projeto.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "lembrança",
+            "char_start": 42,
+            "char_end": 51
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Guarda",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 14,
+                "char_end": 20
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15745,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c1ff685e82e6b5a8",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 14,
+                    "char_end": 20,
+                    "head_token_id": 3,
+                    "head_form": "Guarda",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_5d93f96258883922",
+      "frame_id": "f_b393a391be1038a8",
+      "pt_roleset": null,
+      "sense_label": "lembrança · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "souvenir.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/souvenir.xml",
+          "source_xml_url": "data/nombank_sources/souvenir.xml",
+          "source_xml_sha256": "72d569599aefc431ac04ec0080ff0ec6ec9de71764666e70fd63f334bb7b34bd",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa da recordação",
+          "definition": "Cause/agent original: aquilo que faz recordar; procedência comercial não basta.",
+          "desc_pt": "Causa da recordação",
+          "definition_pt": "Cause/agent original: aquilo que faz recordar; procedência comercial não basta."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto associado à recordação",
+          "definition": "Thing reminded original, exemplificado por book e key rings; adaptação explícita ao brinde/produto português, sem alegar tradução literal do rótulo.",
+          "desc_pt": "Objeto associado à recordação",
+          "definition_pt": "Thing reminded original, exemplificado por book e key rings; adaptação explícita ao brinde/produto português, sem alegar tradução literal do rótulo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário",
+          "definition": "Pessoa a quem se oferece o objeto/lembrete; querer levar não comprova recebimento de presente.",
+          "desc_pt": "Destinatário",
+          "definition_pt": "Pessoa a quem se oferece o objeto/lembrete; querer levar não comprova recebimento de presente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003102_SENT013::lembrança::1",
           "sent_ID": "FOLHA_DOC003102_SENT013",
           "text": "Patrícia quis levar uma lembrança da loja oficial do festival, mas desistiu ao ver que a camiseta do Maroon 5 saía a R$ 130 e a da cantora Fergie, a R$ 100.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "lembrança",
             "char_start": 24,
             "char_end": 33
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7929,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b393a391be1038a8",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 33
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "lembrança · acepção 2"
+      "syntactic_profile": {}
     }
   ]
 }

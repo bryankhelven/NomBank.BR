@@ -6,48 +6,227 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC001478_SENT167::cochilo::1",
-          "sent_ID": "FOLHA_DOC001478_SENT167",
-          "text": "Sonolento, avisou que precisava tirar um cochilo rápido.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "cochilo",
-            "char_start": 41,
-            "char_end": 48
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "cochilo · acepção 1"
+      "sense_label": "cochilo · acepção 1",
+      "sense_id": "s_850bf7c084d786b1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cochilo · acepção 2",
+      "sense_id": "s_a1ee57e5065b0eb7",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_850bf7c084d786b1",
+      "frame_id": "f_fe01769dc4a9e697",
+      "pt_roleset": null,
+      "sense_label": "cochilo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "sleep.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/sleep.xml",
+          "source_xml_url": "data/nombank_sources/sleep.xml",
+          "source_xml_sha256": "4c02135dd789c07b16ed0140041e346cb766d3e0ac584ba4a5031454af8e1d4c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem cochila",
+          "definition": "Sleeper de sono leve, não adjetivo sonolento como sujeito independente fabricado.",
+          "desc_pt": "Quem cochila",
+          "definition_pt": "Sleeper de sono leve, não adjetivo sonolento como sujeito independente fabricado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto cognato do sono",
+          "definition": "Cognate object quando expresso; sem rápida duração tomada como objeto.",
+          "desc_pt": "Objeto cognato do sono",
+          "definition_pt": "Cognate object quando expresso; sem rápida duração tomada como objeto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Término esperado",
+          "definition": "Terminus do sono explicitado.",
+          "desc_pt": "Término esperado",
+          "definition_pt": "Terminus do sono explicitado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001478_SENT167::cochilo::1",
+          "sent_ID": "FOLHA_DOC001478_SENT167",
+          "text": "Sonolento, avisou que precisava tirar um cochilo rápido.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "cochilo",
+            "char_start": 41,
+            "char_end": 48
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fe01769dc4a9e697",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 41,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_a1ee57e5065b0eb7",
+      "frame_id": "f_58d612466ec2098a",
+      "pt_roleset": null,
+      "sense_label": "cochilo · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "oversight.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/oversight.xml",
+          "source_xml_url": "data/nombank_sources/oversight.xml",
+          "source_xml_sha256": "5b64fc891795f68a533b3af2328e18656e26e4bbc9acdda6d527c8c377ed4219",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem falha",
+          "definition": "Agente de descuido/erro, incluindo faculdade nossa atenção por metonímia cognitiva; source apenas0 sem objeto inventado.",
+          "desc_pt": "Quem falha",
+          "definition_pt": "Agente de descuido/erro, incluindo faculdade nossa atenção por metonímia cognitiva; source apenas0 sem objeto inventado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003319_SENT031::cochilo::1",
           "sent_ID": "FOLHA_DOC003319_SENT031",
           "text": "O final feliz faz parte da história ou é outro cochilo da nossa atenção?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cochilo",
             "char_start": 47,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da nossa atenção"
+          },
+          "syntax": {
+            "Arg0": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 55,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 13863,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_58d612466ec2098a",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 55,
+                    "char_end": 71,
+                    "head_token_id": 16,
+                    "head_form": "atenção",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cochilo · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1
+        }
+      }
     }
   ]
 }

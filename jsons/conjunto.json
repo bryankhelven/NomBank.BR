@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "conjunto · acepção 1",
+      "sense_id": "s_f272063cfc988897",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f272063cfc988897",
+      "frame_id": "f_c1ca6ede6acab868",
+      "pt_roleset": null,
+      "sense_label": "conjunto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "set.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/set.xml",
+          "source_xml_url": "data/nombank_sources/set.xml",
+          "source_xml_sha256": "e0e19fe40a56d1b81c0fd94229a8dae801ef8f7ec0926f0e93b9a0475c977aa4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Conjunto quantificado",
+          "definition": "Quantified/descriptor membros/classe identificados, sem apposição do mesmo grupo automaticamente membros.",
+          "desc_pt": "Conjunto quantificado",
+          "definition_pt": "Quantified/descriptor membros/classe identificados, sem apposição do mesmo grupo automaticamente membros."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Líder ou todo do grupo",
+          "definition": "Employer/leader/member/whole expresso.",
+          "desc_pt": "Líder ou todo do grupo",
+          "definition_pt": "Employer/leader/member/whole expresso."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário do grupo",
+          "definition": "Secondary-theme explícito, sem compadrio de outra expressão nominal como lista de pessoas.",
+          "desc_pt": "Tema secundário do grupo",
+          "definition_pt": "Secondary-theme explícito, sem compadrio de outra expressão nominal como lista de pessoas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003200_SENT030::conjunto::1",
           "sent_ID": "FOLHA_DOC003200_SENT030",
           "text": "Agora, a partir daí querer montar um conjunto, uma teia de compadrio para a prática do ilícito, é uma afronta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conjunto",
             "char_start": 37,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2513,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c1ca6ede6acab868",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "conjunto · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

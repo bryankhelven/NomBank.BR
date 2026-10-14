@@ -6,24 +6,165 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "desânimo · acepção 1",
+      "sense_id": "s_2eb8addcce0534b3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2eb8addcce0534b3",
+      "frame_id": "f_fd09f1ae011de9cb",
+      "pt_roleset": null,
+      "sense_label": "desânimo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "discouragement.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/discouragement.xml",
+          "source_xml_url": "data/nombank_sources/discouragement.xml",
+          "source_xml_sha256": "c2e55602ffea4abeb5ae96ad34f001daa89bb88d87c3a4dd1d04391c9aee8cd0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa do desânimo",
+          "definition": "Entity removing confidence, acusação que instala estado; manter modalidade de acusação.",
+          "desc_pt": "Causa do desânimo",
+          "definition_pt": "Entity removing confidence, acusação que instala estado; manter modalidade de acusação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Quem desanima",
+          "definition": "Entity discouraged, incluindo coletivo político por metonímia documentada.",
+          "desc_pt": "Quem desanima",
+          "definition_pt": "Entity discouraged, incluindo coletivo político por metonímia documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atividade abandonada",
+          "definition": "Discouraged from expresso, não atividade inferida pelo partido.",
+          "desc_pt": "Atividade abandonada",
+          "definition_pt": "Discouraged from expresso, não atividade inferida pelo partido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004109_SENT014::desânimo::1",
           "sent_ID": "FOLHA_DOC004109_SENT014",
           "text": "As novas acusações ainda precisam ser comprovadas, mas já instalaram um clima de desânimo no petismo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desânimo",
             "char_start": 81,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "As novas acusações",
+            "Arg1": "no petismo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 90,
+                "char_end": 100
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6199,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fd09f1ae011de9cb",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 18,
+                    "head_token_id": 3,
+                    "head_form": "acusações",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 90,
+                    "char_end": 100,
+                    "head_token_id": 18,
+                    "head_form": "petismo",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "desânimo · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,66 +6,330 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "estresse · acepção 1",
+      "sense_id": "s_7ff06b92362988a9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7ff06b92362988a9",
+      "frame_id": "f_74ab2e73c4baee1a",
+      "pt_roleset": null,
+      "sense_label": "estresse · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "stress.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/stress.xml",
+          "source_xml_url": "data/nombank_sources/stress.xml",
+          "source_xml_sha256": "f43d316b3bf03b62910f51ca775e3c804ccc19efae7bddc816231901b2e0e0b7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador",
+          "definition": "Quem sofre estresse; organismo/corpo como portador é extensão fisiológica local.",
+          "desc_pt": "Experienciador",
+          "definition_pt": "Quem sofre estresse; organismo/corpo como portador é extensão fisiológica local."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema ou fator de preocupação",
+          "definition": "Aquilo explicitamente causador/tema do estresse, como choices causing stress no original.",
+          "desc_pt": "Tema ou fator de preocupação",
+          "definition_pt": "Aquilo explicitamente causador/tema do estresse, como choices causing stress no original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003205_SENT015::estresse::1",
           "sent_ID": "FOLHA_DOC003205_SENT015",
           "text": "Dugarte diz que as separações de casais pela migração forçada de um ou outro tem causado ainda mais estresse nas relações.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "estresse",
             "char_start": 100,
             "char_end": 108
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "as separações de casais pela migração forçada de um ou outro"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 16,
+                "char_end": 76
+              }
+            ]
+          },
+          "target_instance_id": 9612,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_74ab2e73c4baee1a",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 100,
+                "char_end": 108
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 16,
+                    "char_end": 76,
+                    "head_token_id": 5,
+                    "head_form": "separações",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003178_SENT023::estresse::1",
           "sent_ID": "FOLHA_DOC003178_SENT023",
           "text": "Os ataques de pânico e as crises de ansiedade são apenas uma resposta do corpo a essa situação de absoluto estresse, é natural.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "estresse",
             "char_start": 107,
             "char_end": 115
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do corpo",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 70,
+                "char_end": 78
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 11031,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_74ab2e73c4baee1a",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 107,
+                "char_end": 115
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 70,
+                    "char_end": 78,
+                    "head_token_id": 16,
+                    "head_form": "corpo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000237_SENT005::estresse::1",
           "sent_ID": "FOLHA_DOC000237_SENT005",
           "text": "A primeira aponta para o efeito que a interação com os animais exerce sobre nosso sistema endócrino: tê-los por perto e gozar do carinho que eles nos dão reduz a liberação dos hormônios do estresse (que também levam à hipertensão e à imunossupressão) e aumenta a produção e a descarga dos mediadores químicos responsáveis pela sensação de prazer e felicidade, como serotonina, dopamina e ocitocina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "estresse",
             "char_start": 189,
             "char_end": 197
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 11793,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_74ab2e73c4baee1a",
+          "argument_details": {
+            "predicate_token_ids": [
+              40
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 189,
+                "char_end": 197
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003207_SENT028::estresse::1",
           "sent_ID": "FOLHA_DOC003207_SENT028",
           "text": "No entanto, o estresse do cobrador durante o jogo e o fato dos goleiros estarem cada vez mais analisando as cobranças, certamente, aumenta a chance de defesa, diz o pesquisador.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "estresse",
             "char_start": 14,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do cobrador",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 23,
+                "char_end": 34
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 14606,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_74ab2e73c4baee1a",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 23,
+                    "char_end": 34,
+                    "head_token_id": 9,
+                    "head_form": "cobrador",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "estresse · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

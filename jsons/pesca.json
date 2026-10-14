@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "pesca · acepção 1",
+      "sense_id": "s_19ddb64dea5030d7",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_19ddb64dea5030d7",
+      "frame_id": "f_89ca1ea28a26641f",
+      "pt_roleset": null,
+      "sense_label": "pesca · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fishing.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fishing.xml",
+          "source_xml_url": "data/nombank_sources/fishing.xml",
+          "source_xml_sha256": "191db8685415d8451c1a45e5f0558defca56c1152415202183c25d615c6e56b5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Pescador",
+          "definition": "Fisherman que retira peixes da água, sem tripulação incluída no pacote necessariamente.",
+          "desc_pt": "Pescador",
+          "definition_pt": "Fisherman que retira peixes da água, sem tripulação incluída no pacote necessariamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Peixe pescado",
+          "definition": "Fish expresso, sem equipamento em slot instrumental que não existe na fonte.",
+          "desc_pt": "Peixe pescado",
+          "definition_pt": "Fish expresso, sem equipamento em slot instrumental que não existe na fonte."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004107_SENT055::pesca::1",
           "sent_ID": "FOLHA_DOC004107_SENT055",
           "text": "Inclui tripulação, almoços, lanches, bar, equipamento de mergulho e de pesca.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pesca",
             "char_start": 71,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 11191,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_89ca1ea28a26641f",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "pesca · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

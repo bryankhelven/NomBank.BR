@@ -6,90 +6,653 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003056_SENT006::ida::1",
-          "sent_ID": "FOLHA_DOC003056_SENT006",
-          "text": "O presidente peruano, Pedro Pablo Kuczynski, cancelou sua ida a Nova York, onde participaria do jantar, por causa da crise política em seu país.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ida",
-            "char_start": 58,
-            "char_end": 61
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003060_SENT023::ida::1",
-          "sent_ID": "FOLHA_DOC003060_SENT023",
-          "text": "O presidente peruano, Pedro Pablo Kuczynski, cancelou sua ida a Nova York, onde participaria do jantar, por causa da crise política em seu país.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ida",
-            "char_start": 58,
-            "char_end": 61
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "ida · acepção 1"
+      "sense_label": "ida · acepção 1",
+      "sense_id": "s_976a759ed64cfc1e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "ida · acepção 2",
+      "sense_id": "s_5b2953e0bbbc0435",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_976a759ed64cfc1e",
+      "frame_id": "f_a3cd85be409fd69b",
+      "pt_roleset": null,
+      "sense_label": "ida · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "trip.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/trip.xml",
+          "source_xml_url": "data/nombank_sources/trip.xml",
+          "source_xml_sha256": "3f0ff254bd66c190fc5cc548cb1afde31360ee68b14b3e400ec227630a9dc011",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante",
+          "definition": "Entidade que percorre a ida/viagem; equipe ou transferência institucional são adaptações locais.",
+          "desc_pt": "Viajante",
+          "definition_pt": "Entidade que percorre a ida/viagem; equipe ou transferência institucional são adaptações locais."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destino ou percurso",
+          "definition": "Lugar ou percurso para onde se vai; destino institucional/esportivo é adaptação explícita.",
+          "desc_pt": "Destino ou percurso",
+          "definition_pt": "Lugar ou percurso para onde se vai; destino institucional/esportivo é adaptação explícita."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem",
+          "definition": "Ponto de partida explicitamente relacionado à viagem.",
+          "desc_pt": "Origem",
+          "definition_pt": "Ponto de partida explicitamente relacionado à viagem."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003056_SENT006::ida::1",
+          "sent_ID": "FOLHA_DOC003056_SENT006",
+          "text": "O presidente peruano, Pedro Pablo Kuczynski, cancelou sua ida a Nova York, onde participaria do jantar, por causa da crise política em seu país.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ida",
+            "char_start": 58,
+            "char_end": 61
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": "a Nova York",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 54,
+                "char_end": 57
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 62,
+                "char_end": 73
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2790,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3cd85be409fd69b",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 54,
+                    "char_end": 57,
+                    "head_token_id": 10,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 62,
+                    "char_end": 73,
+                    "head_token_id": 13,
+                    "head_form": "Nova",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003060_SENT023::ida::1",
+          "sent_ID": "FOLHA_DOC003060_SENT023",
+          "text": "O presidente peruano, Pedro Pablo Kuczynski, cancelou sua ida a Nova York, onde participaria do jantar, por causa da crise política em seu país.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ida",
+            "char_start": 58,
+            "char_end": 61
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": "a Nova York",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 54,
+                "char_end": 57
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 62,
+                "char_end": 73
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5919,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3cd85be409fd69b",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 54,
+                    "char_end": 57,
+                    "head_token_id": 10,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 62,
+                    "char_end": 73,
+                    "head_token_id": 13,
+                    "head_form": "Nova",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_5b2953e0bbbc0435",
+      "frame_id": "f_34da6d42e2796051",
+      "pt_roleset": null,
+      "sense_label": "ida · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "trip.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/trip.xml",
+          "source_xml_url": "data/nombank_sources/trip.xml",
+          "source_xml_sha256": "3f0ff254bd66c190fc5cc548cb1afde31360ee68b14b3e400ec227630a9dc011",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante",
+          "definition": "Entidade que percorre a ida/viagem; equipe ou transferência institucional são adaptações locais.",
+          "desc_pt": "Viajante",
+          "definition_pt": "Entidade que percorre a ida/viagem; equipe ou transferência institucional são adaptações locais."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destino ou percurso",
+          "definition": "Lugar ou percurso para onde se vai; destino institucional/esportivo é adaptação explícita.",
+          "desc_pt": "Destino ou percurso",
+          "definition_pt": "Lugar ou percurso para onde se vai; destino institucional/esportivo é adaptação explícita."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem",
+          "definition": "Ponto de partida explicitamente relacionado à viagem.",
+          "desc_pt": "Origem",
+          "definition_pt": "Ponto de partida explicitamente relacionado à viagem."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000086_SENT002::ida::1",
           "sent_ID": "FOLHA_DOC000086_SENT002",
           "text": "Alemanha, Espanha e Inglaterra são três campeãs com a ida assegurada para a Copa de 2018.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ida",
             "char_start": 54,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Alemanha, Espanha e Inglaterra",
+            "Arg1": "para a Copa de 2018",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 30
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 88
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6791,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_34da6d42e2796051",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 30,
+                    "head_token_id": 1,
+                    "head_form": "Alemanha",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 69,
+                    "char_end": 88,
+                    "head_token_id": 15,
+                    "head_form": "Copa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003098_SENT014::ida::1",
           "sent_ID": "FOLHA_DOC003098_SENT014",
           "text": "Durante as tratativas para a possível ida ao clube catalão, o atleta não entrou em campo alegando dores nas costas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ida",
             "char_start": 38,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o atleta",
+            "Arg1": "ao clube catalão",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 60,
+                "char_end": 68
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 42,
+                "char_end": 58
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9298,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_34da6d42e2796051",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 60,
+                    "char_end": 68,
+                    "head_token_id": 14,
+                    "head_form": "atleta",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 42,
+                    "char_end": 58,
+                    "head_token_id": 10,
+                    "head_form": "clube",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
         },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_5b2953e0bbbc0435",
+      "frame_id": "f_a5d1d6d71f17c6ff",
+      "pt_roleset": null,
+      "sense_label": "ida · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "journey.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/journey.xml",
+          "source_xml_url": "data/nombank_sources/journey.xml",
+          "source_xml_sha256": "b6bd66d87c55af5e7a9667bb982bc957e2f029250fc417a63ec1f285e4bb4514",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante da ida",
+          "definition": "Traveller como Matheus cuja ida é chance esportiva projetada, papel resolvido contextualmente.",
+          "desc_pt": "Viajante da ida",
+          "definition_pt": "Traveller como Matheus cuja ida é chance esportiva projetada, papel resolvido contextualmente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destino da ida",
+          "definition": "Destination/path como Portugal, não domínio esporte como destino adicional.",
+          "desc_pt": "Destino da ida",
+          "definition_pt": "Destination/path como Portugal, não domínio esporte como destino adicional."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC002034_SENT009::ida::1",
           "sent_ID": "FOLHA_DOC002034_SENT009",
           "text": "A ida para Portugal poderia ser uma espécie de última grande chance no esporte para Matheus.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ida",
             "char_start": 2,
             "char_end": 5
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "para Matheus",
+            "Arg1": "para Portugal"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 79,
+                "char_end": 91
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 6,
+                "char_end": 19
+              }
+            ]
+          },
+          "target_instance_id": 10480,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a5d1d6d71f17c6ff",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 5
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17
+                    ],
+                    "char_start": 79,
+                    "char_end": 91,
+                    "head_token_id": 17,
+                    "head_form": "Matheus",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 6,
+                    "char_end": 19,
+                    "head_token_id": 4,
+                    "head_form": "Portugal",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "ida · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,76 +6,429 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004086_SENT008::mergulho::1",
-          "sent_ID": "FOLHA_DOC004086_SENT008",
-          "text": "\"É um luxo estar a essa hora aqui tomando sol e dando mergulhos nessa água gostosa\", afirma.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "mergulhos",
-            "char_start": 54,
-            "char_end": 63
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004107_SENT055::mergulho::1",
-          "sent_ID": "FOLHA_DOC004107_SENT055",
-          "text": "Inclui tripulação, almoços, lanches, bar, equipamento de mergulho e de pesca.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "mergulho",
-            "char_start": 57,
-            "char_end": 65
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004090_SENT033::mergulho::1",
-          "sent_ID": "FOLHA_DOC004090_SENT033",
-          "text": "Mas, se a irritação bater, é só dar um mergulho que passa.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "mergulho",
-            "char_start": 39,
-            "char_end": 47
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "mergulho · acepção 1"
+      "sense_label": "mergulho · acepção 1",
+      "sense_id": "s_57416f6ff6c37fe6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "mergulho · acepção 2",
+      "sense_id": "s_4a592cf6ae91fbec",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_57416f6ff6c37fe6",
+      "frame_id": "f_4dd2b88c4b00965b",
+      "pt_roleset": null,
+      "sense_label": "mergulho · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dive.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dive.xml",
+          "source_xml_url": "data/nombank_sources/dive.xml",
+          "source_xml_sha256": "038ceeb872d7aa1ebd93795ba15118b9abcc8f2f576a5831db42f1455aee5bbb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Mergulhador",
+          "definition": "Quem mergulha.",
+          "desc_pt": "Mergulhador",
+          "definition_pt": "Quem mergulha."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Área de imersão",
+          "definition": "Área em que ocorre mergulho; aplicação física segue nome e declaração da fonte, cujo exemplo nominal é financeiro.",
+          "desc_pt": "Área de imersão",
+          "definition_pt": "Área em que ocorre mergulho; aplicação física segue nome e declaração da fonte, cujo exemplo nominal é financeiro."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Aquilo procurado",
+          "definition": "Objeto por que se mergulha, não equipamento empregado.",
+          "desc_pt": "Aquilo procurado",
+          "definition_pt": "Objeto por que se mergulha, não equipamento empregado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004086_SENT008::mergulho::1",
+          "sent_ID": "FOLHA_DOC004086_SENT008",
+          "text": "\"É um luxo estar a essa hora aqui tomando sol e dando mergulhos nessa água gostosa\", afirma.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "mergulhos",
+            "char_start": 54,
+            "char_end": 63
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nessa água gostosa",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 82
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2733,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4dd2b88c4b00965b",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 63
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 64,
+                    "char_end": 82,
+                    "head_token_id": 17,
+                    "head_form": "água",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004107_SENT055::mergulho::1",
+          "sent_ID": "FOLHA_DOC004107_SENT055",
+          "text": "Inclui tripulação, almoços, lanches, bar, equipamento de mergulho e de pesca.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "mergulho",
+            "char_start": 57,
+            "char_end": 65
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11190,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4dd2b88c4b00965b",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 65
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004090_SENT033::mergulho::1",
+          "sent_ID": "FOLHA_DOC004090_SENT033",
+          "text": "Mas, se a irritação bater, é só dar um mergulho que passa.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "mergulho",
+            "char_start": 39,
+            "char_end": 47
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14628,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4dd2b88c4b00965b",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_4a592cf6ae91fbec",
+      "frame_id": "f_fdffb52e12890382",
+      "pt_roleset": null,
+      "sense_label": "mergulho · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "study.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/study.xml",
+          "source_xml_url": "data/nombank_sources/study.xml",
+          "source_xml_sha256": "501eaf9eb105350d763a4c12945657f35c79cda9dcb5dab01087c77317b4ba90",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem estuda profundamente",
+          "definition": "Student, leitor que examinaria o texto.",
+          "desc_pt": "Quem estuda profundamente",
+          "definition_pt": "Student, leitor que examinaria o texto."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Matéria estudada",
+          "definition": "Subject, texto alvo do estudo aprofundado.",
+          "desc_pt": "Matéria estudada",
+          "definition_pt": "Subject, texto alvo do estudo aprofundado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário do estudo",
+          "definition": "Beneficiary, distinto do próprio estudioso se dito.",
+          "desc_pt": "Beneficiário do estudo",
+          "definition_pt": "Beneficiary, distinto do próprio estudioso se dito."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003213_SENT024::mergulho::1",
           "sent_ID": "FOLHA_DOC003213_SENT024",
           "text": "Não cabe nem recomendar um mergulho no texto, para o leitor aquilatar os exemplos de Gilley.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "mergulho",
             "char_start": 27,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o leitor",
+            "Arg1": "no texto",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 59
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 44
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 10632,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fdffb52e12890382",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13
+                    ],
+                    "char_start": 51,
+                    "char_end": 59,
+                    "head_token_id": 13,
+                    "head_form": "leitor",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 36,
+                    "char_end": 44,
+                    "head_token_id": 9,
+                    "head_form": "texto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "mergulho · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

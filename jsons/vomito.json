@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "vômito · acepção 1",
+      "sense_id": "s_4aa024d255fab638",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4aa024d255fab638",
+      "frame_id": "f_81b912ae1bcca815",
+      "pt_roleset": null,
+      "sense_label": "vômito · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "emission.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/emission.xml",
+          "source_xml_url": "data/nombank_sources/emission.xml",
+          "source_xml_sha256": "a7151f713b1c99d8642e4ea0c14020c02beaf66fd26b33823cd8af995ae6ccc7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade que expele",
+          "definition": "Emitting entity restrito a quem realiza expulsão gástrica, sem doença automaticamente pessoa emissora.",
+          "desc_pt": "Entidade que expele",
+          "definition_pt": "Emitting entity restrito a quem realiza expulsão gástrica, sem doença automaticamente pessoa emissora."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo expelido",
+          "definition": "Thing emitted, conteúdo gástrico se expresso em span, sem inferir da definição lexical.",
+          "desc_pt": "Conteúdo expelido",
+          "definition_pt": "Thing emitted, conteúdo gástrico se expresso em span, sem inferir da definição lexical."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004074_SENT007::vômito::1",
           "sent_ID": "FOLHA_DOC004074_SENT007",
           "text": "A doença é caracterizada pelo excesso de enjoos e vômitos, mais comuns nos três primeiros meses de gestação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "vômitos",
             "char_start": 50,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 5605,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_81b912ae1bcca815",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "vômito · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

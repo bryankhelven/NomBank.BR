@@ -6,24 +6,108 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "pausa · acepção 1",
+      "sense_id": "s_dd71b114270e2f1d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_dd71b114270e2f1d",
+      "frame_id": "f_b551147daff19649",
+      "pt_roleset": null,
+      "sense_label": "pausa · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "pause.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/pause.xml",
+          "source_xml_url": "data/nombank_sources/pause.xml",
+          "source_xml_sha256": "d2a50e3fd4c606a42c61c68d7cb6d18fde2b07bde9bf160360cb94fc8ee835bd",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Atividade pausada",
+          "definition": "Thing pausing agent/action, competição Brasileiro pela ligação retorno após pausa, como parade original; não objetivo eliminatórias ou estádio.",
+          "desc_pt": "Atividade pausada",
+          "definition_pt": "Thing pausing agent/action, competição Brasileiro pela ligação retorno após pausa, como parade original; não objetivo eliminatórias ou estádio."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003159_SENT028::pausa::1",
           "sent_ID": "FOLHA_DOC003159_SENT028",
           "text": "No Morumbi, havia grande expectativa por resultados positivos contra Ponte Preta e Vitória, no retorno ao Brasileiro após pausa para disputa das eliminatórias para a Copa do Mundo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pausa",
             "char_start": 122,
             "char_end": 127
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ao Brasileiro"
+          },
+          "syntax": {
+            "Arg0": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 103,
+                "char_end": 116
+              }
+            ]
+          },
+          "target_instance_id": 4898,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b551147daff19649",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 122,
+                "char_end": 127
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 103,
+                    "char_end": 116,
+                    "head_token_id": 22,
+                    "head_form": "Brasileiro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "pausa · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1
+        }
+      }
     }
   ]
 }

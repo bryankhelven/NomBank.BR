@@ -6,24 +6,176 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reivindicação · acepção 1",
+      "sense_id": "s_47be243c387c97e5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_47be243c387c97e5",
+      "frame_id": "f_056a272d57e64235",
+      "pt_roleset": null,
+      "sense_label": "reivindicação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "demand.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/demand.xml",
+          "source_xml_url": "data/nombank_sources/demand.xml",
+          "source_xml_sha256": "7eeedad5e334eaf9db8700d4d90393e2bd86cf56cca7d1322ac865810e4de0a6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Reivindicante",
+          "definition": "Asker do pedido como setores da indústria.",
+          "desc_pt": "Reivindicante",
+          "definition_pt": "Asker do pedido como setores da indústria."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto reivindicado",
+          "definition": "Favor/acordo pretendido com redução de tarifas integral, sem resultado alcançado afirmado.",
+          "desc_pt": "Objeto reivindicado",
+          "definition_pt": "Favor/acordo pretendido com redução de tarifas integral, sem resultado alcançado afirmado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da reivindicação",
+          "definition": "Hearer explícito, sem governo/órgão elípticos inventados.",
+          "desc_pt": "Destinatário da reivindicação",
+          "definition_pt": "Hearer explícito, sem governo/órgão elípticos inventados."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003186_SENT012::reivindicação::1",
           "sent_ID": "FOLHA_DOC003186_SENT012",
           "text": "Um acordo de liberalização comercial, com redução de tarifas, reivindicação de alguns setores da indústria brasileira, tampouco está no horizonte.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reivindicação",
             "char_start": 62,
             "char_end": 75
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de alguns setores da indústria brasileira",
+            "Arg1": "Um acordo de liberalização comercial, com redução de tarifas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 76,
+                "char_end": 117
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 60
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1756,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_056a272d57e64235",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 75
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 76,
+                    "char_end": 117,
+                    "head_token_id": 15,
+                    "head_form": "setores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 0,
+                    "char_end": 60,
+                    "head_token_id": 2,
+                    "head_form": "acordo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reivindicação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,206 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "questionário · acepção 1",
+      "sense_id": "s_6a9d8f7a95e689cb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6a9d8f7a95e689cb",
+      "frame_id": "f_dbf868fa549b8f56",
+      "pt_roleset": null,
+      "sense_label": "questionário · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "survey.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/survey.xml",
+          "source_xml_url": "data/nombank_sources/survey.xml",
+          "source_xml_sha256": "170f439ddc390ecf5536b6f1177b77087ee04958e1cd1952ad1090984afd36e1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do questionário",
+          "definition": "Agent que desenvolve instrumento de levantamento, colaboração das garotas.",
+          "desc_pt": "Autor do questionário",
+          "definition_pt": "Agent que desenvolve instrumento de levantamento, colaboração das garotas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Assunto investigado",
+          "definition": "Theme n1/source2 literal, merenda.",
+          "desc_pt": "Assunto investigado",
+          "definition_pt": "Theme n1/source2 literal, merenda."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Respondente",
+          "definition": "Hearer n2/source1 literal, alunos consultados.",
+          "desc_pt": "Respondente",
+          "definition_pt": "Hearer n2/source1 literal, alunos consultados."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Beneficiário da pesquisa",
+          "definition": "Beneficiary expresso, não aplicativo como beneficiário.",
+          "desc_pt": "Beneficiário da pesquisa",
+          "definition_pt": "Beneficiary expresso, não aplicativo como beneficiário."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003043_SENT026::questionário::1",
           "sent_ID": "FOLHA_DOC003043_SENT026",
           "text": "Segundo ela, as garotas ajudaram a desenvolver um questionário sobre a merenda que será respondido pelos alunos por meio do aplicativo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "questionário",
             "char_start": 50,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "as garotas",
+            "Arg1": "sobre a merenda",
+            "Arg2": "pelos alunos",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": "obl:agent",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 13,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 78
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 99,
+                "char_end": 111
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 15150,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dbf868fa549b8f56",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 13,
+                    "char_end": 23,
+                    "head_token_id": 5,
+                    "head_form": "garotas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 63,
+                    "char_end": 78,
+                    "head_token_id": 13,
+                    "head_form": "merenda",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 99,
+                    "char_end": 111,
+                    "head_token_id": 19,
+                    "head_form": "alunos",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "questionário · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "obl:agent": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

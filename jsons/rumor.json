@@ -6,23 +6,128 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_4598315dbe1e2c8a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4598315dbe1e2c8a",
+      "frame_id": "f_d7a570d29301c7fc",
+      "pt_roleset": "rumor.02",
+      "sense_label": "rumor.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rumor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rumor.xml",
+          "source_xml_url": "data/nombank_sources/rumor.xml",
+          "source_xml_sha256": "97c135c7dddf5c43b17c58594d9d1c8b89c07a51de71228be70b4e8d81a1707e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fonte do boato",
+          "definition": "Agent originador, sem falência contextual automaticamente emissora.",
+          "desc_pt": "Fonte do boato",
+          "definition_pt": "Agent originador, sem falência contextual automaticamente emissora."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo do boato",
+          "definition": "Theme proposicional integral sob condicional, não perda de fato comprovada.",
+          "desc_pt": "Conteúdo do boato",
+          "definition_pt": "Theme proposicional integral sob condicional, não perda de fato comprovada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004096_SENT025::rumor::1",
           "sent_ID": "FOLHA_DOC004096_SENT025",
           "text": "Com a quebra do Lehman Brothers, surgiram rumores de que teria perdido dinheiro com derivativos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rumores",
             "char_start": 42,
             "char_end": 49
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de que teria perdido dinheiro com derivativos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 50,
+                "char_end": 95
+              }
+            ]
+          },
+          "target_instance_id": 2761,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7a570d29301c7fc",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 49
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 50,
+                    "char_end": 95,
+                    "head_token_id": 14,
+                    "head_form": "perdido",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

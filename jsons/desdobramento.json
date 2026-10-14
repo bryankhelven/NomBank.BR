@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "desdobramento · acepção 1",
+      "sense_id": "s_ecfb068d4b4679fd",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ecfb068d4b4679fd",
+      "frame_id": "f_19c02d23fe3f8962",
+      "pt_roleset": null,
+      "sense_label": "desdobramento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "development.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/development.xml",
+          "source_xml_url": "data/nombank_sources/development.xml",
+          "source_xml_sha256": "9b8228cdde04ba3d0e786308a1e2ded8c1300dba2704ad0cb5a617ff4c36087e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Desdobramento emergente",
+          "definition": "Non-intentional theme cognitivamente caracterizado, cognitivos adjetival como bearish developments original, restrição a consequências/desenvolvimentos que surgem.",
+          "desc_pt": "Desdobramento emergente",
+          "definition_pt": "Non-intentional theme cognitivamente caracterizado, cognitivos adjetival como bearish developments original, restrição a consequências/desenvolvimentos que surgem."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Entidade em que se desenvolve",
+          "definition": "Thing developed/locus do desenvolvimento quando expresso, sem poder causal como agente0 inexistente.",
+          "desc_pt": "Entidade em que se desenvolve",
+          "definition_pt": "Thing developed/locus do desenvolvimento quando expresso, sem poder causal como agente0 inexistente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003025_SENT028::desdobramento::1",
           "sent_ID": "FOLHA_DOC003025_SENT028",
           "text": "Um poder vitalício facilmente produz certos desdobramentos cognitivos (podemos discutir os morais, mas não é o caso aqui).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desdobramentos",
             "char_start": 44,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "cognitivos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 69
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2104,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_19c02d23fe3f8962",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 59,
+                    "char_end": 69,
+                    "head_token_id": 8,
+                    "head_form": "cognitivos",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "desdobramento · acepção 1"
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

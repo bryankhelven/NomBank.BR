@@ -6,24 +6,138 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "condescendência · acepção 1",
+      "sense_id": "s_30defb5b17c8759c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_30defb5b17c8759c",
+      "frame_id": "f_8bf8a8563ed80c9f",
+      "pt_roleset": null,
+      "sense_label": "condescendência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "tolerance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/tolerance.xml",
+          "source_xml_url": "data/nombank_sources/tolerance.xml",
+          "source_xml_sha256": "4fafe62223b6f9c1fed12f07ceb159097fbbd2f669d00896225b094d52adc46d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da tolerância",
+          "definition": "Tolerater de complacência/condescendência permissiva frozen, não olhar superior/auto-satisfação.",
+          "desc_pt": "Titular da tolerância",
+          "definition_pt": "Tolerater de complacência/condescendência permissiva frozen, não olhar superior/auto-satisfação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa ou pessoa tolerada",
+          "definition": "Thing tolerated incluindo pessoa como narcotraficantes original; sem tolerar efetivamente quando negado.",
+          "desc_pt": "Coisa ou pessoa tolerada",
+          "definition_pt": "Thing tolerated incluindo pessoa como narcotraficantes original; sem tolerar efetivamente quando negado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003187_SENT019::condescendência::1",
           "sent_ID": "FOLHA_DOC003187_SENT019",
           "text": "Ladrão do erário, que leva pessoas à morte em decorrência da corrupção, merece cadeia, e não condescendência.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "condescendência",
             "char_start": 93,
             "char_end": 108
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Ladrão do erário, que leva pessoas à morte em decorrência da corrupção"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 70
+              }
+            ]
+          },
+          "target_instance_id": 14789,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8bf8a8563ed80c9f",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 93,
+                "char_end": 108
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 0,
+                    "char_end": 70,
+                    "head_token_id": 1,
+                    "head_form": "Ladrão",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "condescendência · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "perdão · acepção 1",
+      "sense_id": "s_7399be51c8d9c304",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7399be51c8d9c304",
+      "frame_id": "f_f05e7af31bb5812a",
+      "pt_roleset": null,
+      "sense_label": "perdão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "excuse.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/excuse.xml",
+          "source_xml_url": "data/nombank_sources/excuse.xml",
+          "source_xml_sha256": "b504f5510efe30b09ef46d4106fd0a11eee8119949f57752ebb620a4ec4b3ba5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Justificativa causadora",
+          "definition": "Agent/motivo que permite desculpar como earthquake original, sem justificativa futura necessariamente aceita.",
+          "desc_pt": "Justificativa causadora",
+          "definition_pt": "Agent/motivo que permite desculpar como earthquake original, sem justificativa futura necessariamente aceita."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação desculpada",
+          "definition": "Action n1/source2, falha específica nomeada.",
+          "desc_pt": "Ação desculpada",
+          "definition_pt": "Action n1/source2, falha específica nomeada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parte desculpada",
+          "definition": "Recipient n2/source1, auxiliar sob não tem perdão/desculpa, sem perdoador moral imposto.",
+          "desc_pt": "Parte desculpada",
+          "definition_pt": "Recipient n2/source1, auxiliar sob não tem perdão/desculpa, sem perdoador moral imposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003048_SENT011::perdão::1",
           "sent_ID": "FOLHA_DOC003048_SENT011",
           "text": "Seu auxiliar, atrás do gol, no entanto, não tem justificativa, não tem desculpa, não tem perdão, embora provavelmente vá justificar que a trave atrapalhou sua visão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "perdão",
             "char_start": 89,
             "char_end": 95
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Seu auxiliar"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 12
+              }
+            ]
+          },
+          "target_instance_id": 11907,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f05e7af31bb5812a",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 89,
+                "char_end": 95
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 12,
+                    "head_token_id": 2,
+                    "head_form": "auxiliar",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "perdão · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,12 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000162_SENT024::promoção::1",
-          "sent_ID": "FOLHA_DOC000162_SENT024",
-          "text": "Para isso, vale uma repaginada arquitetônica e o investimento na promoção de artes.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "promoção",
-            "char_start": 65,
-            "char_end": 73
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "promoção · acepção 1"
+      "sense_label": "promoção · acepção 1",
+      "sense_id": "s_3375246e84fd6739",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
@@ -31,20 +19,6 @@
       "origin_frames": [],
       "roles": null,
       "instances": [
-        {
-          "instance_id": "FOLHA_DOC003198_SENT003::promoção::1",
-          "sent_ID": "FOLHA_DOC003198_SENT003",
-          "text": "Nas últimas semanas, a rede Extra destacou peças de contrafilé e alcatra Friboi em seu encarte com anúncios de promoções.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "promoções",
-            "char_start": 111,
-            "char_end": 120
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
         {
           "instance_id": "FOLHA_DOC003198_SENT011::promoção::1",
           "sent_ID": "FOLHA_DOC003198_SENT011",
@@ -57,11 +31,315 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 13645,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 115,
+                "char_end": 124
+              }
+            ],
+            "arguments": []
+          }
         }
       ],
       "syntactic_profile": {},
-      "sense_label": "promoção · acepção 2"
+      "sense_label": "promoção · acepção 2",
+      "sense_id": "s_26d281bb4c4ac4de",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3375246e84fd6739",
+      "frame_id": "f_b67951a8998a6bb8",
+      "pt_roleset": null,
+      "sense_label": "promoção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "promotion.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/promotion.xml",
+          "source_xml_url": "data/nombank_sources/promotion.xml",
+          "source_xml_sha256": "233444651b57518639094e975de3180bfb4917108ba11e524d30899fefaa53a1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Promotor publicitário",
+          "definition": "Quem faz campanha/realce público, não quem consulta interesse ou confecciona canal por default.",
+          "desc_pt": "Promotor publicitário",
+          "definition_pt": "Quem faz campanha/realce público, não quem consulta interesse ou confecciona canal por default."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa publicizada",
+          "definition": "Produto/arte divulgado, sem desconto ou posto promovido inferidos.",
+          "desc_pt": "Coisa publicizada",
+          "definition_pt": "Produto/arte divulgado, sem desconto ou posto promovido inferidos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Audiência",
+          "definition": "A quem campanha se dirige, distinta do encarte canal.",
+          "desc_pt": "Audiência",
+          "definition_pt": "A quem campanha se dirige, distinta do encarte canal."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000162_SENT024::promoção::1",
+          "sent_ID": "FOLHA_DOC000162_SENT024",
+          "text": "Para isso, vale uma repaginada arquitetônica e o investimento na promoção de artes.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "promoção",
+            "char_start": 65,
+            "char_end": 73
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de artes",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 74,
+                "char_end": 82
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 11765,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b67951a8998a6bb8",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 74,
+                    "char_end": 82,
+                    "head_token_id": 15,
+                    "head_form": "artes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_26d281bb4c4ac4de",
+      "frame_id": "f_2cce7b4ce294e11a",
+      "pt_roleset": null,
+      "sense_label": "promoção · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "promotion.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/promotion.xml",
+          "source_xml_url": "data/nombank_sources/promotion.xml",
+          "source_xml_sha256": "233444651b57518639094e975de3180bfb4917108ba11e524d30899fefaa53a1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Promotor publicitário",
+          "definition": "Quem faz campanha/realce público, não quem consulta interesse ou confecciona canal por default.",
+          "desc_pt": "Promotor publicitário",
+          "definition_pt": "Quem faz campanha/realce público, não quem consulta interesse ou confecciona canal por default."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa publicizada",
+          "definition": "Produto/arte divulgado, sem desconto ou posto promovido inferidos.",
+          "desc_pt": "Coisa publicizada",
+          "definition_pt": "Produto/arte divulgado, sem desconto ou posto promovido inferidos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Audiência",
+          "definition": "A quem campanha se dirige, distinta do encarte canal.",
+          "desc_pt": "Audiência",
+          "definition_pt": "A quem campanha se dirige, distinta do encarte canal."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003198_SENT003::promoção::1",
+          "sent_ID": "FOLHA_DOC003198_SENT003",
+          "text": "Nas últimas semanas, a rede Extra destacou peças de contrafilé e alcatra Friboi em seu encarte com anúncios de promoções.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "promoções",
+            "char_start": 111,
+            "char_end": 120
+          },
+          "realization": {
+            "Arg0": "a rede Extra",
+            "Arg1": "peças de contrafilé e alcatra Friboi",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 21,
+                "char_end": 33
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 43,
+                "char_end": 79
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12284,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2cce7b4ce294e11a",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 111,
+                "char_end": 120
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 21,
+                    "char_end": 33,
+                    "head_token_id": 7,
+                    "head_form": "rede",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 43,
+                    "char_end": 79,
+                    "head_token_id": 10,
+                    "head_form": "peças",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

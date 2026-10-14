@@ -6,24 +6,134 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "deportação · acepção 1",
+      "sense_id": "s_558a1537a45c8f45",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_558a1537a45c8f45",
+      "frame_id": "f_f92d858595ac62a2",
+      "pt_roleset": null,
+      "sense_label": "deportação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "deportation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/deportation.xml",
+          "source_xml_url": "data/nombank_sources/deportation.xml",
+          "source_xml_sha256": "fd20fc4eb2e316e64df9dfba9fb57b1421ae89acdc85319260506653717ad8d2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Deportador",
+          "definition": "Causer que expulsa do país.",
+          "desc_pt": "Deportador",
+          "definition_pt": "Causer que expulsa do país."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade deportada",
+          "definition": "Pessoa/coletivo expulso, não vizinho de situação mudada automaticamente.",
+          "desc_pt": "Entidade deportada",
+          "definition_pt": "Pessoa/coletivo expulso, não vizinho de situação mudada automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino da deportação",
+          "definition": "Goal explícito.",
+          "desc_pt": "Destino da deportação",
+          "definition_pt": "Goal explícito."
+        },
+        {
+          "id": "Arg3",
+          "desc": "País de origem da deportação",
+          "definition": "Country deported from n3/source2 literal, sem lado de ocorrência convertido em origem por preposição.",
+          "desc_pt": "País de origem da deportação",
+          "definition_pt": "Country deported from n3/source2 literal, sem lado de ocorrência convertido em origem por preposição."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003131_SENT016::deportação::1",
           "sent_ID": "FOLHA_DOC003131_SENT016",
           "text": "Pelo mesmo motivo, diz Fontanini, subiram as deportações do lado mexicano e mudou a situação de um vizinho.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "deportações",
             "char_start": 45,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 3731,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f92d858595ac62a2",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "deportação · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

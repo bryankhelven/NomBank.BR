@@ -6,23 +6,146 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_9019d0d0ccbbaddd",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9019d0d0ccbbaddd",
+      "frame_id": "f_b9efd9d2fdbcfccd",
+      "pt_roleset": "fôlego.06",
+      "sense_label": "fôlego.06",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "capacity.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/capacity.xml",
+          "source_xml_url": "data/nombank_sources/capacity.xml",
+          "source_xml_sha256": "77aba3df48a5723c4b95417eab2b4f6b0d67121d5a3107f810079b54d373325f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular do fôlego",
+          "definition": "Agent com poder/capacidade frozen, não respirador literal.",
+          "desc_pt": "Titular do fôlego",
+          "definition_pt": "Agent com poder/capacidade frozen, não respirador literal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação possibilitada",
+          "definition": "Action como vencer eleição inteira sob teria/não convencer, sem vitória atual presumida.",
+          "desc_pt": "Ação possibilitada",
+          "definition_pt": "Action como vencer eleição inteira sob teria/não convencer, sem vitória atual presumida."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004020_SENT022::fôlego::1",
           "sent_ID": "FOLHA_DOC004020_SENT022",
           "text": "Por outro lado, Alckmin ainda não conseguiu convencer os partidos aliados de que teria fôlego para vencer a eleição presidencial.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fôlego",
             "char_start": 87,
             "char_end": 93
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Alckmin",
+            "Arg1": "para vencer a eleição presidencial"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "advcl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 94,
+                "char_end": 128
+              }
+            ]
+          },
+          "target_instance_id": 5446,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b9efd9d2fdbcfccd",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 87,
+                "char_end": 93
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 16,
+                    "char_end": 23,
+                    "head_token_id": 5,
+                    "head_form": "Alckmin",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 94,
+                    "char_end": 128,
+                    "head_token_id": 18,
+                    "head_form": "vencer",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

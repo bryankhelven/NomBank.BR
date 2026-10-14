@@ -6,52 +6,337 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cheiro · acepção 1",
+      "sense_id": "s_eedcb612465d9ec1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_eedcb612465d9ec1",
+      "frame_id": "f_37c7e1f940718ef5",
+      "pt_roleset": null,
+      "sense_label": "cheiro · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "scent.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/scent.xml",
+          "source_xml_url": "data/nombank_sources/scent.xml",
+          "source_xml_sha256": "1761a92b1a652f9cc872ec0d46db663e8abca0e7dea43dd6dd4434049fa2a58e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Fonte odorante",
+          "definition": "Entidade que produz odor, sem material de analogia confundido com fonte real.",
+          "desc_pt": "Fonte odorante",
+          "definition_pt": "Entidade que produz odor, sem material de analogia confundido com fonte real."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualidade do odor",
+          "definition": "Atributo olfativo; extensão de lavender/mint scents à impressão de borracha queimada.",
+          "desc_pt": "Qualidade do odor",
+          "definition_pt": "Atributo olfativo; extensão de lavender/mint scents à impressão de borracha queimada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003124_SENT042::cheiro::1",
           "sent_ID": "FOLHA_DOC003124_SENT042",
           "text": "Teve até congresso em Londres para discutir o que fazer com o cheiro de borracha queimada que a uva costuma produzir (além dos vinhos pouco convincentes).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cheiro",
             "char_start": 62,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "a uva",
+            "Arg2": "de borracha queimada"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 94,
+                "char_end": 99
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 69,
+                "char_end": 89
+              }
+            ]
+          },
+          "target_instance_id": 6624,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_37c7e1f940718ef5",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19
+                    ],
+                    "char_start": 94,
+                    "char_end": 99,
+                    "head_token_id": 19,
+                    "head_form": "uva",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 69,
+                    "char_end": 89,
+                    "head_token_id": 15,
+                    "head_form": "borracha",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
         },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_eedcb612465d9ec1",
+      "frame_id": "f_c4e498c4942ff05a",
+      "pt_roleset": null,
+      "sense_label": "cheiro · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "smell.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/smell.xml",
+          "source_xml_url": "data/nombank_sources/smell.xml",
+          "source_xml_sha256": "7c7b8bafb7686a59208e6500fd8ce0fabd57264befc345cb4ee840063e94c4e2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Entidade odorante",
+          "definition": "Fonte de cheiro, como livro novo; não recipiente ou conteúdo de outro verbo por inferência.",
+          "desc_pt": "Entidade odorante",
+          "definition_pt": "Fonte de cheiro, como livro novo; não recipiente ou conteúdo de outro verbo por inferência."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor odorante",
+          "definition": "Cheiro incorporado conforme REF2 original.",
+          "desc_pt": "Valor odorante",
+          "definition_pt": "Cheiro incorporado conforme REF2 original."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário",
+          "definition": "Tema secundário independente, sem ouvinte/perceptor em slot inexistente.",
+          "desc_pt": "Tema secundário",
+          "definition_pt": "Tema secundário independente, sem ouvinte/perceptor em slot inexistente."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000097_SENT055::cheiro::1",
           "sent_ID": "FOLHA_DOC000097_SENT055",
           "text": "Ler, sentir o cheiro de livro novo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cheiro",
             "char_start": 14,
             "char_end": 20
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "de livro novo",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 21,
+                "char_end": 34
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 8273,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4e498c4942ff05a",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 20
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 21,
+                    "char_end": 34,
+                    "head_token_id": 7,
+                    "head_form": "livro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003147_SENT011::cheiro::1",
           "sent_ID": "FOLHA_DOC003147_SENT011",
           "text": "Transparentes ou coloridos, leves ou pesados, flexíveis ou duros, conservam gosto, cheiro e hidratação, protegem contra insetos, dividem conteúdos em porções, são empilháveis.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cheiro",
             "char_start": 83,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 11306,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4e498c4942ff05a",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cheiro · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

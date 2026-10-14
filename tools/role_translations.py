@@ -1,0 +1,233 @@
+"""Editorial display translations; original source labels and scientific roles remain literal."""
+PAIRS = '''accessor	entidade que acessa
+action	ação
+actor2	segundo participante
+adjudicator or listener	julgador ou ouvinte
+agent	agente
+agent, causer	agente ou causador
+agent, causer of grouping	agente ou causador do agrupamento
+agent, causer of interest	agente ou causador do interesse
+agent, entity acquiring something	agente que adquire algo
+agent, entity making something be longer	agente que prolonga algo
+agent, mixer	agente que mistura
+agreement	acordo
+agreer	participante que concorda
+amount of tax	valor do imposto
+amount reduced by	quantidade reduzida
+announcer	anunciador
+anti-beneficiary	entidade prejudicada
+asker	solicitante
+attacker	atacante
+attribute	atributo
+attribute of arg1	atributo de Arg1
+attributive	atributo
+because of what	motivo
+beneficiary	beneficiário
+beneficiary or entity offered to	beneficiário ou destinatário da oferta
+beneficiary or entity proposed to	beneficiário ou destinatário da proposta
+beneficiary, hearer	beneficiário ou ouvinte
+beneficiary, licensed-to	beneficiário autorizado
+builder	construtor
+buyer	comprador
+candidate	candidato
+causer of contract	causador do contrato
+causer of knowledge	causador do conhecimento
+causer of motion	causador do movimento
+causer of transformation	causador da transformação
+claimant	reivindicante
+commodity	bem ou mercadoria
+commodity, paid for what	bem pelo qual se paga
+confirmer	entidade que confirma
+construction	construção
+contracted with	contraparte do contrato
+controlled	entidade controlada
+controller	controlador
+conversation partner, if explicit	interlocutor explicitamente expresso
+cutter	entidade que corta
+decision or attitude being shown to be right	decisão ou atitude justificada
+defendant	acusado
+destination	destino
+discussant	participante da discussão
+distributed to	destinatário da distribuição
+distributor	distribuidor
+dividend, earnings	dividendo ou rendimentos
+document	documento
+employer/leader/pivot	empregador, líder ou referência da relação
+end point	ponto final
+end product	produto final
+end state	estado final
+enlighted entity	entidade esclarecida
+entity attacked	entidade atacada
+entity being given to	destinatário
+entity causing separation	causador da separação
+entity giving reward	entidade que concede a recompensa
+entity making comparison	entidade que compara
+entity offering	entidade que oferece
+entity proposing	entidade que propõe
+entity provided for (beneficiary)	beneficiário
+entity risking something	entidade que arrisca algo
+entity united	entidade unida
+entity united with	entidade à qual se une
+entity with a right	titular do direito
+estimated-to-be, attribute of arg1	valor ou atributo estimado de Arg1
+estimator	entidade que estima
+examined	entidade examinada
+examiner	examinador
+example	exemplo
+expecter	entidade que espera
+experiencer	experienciador
+experiencer/agent	experienciador ou agente
+explicit instrument	instrumento explicitamente expresso
+explicit other party	outra parte explicitamente expressa
+explorer	explorador
+exporter	exportador
+ext, amount fallen	quantidade da queda
+favor	favor
+first entity	primeira entidade
+first fighter	primeiro participante da luta
+first item in comparison	primeiro item comparado
+fortune teller	entidade que prediz
+granter	entidade que concede
+granter of license	entidade que concede a licença
+granter, agent	agente que concede
+group, associated-with	grupo ao qual se associa
+hearer	ouvinte
+highest bidder	licitante com a maior oferta
+importer	importador
+in search of, for what	objeto da busca
+indicated to	destinatário da indicação
+indicator	entidade que indica
+ingredient one	primeiro ingrediente
+ingredient two	segundo ingrediente
+instrument	instrumento
+instrumental, controlled with	instrumento de controle
+interested entity	entidade interessada
+interested in	objeto do interesse
+investor	investidor
+job holder	titular do cargo
+justifier	entidade que justifica
+justified to, beneficiary	destinatário da justificativa
+knowledge itself, topic	conteúdo do conhecimento
+label	rótulo
+licensed thing	coisa autorizada
+location of meeting	local do encontro
+logical subject, patient, thing falling	entidade que cai
+look er	observador
+looker	observador
+looking for what	objeto procurado
+loved, cause	entidade amada ou causa do sentimento
+lover, experiencer	entidade que ama
+material, start state	material ou estado inicial
+medium	meio
+money	dinheiro
+money or attention	dinheiro ou atenção
+needer	entidade que necessita
+nominator	entidade que nomeia
+obligated	entidade obrigada
+obligation	obrigação
+observer	observador
+of what	entidade relacionada
+office or position	cargo ou posição
+one party	uma das partes
+opinion	opinião
+other entity agreeing	outra entidade que concorda
+other party	outra parte
+payer or buyer	pagador ou comprador
+payment ammount	valor do pagamento
+person being paid	pessoa remunerada
+person doing the closing	pessoa que fecha
+position resigned	cargo do qual se renuncia
+posted	conteúdo publicado
+posted-to	destino da publicação
+poster	entidade que publica
+prediction	previsão
+price	preço
+price paid	preço pago
+proposition	proposição
+provider	fornecedor
+purpose	finalidade
+purpose, reason for adjustment	finalidade ou motivo do ajuste
+quantified	entidade quantificada
+quantified/descriptor	entidade quantificada ou descritor
+quoter	entidade que cita
+rank	nível ou posição hierárquica
+reason	motivo
+reason to meet	motivo do encontro
+reason, purpose	motivo ou finalidade
+recipient	destinatário
+recommended to	destinatário da recomendação
+recommender	entidade que recomenda
+released from	origem da liberação
+released to	destino da liberação
+releaser	entidade que libera
+resigner	entidade que renuncia
+resister	entidade que resiste
+role of arg1	função de Arg1
+sayer	entidade que diz
+searched for	objeto procurado
+searcher	entidade que procura
+second entity	segunda entidade
+second fighter, if separate	segundo participante da luta, quando separado
+second party / relations with / beneficiary	segunda parte da relação ou beneficiário
+secondary attribute	atributo secundário
+secondary predication	predicação secundária
+secondary predication on arg1	predicação secundária de Arg1
+secondary theme	tema secundário
+secondary-theme	tema secundário
+seller	vendedor
+setting	contexto ou ambiente
+signature	assinatura
+signer	signatário
+sold	bem vendido
+source	origem ou fonte
+speaker	falante
+spoils	ganhos ou despojos
+start point	ponto inicial
+start state	estado inicial
+task	tarefa
+taxer	entidade que tributa
+taxpayer	contribuinte
+test/game	prova ou jogo
+theme	tema
+theme/action	tema ou ação
+thing (place, stuff) explored	entidade ou lugar explorado
+thing accessed	entidade acessada
+thing acquired	entidade adquirida
+thing being divided	entidade dividida
+thing bought	bem comprado
+thing changing	entidade que muda
+thing closing	entidade que se fecha
+thing confirmed, statement or proposition	conteúdo confirmado
+thing distributed	entidade distribuída
+thing estimated	entidade estimada
+thing expected	entidade esperada
+thing granted	entidade concedida
+thing in motion	entidade em movimento
+thing indicated	entidade indicada
+thing lacked	entidade que falta
+thing looked at	entidade observada
+thing looked at or for or on	entidade observada ou procurada
+thing needed	entidade necessária
+thing proposed, proposition	conteúdo proposto
+thing provided	entidade fornecida
+thing providing a dividend	entidade que produz o dividendo
+thing recommended	entidade recomendada
+thing reduced	entidade reduzida
+thing released	entidade liberada
+thing resisted	entidade à qual se resiste
+thing risked, tried	entidade arriscada ou tentada
+thing sold	bem vendido
+thing viewed	entidade vista
+thinker	entidade que pensa
+time of meeting	momento do encontro
+topic	assunto
+utterance	enunciado
+value	valor
+voters	eleitores
+what they have a right to	objeto do direito
+whole	todo
+object, target, content, counterpart or domain	objeto, alvo, conteúdo, contraparte ou domínio
+target, content, object, counterpart or domain	alvo, conteúdo, objeto, contraparte ou domínio
+time, place, degree, manner, cause or context	tempo, lugar, grau, modo, causa ou contexto'''
+TRANSLATIONS=dict(line.split('\t',1) for line in PAIRS.splitlines())
+def pt(value):return TRANSLATIONS.get(value,value)

@@ -6,37 +6,212 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_f69df7b986a8e16d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f69df7b986a8e16d",
+      "frame_id": "f_2795db99fefc6f2c",
+      "pt_roleset": "depósito.03",
+      "sense_label": "depósito.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "deposit.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/deposit.xml",
+          "source_xml_url": "data/nombank_sources/deposit.xml",
+          "source_xml_sha256": "cf3994b9f30fae526b06255db42f78d28ffbce51547496bf932cf804848fc96a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Depositante",
+          "definition": "Quem coloca recurso em conta-corrente.",
+          "desc_pt": "Depositante",
+          "definition_pt": "Quem coloca recurso em conta-corrente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Recurso depositado",
+          "definition": "Coisa colocada, incorporada conforme deposits REF1 se sem quantia independente.",
+          "desc_pt": "Recurso depositado",
+          "definition_pt": "Coisa colocada, incorporada conforme deposits REF1 se sem quantia independente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino do depósito",
+          "definition": "Onde se coloca recurso, extensão à entidade destinatária em operação bancária.",
+          "desc_pt": "Destino do depósito",
+          "definition_pt": "Onde se coloca recurso, extensão à entidade destinatária em operação bancária."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003054_SENT010::depósito::1",
           "sent_ID": "FOLHA_DOC003054_SENT010",
           "text": "Mais pagamentos ocorreram por meio de depósitos a empresas e \"laranjas\" vinculados ao doleiro Claudio Fernando Barbosa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depósitos",
             "char_start": 38,
             "char_end": 47
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a empresas e \"laranjas\" vinculados ao doleiro Claudio Fernando Barbosa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 48,
+                "char_end": 118
+              }
+            ]
+          },
+          "target_instance_id": 1494,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2795db99fefc6f2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 48,
+                    "char_end": 118,
+                    "head_token_id": 9,
+                    "head_form": "empresas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003069_SENT027::depósito::1",
           "sent_ID": "FOLHA_DOC003069_SENT027",
           "text": "No segundo, sobre o capital inicial acrescido dos juros do primeiro mês, mais o novo depósito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depósito",
             "char_start": 85,
             "char_end": 93
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13925,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2795db99fefc6f2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 85,
+                "char_end": 93
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

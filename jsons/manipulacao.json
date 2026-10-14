@@ -6,48 +6,298 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003049_SENT024::manipulação::1",
-          "sent_ID": "FOLHA_DOC003049_SENT024",
-          "text": "Mas, na verdade, ao tolerar a mentira, omissão e manipulação, a elite instruída está fortalecendo valores perversos que são a causa-raiz de nossos problemas que impedem o desenvolvimento do país.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "manipulação",
-            "char_start": 49,
-            "char_end": 60
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "manipulação · acepção 1"
+      "sense_label": "manipulação · acepção 1",
+      "sense_id": "s_bd09acf4992e8784",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "manipulação · acepção 2",
+      "sense_id": "s_72cd19f63461482d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_bd09acf4992e8784",
+      "frame_id": "f_83491454b5eb8e29",
+      "pt_roleset": null,
+      "sense_label": "manipulação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "manipulation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/manipulation.xml",
+          "source_xml_url": "data/nombank_sources/manipulation.xml",
+          "source_xml_sha256": "ef055b680c0bc15068d1e03a36f4df24d8b6ba4ef0563b2c47dba2104c0bdc1c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "manipulador causal",
+          "definition": "Entidade que força/influencia.",
+          "desc_pt": "manipulador causal",
+          "definition_pt": "Entidade que força/influencia."
+        },
+        {
+          "id": "Arg1",
+          "desc": "ação impelida",
+          "definition": "Ação induzida; n=1 nominal/source2 original.",
+          "desc_pt": "ação impelida",
+          "definition_pt": "Ação induzida; n=1 nominal/source2 original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "entidade impelida",
+          "definition": "Agente/entidade induzido; n=2 nominal/source1 original.",
+          "desc_pt": "entidade impelida",
+          "definition_pt": "Agente/entidade induzido; n=2 nominal/source1 original."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003049_SENT024::manipulação::1",
+          "sent_ID": "FOLHA_DOC003049_SENT024",
+          "text": "Mas, na verdade, ao tolerar a mentira, omissão e manipulação, a elite instruída está fortalecendo valores perversos que são a causa-raiz de nossos problemas que impedem o desenvolvimento do país.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "manipulação",
+            "char_start": 49,
+            "char_end": 60
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 304,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_83491454b5eb8e29",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_72cd19f63461482d",
+      "frame_id": "f_15b13cd0a8f87a49",
+      "pt_roleset": null,
+      "sense_label": "manipulação · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "handling.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/handling.xml",
+          "source_xml_url": "data/nombank_sources/handling.xml",
+          "source_xml_sha256": "f73b6b3f9807f3d50b81a9afed2f1259af7f6715a1b9cd4c9281be177b258ee4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem manuseia",
+          "definition": "Handler, agente hipotético quando condicional, não ocorrência afirmada.",
+          "desc_pt": "Quem manuseia",
+          "definition_pt": "Handler, agente hipotético quando condicional, não ocorrência afirmada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Material manuseado",
+          "definition": "Thing handled, genética delimita material genético por adjetivo relacional conforme chemicals nominal.",
+          "desc_pt": "Material manuseado",
+          "definition_pt": "Thing handled, genética delimita material genético por adjetivo relacional conforme chemicals nominal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário do manuseio",
+          "definition": "Handled for, não finalidade de causar dano como beneficiário.",
+          "desc_pt": "Beneficiário do manuseio",
+          "definition_pt": "Handled for, não finalidade de causar dano como beneficiário."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Instrumento do manuseio",
+          "definition": "Handled with, instrumento dito, não grau de precisão.",
+          "desc_pt": "Instrumento do manuseio",
+          "definition_pt": "Handled with, instrumento dito, não grau de precisão."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004067_SENT006::manipulação::1",
           "sent_ID": "FOLHA_DOC004067_SENT006",
           "text": "Os bioterroristas conseguirão usar manipulação genética de alta precisão para matar milhões de pessoas?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "manipulação",
             "char_start": 35,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Os bioterroristas",
+            "Arg1": "genética",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 17
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 55
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 14672,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15b13cd0a8f87a49",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 17,
+                    "head_token_id": 2,
+                    "head_form": "bioterroristas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 47,
+                    "char_end": 55,
+                    "head_token_id": 6,
+                    "head_form": "genética",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "manipulação · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

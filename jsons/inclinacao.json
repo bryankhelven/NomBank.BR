@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "inclinação · acepção 1",
+      "sense_id": "s_98589531135d5be5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_98589531135d5be5",
+      "frame_id": "f_817e7c872b2efc1b",
+      "pt_roleset": null,
+      "sense_label": "inclinação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "inclination.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/inclination.xml",
+          "source_xml_url": "data/nombank_sources/inclination.xml",
+          "source_xml_sha256": "f737b7ff203ea532a10b20eb0d16c574a0249661ec3345aff26f6afd21de9d4d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da propensão",
+          "definition": "Wanter de tendência de vontade frozen, não ator elíptico ou categoria política como pessoa.",
+          "desc_pt": "Titular da propensão",
+          "definition_pt": "Wanter de tendência de vontade frozen, não ator elíptico ou categoria política como pessoa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação desejada",
+          "definition": "Action wanted particular, sem políticas campo genérico como ideologia/ação específica inventada.",
+          "desc_pt": "Ação desejada",
+          "definition_pt": "Action wanted particular, sem políticas campo genérico como ideologia/ação específica inventada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000158_SENT008::inclinação::1",
           "sent_ID": "FOLHA_DOC000158_SENT008",
           "text": "Isso se aplica a inclinações políticas, gostos artísticos, preferências sexuais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "inclinações",
             "char_start": 17,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 1035,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_817e7c872b2efc1b",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "inclinação · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

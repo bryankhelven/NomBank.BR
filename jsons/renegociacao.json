@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "renegociação · acepção 1",
+      "sense_id": "s_064a2c5ecdc05b9d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_064a2c5ecdc05b9d",
+      "frame_id": "f_f2cdc256047a2b8e",
+      "pt_roleset": null,
+      "sense_label": "renegociação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "renegotiation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/renegotiation.xml",
+          "source_xml_url": "data/nombank_sources/renegotiation.xml",
+          "source_xml_sha256": "554285e366c68fb18b28ea02554f1d0c847a0b436c02b83d5304eb3ce3c91e7b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Renegociador",
+          "definition": "Negotiator que busca nova negociação, hospital por metonímia.",
+          "desc_pt": "Renegociador",
+          "definition_pt": "Negotiator que busca nova negociação, hospital por metonímia."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Outra parte renegociadora",
+          "definition": "Explicit other party original1, sem números transferidos de negotiation.",
+          "desc_pt": "Outra parte renegociadora",
+          "definition_pt": "Explicit other party original1, sem números transferidos de negotiation."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Acordo renegociado",
+          "definition": "Agreement original2, sem novos créditos alternativas como dívida/acordo automaticamente.",
+          "desc_pt": "Acordo renegociado",
+          "definition_pt": "Agreement original2, sem novos créditos alternativas como dívida/acordo automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004018_SENT029::renegociação::1",
           "sent_ID": "FOLHA_DOC004018_SENT029",
           "text": "O hospital segue em situação financeira dramática, em busca de renegociações e novos créditos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "renegociações",
             "char_start": 63,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O hospital",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 10
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10343,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f2cdc256047a2b8e",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 63,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 10,
+                    "head_token_id": 2,
+                    "head_form": "hospital",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "renegociação · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

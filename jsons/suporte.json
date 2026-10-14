@@ -6,20 +6,98 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_71e98454fb832d0d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_71e98454fb832d0d",
+      "frame_id": "f_be1f79b815427349",
+      "pt_roleset": "suporte.01",
+      "sense_label": "suporte.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "support.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/support.xml",
+          "source_xml_url": "data/nombank_sources/support.xml",
+          "source_xml_sha256": "2b400556e2edc4a6b56f958f2a6b37ed5031df9a1e441b83640b4df60736f927",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Prestador do apoio",
+          "definition": "Helper humanitário, sem riscos como prestadores.",
+          "desc_pt": "Prestador do apoio",
+          "definition_pt": "Helper humanitário, sem riscos como prestadores."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa ou projeto apoiado",
+          "definition": "Person/project supported explicitado, sem humanitário relacional como participante humano.",
+          "desc_pt": "Pessoa ou projeto apoiado",
+          "definition_pt": "Person/project supported explicitado, sem humanitário relacional como participante humano."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004085_SENT018::suporte::1",
           "sent_ID": "FOLHA_DOC004085_SENT018",
           "text": "Sem ampliar o suporte humanitário, os potenciais riscos de saúde são extremamente preocupantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "suporte",
             "char_start": 14,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 9665,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be1f79b815427349",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

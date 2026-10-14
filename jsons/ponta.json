@@ -6,37 +6,174 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_a6acaa7ca4f20a70",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a6acaa7ca4f20a70",
+      "frame_id": "f_87d1c88bb8d32a19",
+      "pt_roleset": "ponta.17",
+      "sense_label": "ponta.17",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "end.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/end.xml",
+          "source_xml_url": "data/nombank_sources/end.xml",
+          "source_xml_sha256": "045dbf5159ea9972de7e903d4f5336a29b16051bd392a710bc777d20e6dbd94a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Todo da extremidade",
+          "definition": "Theme de que ponta é extremidade/lado figurado, sem ações valorizadas como todo por mera localização.",
+          "desc_pt": "Todo da extremidade",
+          "definition_pt": "Theme de que ponta é extremidade/lado figurado, sem ações valorizadas como todo por mera localização."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualificação da extremidade",
+          "definition": "Value explícito, como contrária, sem quantidade de valorização de ações.",
+          "desc_pt": "Qualificação da extremidade",
+          "definition_pt": "Value explícito, como contrária, sem quantidade de valorização de ações."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000019_SENT018::ponta::1",
           "sent_ID": "FOLHA_DOC000019_SENT018",
           "text": "Na ponta contrária, as ações da Rumo se valorizaram 2,80%.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ponta",
             "char_start": 3,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": "contrária"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 9,
+                "char_end": 18
+              }
+            ]
+          },
+          "target_instance_id": 10368,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_87d1c88bb8d32a19",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 9,
+                    "char_end": 18,
+                    "head_token_id": 4,
+                    "head_form": "contrária",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003172_SENT045::ponta::1",
           "sent_ID": "FOLHA_DOC003172_SENT045",
           "text": "Mas é possível com mais eficiência, com foco em justiça social, diminuir o tamanho do Estado, privatizar serviços respeitando as metas sociais e gerar melhor qualidade na ponta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ponta",
             "char_start": 171,
             "char_end": 176
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13415,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_87d1c88bb8d32a19",
+          "argument_details": {
+            "predicate_token_ids": [
+              33
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 171,
+                "char_end": 176
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

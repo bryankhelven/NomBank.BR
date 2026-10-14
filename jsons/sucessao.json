@@ -6,76 +6,448 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003112_SENT016::sucessão::1",
-          "sent_ID": "FOLHA_DOC003112_SENT016",
-          "text": "A família sugeriu então o nome de Zé Mineiro e o presidente do conselho, Tarek Farahat, disse que a JBS contrataria uma consultoria para preparar a sucessão, conforme vinha sendo solicitado pelo BNDES.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "sucessão",
-            "char_start": 148,
-            "char_end": 156
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003112_SENT013::sucessão::1",
-          "sent_ID": "FOLHA_DOC003112_SENT013",
-          "text": "A reunião extraordinária do conselho da JBS para discutir a sucessão de Wesley começou às 19 horas de sábado (16) e durou até a 1h deste domingo (17).",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "sucessão",
-            "char_start": 60,
-            "char_end": 68
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003053_SENT010::sucessão::1",
-          "sent_ID": "FOLHA_DOC003053_SENT010",
-          "text": "Na reunião que definiu a sucessão de Wesley Batista, a família chegou a propor o nome do filho do empresário, Wesley Batista Filho, mas houve forte resistência da representante do BNDES.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "sucessão",
-            "char_start": 25,
-            "char_end": 33
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "sucessão · acepção 1"
+      "sense_label": "sucessão · acepção 1",
+      "sense_id": "s_efd9592bf87455e6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sucessão · acepção 2",
+      "sense_id": "s_57318af31a93edb8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_efd9592bf87455e6",
+      "frame_id": "f_38714c4950917cd9",
+      "pt_roleset": null,
+      "sense_label": "sucessão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "succession.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/succession.xml",
+          "source_xml_url": "data/nombank_sources/succession.xml",
+          "source_xml_sha256": "7d25257a4041ab763b2a0069ba5d4cb3e247fe2c9671ccdc0ca9e2d64eb9f3dc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "sucessor",
+          "definition": "Entidade que substitui outra em função.",
+          "desc_pt": "sucessor",
+          "definition_pt": "Entidade que substitui outra em função."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade substituída",
+          "definition": "Pessoa/entidade que cede lugar na sucessão.",
+          "desc_pt": "entidade substituída",
+          "definition_pt": "Pessoa/entidade que cede lugar na sucessão."
+        },
+        {
+          "id": "Arg2",
+          "desc": "função",
+          "definition": "Cargo ou papel em que se dá substituição.",
+          "desc_pt": "função",
+          "definition_pt": "Cargo ou papel em que se dá substituição."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003112_SENT016::sucessão::1",
+          "sent_ID": "FOLHA_DOC003112_SENT016",
+          "text": "A família sugeriu então o nome de Zé Mineiro e o presidente do conselho, Tarek Farahat, disse que a JBS contrataria uma consultoria para preparar a sucessão, conforme vinha sendo solicitado pelo BNDES.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "sucessão",
+            "char_start": 148,
+            "char_end": 156
+          },
+          "realization": {
+            "Arg0": "Zé Mineiro",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 34,
+                "char_end": 44
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2917,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_38714c4950917cd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 148,
+                "char_end": 156
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 34,
+                    "char_end": 44,
+                    "head_token_id": 8,
+                    "head_form": "Zé",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003112_SENT013::sucessão::1",
+          "sent_ID": "FOLHA_DOC003112_SENT013",
+          "text": "A reunião extraordinária do conselho da JBS para discutir a sucessão de Wesley começou às 19 horas de sábado (16) e durou até a 1h deste domingo (17).",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "sucessão",
+            "char_start": 60,
+            "char_end": 68
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de Wesley",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 78
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6325,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_38714c4950917cd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 69,
+                    "char_end": 78,
+                    "head_token_id": 15,
+                    "head_form": "Wesley",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003053_SENT010::sucessão::1",
+          "sent_ID": "FOLHA_DOC003053_SENT010",
+          "text": "Na reunião que definiu a sucessão de Wesley Batista, a família chegou a propor o nome do filho do empresário, Wesley Batista Filho, mas houve forte resistência da representante do BNDES.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "sucessão",
+            "char_start": 25,
+            "char_end": 33
+          },
+          "realization": {
+            "Arg0": "Wesley Batista Filho",
+            "Arg1": "de Wesley Batista",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 110,
+                "char_end": 130
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 51
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7150,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_38714c4950917cd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 33
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 110,
+                    "char_end": 130,
+                    "head_token_id": 26,
+                    "head_form": "Wesley",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 34,
+                    "char_end": 51,
+                    "head_token_id": 9,
+                    "head_form": "Wesley",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_57318af31a93edb8",
+      "frame_id": "f_bb07e91414ae6ee4",
+      "pt_roleset": null,
+      "sense_label": "sucessão · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "succession.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/succession.xml",
+          "source_xml_url": "data/nombank_sources/succession.xml",
+          "source_xml_sha256": "7d25257a4041ab763b2a0069ba5d4cb3e247fe2c9671ccdc0ca9e2d64eb9f3dc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "evento subsequente",
+          "definition": "Evento ou conjunto em série que vem depois.",
+          "desc_pt": "evento subsequente",
+          "definition_pt": "Evento ou conjunto em série que vem depois."
+        },
+        {
+          "id": "Arg2",
+          "desc": "evento anterior",
+          "definition": "Evento que precede o subsequente.",
+          "desc_pt": "evento anterior",
+          "definition_pt": "Evento que precede o subsequente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003109_SENT054::sucessão::1",
           "sent_ID": "FOLHA_DOC003109_SENT054",
           "text": "Para ele, isso tudo só ocorreu por conta de \"sucessão desastrosa de equívocos do DHPP\", originados por uma pressão política.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessão",
             "char_start": 45,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "de equívocos do DHPP",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 65,
+                "char_end": 85
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12604,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bb07e91414ae6ee4",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 65,
+                    "char_end": 85,
+                    "head_token_id": 15,
+                    "head_form": "equívocos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sucessão · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

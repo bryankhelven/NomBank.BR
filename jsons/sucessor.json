@@ -6,80 +6,572 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sucessor · acepção 1",
+      "sense_id": "s_a1a0708212e2ad4b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a1a0708212e2ad4b",
+      "frame_id": "f_e527d7efcaaefdf1",
+      "pt_roleset": null,
+      "sense_label": "sucessor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "successor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/successor.xml",
+          "source_xml_url": "data/nombank_sources/successor.xml",
+          "source_xml_sha256": "b7d2abc9fdeca2fc24d9b960ee49bf5619150d612fe93c797caee63f95ad4e82",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Sucessor",
+          "definition": "Quem substitui; fonte admite Arg0 incorporado no REL quando não há identificação independente selecionada.",
+          "desc_pt": "Sucessor",
+          "definition_pt": "Quem substitui; fonte admite Arg0 incorporado no REL quando não há identificação independente selecionada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa ou entidade substituída",
+          "definition": "Quem é substituído na função; possessivo pode expressar predecessor.",
+          "desc_pt": "Pessoa ou entidade substituída",
+          "definition_pt": "Quem é substituído na função; possessivo pode expressar predecessor."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Função ou papel",
+          "definition": "Cargo/função explicitamente especificado; nome de pessoa profissional não duplica simultaneamente cargo e agente.",
+          "desc_pt": "Função ou papel",
+          "definition_pt": "Cargo/função explicitamente especificado; nome de pessoa profissional não duplica simultaneamente cargo e agente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003076_SENT007::sucessor::1",
           "sent_ID": "FOLHA_DOC003076_SENT007",
           "text": "Por motivos protocolares, não poderei transmitir o cargo a minha sucessora, mas desejo-lhe sorte e sobretudo energia para os anos que virão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessora",
             "char_start": 65,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "minha",
+            "Arg2": "o cargo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 64
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 49,
+                "char_end": 56
+              }
+            ]
+          },
+          "target_instance_id": 495,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e527d7efcaaefdf1",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 59,
+                    "char_end": 64,
+                    "head_token_id": 11,
+                    "head_form": "minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 49,
+                    "char_end": 56,
+                    "head_token_id": 9,
+                    "head_form": "cargo",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT044::sucessor::1",
           "sent_ID": "FOLHA_DOC003035_SENT044",
           "text": "Estavam eu e mais alguns colegas, poucos, e ele falou: \"A minha caneta pode não fazer meu sucessor, mas ainda tem tinta suficiente para que eu consiga vetar um nome\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessor",
             "char_start": 90,
             "char_end": 98
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "meu",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 86,
+                "char_end": 89
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 936,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e527d7efcaaefdf1",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 98
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21
+                    ],
+                    "char_start": 86,
+                    "char_end": 89,
+                    "head_token_id": 21,
+                    "head_form": "meu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003159_SENT004::sucessor::1",
           "sent_ID": "FOLHA_DOC003159_SENT004",
           "text": "Quando apresentado como sucessor de Rogério Ceni em 10 de julho, o treinador disse que a equipe disputava um campeonato à parte.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessor",
             "char_start": 24,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o treinador",
+            "Arg1": "de Rogério Ceni",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 65,
+                "char_end": 76
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 33,
+                "char_end": 48
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2965,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e527d7efcaaefdf1",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 65,
+                    "char_end": 76,
+                    "head_token_id": 14,
+                    "head_form": "treinador",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 33,
+                    "char_end": 48,
+                    "head_token_id": 6,
+                    "head_form": "Rogério",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003058_SENT006::sucessor::1",
           "sent_ID": "FOLHA_DOC003058_SENT006",
           "text": "Adversário de sua sucessora, ele alega que não foi convidado para a posse.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessora",
             "char_start": 18,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 14,
+                "char_end": 17
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3002,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e527d7efcaaefdf1",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 14,
+                    "char_end": 17,
+                    "head_token_id": 3,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 0,
+          "Arg1": 3,
+          "Arg2": 0
         },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_a1a0708212e2ad4b",
+      "frame_id": "f_43c180beec5b38c2",
+      "pt_roleset": null,
+      "sense_label": "sucessor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "successor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/successor.xml",
+          "source_xml_url": "data/nombank_sources/successor.xml",
+          "source_xml_sha256": "b7d2abc9fdeca2fc24d9b960ee49bf5619150d612fe93c797caee63f95ad4e82",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Sucessor",
+          "definition": "Titular substituto em cargo/função, nome independente quando presente.",
+          "desc_pt": "Sucessor",
+          "definition_pt": "Titular substituto em cargo/função, nome independente quando presente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Substituído",
+          "definition": "Entity being replaced, incluindo possessivo anafórico.",
+          "desc_pt": "Substituído",
+          "definition_pt": "Entity being replaced, incluindo possessivo anafórico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Função assumida",
+          "definition": "Attributive role/function especificada, sem caso decidido como cargo.",
+          "desc_pt": "Função assumida",
+          "definition_pt": "Attributive role/function especificada, sem caso decidido como cargo."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC004030_SENT020::sucessor::1",
           "sent_ID": "FOLHA_DOC004030_SENT020",
           "text": "Caso contrário, uma decisão sobre o caso ficará nas mãos da sua sucessora, Raquel Dodge.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sucessora",
             "char_start": 64,
             "char_end": 73
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Raquel Dodge",
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 75,
+                "char_end": 87
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 63
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12983,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_43c180beec5b38c2",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19
+                    ],
+                    "char_start": 75,
+                    "char_end": 87,
+                    "head_token_id": 18,
+                    "head_form": "Raquel",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15
+                    ],
+                    "char_start": 60,
+                    "char_end": 63,
+                    "head_token_id": 15,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sucessor · acepção 1"
+      "syntactic_profile": {
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

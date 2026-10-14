@@ -6,66 +6,393 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "distribuidor · acepção 1",
+      "sense_id": "s_e9b62628db21e799",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e9b62628db21e799",
+      "frame_id": "f_a3b90994ebbaa095",
+      "pt_roleset": null,
+      "sense_label": "distribuidor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "distributer.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/distributer.xml",
+          "source_xml_url": "data/nombank_sources/distributer.xml",
+          "source_xml_sha256": "db6b67c1779ab3a49d926ed228b62f8785ba3b7bc00bc0864aa9d6534b36dc01",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Distribuidor",
+          "definition": "Quem entrega/revende produtos; conservar o identificador original distributer, cujo exemplo usa distributors.",
+          "desc_pt": "Distribuidor",
+          "definition_pt": "Quem entrega/revende produtos; conservar o identificador original distributer, cujo exemplo usa distributors."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Produto distribuído",
+          "definition": "Thing distributed; item apenas sugerido para publicidade não prova distribuição.",
+          "desc_pt": "Produto distribuído",
+          "definition_pt": "Thing distributed; item apenas sugerido para publicidade não prova distribuição."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário",
+          "definition": "Distributed to original; região/município como local do destinatário é extensão metonímica local.",
+          "desc_pt": "Destinatário",
+          "definition_pt": "Distributed to original; região/município como local do destinatário é extensão metonímica local."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003041_SENT014::distribuidor::1",
           "sent_ID": "FOLHA_DOC003041_SENT014",
           "text": "A tecnologia da Softline, distribuidora de itens de internet das coisas da Microsoft, deve chegar ao mercado em 2018.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "distribuidora",
             "char_start": 26,
             "char_end": 39
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da Softline",
+            "Arg1": "de itens de internet das coisas da Microsoft",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 13,
+                "char_end": 24
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 84
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2430,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3b90994ebbaa095",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 26,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 13,
+                    "char_end": 24,
+                    "head_token_id": 5,
+                    "head_form": "Softline",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 40,
+                    "char_end": 84,
+                    "head_token_id": 9,
+                    "head_form": "itens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003106_SENT018::distribuidor::1",
           "sent_ID": "FOLHA_DOC003106_SENT018",
           "text": "Distribuidores ouvidos pela reportagem em Toronto concordam que filmes com anti-heróis ou personagens controversos têm seduzido os compradores internacionais, de olho no que produz o cinema independente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "Distribuidores",
             "char_start": 0,
             "char_end": 14
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4067,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3b90994ebbaa095",
+          "argument_details": {
+            "predicate_token_ids": [
+              1
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 0,
+                "char_end": 14
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003198_SENT015::distribuidor::1",
           "sent_ID": "FOLHA_DOC003198_SENT015",
           "text": "Nas últimas semanas, a empresa voltou a solicitar a inserção dos itens Friboi nos encartes dos distribuidores, segundo a Folha apurou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "distribuidores",
             "char_start": 95,
             "char_end": 109
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14561,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3b90994ebbaa095",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 95,
+                "char_end": 109
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003236_SENT025::distribuidor::1",
           "sent_ID": "FOLHA_DOC003236_SENT025",
           "text": "Já mandei para Mato Grosso, Porto Alegre, disse o distribuidor Nivaldo Tuesca.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "distribuidor",
             "char_start": 50,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Nivaldo Tuesca",
+            "Arg1": null,
+            "Arg2": "para Mato Grosso, Porto Alegre"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 63,
+                "char_end": 77
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 10,
+                "char_end": 40
+              }
+            ]
+          },
+          "target_instance_id": 15519,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a3b90994ebbaa095",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 63,
+                    "char_end": 77,
+                    "head_token_id": 13,
+                    "head_form": "Nivaldo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 10,
+                    "char_end": 40,
+                    "head_token_id": 4,
+                    "head_form": "Mato",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "distribuidor · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

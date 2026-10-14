@@ -6,23 +6,184 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_9819f16db231dd2b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9819f16db231dd2b",
+      "frame_id": "f_66c25f04b1526c4b",
+      "pt_roleset": "retrato.02",
+      "sense_label": "retrato.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "portrayal.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/portrayal.xml",
+          "source_xml_url": "data/nombank_sources/portrayal.xml",
+          "source_xml_sha256": "3193c6bd55aa7358e4f5fd23c04a0bc3f4dd3b5e18eff5c936383192f2ff037e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do retrato",
+          "definition": "Labeller na representação interpretativa descritiva.",
+          "desc_pt": "Autor do retrato",
+          "definition_pt": "Labeller na representação interpretativa descritiva."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade retratada",
+          "definition": "Item labelled como presidente.",
+          "desc_pt": "Entidade retratada",
+          "definition_pt": "Item labelled como presidente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Caracterização do retrato",
+          "definition": "Attribute estendido explicitamente à caracterização cômica da representação, não local do programa.",
+          "desc_pt": "Caracterização do retrato",
+          "definition_pt": "Attribute estendido explicitamente à caracterização cômica da representação, não local do programa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003015_SENT006::retrato::1",
           "sent_ID": "FOLHA_DOC003015_SENT006",
           "text": "O ator foi reconhecido pelo retrato cômico do presidente em \"Saturday Night Live\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "retrato",
             "char_start": 28,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O ator",
+            "Arg1": "do presidente",
+            "Arg2": "cômico"
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "nmod",
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 6
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 43,
+                "char_end": 56
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 36,
+                "char_end": 42
+              }
+            ]
+          },
+          "target_instance_id": 14604,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_66c25f04b1526c4b",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 6,
+                    "head_token_id": 2,
+                    "head_form": "ator",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 43,
+                    "char_end": 56,
+                    "head_token_id": 11,
+                    "head_form": "presidente",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 36,
+                    "char_end": 42,
+                    "head_token_id": 8,
+                    "head_form": "cômico",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj:pass": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

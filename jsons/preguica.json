@@ -6,23 +6,148 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_8931c1aadccdfb4b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_8931c1aadccdfb4b",
+      "frame_id": "f_e93a142fd3489e3d",
+      "pt_roleset": "preguiça.06",
+      "sense_label": "preguiça.06",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reluctance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reluctance.xml",
+          "source_xml_url": "data/nombank_sources/reluctance.xml",
+          "source_xml_sha256": "d2d99f563166a0899963e24066efc5472db9d5d380560707f548d09e08813faf",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da falta de disposição",
+          "definition": "Agent com falta de vontade para agir, restrito à preguiça contextual sob modal/negação.",
+          "desc_pt": "Titular da falta de disposição",
+          "definition_pt": "Agent com falta de vontade para agir, restrito à preguiça contextual sob modal/negação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação evitada",
+          "definition": "Action para a qual falta disposição, com coordenação integral de perguntar/pesquisar/pedir ajuda.",
+          "desc_pt": "Ação evitada",
+          "definition_pt": "Action para a qual falta disposição, com coordenação integral de perguntar/pesquisar/pedir ajuda."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000044_SENT083::preguiça::1",
           "sent_ID": "FOLHA_DOC000044_SENT083",
           "text": "Ou seja: ninguém deve ter receio, vergonha ou preguiça de perguntar, pesquisar e pedir ajuda.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "preguiça",
             "char_start": 46,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ninguém",
+            "Arg1": "de perguntar, pesquisar e pedir ajuda"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 92
+              }
+            ]
+          },
+          "target_instance_id": 3024,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e93a142fd3489e3d",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 9,
+                    "char_end": 16,
+                    "head_token_id": 4,
+                    "head_form": "ninguém",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 55,
+                    "char_end": 92,
+                    "head_token_id": 13,
+                    "head_form": "perguntar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

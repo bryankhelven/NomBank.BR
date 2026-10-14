@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "pintura · acepção 1",
+      "sense_id": "s_7af992551ffcf055",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7af992551ffcf055",
+      "frame_id": "f_c5bd458f21742da8",
+      "pt_roleset": null,
+      "sense_label": "pintura · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "painting.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/painting.xml",
+          "source_xml_url": "data/nombank_sources/painting.xml",
+          "source_xml_sha256": "108ff163594a6d933296bc614e2827ba372aa7ca2cf57e06bcd2c638edbe18cb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Pintor",
+          "definition": "Agent painter que aplica tinta, não autor de quadro de painting.01.",
+          "desc_pt": "Pintor",
+          "definition_pt": "Agent painter que aplica tinta, não autor de quadro de painting.01."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Superfície pintada",
+          "definition": "Surface como paredes carecas sob espera de revestimento, sem pintura já realizada.",
+          "desc_pt": "Superfície pintada",
+          "definition_pt": "Surface como paredes carecas sob espera de revestimento, sem pintura já realizada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Tinta usada",
+          "definition": "Explicit paint expresso, sem tipo/cor do revestimento inferidos.",
+          "desc_pt": "Tinta usada",
+          "definition_pt": "Explicit paint expresso, sem tipo/cor do revestimento inferidos."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004013_SENT032::pintura::1",
           "sent_ID": "FOLHA_DOC004013_SENT032",
           "text": "O sobrado de dois andares, com paredes carecas à espera de pintura, estava com portas e janelas fechadas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pintura",
             "char_start": 59,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "paredes carecas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 31,
+                "char_end": 46
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1040,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c5bd458f21742da8",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 31,
+                    "char_end": 46,
+                    "head_token_id": 8,
+                    "head_form": "paredes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "pintura · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,34 +6,150 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_e0e82dbb81d739c1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e0e82dbb81d739c1",
+      "frame_id": "f_3dd49c691f89b833",
+      "pt_roleset": "moradia.01",
+      "sense_label": "moradia.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dwelling.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dwelling.xml",
+          "source_xml_url": "data/nombank_sources/dwelling.xml",
+          "source_xml_sha256": "a9c543fdaa94b345dd6415785893ce13bedbc4ee6ad13ef8c8a1b8e1588a9fca",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Habitante",
+          "definition": "Quem reside, sem beneficiar necessidades gerais tomado como residência atual.",
+          "desc_pt": "Habitante",
+          "definition_pt": "Quem reside, sem beneficiar necessidades gerais tomado como residência atual."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Habitação",
+          "definition": "Lugar habitado incorporado no nominal conforme dwellings original; extensão à habitação genérica/social.",
+          "desc_pt": "Habitação",
+          "definition_pt": "Lugar habitado incorporado no nominal conforme dwellings original; extensão à habitação genérica/social."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003179_SENT009::moradia::1",
           "sent_ID": "FOLHA_DOC003179_SENT009",
           "text": "A necessidade de moradia permitiu o encontro entre arquitetos e empreendedores para atender às necessidades da população.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "moradia",
             "char_start": 17,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 899,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3dd49c691f89b833",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003180_SENT004::moradia::1",
           "sent_ID": "FOLHA_DOC003180_SENT004",
           "text": "Todos os dias, somos bombardeados por dados, estudos e pesquisas que apontam para as diversas facetas das nossas enormes iniquidades: renda, educação, saúde, saneamento, segurança, moradia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "moradia",
             "char_start": 181,
             "char_end": 188
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 7716,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3dd49c691f89b833",
+          "argument_details": {
+            "predicate_token_ids": [
+              35
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 181,
+                "char_end": 188
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

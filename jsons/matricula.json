@@ -6,24 +6,144 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "matrícula · acepção 1",
+      "sense_id": "s_9bf07ad7b1a81d5f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9bf07ad7b1a81d5f",
+      "frame_id": "f_5ec10913c2317c7b",
+      "pt_roleset": null,
+      "sense_label": "matrícula · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "enrollment.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/enrollment.xml",
+          "source_xml_url": "data/nombank_sources/enrollment.xml",
+          "source_xml_sha256": "57a648f787cfd96d95622f16d28271efc6c37bf13ede6bba9130c5a292a9e502",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da matrícula",
+          "definition": "Causer que matricula, não curso que abre inscrições automaticamente pessoa matriculante.",
+          "desc_pt": "Autor da matrícula",
+          "definition_pt": "Causer que matricula, não curso que abre inscrições automaticamente pessoa matriculante."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Inscrito",
+          "definition": "Entity enrolled expressa, sem vagas/alunos omitidos preenchidos.",
+          "desc_pt": "Inscrito",
+          "definition_pt": "Entity enrolled expressa, sem vagas/alunos omitidos preenchidos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Curso de matrícula",
+          "definition": "Enrolled in what como bacharelado da PUC, com instituição dentro do complemento completo.",
+          "desc_pt": "Curso de matrícula",
+          "definition_pt": "Enrolled in what como bacharelado da PUC, com instituição dentro do complemento completo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001596_SENT008::matrícula::1",
           "sent_ID": "FOLHA_DOC001596_SENT008",
           "text": "Criado em 2016, o bacharelado da PUC deve abrir matrículas em 2019.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "matrículas",
             "char_start": 48,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "o bacharelado da PUC"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 16,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 1569,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5ec10913c2317c7b",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 16,
+                    "char_end": 36,
+                    "head_token_id": 6,
+                    "head_form": "bacharelado",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "matrícula · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

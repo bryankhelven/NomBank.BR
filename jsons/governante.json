@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "governante · acepção 1",
+      "sense_id": "s_803514810476096b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_803514810476096b",
+      "frame_id": "f_057c44631012e122",
+      "pt_roleset": null,
+      "sense_label": "governante · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "ruler.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/ruler.xml",
+          "source_xml_url": "data/nombank_sources/ruler.xml",
+          "source_xml_sha256": "f16f828bddecc7072137ef7a71c39159a63f3b76e3a62ebd565b6cb223cfd62b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Governante",
+          "definition": "Ruler/leader que governa, sob avaliação parece sem cargo atual inferido.",
+          "desc_pt": "Governante",
+          "definition_pt": "Ruler/leader que governa, sob avaliação parece sem cargo atual inferido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Governados",
+          "definition": "Masses/minions/entidade governada explicitada, tradução neutra sem acrescentar população da cidade.",
+          "desc_pt": "Governados",
+          "definition_pt": "Masses/minions/entidade governada explicitada, tradução neutra sem acrescentar população da cidade."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000108_SENT011::governante::1",
           "sent_ID": "FOLHA_DOC000108_SENT011",
           "text": "Crivella parece um governante desgastado em fim de gestão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "governante",
             "char_start": 19,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Crivella",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5830,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_057c44631012e122",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 8,
+                    "head_token_id": 1,
+                    "head_form": "Crivella",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "governante · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

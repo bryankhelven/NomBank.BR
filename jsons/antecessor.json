@@ -6,66 +6,393 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "antecessor · acepção 1",
+      "sense_id": "s_86fb51c31e0ae0c9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_86fb51c31e0ae0c9",
+      "frame_id": "f_c07c89b50ed6c300",
+      "pt_roleset": null,
+      "sense_label": "antecessor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "predecessor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/predecessor.xml",
+          "source_xml_url": "data/nombank_sources/predecessor.xml",
+          "source_xml_sha256": "2a93929f16cd830dfe6847139f18d4341912b9462e0f31a3535078658b71b93b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Antecessor",
+          "definition": "Quem ocupou função antes; fonte admite Arg0 incorporado, exclusivo de span independente.",
+          "desc_pt": "Antecessor",
+          "definition_pt": "Quem ocupou função antes; fonte admite Arg0 incorporado, exclusivo de span independente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa ou entidade posterior",
+          "definition": "Quem sucede à entidade anterior; possessivo é realização possível.",
+          "desc_pt": "Pessoa ou entidade posterior",
+          "definition_pt": "Quem sucede à entidade anterior; possessivo é realização possível."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003002_SENT008::antecessor::1",
           "sent_ID": "FOLHA_DOC003002_SENT008",
           "text": "Veja, na galeria, quem foram os antecessores de Dodge desde 1985, marco da redemocratização do país.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "antecessores",
             "char_start": 32,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "quem",
+            "Arg1": "de Dodge"
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 22
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 53
+              }
+            ]
+          },
+          "target_instance_id": 457,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07c89b50ed6c300",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7
+                    ],
+                    "char_start": 18,
+                    "char_end": 22,
+                    "head_token_id": 7,
+                    "head_form": "quem",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 45,
+                    "char_end": 53,
+                    "head_token_id": 12,
+                    "head_form": "Dodge",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000139_SENT003::antecessor::1",
           "sent_ID": "FOLHA_DOC000139_SENT003",
           "text": "Ele culpou diretamente a gestão de Fernando Haddad (PT), seu antecessor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "antecessor",
             "char_start": 61,
             "char_end": 71
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Fernando Haddad (PT)",
+            "Arg1": "seu"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "det"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 35,
+                "char_end": 55
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 57,
+                "char_end": 60
+              }
+            ]
+          },
+          "target_instance_id": 9694,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07c89b50ed6c300",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 71
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 35,
+                    "char_end": 55,
+                    "head_token_id": 7,
+                    "head_form": "Fernando",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 57,
+                    "char_end": 60,
+                    "head_token_id": 13,
+                    "head_form": "seu",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003076_SENT010::antecessor::1",
           "sent_ID": "FOLHA_DOC003076_SENT010",
           "text": "\"Ao fim desses dois mandatos que me foram outorgados pelos meus pares, entrego-lhes um Ministério Público diferente do que recebi dos meus antecessores\", escreveu Janot.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "antecessores",
             "char_start": 139,
             "char_end": 151
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "meus"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 134,
+                "char_end": 138
+              }
+            ]
+          },
+          "target_instance_id": 11812,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07c89b50ed6c300",
+          "argument_details": {
+            "predicate_token_ids": [
+              31
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 139,
+                "char_end": 151
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30
+                    ],
+                    "char_start": 134,
+                    "char_end": 138,
+                    "head_token_id": 30,
+                    "head_form": "meus",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000011_SENT012::antecessor::1",
           "sent_ID": "FOLHA_DOC000011_SENT012",
           "text": "Ela destaca que as decisões pelas prisões preventivas foram feitas de maneira correta, uma vez que seu antecessor, Rodrigo Janot, rescindiu os acordos de delação de Batista e Saud.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "antecessor",
             "char_start": 103,
             "char_end": 113
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Rodrigo Janot",
+            "Arg1": "seu"
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "det"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 115,
+                "char_end": 128
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 99,
+                "char_end": 102
+              }
+            ]
+          },
+          "target_instance_id": 14907,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07c89b50ed6c300",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 103,
+                "char_end": 113
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23
+                    ],
+                    "char_start": 115,
+                    "char_end": 128,
+                    "head_token_id": 22,
+                    "head_form": "Rodrigo",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19
+                    ],
+                    "char_start": 99,
+                    "char_end": 102,
+                    "head_token_id": 19,
+                    "head_form": "seu",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "antecessor · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 3
+        },
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

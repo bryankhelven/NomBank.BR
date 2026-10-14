@@ -6,38 +6,245 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "idealização · acepção 1",
+      "sense_id": "s_5a558725de0fae10",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5a558725de0fae10",
+      "frame_id": "f_a6a39872ccd1ed45",
+      "pt_roleset": null,
+      "sense_label": "idealização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conception.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conception.xml",
+          "source_xml_url": "data/nombank_sources/conception.xml",
+          "source_xml_sha256": "dac0bad5431ff860423cb1f34afbf641ea367e83263e657bdb77848dbe55a284",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Conceptor",
+          "definition": "Quem cria mentalmente ideia/representação, sem gestação de conception.02.",
+          "desc_pt": "Conceptor",
+          "definition_pt": "Quem cria mentalmente ideia/representação, sem gestação de conception.02."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa concebida",
+          "definition": "Objeto da concepção, incluindo possessivo como coisa idealizada.",
+          "desc_pt": "Coisa concebida",
+          "definition_pt": "Objeto da concepção, incluindo possessivo como coisa idealizada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo do concebido",
+          "definition": "Predicação do objeto mental, distinta da persistência do conceber.",
+          "desc_pt": "Atributo do concebido",
+          "definition_pt": "Predicação do objeto mental, distinta da persistência do conceber."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002070_SENT022::idealização::1",
           "sent_ID": "FOLHA_DOC002070_SENT022",
           "text": "Desde sua idealização, em 1985, o Rock in Rio é palco de manifestações como essas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "idealização",
             "char_start": 10,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 6,
+                "char_end": 9
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 578,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a6a39872ccd1ed45",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 6,
+                    "char_end": 9,
+                    "head_token_id": 2,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004089_SENT019::idealização::1",
           "sent_ID": "FOLHA_DOC004089_SENT019",
           "text": "Nossa incansável idealização da figura e da função maternas fariam que esse conto fosse rejeitado por muitos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "idealização",
             "char_start": 17,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Nossa",
+            "Arg1": "da figura e da função maternas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 29,
+                "char_end": 59
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1364,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a6a39872ccd1ed45",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 5,
+                    "head_token_id": 1,
+                    "head_form": "Nossa",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 29,
+                    "char_end": 59,
+                    "head_token_id": 6,
+                    "head_form": "figura",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "idealização · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

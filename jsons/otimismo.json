@@ -19,24 +19,140 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 7553,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 33
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_id": "s_4194e019f7882b99",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4194e019f7882b99",
+      "frame_id": "f_c608ab3fc01f9440",
+      "pt_roleset": "otimismo.01",
+      "sense_label": "otimismo.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "optimism.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/optimism.xml",
+          "source_xml_url": "data/nombank_sources/optimism.xml",
+          "source_xml_sha256": "5564f752861e7c3217dee2d85a22f915263b45b4c2be2a473dce12fc416474d7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador da visão favorável",
+          "definition": "Quem expõe/tem otimismo, sem destinatário de sinal automaticamente experienciador.",
+          "desc_pt": "Experienciador da visão favorável",
+          "definition_pt": "Quem expõe/tem otimismo, sem destinatário de sinal automaticamente experienciador."
         },
+        {
+          "id": "Arg1",
+          "desc": "Tema da visão favorável",
+          "definition": "Conteúdo/situação avaliada favoravelmente, sem proposição prospectiva inventada.",
+          "desc_pt": "Tema da visão favorável",
+          "definition_pt": "Conteúdo/situação avaliada favoravelmente, sem proposição prospectiva inventada."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC001131_SENT018::otimismo::1",
           "sent_ID": "FOLHA_DOC001131_SENT018",
           "text": "Como é de se esperar, Zarvos expõe mais otimismo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "otimismo",
             "char_start": 40,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Zarvos",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 22,
+                "char_end": 28
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 8146,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c608ab3fc01f9440",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7
+                    ],
+                    "char_start": 22,
+                    "char_end": 28,
+                    "head_token_id": 7,
+                    "head_form": "Zarvos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

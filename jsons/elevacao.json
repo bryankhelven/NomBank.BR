@@ -6,23 +6,174 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_23d772a9abb10adc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_23d772a9abb10adc",
+      "frame_id": "f_6a717fb5d9336ebd",
+      "pt_roleset": "elevação.02",
+      "sense_label": "elevação.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "increase.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/increase.xml",
+          "source_xml_url": "data/nombank_sources/increase.xml",
+          "source_xml_sha256": "6cc4112460e00e8812583b8c57c3adf8d4ed3eb3aaac3bf3a1924f9544244933",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da alta",
+          "definition": "Causer de aumento, não pessoa que responde pergunta necessariamente autora de aumento fiscal.",
+          "desc_pt": "Autor da alta",
+          "definition_pt": "Causer de aumento, não pessoa que responde pergunta necessariamente autora de aumento fiscal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa aumentada",
+          "definition": "Thing increasing como impostos sob possibilidade.",
+          "desc_pt": "Coisa aumentada",
+          "definition_pt": "Thing increasing como impostos sob possibilidade."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Extensão do aumento",
+          "definition": "Amount/ext/mnr expresso.",
+          "desc_pt": "Extensão do aumento",
+          "definition_pt": "Amount/ext/mnr expresso."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Ponto inicial",
+          "definition": "Start point explícito.",
+          "desc_pt": "Ponto inicial",
+          "definition_pt": "Start point explícito."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Ponto final",
+          "definition": "End point explícito, sem despesas via alternativa como novo endpoint.",
+          "desc_pt": "Ponto final",
+          "definition_pt": "End point explícito, sem despesas via alternativa como novo endpoint."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001480_SENT015::elevação::1",
           "sent_ID": "FOLHA_DOC001480_SENT015",
           "text": "Questionada se isso significaria elevação de impostos, ela declarou que isso pode ocorrer também do lado das despesas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "elevação",
             "char_start": 33,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de impostos",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 42,
+                "char_end": 53
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 2097,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6a717fb5d9336ebd",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 42,
+                    "char_end": 53,
+                    "head_token_id": 7,
+                    "head_form": "impostos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

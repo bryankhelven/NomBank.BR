@@ -6,136 +6,855 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "legislação · acepção 1",
+      "sense_id": "s_bd8a2b7e9abe07fe",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_bd8a2b7e9abe07fe",
+      "frame_id": "f_2d49f73f2077651c",
+      "pt_roleset": null,
+      "sense_label": "legislação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "law.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/law.xml",
+          "source_xml_url": "data/nombank_sources/law.xml",
+          "source_xml_sha256": "5a75eb4ecc33a53a7bd33d69f5403a9e3444afca7e8f0185e3d5b17c58bbf8b1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor/jurisdição da norma",
+          "definition": "Decider original, jurisdição como Kansas0 licencia cidade ou municipal.",
+          "desc_pt": "Emissor/jurisdição da norma",
+          "definition_pt": "Decider original, jurisdição como Kansas0 licencia cidade ou municipal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Norma ou conteúdo decidido",
+          "definition": "Decision; norma incorporada no REL comprovada por lawsREF1; conteúdo independente tem prioridade.",
+          "desc_pt": "Norma ou conteúdo decidido",
+          "definition_pt": "Decision; norma incorporada no REL comprovada por lawsREF1; conteúdo independente tem prioridade."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da norma",
+          "definition": "Beneficiary original, extensão a entidades abrangidas conforme contracts/Eastern2 dos nominais law.",
+          "desc_pt": "Destinatário da norma",
+          "definition_pt": "Beneficiary original, extensão a entidades abrangidas conforme contracts/Eastern2 dos nominais law."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Campo/atributo da norma",
+          "definition": "Attribute of1 original, tema como right-to-work; não severidade ou novidade como valor obrigatório.",
+          "desc_pt": "Campo/atributo da norma",
+          "definition_pt": "Attribute of1 original, tema como right-to-work; não severidade ou novidade como valor obrigatório."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002027_SENT033::legislação::1",
           "sent_ID": "FOLHA_DOC002027_SENT033",
           "text": "É vital conhecer a legislação da cidade antes de abrir as portas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 19,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da cidade",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 30,
+                "char_end": 39
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 657,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 30,
+                    "char_end": 39,
+                    "head_token_id": 8,
+                    "head_form": "cidade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003131_SENT009::legislação::1",
           "sent_ID": "FOLHA_DOC003131_SENT009",
           "text": "A legislação mais dura, porém, não impediu que a imigração de cidadãos de Honduras, El Salvador e Guatemala -que sofrem com a violência das gangues- crescesse desde 2013.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 2,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2605,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003179_SENT013::legislação::1",
           "sent_ID": "FOLHA_DOC003179_SENT013",
           "text": "Proliferaram os apartamentos pequenos, com soluções criativas, que tinham que driblar a morosidade da aprovação na prefeitura, as mudanças frequentes na legislação e a economia instável.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 153,
             "char_end": 163
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 4131,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 153,
+                "char_end": 163
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003179_SENT019::legislação::1",
           "sent_ID": "FOLHA_DOC003179_SENT019",
           "text": "A partir de 1957, o moderno foi interrompido por legislações que passaram a dificultar o adensamento urbano, segregaram a residência do comércio, oneraram a infraestrutura e induziram o uso do automóvel.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislações",
             "char_start": 49,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 4844,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001102_SENT015::legislação::1",
           "sent_ID": "FOLHA_DOC001102_SENT015",
           "text": "Por mais que eu tente entender os sentimentos patrióticos, não consigo levar muito a sério a ideia -que não fica a dever nada às legislações de bruxaria da Idade Média- de que um pedaço de pano deva ser protegido contra maus-tratos e outras formas de profanação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislações",
             "char_start": 129,
             "char_end": 140
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "de bruxaria"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 141,
+                "char_end": 152
+              }
+            ]
+          },
+          "target_instance_id": 7156,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 129,
+                "char_end": 140
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29,
+                      30
+                    ],
+                    "char_start": 141,
+                    "char_end": 152,
+                    "head_token_id": 30,
+                    "head_form": "bruxaria",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000764_SENT023::legislação::1",
           "sent_ID": "FOLHA_DOC000764_SENT023",
           "text": "Ao optar pelo PEN, aliados de Bolsonaro contavam com uma mudança na legislação permitindo que parlamentares levassem consigo direito a tempo de TV e fundo partidário proporcionais ao resultado eleitoral.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 68,
             "char_end": 78
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "parlamentares",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 94,
+                "char_end": 107
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 9090,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 78
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20
+                    ],
+                    "char_start": 94,
+                    "char_end": 107,
+                    "head_token_id": 20,
+                    "head_form": "parlamentares",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003032_SENT005::legislação::1",
           "sent_ID": "FOLHA_DOC003032_SENT005",
           "text": "O procedimento desperta, portanto, uma discussão mais profunda: estamos diante de uma legislação burocrática e desatualizada que aplica as mesmas regras higienistas severas para a grande indústria e para o pequeno produtor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 86,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "as mesmas regras higienistas severas",
+            "Arg2": "para a grande indústria e para o pequeno produtor",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "obl",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 136,
+                "char_end": 172
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 173,
+                "char_end": 222
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 9195,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 86,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 136,
+                    "char_end": 172,
+                    "head_token_id": 24,
+                    "head_form": "regras",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 173,
+                    "char_end": 222,
+                    "head_token_id": 30,
+                    "head_form": "indústria",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003033_SENT016::legislação::1",
           "sent_ID": "FOLHA_DOC003033_SENT016",
           "text": "As placas, que enalteciam empresas parceiras em projeto de recuperação dos canteiros da avenida, tinham dimensões superiores à estabelecida em legislação municipal.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 143,
             "char_end": 153
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "municipal",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 154,
+                "char_end": 163
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 12719,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 143,
+                "char_end": 153
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27
+                    ],
+                    "char_start": 154,
+                    "char_end": 163,
+                    "head_token_id": 27,
+                    "head_form": "municipal",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003042_SENT004::legislação::1",
           "sent_ID": "FOLHA_DOC003042_SENT004",
           "text": "O prolongamento dessa discussão só faz aumentar a insegurança jurídica no estratégico setor do agronegócio -quando o país já deveria estar mais adiantado na vereda da recuperação ambiental prevista pela nova legislação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "legislação",
             "char_start": 208,
             "char_end": 218
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da recuperação ambiental",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 164,
+                "char_end": 188
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 15355,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d49f73f2077651c",
+          "argument_details": {
+            "predicate_token_ids": [
+              39
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 208,
+                "char_end": 218
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      31,
+                      32,
+                      33,
+                      34
+                    ],
+                    "char_start": 164,
+                    "char_end": 188,
+                    "head_token_id": 33,
+                    "head_form": "recuperação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "legislação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 1
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "amod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

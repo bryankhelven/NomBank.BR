@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "descrença · acepção 1",
+      "sense_id": "s_39b5ffeeb357947f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_39b5ffeeb357947f",
+      "frame_id": "f_9c24e21348b99982",
+      "pt_roleset": null,
+      "sense_label": "descrença · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "disbelief.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/disbelief.xml",
+          "source_xml_url": "data/nombank_sources/disbelief.xml",
+          "source_xml_sha256": "ec51828ff1151389f4aaaa8696fda0fef54158b9b660114fd1495c8a0740228e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador da descrença",
+          "definition": "Quem não crê, não Pacheco fonte da avaliação ou oposição afetada como holder automaticamente.",
+          "desc_pt": "Experienciador da descrença",
+          "definition_pt": "Quem não crê, não Pacheco fonte da avaliação ou oposição afetada como holder automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema desacreditado",
+          "definition": "Theme como política, sem opinião/pessoa específica inferidas externamente.",
+          "desc_pt": "Tema desacreditado",
+          "definition_pt": "Theme como política, sem opinião/pessoa específica inferidas externamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002032_SENT035::descrença::1",
           "sent_ID": "FOLHA_DOC002032_SENT035",
           "text": "Para Pacheco, a descrença na política \"freia os ímpetos de crítica\" da oposição, que também precisa \"corrigir problemas dentro de casa\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "descrença",
             "char_start": 16,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "na política"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 26,
+                "char_end": 37
+              }
+            ]
+          },
+          "target_instance_id": 2286,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9c24e21348b99982",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 26,
+                    "char_end": 37,
+                    "head_token_id": 8,
+                    "head_form": "política",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "descrença · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

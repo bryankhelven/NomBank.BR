@@ -6,60 +6,381 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003142_SENT024::carinho::1",
-          "sent_ID": "FOLHA_DOC003142_SENT024",
-          "text": "\"Não quero ofendê-la, mas prefiro ganhar a pagar pelo carinho de uma mulher\", diz um personagem a uma prostituta.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "carinho",
-            "char_start": 54,
-            "char_end": 61
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_fb1ffee752fbbf65",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "carinho.02",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_7b1281ea8cf7f769",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fb1ffee752fbbf65",
+      "frame_id": "f_8829cb9aff721ca1",
+      "pt_roleset": "carinho.01",
+      "sense_label": "carinho.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "touch.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/touch.xml",
+          "source_xml_url": "data/nombank_sources/touch.xml",
+          "source_xml_sha256": "cfe34c8ef7fe05c0722c6f7ad92575176dabf0431f955c2f4c44064042ff62eb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Agente do contato",
+          "definition": "Quem causa contato físico; extensão local de contato táctil à carícia/afago.",
+          "desc_pt": "Agente do contato",
+          "definition_pt": "Quem causa contato físico; extensão local de contato táctil à carícia/afago."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade tocada",
+          "definition": "Quem/o que recebe contato, inclusive destinatário da carícia preferida no discurso.",
+          "desc_pt": "Entidade tocada",
+          "definition_pt": "Quem/o que recebe contato, inclusive destinatário da carícia preferida no discurso."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio de tocar.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio de tocar."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003142_SENT024::carinho::1",
+          "sent_ID": "FOLHA_DOC003142_SENT024",
+          "text": "\"Não quero ofendê-la, mas prefiro ganhar a pagar pelo carinho de uma mulher\", diz um personagem a uma prostituta.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "carinho",
+            "char_start": 54,
+            "char_end": 61
+          },
+          "realization": {
+            "Arg0": "de uma mulher",
+            "Arg1": "um personagem",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 62,
+                "char_end": 75
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 82,
+                "char_end": 95
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4162,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8829cb9aff721ca1",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 62,
+                    "char_end": 75,
+                    "head_token_id": 17,
+                    "head_form": "mulher",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22
+                    ],
+                    "char_start": 82,
+                    "char_end": 95,
+                    "head_token_id": 22,
+                    "head_form": "personagem",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_7b1281ea8cf7f769",
+      "frame_id": "f_878c4759d7fc6bcd",
+      "pt_roleset": "carinho.02",
+      "sense_label": "carinho.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "affection.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/affection.xml",
+          "source_xml_url": "data/nombank_sources/affection.xml",
+          "source_xml_sha256": "5e5b0f6487e190490028b24d65c9fa27364aca1df108ab263978ac9437084005",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador",
+          "definition": "Quem sente/demonstra afeição; extensão local à meiguice dirigida.",
+          "desc_pt": "Experienciador",
+          "definition_pt": "Quem sente/demonstra afeição; extensão local à meiguice dirigida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema do afeto",
+          "definition": "Objeto/destinatário da afeição, não instrumento ou efeito fisiológico.",
+          "desc_pt": "Tema do afeto",
+          "definition_pt": "Objeto/destinatário da afeição, não instrumento ou efeito fisiológico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003035_SENT028::carinho::1",
           "sent_ID": "FOLHA_DOC003035_SENT028",
           "text": "A partir do rompimento dele com Eugênio Aragão [ex-procurador e ex-ministro da Justiça], fiquei distante porque nutro amizade e carinho enorme por ele [Aragão].",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "carinho",
             "char_start": 128,
             "char_end": 135
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "por ele [Aragão]"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 143,
+                "char_end": 159
+              }
+            ]
+          },
+          "target_instance_id": 10638,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_878c4759d7fc6bcd",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 128,
+                "char_end": 135
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "char_start": 143,
+                    "char_end": 159,
+                    "head_token_id": 29,
+                    "head_form": "ele",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000237_SENT005::carinho::1",
           "sent_ID": "FOLHA_DOC000237_SENT005",
           "text": "A primeira aponta para o efeito que a interação com os animais exerce sobre nosso sistema endócrino: tê-los por perto e gozar do carinho que eles nos dão reduz a liberação dos hormônios do estresse (que também levam à hipertensão e à imunossupressão) e aumenta a produção e a descarga dos mediadores químicos responsáveis pela sensação de prazer e felicidade, como serotonina, dopamina e ocitocina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "carinho",
             "char_start": 129,
             "char_end": 136
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "eles",
+            "Arg1": "nos"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "iobj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 141,
+                "char_end": 145
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 146,
+                "char_end": 149
+              }
+            ]
+          },
+          "target_instance_id": 11791,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_878c4759d7fc6bcd",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 129,
+                "char_end": 136
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29
+                    ],
+                    "char_start": 141,
+                    "char_end": 145,
+                    "head_token_id": 29,
+                    "head_form": "eles",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30
+                    ],
+                    "char_start": 146,
+                    "char_end": 149,
+                    "head_token_id": 30,
+                    "head_form": "nos",
+                    "head_deprel": "iobj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "iobj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

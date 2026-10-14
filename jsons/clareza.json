@@ -6,24 +6,167 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "clareza · acepção 1",
+      "sense_id": "s_6ce43d46d42e7cd6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6ce43d46d42e7cd6",
+      "frame_id": "f_e68186c16bfd0fbd",
+      "pt_roleset": null,
+      "sense_label": "clareza · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "certainty.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/certainty.xml",
+          "source_xml_url": "data/nombank_sources/certainty.xml",
+          "source_xml_sha256": "e5efbc0d688bd007df0d69600e98f06020e9066a286c7dd96f776632325b4820",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Pessoa convicta",
+          "definition": "Experiencer que necessita clareza mental.",
+          "desc_pt": "Pessoa convicta",
+          "definition_pt": "Experiencer que necessita clareza mental."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto da convicção",
+          "definition": "Theme em relação ao que quer.",
+          "desc_pt": "Objeto da convicção",
+          "definition_pt": "Theme em relação ao que quer."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Grau de certeza",
+          "definition": "Value explícito, sem modal precisa como grau.",
+          "desc_pt": "Grau de certeza",
+          "definition_pt": "Value explícito, sem modal precisa como grau."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003151_SENT040::clareza::1",
           "sent_ID": "FOLHA_DOC003151_SENT040",
           "text": "A gente precisa ter clareza em relação ao que quer e correr atrás.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "clareza",
             "char_start": 20,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A gente",
+            "Arg1": "em relação ao que quer",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 28,
+                "char_end": 50
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15100,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68186c16bfd0fbd",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 7,
+                    "head_token_id": 2,
+                    "head_form": "gente",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 28,
+                    "char_end": 50,
+                    "head_token_id": 7,
+                    "head_form": "relação",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "clareza · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

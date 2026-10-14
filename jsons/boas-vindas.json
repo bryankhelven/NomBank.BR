@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "boas-vindas · acepção 1",
+      "sense_id": "s_fb50916b46a960c2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fb50916b46a960c2",
+      "frame_id": "f_266387dad5ada161",
+      "pt_roleset": null,
+      "sense_label": "boas-vindas · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "communication.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/communication.xml",
+          "source_xml_url": "data/nombank_sources/communication.xml",
+          "source_xml_sha256": "5586aa8f8111a47600c2ad710ed6deb83c4ad597633b212f64c52d75ef59bb48",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor das boas-vindas",
+          "definition": "First/all communicator no cumprimento de chegada.",
+          "desc_pt": "Autor das boas-vindas",
+          "definition_pt": "First/all communicator no cumprimento de chegada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo da saudação",
+          "definition": "Utterance fórmula específica, sem SELF1 sem prova original.",
+          "desc_pt": "Conteúdo da saudação",
+          "definition_pt": "Utterance fórmula específica, sem SELF1 sem prova original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Saudado",
+          "definition": "Other communicator identificado, não a bordo lugar ou Varig objeto mostrado.",
+          "desc_pt": "Saudado",
+          "definition_pt": "Other communicator identificado, não a bordo lugar ou Varig objeto mostrado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001478_SENT128::boas-vindas::1",
           "sent_ID": "FOLHA_DOC001478_SENT128",
           "text": "Quando enfim deu as boas-vindas a bordo, fez questão de mostrar a Varig inteira por dentro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "boas-vindas",
             "char_start": 20,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4234,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_266387dad5ada161",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "boas-vindas · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

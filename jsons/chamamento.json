@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "chamamento · acepção 1",
+      "sense_id": "s_31fd0a6384949ffb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_31fd0a6384949ffb",
+      "frame_id": "f_0d5abbfa968d2930",
+      "pt_roleset": null,
+      "sense_label": "chamamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "call.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/call.xml",
+          "source_xml_url": "data/nombank_sources/call.xml",
+          "source_xml_sha256": "c34bcf697fb103290f14069a96384b9745cb49773717d0b0184cfd5763ab2252",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Convocador",
+          "definition": "Caller do chamamento como convocação.",
+          "desc_pt": "Convocador",
+          "definition_pt": "Caller do chamamento como convocação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Convocado",
+          "definition": "Thing summoned, pessoa/entidade expressa.",
+          "desc_pt": "Convocado",
+          "definition_pt": "Thing summoned, pessoa/entidade expressa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Finalidade da convocação",
+          "definition": "Beneficiary como programa ao qual se chama, apoiado pelo to arms original, sem tornar programa pessoa convocada.",
+          "desc_pt": "Finalidade da convocação",
+          "definition_pt": "Beneficiary como programa ao qual se chama, apoiado pelo to arms original, sem tornar programa pessoa convocada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004014_SENT006::chamamento::1",
           "sent_ID": "FOLHA_DOC004014_SENT006",
           "text": "O fato fere o princípio de isenção previsto no chamamento para o programa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "chamamento",
             "char_start": 47,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para o programa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 58,
+                "char_end": 73
+              }
+            ]
+          },
+          "target_instance_id": 7455,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0d5abbfa968d2930",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 58,
+                    "char_end": 73,
+                    "head_token_id": 14,
+                    "head_form": "programa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "chamamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,38 +6,204 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "aversão · acepção 1",
+      "sense_id": "s_2cc9d6d49f549c24",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2cc9d6d49f549c24",
+      "frame_id": "f_99ae713001b2e22e",
+      "pt_roleset": null,
+      "sense_label": "aversão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dislike.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dislike.xml",
+          "source_xml_url": "data/nombank_sources/dislike.xml",
+          "source_xml_sha256": "658182b209af8f8f8a42d98ea10f2faa11c34f4796d4b3a9c7197fbe21241e0d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador da aversão",
+          "definition": "Quem tem antipatia, incluindo quem relativo sem identidade definida.",
+          "desc_pt": "Experienciador da aversão",
+          "definition_pt": "Quem tem antipatia, incluindo quem relativo sem identidade definida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo da aversão",
+          "definition": "Ação/entidade desagradável, distinta de comparadores da ocorrência.",
+          "desc_pt": "Alvo da aversão",
+          "definition_pt": "Ação/entidade desagradável, distinta de comparadores da ocorrência."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002017_SENT010::aversão::1",
           "sent_ID": "FOLHA_DOC002017_SENT010",
           "text": "Essa volatilidade -em especial para baixo- pode ser um teste para quem tem aversão a perder dinheiro, mesmo que no curto prazo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aversão",
             "char_start": 75,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "quem",
+            "Arg1": "a perder dinheiro, mesmo que no curto prazo"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 66,
+                "char_end": 70
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 83,
+                "char_end": 126
+              }
+            ]
+          },
+          "target_instance_id": 6828,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_99ae713001b2e22e",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 66,
+                    "char_end": 70,
+                    "head_token_id": 14,
+                    "head_form": "quem",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 83,
+                    "char_end": 126,
+                    "head_token_id": 18,
+                    "head_form": "perder",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001771_SENT022::aversão::1",
           "sent_ID": "FOLHA_DOC001771_SENT022",
           "text": "Causa tanta ou mais aversão que Temer ou Eduardo Cunha, abjeções quase absolutas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aversão",
             "char_start": 20,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 8896,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_99ae713001b2e22e",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aversão · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

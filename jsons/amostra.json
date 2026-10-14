@@ -6,23 +6,154 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_91155e50406b3c40",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_91155e50406b3c40",
+      "frame_id": "f_67967e3663dcec8f",
+      "pt_roleset": "amostra.04",
+      "sense_label": "amostra.04",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "example.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/example.xml",
+          "source_xml_url": "data/nombank_sources/example.xml",
+          "source_xml_sha256": "eb0f1e5251c96bb98400e0869f56e3df324e41211c74950a55cbea7759421192",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Exemplar representativo",
+          "definition": "Example n1/source0, episódio independente por cópula; sem duplicação REL.",
+          "desc_pt": "Exemplar representativo",
+          "definition_pt": "Example n1/source0, episódio independente por cópula; sem duplicação REL."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Conjunto exemplificado",
+          "definition": "Of what n2/source1, batalha com relativa inteira, não amostra estatística material.",
+          "desc_pt": "Conjunto exemplificado",
+          "definition_pt": "Of what n2/source1, batalha com relativa inteira, não amostra estatística material."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000104_SENT014::amostra::1",
           "sent_ID": "FOLHA_DOC000104_SENT014",
           "text": "O episódio é mais uma amostra da batalha que Congresso e sociedade travam no país hoje.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "amostra",
             "char_start": 22,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "O episódio",
+            "Arg2": "da batalha que Congresso e sociedade travam no país hoje"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 10
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 30,
+                "char_end": 86
+              }
+            ]
+          },
+          "target_instance_id": 8404,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_67967e3663dcec8f",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 10,
+                    "head_token_id": 2,
+                    "head_form": "episódio",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 30,
+                    "char_end": 86,
+                    "head_token_id": 9,
+                    "head_form": "batalha",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,155 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "ânsia · acepção 1",
+      "sense_id": "s_31b6820e88671c11",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_31b6820e88671c11",
+      "frame_id": "f_5afe68cafdbb5de8",
+      "pt_roleset": null,
+      "sense_label": "ânsia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "eagerness.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/eagerness.xml",
+          "source_xml_url": "data/nombank_sources/eagerness.xml",
+          "source_xml_sha256": "05375e892df3741b37dbe55ea1273998a6a851f8d642ac74f7df8b5caa36811b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da ânsia",
+          "definition": "Experiencer de desejo ávido/imoderado, incluindo movimento metonímico, não vômito.",
+          "desc_pt": "Titular da ânsia",
+          "definition_pt": "Experiencer de desejo ávido/imoderado, incluindo movimento metonímico, não vômito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto desejado",
+          "definition": "Theme/ação almejada integral, com modalidade e juízo avaliativo conservados.",
+          "desc_pt": "Objeto desejado",
+          "definition_pt": "Theme/ação almejada integral, com modalidade e juízo avaliativo conservados."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003049_SENT037::ânsia::1",
           "sent_ID": "FOLHA_DOC003049_SENT037",
           "text": "Na ânsia de reduzir as esferas da vida social à política conservadora, o movimento despreza a complexidade humana e legisla com dogmas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ânsia",
             "char_start": 3,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o movimento",
+            "Arg1": "de reduzir as esferas da vida social à política conservadora"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 71,
+                "char_end": 82
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 9,
+                "char_end": 69
+              }
+            ]
+          },
+          "target_instance_id": 627,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5afe68cafdbb5de8",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18
+                    ],
+                    "char_start": 71,
+                    "char_end": 82,
+                    "head_token_id": 18,
+                    "head_form": "movimento",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 9,
+                    "char_end": 69,
+                    "head_token_id": 5,
+                    "head_form": "reduzir",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "ânsia · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

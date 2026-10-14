@@ -6,23 +6,128 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b4e0645d2d82acdc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b4e0645d2d82acdc",
+      "frame_id": "f_99fa47156961dd07",
+      "pt_roleset": "picada.01",
+      "sense_label": "picada.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "bite.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/bite.xml",
+          "source_xml_url": "data/nombank_sources/bite.xml",
+          "source_xml_sha256": "c4468fefc79cc243425554be1c7328533a6c032c801b1cc5060d4e47e3cf2890",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Animal que pica",
+          "definition": "Biter agent restrito à mordedura/picada animal frozen.",
+          "desc_pt": "Animal que pica",
+          "definition_pt": "Biter agent restrito à mordedura/picada animal frozen."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Picado",
+          "definition": "Theme/patient mordido ou picado, não doença transmitida ou órgão da gloss como token.",
+          "desc_pt": "Picado",
+          "definition_pt": "Theme/patient mordido ou picado, não doença transmitida ou órgão da gloss como token."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003047_SENT012::picada::1",
           "sent_ID": "FOLHA_DOC003047_SENT012",
           "text": "A encefalite de Saint Louis é transmitida com a picada do mosquito do gênero Culex.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "picada",
             "char_start": 48,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do mosquito do gênero Culex",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 55,
+                "char_end": 82
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5589,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_99fa47156961dd07",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 55,
+                    "char_end": 82,
+                    "head_token_id": 13,
+                    "head_form": "mosquito",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

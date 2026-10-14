@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "satisfação · acepção 1",
+      "sense_id": "s_1584ed6d7f0c5fd1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1584ed6d7f0c5fd1",
+      "frame_id": "f_d9b5acca6a7b32ee",
+      "pt_roleset": null,
+      "sense_label": "satisfação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "satisfaction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/satisfaction.xml",
+          "source_xml_url": "data/nombank_sources/satisfaction.xml",
+          "source_xml_sha256": "d801b5700ee31c38e0062205b434bb80e51c167d15856e248afee95797c0b4fb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa da satisfação",
+          "definition": "Pleaser/agent que causa contentamento.",
+          "desc_pt": "Causa da satisfação",
+          "definition_pt": "Pleaser/agent que causa contentamento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Titular satisfeito",
+          "definition": "Entity pleased/experiencer, inclusive para nós sob hipótese.",
+          "desc_pt": "Titular satisfeito",
+          "definition_pt": "Entity pleased/experiencer, inclusive para nós sob hipótese."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento da satisfação",
+          "definition": "Instrumental da satisfação, sem instituição indagada automaticamente instrumento.",
+          "desc_pt": "Instrumento da satisfação",
+          "definition_pt": "Instrumental da satisfação, sem instituição indagada automaticamente instrumento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004128_SENT008::satisfação::1",
           "sent_ID": "FOLHA_DOC004128_SENT008",
           "text": "Seria uma grande satisfação para nós e com frequência temos indagado a NFL sobre isso.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "satisfação",
             "char_start": 17,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "para nós",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 28,
+                "char_end": 36
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4317,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d9b5acca6a7b32ee",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 28,
+                    "char_end": 36,
+                    "head_token_id": 6,
+                    "head_form": "nós",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "satisfação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,143 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sondagem · acepção 1",
+      "sense_id": "s_5d807361dbb651a9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5d807361dbb651a9",
+      "frame_id": "f_66147e14c7905a49",
+      "pt_roleset": null,
+      "sense_label": "sondagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "poll.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/poll.xml",
+          "source_xml_url": "data/nombank_sources/poll.xml",
+          "source_xml_sha256": "dc4c4f9b2885d3bcbf1a0ffc9ee3f9c148158f9db961c77d7dbddec47af7b3ed",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Pesquisador",
+          "definition": "Poller autor da sondagem de opinião eleitoral.",
+          "desc_pt": "Pesquisador",
+          "definition_pt": "Poller autor da sondagem de opinião eleitoral."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Consultados",
+          "definition": "People asked explicitados, sem partido pesquisado como respondente.",
+          "desc_pt": "Consultados",
+          "definition_pt": "People asked explicitados, sem partido pesquisado como respondente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Questão da sondagem",
+          "definition": "Topic perguntado, sem resultado percentual como pergunta reconstruída.",
+          "desc_pt": "Questão da sondagem",
+          "definition_pt": "Topic perguntado, sem resultado percentual como pergunta reconstruída."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003039_SENT019::sondagem::1",
           "sent_ID": "FOLHA_DOC003039_SENT019",
           "text": "Seu partido, a CDU (União Democrata-Cristã), lidera com 36% segundo a sondagem feita pelo Forschungsgruppe Wahlen.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sondagem",
             "char_start": 70,
             "char_end": 78
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pelo Forschungsgruppe Wahlen",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 85,
+                "char_end": 113
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12396,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_66147e14c7905a49",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 70,
+                "char_end": 78
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 85,
+                    "char_end": 113,
+                    "head_token_id": 21,
+                    "head_form": "Forschungsgruppe",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sondagem · acepção 1"
+      "syntactic_profile": {
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

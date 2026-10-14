@@ -6,37 +6,319 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_9acdc3feb6d68fd0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9acdc3feb6d68fd0",
+      "frame_id": "f_f5da32b2289e4144",
+      "pt_roleset": "exceção.02",
+      "sense_label": "exceção.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exemption.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exemption.xml",
+          "source_xml_url": "data/nombank_sources/exemption.xml",
+          "source_xml_sha256": "7e5bb4761d1e1d912a159fbadd733de744f5045b8b7b8847c2521e3cc5553017",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da isenção",
+          "definition": "Quem dispensa obrigação, incluindo país que estabelece exceção.",
+          "desc_pt": "Autor da isenção",
+          "definition_pt": "Quem dispensa obrigação, incluindo país que estabelece exceção."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Obrigação dispensada",
+          "definition": "Theme n1/source2 literal, exigência da qual se isenta.",
+          "desc_pt": "Obrigação dispensada",
+          "definition_pt": "Theme n1/source2 literal, exigência da qual se isenta."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da isenção",
+          "definition": "Theme beneficiado n2/source1 literal, como refugiados excluídos da obrigação.",
+          "desc_pt": "Beneficiário da isenção",
+          "definition_pt": "Theme beneficiado n2/source1 literal, como refugiados excluídos da obrigação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003056_SENT010::exceção::1",
           "sent_ID": "FOLHA_DOC003056_SENT010",
           "text": "Um exemplo citado é o movimento feito pelo Panamá, que recentemente estabeleceu a obrigatoriedade de visto a venezuelanos (com exceção para refugiados), atingindo pessoas do alto escalão do governo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "exceção",
             "char_start": 127,
             "char_end": 134
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pelo Panamá",
+            "Arg1": "a obrigatoriedade de visto",
+            "Arg2": "para refugiados"
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": "obj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 38,
+                "char_end": 49
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 80,
+                "char_end": 106
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 135,
+                "char_end": 150
+              }
+            ]
+          },
+          "target_instance_id": 8836,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5da32b2289e4144",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 127,
+                "char_end": 134
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 49,
+                    "head_token_id": 10,
+                    "head_form": "Panamá",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 80,
+                    "char_end": 106,
+                    "head_token_id": 16,
+                    "head_form": "obrigatoriedade",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25
+                    ],
+                    "char_start": 135,
+                    "char_end": 150,
+                    "head_token_id": 25,
+                    "head_form": "refugiados",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
         },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_9acdc3feb6d68fd0",
+      "frame_id": "f_59e2c8ab4a622bba",
+      "pt_roleset": "exceção.02",
+      "sense_label": "exceção.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exclusion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exclusion.xml",
+          "source_xml_url": "data/nombank_sources/exclusion.xml",
+          "source_xml_sha256": "b11fa9b77d0842058ad50c3f5b93a6376156df5ba04ea9b7dfbd5825367c7f2a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da exclusão",
+          "definition": "Quem exclui/exceptua, sem narrador elíptico fabricado.",
+          "desc_pt": "Autor da exclusão",
+          "definition_pt": "Quem exclui/exceptua, sem narrador elíptico fabricado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade excluída",
+          "definition": "Coisa/pessoa que fica fora da generalização ou conjunto.",
+          "desc_pt": "Entidade excluída",
+          "definition_pt": "Coisa/pessoa que fica fora da generalização ou conjunto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Domínio de exclusão",
+          "definition": "Excluded-from expresso de forma inequívoca, sem conjunto de nenhuma delas convertido automaticamente em fonte.",
+          "desc_pt": "Domínio de exclusão",
+          "definition_pt": "Excluded-from expresso de forma inequívoca, sem conjunto de nenhuma delas convertido automaticamente em fonte."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003203_SENT025::exceção::1",
           "sent_ID": "FOLHA_DOC003203_SENT025",
           "text": "Com exceção da também notória Oi, nenhuma delas teve negócios tão íntimos com o Estado quanto Odebrecht e JBS.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "exceção",
             "char_start": 4,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da também notória Oi",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 12,
+                "char_end": 32
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14236,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_59e2c8ab4a622bba",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 12,
+                    "char_end": 32,
+                    "head_token_id": 7,
+                    "head_form": "Oi",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

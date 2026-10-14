@@ -6,24 +6,134 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "oficina · acepção 1",
+      "sense_id": "s_535ca3ad4e9066cd",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_535ca3ad4e9066cd",
+      "frame_id": "f_3cdcf6908116c8ba",
+      "pt_roleset": null,
+      "sense_label": "oficina · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "class.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/class.xml",
+          "source_xml_url": "data/nombank_sources/class.xml",
+          "source_xml_sha256": "151a9286c34b01445a31489497b68231261362e8372d895074f37d3e00a19886",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Professor da oficina",
+          "definition": "Teacher expresso.",
+          "desc_pt": "Professor da oficina",
+          "definition_pt": "Teacher expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo da oficina",
+          "definition": "Theme ensinado, sem temas das apresentações transferidos.",
+          "desc_pt": "Conteúdo da oficina",
+          "definition_pt": "Theme ensinado, sem temas das apresentações transferidos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Aluno da oficina",
+          "definition": "Beneficiary/recipient participante aprendiz.",
+          "desc_pt": "Aluno da oficina",
+          "definition_pt": "Beneficiary/recipient participante aprendiz."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Aspecto secundário da aula",
+          "definition": "Secondary-theme explicitado.",
+          "desc_pt": "Aspecto secundário da aula",
+          "definition_pt": "Secondary-theme explicitado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003155_SENT009::oficina::1",
           "sent_ID": "FOLHA_DOC003155_SENT009",
           "text": "Há oficinas e uma série de apresentações, entre as quais teatro, dança, música e moda, com nomes importantes de cada uma das áreas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "oficinas",
             "char_start": 3,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 15119,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3cdcf6908116c8ba",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "oficina · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

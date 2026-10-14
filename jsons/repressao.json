@@ -6,80 +6,436 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "repressão · acepção 1",
+      "sense_id": "s_d611b49395e30ab3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d611b49395e30ab3",
+      "frame_id": "f_be080dd4ba833ba7",
+      "pt_roleset": null,
+      "sense_label": "repressão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "repression.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/repression.xml",
+          "source_xml_url": "data/nombank_sources/repression.xml",
+          "source_xml_sha256": "dd0897f2c022b2b801192bf527e97639822a21dbbae8e70751764b4a03dd4544",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "agente repressor",
+          "definition": "Entidade que reprime ou subjuga, tradução baseada nos papéis e exemplos originais preservados.",
+          "desc_pt": "agente repressor",
+          "definition_pt": "Entidade que reprime ou subjuga, tradução baseada nos papéis e exemplos originais preservados."
+        },
+        {
+          "id": "Arg1",
+          "desc": "alvo reprimido",
+          "definition": "Entidade, capacidade ou atividade reprimida.",
+          "desc_pt": "alvo reprimido",
+          "definition_pt": "Entidade, capacidade ou atividade reprimida."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001408_SENT033::repressão::1",
           "sent_ID": "FOLHA_DOC001408_SENT033",
           "text": "Escola é lugar de debate e de confronto de ideias, não de repressão do Estado ou de milicianos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repressão",
             "char_start": 58,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do Estado ou de milicianos",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 68,
+                "char_end": 94
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 1068,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be080dd4ba833ba7",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 68,
+                    "char_end": 94,
+                    "head_token_id": 17,
+                    "head_form": "Estado",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002009_SENT013::repressão::1",
           "sent_ID": "FOLHA_DOC002009_SENT013",
           "text": "Sem ter de preocupar-se com usuários, a polícia orientou a repressão para grandes traficantes e produtores de drogas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repressão",
             "char_start": 59,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a polícia",
+            "Arg1": "para grandes traficantes e produtores de drogas"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 38,
+                "char_end": 47
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 116
+              }
+            ]
+          },
+          "target_instance_id": 4324,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be080dd4ba833ba7",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 47,
+                    "head_token_id": 10,
+                    "head_form": "polícia",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 69,
+                    "char_end": 116,
+                    "head_token_id": 16,
+                    "head_form": "traficantes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000117_SENT017::repressão::1",
           "sent_ID": "FOLHA_DOC000117_SENT017",
           "text": "Tudo é cultura, inclusive a de repressão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repressão",
             "char_start": 31,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 6848,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be080dd4ba833ba7",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003044_SENT023::repressão::1",
           "sent_ID": "FOLHA_DOC003044_SENT023",
           "text": "Por fim, \"The Handmaids Tale\" (Hulu), uma distopia sobre a repressão de mulheres, ganhou como melhor série dramática.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repressão",
             "char_start": 59,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de mulheres"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 80
+              }
+            ]
+          },
+          "target_instance_id": 9591,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be080dd4ba833ba7",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19
+                    ],
+                    "char_start": 69,
+                    "char_end": 80,
+                    "head_token_id": 19,
+                    "head_form": "mulheres",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003050_SENT025::repressão::1",
           "sent_ID": "FOLHA_DOC003050_SENT025",
           "text": "Um documentário de Belisario Franca trará depoimentos de ex-soldados que participaram da repressão à Guerrilha do Araguaia (1972-1975).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repressão",
             "char_start": 89,
             "char_end": 98
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ex-soldados",
+            "Arg1": "à Guerrilha do Araguaia (1972-1975)"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 57,
+                "char_end": 68
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 99,
+                "char_end": 134
+              }
+            ]
+          },
+          "target_instance_id": 10885,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be080dd4ba833ba7",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 89,
+                "char_end": 98
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 57,
+                    "char_end": 68,
+                    "head_token_id": 9,
+                    "head_form": "ex-soldados",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 99,
+                    "char_end": 134,
+                    "head_token_id": 17,
+                    "head_form": "Guerrilha",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "repressão · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 3
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

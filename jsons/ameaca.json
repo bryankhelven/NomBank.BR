@@ -6,51 +6,11 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003272_SENT045::ameaça::1",
-          "sent_ID": "FOLHA_DOC003272_SENT045",
-          "text": "Tanto Samuel como Milton preferiram não revelar seus sobrenomes pois dizem sofrer ameaças constantes.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ameaças",
-            "char_start": 82,
-            "char_end": 89
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003086_SENT008::ameaça::1",
-          "sent_ID": "FOLHA_DOC003086_SENT008",
-          "text": "Uma porta-voz da promotoria disse que a suspeita não fez ameaças ou declarações extremistas.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ameaças",
-            "char_start": 57,
-            "char_end": 64
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003191_SENT031::ameaça::1",
-          "sent_ID": "FOLHA_DOC003191_SENT031",
-          "text": "Alguns casos de ofensas na internet, como de ameaça, devem ser denunciados pela própria vítima em uma delegacia de polícia.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ameaça",
-            "char_start": 45,
-            "char_end": 51
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_6f5e074beae83b03",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "ameaça.03",
@@ -61,24 +21,32 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/menace.xml",
           "adapted": true,
-          "gloss": "threaten"
+          "gloss": "threaten",
+          "source_xml_url": "data/nombank_sources/menace.xml",
+          "source_xml_sha256": "0a0d77360991a16ab0dfd4b497311cc225d23db31cb90f53f84a9007304d12a1"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "emissor da ameaça",
-          "definition": "Entidade que faz/emite ameaça quando explicitamente identificada; pessoa que considera algo perigoso não basta."
+          "definition": "Entidade que faz/emite ameaça quando explicitamente identificada; pessoa que considera algo perigoso não basta.",
+          "desc_pt": "emissor da ameaça",
+          "definition_pt": "Entidade que faz/emite ameaça quando explicitamente identificada; pessoa que considera algo perigoso não basta."
         },
         {
           "id": "Arg1",
           "desc": "perigo ou conteúdo ameaçador",
-          "definition": "Conteúdo danoso anunciado ou entidade/situação caracterizada como ameaça, conforme drugs1 de menace; atribuição e modalidade são preservadas."
+          "definition": "Conteúdo danoso anunciado ou entidade/situação caracterizada como ameaça, conforme drugs1 de menace; atribuição e modalidade são preservadas.",
+          "desc_pt": "perigo ou conteúdo ameaçador",
+          "definition_pt": "Conteúdo danoso anunciado ou entidade/situação caracterizada como ameaça, conforme drugs1 de menace; atribuição e modalidade são preservadas."
         },
         {
           "id": "Arg2",
           "desc": "entidade ameaçada",
-          "definition": "Pessoa/coletivo/coisa alvo do perigo, conforme entity threatened; não beneficiário positivo apesar da grafia original."
+          "definition": "Pessoa/coletivo/coisa alvo do perigo, conforme entity threatened; não beneficiário positivo apesar da grafia original.",
+          "desc_pt": "entidade ameaçada",
+          "definition_pt": "Pessoa/coletivo/coisa alvo do perigo, conforme entity threatened; não beneficiário positivo apesar da grafia original."
         }
       ],
       "instances": [
@@ -114,6 +82,62 @@
               {
                 "char_start": 62,
                 "char_end": 75
+              }
+            ]
+          },
+          "target_instance_id": 703,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 28,
+                    "char_end": 49
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 62,
+                    "char_end": 75
+                  }
+                ]
               }
             ]
           }
@@ -152,6 +176,65 @@
                 "char_end": 97
               }
             ]
+          },
+          "target_instance_id": 1979,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 67,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 39,
+                    "char_end": 62
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 80,
+                    "char_end": 97
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -181,6 +264,54 @@
               {
                 "char_start": 22,
                 "char_end": 47
+              }
+            ]
+          },
+          "target_instance_id": 3005,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 22,
+                    "char_end": 47
+                  }
+                ]
               }
             ]
           }
@@ -214,6 +345,51 @@
                 "char_end": 51
               }
             ]
+          },
+          "target_instance_id": 3425,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 38,
+                    "char_end": 51
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -240,6 +416,41 @@
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
+          },
+          "target_instance_id": 4227,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -271,6 +482,49 @@
               }
             ],
             "Arg2": []
+          },
+          "target_instance_id": 7875,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 102,
+                "char_end": 108
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16
+                    ],
+                    "char_start": 87,
+                    "char_end": 96
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -297,6 +551,41 @@
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
+          },
+          "target_instance_id": 12613,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -333,6 +622,58 @@
                 "char_end": 81
               }
             ]
+          },
+          "target_instance_id": 14488,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 6
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 69,
+                    "char_end": 81
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -364,6 +705,52 @@
                 "char_end": 142
               }
             ]
+          },
+          "target_instance_id": 15444,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 156,
+                "char_end": 163
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 122,
+                    "char_end": 142
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -390,6 +777,41 @@
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
+          },
+          "target_instance_id": 15611,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5eceede090e7f06",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 89,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
@@ -402,81 +824,789 @@
           "nmod": 5,
           "nsubj": 1
         }
-      }
+      },
+      "sense_id": "s_bf4de093d7dc2573",
+      "frame_id": "f_f5eceede090e7f06",
+      "inventory_authority": "accepted_in_formal_base"
     },
     {
       "pt_roleset": "ameaça.02",
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004039_SENT017::ameaça::1",
-          "sent_ID": "FOLHA_DOC004039_SENT017",
-          "text": "Apesar da ameaça de punições, os parlamentares independentistas catalães dizem que não vão ceder.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ameaça",
-            "char_start": 10,
-            "char_end": 16
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b9c9f6bacf6a9eaa",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "ameaça.04",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_5de8efee9781839c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6f5e074beae83b03",
+      "frame_id": "f_e374b30064ea0f00",
+      "pt_roleset": "ameaça.01",
+      "sense_label": "ameaça.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "menace.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/menace.xml",
+          "source_xml_url": "data/nombank_sources/menace.xml",
+          "source_xml_sha256": "0a0d77360991a16ab0dfd4b497311cc225d23db31cb90f53f84a9007304d12a1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "emissor da ameaça",
+          "definition": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam.",
+          "desc_pt": "emissor da ameaça",
+          "definition_pt": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam."
+        },
+        {
+          "id": "Arg1",
+          "desc": "mal ou perigo ameaçado",
+          "definition": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo.",
+          "desc_pt": "mal ou perigo ameaçado",
+          "definition_pt": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo ameaçado",
+          "definition": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default.",
+          "desc_pt": "alvo ameaçado",
+          "definition_pt": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003272_SENT045::ameaça::1",
+          "sent_ID": "FOLHA_DOC003272_SENT045",
+          "text": "Tanto Samuel como Milton preferiram não revelar seus sobrenomes pois dizem sofrer ameaças constantes.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ameaças",
+            "char_start": 82,
+            "char_end": 89
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Tanto Samuel como Milton"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 24
+              }
+            ]
+          },
+          "target_instance_id": 335,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e374b30064ea0f00",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 82,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 24,
+                    "head_token_id": 2,
+                    "head_form": "Samuel",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003086_SENT008::ameaça::1",
+          "sent_ID": "FOLHA_DOC003086_SENT008",
+          "text": "Uma porta-voz da promotoria disse que a suspeita não fez ameaças ou declarações extremistas.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ameaças",
+            "char_start": 57,
+            "char_end": 64
+          },
+          "realization": {
+            "Arg0": "a suspeita",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 38,
+                "char_end": 48
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5196,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e374b30064ea0f00",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 38,
+                    "char_end": 48,
+                    "head_token_id": 9,
+                    "head_form": "suspeita",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003191_SENT031::ameaça::1",
+          "sent_ID": "FOLHA_DOC003191_SENT031",
+          "text": "Alguns casos de ofensas na internet, como de ameaça, devem ser denunciados pela própria vítima em uma delegacia de polícia.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ameaça",
+            "char_start": 45,
+            "char_end": 51
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "pela própria vítima"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl:agent"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 75,
+                "char_end": 94
+              }
+            ]
+          },
+          "target_instance_id": 7614,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e374b30064ea0f00",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 75,
+                    "char_end": 94,
+                    "head_token_id": 19,
+                    "head_form": "vítima",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "obl:agent": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_b9c9f6bacf6a9eaa",
+      "frame_id": "f_87e54643ae18b503",
+      "pt_roleset": "ameaça.02",
+      "sense_label": "ameaça.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "menace.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/menace.xml",
+          "source_xml_url": "data/nombank_sources/menace.xml",
+          "source_xml_sha256": "0a0d77360991a16ab0dfd4b497311cc225d23db31cb90f53f84a9007304d12a1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "emissor da ameaça",
+          "definition": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam.",
+          "desc_pt": "emissor da ameaça",
+          "definition_pt": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam."
+        },
+        {
+          "id": "Arg1",
+          "desc": "mal ou perigo ameaçado",
+          "definition": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo.",
+          "desc_pt": "mal ou perigo ameaçado",
+          "definition_pt": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo ameaçado",
+          "definition": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default.",
+          "desc_pt": "alvo ameaçado",
+          "definition_pt": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004039_SENT017::ameaça::1",
+          "sent_ID": "FOLHA_DOC004039_SENT017",
+          "text": "Apesar da ameaça de punições, os parlamentares independentistas catalães dizem que não vão ceder.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ameaça",
+            "char_start": 10,
+            "char_end": 16
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de punições",
+            "Arg2": "os parlamentares independentistas catalães"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 28
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 30,
+                "char_end": 72
+              }
+            ]
+          },
+          "target_instance_id": 3387,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_87e54643ae18b503",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 17,
+                    "char_end": 28,
+                    "head_token_id": 6,
+                    "head_form": "punições",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 30,
+                    "char_end": 72,
+                    "head_token_id": 9,
+                    "head_form": "parlamentares",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_5de8efee9781839c",
+      "frame_id": "f_90af002e497255d2",
+      "pt_roleset": "ameaça.04",
+      "sense_label": "ameaça.04",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "menace.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/menace.xml",
+          "source_xml_url": "data/nombank_sources/menace.xml",
+          "source_xml_sha256": "0a0d77360991a16ab0dfd4b497311cc225d23db31cb90f53f84a9007304d12a1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "emissor da ameaça",
+          "definition": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam.",
+          "desc_pt": "emissor da ameaça",
+          "definition_pt": "Entidade que expressamente faz a ameaça, inclusive ato negado; relator e nome próximo não bastam."
+        },
+        {
+          "id": "Arg1",
+          "desc": "mal ou perigo ameaçado",
+          "definition": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo.",
+          "desc_pt": "mal ou perigo ameaçado",
+          "definition_pt": "Conteúdo ameaçador ou perigo prospectivo, conforme drugs como threat no exemplo nominal. Frequência e mera avaliação não são conteúdo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo ameaçado",
+          "definition": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default.",
+          "desc_pt": "alvo ameaçado",
+          "definition_pt": "Pessoa/grupo/instituição a quem a ameaça se dirige ou que a sofre; não quem transmite a notícia por default."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003106_SENT009::ameaça::1",
           "sent_ID": "FOLHA_DOC003106_SENT009",
           "text": "Mas em uma era de Donald Trump, ameaça de confronto nuclear e supremacistas brancos, parece haver menos espaço para filmes edificantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ameaça",
             "char_start": 32,
             "char_end": 38
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de confronto nuclear",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 39,
+                "char_end": 59
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4350,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_90af002e497255d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 39,
+                    "char_end": 59,
+                    "head_token_id": 11,
+                    "head_form": "confronto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004083_SENT025::ameaça::1",
           "sent_ID": "FOLHA_DOC004083_SENT025",
           "text": "Mais ameaças potenciais para Temer, sem exclusividade: seria a hora também de outros políticos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ameaças",
             "char_start": 5,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para Temer"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 24,
+                "char_end": 34
+              }
+            ]
+          },
+          "target_instance_id": 6926,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_90af002e497255d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 5,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 24,
+                    "char_end": 34,
+                    "head_token_id": 5,
+                    "head_form": "Temer",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004092_SENT027::ameaça::1",
           "sent_ID": "FOLHA_DOC004092_SENT027",
           "text": "Pela primeira vez desde a sua criação, o Unaids sofre sérias ameaças de cortes de verba.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ameaças",
             "char_start": 61,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de cortes de verba",
+            "Arg2": "o Unaids"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 87
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 39,
+                "char_end": 47
+              }
+            ]
+          },
+          "target_instance_id": 8553,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_90af002e497255d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 69,
+                    "char_end": 87,
+                    "head_token_id": 16,
+                    "head_form": "cortes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11
+                    ],
+                    "char_start": 39,
+                    "char_end": 47,
+                    "head_token_id": 11,
+                    "head_form": "Unaids",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 1
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

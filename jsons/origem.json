@@ -6,226 +6,1913 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "origem · acepção 1",
+      "sense_id": "s_205e6445ced8c5d9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "pt_roleset": null,
+      "description": null,
+      "origin_frames": [],
+      "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "origem · acepção 2",
+      "sense_id": "s_c8dce75b4957d9e9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "pt_roleset": null,
+      "description": null,
+      "origin_frames": [],
+      "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "origem · acepção 3",
+      "sense_id": "s_ef2e8134fadf0493",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_205e6445ced8c5d9",
+      "frame_id": "f_1e64fcbdad2f1466",
+      "pt_roleset": null,
+      "sense_label": "origem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador",
+          "definition": "Creator original; antecedência não identifica necessariamente criador.",
+          "desc_pt": "Criador",
+          "definition_pt": "Creator original; antecedência não identifica necessariamente criador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade de origem",
+          "definition": "Thing originated original; portador de ancestralidade/procedência é extensão local explicitamente documentada.",
+          "desc_pt": "Entidade de origem",
+          "definition_pt": "Thing originated original; portador de ancestralidade/procedência é extensão local explicitamente documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte da origem",
+          "definition": "Source original; nacionalidade, externo e país-fonte são extensões locais de antecedência, sem inferir nascimento.",
+          "desc_pt": "Fonte da origem",
+          "definition_pt": "Source original; nacionalidade, externo e país-fonte são extensões locais de antecedência, sem inferir nascimento."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da entidade originada",
+          "definition": "Attribute of Arg1 original n=4; não renumerar nem duplicar source nacional.",
+          "desc_pt": "Atributo da entidade originada",
+          "definition_pt": "Attribute of Arg1 original n=4; não renumerar nem duplicar source nacional."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003044_SENT021::origem::1",
           "sent_ID": "FOLHA_DOC003044_SENT021",
           "text": "E Riz Ahmed, britânico de origem paquistanesa, bateu Robert DeNiro no páreo de melhor ator em minissérie ou filme.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origem",
             "char_start": 26,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Riz Ahmed",
+            "Arg2": "paquistanesa",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "amod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 2,
+                "char_end": 11
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 33,
+                "char_end": 45
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 415,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1e64fcbdad2f1466",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 26,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 2,
+                    "char_end": 11,
+                    "head_token_id": 2,
+                    "head_form": "Riz",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 33,
+                    "char_end": 45,
+                    "head_token_id": 8,
+                    "head_form": "paquistanesa",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002028_SENT011::origem::1",
           "sent_ID": "FOLHA_DOC002028_SENT011",
           "text": "Isso, a Alemanha sabe fazer, tanto que abriga 18,5 milhões de habitantes de origem estrangeiras, 9,5 milhões dos quais já são cidadãos alemães.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origem",
             "char_start": 76,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "18,5 milhões de habitantes",
+            "Arg2": "estrangeiras",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "amod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 46,
+                "char_end": 72
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 83,
+                "char_end": 95
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 874,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1e64fcbdad2f1466",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 46,
+                    "char_end": 72,
+                    "head_token_id": 12,
+                    "head_form": "milhões",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17
+                    ],
+                    "char_start": 83,
+                    "char_end": 95,
+                    "head_token_id": 17,
+                    "head_form": "estrangeiras",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003219_SENT112::origem::1",
           "sent_ID": "FOLHA_DOC003219_SENT112",
           "text": "Dizemos que é uma forma de realmente ir atrás das nossas origens.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origens",
             "char_start": 57,
             "char_end": 64
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nossas",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 50,
+                "char_end": 56
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 2347,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1e64fcbdad2f1466",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 50,
+                    "char_end": 56,
+                    "head_token_id": 12,
+                    "head_form": "nossas",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000127_SENT016::origem::1",
           "sent_ID": "FOLHA_DOC000127_SENT016",
           "text": "Os requerentes cujos pedidos sejam rejeitados seriam devolvidos a seus países de origem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origem",
             "char_start": 81,
             "char_end": 87
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002027_SENT002::origem::1",
-          "sent_ID": "FOLHA_DOC002027_SENT002",
-          "text": "Famosos em seus países, quitutes como o venezuelano tequenho e o varenique, de origem eslava, viraram bons negócios em São Paulo.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 79,
-            "char_end": 85
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Os requerentes cujos pedidos sejam rejeitados",
+            "Arg2": "a seus países",
+            "Arg4": null
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003124_SENT010::origem::1",
-          "sent_ID": "FOLHA_DOC003124_SENT010",
-          "text": "O tema da origem dos alimentos é um assunto mundial, faz muita diferença o que os bichos comeram, o modo como foram criados e a raça dos animais.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 10,
-            "char_end": 16
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj:pass",
+            "Arg2": "obl",
+            "Arg4": null
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003301_SENT004::origem::1",
-          "sent_ID": "FOLHA_DOC003301_SENT004",
-          "text": "No caso daquelas de origem animal, esse número deveria ficar abaixo de 10%.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 20,
-            "char_end": 26
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 45
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 64,
+                "char_end": 77
+              }
+            ],
+            "Arg4": []
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003032_SENT004::origem::1",
-          "sent_ID": "FOLHA_DOC003032_SENT004",
-          "text": "A lei exige selos do Serviço de Inspeção Federal (SIF) para que produtos nacionais de origem animal sejam comercializados entre Estados, e os itens não dispunham de tal certificado.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 86,
-            "char_end": 92
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003157_SENT026::origem::1",
-          "sent_ID": "FOLHA_DOC003157_SENT026",
-          "text": "A norma americana determina que as empresas façam acordos em seu país de origem ao mesmo tempo em que acertam seus tratos nos EUA, como ocorreu com a Odebrecht.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 73,
-            "char_end": 79
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003233_SENT015::origem::1",
-          "sent_ID": "FOLHA_DOC003233_SENT015",
-          "text": "Basicamente porque tivemos criadores de outras origens, que não da agropecuária pura e simples.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origens",
-            "char_start": 47,
-            "char_end": 54
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002027_SENT031::origem::1",
-          "sent_ID": "FOLHA_DOC002027_SENT031",
-          "text": "Vale abusar das redes sociais, com fotos e vídeos mostrando como é preparado o quitute e quando ele é consumido no país de origem.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "origem",
-            "char_start": 123,
-            "char_end": 129
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "target_instance_id": 3506,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1e64fcbdad2f1466",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 87
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 0,
+                    "char_end": 45,
+                    "head_token_id": 2,
+                    "head_form": "requerentes",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 64,
+                    "char_end": 77,
+                    "head_token_id": 11,
+                    "head_form": "países",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "origem · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2,
+          "Arg4": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "nsubj:pass": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
     },
     {
+      "sense_id": "s_c8dce75b4957d9e9",
+      "frame_id": "f_0c15d8aa98793d93",
       "pt_roleset": null,
+      "sense_label": "origem · acepção 2",
       "description": null,
-      "origin_frames": [],
-      "roles": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador",
+          "definition": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria.",
+          "desc_pt": "Criador",
+          "definition_pt": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa originada",
+          "definition": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado.",
+          "desc_pt": "Coisa originada",
+          "definition_pt": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte da origem",
+          "definition": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos.",
+          "desc_pt": "Fonte da origem",
+          "definition_pt": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da coisa originada",
+          "definition": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada.",
+          "desc_pt": "Atributo da coisa originada",
+          "definition_pt": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003113_SENT008::origem::1",
           "sent_ID": "FOLHA_DOC003113_SENT008",
           "text": "É esperado que a quarta temporada de \"Narcos\" aborde as origens do cartel mexicano Juarez.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origens",
             "char_start": 56,
             "char_end": 63
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do cartel mexicano Juarez",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 89
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 4109,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c15d8aa98793d93",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 63
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 64,
+                    "char_end": 89,
+                    "head_token_id": 16,
+                    "head_form": "cartel",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "origem · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        }
+      }
     },
     {
+      "sense_id": "s_205e6445ced8c5d9",
+      "frame_id": "f_ec50ff2270fb9edb",
       "pt_roleset": null,
+      "sense_label": "origem · acepção 1",
       "description": null,
-      "origin_frames": [],
-      "roles": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador",
+          "definition": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria.",
+          "desc_pt": "Criador",
+          "definition_pt": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa originada",
+          "definition": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado.",
+          "desc_pt": "Coisa originada",
+          "definition_pt": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte da origem",
+          "definition": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos.",
+          "desc_pt": "Fonte da origem",
+          "definition_pt": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da coisa originada",
+          "definition": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada.",
+          "desc_pt": "Atributo da coisa originada",
+          "definition_pt": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002027_SENT002::origem::1",
+          "sent_ID": "FOLHA_DOC002027_SENT002",
+          "text": "Famosos em seus países, quitutes como o venezuelano tequenho e o varenique, de origem eslava, viraram bons negócios em São Paulo.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 79,
+            "char_end": 85
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o varenique",
+            "Arg2": "eslava",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "conj",
+            "Arg2": "amod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 74
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 86,
+                "char_end": 92
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 4425,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ec50ff2270fb9edb",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 79,
+                "char_end": 85
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13
+                    ],
+                    "char_start": 63,
+                    "char_end": 74,
+                    "head_token_id": 13,
+                    "head_form": "varenique",
+                    "head_deprel": "conj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17
+                    ],
+                    "char_start": 86,
+                    "char_end": 92,
+                    "head_token_id": 17,
+                    "head_form": "eslava",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "conj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_ef2e8134fadf0493",
+      "frame_id": "f_1921e62ddbb50673",
+      "pt_roleset": null,
+      "sense_label": "origem · acepção 3",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador",
+          "definition": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria.",
+          "desc_pt": "Criador",
+          "definition_pt": "Creator declarado sem exemplo; quem aborda/relata influencia não necessariamente cria."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa originada",
+          "definition": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado.",
+          "desc_pt": "Coisa originada",
+          "definition_pt": "Thing originated original injuries/insurance market; cartel/quitute/plano/reunião conforme sentido congelado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte da origem",
+          "definition": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos.",
+          "desc_pt": "Fonte da origem",
+          "definition_pt": "Source declarado sem exemplo; eslava e causa explícita após dois-pontos/complemento são extensões culturais/causais locais, sem país/autor inferidos."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da coisa originada",
+          "definition": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada.",
+          "desc_pt": "Atributo da coisa originada",
+          "definition_pt": "Attribute of arg1 nominal n=4 preservado: ausência de n=3 é original. Óbvia avalia origem, não atributo do plano; sem cronologia inventada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003133_SENT006::origem::1",
           "sent_ID": "FOLHA_DOC003133_SENT006",
           "text": "O plano tem uma origem óbvia: a Venezuela bolivariana tornou-se incapaz de produzir proteínas, seja carne bovina, ovina, de frango ou de porco.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origem",
             "char_start": 16,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "O plano",
+            "Arg2": "a Venezuela bolivariana tornou-se incapaz de produzir proteínas, seja carne bovina, ovina, de frango ou de porco",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "parataxis",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 30,
+                "char_end": 142
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 4675,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1921e62ddbb50673",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 7,
+                    "head_token_id": 2,
+                    "head_form": "plano",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 30,
+                    "char_end": 142,
+                    "head_token_id": 11,
+                    "head_form": "tornou",
+                    "head_deprel": "parataxis"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003084_SENT002::origem::1",
           "sent_ID": "FOLHA_DOC003084_SENT002",
           "text": "A reunião das cantoras Maria Rita e Melody Gardot no Palco Sunset do Rock in Rio teve origem numa grande influência para ambas: a diva Ella Fitzgerald (1917-1996).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "origem",
             "char_start": 86,
             "char_end": 92
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "A reunião das cantoras Maria Rita e Melody Gardot no Palco Sunset do Rock in Rio",
+            "Arg2": "numa grande influência para ambas: a diva Ella Fitzgerald (1917-1996)",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "nmod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 80
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 93,
+                "char_end": 162
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 4789,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1921e62ddbb50673",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 86,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 0,
+                    "char_end": 80,
+                    "head_token_id": 2,
+                    "head_form": "reunião",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 93,
+                    "char_end": 162,
+                    "head_token_id": 25,
+                    "head_form": "influência",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "origem · acepção 3"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "parataxis": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_205e6445ced8c5d9",
+      "frame_id": "f_024085606614d245",
+      "pt_roleset": null,
+      "sense_label": "origem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador",
+          "definition": "Creator declarado sem exemplo; dieta/raça/certificador não inventor do produto.",
+          "desc_pt": "Criador",
+          "definition_pt": "Creator declarado sem exemplo; dieta/raça/certificador não inventor do produto."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade com procedência",
+          "definition": "Thing originated original injuries/insurance market; alimentos,produtos,deítico e empresas aplicações locais.",
+          "desc_pt": "Entidade com procedência",
+          "definition_pt": "Thing originated original injuries/insurance market; alimentos,produtos,deítico e empresas aplicações locais."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte de procedência",
+          "definition": "Source declarado sem exemplo; categoria animal e país de origem são extensões explícitas locais. Coffeehouse original LOC não renumerado.",
+          "desc_pt": "Fonte de procedência",
+          "definition_pt": "Source declarado sem exemplo; categoria animal e país de origem são extensões explícitas locais. Coffeehouse original LOC não renumerado."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da entidade originada",
+          "definition": "Attribute of arg1 nominal n4 declarado sem exemplo; não adicionar Arg3 ou duplicar source em atributo por tradução.",
+          "desc_pt": "Atributo da entidade originada",
+          "definition_pt": "Attribute of arg1 nominal n4 declarado sem exemplo; não adicionar Arg3 ou duplicar source em atributo por tradução."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003124_SENT010::origem::1",
+          "sent_ID": "FOLHA_DOC003124_SENT010",
+          "text": "O tema da origem dos alimentos é um assunto mundial, faz muita diferença o que os bichos comeram, o modo como foram criados e a raça dos animais.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 10,
+            "char_end": 16
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos alimentos",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 30
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 11019,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_024085606614d245",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 17,
+                    "char_end": 30,
+                    "head_token_id": 8,
+                    "head_form": "alimentos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003301_SENT004::origem::1",
+          "sent_ID": "FOLHA_DOC003301_SENT004",
+          "text": "No caso daquelas de origem animal, esse número deveria ficar abaixo de 10%.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 20,
+            "char_end": 26
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "daquelas",
+            "Arg2": "animal",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "amod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 8,
+                "char_end": 16
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 27,
+                "char_end": 33
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 12349,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_024085606614d245",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 8,
+                    "char_end": 16,
+                    "head_token_id": 5,
+                    "head_form": "aquelas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 27,
+                    "char_end": 33,
+                    "head_token_id": 8,
+                    "head_form": "animal",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003032_SENT004::origem::1",
+          "sent_ID": "FOLHA_DOC003032_SENT004",
+          "text": "A lei exige selos do Serviço de Inspeção Federal (SIF) para que produtos nacionais de origem animal sejam comercializados entre Estados, e os itens não dispunham de tal certificado.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 86,
+            "char_end": 92
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "produtos nacionais",
+            "Arg2": "animal",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj:pass",
+            "Arg2": "amod",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 82
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 93,
+                "char_end": 99
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 13443,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_024085606614d245",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 86,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17
+                    ],
+                    "char_start": 64,
+                    "char_end": 82,
+                    "head_token_id": 16,
+                    "head_form": "produtos",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20
+                    ],
+                    "char_start": 93,
+                    "char_end": 99,
+                    "head_token_id": 20,
+                    "head_form": "animal",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003157_SENT026::origem::1",
+          "sent_ID": "FOLHA_DOC003157_SENT026",
+          "text": "A norma americana determina que as empresas façam acordos em seu país de origem ao mesmo tempo em que acertam seus tratos nos EUA, como ocorreu com a Odebrecht.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 73,
+            "char_end": 79
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "as empresas",
+            "Arg2": "seu país",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "obl",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 32,
+                "char_end": 43
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 61,
+                "char_end": 69
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 13453,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_024085606614d245",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 73,
+                "char_end": 79
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 32,
+                    "char_end": 43,
+                    "head_token_id": 7,
+                    "head_form": "empresas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 61,
+                    "char_end": 69,
+                    "head_token_id": 12,
+                    "head_form": "país",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2,
+          "Arg4": 0
+        },
+        "nsubj:pass": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_205e6445ced8c5d9",
+      "frame_id": "f_e71ff7a027e0136b",
+      "pt_roleset": null,
+      "sense_label": "origem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "origin.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/origin.xml",
+          "source_xml_url": "data/nombank_sources/origin.xml",
+          "source_xml_sha256": "434d1e0790c2b75c9a828d70b264606262e619240633e15bf506c1e2de41b39e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da origem",
+          "definition": "Creator original, sem criadores de gado como criadores de sua própria antecedência.",
+          "desc_pt": "Causador da origem",
+          "definition_pt": "Creator original, sem criadores de gado como criadores de sua própria antecedência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade originada",
+          "definition": "Thing originated com antecedência/procedência profissional/cultural, como criadores/quitute.",
+          "desc_pt": "Entidade originada",
+          "definition_pt": "Thing originated com antecedência/procedência profissional/cultural, como criadores/quitute."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte da procedência",
+          "definition": "Source expresso, como país de origem, sem agropecuária origem explicitamente negada selecionada.",
+          "desc_pt": "Fonte da procedência",
+          "definition_pt": "Source expresso, como país de origem, sem agropecuária origem explicitamente negada selecionada."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo da entidade",
+          "definition": "Attribute of arg1 original4, semArg3 inventado ou outras fonte particular por contraste.",
+          "desc_pt": "Atributo da entidade",
+          "definition_pt": "Attribute of arg1 original4, semArg3 inventado ou outras fonte particular por contraste."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003233_SENT015::origem::1",
+          "sent_ID": "FOLHA_DOC003233_SENT015",
+          "text": "Basicamente porque tivemos criadores de outras origens, que não da agropecuária pura e simples.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origens",
+            "char_start": 47,
+            "char_end": 54
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "criadores",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 27,
+                "char_end": 36
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 14074,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e71ff7a027e0136b",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 27,
+                    "char_end": 36,
+                    "head_token_id": 4,
+                    "head_form": "criadores",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002027_SENT031::origem::1",
+          "sent_ID": "FOLHA_DOC002027_SENT031",
+          "text": "Vale abusar das redes sociais, com fotos e vídeos mostrando como é preparado o quitute e quando ele é consumido no país de origem.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "origem",
+            "char_start": 123,
+            "char_end": 129
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o quitute",
+            "Arg2": "país",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj:pass",
+            "Arg2": "obl",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 77,
+                "char_end": 86
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 115,
+                "char_end": 119
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 14182,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e71ff7a027e0136b",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 123,
+                "char_end": 129
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17
+                    ],
+                    "char_start": 77,
+                    "char_end": 86,
+                    "head_token_id": 17,
+                    "head_form": "quitute",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25
+                    ],
+                    "char_start": 115,
+                    "char_end": 119,
+                    "head_token_id": 25,
+                    "head_form": "país",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "nsubj:pass": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

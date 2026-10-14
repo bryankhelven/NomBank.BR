@@ -6,24 +6,161 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "causador · acepção 1",
+      "sense_id": "s_cbf4d11df7ab8c5f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_cbf4d11df7ab8c5f",
+      "frame_id": "f_dcfd71944a7219b2",
+      "pt_roleset": null,
+      "sense_label": "causador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "cause.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/cause.xml",
+          "source_xml_url": "data/nombank_sources/cause.xml",
+          "source_xml_sha256": "de0d7ae7cab77fd6fbaa2ede76eef7a48bdc411c58adf2e1a07fca30c333a194",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador",
+          "definition": "Forcer/causer entidade causal animada ou não, restrito ao titular causador frozen.",
+          "desc_pt": "Causador",
+          "definition_pt": "Forcer/causer entidade causal animada ou não, restrito ao titular causador frozen."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Efeito causado",
+          "definition": "Impelled action estendido explicitamente a ocorrência de doença, com descrição íntegra sem validação clínica.",
+          "desc_pt": "Efeito causado",
+          "definition_pt": "Impelled action estendido explicitamente a ocorrência de doença, com descrição íntegra sem validação clínica."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003047_SENT003::causador::1",
           "sent_ID": "FOLHA_DOC003047_SENT003",
           "text": "A emergência dos vírus de Saint Louis e do rocio no Brasil, causadores de encefalite e meningoencefalite (infecção no cérebro e nas meninges), estão na mira dos pesquisadores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "causadores",
             "char_start": 60,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos vírus de Saint Louis e do rocio",
+            "Arg1": "de encefalite e meningoencefalite (infecção no cérebro e nas meninges)"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 13,
+                "char_end": 48
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 71,
+                "char_end": 141
+              }
+            ]
+          },
+          "target_instance_id": 13640,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dcfd71944a7219b2",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 13,
+                    "char_end": 48,
+                    "head_token_id": 5,
+                    "head_form": "vírus",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31
+                    ],
+                    "char_start": 71,
+                    "char_end": 141,
+                    "head_token_id": 19,
+                    "head_form": "encefalite",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "causador · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

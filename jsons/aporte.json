@@ -19,39 +19,242 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 7808,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 76
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_label": "aporte · acepção 1",
+      "sense_id": "s_04261308bb438aac",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_04261308bb438aac",
+      "frame_id": "f_cc96bda4c1c5b3a6",
+      "pt_roleset": null,
+      "sense_label": "aporte · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "contribution.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/contribution.xml",
+          "source_xml_url": "data/nombank_sources/contribution.xml",
+          "source_xml_sha256": "c77055df9c9b5442216687dd5321c0b76510b9a7ce63d601554cb834847b15d0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Doador",
+          "definition": "Fonte que aporta, não mero previsor.",
+          "desc_pt": "Doador",
+          "definition_pt": "Fonte que aporta, não mero previsor."
         },
+        {
+          "id": "Arg1",
+          "desc": "Coisa dada",
+          "definition": "Objeto/quantidade aportado, sem inventar montante ou escolher genitivo ambíguo.",
+          "desc_pt": "Coisa dada",
+          "definition_pt": "Objeto/quantidade aportado, sem inventar montante ou escolher genitivo ambíguo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Recebedor",
+          "definition": "Entidade que recebe aporte, extensão contextual ao fundo contábil complementado; local não destinatário automaticamente.",
+          "desc_pt": "Recebedor",
+          "definition_pt": "Entidade que recebe aporte, extensão contextual ao fundo contábil complementado; local não destinatário automaticamente."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003019_SENT028::aporte::1",
           "sent_ID": "FOLHA_DOC003019_SENT028",
           "text": "\"A empresa prevê aportes similares na Argentina, no Peru, no Chile e na Colômbia\", diz o executivo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aportes",
             "char_start": 17,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9818,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cc96bda4c1c5b3a6",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004056_SENT010::aporte::1",
           "sent_ID": "FOLHA_DOC004056_SENT010",
           "text": "Se os repasses de Estados e municípios não forem suficientes, a lei determina que a União faça aportes para complementar o fundo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aportes",
             "char_start": 95,
             "char_end": 102
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a União",
+            "Arg1": null,
+            "Arg2": "o fundo"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 82,
+                "char_end": 89
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 121,
+                "char_end": 128
+              }
+            ]
+          },
+          "target_instance_id": 13268,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cc96bda4c1c5b3a6",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 95,
+                "char_end": 102
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17
+                    ],
+                    "char_start": 82,
+                    "char_end": 89,
+                    "head_token_id": 17,
+                    "head_form": "União",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23
+                    ],
+                    "char_start": 121,
+                    "char_end": 128,
+                    "head_token_id": 23,
+                    "head_form": "fundo",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aporte · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

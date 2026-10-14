@@ -6,24 +6,145 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "conluio · acepção 1",
+      "sense_id": "s_ef41dd1e960516fc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ef41dd1e960516fc",
+      "frame_id": "f_c08d414dbd05ad86",
+      "pt_roleset": null,
+      "sense_label": "conluio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conspiracy.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conspiracy.xml",
+          "source_xml_url": "data/nombank_sources/conspiracy.xml",
+          "source_xml_sha256": "1e6cc83e394b68075f8a763fb5475e160c92ec2612fc83e3725b0d0ceb7a138c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Partes do conluio",
+          "definition": "Conspirator coletivo combinado investigadores/réus, sem duplicação em2.",
+          "desc_pt": "Partes do conluio",
+          "definition_pt": "Conspirator coletivo combinado investigadores/réus, sem duplicação em2."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objetivo do conluio",
+          "definition": "Job/project específico, sem anular provas ação contextual necessariamente projeto.",
+          "desc_pt": "Objetivo do conluio",
+          "definition_pt": "Job/project específico, sem anular provas ação contextual necessariamente projeto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parte conspiradora separada",
+          "definition": "Co-conspirator distinto do conjunto0 quando expresso.",
+          "desc_pt": "Parte conspiradora separada",
+          "definition_pt": "Co-conspirator distinto do conjunto0 quando expresso."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003067_SENT005::conluio::1",
           "sent_ID": "FOLHA_DOC003067_SENT005",
           "text": "Deixar de punir com a anulação das provas esse desvio, uma vez comprovado, seria favorecer a disseminação pelo país dos conluios entre investigadores estatais e réus desesperados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conluios",
             "char_start": 120,
             "char_end": 128
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "entre investigadores estatais e réus desesperados",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 129,
+                "char_end": 178
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8394,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c08d414dbd05ad86",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 120,
+                "char_end": 128
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "char_start": 129,
+                    "char_end": 178,
+                    "head_token_id": 28,
+                    "head_form": "investigadores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "conluio · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

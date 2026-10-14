@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "stress · acepção 1",
+      "sense_id": "s_0fdebc8c055f9a48",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0fdebc8c055f9a48",
+      "frame_id": "f_31ace8f86a617aa8",
+      "pt_roleset": null,
+      "sense_label": "stress · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "stress.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/stress.xml",
+          "source_xml_url": "data/nombank_sources/stress.xml",
+          "source_xml_sha256": "f43d316b3bf03b62910f51ca775e3c804ccc19efae7bddc816231901b2e0e0b7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador do stress",
+          "definition": "Experiencer, Quem em cair no estado, sem pessoa nomeada inventada.",
+          "desc_pt": "Experienciador do stress",
+          "definition_pt": "Experiencer, Quem em cair no estado, sem pessoa nomeada inventada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Motivo da preocupação",
+          "definition": "Topic of worry expresso, sem no meio disso circunstancial convertido automaticamente em causa.",
+          "desc_pt": "Motivo da preocupação",
+          "definition_pt": "Topic of worry expresso, sem no meio disso circunstancial convertido automaticamente em causa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002037_SENT040::stress::1",
           "sent_ID": "FOLHA_DOC002037_SENT040",
           "text": "Quem não cai num stress no meio disso?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "stress",
             "char_start": 17,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Quem",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 4
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 11126,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_31ace8f86a617aa8",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 4,
+                    "head_token_id": 1,
+                    "head_form": "Quem",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "stress · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

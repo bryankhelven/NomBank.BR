@@ -6,23 +6,139 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b72d3dde44e13b7d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b72d3dde44e13b7d",
+      "frame_id": "f_239c82199ce65fd9",
+      "pt_roleset": "corretor.01",
+      "sense_label": "corretor.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "broker.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/broker.xml",
+          "source_xml_url": "data/nombank_sources/broker.xml",
+          "source_xml_sha256": "0a5a5c6847076d832589ce8a1759017d4c0b894ec726e2b6cbb1b73ca842efd2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Corretora",
+          "definition": "Arranger/agent incorporado conforme broker0.",
+          "desc_pt": "Corretora",
+          "definition_pt": "Arranger/agent incorporado conforme broker0."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto intermediado",
+          "definition": "Entity brokered, sem contratação recomendada como contrato já efetivo.",
+          "desc_pt": "Objeto intermediado",
+          "definition_pt": "Entity brokered, sem contratação recomendada como contrato já efetivo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Cliente beneficiário",
+          "definition": "Beneficiary possessivo Nossa, extensão a clientela explícita.",
+          "desc_pt": "Cliente beneficiário",
+          "definition_pt": "Beneficiary possessivo Nossa, extensão a clientela explícita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003166_SENT003::corretor::1",
           "sent_ID": "FOLHA_DOC003166_SENT003",
           "text": "\"Nossa corretora recomendou contratar apenas as coberturas que realmente se encaixem no nosso perfil e conforme a utilização do veículo\", diz a advogada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "corretora",
             "char_start": 7,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Nossa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "det"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 1,
+                "char_end": 6
+              }
+            ]
+          },
+          "target_instance_id": 7212,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_239c82199ce65fd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 7,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 1,
+                    "char_end": 6,
+                    "head_token_id": 2,
+                    "head_form": "Nossa",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

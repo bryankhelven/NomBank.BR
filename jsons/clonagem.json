@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "clonagem · acepção 1",
+      "sense_id": "s_a797ad2b5bd2368a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a797ad2b5bd2368a",
+      "frame_id": "f_be90f0fcc0d6f442",
+      "pt_roleset": null,
+      "sense_label": "clonagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "clone.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/clone.xml",
+          "source_xml_url": "data/nombank_sources/clone.xml",
+          "source_xml_sha256": "c0986b1a842ba33619a4344797c1558f19bc20c3bad763b997224d6cb4582aea",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Clonador",
+          "definition": "Cloner agent da cópia genética, extensão explícita dos clones-produtos originais à operação genética frozen.",
+          "desc_pt": "Clonador",
+          "definition_pt": "Cloner agent da cópia genética, extensão explícita dos clones-produtos originais à operação genética frozen."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Original da clonagem",
+          "definition": "Original informado, sem tudo rastreável como genoma nem célula receptora em slot novo2.",
+          "desc_pt": "Original da clonagem",
+          "definition_pt": "Original informado, sem tudo rastreável como genoma nem célula receptora em slot novo2."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004705_SENT026::clonagem::1",
           "sent_ID": "FOLHA_DOC004705_SENT026",
           "text": "Desde a clonagem até a venda, consigo rastrear tudo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "clonagem",
             "char_start": 8,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 4884,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be90f0fcc0d6f442",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "clonagem · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

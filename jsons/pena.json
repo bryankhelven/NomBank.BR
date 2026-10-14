@@ -6,51 +6,11 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003314_SENT036::pena::1",
-          "sent_ID": "FOLHA_DOC003314_SENT036",
-          "text": "A pena para organização criminosa é de três a oito anos de prisão, além de multa.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "pena",
-            "char_start": 2,
-            "char_end": 6
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003033_SENT017::pena::1",
-          "sent_ID": "FOLHA_DOC003033_SENT017",
-          "text": "Elas foram retiradas após a Folha publicar reportagem na qual informava que a CPPU enviara uma notificação à prefeitura cobrando providências e alertando que os infratores estavam sujeitos às penas previstas na lei Cidade Limpa.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "penas",
-            "char_start": 192,
-            "char_end": 197
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004066_SENT018::pena::1",
-          "sent_ID": "FOLHA_DOC004066_SENT018",
-          "text": "Os quatro presos foram indiciados por tráfico internacional de drogas, cuja pena pode chegar a 25 anos de reclusão.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "pena",
-            "char_start": 76,
-            "char_end": 80
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b0352889875782c1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "pena.01",
@@ -60,22 +20,30 @@
         {
           "id": "Arg0",
           "desc": "principal participant or holder",
-          "definition": "principal participant or holder"
+          "definition": "principal participant or holder",
+          "desc_pt": "principal participant or holder",
+          "definition_pt": "principal participant or holder"
         },
         {
           "id": "Arg1",
           "desc": "nominal relation/state/event",
-          "definition": "nominal relation/state/event"
+          "definition": "nominal relation/state/event",
+          "desc_pt": "nominal relation/state/event",
+          "definition_pt": "nominal relation/state/event"
         },
         {
           "id": "Arg2",
           "desc": "target, content, object, counterpart or domain",
-          "definition": "target, content, object, counterpart or domain"
+          "definition": "target, content, object, counterpart or domain",
+          "desc_pt": "alvo, conteúdo, objeto, contraparte ou domínio",
+          "definition_pt": "alvo, conteúdo, objeto, contraparte ou domínio"
         },
         {
           "id": "Arg3",
           "desc": "time, place, degree, manner, cause or context",
-          "definition": "time, place, degree, manner, cause or context"
+          "definition": "time, place, degree, manner, cause or context",
+          "desc_pt": "tempo, lugar, grau, modo, causa ou contexto",
+          "definition_pt": "tempo, lugar, grau, modo, causa ou contexto"
         }
       ],
       "instances": [
@@ -111,12 +79,455 @@
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 10807,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_3c333fd7b2b4b917",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 65
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 51,
+                    "char_end": 54,
+                    "head_token_id": 10
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
       "syntactic_profile": {
         "Arg0": {
           "nmod": 1
+        }
+      },
+      "sense_id": "s_7cabef1299172865",
+      "frame_id": "f_3c333fd7b2b4b917",
+      "inventory_authority": "accepted_in_formal_base"
+    },
+    {
+      "sense_id": "s_b0352889875782c1",
+      "frame_id": "f_d747bde247aa6675",
+      "pt_roleset": "pena.06",
+      "sense_label": "pena.06",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "penalty.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/penalty.xml",
+          "source_xml_url": "data/nombank_sources/penalty.xml",
+          "source_xml_sha256": "19c04bf16daa1153eea5a25fa952caa2944a8f325c1c5f063ca6ba4e77548716",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Instância sancionadora",
+          "definition": "Juiz/júri ou instituição que impõe pena, não quem notifica por si.",
+          "desc_pt": "Instância sancionadora",
+          "definition_pt": "Juiz/júri ou instituição que impõe pena, não quem notifica por si."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Sancionado",
+          "definition": "Entidade sujeita à punição, não apenas indiciada automaticamente.",
+          "desc_pt": "Sancionado",
+          "definition_pt": "Entidade sujeita à punição, não apenas indiciada automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Punição",
+          "definition": "Conteúdo/duração da sanção, inclusive sob possibilidade.",
+          "desc_pt": "Punição",
+          "definition_pt": "Conteúdo/duração da sanção, inclusive sob possibilidade."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Crime",
+          "definition": "Infração por que se prevê pena, incluindo referência relativa ao crime.",
+          "desc_pt": "Crime",
+          "definition_pt": "Infração por que se prevê pena, incluindo referência relativa ao crime."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003314_SENT036::pena::1",
+          "sent_ID": "FOLHA_DOC003314_SENT036",
+          "text": "A pena para organização criminosa é de três a oito anos de prisão, além de multa.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "pena",
+            "char_start": 2,
+            "char_end": 6
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "de três a oito anos de prisão, além de multa",
+            "Arg3": "para organização criminosa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "root",
+            "Arg3": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 36,
+                "char_end": 80
+              }
+            ],
+            "Arg3": [
+              {
+                "char_start": 7,
+                "char_end": 33
+              }
+            ]
+          },
+          "target_instance_id": 5085,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d747bde247aa6675",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 6
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 36,
+                    "char_end": 80,
+                    "head_token_id": 11,
+                    "head_form": "anos",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 7,
+                    "char_end": 33,
+                    "head_token_id": 4,
+                    "head_form": "organização",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003033_SENT017::pena::1",
+          "sent_ID": "FOLHA_DOC003033_SENT017",
+          "text": "Elas foram retiradas após a Folha publicar reportagem na qual informava que a CPPU enviara uma notificação à prefeitura cobrando providências e alertando que os infratores estavam sujeitos às penas previstas na lei Cidade Limpa.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "penas",
+            "char_start": 192,
+            "char_end": 197
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os infratores",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 158,
+                "char_end": 171
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 10611,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d747bde247aa6675",
+          "argument_details": {
+            "predicate_token_ids": [
+              33
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 192,
+                "char_end": 197
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28
+                    ],
+                    "char_start": 158,
+                    "char_end": 171,
+                    "head_token_id": 28,
+                    "head_form": "infratores",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004066_SENT018::pena::1",
+          "sent_ID": "FOLHA_DOC004066_SENT018",
+          "text": "Os quatro presos foram indiciados por tráfico internacional de drogas, cuja pena pode chegar a 25 anos de reclusão.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "pena",
+            "char_start": 76,
+            "char_end": 80
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a 25 anos de reclusão",
+            "Arg3": "cuja"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg3": "det"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 93,
+                "char_end": 114
+              }
+            ],
+            "Arg3": [
+              {
+                "char_start": 71,
+                "char_end": 75
+              }
+            ]
+          },
+          "target_instance_id": 14996,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d747bde247aa6675",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 80
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 93,
+                    "char_end": 114,
+                    "head_token_id": 18,
+                    "head_form": "anos",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 71,
+                    "char_end": 75,
+                    "head_token_id": 12,
+                    "head_form": "cuja",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 1
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 1
         }
       }
     }

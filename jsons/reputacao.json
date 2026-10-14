@@ -6,80 +6,559 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reputação · acepção 1",
+      "sense_id": "s_ed449d2968477e86",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ed449d2968477e86",
+      "frame_id": "f_c4556c1f3dc7c6f4",
+      "pt_roleset": null,
+      "sense_label": "reputação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reputation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reputation.xml",
+          "source_xml_url": "data/nombank_sources/reputation.xml",
+          "source_xml_sha256": "15b1384857aee2683ad644cd2131dab1ab273dcc4e84ec27f3171c9932cf39ae",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "julgador",
+          "definition": "Entidade que reputa ou considera.",
+          "desc_pt": "julgador",
+          "definition_pt": "Entidade que reputa ou considera."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade reputada",
+          "definition": "Entidade portadora da reputação.",
+          "desc_pt": "entidade reputada",
+          "definition_pt": "Entidade portadora da reputação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo reputado",
+          "definition": "Condição ou qualidade pela qual a entidade é reconhecida; associações indiretas com sua oferta são adaptações locais documentadas.",
+          "desc_pt": "atributo reputado",
+          "definition_pt": "Condição ou qualidade pela qual a entidade é reconhecida; associações indiretas com sua oferta são adaptações locais documentadas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004118_SENT064::reputação::1",
           "sent_ID": "FOLHA_DOC004118_SENT064",
           "text": "Paulinho Braga, baterista renomado, com uma reputação extraordinária de músico de estúdio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reputação",
             "char_start": 44,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Paulinho Braga",
+            "Arg2": "de músico de estúdio"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 14
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 69,
+                "char_end": 89
+              }
+            ]
+          },
+          "target_instance_id": 681,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4556c1f3dc7c6f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 14,
+                    "head_token_id": 1,
+                    "head_form": "Paulinho",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 69,
+                    "char_end": 89,
+                    "head_token_id": 12,
+                    "head_form": "músico",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002037_SENT004::reputação::1",
           "sent_ID": "FOLHA_DOC002037_SENT004",
           "text": "A opinião pública nunca esteve tão bipolar em termos de imagem e reputação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reputação",
             "char_start": 65,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9707,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4556c1f3dc7c6f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003217_SENT026::reputação::1",
           "sent_ID": "FOLHA_DOC003217_SENT026",
           "text": "A sua reputação e dos membros foi absolutamente afetada pelas alegações de compra de votos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reputação",
             "char_start": 6,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua … dos membros",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 2,
+                "char_end": 5
+              },
+              {
+                "char_start": 18,
+                "char_end": 29
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 10542,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4556c1f3dc7c6f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 2,
+                    "char_end": 5,
+                    "head_token_id": 2,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  },
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 18,
+                    "char_end": 29,
+                    "head_token_id": 7,
+                    "head_form": "membros",
+                    "head_deprel": "conj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT024::reputação::1",
           "sent_ID": "FOLHA_DOC003161_SENT024",
           "text": "Azul e a Avianca vêm atuando em nichos para atrair passageiros menos sensíveis a preço, criando uma reputação de melhor produto para o consumidor premium, diz Oliveira.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reputação",
             "char_start": 100,
             "char_end": 109
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Azul e a Avianca",
+            "Arg2": "de melhor produto para o consumidor premium"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 16
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 110,
+                "char_end": 153
+              }
+            ]
+          },
+          "target_instance_id": 10916,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c4556c1f3dc7c6f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 100,
+                "char_end": 109
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 16,
+                    "head_token_id": 1,
+                    "head_form": "Azul",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 110,
+                    "char_end": 153,
+                    "head_token_id": 22,
+                    "head_form": "produto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
         },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_ed449d2968477e86",
+      "frame_id": "f_eb9f995d06825904",
+      "pt_roleset": null,
+      "sense_label": "reputação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reputation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reputation.xml",
+          "source_xml_url": "data/nombank_sources/reputation.xml",
+          "source_xml_sha256": "15b1384857aee2683ad644cd2131dab1ab273dcc4e84ec27f3171c9932cf39ae",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Avaliador da reputação",
+          "definition": "Considerer agent expresso, sem público criado.",
+          "desc_pt": "Avaliador da reputação",
+          "definition_pt": "Considerer agent expresso, sem público criado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade reputada",
+          "definition": "Entity considered, possessivo do treinador.",
+          "desc_pt": "Entidade reputada",
+          "definition_pt": "Entity considered, possessivo do treinador."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualificação da entidade",
+          "definition": "Secondary predicate on Arg1 como honesty/freespender, não em jogo risco da reputação.",
+          "desc_pt": "Qualificação da entidade",
+          "definition_pt": "Secondary predicate on Arg1 como honesty/freespender, não em jogo risco da reputação."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000042_SENT023::reputação::1",
           "sent_ID": "FOLHA_DOC000042_SENT023",
           "text": "O treinador sabe que sua reputação está em jogo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reputação",
             "char_start": 25,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 21,
+                "char_end": 24
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13578,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eb9f995d06825904",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 21,
+                    "char_end": 24,
+                    "head_token_id": 5,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reputação · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

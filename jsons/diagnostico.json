@@ -8,20 +8,6 @@
       "roles": null,
       "instances": [
         {
-          "instance_id": "FOLHA_DOC003178_SENT035::diagnóstico::1",
-          "sent_ID": "FOLHA_DOC003178_SENT035",
-          "text": "Independentemente do diagnóstico, venezuelanos com depressão só conseguem ter acesso à sertralina.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "diagnóstico",
-            "char_start": 21,
-            "char_end": 32
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
           "instance_id": "FOLHA_DOC004013_SENT013::diagnóstico::1",
           "sent_ID": "FOLHA_DOC004013_SENT013",
           "text": "Foi esse diagnóstico a dar início ao processo que o tirou de Rosário.",
@@ -33,39 +19,322 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 7063,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 20
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_label": "diagnóstico · acepção 1",
+      "sense_id": "s_668dac588bbbc778",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_668dac588bbbc778",
+      "frame_id": "f_a82fc7bf96fa98ab",
+      "pt_roleset": null,
+      "sense_label": "diagnóstico · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "diagnosis.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/diagnosis.xml",
+          "source_xml_url": "data/nombank_sources/diagnosis.xml",
+          "source_xml_sha256": "d1682dfffaecfd8e35d42911a85ea68622e1e4028b52983d611e3c3953876aec",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "diagnosticador",
+          "definition": "Médico ou entidade que identifica condição médica.",
+          "desc_pt": "diagnosticador",
+          "definition_pt": "Médico ou entidade que identifica condição médica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "paciente",
+          "definition": "Pessoa submetida ao diagnóstico; conflito de exemplo illness em n=1 preservado.",
+          "desc_pt": "paciente",
+          "definition_pt": "Pessoa submetida ao diagnóstico; conflito de exemplo illness em n=1 preservado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "enfermidade",
+          "definition": "Condição médica identificada, conforme definição nominal illness.",
+          "desc_pt": "enfermidade",
+          "definition_pt": "Condição médica identificada, conforme definição nominal illness."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003178_SENT035::diagnóstico::1",
+          "sent_ID": "FOLHA_DOC003178_SENT035",
+          "text": "Independentemente do diagnóstico, venezuelanos com depressão só conseguem ter acesso à sertralina.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "diagnóstico",
+            "char_start": 21,
+            "char_end": 32
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "venezuelanos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 46
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5451,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a82fc7bf96fa98ab",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 21,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 34,
+                    "char_end": 46,
+                    "head_token_id": 6,
+                    "head_form": "venezuelanos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000649_SENT019::diagnóstico::1",
           "sent_ID": "FOLHA_DOC000649_SENT019",
           "text": "Até agora, tampouco apareceu algum diagnóstico médico terminal que pudesse empurrar Stephen ao desespero e à tentativa de se suicidar levando consigo todos os que ele pudesse.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "diagnóstico",
             "char_start": 35,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Stephen",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 84,
+                "char_end": 91
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9901,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a82fc7bf96fa98ab",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 84,
+                    "char_end": 91,
+                    "head_token_id": 13,
+                    "head_form": "Stephen",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003257_SENT007::diagnóstico::1",
           "sent_ID": "FOLHA_DOC003257_SENT007",
           "text": "Resolvemos fazer exames complementares e o diagnóstico apontou uma fratura no osso escafoide.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "diagnóstico",
             "char_start": 43,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "uma fratura no osso escafoide"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 63,
+                "char_end": 92
+              }
+            ]
+          },
+          "target_instance_id": 12195,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a82fc7bf96fa98ab",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 43,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 63,
+                    "char_end": 92,
+                    "head_token_id": 10,
+                    "head_form": "fratura",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "diagnóstico · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

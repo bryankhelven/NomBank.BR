@@ -6,38 +6,254 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "arrecadação · acepção 1",
+      "sense_id": "s_867c3bd540be1231",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_867c3bd540be1231",
+      "frame_id": "f_4742b5dfd549a15f",
+      "pt_roleset": null,
+      "sense_label": "arrecadação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "collection.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/collection.xml",
+          "source_xml_url": "data/nombank_sources/collection.xml",
+          "source_xml_sha256": "d318b073d3e70afc58f889892a5f02cf353256e1190441919d713f7f6db20390",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Arrecadador",
+          "definition": "Quem cobra/adquire renda, não filme que supera patamar automaticamente.",
+          "desc_pt": "Arrecadador",
+          "definition_pt": "Quem cobra/adquire renda, não filme que supera patamar automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Recurso arrecadado",
+          "definition": "Coisa/receita adquirida, incluindo quantia como patamar superado sem total calculado.",
+          "desc_pt": "Recurso arrecadado",
+          "definition_pt": "Coisa/receita adquirida, incluindo quantia como patamar superado sem total calculado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte pagadora",
+          "definition": "Seller estendido a pagador de renda/tributo conforme from large companies original.",
+          "desc_pt": "Fonte pagadora",
+          "definition_pt": "Seller estendido a pagador de renda/tributo conforme from large companies original."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Beneficiário",
+          "definition": "Para quem se cobra; Arg4 literal e ausência de Arg3 mantidas.",
+          "desc_pt": "Beneficiário",
+          "definition_pt": "Para quem se cobra; Arg4 literal e ausência de Arg3 mantidas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004108_SENT013::arrecadação::1",
           "sent_ID": "FOLHA_DOC004108_SENT013",
           "text": "Em 2013, por exemplo, 19 filmes superaram a marca de US$ 100 milhões de arrecadação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arrecadação",
             "char_start": 72,
             "char_end": 83
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de US$ 100 milhões",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 50,
+                "char_end": 68
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 3927,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4742b5dfd549a15f",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 72,
+                "char_end": 83
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 50,
+                    "char_end": 68,
+                    "head_token_id": 15,
+                    "head_form": "milhões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002036_SENT020::arrecadação::1",
           "sent_ID": "FOLHA_DOC002036_SENT020",
           "text": "Os 40% logo abaixo, dos quais viria o grosso da arrecadação faltante, ganham só 15% da renda média dos mais ricos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arrecadação",
             "char_start": 48,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "dos quais",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 20,
+                "char_end": 29
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 4605,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4742b5dfd549a15f",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 20,
+                    "char_end": 29,
+                    "head_token_id": 8,
+                    "head_form": "os",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "arrecadação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

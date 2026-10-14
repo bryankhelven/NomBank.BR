@@ -6,38 +6,208 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "demagogia · acepção 1",
+      "sense_id": "s_0ede214242036d90",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0ede214242036d90",
+      "frame_id": "f_9f25c22eda17b6ac",
+      "pt_roleset": null,
+      "sense_label": "demagogia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "deception.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/deception.xml",
+          "source_xml_url": "data/nombank_sources/deception.xml",
+          "source_xml_sha256": "042be2ccdea758624e29358905e7684cd55c51469685fd9e9394fd983cb30c59",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor do engodo",
+          "definition": "Quem conduz opinião de modo enganoso/desonesto no sentido de demagogia frozen, não simples questionador.",
+          "desc_pt": "Emissor do engodo",
+          "definition_pt": "Quem conduz opinião de modo enganoso/desonesto no sentido de demagogia frozen, não simples questionador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa enganada",
+          "definition": "Quem recebe engodo, não alvo da imputação necessariamente.",
+          "desc_pt": "Pessoa enganada",
+          "definition_pt": "Quem recebe engodo, não alvo da imputação necessariamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Assunto do engodo",
+          "definition": "Tema da imputação/decepção, incluindo responsabilidade atribuída sob intenção.",
+          "desc_pt": "Assunto do engodo",
+          "definition_pt": "Tema da imputação/decepção, incluindo responsabilidade atribuída sob intenção."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003065_SENT010::demagogia::1",
           "sent_ID": "FOLHA_DOC003065_SENT010",
           "text": "De sofista a mitômano, usando de demagogia, quis fazer colar no prefeito João Doria (PSDB) a responsabilidade pelas mortes no trânsito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "demagogia",
             "char_start": 33,
             "char_end": 42
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "a responsabilidade pelas mortes no trânsito"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 91,
+                "char_end": 134
+              }
+            ]
+          },
+          "target_instance_id": 1465,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9f25c22eda17b6ac",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 91,
+                    "char_end": 134,
+                    "head_token_id": 22,
+                    "head_form": "responsabilidade",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001054_SENT016::demagogia::1",
           "sent_ID": "FOLHA_DOC001054_SENT016",
           "text": "Foi questionar o atropelamento do direito, a demagogia e o populismo judicial para se tornar alvo de graves acusações.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "demagogia",
             "char_start": 45,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8593,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9f25c22eda17b6ac",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "demagogia · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

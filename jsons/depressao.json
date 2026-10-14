@@ -6,52 +6,278 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "depressão · acepção 1",
+      "sense_id": "s_56158a26ea176c32",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_56158a26ea176c32",
+      "frame_id": "f_e01ebb4d09c833d0",
+      "pt_roleset": null,
+      "sense_label": "depressão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "depression.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/depression.xml",
+          "source_xml_url": "data/nombank_sources/depression.xml",
+          "source_xml_sha256": "3b7f5c7442d79b00f6cba2a8969d46e952a2d1b0e90cc92ba1a8f65d250de750",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador do abatimento",
+          "definition": "Quem causa depressão, sem antecedência temporal convertida em causalidade.",
+          "desc_pt": "Causador do abatimento",
+          "definition_pt": "Quem causa depressão, sem antecedência temporal convertida em causalidade."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade deprimida",
+          "definition": "Pessoa com abatimento/distúrbio, conforme affected employee1 original.",
+          "desc_pt": "Entidade deprimida",
+          "definition_pt": "Pessoa com abatimento/distúrbio, conforme affected employee1 original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento causal",
+          "definition": "Instrumento que causa depressão se causador também presente, distinto de tratamento.",
+          "desc_pt": "Instrumento causal",
+          "definition_pt": "Instrumento que causa depressão se causador também presente, distinto de tratamento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003215_SENT101::depressão::1",
           "sent_ID": "FOLHA_DOC003215_SENT101",
           "text": "Desde que foi golpeado, ele toma medicamentos contra depressão e síndrome do pânico.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depressão",
             "char_start": 53,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "ele",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 24,
+                "char_end": 27
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 480,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e01ebb4d09c833d0",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 24,
+                    "char_end": 27,
+                    "head_token_id": 6,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003178_SENT035::depressão::1",
           "sent_ID": "FOLHA_DOC003178_SENT035",
           "text": "Independentemente do diagnóstico, venezuelanos com depressão só conseguem ter acesso à sertralina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depressão",
             "char_start": 51,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "venezuelanos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 46
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5452,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e01ebb4d09c833d0",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 34,
+                    "char_end": 46,
+                    "head_token_id": 6,
+                    "head_form": "venezuelanos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003205_SENT010::depressão::1",
           "sent_ID": "FOLHA_DOC003205_SENT010",
           "text": "Ele atribui a maior procura feminina ao aumento dos casos de depressão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depressão",
             "char_start": 61,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8684,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e01ebb4d09c833d0",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "depressão · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

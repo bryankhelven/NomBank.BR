@@ -6,38 +6,205 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "filmagem · acepção 1",
+      "sense_id": "s_1dfc6bb0ebdd5847",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1dfc6bb0ebdd5847",
+      "frame_id": "f_394f205989881059",
+      "pt_roleset": null,
+      "sense_label": "filmagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recording.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recording.xml",
+          "source_xml_url": "data/nombank_sources/recording.xml",
+          "source_xml_sha256": "6f5d08a00a6c45bab3b95a19a98bb05c40716958135015c78a7f6870e47a9259",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da filmagem",
+          "definition": "Quem faz registro audiovisual, não editor, fonte da fala ou pessoa filmada automaticamente.",
+          "desc_pt": "Autor da filmagem",
+          "definition_pt": "Quem faz registro audiovisual, não editor, fonte da fala ou pessoa filmada automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo filmado",
+          "definition": "Cena/apresentação/fala registrada, extensão explícita de conversa monitorada ao registro de imagens e som.",
+          "desc_pt": "Conteúdo filmado",
+          "definition_pt": "Cena/apresentação/fala registrada, extensão explícita de conversa monitorada ao registro de imagens e som."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000074_SENT018::filmagem::1",
           "sent_ID": "FOLHA_DOC000074_SENT018",
           "text": "Ele disse ainda que a filmagem da apresentação foi editada para \"fomentar um ponto de vista\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "filmagem",
             "char_start": 22,
             "char_end": 30
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da apresentação"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 31,
+                "char_end": 46
+              }
+            ]
+          },
+          "target_instance_id": 13140,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_394f205989881059",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 30
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 31,
+                    "char_end": 46,
+                    "head_token_id": 9,
+                    "head_form": "apresentação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000518_SENT016::filmagem::1",
           "sent_ID": "FOLHA_DOC000518_SENT016",
           "text": "Eu não consigo acreditar numa desgraça dessas, diz ele na filmagem, em tom de choro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "filmagem",
             "char_start": 58,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Eu não consigo acreditar numa desgraça dessas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "ccomp:speech"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 45
+              }
+            ]
+          },
+          "target_instance_id": 13480,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_394f205989881059",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 0,
+                    "char_end": 45,
+                    "head_token_id": 3,
+                    "head_form": "consigo",
+                    "head_deprel": "ccomp:speech"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "filmagem · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "ccomp:speech": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

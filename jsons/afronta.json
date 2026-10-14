@@ -6,38 +6,237 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "afronta · acepção 1",
+      "sense_id": "s_15dc89e44030f749",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_15dc89e44030f749",
+      "frame_id": "f_9d194ec795d6e4b0",
+      "pt_roleset": null,
+      "sense_label": "afronta · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "offense.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/offense.xml",
+          "source_xml_url": "data/nombank_sources/offense.xml",
+          "source_xml_sha256": "909ec8d4416ae6d377d15151da4371172cda901835779dc59ed70f94ae14d8ef",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fato ou entidade ofensora",
+          "definition": "Offender estendido explicitamente à proposição/acusação equacionada à afronta.",
+          "desc_pt": "Fato ou entidade ofensora",
+          "definition_pt": "Offender estendido explicitamente à proposição/acusação equacionada à afronta."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ofendido",
+          "definition": "Entidade ofendida, sem autor de classificação automaticamente vítima.",
+          "desc_pt": "Ofendido",
+          "definition_pt": "Entidade ofendida, sem autor de classificação automaticamente vítima."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento da ofensa",
+          "definition": "Meio separado de offender, não gráfico ilustrativo de peça por si.",
+          "desc_pt": "Instrumento da ofensa",
+          "definition_pt": "Meio separado de offender, não gráfico ilustrativo de peça por si."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003200_SENT030::afronta::1",
           "sent_ID": "FOLHA_DOC003200_SENT030",
           "text": "Agora, a partir daí querer montar um conjunto, uma teia de compadrio para a prática do ilícito, é uma afronta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "afronta",
             "char_start": 102,
             "char_end": 109
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "querer montar um conjunto, uma teia de compadrio para a prática do ilícito",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "csubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 20,
+                "char_end": 94
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2515,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d194ec795d6e4b0",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 102,
+                "char_end": 109
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 20,
+                    "char_end": 94,
+                    "head_token_id": 7,
+                    "head_form": "querer",
+                    "head_deprel": "csubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003200_SENT003::afronta::1",
           "sent_ID": "FOLHA_DOC003200_SENT003",
           "text": "Ele classifica a acusação como uma \"afronta\" e ironiza o gráfico criado para ilustrar a peça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "afronta",
             "char_start": 36,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a acusação",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 25
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12279,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d194ec795d6e4b0",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 15,
+                    "char_end": 25,
+                    "head_token_id": 4,
+                    "head_form": "acusação",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "afronta · acepção 1"
+      "syntactic_profile": {
+        "csubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

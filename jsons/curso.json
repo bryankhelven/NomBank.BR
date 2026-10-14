@@ -6,132 +6,763 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_c8c97340d3943196",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_c8c97340d3943196",
+      "frame_id": "f_63a0f71e2e3bf392",
+      "pt_roleset": "curso.01",
+      "sense_label": "curso.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "course.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/course.xml",
+          "source_xml_url": "data/nombank_sources/course.xml",
+          "source_xml_sha256": "5986b30665e2b3ff845c36f853b9757761206fc61ab6c3b767b8f3fc15a14f12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem ensina",
+          "definition": "Teacher declarado; criar curso ou ser professor relator não comprova ensinar o curso referido.",
+          "desc_pt": "Quem ensina",
+          "definition_pt": "Teacher declarado; criar curso ou ser professor relator não comprova ensinar o curso referido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Matéria ensinada",
+          "definition": "Subject original educational psychology/psychological operations; nome de departamento ou trabalho apresentado não currículo automaticamente.",
+          "desc_pt": "Matéria ensinada",
+          "definition_pt": "Subject original educational psychology/psychological operations; nome de departamento ou trabalho apresentado não currículo automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Quem aprende",
+          "definition": "Students original they passed; profissionais a formar prospectivos locais. Famílias que trocam pontos e convidados não alunos sem vínculo de ensino.",
+          "desc_pt": "Quem aprende",
+          "definition_pt": "Students original they passed; profissionais a formar prospectivos locais. Famílias que trocam pontos e convidados não alunos sem vínculo de ensino."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003193_SENT011::curso::1",
           "sent_ID": "FOLHA_DOC003193_SENT011",
           "text": "As famílias cadastradas levam embalagens aos postos de coleta nos bairros Capão Redondo e Grajaú (zona sul de São Paulo), que são revertidas em pontos, trocados por alimentos ou cursos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cursos",
             "char_start": 178,
             "char_end": 184
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2529,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63a0f71e2e3bf392",
+          "argument_details": {
+            "predicate_token_ids": [
+              36
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 178,
+                "char_end": 184
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003296_SENT009::curso::1",
           "sent_ID": "FOLHA_DOC003296_SENT009",
           "text": "Diante desse cenário, os sócios Kevin e Kléber Mazzei resolveram criar um curso para formar profissionais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 74,
             "char_end": 79
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "profissionais"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 92,
+                "char_end": 105
+              }
+            ]
+          },
+          "target_instance_id": 2845,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63a0f71e2e3bf392",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 74,
+                "char_end": 79
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18
+                    ],
+                    "char_start": 92,
+                    "char_end": 105,
+                    "head_token_id": 18,
+                    "head_form": "profissionais",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003150_SENT026::curso::1",
           "sent_ID": "FOLHA_DOC003150_SENT026",
           "text": "\"A profissão é muito dinâmica e surgem oportunidades inéditas até mesmo ao longo do curso de quatro anos\", diz Claudio Magalhães, professor do Departamento de Artes e Design da PUC-Rio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 84,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4547,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63a0f71e2e3bf392",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 84,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003073_SENT007::curso::1",
           "sent_ID": "FOLHA_DOC003073_SENT007",
           "text": "Adotou o nome artístico Wic Cris e fazia questão de convidar modelos e misses da região para mostrar seu trabalho em cursos e concursos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cursos",
             "char_start": 117,
             "char_end": 123
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5382,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63a0f71e2e3bf392",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 117,
+                "char_end": 123
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_c8c97340d3943196",
+      "frame_id": "f_201438d71ad048f8",
+      "pt_roleset": "curso.01",
+      "sense_label": "curso.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "course.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/course.xml",
+          "source_xml_url": "data/nombank_sources/course.xml",
+          "source_xml_sha256": "5986b30665e2b3ff845c36f853b9757761206fc61ab6c3b767b8f3fc15a14f12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Docente",
+          "definition": "Teacher0 original declarado. Quem ensina o curso, não programa que lança ou empresa de treinamento diferente automaticamente.",
+          "desc_pt": "Docente",
+          "definition_pt": "Teacher0 original declarado. Quem ensina o curso, não programa que lança ou empresa de treinamento diferente automaticamente."
         },
+        {
+          "id": "Arg1",
+          "desc": "Disciplina",
+          "definition": "Subject1 original educational psychology/philosophy. Matéria ensinada, distinta de nível superior, duração ou aprendizado autodidata.",
+          "desc_pt": "Disciplina",
+          "definition_pt": "Subject1 original educational psychology/philosophy. Matéria ensinada, distinta de nível superior, duração ou aprendizado autodidata."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Aluno",
+          "definition": "Students2 original they passed. Participante explícito sob possibilidade/negação; estudantes de um exemplar em conjunto não distribuem participação a todos os cursos.",
+          "desc_pt": "Aluno",
+          "definition_pt": "Students2 original they passed. Participante explícito sob possibilidade/negação; estudantes de um exemplar em conjunto não distribuem participação a todos os cursos."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000044_SENT022::curso::1",
           "sent_ID": "FOLHA_DOC000044_SENT022",
           "text": "Cerca de 80% dos jovens assistidos pelo programa em um dos seus 170 cursos lançados até agora conseguem vagas formais de emprego nos primeiros três meses após a formatura, a maioria nas próprias empresas em que foram treinados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cursos",
             "char_start": 68,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "dos jovens assistidos pelo programa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 13,
+                "char_end": 48
+              }
+            ]
+          },
+          "target_instance_id": 8207,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_201438d71ad048f8",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 13,
+                    "char_end": 48,
+                    "head_token_id": 7,
+                    "head_form": "jovens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000044_SENT056::curso::1",
           "sent_ID": "FOLHA_DOC000044_SENT056",
           "text": "Era curso o dia todo e escola de noite.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 4,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10184,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_201438d71ad048f8",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000044_SENT073::curso::1",
           "sent_ID": "FOLHA_DOC000044_SENT073",
           "text": "É preciso ter muito cuidado com essa pressão pelo curso superior.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 50,
             "char_end": 55
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13347,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_201438d71ad048f8",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 55
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003182_SENT010::curso::1",
           "sent_ID": "FOLHA_DOC003182_SENT010",
           "text": "Jonathan, porém, se aprofundou na habilidade por curiosidade e rapidamente aprendeu a programar e a desvendar dispositivos eletrônicos sozinho, nunca fez curso nenhum.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 154,
             "char_end": 159
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Jonathan"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ]
+          },
+          "target_instance_id": 14307,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_201438d71ad048f8",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 154,
+                "char_end": 159
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 8,
+                    "head_token_id": 1,
+                    "head_form": "Jonathan",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
         },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_c8c97340d3943196",
+      "frame_id": "f_31528bf4970d330f",
+      "pt_roleset": "curso.01",
+      "sense_label": "curso.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "course.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/course.xml",
+          "source_xml_url": "data/nombank_sources/course.xml",
+          "source_xml_sha256": "5986b30665e2b3ff845c36f853b9757761206fc61ab6c3b767b8f3fc15a14f12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Professor",
+          "definition": "Teacher explicitado.",
+          "desc_pt": "Professor",
+          "definition_pt": "Teacher explicitado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo ensinado",
+          "definition": "Subject do programa especificado.",
+          "desc_pt": "Conteúdo ensinado",
+          "definition_pt": "Subject do programa especificado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estudante",
+          "definition": "Student(s) em token independente, sem promovida verbo como pessoa token criada.",
+          "desc_pt": "Estudante",
+          "definition_pt": "Student(s) em token independente, sem promovida verbo como pessoa token criada."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC001191_SENT040::curso::1",
           "sent_ID": "FOLHA_DOC001191_SENT040",
           "text": "Ao voltar do curso, foi promovida.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "curso",
             "char_start": 13,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14412,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_31528bf4970d330f",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

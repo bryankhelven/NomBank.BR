@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "aficionado · acepção 1",
+      "sense_id": "s_2f8ea0ad1672881e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2f8ea0ad1672881e",
+      "frame_id": "f_889c6631afb82150",
+      "pt_roleset": null,
+      "sense_label": "aficionado · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fan.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fan.xml",
+          "source_xml_url": "data/nombank_sources/fan.xml",
+          "source_xml_sha256": "26791c6259bce4e33312c28a3b3f0cac492c71522a2151e820991cdca06d8d3c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Aficionado",
+          "definition": "Job holder de entusiasmo/admirador, nome independente sem duplicarREL.",
+          "desc_pt": "Aficionado",
+          "definition_pt": "Job holder de entusiasmo/admirador, nome independente sem duplicarREL."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto admirado",
+          "definition": "Theme como computadores/jogos on-line com coordenação inteira.",
+          "desc_pt": "Objeto admirado",
+          "definition_pt": "Theme como computadores/jogos on-line com coordenação inteira."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da admiração",
+          "definition": "Beneficiary expresso, sem outro cargo profissional como instituição do aficionado.",
+          "desc_pt": "Beneficiário da admiração",
+          "definition_pt": "Beneficiary expresso, sem outro cargo profissional como instituição do aficionado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003182_SENT009::aficionado::1",
           "sent_ID": "FOLHA_DOC003182_SENT009",
           "text": "Parte da vocação do jovem veio do pai, Edson Marques, 49, analista de sistemas e aficionado por computadores e jogos on-line.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aficionado",
             "char_start": 81,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Edson Marques",
+            "Arg1": "por computadores e jogos on-line",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 39,
+                "char_end": 52
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 92,
+                "char_end": 124
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2521,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_889c6631afb82150",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 39,
+                    "char_end": 52,
+                    "head_token_id": 13,
+                    "head_form": "Edson",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 92,
+                    "char_end": 124,
+                    "head_token_id": 24,
+                    "head_form": "computadores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aficionado · acepção 1"
+      "syntactic_profile": {
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

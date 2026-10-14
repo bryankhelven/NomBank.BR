@@ -6,104 +6,706 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004134_SENT005::suspeita::1",
-          "sent_ID": "FOLHA_DOC004134_SENT005",
-          "text": "O empresário contou a interlocutores, no entanto, que percebeu rapidamente que sua suspeita não fazia sentido.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "suspeita",
-            "char_start": 83,
-            "char_end": 91
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000016_SENT007::suspeita::1",
-          "sent_ID": "FOLHA_DOC000016_SENT007",
-          "text": "Diversas operações têm sido feitas em outros morros, para onde há a suspeita de que bandidos do grupo de 157 teriam ido com a ocupação da Rocinha.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "suspeita",
-            "char_start": 68,
-            "char_end": 76
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "suspeita · acepção 1"
+      "sense_label": "suspeita · acepção 1",
+      "sense_id": "s_3d3b261a55bf496a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "suspeita · acepção 2",
+      "sense_id": "s_0f38db2279e4b49e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3d3b261a55bf496a",
+      "frame_id": "f_752a8b673c2e5ee6",
+      "pt_roleset": null,
+      "sense_label": "suspeita · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "suspicion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/suspicion.xml",
+          "source_xml_url": "data/nombank_sources/suspicion.xml",
+          "source_xml_sha256": "9236b6b2cad4f9de41439c2590e211983ac13f3edc73ad3dacea053103bd3785",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "experienciador",
+          "definition": "Entidade que tem a suspeita.",
+          "desc_pt": "experienciador",
+          "definition_pt": "Entidade que tem a suspeita."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo suspeitado",
+          "definition": "Proposição ou conduta suspeitada.",
+          "desc_pt": "conteúdo suspeitado",
+          "definition_pt": "Proposição ou conduta suspeitada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "suspeito",
+          "definition": "Entidade acerca da qual recai a suspeita.",
+          "desc_pt": "suspeito",
+          "definition_pt": "Entidade acerca da qual recai a suspeita."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004134_SENT005::suspeita::1",
+          "sent_ID": "FOLHA_DOC004134_SENT005",
+          "text": "O empresário contou a interlocutores, no entanto, que percebeu rapidamente que sua suspeita não fazia sentido.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "suspeita",
+            "char_start": 83,
+            "char_end": 91
+          },
+          "realization": {
+            "Arg0": "sua",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 79,
+                "char_end": 82
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 853,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_752a8b673c2e5ee6",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15
+                    ],
+                    "char_start": 79,
+                    "char_end": 82,
+                    "head_token_id": 15,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000016_SENT007::suspeita::1",
+          "sent_ID": "FOLHA_DOC000016_SENT007",
+          "text": "Diversas operações têm sido feitas em outros morros, para onde há a suspeita de que bandidos do grupo de 157 teriam ido com a ocupação da Rocinha.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "suspeita",
+            "char_start": 68,
+            "char_end": 76
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de que bandidos do grupo de 157 teriam ido com a ocupação da Rocinha",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 77,
+                "char_end": 145
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5734,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_752a8b673c2e5ee6",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 77,
+                    "char_end": 145,
+                    "head_token_id": 24,
+                    "head_form": "ido",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_0f38db2279e4b49e",
+      "frame_id": "f_2882a971360a91cd",
+      "pt_roleset": null,
+      "sense_label": "suspeita · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "suspicion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/suspicion.xml",
+          "source_xml_url": "data/nombank_sources/suspicion.xml",
+          "source_xml_sha256": "9236b6b2cad4f9de41439c2590e211983ac13f3edc73ad3dacea053103bd3785",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "experienciador",
+          "definition": "Entidade que tem a suspeita.",
+          "desc_pt": "experienciador",
+          "definition_pt": "Entidade que tem a suspeita."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo suspeitado",
+          "definition": "Proposição ou conduta suspeitada.",
+          "desc_pt": "conteúdo suspeitado",
+          "definition_pt": "Proposição ou conduta suspeitada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "suspeito",
+          "definition": "Entidade acerca da qual recai a suspeita.",
+          "desc_pt": "suspeito",
+          "definition_pt": "Entidade acerca da qual recai a suspeita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003157_SENT014::suspeita::1",
           "sent_ID": "FOLHA_DOC003157_SENT014",
           "text": "O Trench demitiu Milller em julho, quando se tornou pública a suspeita sobre o ex-procurador.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "suspeita",
             "char_start": 62,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "sobre o ex-procurador"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 71,
+                "char_end": 92
+              }
+            ]
+          },
+          "target_instance_id": 3997,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2882a971360a91cd",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 71,
+                    "char_end": 92,
+                    "head_token_id": 16,
+                    "head_form": "ex-procurador",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000074_SENT001::suspeita::1",
           "sent_ID": "FOLHA_DOC000074_SENT001",
           "text": "UNE processa Lollapalooza por suspeita de burlar lei da meia entrada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "suspeita",
             "char_start": 30,
             "char_end": 38
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "UNE",
+            "Arg1": "de burlar lei da meia entrada",
+            "Arg2": "Lollapalooza"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl",
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 39,
+                "char_end": 68
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 13,
+                "char_end": 25
+              }
+            ]
+          },
+          "target_instance_id": 4164,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2882a971360a91cd",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "UNE",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 39,
+                    "char_end": 68,
+                    "head_token_id": 7,
+                    "head_form": "burlar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 13,
+                    "char_end": 25,
+                    "head_token_id": 3,
+                    "head_form": "Lollapalooza",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004014_SENT015::suspeita::1",
           "sent_ID": "FOLHA_DOC004014_SENT015",
           "text": "O livro sob suspeita chama-se \"Arte de Perto\", da editora Leya.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "suspeita",
             "char_start": 12,
             "char_end": 20
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "O livro"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ]
+          },
+          "target_instance_id": 12870,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2882a971360a91cd",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 20
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 7,
+                    "head_token_id": 2,
+                    "head_form": "livro",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003120_SENT002::suspeita::1",
           "sent_ID": "FOLHA_DOC003120_SENT002",
           "text": "Um segundo homem foi preso por suspeita de envolvimento com o ataque que feriu 30 pessoas no metrô de Londres na sexta-feira (15).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "suspeita",
             "char_start": 31,
             "char_end": 39
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de envolvimento com o ataque que feriu 30 pessoas no metrô de Londres na sexta-feira (15)",
+            "Arg2": "Um segundo homem"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj:pass"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 129
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 16
+              }
+            ]
+          },
+          "target_instance_id": 13984,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2882a971360a91cd",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 40,
+                    "char_end": 129,
+                    "head_token_id": 9,
+                    "head_form": "envolvimento",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 16,
+                    "head_token_id": 3,
+                    "head_form": "homem",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "suspeita · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "nsubj:pass": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,160 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "subdimensionamento · acepção 1",
+      "sense_id": "s_9cd9618c7f5359aa",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9cd9618c7f5359aa",
+      "frame_id": "f_8b93bba1c778323d",
+      "pt_roleset": null,
+      "sense_label": "subdimensionamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "estimate.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/estimate.xml",
+          "source_xml_url": "data/nombank_sources/estimate.xml",
+          "source_xml_sha256": "4614ef0ff1629228a1666108095125b95ada1249582adcd6bb595f900c109807",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do subdimensionamento",
+          "definition": "Estimator do cálculo subestimado, incluindo festival metonímico de organização cujo erro se atribui.",
+          "desc_pt": "Autor do subdimensionamento",
+          "definition_pt": "Estimator do cálculo subestimado, incluindo festival metonímico de organização cujo erro se atribui."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa subdimensionada",
+          "definition": "Thing estimated como show, sem material/medida específica externos inventados.",
+          "desc_pt": "Coisa subdimensionada",
+          "definition_pt": "Thing estimated como show, sem material/medida específica externos inventados."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor estimado",
+          "definition": "Estimated-to-be particular expresso, sem inferioridade lexical do prefixo incorporada sem exemplo original.",
+          "desc_pt": "Valor estimado",
+          "definition_pt": "Estimated-to-be particular expresso, sem inferioridade lexical do prefixo incorporada sem exemplo original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003081_SENT018::subdimensionamento::1",
           "sent_ID": "FOLHA_DOC003081_SENT018",
           "text": "A única nota negativa foi o subdimensionamento do show, um erro grosseiro do festival: Rodgers põe no bolso todas as atrações deste primeiro fim de semana do Rock in Rio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "subdimensionamento",
             "char_start": 28,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do festival",
+            "Arg1": "do show",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 74,
+                "char_end": 85
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2335,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8b93bba1c778323d",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 74,
+                    "char_end": 85,
+                    "head_token_id": 17,
+                    "head_form": "festival",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 47,
+                    "char_end": 54,
+                    "head_token_id": 10,
+                    "head_form": "show",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "subdimensionamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

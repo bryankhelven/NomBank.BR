@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "improviso · acepção 1",
+      "sense_id": "s_890bf79dcf54b4ae",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_890bf79dcf54b4ae",
+      "frame_id": "f_d99509c9b917b197",
+      "pt_roleset": null,
+      "sense_label": "improviso · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "improvisation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/improvisation.xml",
+          "source_xml_url": "data/nombank_sources/improvisation.xml",
+          "source_xml_sha256": "93dbc6e618d3ed25d19489b7cb6c6f1de89f983b34d4d05a893a74144c34b626",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem improvisa",
+          "definition": "Performer explicitado, sem cozinheiro presumido.",
+          "desc_pt": "Quem improvisa",
+          "definition_pt": "Performer explicitado, sem cozinheiro presumido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa improvisada",
+          "definition": "Thing improvised expresso, não justificação de segurança alimentar automaticamente preparação.",
+          "desc_pt": "Coisa improvisada",
+          "definition_pt": "Thing improvised expresso, não justificação de segurança alimentar automaticamente preparação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002027_SENT032::improviso::1",
           "sent_ID": "FOLHA_DOC002027_SENT032",
           "text": "Como envolve questões de segurança alimentar, não há espaço para improviso.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "improviso",
             "char_start": 65,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 13259,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d99509c9b917b197",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "improviso · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

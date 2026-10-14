@@ -6,66 +6,337 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "compulsão · acepção 1",
+      "sense_id": "s_adb5fdd4ed1fc08d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_adb5fdd4ed1fc08d",
+      "frame_id": "f_fda44e44c18d0344",
+      "pt_roleset": null,
+      "sense_label": "compulsão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "compulsion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/compulsion.xml",
+          "source_xml_url": "data/nombank_sources/compulsion.xml",
+          "source_xml_sha256": "a2048fc534a6955c41f4b371a2cf494396995e47456298e4d82f12a0883396c3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Portador do impulso",
+          "definition": "Pessoa que tem impulso compulsivo, tradução local de agent.",
+          "desc_pt": "Portador do impulso",
+          "definition_pt": "Pessoa que tem impulso compulsivo, tradução local de agent."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação ou domínio do impulso",
+          "definition": "Action original; domínio alimentar/sexual/exposição é adaptação local. Fonte admite Arg1 REF incorporado, usado somente se não houver conteúdo independente e se a leitura o licenciar.",
+          "desc_pt": "Ação ou domínio do impulso",
+          "definition_pt": "Action original; domínio alimentar/sexual/exposição é adaptação local. Fonte admite Arg1 REF incorporado, usado somente se não houver conteúdo independente e se a leitura o licenciar."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000041_SENT066::compulsão::1",
           "sent_ID": "FOLHA_DOC000041_SENT066",
           "text": "Teve períodos de compulsão alimentar, de consumo compulsivo e de compulsão por sexo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "compulsão",
             "char_start": 17,
             "char_end": 26
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "alimentar"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 27,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 120,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fda44e44c18d0344",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 27,
+                    "char_end": 36,
+                    "head_token_id": 5,
+                    "head_form": "alimentar",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000041_SENT066::compulsão::2",
           "sent_ID": "FOLHA_DOC000041_SENT066",
           "text": "Teve períodos de compulsão alimentar, de consumo compulsivo e de compulsão por sexo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "compulsão",
             "char_start": 65,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "por sexo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 75,
+                "char_end": 83
+              }
+            ]
+          },
+          "target_instance_id": 122,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fda44e44c18d0344",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 75,
+                    "char_end": 83,
+                    "head_token_id": 14,
+                    "head_form": "sexo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003183_SENT007::compulsão::1",
           "sent_ID": "FOLHA_DOC003183_SENT007",
           "text": "Intitulada \"Nosedive\" (ou \"Perdedor\", na versão brasileira), a história transforma em pesadelo a compulsão moderna por exposição nas redes sociais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "compulsão",
             "char_start": 97,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "por exposição nas redes sociais"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 115,
+                "char_end": 146
+              }
+            ]
+          },
+          "target_instance_id": 3457,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fda44e44c18d0344",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 97,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 115,
+                    "char_end": 146,
+                    "head_token_id": 26,
+                    "head_form": "exposição",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000041_SENT074::compulsão::1",
           "sent_ID": "FOLHA_DOC000041_SENT074",
           "text": "Ainda mais quando se trata de um problema como compulsão sexual, explica Tissot.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "compulsão",
             "char_start": 47,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sexual"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 57,
+                "char_end": 63
+              }
+            ]
+          },
+          "target_instance_id": 6465,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fda44e44c18d0344",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 57,
+                    "char_end": 63,
+                    "head_token_id": 11,
+                    "head_form": "sexual",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "compulsão · acepção 1"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

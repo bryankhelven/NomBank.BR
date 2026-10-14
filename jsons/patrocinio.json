@@ -6,37 +6,275 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_64a31777b609f0be",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_64a31777b609f0be",
+      "frame_id": "f_160c57b3e924291e",
+      "pt_roleset": "patrocínio.01",
+      "sense_label": "patrocínio.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "funding.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/funding.xml",
+          "source_xml_url": "data/nombank_sources/funding.xml",
+          "source_xml_sha256": "79175e25c83c4b3b6eaee00d1fc95f5bfc6b373a24316dedd10add0872422f7b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Financiador do patrocínio",
+          "definition": "Quem custeia, incluindo países ou concessionária ligados ao acordo; não intermediário elíptico.",
+          "desc_pt": "Financiador do patrocínio",
+          "definition_pt": "Quem custeia, incluindo países ou concessionária ligados ao acordo; não intermediário elíptico."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade custeada",
+          "definition": "Organização/projeto cuja atividade se financia, extensão explícita de projeto a organização nomeada.",
+          "desc_pt": "Entidade custeada",
+          "definition_pt": "Organização/projeto cuja atividade se financia, extensão explícita de projeto a organização nomeada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Dinheiro do custeio",
+          "definition": "Montante fornecido, sem valor inventado.",
+          "desc_pt": "Dinheiro do custeio",
+          "definition_pt": "Montante fornecido, sem valor inventado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000150_SENT012::patrocínio::1",
           "sent_ID": "FOLHA_DOC000150_SENT012",
           "text": "A Airbus começou, em 1967, com patrocínio estatal, de Alemanha Ocidental, França e Reino Unido.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "patrocínio",
             "char_start": 31,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de Alemanha Ocidental, França e Reino Unido",
+            "Arg1": "A Airbus",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 94
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7545,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_160c57b3e924291e",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 51,
+                    "char_end": 94,
+                    "head_token_id": 13,
+                    "head_form": "Alemanha",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 8,
+                    "head_token_id": 2,
+                    "head_form": "Airbus",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002034_SENT027::patrocínio::1",
           "sent_ID": "FOLHA_DOC002034_SENT027",
           "text": "No último ano, acertou sozinho um patrocínio com uma concessionária da marca alemã Audi, em Santos, para o clube que defendia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "patrocínio",
             "char_start": 34,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "com uma concessionária da marca alemã Audi, em Santos",
+            "Arg1": "para o clube que defendia",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 45,
+                "char_end": 98
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 100,
+                "char_end": 125
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7978,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_160c57b3e924291e",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 45,
+                    "char_end": 98,
+                    "head_token_id": 12,
+                    "head_form": "concessionária",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 100,
+                    "char_end": 125,
+                    "head_token_id": 24,
+                    "head_form": "clube",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

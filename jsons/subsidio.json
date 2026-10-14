@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "subsídio · acepção 1",
+      "sense_id": "s_041592ef1626f398",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_041592ef1626f398",
+      "frame_id": "f_ecaef337ca91d599",
+      "pt_roleset": null,
+      "sense_label": "subsídio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "subsidy.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/subsidy.xml",
+          "source_xml_url": "data/nombank_sources/subsidy.xml",
+          "source_xml_sha256": "725a658d1a0471a7a3567c32c528fe50c5662142e6929f0d46ffab865e00c2d4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Concedente do subsídio",
+          "definition": "Assister/agent explícito.",
+          "desc_pt": "Concedente do subsídio",
+          "definition_pt": "Assister/agent explícito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade subsidiada",
+          "definition": "Entity subsidized, sem carros do preço automaticamente destinatários.",
+          "desc_pt": "Entidade subsidiada",
+          "definition_pt": "Entity subsidized, sem carros do preço automaticamente destinatários."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003051_SENT028::subsídio::1",
           "sent_ID": "FOLHA_DOC003051_SENT028",
           "text": "Segundo relatório da Bloomberg New Energy Finance, entre 2025 e 2030 o preço de carros movidos a bateria será competitivo com os de motor tradicional- e mesmo tirando subsídios da jogada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "subsídios",
             "char_start": 167,
             "char_end": 176
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 15422,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ecaef337ca91d599",
+          "argument_details": {
+            "predicate_token_ids": [
+              32
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 167,
+                "char_end": 176
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "subsídio · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

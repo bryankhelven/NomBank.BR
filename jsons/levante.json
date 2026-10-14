@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "levante · acepção 1",
+      "sense_id": "s_41ec753f6067a390",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_41ec753f6067a390",
+      "frame_id": "f_6896b4fa11cccf2b",
+      "pt_roleset": null,
+      "sense_label": "levante · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rebellion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rebellion.xml",
+          "source_xml_url": "data/nombank_sources/rebellion.xml",
+          "source_xml_sha256": "e1c5c9ccc0ef6fce88eeef87536dc9f228adcf86e211f326b1b9bbc55d8e8a68",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Rebelde",
+          "definition": "Rebel que participa da insurreição, não planejador acusado automaticamente executor ou quem acusa.",
+          "desc_pt": "Rebelde",
+          "definition_pt": "Rebel que participa da insurreição, não planejador acusado automaticamente executor ou quem acusa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade combatida",
+          "definition": "Rebel against explicitado, sem país/local como adversário presumido ou culpa externa afirmada.",
+          "desc_pt": "Entidade combatida",
+          "definition_pt": "Rebel against explicitado, sem país/local como adversário presumido ou culpa externa afirmada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000057_SENT017::levante::1",
           "sent_ID": "FOLHA_DOC000057_SENT017",
           "text": "A relação vinha azedando desde a tentativa fracassada de golpe de Estado na Turquia, em 2016 -os turcos acusam o clérigo Fethullah Güllen, exilado nos EUA, de ter tramado o levante e pedem sem sucesso sua extradição.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "levante",
             "char_start": 173,
             "char_end": 180
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 2478,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6896b4fa11cccf2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              37
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 173,
+                "char_end": 180
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "levante · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

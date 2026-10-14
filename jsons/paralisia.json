@@ -6,24 +6,126 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "paralisia · acepção 1",
+      "sense_id": "s_0c5f8534a1e9e91e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0c5f8534a1e9e91e",
+      "frame_id": "f_d1f9447f4d236594",
+      "pt_roleset": null,
+      "sense_label": "paralisia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "paralysis.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/paralysis.xml",
+          "source_xml_url": "data/nombank_sources/paralysis.xml",
+          "source_xml_sha256": "863bbf5a737a0317ab05efcab954ee84fb0c9549cff11ee8511c6fdc25ce4cd7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa da inação",
+          "definition": "Cause of paralysis agent expresso, sem caso contrário como causa descrita.",
+          "desc_pt": "Causa da inação",
+          "definition_pt": "Cause of paralysis agent expresso, sem caso contrário como causa descrita."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade paralisada",
+          "definition": "Entity paralyzed, setor público no estado de inação institucional, não diagnóstico clínico.",
+          "desc_pt": "Entidade paralisada",
+          "definition_pt": "Entity paralyzed, setor público no estado de inação institucional, não diagnóstico clínico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001125_SENT024::paralisia::1",
           "sent_ID": "FOLHA_DOC001125_SENT024",
           "text": "Caso contrário, o resultado será a paralisia do setor público.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "paralisia",
             "char_start": 35,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do setor público"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 61
+              }
+            ]
+          },
+          "target_instance_id": 9536,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d1f9447f4d236594",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 45,
+                    "char_end": 61,
+                    "head_token_id": 11,
+                    "head_form": "setor",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "paralisia · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

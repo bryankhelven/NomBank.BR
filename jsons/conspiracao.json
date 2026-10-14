@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "conspiração · acepção 1",
+      "sense_id": "s_85dfeb34141db84c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_85dfeb34141db84c",
+      "frame_id": "f_16ab215cabd93367",
+      "pt_roleset": null,
+      "sense_label": "conspiração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conspiracy.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conspiracy.xml",
+          "source_xml_url": "data/nombank_sources/conspiracy.xml",
+          "source_xml_sha256": "1e6cc83e394b68075f8a763fb5475e160c92ec2612fc83e3725b0d0ceb7a138c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Conspirador",
+          "definition": "Conspirator que trama.",
+          "desc_pt": "Conspirador",
+          "definition_pt": "Conspirator que trama."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Projeto conspirado",
+          "definition": "Job/project particular, não ato genérico da conspiração.",
+          "desc_pt": "Projeto conspirado",
+          "definition_pt": "Job/project particular, não ato genérico da conspiração."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Coconspirador",
+          "definition": "Co-conspirator expresso, sem procurador que avalia punibilidade como parte.",
+          "desc_pt": "Coconspirador",
+          "definition_pt": "Co-conspirator expresso, sem procurador que avalia punibilidade como parte."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003314_SENT022::conspiração::1",
           "sent_ID": "FOLHA_DOC003314_SENT022",
           "text": "O ato, de conspiração, no entendimento do procurador-geral, não é penalmente punível.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conspiração",
             "char_start": 10,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5121,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_16ab215cabd93367",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "conspiração · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

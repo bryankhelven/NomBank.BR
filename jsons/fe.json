@@ -6,51 +6,267 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_3e6bbc7bb5cf278a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3e6bbc7bb5cf278a",
+      "frame_id": "f_c0b080dd93f6765d",
+      "pt_roleset": "fé.02",
+      "sense_label": "fé.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "faith.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/faith.xml",
+          "source_xml_url": "data/nombank_sources/faith.xml",
+          "source_xml_sha256": "3996a7ba7c41d7b1533dcba8ff6028559a2e0ba5e3376fe258990c94f6fd3176",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Crente",
+          "definition": "Quem tem fé/crença, incluindo possessivo.",
+          "desc_pt": "Crente",
+          "definition_pt": "Quem tem fé/crença, incluindo possessivo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Crença",
+          "definition": "Conteúdo/confissão religiosa como Islamic original; não mera simplicidade/intensidade.",
+          "desc_pt": "Crença",
+          "definition_pt": "Conteúdo/confissão religiosa como Islamic original; não mera simplicidade/intensidade."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000136_SENT039::fé::1",
           "sent_ID": "FOLHA_DOC000136_SENT039",
           "text": "Minha fé aumenta a cada ano.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fé",
             "char_start": 6,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Minha",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5247,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c0b080dd93f6765d",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 5,
+                    "head_token_id": 1,
+                    "head_form": "Minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004085_SENT023::fé::1",
           "sent_ID": "FOLHA_DOC004085_SENT023",
           "text": "Os rohingyas são uma minoria de fé muçulmana que se concentra no Estado de Rakhine, no noroeste de Mianmar.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fé",
             "char_start": 32,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Os rohingyas",
+            "Arg1": "muçulmana"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 12
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 35,
+                "char_end": 44
+              }
+            ]
+          },
+          "target_instance_id": 14816,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c0b080dd93f6765d",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 12,
+                    "head_token_id": 2,
+                    "head_form": "rohingyas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 35,
+                    "char_end": 44,
+                    "head_token_id": 8,
+                    "head_form": "muçulmana",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000062_SENT013::fé::1",
           "sent_ID": "FOLHA_DOC000062_SENT013",
           "text": "Me surpreende a força de uma fé que é bastante simples, afirmou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fé",
             "char_start": 29,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 15137,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c0b080dd93f6765d",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 29,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

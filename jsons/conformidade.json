@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "conformidade · acepção 1",
+      "sense_id": "s_ba23b514d30cef9a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ba23b514d30cef9a",
+      "frame_id": "f_2ecdcab420099cdd",
+      "pt_roleset": null,
+      "sense_label": "conformidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "compliance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/compliance.xml",
+          "source_xml_url": "data/nombank_sources/compliance.xml",
+          "source_xml_sha256": "18c06538c22c49d57d5404d447f9fe23dfdc246fe82ffa22ce7d8d8c5aeb3550",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade conforme",
+          "definition": "Complier estendido à proposta/artefato em conformidade, sem área examinadora como titular.",
+          "desc_pt": "Entidade conforme",
+          "definition_pt": "Complier estendido à proposta/artefato em conformidade, sem área examinadora como titular."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Norma de conformidade",
+          "definition": "Complied-with/rule explícita, sem proposta invertida para norma por preposição.",
+          "desc_pt": "Norma de conformidade",
+          "definition_pt": "Complied-with/rule explícita, sem proposta invertida para norma por preposição."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003200_SENT041::conformidade::1",
           "sent_ID": "FOLHA_DOC003200_SENT041",
           "text": "A área que eu comandava se pronunciava apenas sobre a conformidade da proposta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conformidade",
             "char_start": 54,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da proposta",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 67,
+                "char_end": 78
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 7814,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2ecdcab420099cdd",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 67,
+                    "char_end": 78,
+                    "head_token_id": 14,
+                    "head_form": "proposta",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "conformidade · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

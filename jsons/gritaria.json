@@ -6,48 +6,283 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003025_SENT034::gritaria::1",
-          "sent_ID": "FOLHA_DOC003025_SENT034",
-          "text": "Diferentemente do policial, a nobreza togada é protegida da gritaria do mundo.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "gritaria",
-            "char_start": 60,
-            "char_end": 68
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "gritaria · acepção 1"
+      "sense_label": "gritaria · acepção 1",
+      "sense_id": "s_66668ad749a426bb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "gritaria · acepção 2",
+      "sense_id": "s_336384d7e5b05d2d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_66668ad749a426bb",
+      "frame_id": "f_309b3cd20c939208",
+      "pt_roleset": null,
+      "sense_label": "gritaria · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "outcry.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/outcry.xml",
+          "source_xml_url": "data/nombank_sources/outcry.xml",
+          "source_xml_sha256": "84041c0c3228a28eebd2cb0f0adb07685394becaea391d1bb9f6f35eed305613",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor do clamor",
+          "definition": "Público que protesta, incluindo mundo metonímico sem universalidade factual inferida.",
+          "desc_pt": "Emissor do clamor",
+          "definition_pt": "Público que protesta, incluindo mundo metonímico sem universalidade factual inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo do protesto",
+          "definition": "Utterance explícita do clamor.",
+          "desc_pt": "Conteúdo do protesto",
+          "definition_pt": "Utterance explícita do clamor."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Ouvinte do clamor",
+          "definition": "Hearer identificado, não protegido/alvo automaticamente ouvinte.",
+          "desc_pt": "Ouvinte do clamor",
+          "definition_pt": "Hearer identificado, não protegido/alvo automaticamente ouvinte."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003025_SENT034::gritaria::1",
+          "sent_ID": "FOLHA_DOC003025_SENT034",
+          "text": "Diferentemente do policial, a nobreza togada é protegida da gritaria do mundo.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "gritaria",
+            "char_start": 60,
+            "char_end": 68
+          },
+          "realization": {
+            "Arg0": "do mundo",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 69,
+                "char_end": 77
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2511,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_309b3cd20c939208",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 69,
+                    "char_end": 77,
+                    "head_token_id": 16,
+                    "head_form": "mundo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_336384d7e5b05d2d",
+      "frame_id": "f_e47d6b398e2b2ef5",
+      "pt_roleset": null,
+      "sense_label": "gritaria · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "shouting.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/shouting.xml",
+          "source_xml_url": "data/nombank_sources/shouting.xml",
+          "source_xml_sha256": "06a1bd43afc0c9aff3f28e367674115089eea514eb20ca39f39016ae54c046a3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem grita",
+          "definition": "Shouter incluindo pessoa com disposição de berrar, sem ocorrência realizada afirmada.",
+          "desc_pt": "Quem grita",
+          "definition_pt": "Shouter incluindo pessoa com disposição de berrar, sem ocorrência realizada afirmada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Mensagem gritada",
+          "definition": "Utterance integral sob atribuição/modalidade.",
+          "desc_pt": "Mensagem gritada",
+          "definition_pt": "Utterance integral sob atribuição/modalidade."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Quem ouve",
+          "definition": "Listener inclusive pessoas que não suportam vozes altas, sem destinatário de respostas coordenadas transferido.",
+          "desc_pt": "Quem ouve",
+          "definition_pt": "Listener inclusive pessoas que não suportam vozes altas, sem destinatário de respostas coordenadas transferido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003038_SENT005::gritaria::1",
           "sent_ID": "FOLHA_DOC003038_SENT005",
           "text": "As pessoas não aguentam mais essa gritaria, afirma a jornalista, que há 15 anos auxilia políticos em campanha, pessoas convocadas para CPIs e executivos e empresas encalacrados em crises de imagem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gritaria",
             "char_start": 34,
             "char_end": 42
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "As pessoas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 10
+              }
+            ]
+          },
+          "target_instance_id": 5350,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e47d6b398e2b2ef5",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 10,
+                    "head_token_id": 2,
+                    "head_form": "pessoas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "gritaria · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

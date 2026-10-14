@@ -6,24 +6,167 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "bênção · acepção 1",
+      "sense_id": "s_3b9b7a688f82bf41",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3b9b7a688f82bf41",
+      "frame_id": "f_13ebeb2f5bb0d018",
+      "pt_roleset": null,
+      "sense_label": "bênção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "blessing.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/blessing.xml",
+          "source_xml_url": "data/nombank_sources/blessing.xml",
+          "source_xml_sha256": "46a9b47b379ced776677a1c4fcce0bcb9cb9519af17731787efa3964612eb28b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do beneplácito",
+          "definition": "Entity giving blessing aprovação/consentimento institucional como government original, não ritual religioso.",
+          "desc_pt": "Autor do beneplácito",
+          "definition_pt": "Entity giving blessing aprovação/consentimento institucional como government original, não ritual religioso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade consentida",
+          "definition": "Entity blessed pessoa que recebe apoio, como tucano.",
+          "desc_pt": "Entidade consentida",
+          "definition_pt": "Entity blessed pessoa que recebe apoio, como tucano."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Ação ou dom consentido",
+          "definition": "Blessed with gift/ação específica, sem ação que pessoa descarta como ato aprovado.",
+          "desc_pt": "Ação ou dom consentido",
+          "definition_pt": "Blessed with gift/ação específica, sem ação que pessoa descarta como ato aprovado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002032_SENT004::bênção::1",
           "sent_ID": "FOLHA_DOC002032_SENT004",
           "text": "Ex-governador do Estado, o tucano tem a bênção da cúpula do partido e agrada siglas aliadas -mas descarta trocar o certo pelo duvidoso.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "bênção",
             "char_start": 40,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da cúpula do partido",
+            "Arg1": "o tucano",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 47,
+                "char_end": 67
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 33
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2474,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_13ebeb2f5bb0d018",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 47,
+                    "char_end": 67,
+                    "head_token_id": 13,
+                    "head_form": "cúpula",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 25,
+                    "char_end": 33,
+                    "head_token_id": 7,
+                    "head_form": "tucano",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "bênção · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

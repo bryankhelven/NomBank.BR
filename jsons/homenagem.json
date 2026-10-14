@@ -6,102 +6,800 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000143_SENT001::homenagem::1",
-          "sent_ID": "FOLHA_DOC000143_SENT001",
-          "text": "Em homenagem a Che Guevara, Cuba reage às declarações de Trump.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "homenagem",
-            "char_start": 3,
-            "char_end": 12
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000143_SENT010::homenagem::1",
-          "sent_ID": "FOLHA_DOC000143_SENT010",
-          "text": "A homenagem a Che Guevera foi realizada em Santa Clara, a 300 km a leste de Havana.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "homenagem",
-            "char_start": 2,
-            "char_end": 11
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003092_SENT010::homenagem::1",
-          "sent_ID": "FOLHA_DOC003092_SENT010",
-          "text": "Um oficial sob seu comando também fez na época uma homenagem póstuma ao coronel Brilhante Ustra, acusado de inúmeros crimes de tortura e assassinatos na ditadura militar.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "homenagem",
-            "char_start": 51,
-            "char_end": 60
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003015_SENT005::homenagem::1",
-          "sent_ID": "FOLHA_DOC003015_SENT005",
-          "text": "Ao ser premiado como ator coadjuvante em comédia, Alec Baldwin prestou sua \"homenagem\" com ironia: \"Trump, aqui está seu Emmy\", disse.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "homenagem",
-            "char_start": 76,
-            "char_end": 85
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000147_SENT007::homenagem::1",
-          "sent_ID": "FOLHA_DOC000147_SENT007",
-          "text": "Nas redes sociais, amigas de Ângela fizeram homenagens e escreveram sobre a enfermeira.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "homenagens",
-            "char_start": 44,
-            "char_end": 54
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_da941ef7ba0c8d01",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "homenagem.04",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_512cb6f5489a4fa9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_da941ef7ba0c8d01",
+      "frame_id": "f_088cb33a065e72bc",
+      "pt_roleset": "homenagem.01",
+      "sense_label": "homenagem.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "honor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/honor.xml",
+          "source_xml_url": "data/nombank_sources/honor.xml",
+          "source_xml_sha256": "ec2418dd18010c290e94758bbbcbc2c874aeb059c748ba98aed097baf5e5fb5b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "homenageador",
+          "definition": "Entidade que presta a homenagem.",
+          "desc_pt": "homenageador",
+          "definition_pt": "Entidade que presta a homenagem."
+        },
+        {
+          "id": "Arg1",
+          "desc": "homenageado",
+          "definition": "Entidade que recebe a homenagem.",
+          "desc_pt": "homenageado",
+          "definition_pt": "Entidade que recebe a homenagem."
+        },
+        {
+          "id": "Arg2",
+          "desc": "motivo ou feito reconhecido",
+          "definition": "Aquilo pelo qual se presta homenagem; não equivale automaticamente ao seu veículo, local ou época.",
+          "desc_pt": "motivo ou feito reconhecido",
+          "definition_pt": "Aquilo pelo qual se presta homenagem; não equivale automaticamente ao seu veículo, local ou época."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000143_SENT001::homenagem::1",
+          "sent_ID": "FOLHA_DOC000143_SENT001",
+          "text": "Em homenagem a Che Guevara, Cuba reage às declarações de Trump.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "homenagem",
+            "char_start": 3,
+            "char_end": 12
+          },
+          "realization": {
+            "Arg0": "Cuba",
+            "Arg1": "a Che Guevara",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 13,
+                "char_end": 26
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4516,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_088cb33a065e72bc",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7
+                    ],
+                    "char_start": 28,
+                    "char_end": 32,
+                    "head_token_id": 7,
+                    "head_form": "Cuba",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 13,
+                    "char_end": 26,
+                    "head_token_id": 4,
+                    "head_form": "Che",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000143_SENT010::homenagem::1",
+          "sent_ID": "FOLHA_DOC000143_SENT010",
+          "text": "A homenagem a Che Guevera foi realizada em Santa Clara, a 300 km a leste de Havana.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "homenagem",
+            "char_start": 2,
+            "char_end": 11
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a Che Guevera",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 12,
+                "char_end": 25
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4552,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_088cb33a065e72bc",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 12,
+                    "char_end": 25,
+                    "head_token_id": 4,
+                    "head_form": "Che",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003092_SENT010::homenagem::1",
+          "sent_ID": "FOLHA_DOC003092_SENT010",
+          "text": "Um oficial sob seu comando também fez na época uma homenagem póstuma ao coronel Brilhante Ustra, acusado de inúmeros crimes de tortura e assassinatos na ditadura militar.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "homenagem",
+            "char_start": 51,
+            "char_end": 60
+          },
+          "realization": {
+            "Arg0": "Um oficial sob seu comando",
+            "Arg1": "ao coronel Brilhante Ustra, acusado de inúmeros crimes de tortura e assassinatos na ditadura militar",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 26
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 169
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13498,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_088cb33a065e72bc",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 26,
+                    "head_token_id": 2,
+                    "head_form": "oficial",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31
+                    ],
+                    "char_start": 69,
+                    "char_end": 169,
+                    "head_token_id": 16,
+                    "head_form": "coronel",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 3,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_512cb6f5489a4fa9",
+      "frame_id": "f_186080a3e388218b",
+      "pt_roleset": "homenagem.04",
+      "sense_label": "homenagem.04",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "honor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/honor.xml",
+          "source_xml_url": "data/nombank_sources/honor.xml",
+          "source_xml_sha256": "ec2418dd18010c290e94758bbbcbc2c874aeb059c748ba98aed097baf5e5fb5b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "homenageador",
+          "definition": "Entidade que presta a homenagem.",
+          "desc_pt": "homenageador",
+          "definition_pt": "Entidade que presta a homenagem."
+        },
+        {
+          "id": "Arg1",
+          "desc": "homenageado",
+          "definition": "Entidade que recebe a homenagem.",
+          "desc_pt": "homenageado",
+          "definition_pt": "Entidade que recebe a homenagem."
+        },
+        {
+          "id": "Arg2",
+          "desc": "motivo ou feito reconhecido",
+          "definition": "Aquilo pelo qual se presta homenagem; não equivale automaticamente ao seu veículo, local ou época.",
+          "desc_pt": "motivo ou feito reconhecido",
+          "definition_pt": "Aquilo pelo qual se presta homenagem; não equivale automaticamente ao seu veículo, local ou época."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003050_SENT014::homenagem::1",
           "sent_ID": "FOLHA_DOC003050_SENT014",
           "text": "A cantora Roberta Sá, que prepara um álbum em homenagem a Gilberto Gil, diz que o projeto é, \"com certeza, uma das melhores coisas\" que já fez.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "homenagem",
             "char_start": 46,
             "char_end": 55
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A cantora Roberta Sá",
+            "Arg1": "a Gilberto Gil",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 20
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 56,
+                "char_end": 70
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13522,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_186080a3e388218b",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 55
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 20,
+                    "head_token_id": 2,
+                    "head_form": "cantora",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 56,
+                    "char_end": 70,
+                    "head_token_id": 13,
+                    "head_form": "Gilberto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_da941ef7ba0c8d01",
+      "frame_id": "f_ac291156ef17379e",
+      "pt_roleset": "homenagem.01",
+      "sense_label": "homenagem.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "honor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/honor.xml",
+          "source_xml_url": "data/nombank_sources/honor.xml",
+          "source_xml_sha256": "ec2418dd18010c290e94758bbbcbc2c874aeb059c748ba98aed097baf5e5fb5b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da homenagem",
+          "definition": "Quem demonstra honra, inclusive uso irônico com aspas sem veneração sincera inferida.",
+          "desc_pt": "Autor da homenagem",
+          "definition_pt": "Quem demonstra honra, inclusive uso irônico com aspas sem veneração sincera inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Homenageado",
+          "definition": "Pessoa a quem se dirige demonstração de honra, não quem recebeu prêmio em outro ato.",
+          "desc_pt": "Homenageado",
+          "definition_pt": "Pessoa a quem se dirige demonstração de honra, não quem recebeu prêmio em outro ato."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Motivo da homenagem",
+          "definition": "For what/purpose/role independente, sem prêmio ofertado como motivo automático.",
+          "desc_pt": "Motivo da homenagem",
+          "definition_pt": "For what/purpose/role independente, sem prêmio ofertado como motivo automático."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003015_SENT005::homenagem::1",
+          "sent_ID": "FOLHA_DOC003015_SENT005",
+          "text": "Ao ser premiado como ator coadjuvante em comédia, Alec Baldwin prestou sua \"homenagem\" com ironia: \"Trump, aqui está seu Emmy\", disse.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "homenagem",
+            "char_start": 76,
+            "char_end": 85
+          },
+          "realization": {
+            "Arg0": "Alec Baldwin",
+            "Arg1": "Trump",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "vocative",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 50,
+                "char_end": 62
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 100,
+                "char_end": 105
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13558,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ac291156ef17379e",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 85
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 50,
+                    "char_end": 62,
+                    "head_token_id": 11,
+                    "head_form": "Alec",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22
+                    ],
+                    "char_start": 100,
+                    "char_end": 105,
+                    "head_token_id": 22,
+                    "head_form": "Trump",
+                    "head_deprel": "vocative"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "vocative": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_da941ef7ba0c8d01",
+      "frame_id": "f_be3cd28889421295",
+      "pt_roleset": "homenagem.01",
+      "sense_label": "homenagem.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "homage.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/homage.xml",
+          "source_xml_url": "data/nombank_sources/homage.xml",
+          "source_xml_sha256": "28f14a98b88a3f848e13f3ae739e44e9a456f6c6e908930ebb00c92a28d201fb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor respeitador",
+          "definition": "Quem faz demonstração de respeito.",
+          "desc_pt": "Autor respeitador",
+          "definition_pt": "Quem faz demonstração de respeito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade respeitada",
+          "definition": "Alvo da homenagem, sem objeto de escrever coordenado transferido automaticamente.",
+          "desc_pt": "Entidade respeitada",
+          "definition_pt": "Alvo da homenagem, sem objeto de escrever coordenado transferido automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Predicação secundária",
+          "definition": "Atributo independente sobre entidade respeitada.",
+          "desc_pt": "Predicação secundária",
+          "definition_pt": "Atributo independente sobre entidade respeitada."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000147_SENT007::homenagem::1",
+          "sent_ID": "FOLHA_DOC000147_SENT007",
+          "text": "Nas redes sociais, amigas de Ângela fizeram homenagens e escreveram sobre a enfermeira.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "homenagens",
+            "char_start": 44,
+            "char_end": 54
+          },
+          "realization": {
+            "Arg0": "amigas de Ângela",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 19,
+                "char_end": 35
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13946,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_be3cd28889421295",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 19,
+                    "char_end": 35,
+                    "head_token_id": 6,
+                    "head_form": "amigas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

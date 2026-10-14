@@ -6,108 +6,701 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sanção · acepção 1",
+      "sense_id": "s_e0df9fd213b7f3d8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e0df9fd213b7f3d8",
+      "frame_id": "f_f04b7be1be671ce7",
+      "pt_roleset": null,
+      "sense_label": "sanção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "sanction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/sanction.xml",
+          "source_xml_url": "data/nombank_sources/sanction.xml",
+          "source_xml_sha256": "de484559f995f7fa83ff10e135f91770c4cf3cde95104ff9851a853a66f9e5f6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "impositor",
+          "definition": "Entidade que impõe a sanção, distinguida de apoio ou iniciativa diplomática.",
+          "desc_pt": "impositor",
+          "definition_pt": "Entidade que impõe a sanção, distinguida de apoio ou iniciativa diplomática."
+        },
+        {
+          "id": "Arg1",
+          "desc": "medida imposta",
+          "definition": "Aquilo que se impõe; nos exemplos originais sanctions coincide com REL, permitindo modo REL_ENCODED sem span duplicado.",
+          "desc_pt": "medida imposta",
+          "definition_pt": "Aquilo que se impõe; nos exemplos originais sanctions coincide com REL, permitindo modo REL_ENCODED sem span duplicado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "alvo da imposição",
+          "definition": "Entidade ou Estado sobre o qual se impõe a sanção.",
+          "desc_pt": "alvo da imposição",
+          "definition_pt": "Entidade ou Estado sobre o qual se impõe a sanção."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004040_SENT011::sanção::1",
           "sent_ID": "FOLHA_DOC004040_SENT011",
           "text": "Apesar disso, a China tem dado sinais de que poderia apoiar novas sanções contra a Coreia do Norte.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 66,
             "char_end": 73
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "contra a Coreia do Norte"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 74,
+                "char_end": 98
+              }
+            ]
+          },
+          "target_instance_id": 73,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f04b7be1be671ce7",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 66,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 74,
+                    "char_end": 98,
+                    "head_token_id": 18,
+                    "head_form": "Coreia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003037_SENT011::sanção::1",
           "sent_ID": "FOLHA_DOC003037_SENT011",
           "text": "Foi abordada uma série de temas, do comércio internacional às sanções à Coreia do Norte, sem grande nexo nem coerência.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 62,
             "char_end": 69
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "à Coreia do Norte"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 70,
+                "char_end": 87
+              }
+            ]
+          },
+          "target_instance_id": 622,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f04b7be1be671ce7",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 69
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 70,
+                    "char_end": 87,
+                    "head_token_id": 17,
+                    "head_form": "Coreia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004039_SENT009::sanção::1",
           "sent_ID": "FOLHA_DOC004039_SENT009",
           "text": "Ele, porém, não mencionou que sanções serão aplicadas aos políticos que impulsionam o plebiscito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 30,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "aos políticos que impulsionam o plebiscito"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 54,
+                "char_end": 96
+              }
+            ]
+          },
+          "target_instance_id": 2260,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f04b7be1be671ce7",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 54,
+                    "char_end": 96,
+                    "head_token_id": 13,
+                    "head_form": "políticos",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003060_SENT010::sanção::1",
           "sent_ID": "FOLHA_DOC003060_SENT010",
           "text": "Há a expectativa de que ele se reúna com o secretário de Estado americano, Rex Tillerson, dias depois dos EUA conseguirem emplacar uma nova rodada de sanções no Conselho de Segurança contra Pyongyang.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 150,
             "char_end": 157
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "contra Pyongyang"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 183,
+                "char_end": 199
+              }
+            ]
+          },
+          "target_instance_id": 3899,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f04b7be1be671ce7",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 150,
+                "char_end": 157
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      36,
+                      37
+                    ],
+                    "char_start": 183,
+                    "char_end": 199,
+                    "head_token_id": 37,
+                    "head_form": "Pyongyang",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
         },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        }
+      }
+    },
+    {
+      "sense_id": "s_e0df9fd213b7f3d8",
+      "frame_id": "f_2bb8bc74a7b4f2f2",
+      "pt_roleset": null,
+      "sense_label": "sanção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "sanction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/sanction.xml",
+          "source_xml_url": "data/nombank_sources/sanction.xml",
+          "source_xml_sha256": "de484559f995f7fa83ff10e135f91770c4cf3cde95104ff9851a853a66f9e5f6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Impositor",
+          "definition": "Autoridade que aplica medida repressiva; atributo original imposer preservado.",
+          "desc_pt": "Impositor",
+          "definition_pt": "Autoridade que aplica medida repressiva; atributo original imposer preservado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Medida imposta",
+          "definition": "Sanção incorporada no REL conforme Arg1 igual ao REL, sem exigir f=REF ou duplicar conteúdo da mesma medida.",
+          "desc_pt": "Medida imposta",
+          "definition_pt": "Sanção incorporada no REL conforme Arg1 igual ao REL, sem exigir f=REF ou duplicar conteúdo da mesma medida."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da sanção",
+          "definition": "A quem se impõe medida, sem crime/motivo importado de outra fonte.",
+          "desc_pt": "Destinatário da sanção",
+          "definition_pt": "A quem se impõe medida, sem crime/motivo importado de outra fonte."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC004040_SENT013::sanção::1",
           "sent_ID": "FOLHA_DOC004040_SENT013",
           "text": "Acreditamos que sanções e pressão são apenas metade da chave para resolver o problema.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 16,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6319,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2bb8bc74a7b4f2f2",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002062_SENT035::sanção::1",
           "sent_ID": "FOLHA_DOC002062_SENT035",
           "text": "O país está sob sanções da ONU por causa de seu programa nuclear.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 16,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da ONU",
+            "Arg1": null,
+            "Arg2": "O país"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 24,
+                "char_end": 30
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 6
+              }
+            ]
+          },
+          "target_instance_id": 8375,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2bb8bc74a7b4f2f2",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 24,
+                    "char_end": 30,
+                    "head_token_id": 8,
+                    "head_form": "ONU",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 6,
+                    "head_token_id": 2,
+                    "head_form": "país",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003111_SENT008::sanção::1",
           "sent_ID": "FOLHA_DOC003111_SENT008",
           "text": "O teste aconteceu dias após a ONU impor novas sanções a Pyongyang, que proíbem as exportações têxteis norte-coreanas e restringem o seu abastecimento em petróleo e gás.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sanções",
             "char_start": 46,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a ONU",
+            "Arg1": null,
+            "Arg2": "a Pyongyang"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 33
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 54,
+                "char_end": 65
+              }
+            ]
+          },
+          "target_instance_id": 11071,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2bb8bc74a7b4f2f2",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 28,
+                    "char_end": 33,
+                    "head_token_id": 7,
+                    "head_form": "ONU",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 54,
+                    "char_end": 65,
+                    "head_token_id": 12,
+                    "head_form": "Pyongyang",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sanção · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

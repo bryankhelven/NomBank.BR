@@ -6,38 +6,244 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "fama · acepção 1",
+      "sense_id": "s_84b7004a4a386b70",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_84b7004a4a386b70",
+      "frame_id": "f_0d04a1e95251ab2c",
+      "pt_roleset": null,
+      "sense_label": "fama · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reputation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reputation.xml",
+          "source_xml_url": "data/nombank_sources/reputation.xml",
+          "source_xml_sha256": "15b1384857aee2683ad644cd2131dab1ab273dcc4e84ec27f3171c9932cf39ae",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Avaliador da reputação",
+          "definition": "Quem considera/reputa entidade, não pessoas de outra ação automaticamente júri.",
+          "desc_pt": "Avaliador da reputação",
+          "definition_pt": "Quem considera/reputa entidade, não pessoas de outra ação automaticamente júri."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Titular da reputação",
+          "definition": "Entidade com reputação, incluindo possessivo mantido sem antecedente externo.",
+          "desc_pt": "Titular da reputação",
+          "definition_pt": "Entidade com reputação, incluindo possessivo mantido sem antecedente externo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Juízo reputacional",
+          "definition": "Predicação sobre titular, incluindo positiva sob negação sem avaliação factual endossada.",
+          "desc_pt": "Juízo reputacional",
+          "definition_pt": "Predicação sobre titular, incluindo positiva sob negação sem avaliação factual endossada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000018_SENT041::fama::1",
           "sent_ID": "FOLHA_DOC000018_SENT041",
           "text": "Nenhum dos comerciantes da região esperava por tal visita, pois os guerrilheiros não tinham fama positiva.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fama",
             "char_start": 92,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os guerrilheiros",
+            "Arg2": "positiva"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 80
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 97,
+                "char_end": 105
+              }
+            ]
+          },
+          "target_instance_id": 1712,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0d04a1e95251ab2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 92,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 64,
+                    "char_end": 80,
+                    "head_token_id": 15,
+                    "head_form": "guerrilheiros",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19
+                    ],
+                    "char_start": 97,
+                    "char_end": 105,
+                    "head_token_id": 19,
+                    "head_form": "positiva",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000018_SENT035::fama::1",
           "sent_ID": "FOLHA_DOC000018_SENT035",
           "text": "Che Guevara era conhecido pelo mundo afora, mas sua fama não lhe valera grande apreço entre os camponeses bolivianos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fama",
             "char_start": 52,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 48,
+                "char_end": 51
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13897,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0d04a1e95251ab2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 48,
+                    "char_end": 51,
+                    "head_token_id": 11,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "fama · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,176 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "gerador · acepção 1",
+      "sense_id": "s_fd9563627da38ca1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fd9563627da38ca1",
+      "frame_id": "f_5484252e9d38ccd3",
+      "pt_roleset": null,
+      "sense_label": "gerador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "generator.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/generator.xml",
+          "source_xml_url": "data/nombank_sources/generator.xml",
+          "source_xml_sha256": "4acd342da1c40f00538ac28444c5851f65b56d12f34e0c69720cc1eaceb5edd0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Gerador",
+          "definition": "Creator/dispositivo identificado em parte favorita externa, conforme generators0 no original, sem duplicar REL.",
+          "desc_pt": "Gerador",
+          "definition_pt": "Creator/dispositivo identificado em parte favorita externa, conforme generators0 no original, sem duplicar REL."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Produto gerado",
+          "definition": "Thing created, não eponímia Van de Graaff.",
+          "desc_pt": "Produto gerado",
+          "definition_pt": "Thing created, não eponímia Van de Graaff."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da geração",
+          "definition": "Beneficiary n2/source3 literal, sem parte favorita como beneficiário.",
+          "desc_pt": "Beneficiário da geração",
+          "definition_pt": "Beneficiary n2/source3 literal, sem parte favorita como beneficiário."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Origem da geração",
+          "definition": "Source n3/source2 literal, matéria de que se gera, não eponímia.",
+          "desc_pt": "Origem da geração",
+          "definition_pt": "Source n3/source2 literal, matéria de que se gera, não eponímia."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Predicação sobre produto",
+          "definition": "Attribute/secondary predication sobre coisa gerada.",
+          "desc_pt": "Predicação sobre produto",
+          "definition_pt": "Attribute/secondary predication sobre coisa gerada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000159_SENT032::gerador::1",
           "sent_ID": "FOLHA_DOC000159_SENT032",
           "text": "Minha parte favorita é o gerador de Van de Graaff.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gerador",
             "char_start": 25,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Minha parte favorita",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 20
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 2306,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5484252e9d38ccd3",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 20,
+                    "head_token_id": 2,
+                    "head_form": "parte",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "gerador · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

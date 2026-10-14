@@ -6,38 +6,203 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "depredação · acepção 1",
+      "sense_id": "s_5f09fcfcc7c83b16",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5f09fcfcc7c83b16",
+      "frame_id": "f_bae7645a9757c4a5",
+      "pt_roleset": null,
+      "sense_label": "depredação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "destruction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/destruction.xml",
+          "source_xml_url": "data/nombank_sources/destruction.xml",
+          "source_xml_sha256": "eec875b7894178b4216e74181663071b1100709e209e5389e6ed0b8ac3638e36",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Depredador",
+          "definition": "Quem destrói, não protestos ou quem canta sobre destruição por si.",
+          "desc_pt": "Depredador",
+          "definition_pt": "Quem destrói, não protestos ou quem canta sobre destruição por si."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa destruída",
+          "definition": "Patrimônio/natureza que sofre destruição, extensão ambiental de highway destruction.",
+          "desc_pt": "Coisa destruída",
+          "definition_pt": "Patrimônio/natureza que sofre destruição, extensão ambiental de highway destruction."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento destrutivo",
+          "definition": "Meio de destruir, não obra que descreve devastação.",
+          "desc_pt": "Instrumento destrutivo",
+          "definition_pt": "Meio de destruir, não obra que descreve devastação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003003_SENT003::depredação::1",
           "sent_ID": "FOLHA_DOC003003_SENT003",
           "text": "Assim como nos dois dias anteriores, os protestos deste domingo terminaram em depredação e confronto.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depredação",
             "char_start": 78,
             "char_end": 88
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4626,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bae7645a9757c4a5",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 78,
+                "char_end": 88
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003071_SENT006::depredação::1",
           "sent_ID": "FOLHA_DOC003071_SENT006",
           "text": "A cantora, então, prosseguiu com \"Kill Your Mama\", que fala sobre a depredação da natureza e figura no mais recente álbum de Alicia, \"Here\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "depredação",
             "char_start": 68,
             "char_end": 78
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da natureza",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 79,
+                "char_end": 90
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4913,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bae7645a9757c4a5",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 78
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 79,
+                    "char_end": 90,
+                    "head_token_id": 21,
+                    "head_form": "natureza",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "depredação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

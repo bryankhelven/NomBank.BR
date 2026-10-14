@@ -6,38 +6,12 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004053_SENT026::proximidade::1",
-          "sent_ID": "FOLHA_DOC004053_SENT026",
-          "text": "Nos Estados Unidos, ambientalistas apontam para o fenômeno de aves mortas encontradas nas proximidades dessas centrais elétricas.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "proximidades",
-            "char_start": 90,
-            "char_end": 102
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000166_SENT010::proximidade::1",
-          "sent_ID": "FOLHA_DOC000166_SENT010",
-          "text": "A proximidade de centros de negócios é outro fator que atrai moradores para a região.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "proximidade",
-            "char_start": 2,
-            "char_end": 13
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "proximidade · acepção 1"
+      "sense_label": "proximidade · acepção 1",
+      "sense_id": "s_230547b59a4304fb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
@@ -57,25 +31,388 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 8829,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 94,
+                "char_end": 105
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_label": "proximidade · acepção 2",
+      "sense_id": "s_6cd96ba8f45577e2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_230547b59a4304fb",
+      "frame_id": "f_f8680c507d4bad01",
+      "pt_roleset": null,
+      "sense_label": "proximidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "vicinity.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/vicinity.xml",
+          "source_xml_url": "data/nombank_sources/vicinity.xml",
+          "source_xml_sha256": "0c54394e389af84208edcdd384eeca50aa37d5671999a60671f56a385c1cfa49",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Referência geográfica próxima",
+          "definition": "Theme original of quake area; centrais/centros são polos de referência, sem inverter nominal pelo nome standard.",
+          "desc_pt": "Referência geográfica próxima",
+          "definition_pt": "Theme original of quake area; centrais/centros são polos de referência, sem inverter nominal pelo nome standard."
         },
+        {
+          "id": "Arg2",
+          "desc": "Estado de proximidade",
+          "definition": "Value original vicinity REF; proximidade genérica incorpora REL, sem metros inventados.",
+          "desc_pt": "Estado de proximidade",
+          "definition_pt": "Value original vicinity REF; proximidade genérica incorpora REL, sem metros inventados."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Entidade situada",
+          "definition": "Standard original offices; aves encontradas nesse entorno. Destino de moradores não é entidade situada comprovada por si.",
+          "desc_pt": "Entidade situada",
+          "definition_pt": "Standard original offices; aves encontradas nesse entorno. Destino de moradores não é entidade situada comprovada por si."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004053_SENT026::proximidade::1",
+          "sent_ID": "FOLHA_DOC004053_SENT026",
+          "text": "Nos Estados Unidos, ambientalistas apontam para o fenômeno de aves mortas encontradas nas proximidades dessas centrais elétricas.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "proximidades",
+            "char_start": 90,
+            "char_end": 102
+          },
+          "realization": {
+            "Arg1": "dessas centrais elétricas",
+            "Arg2": null,
+            "Arg3": "de aves mortas encontradas"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 103,
+                "char_end": 128
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 59,
+                "char_end": 85
+              }
+            ]
+          },
+          "target_instance_id": 4994,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8680c507d4bad01",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 102
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 103,
+                    "char_end": 128,
+                    "head_token_id": 20,
+                    "head_form": "centrais",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 85,
+                    "head_token_id": 12,
+                    "head_form": "aves",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000166_SENT010::proximidade::1",
+          "sent_ID": "FOLHA_DOC000166_SENT010",
+          "text": "A proximidade de centros de negócios é outro fator que atrai moradores para a região.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "proximidade",
+            "char_start": 2,
+            "char_end": 13
+          },
+          "realization": {
+            "Arg1": "de centros de negócios",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 14,
+                "char_end": 36
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 6679,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8680c507d4bad01",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 14,
+                    "char_end": 36,
+                    "head_token_id": 4,
+                    "head_form": "centros",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg3": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_6cd96ba8f45577e2",
+      "frame_id": "f_2e571d2f8e85d2cf",
+      "pt_roleset": null,
+      "sense_label": "proximidade · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "relationship.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/relationship.xml",
+          "source_xml_url": "data/nombank_sources/relationship.xml",
+          "source_xml_sha256": "1dff49139694fbf4ac496c2bfae33bba53ccedb474fcc019117c57ef768174ab",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Primeiro participante",
+          "definition": "Job holder nominal original our; manter número/definição original, lido localmente como polo da relação. Ator afetado ou quem dá passo atrás não é polo automaticamente.",
+          "desc_pt": "Primeiro participante",
+          "definition_pt": "Job holder nominal original our; manter número/definição original, lido localmente como polo da relação. Ator afetado ou quem dá passo atrás não é polo automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Âmbito da relação",
+          "definition": "Job title original working/military; diplomática define domínio de relacionamento por adaptação local.",
+          "desc_pt": "Âmbito da relação",
+          "definition_pt": "Job title original working/military; diplomática define domínio de relacionamento por adaptação local."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Outro participante",
+          "definition": "Beneficiary nominal original with Moscow/agencies; com Hollywood é outro polo/setor por aplicação local. Não inferir estúdio ou chamar parceiro de beneficiário efetivo.",
+          "desc_pt": "Outro participante",
+          "definition_pt": "Beneficiary nominal original with Moscow/agencies; com Hollywood é outro polo/setor por aplicação local. Não inferir estúdio ou chamar parceiro de beneficiário efetivo."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003103_SENT022::proximidade::1",
           "sent_ID": "FOLHA_DOC003103_SENT022",
           "text": "As tensões entre os países aumentaram depois que Trump, que teve muitos votos de cidadãos cubanos nos EUA prometendo uma linha dura, deu um passo atrás na proximidade diplomática.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "proximidade",
             "char_start": 155,
             "char_end": 166
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "diplomática",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 167,
+                "char_end": 178
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14986,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2e571d2f8e85d2cf",
+          "argument_details": {
+            "predicate_token_ids": [
+              32
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 155,
+                "char_end": 166
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      33
+                    ],
+                    "char_start": 167,
+                    "char_end": 178,
+                    "head_token_id": 33,
+                    "head_form": "diplomática",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "proximidade · acepção 2"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

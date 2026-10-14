@@ -19,25 +19,143 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 5179,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 52
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_label": "residência · acepção 1",
+      "sense_id": "s_dc3c919bd6adc942",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_dc3c919bd6adc942",
+      "frame_id": "f_28add056487eca10",
+      "pt_roleset": null,
+      "sense_label": "residência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "residence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/residence.xml",
+          "source_xml_url": "data/nombank_sources/residence.xml",
+          "source_xml_sha256": "7c443c805dd3b04c2546ae2db4fe5d00b2a36b5edb6ee38c3b13ddd9645346f0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Residente",
+          "definition": "Entity residing no sentido de viver/residir, sem requerentes/grupos de outra cláusula universalmente residentes.",
+          "desc_pt": "Residente",
+          "definition_pt": "Entity residing no sentido de viver/residir, sem requerentes/grupos de outra cláusula universalmente residentes."
         },
+        {
+          "id": "Arg1",
+          "desc": "Lugar da residência",
+          "definition": "Location em que se autoriza residir, sem formação profissional ou lei atual inferidas.",
+          "desc_pt": "Lugar da residência",
+          "definition_pt": "Location em que se autoriza residir, sem formação profissional ou lei atual inferidas."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000057_SENT005::residência::1",
           "sent_ID": "FOLHA_DOC000057_SENT005",
           "text": "Em troca de não deportar os sonhadores, como são chamados os filhos desses imigrantes sem documentos, o presidente pede a reforma completa do sistema de \"green card\" (a autorização de residência nos EUA), medidas severas para impedir que menores de idade, em especial da América Central, entrem no país e a construção do muro na fronteira com o México.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "residência",
             "char_start": 184,
             "char_end": 194
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nos EUA"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 195,
+                "char_end": 202
+              }
+            ]
+          },
+          "target_instance_id": 6659,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_28add056487eca10",
+          "argument_details": {
+            "predicate_token_ids": [
+              38
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 184,
+                "char_end": 194
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      39,
+                      40,
+                      41
+                    ],
+                    "char_start": 195,
+                    "char_end": 202,
+                    "head_token_id": 41,
+                    "head_form": "EUA",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "residência · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

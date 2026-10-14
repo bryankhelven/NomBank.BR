@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "instrução · acepção 1",
+      "sense_id": "s_4ff2f4f2d931856f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4ff2f4f2d931856f",
+      "frame_id": "f_78416fc79f73349a",
+      "pt_roleset": null,
+      "sense_label": "instrução · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "instruction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/instruction.xml",
+          "source_xml_url": "data/nombank_sources/instruction.xml",
+          "source_xml_sha256": "d17a74016061a2d3398b82a0465b736127228f11553c2a61c3e57d5be6fb39e1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "instrutor",
+          "definition": "Quem emite a prescrição/ordem; repassar mentalmente instruções não comprova autoria nem comunicação.",
+          "desc_pt": "instrutor",
+          "definition_pt": "Quem emite a prescrição/ordem; repassar mentalmente instruções não comprova autoria nem comunicação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "ação prescrita",
+          "definition": "Ação/procedimentos prescritos, inclusive domínio explicitamente indicado como instruções de segurança por adaptação contextual documentada.",
+          "desc_pt": "ação prescrita",
+          "definition_pt": "Ação/procedimentos prescritos, inclusive domínio explicitamente indicado como instruções de segurança por adaptação contextual documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "agente instruído",
+          "definition": "Entidade a quem a instrução é dirigida. Pessoa apenas flexional não é span expresso.",
+          "desc_pt": "agente instruído",
+          "definition_pt": "Entidade a quem a instrução é dirigida. Pessoa apenas flexional não é span expresso."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003188_SENT029::instrução::1",
           "sent_ID": "FOLHA_DOC003188_SENT029",
           "text": "E passei a esperar, repassando instruções de segurança, já que a perspectiva era a da mais cruel tortura.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "instruções",
             "char_start": 31,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de segurança",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 42,
+                "char_end": 54
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4817,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_78416fc79f73349a",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 42,
+                    "char_end": 54,
+                    "head_token_id": 9,
+                    "head_form": "segurança",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "instrução · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

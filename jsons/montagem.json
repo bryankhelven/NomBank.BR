@@ -6,23 +6,159 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_81e1f49dea3ae9a6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_81e1f49dea3ae9a6",
+      "frame_id": "f_467897d4fa226ffd",
+      "pt_roleset": "montagem.01",
+      "sense_label": "montagem.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "assembly.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/assembly.xml",
+          "source_xml_url": "data/nombank_sources/assembly.xml",
+          "source_xml_sha256": "59b3cc4217b5518032c9fe60eceb16e8e06e7c8bc41e5def5d7d90a86526a360",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Montador",
+          "definition": "Builder do conjunto funcional, não investidora necessariamente executora.",
+          "desc_pt": "Montador",
+          "definition_pt": "Builder do conjunto funcional, não investidora necessariamente executora."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conjunto montado",
+          "definition": "Construction como food truck, sem edifício somente.",
+          "desc_pt": "Conjunto montado",
+          "definition_pt": "Construction como food truck, sem edifício somente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Material inicial",
+          "definition": "Material/start state expresso.",
+          "desc_pt": "Material inicial",
+          "definition_pt": "Material/start state expresso."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Estado final",
+          "definition": "End state expresso, número4 conservado semArg3.",
+          "desc_pt": "Estado final",
+          "definition_pt": "End state expresso, número4 conservado semArg3."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002027_SENT008::montagem::1",
           "sent_ID": "FOLHA_DOC002027_SENT008",
           "text": "A empreendedora viu que seria necessário tornar seu produto mais conhecido, e resolveu investir R$ 120 mil na montagem de um food truck.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "montagem",
             "char_start": 110,
             "char_end": 118
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de um food truck",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 119,
+                "char_end": 135
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 6588,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_467897d4fa226ffd",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 110,
+                "char_end": 118
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 119,
+                    "char_end": 135,
+                    "head_token_id": 24,
+                    "head_form": "food",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

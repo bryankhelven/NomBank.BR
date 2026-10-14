@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "torturador · acepção 1",
+      "sense_id": "s_550d10f402024d35",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_550d10f402024d35",
+      "frame_id": "f_4161c6254b3b3283",
+      "pt_roleset": null,
+      "sense_label": "torturador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "tormentor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/tormentor.xml",
+          "source_xml_url": "data/nombank_sources/tormentor.xml",
+          "source_xml_sha256": "ab8ccc180b1d7439ab598f3b49f452561b18e5e767ef71f28dadeed2399bd08e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Ator do tormento",
+          "definition": "Tormenter causa de sofrimento, restrito a torturador corporal ou algoz perseguidor conforme unidade frozen, sem pena capital presumida.",
+          "desc_pt": "Ator do tormento",
+          "definition_pt": "Tormenter causa de sofrimento, restrito a torturador corporal ou algoz perseguidor conforme unidade frozen, sem pena capital presumida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa atormentada",
+          "definition": "Tormented/experiencer explicitado, como peemedebista.",
+          "desc_pt": "Pessoa atormentada",
+          "definition_pt": "Tormented/experiencer explicitado, como peemedebista."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento do tormento",
+          "definition": "Instrument expresso, sem país que compactua como instrumento/causa automaticamente.",
+          "desc_pt": "Instrumento do tormento",
+          "definition_pt": "Instrument expresso, sem país que compactua como instrumento/causa automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003049_SENT044::torturador::1",
           "sent_ID": "FOLHA_DOC003049_SENT044",
           "text": "E o caminho mais fácil para evitar tão indigesto encontro, ainda mais neste país que compactua com torturadores, é a censura.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "torturadores",
             "char_start": 99,
             "char_end": 111
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5229,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4161c6254b3b3283",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 111
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "torturador · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

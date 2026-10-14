@@ -6,66 +6,303 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "revitalização · acepção 1",
+      "sense_id": "s_532cd5d95143a9c1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_532cd5d95143a9c1",
+      "frame_id": "f_64555b6472450d1c",
+      "pt_roleset": null,
+      "sense_label": "revitalização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "revival.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/revival.xml",
+          "source_xml_url": "data/nombank_sources/revival.xml",
+          "source_xml_sha256": "ce39a55cf18e10261dc9237069e14d7604f48b380991f66b052b737558658830",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Revitalizador",
+          "definition": "Quem traz algo novamente à vida ou vigor.",
+          "desc_pt": "Revitalizador",
+          "definition_pt": "Quem traz algo novamente à vida ou vigor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo revitalizado",
+          "definition": "Entidade cujo vigor é recuperado; extensão urbana/institucional é proposta local ancorada em economic revival.",
+          "desc_pt": "Alvo revitalizado",
+          "definition_pt": "Entidade cujo vigor é recuperado; extensão urbana/institucional é proposta local ancorada em economic revival."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000072_SENT001::revitalização::1",
           "sent_ID": "FOLHA_DOC000072_SENT001",
           "text": "Preservar passado é um dos grandes desafios dos processos de revitalização.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "revitalização",
             "char_start": 61,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 611,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64555b6472450d1c",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003202_SENT032::revitalização::1",
           "sent_ID": "FOLHA_DOC003202_SENT032",
           "text": "Espero ser a âncora de uma revitalização da área e fazer uma pequena contribuição para a cidade também.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "revitalização",
             "char_start": 27,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da área"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 41,
+                "char_end": 48
+              }
+            ]
+          },
+          "target_instance_id": 4444,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64555b6472450d1c",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 41,
+                    "char_end": 48,
+                    "head_token_id": 10,
+                    "head_form": "área",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000072_SENT013::revitalização::1",
           "sent_ID": "FOLHA_DOC000072_SENT013",
           "text": "Portanto, um bom plano de revitalização deve identificar formas de promover e induzir novas funções e atividades econômicas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "revitalização",
             "char_start": 26,
             "char_end": 39
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 11731,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64555b6472450d1c",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 26,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000072_SENT005::revitalização::1",
           "sent_ID": "FOLHA_DOC000072_SENT005",
           "text": "A revitalização implica em devolver a esses centros a vitalidade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "revitalização",
             "char_start": 2,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a esses centros"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 51
+              }
+            ]
+          },
+          "target_instance_id": 14341,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64555b6472450d1c",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 36,
+                    "char_end": 51,
+                    "head_token_id": 8,
+                    "head_form": "centros",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "revitalização · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

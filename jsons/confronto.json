@@ -6,202 +6,1084 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC001408_SENT033::confronto::1",
-          "sent_ID": "FOLHA_DOC001408_SENT033",
-          "text": "Escola é lugar de debate e de confronto de ideias, não de repressão do Estado ou de milicianos.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "confronto",
-            "char_start": 30,
-            "char_end": 39
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000119_SENT007::confronto::1",
-          "sent_ID": "FOLHA_DOC000119_SENT007",
-          "text": "O tom dos encontros anuais dos dois grandes partidos britânicos foi de confronto.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "confronto",
-            "char_start": 71,
-            "char_end": 80
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004020_SENT017::confronto::1",
-          "sent_ID": "FOLHA_DOC004020_SENT017",
-          "text": "Não é a primeira vez que o eleitor brasileiro assiste a um confronto entre criador e criatura.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "confronto",
-            "char_start": 59,
-            "char_end": 68
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "confronto · acepção 1"
+      "sense_label": "confronto · acepção 1",
+      "sense_id": "s_ad0d504bc5e0d53a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "confronto · acepção 2",
+      "sense_id": "s_356652062905fdbf",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ad0d504bc5e0d53a",
+      "frame_id": "f_81a0fc62dc21b480",
+      "pt_roleset": null,
+      "sense_label": "confronto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "comparison.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/comparison.xml",
+          "source_xml_url": "data/nombank_sources/comparison.xml",
+          "source_xml_sha256": "52240f4ad5f3f93b62e68d829c1e121b22a4d3dd8bd391f0fd805c8b8dae65a5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do cotejo",
+          "definition": "Entity making comparison, sem escola cenário como pessoa.",
+          "desc_pt": "Autor do cotejo",
+          "definition_pt": "Entity making comparison, sem escola cenário como pessoa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conjunto comparado",
+          "definition": "First item in comparison, conjunto de ideias sem segundo grupo separado.",
+          "desc_pt": "Conjunto comparado",
+          "definition_pt": "First item in comparison, conjunto de ideias sem segundo grupo separado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Segundo termo separado",
+          "definition": "Second item if separate, não conjunto duplicado em1/2.",
+          "desc_pt": "Segundo termo separado",
+          "definition_pt": "Second item if separate, não conjunto duplicado em1/2."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001408_SENT033::confronto::1",
+          "sent_ID": "FOLHA_DOC001408_SENT033",
+          "text": "Escola é lugar de debate e de confronto de ideias, não de repressão do Estado ou de milicianos.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "confronto",
+            "char_start": 30,
+            "char_end": 39
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de ideias",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 49
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1066,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_81a0fc62dc21b480",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 40,
+                    "char_end": 49,
+                    "head_token_id": 10,
+                    "head_form": "ideias",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_356652062905fdbf",
+      "frame_id": "f_ab00607e9d1313f3",
+      "pt_roleset": null,
+      "sense_label": "confronto · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conflict.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conflict.xml",
+          "source_xml_url": "data/nombank_sources/conflict.xml",
+          "source_xml_sha256": "238f057336d81c3e08526a59c3b75b77e122a5b17b27abfba16c50ce53f8e3e8",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "parte focal ou conjunto",
+          "definition": "Parte expressamente em oposição ou conjunto simétrico de partes; feridos, detidos, acompanhantes, intervenção posterior e organizadores de conferência não bastam sem vínculo de oposição.",
+          "desc_pt": "parte focal ou conjunto",
+          "definition_pt": "Parte expressamente em oposição ou conjunto simétrico de partes; feridos, detidos, acompanhantes, intervenção posterior e organizadores de conferência não bastam sem vínculo de oposição."
+        },
+        {
+          "id": "Arg1",
+          "desc": "contraparte",
+          "definition": "Entidade independentemente expressa com a qual a parte focal se confronta; admite grupo conjunto no primeiro papel sem divisão arbitrária.",
+          "desc_pt": "contraparte",
+          "definition_pt": "Entidade independentemente expressa com a qual a parte focal se confronta; admite grupo conjunto no primeiro papel sem divisão arbitrária."
+        },
+        {
+          "id": "Arg2",
+          "desc": "objeto disputado",
+          "definition": "Questão ou objeto pelo qual as partes se confrontam; lugar, ocasião e modo de confronto não bastam.",
+          "desc_pt": "objeto disputado",
+          "definition_pt": "Questão ou objeto pelo qual as partes se confrontam; lugar, ocasião e modo de confronto não bastam."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003114_SENT010::confronto::1",
           "sent_ID": "FOLHA_DOC003114_SENT010",
           "text": "Na sexta-feira (15), Saint Louis já havia sido palco de protesto e pelo menos 33 pessoas foram detidas e 11 policiais ficaram feridos durante confronto.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confronto",
             "char_start": 142,
             "char_end": 151
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 1675,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 142,
+                "char_end": 151
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003106_SENT009::confronto::1",
           "sent_ID": "FOLHA_DOC003106_SENT009",
           "text": "Mas em uma era de Donald Trump, ameaça de confronto nuclear e supremacistas brancos, parece haver menos espaço para filmes edificantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confronto",
             "char_start": 42,
             "char_end": 51
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4351,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003003_SENT003::confronto::1",
           "sent_ID": "FOLHA_DOC003003_SENT003",
           "text": "Assim como nos dois dias anteriores, os protestos deste domingo terminaram em depredação e confronto.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confronto",
             "char_start": 91,
             "char_end": 100
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4627,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 91,
+                "char_end": 100
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000016_SENT016::confronto::1",
           "sent_ID": "FOLHA_DOC000016_SENT016",
           "text": "A polícia interviu e após cinco dias de intensos confrontos, as Forças Armadas, que já estavam no Rio para reforço na segurança pública, foram acionadas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confrontos",
             "char_start": 49,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5563,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003110_SENT003::confronto::1",
           "sent_ID": "FOLHA_DOC003110_SENT003",
           "text": "A Delegacia de Homicídios confirmou um morto no confronto, Thiago Fernandes da Silva, que já tem passagens pela polícia por tentativa de homicídio e tráfico de drogas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confronto",
             "char_start": 48,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6014,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000056_SENT008::confronto::1",
           "sent_ID": "FOLHA_DOC000056_SENT008",
           "text": "Policiais militares acompanharam o ato, que transcorreu sem confrontos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confrontos",
             "char_start": 60,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6146,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003269_SENT009::confronto::1",
           "sent_ID": "FOLHA_DOC003269_SENT009",
           "text": "Durante os confrontos na noite de sexta, uma estação do metrô foi fechada por segurança.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confrontos",
             "char_start": 11,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7132,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002083_SENT030::confronto::1",
           "sent_ID": "FOLHA_DOC002083_SENT030",
           "text": "A Rocinha enfrenta confrontos entre facções pelo controle do tráfico desde domingo (17).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confrontos",
             "char_start": 19,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "entre facções",
+            "Arg1": null,
+            "Arg2": "pelo controle do tráfico"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 30,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 44,
+                "char_end": 68
+              }
+            ]
+          },
+          "target_instance_id": 9531,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 30,
+                    "char_end": 43,
+                    "head_token_id": 6,
+                    "head_form": "facções",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 44,
+                    "char_end": 68,
+                    "head_token_id": 9,
+                    "head_form": "controle",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002083_SENT015::confronto::1",
           "sent_ID": "FOLHA_DOC002083_SENT015",
           "text": "Na Tijuca, uma pessoa foi morta em confronto com a PM e outra, presa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confronto",
             "char_start": 35,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "uma pessoa",
+            "Arg1": "com a PM",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 11,
+                "char_end": 21
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 53
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 11592,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 11,
+                    "char_end": 21,
+                    "head_token_id": 6,
+                    "head_form": "pessoa",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 45,
+                    "char_end": 53,
+                    "head_token_id": 13,
+                    "head_form": "PM",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000016_SENT008::confronto::1",
           "sent_ID": "FOLHA_DOC000016_SENT008",
           "text": "Após a saída das Forças Armadas da Rocinha, diversos confrontos foram registrados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "confrontos",
             "char_start": 53,
             "char_end": 63
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 15720,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab00607e9d1313f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 63
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "confronto · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 1
+        },
+        "nsubj:pass": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_ad0d504bc5e0d53a",
+      "frame_id": "f_fd15db4f5464cf2c",
+      "pt_roleset": null,
+      "sense_label": "confronto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conflict.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conflict.xml",
+          "source_xml_url": "data/nombank_sources/conflict.xml",
+          "source_xml_sha256": "238f057336d81c3e08526a59c3b75b77e122a5b17b27abfba16c50ce53f8e3e8",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "parte focal ou conjunto",
+          "definition": "Parte expressamente em oposição ou conjunto simétrico de partes; feridos, detidos, acompanhantes, intervenção posterior e organizadores de conferência não bastam sem vínculo de oposição.",
+          "desc_pt": "parte focal ou conjunto",
+          "definition_pt": "Parte expressamente em oposição ou conjunto simétrico de partes; feridos, detidos, acompanhantes, intervenção posterior e organizadores de conferência não bastam sem vínculo de oposição."
+        },
+        {
+          "id": "Arg1",
+          "desc": "contraparte",
+          "definition": "Entidade independentemente expressa com a qual a parte focal se confronta; admite grupo conjunto no primeiro papel sem divisão arbitrária.",
+          "desc_pt": "contraparte",
+          "definition_pt": "Entidade independentemente expressa com a qual a parte focal se confronta; admite grupo conjunto no primeiro papel sem divisão arbitrária."
+        },
+        {
+          "id": "Arg2",
+          "desc": "objeto disputado",
+          "definition": "Questão ou objeto pelo qual as partes se confrontam; lugar, ocasião e modo de confronto não bastam.",
+          "desc_pt": "objeto disputado",
+          "definition_pt": "Questão ou objeto pelo qual as partes se confrontam; lugar, ocasião e modo de confronto não bastam."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000119_SENT007::confronto::1",
+          "sent_ID": "FOLHA_DOC000119_SENT007",
+          "text": "O tom dos encontros anuais dos dois grandes partidos britânicos foi de confronto.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "confronto",
+            "char_start": 71,
+            "char_end": 80
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7336,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fd15db4f5464cf2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 80
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004020_SENT017::confronto::1",
+          "sent_ID": "FOLHA_DOC004020_SENT017",
+          "text": "Não é a primeira vez que o eleitor brasileiro assiste a um confronto entre criador e criatura.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "confronto",
+            "char_start": 59,
+            "char_end": 68
+          },
+          "realization": {
+            "Arg0": "entre criador e criatura",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 69,
+                "char_end": 93
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9054,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fd15db4f5464cf2c",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 69,
+                    "char_end": 93,
+                    "head_token_id": 15,
+                    "head_form": "criador",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

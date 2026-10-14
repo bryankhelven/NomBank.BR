@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "direcionamento · acepção 1",
+      "sense_id": "s_45a404ccd9f0177d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_45a404ccd9f0177d",
+      "frame_id": "f_1f33e48eeb5f6d60",
+      "pt_roleset": null,
+      "sense_label": "direcionamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "direction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/direction.xml",
+          "source_xml_url": "data/nombank_sources/direction.xml",
+          "source_xml_sha256": "ac439b84339a8abfe1e5db2a76d243cd4ba09911d8e133182e6587f2549d2a94",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Orientador",
+          "definition": "Director de prática/delação, não lugar de documento ou ator elíptico reconstruídos.",
+          "desc_pt": "Orientador",
+          "definition_pt": "Director de prática/delação, não lugar de documento ou ator elíptico reconstruídos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa orientada",
+          "definition": "Thing directed como delação, restrição relacional/institucional do provide direction.",
+          "desc_pt": "Coisa orientada",
+          "definition_pt": "Thing directed como delação, restrição relacional/institucional do provide direction."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Orientação específica",
+          "definition": "Towards what/atributo quando concreto, sem outra orientação coordenada como direção própria deste REL.",
+          "desc_pt": "Orientação específica",
+          "definition_pt": "Towards what/atributo quando concreto, sem outra orientação coordenada como direção própria deste REL."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003035_SENT152::direcionamento::1",
           "sent_ID": "FOLHA_DOC003035_SENT152",
           "text": "No meu, não há sugestão de captação de voz nem direcionamento de delação nem orientação do que fazer.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "direcionamento",
             "char_start": 47,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de delação",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 62,
+                "char_end": 72
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1356,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1f33e48eeb5f6d60",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 62,
+                    "char_end": 72,
+                    "head_token_id": 15,
+                    "head_form": "delação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "direcionamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

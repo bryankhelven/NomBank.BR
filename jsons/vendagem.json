@@ -6,24 +6,176 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "vendagem · acepção 1",
+      "sense_id": "s_e50bbab4e6b06fae",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e50bbab4e6b06fae",
+      "frame_id": "f_ea0dd61bc0b2ef44",
+      "pt_roleset": null,
+      "sense_label": "vendagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "selling.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/selling.xml",
+          "source_xml_url": "data/nombank_sources/selling.xml",
+          "source_xml_sha256": "46d418c754ce64f89f8a2a7a04e5d650be73783bd8d8edb90038c249b5b0e597",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Vendedor",
+          "definition": "Seller da vendagem específica.",
+          "desc_pt": "Vendedor",
+          "definition_pt": "Seller da vendagem específica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa vendida",
+          "definition": "Thing sold como obra.",
+          "desc_pt": "Coisa vendida",
+          "definition_pt": "Thing sold como obra."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Comprador",
+          "definition": "Buyer identificado.",
+          "desc_pt": "Comprador",
+          "definition_pt": "Buyer identificado."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Preço pago",
+          "definition": "Price paid pela venda, não receita de direitos de outro predicado.",
+          "desc_pt": "Preço pago",
+          "definition_pt": "Price paid pela venda, não receita de direitos de outro predicado."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Beneficiário da venda",
+          "definition": "Beneficiary particular, sem titular da renda de direitos automaticamente.",
+          "desc_pt": "Beneficiário da venda",
+          "definition_pt": "Beneficiary particular, sem titular da renda de direitos automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000156_SENT007::vendagem::1",
           "sent_ID": "FOLHA_DOC000156_SENT007",
           "text": "Três anos depois, apenas os direitos de vendagem dessa obra renderam a ele quase R$ 1,2 milhão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "vendagem",
             "char_start": 40,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dessa obra",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 49,
+                "char_end": 59
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 5035,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ea0dd61bc0b2ef44",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 49,
+                    "char_end": 59,
+                    "head_token_id": 12,
+                    "head_form": "obra",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "vendagem · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

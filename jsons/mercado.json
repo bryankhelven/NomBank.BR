@@ -6,23 +6,140 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_86a4bd3d8ebc175b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_86a4bd3d8ebc175b",
+      "frame_id": "f_dc9c26a4b7329aeb",
+      "pt_roleset": "mercado.05",
+      "sense_label": "mercado.05",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "negotiation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/negotiation.xml",
+          "source_xml_url": "data/nombank_sources/negotiation.xml",
+          "source_xml_sha256": "637c46250b19d8c2289fd63ccc061ba764007d92029af5c1cbeb522f2ed4fffb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Negociador",
+          "definition": "Negotiator de termos de relação, sem solteiros incidência de outro ato como participantes.",
+          "desc_pt": "Negociador",
+          "definition_pt": "Negotiator de termos de relação, sem solteiros incidência de outro ato como participantes."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto/acordo negociado",
+          "definition": "Agreement n1/source2, casamentos como objeto de negociação figurativa, sem venda humana real presumida.",
+          "desc_pt": "Objeto/acordo negociado",
+          "definition_pt": "Agreement n1/source2, casamentos como objeto de negociação figurativa, sem venda humana real presumida."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Outra parte negociadora",
+          "definition": "Explicit other party n2/source1 literal, sem comprador/vendedor de market imposto.",
+          "desc_pt": "Outra parte negociadora",
+          "definition_pt": "Explicit other party n2/source1 literal, sem comprador/vendedor de market imposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003118_SENT028::mercado::1",
           "sent_ID": "FOLHA_DOC003118_SENT028",
           "text": "Outra mudança no \"mercado de casamentos\" é a maior incidência de solteiros.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "mercado",
             "char_start": 18,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de casamentos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 26,
+                "char_end": 39
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1132,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dc9c26a4b7329aeb",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 26,
+                    "char_end": 39,
+                    "head_token_id": 8,
+                    "head_form": "casamentos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

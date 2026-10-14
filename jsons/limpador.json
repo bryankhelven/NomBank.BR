@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "limpador · acepção 1",
+      "sense_id": "s_7dc6b5eab3bfdc8d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7dc6b5eab3bfdc8d",
+      "frame_id": "f_594864ae4db3113e",
+      "pt_roleset": null,
+      "sense_label": "limpador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "cleaner.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/cleaner.xml",
+          "source_xml_url": "data/nombank_sources/cleaner.xml",
+          "source_xml_sha256": "a7293ee6f66987d2855acce5405403f26218ce139b27add28d836ac82d188527",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Limpador",
+          "definition": "Agente funcional que limpa, estendido ao dispositivo frozen; SELF0 original, sem operador humano inferido.",
+          "desc_pt": "Limpador",
+          "definition_pt": "Agente funcional que limpa, estendido ao dispositivo frozen; SELF0 original, sem operador humano inferido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto limpo",
+          "definition": "Thing cleaned como para-brisa.",
+          "desc_pt": "Objeto limpo",
+          "definition_pt": "Thing cleaned como para-brisa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da limpeza",
+          "definition": "Clean-for explícito, sem proprietário pressuposto.",
+          "desc_pt": "Beneficiário da limpeza",
+          "definition_pt": "Clean-for explícito, sem proprietário pressuposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000161_SENT011::limpador::1",
           "sent_ID": "FOLHA_DOC000161_SENT011",
           "text": "Se o ruído vier do limpador de para-brisa, a solução é fazer a troca da peça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "limpador",
             "char_start": 19,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de para-brisa",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 28,
+                "char_end": 41
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12184,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_594864ae4db3113e",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 28,
+                    "char_end": 41,
+                    "head_token_id": 9,
+                    "head_form": "para-brisa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "limpador · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

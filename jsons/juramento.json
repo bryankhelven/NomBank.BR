@@ -6,24 +6,140 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "juramento · acepção 1",
+      "sense_id": "s_e45e1e6e12d0e825",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e45e1e6e12d0e825",
+      "frame_id": "f_43e66242c8afc5e8",
+      "pt_roleset": null,
+      "sense_label": "juramento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "oath.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/oath.xml",
+          "source_xml_url": "data/nombank_sources/oath.xml",
+          "source_xml_sha256": "61f6a74e52df44ce84a45864fc907c406e879a97216b1bddd9ab39d92ff0b610",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem presta juramento",
+          "definition": "Promiser, incluindo nós na relativa de fizemos juramento.",
+          "desc_pt": "Quem presta juramento",
+          "definition_pt": "Promiser, incluindo nós na relativa de fizemos juramento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação jurada",
+          "definition": "Promised action n1/source2 literal, sem importar conteúdo de compromisso de outro nome.",
+          "desc_pt": "Ação jurada",
+          "definition_pt": "Promised action n1/source2 literal, sem importar conteúdo de compromisso de outro nome."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário do juramento",
+          "definition": "Person promised to n2/source1 literal, sem audiência/nação automaticamente receptora.",
+          "desc_pt": "Destinatário do juramento",
+          "definition_pt": "Person promised to n2/source1 literal, sem audiência/nação automaticamente receptora."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003092_SENT074::juramento::1",
           "sent_ID": "FOLHA_DOC003092_SENT074",
           "text": "Mas por outro lado, quando a gente olha o juramento que nós fizemos, o nosso compromisso é com a nação, é com a pátria, independente de sermos aplaudidos ou não.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "juramento",
             "char_start": 42,
             "char_end": 51
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "nós",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 56,
+                "char_end": 59
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6130,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_43e66242c8afc5e8",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 56,
+                    "char_end": 59,
+                    "head_token_id": 13,
+                    "head_form": "nós",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "juramento · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

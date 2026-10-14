@@ -6,24 +6,155 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "equilibrismo · acepção 1",
+      "sense_id": "s_45c794af7f3ad54c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_45c794af7f3ad54c",
+      "frame_id": "f_8913c7aec7cc0041",
+      "pt_roleset": null,
+      "sense_label": "equilibrismo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "trick.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/trick.xml",
+          "source_xml_url": "data/nombank_sources/trick.xml",
+          "source_xml_sha256": "71eb1e38a72a2906b9a3377ec689599f4ebb14c7e7e5e386c275a3fdccdbcb5f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da manobra hábil",
+          "definition": "Agent pessoa com equilibrismo político, sem vítima de engano inferida.",
+          "desc_pt": "Titular da manobra hábil",
+          "definition_pt": "Agent pessoa com equilibrismo político, sem vítima de engano inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio da manobra",
+          "definition": "Action como político relacional, conforme marketing tricks original.",
+          "desc_pt": "Domínio da manobra",
+          "definition_pt": "Action como político relacional, conforme marketing tricks original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002020_SENT021::equilibrismo::1",
           "sent_ID": "FOLHA_DOC002020_SENT021",
           "text": "Afinal, equilibrismo político não falta a quem está no comando de uma sólida democracia há 12 anos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "equilibrismo",
             "char_start": 8,
             "char_end": 20
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a quem está no comando de uma sólida democracia há 12 anos",
+            "Arg1": "político"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 40,
+                "char_end": 98
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 21,
+                "char_end": 29
+              }
+            ]
+          },
+          "target_instance_id": 11760,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8913c7aec7cc0041",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 20
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 40,
+                    "char_end": 98,
+                    "head_token_id": 8,
+                    "head_form": "quem",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 21,
+                    "char_end": 29,
+                    "head_token_id": 4,
+                    "head_form": "político",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "equilibrismo · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

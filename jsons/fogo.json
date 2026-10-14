@@ -6,23 +6,148 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_636f4fb6f65e9ee7",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_636f4fb6f65e9ee7",
+      "frame_id": "f_3e9813363189522e",
+      "pt_roleset": "fogo.07",
+      "sense_label": "fogo.07",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fire.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fire.xml",
+          "source_xml_url": "data/nombank_sources/fire.xml",
+          "source_xml_sha256": "5d0b0887dcf484b611423f65f1104cb55e0c8a1118f983aa7dc03e55714ae648",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Atirador",
+          "definition": "Shooter da descarga de tiros, sem quem leva armas automaticamente dispara.",
+          "desc_pt": "Atirador",
+          "definition_pt": "Shooter da descarga de tiros, sem quem leva armas automaticamente dispara."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Armamento disparado",
+          "definition": "Theme restrito às armas/cargas da descarga como fire a gun definição original; sem novo campo instrumento.",
+          "desc_pt": "Armamento disparado",
+          "definition_pt": "Theme restrito às armas/cargas da descarga como fire a gun definição original; sem novo campo instrumento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Alvo do fogo",
+          "definition": "Goal alvo atingido/visado explícito, sem guerra civil efeito negado como meta.",
+          "desc_pt": "Alvo do fogo",
+          "definition_pt": "Goal alvo atingido/visado explícito, sem guerra civil efeito negado como meta."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001007_SENT020::fogo::1",
           "sent_ID": "FOLHA_DOC001007_SENT020",
           "text": "Ao subir o morro para realizar seus encontros, sem levar consigo a rajada de fogos de \"escopeta, metralha, granada e fuzil\", sem provocar uma \"guerra civil\", o que vemos lá em cima é um encontro feliz entre pessoas iguais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fogos",
             "char_start": 77,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de \"escopeta, metralha, granada e fuzil\"",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 83,
+                "char_end": 123
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13149,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3e9813363189522e",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 77,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 83,
+                    "char_end": 123,
+                    "head_token_id": 21,
+                    "head_form": "escopeta",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

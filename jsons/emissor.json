@@ -6,38 +6,260 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "emissor · acepção 1",
+      "sense_id": "s_cc8d3219abc7dfc9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_cc8d3219abc7dfc9",
+      "frame_id": "f_76ff65ce2264b480",
+      "pt_roleset": null,
+      "sense_label": "emissor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "broadcaster.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/broadcaster.xml",
+          "source_xml_url": "data/nombank_sources/broadcaster.xml",
+          "source_xml_sha256": "1c9c4da31d5512a809f1c93bc186f1760196d0cf8b6c7729383985e5ef786543",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissora",
+          "definition": "Estação transmissora, incorporada conforme broadcaster quando sem nome independente; nomes podem identificar classe em rodízio.",
+          "desc_pt": "Emissora",
+          "definition_pt": "Estação transmissora, incorporada conforme broadcaster quando sem nome independente; nomes podem identificar classe em rodízio."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo transmitido",
+          "definition": "Mensagem/programa da transmissão, sem gravação de entrevista automaticamente tomada por difusão.",
+          "desc_pt": "Conteúdo transmitido",
+          "definition_pt": "Mensagem/programa da transmissão, sem gravação de entrevista automaticamente tomada por difusão."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Audiência",
+          "definition": "Quem recebe transmissão, não nacionalidade da estação.",
+          "desc_pt": "Audiência",
+          "definition_pt": "Quem recebe transmissão, não nacionalidade da estação."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Fonte",
+          "definition": "Origem do sinal, não lugar da gravação ou residência de entrevistado.",
+          "desc_pt": "Fonte",
+          "definition_pt": "Origem do sinal, não lugar da gravação ou residência de entrevistado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003044_SENT002::emissor::1",
           "sent_ID": "FOLHA_DOC003044_SENT002",
           "text": "A cada ano, a transmissão da entrega do Emmy fica a cargo de uma das quatro grandes emissoras abertas da televisão americana: Fox, ABC, NBC e CBS.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "emissoras",
             "char_start": 84,
             "char_end": 93
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Fox, ABC, NBC e CBS",
+            "Arg1": "da entrega do Emmy",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 126,
+                "char_end": 145
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 26,
+                "char_end": 44
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 1442,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_76ff65ce2264b480",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 84,
+                "char_end": 93
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 126,
+                    "char_end": 145,
+                    "head_token_id": 29,
+                    "head_form": "Fox",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 26,
+                    "char_end": 44,
+                    "head_token_id": 9,
+                    "head_form": "entrega",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000007_SENT010::emissor::1",
           "sent_ID": "FOLHA_DOC000007_SENT010",
           "text": "A entrevista à emissora foi gravada em Cananeia (SP), cidade onde Battisti está morando.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "emissora",
             "char_start": 15,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2847,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_76ff65ce2264b480",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "emissor · acepção 1"
+      "syntactic_profile": {
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "malabarismo · acepção 1",
+      "sense_id": "s_dab1433bffdc8886",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_dab1433bffdc8886",
+      "frame_id": "f_93c2a21319b10edc",
+      "pt_roleset": null,
+      "sense_label": "malabarismo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "skill.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/skill.xml",
+          "source_xml_url": "data/nombank_sources/skill.xml",
+          "source_xml_sha256": "2cebd6cee692047065a71d21389a56fec2d1d77a9902f270518f6b658ca317b9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da destreza",
+          "definition": "Agent identificado de habilidade corporal, não criança em descrição da expressão automaticamente habilidosa.",
+          "desc_pt": "Titular da destreza",
+          "definition_pt": "Agent identificado de habilidade corporal, não criança em descrição da expressão automaticamente habilidosa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Atividade hábil",
+          "definition": "Action explicitada, não bola possuída como ação.",
+          "desc_pt": "Atividade hábil",
+          "definition_pt": "Action explicitada, não bola possuída como ação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004013_SENT088::malabarismo::1",
           "sent_ID": "FOLHA_DOC004013_SENT088",
           "text": "Pela expressão de criança carente que fazia ou, se tivesse uma bola, pelos malabarismos que produzia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "malabarismos",
             "char_start": 75,
             "char_end": 87
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 11582,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_93c2a21319b10edc",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 87
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "malabarismo · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

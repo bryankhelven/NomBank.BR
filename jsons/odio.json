@@ -6,51 +6,270 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_6d88c83723855602",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6d88c83723855602",
+      "frame_id": "f_e7e15562ba53db3f",
+      "pt_roleset": "ódio.01",
+      "sense_label": "ódio.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "hatred.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/hatred.xml",
+          "source_xml_url": "data/nombank_sources/hatred.xml",
+          "source_xml_sha256": "8b26c8a678a18d4e03023f9b8d904f37d4ea57a4c24c41484af40652b1420882",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador",
+          "definition": "Quem sente ódio, não instigador/portador textual automaticamente.",
+          "desc_pt": "Experienciador",
+          "definition_pt": "Quem sente ódio, não instigador/portador textual automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo",
+          "definition": "Objeto do ódio.",
+          "desc_pt": "Alvo",
+          "definition_pt": "Objeto do ódio."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003106_SENT010::ódio::1",
           "sent_ID": "FOLHA_DOC003106_SENT010",
           "text": "\"Três Anúncios\" é, aliás, o que traduz melhor o ódio pulverizado entre os americanos que elegeram Trump e que dirigem sua ira contra as instituições tradicionais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ódio",
             "char_start": 48,
             "char_end": 52
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "entre os americanos que elegeram Trump",
+            "Arg1": "contra as instituições tradicionais"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 65,
+                "char_end": 103
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 126,
+                "char_end": 161
+              }
+            ]
+          },
+          "target_instance_id": 2390,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e7e15562ba53db3f",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 52
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 65,
+                    "char_end": 103,
+                    "head_token_id": 18,
+                    "head_form": "americanos",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 126,
+                    "char_end": 161,
+                    "head_token_id": 29,
+                    "head_form": "instituições",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004059_SENT006::ódio::1",
           "sent_ID": "FOLHA_DOC004059_SENT006",
           "text": "É muito [longo] o tempo que vocês passaram no ódio e na vingança.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ódio",
             "char_start": 46,
             "char_end": 50
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "vocês",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 33
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 14663,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e7e15562ba53db3f",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 50
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 28,
+                    "char_end": 33,
+                    "head_token_id": 9,
+                    "head_form": "vocês",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003191_SENT025::ódio::1",
           "sent_ID": "FOLHA_DOC003191_SENT025",
           "text": "Até porque há casos em que a sanha justiceira descamba em discurso de ódio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ódio",
             "char_start": 70,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 15433,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e7e15562ba53db3f",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 70,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

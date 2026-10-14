@@ -6,121 +6,957 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b63e7d6125645154",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b63e7d6125645154",
+      "frame_id": "f_c691a31f69dedc51",
+      "pt_roleset": "prejuízo.02",
+      "sense_label": "prejuízo.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "loss.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/loss.xml",
+          "source_xml_url": "data/nombank_sources/loss.xml",
+          "source_xml_sha256": "ae732020852e641f4ced8e9ad3dcfd8b767e90eba7f66802cf8f01d63cea88e9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "perdedor",
+          "definition": "Entidade que deixa de ter algo ou sofre perda econômica.",
+          "desc_pt": "perdedor",
+          "definition_pt": "Entidade que deixa de ter algo ou sofre perda econômica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto ou montante perdido",
+          "definition": "Aquilo que se perde, incluindo quantia de perda quando expressa.",
+          "desc_pt": "objeto ou montante perdido",
+          "definition_pt": "Aquilo que se perde, incluindo quantia de perda quando expressa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "ganhador",
+          "definition": "Entidade que ganha o que o perdedor perdeu.",
+          "desc_pt": "ganhador",
+          "definition_pt": "Entidade que ganha o que o perdedor perdeu."
+        },
+        {
+          "id": "Arg3",
+          "desc": "origem da perda",
+          "definition": "Operação, domínio ou fonte da qual resulta a perda.",
+          "desc_pt": "origem da perda",
+          "definition_pt": "Operação, domínio ou fonte da qual resulta a perda."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002033_SENT005::prejuízo::1",
           "sent_ID": "FOLHA_DOC002033_SENT005",
           "text": "O impasse está no uso de créditos de prejuízos fiscais para abater o passivo inscrito na dívida ativa da União.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízos",
             "char_start": 37,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 4683,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c691a31f69dedc51",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_b63e7d6125645154",
+      "frame_id": "f_207f3266c35ee395",
+      "pt_roleset": "prejuízo.02",
+      "sense_label": "prejuízo.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "damage.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/damage.xml",
+          "source_xml_url": "data/nombank_sources/damage.xml",
+          "source_xml_sha256": "b933d30bef630d4e51532a30015ad78559c4309a07dc97e44de02dfd1f53fc68",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "causador de dano",
+          "definition": "Entidade ou evento que provoca dano, quando a causalidade é explicitamente licenciada.",
+          "desc_pt": "causador de dano",
+          "definition_pt": "Entidade ou evento que provoca dano, quando a causalidade é explicitamente licenciada."
         },
+        {
+          "id": "Arg1",
+          "desc": "entidade danificada",
+          "definition": "Aquilo que sofre ou pode sofrer dano.",
+          "desc_pt": "entidade danificada",
+          "definition_pt": "Aquilo que sofre ou pode sofrer dano."
+        },
+        {
+          "id": "Arg2",
+          "desc": "quantidade de dano",
+          "definition": "Montante ou grau do dano, inclusive qualificações comparativas expressas.",
+          "desc_pt": "quantidade de dano",
+          "definition_pt": "Montante ou grau do dano, inclusive qualificações comparativas expressas."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003185_SENT015::prejuízo::1",
           "sent_ID": "FOLHA_DOC003185_SENT015",
           "text": "Esses também são eventos que têm prejuízos mais baixos e, assim, mais fáceis de serem recuperados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízos",
             "char_start": 33,
             "char_end": 42
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "mais baixos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 43,
+                "char_end": 54
+              }
+            ]
+          },
+          "target_instance_id": 9737,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_207f3266c35ee395",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 43,
+                    "char_end": 54,
+                    "head_token_id": 9,
+                    "head_form": "baixos",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003172_SENT013::prejuízo::1",
           "sent_ID": "FOLHA_DOC003172_SENT013",
           "text": "Embora defenda o controle rígido dos gastos dos governos, demonstra preocupação com a falta de debate sobre como evitar prejuízo aos serviços públicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízo",
             "char_start": 120,
             "char_end": 128
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "aos serviços públicos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 129,
+                "char_end": 150
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12436,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_207f3266c35ee395",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 120,
+                "char_end": 128
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 129,
+                    "char_end": 150,
+                    "head_token_id": 26,
+                    "head_form": "serviços",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003185_SENT044::prejuízo::1",
           "sent_ID": "FOLHA_DOC003185_SENT044",
           "text": "Se o prejuízo fosse maior que R$ 500 mil, o reembolso não excederia esse valor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízo",
             "char_start": 5,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "maior que R$ 500 mil"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "advcl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 20,
+                "char_end": 40
+              }
+            ]
+          },
+          "target_instance_id": 12865,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_207f3266c35ee395",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 5,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 20,
+                    "char_end": 40,
+                    "head_token_id": 5,
+                    "head_form": "maior",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
         },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_b63e7d6125645154",
+      "frame_id": "f_31d5b3cf51b5e27e",
+      "pt_roleset": "prejuízo.02",
+      "sense_label": "prejuízo.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "loss.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/loss.xml",
+          "source_xml_url": "data/nombank_sources/loss.xml",
+          "source_xml_sha256": "ae732020852e641f4ced8e9ad3dcfd8b767e90eba7f66802cf8f01d63cea88e9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade que perde",
+          "definition": "Quem sofre perda/prejuízo financeiro.",
+          "desc_pt": "Entidade que perde",
+          "definition_pt": "Quem sofre perda/prejuízo financeiro."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Aquilo ou montante perdido",
+          "definition": "Thing lost original inclui quantia de perda; menos genérico sem bem/montante não basta.",
+          "desc_pt": "Aquilo ou montante perdido",
+          "definition_pt": "Thing lost original inclui quantia de perda; menos genérico sem bem/montante não basta."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Entidade que recebe o perdido",
+          "definition": "Beneficiário que ganha aquilo perdido, não destinatário de pedido de compensação.",
+          "desc_pt": "Entidade que recebe o perdido",
+          "definition_pt": "Beneficiário que ganha aquilo perdido, não destinatário de pedido de compensação."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Fonte da perda",
+          "definition": "Origem/causa explicitamente identificada; evento causador por extensão local, período não basta.",
+          "desc_pt": "Fonte da perda",
+          "definition_pt": "Origem/causa explicitamente identificada; evento causador por extensão local, período não basta."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000070_SENT019::prejuízo::1",
           "sent_ID": "FOLHA_DOC000070_SENT019",
           "text": "Após a expiração de contratos firmados nos anos 1990 sem licitação, a empresa foi à Justiça Federal pedir a permanência nas áreas citando a necessidade de compensação por prejuízos sofridos durante a vigência de seus acordos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízos",
             "char_start": 171,
             "char_end": 180
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a empresa",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 68,
+                "char_end": 77
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 12996,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_31d5b3cf51b5e27e",
+          "argument_details": {
+            "predicate_token_ids": [
+              33
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 171,
+                "char_end": 180
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 68,
+                    "char_end": 77,
+                    "head_token_id": 15,
+                    "head_form": "empresa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002035_SENT022::prejuízo::1",
           "sent_ID": "FOLHA_DOC002035_SENT022",
           "text": "A folha estava no seu gaveteiro e foi descartada em uma faxina, o que gerou o prejuízo de aproximadamente R$ 1,7 milhão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízo",
             "char_start": 78,
             "char_end": 86
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de aproximadamente R$ 1,7 milhão",
+            "Arg2": null,
+            "Arg3": "foi descartada em uma faxina"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "conj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 87,
+                "char_end": 119
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 34,
+                "char_end": 62
+              }
+            ]
+          },
+          "target_instance_id": 13010,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_31d5b3cf51b5e27e",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 78,
+                "char_end": 86
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 87,
+                    "char_end": 119,
+                    "head_token_id": 24,
+                    "head_form": "milhão",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 34,
+                    "char_end": 62,
+                    "head_token_id": 10,
+                    "head_form": "descartada",
+                    "head_deprel": "conj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001716_SENT038::prejuízo::1",
           "sent_ID": "FOLHA_DOC001716_SENT038",
           "text": "Quanto menor a capitalização de um banco, menos prejuízos ele poderá aceitar antes que se torne insolvente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízos",
             "char_start": 48,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 58,
+                "char_end": 61
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 13024,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_31d5b3cf51b5e27e",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 58,
+                    "char_end": 61,
+                    "head_token_id": 11,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
         },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "conj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_b63e7d6125645154",
+      "frame_id": "f_a73bd411e0d34490",
+      "pt_roleset": "prejuízo.02",
+      "sense_label": "prejuízo.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "damage.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/damage.xml",
+          "source_xml_url": "data/nombank_sources/damage.xml",
+          "source_xml_sha256": "b933d30bef630d4e51532a30015ad78559c4309a07dc97e44de02dfd1f53fc68",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa do dano",
+          "definition": "Agent/causer original; choque pode provocar dano.",
+          "desc_pt": "Causa do dano",
+          "definition_pt": "Agent/causer original; choque pode provocar dano."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade prejudicada",
+          "definition": "Aquilo danificado; desempenho/patrimônio de piloto é extensão local, sem afirmar lesão corporal.",
+          "desc_pt": "Entidade prejudicada",
+          "definition_pt": "Aquilo danificado; desempenho/patrimônio de piloto é extensão local, sem afirmar lesão corporal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Quantidade ou grau de dano",
+          "definition": "Amount original; n=2, source=3 preservado sem renumerar.",
+          "desc_pt": "Quantidade ou grau de dano",
+          "definition_pt": "Amount original; n=2, source=3 preservado sem renumerar."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003105_SENT020::prejuízo::1",
           "sent_ID": "FOLHA_DOC003105_SENT020",
           "text": "O choque entre os dois deu prejuízo para o então líder da prova Sebastian Vettel, que acabou atingido e teve seu bico danificado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prejuízo",
             "char_start": 27,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O choque entre os dois",
+            "Arg1": "para o então líder da prova Sebastian Vettel, que acabou atingido e teve seu bico danificado",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 22
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 128
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14791,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a73bd411e0d34490",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 22,
+                    "head_token_id": 2,
+                    "head_form": "choque",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 36,
+                    "char_end": 128,
+                    "head_token_id": 11,
+                    "head_form": "líder",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

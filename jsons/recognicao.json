@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "recognição · acepção 1",
+      "sense_id": "s_c49dedb0ca269ea0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_c49dedb0ca269ea0",
+      "frame_id": "f_2a5f708ae9ff6c97",
+      "pt_roleset": null,
+      "sense_label": "recognição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recognition.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recognition.xml",
+          "source_xml_url": "data/nombank_sources/recognition.xml",
+          "source_xml_sha256": "0534c1beefff04e8e307b29b9d4a0e8c46ed37c08a5bddf29180c62d0d101a02",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Reconhecedor",
+          "definition": "Describer estendido a memória como mecanismo cognitivo que produz reconhecimento.",
+          "desc_pt": "Reconhecedor",
+          "definition_pt": "Describer estendido a memória como mecanismo cognitivo que produz reconhecimento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa reconhecida",
+          "definition": "Thing described/utterance nomeado.",
+          "desc_pt": "Coisa reconhecida",
+          "definition_pt": "Thing described/utterance nomeado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Caracterização reconhecida",
+          "definition": "Secondary attribute/described-as explícita, sem nos alvo de confiar como tema.",
+          "desc_pt": "Caracterização reconhecida",
+          "definition_pt": "Secondary attribute/described-as explícita, sem nos alvo de confiar como tema."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000455_SENT010::recognição::1",
           "sent_ID": "FOLHA_DOC000455_SENT010",
           "text": "Uma linguagem que só por meio da mais brutal violência pode nos fazer ainda confiar nas relações de causalidade, na certeza produzida pelo efeito que segue a causa, na recognição produzida pela memória, na continuidade narrativa com sua orientação de ação pelas noções de necessidade e desenvolvimento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recognição",
             "char_start": 168,
             "char_end": 178
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pela memória",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 189,
+                "char_end": 201
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13853,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2a5f708ae9ff6c97",
+          "argument_details": {
+            "predicate_token_ids": [
+              37
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 168,
+                "char_end": 178
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      39,
+                      40,
+                      41
+                    ],
+                    "char_start": 189,
+                    "char_end": 201,
+                    "head_token_id": 41,
+                    "head_form": "memória",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "recognição · acepção 1"
+      "syntactic_profile": {
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

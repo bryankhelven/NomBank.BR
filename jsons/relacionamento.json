@@ -6,80 +6,457 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "relacionamento · acepção 1",
+      "sense_id": "s_d828e002ce51eeb8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d828e002ce51eeb8",
+      "frame_id": "f_3b6e3e72b86d66b7",
+      "pt_roleset": null,
+      "sense_label": "relacionamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "relationship.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/relationship.xml",
+          "source_xml_url": "data/nombank_sources/relationship.xml",
+          "source_xml_sha256": "1dff49139694fbf4ac496c2bfae33bba53ccedb474fcc019117c57ef768174ab",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular ou participante do vínculo",
+          "definition": "Job holder original; extensão local a participantes institucionais/afetivos da convivência.",
+          "desc_pt": "Titular ou participante do vínculo",
+          "definition_pt": "Job holder original; extensão local a participantes institucionais/afetivos da convivência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tipo ou papel do vínculo",
+          "definition": "Job title original, exemplificado por working/military; extensão para tipo da relação é local.",
+          "desc_pt": "Tipo ou papel do vínculo",
+          "definition_pt": "Job title original, exemplificado por working/military; extensão para tipo da relação é local."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Contraparte/beneficiário",
+          "definition": "Beneficiary original, com exemplos with outra instituição; manter explícita adaptação relacional portuguesa.",
+          "desc_pt": "Contraparte/beneficiário",
+          "definition_pt": "Beneficiary original, com exemplos with outra instituição; manter explícita adaptação relacional portuguesa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004020_SENT005::relacionamento::1",
           "sent_ID": "FOLHA_DOC004020_SENT005",
           "text": "O relacionamento dos tucanos entrou naquela fase em que tudo termina em queixas e insinuações.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "relacionamento",
             "char_start": 2,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos tucanos",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 17,
+                "char_end": 28
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 1624,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b6e3e72b86d66b7",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 17,
+                    "char_end": 28,
+                    "head_token_id": 5,
+                    "head_form": "tucanos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000074_SENT033::relacionamento::1",
           "sent_ID": "FOLHA_DOC000074_SENT033",
           "text": "A obra reúne ideias do médico sobre temas como relacionamentos e vaidade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "relacionamentos",
             "char_start": 47,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2256,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b6e3e72b86d66b7",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003186_SENT009::relacionamento::1",
           "sent_ID": "FOLHA_DOC003186_SENT009",
           "text": "Segundo ele, \"tudo isso é um reflexo da confiança e do compromisso de longo prazo que os Estados Unidos e o Brasil veem nesse relacionamento\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "relacionamento",
             "char_start": 126,
             "char_end": 140
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os Estados Unidos e o Brasil",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 86,
+                "char_end": 114
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5631,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b6e3e72b86d66b7",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 126,
+                "char_end": 140
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 86,
+                    "char_end": 114,
+                    "head_token_id": 22,
+                    "head_form": "Estados",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000041_SENT059::relacionamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT059",
           "text": "Servia para ser amiga, mas não para ter um relacionamento, diz ela.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "relacionamento",
             "char_start": 43,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9065,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b6e3e72b86d66b7",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 43,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
         },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_d828e002ce51eeb8",
+      "frame_id": "f_1ab7451de48beb8e",
+      "pt_roleset": null,
+      "sense_label": "relacionamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "association.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/association.xml",
+          "source_xml_url": "data/nombank_sources/association.xml",
+          "source_xml_sha256": "a436742aabe27db8d51c2b0184d8e5c698699b3005c2f699dc4ed69951670c9e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do vínculo",
+          "definition": "Entity causing association de laços pessoais, sem sujeito elíptico de lidar como causador.",
+          "desc_pt": "Autor do vínculo",
+          "definition_pt": "Entity causing association de laços pessoais, sem sujeito elíptico de lidar como causador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Uma parte associada",
+          "definition": "Thing included no vínculo afetivo interpessoal por extensão explícita.",
+          "desc_pt": "Uma parte associada",
+          "definition_pt": "Thing included no vínculo afetivo interpessoal por extensão explícita."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Outra parte associada",
+          "definition": "Group/associated-with distinta, sem tempo passado ou sentimento como parceiro.",
+          "desc_pt": "Outra parte associada",
+          "definition_pt": "Group/associated-with distinta, sem tempo passado ou sentimento como parceiro."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003062_SENT035::relacionamento::1",
           "sent_ID": "FOLHA_DOC003062_SENT035",
           "text": "Não há desconforto nem em lidar com sentimentos sobre o relacionamento passado estando já em outro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "relacionamento",
             "char_start": 56,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14936,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1ab7451de48beb8e",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "relacionamento · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

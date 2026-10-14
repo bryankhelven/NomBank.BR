@@ -6,38 +6,235 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "piada · acepção 1",
+      "sense_id": "s_3e684a80ed9d2fd6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3e684a80ed9d2fd6",
+      "frame_id": "f_2f4197e934fdc2b9",
+      "pt_roleset": null,
+      "sense_label": "piada · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "joke.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/joke.xml",
+          "source_xml_url": "data/nombank_sources/joke.xml",
+          "source_xml_sha256": "d99292293110c3166ba389997616d767b9be1b2e8371ed8049364115c6560b56",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor da piada",
+          "definition": "Joker que conta dito espirituoso.",
+          "desc_pt": "Emissor da piada",
+          "definition_pt": "Joker que conta dito espirituoso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Enunciado ou tema da piada",
+          "definition": "Joke n1/source2 literal, incluindo citação ou formulação explícita em comparação, sem endosso factual.",
+          "desc_pt": "Enunciado ou tema da piada",
+          "definition_pt": "Joke n1/source2 literal, incluindo citação ou formulação explícita em comparação, sem endosso factual."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Interlocutor da piada",
+          "definition": "Actor2 n2/source1 a quem se conta piada, sem pessoas dentro da mensagem como ouvintes automaticamente.",
+          "desc_pt": "Interlocutor da piada",
+          "definition_pt": "Actor2 n2/source1 a quem se conta piada, sem pessoas dentro da mensagem como ouvintes automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001538_SENT007::piada::1",
           "sent_ID": "FOLHA_DOC001538_SENT007",
           "text": "Piadas prontas: \"Jovem louro usa cota para negros na UFMG\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "Piadas",
             "char_start": 0,
             "char_end": 6
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Jovem louro usa cota para negros na UFMG",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8191,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2f4197e934fdc2b9",
+          "argument_details": {
+            "predicate_token_ids": [
+              1
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 0,
+                "char_end": 6
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 17,
+                    "char_end": 57,
+                    "head_token_id": 7,
+                    "head_form": "usa",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002009_SENT002::piada::1",
           "sent_ID": "FOLHA_DOC002009_SENT002",
           "text": "Como na piada, a saída para a crise de insegurança está no aeroporto.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "piada",
             "char_start": 8,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a saída para a crise de insegurança está no aeroporto",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 15,
+                "char_end": 68
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12591,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2f4197e934fdc2b9",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 15,
+                    "char_end": 68,
+                    "head_token_id": 16,
+                    "head_form": "aeroporto",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "piada · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

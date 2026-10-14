@@ -6,24 +6,187 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "mostra · acepção 1",
+      "sense_id": "s_ba7318c23ffc39b5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ba7318c23ffc39b5",
+      "frame_id": "f_e8ec3b08937524a3",
+      "pt_roleset": null,
+      "sense_label": "mostra · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "show.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/show.xml",
+          "source_xml_url": "data/nombank_sources/show.xml",
+          "source_xml_sha256": "a4bdbf89b05d807c3eab248192ab00ac32efde6530566cdb77655445b3224548",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da demonstração",
+          "definition": "Shower que dá mostras.",
+          "desc_pt": "Autor da demonstração",
+          "definition_pt": "Shower que dá mostras."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa demonstrada",
+          "definition": "Thing shown incluindo proposição integral sob intenção.",
+          "desc_pt": "Coisa demonstrada",
+          "definition_pt": "Thing shown incluindo proposição integral sob intenção."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Observador da demonstração",
+          "definition": "Seer expresso, sem destinatário político inferido.",
+          "desc_pt": "Observador da demonstração",
+          "definition_pt": "Seer expresso, sem destinatário político inferido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003170_SENT010::mostra::1",
           "sent_ID": "FOLHA_DOC003170_SENT010",
           "text": "Já o governo americano deu mostras de que irá reagir à decisão do Brasil de criar uma cota para importação de etanol e uma tarifa de 20% extra-cota.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "mostras",
             "char_start": 27,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o governo americano",
+            "Arg1": "de que irá reagir à decisão do Brasil de criar uma cota para importação de etanol e uma tarifa de 20% extra-cota",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 3,
+                "char_end": 22
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 35,
+                "char_end": 147
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12809,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e8ec3b08937524a3",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 3,
+                    "char_end": 22,
+                    "head_token_id": 3,
+                    "head_form": "governo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31
+                    ],
+                    "char_start": 35,
+                    "char_end": 147,
+                    "head_token_id": 10,
+                    "head_form": "reagir",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "mostra · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

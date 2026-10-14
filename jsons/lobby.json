@@ -6,52 +6,328 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "lobby · acepção 1",
+      "sense_id": "s_b32c166f641bc34f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b32c166f641bc34f",
+      "frame_id": "f_3156153322e206cc",
+      "pt_roleset": null,
+      "sense_label": "lobby · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "lobbying.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/lobbying.xml",
+          "source_xml_url": "data/nombank_sources/lobbying.xml",
+          "source_xml_sha256": "701e838a172825eb5b4eeaecd928ce5fbfd2b5e240cc0bcedea2ae493dd5c1fe",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Agente do lobby",
+          "definition": "Quem faz ação organizada de influência, não grupo nominal por homografia.",
+          "desc_pt": "Agente do lobby",
+          "definition_pt": "Quem faz ação organizada de influência, não grupo nominal por homografia."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pleito",
+          "definition": "Causa/objeto apoiado, incluindo apoio metonímico ao avião e pedido cultural explicitamente delimitados.",
+          "desc_pt": "Pleito",
+          "definition_pt": "Causa/objeto apoiado, incluindo apoio metonímico ao avião e pedido cultural explicitamente delimitados."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Interlocutor influenciado",
+          "definition": "A quem se dirige lobby, sem deputados inferidos da definição genérica.",
+          "desc_pt": "Interlocutor influenciado",
+          "definition_pt": "A quem se dirige lobby, sem deputados inferidos da definição genérica."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000106_SENT026::lobby::1",
           "sent_ID": "FOLHA_DOC000106_SENT026",
           "text": "Desde 2009, ele visitou a Suécia e fez lobby pelo avião.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "lobby",
             "char_start": 39,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "pelo avião",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 12,
+                "char_end": 15
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 55
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 242,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3156153322e206cc",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 12,
+                    "char_end": 15,
+                    "head_token_id": 4,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 45,
+                    "char_end": 55,
+                    "head_token_id": 13,
+                    "head_form": "avião",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000116_SENT021::lobby::1",
           "sent_ID": "FOLHA_DOC000116_SENT021",
           "text": "É o tal do lobby, bota o cara para abrir portas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "lobby",
             "char_start": 11,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 362,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3156153322e206cc",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000114_SENT002::lobby::1",
           "sent_ID": "FOLHA_DOC000114_SENT002",
           "text": "A Associação Acadêmicos do Baixo Augusta está fazendo lobby por um Carnaval fora de época -mas não só.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "lobby",
             "char_start": 54,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A Associação Acadêmicos do Baixo Augusta",
+            "Arg1": "por um Carnaval fora de época",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 40
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 89
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15703,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3156153322e206cc",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 0,
+                    "char_end": 40,
+                    "head_token_id": 2,
+                    "head_form": "Associação",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 60,
+                    "char_end": 89,
+                    "head_token_id": 13,
+                    "head_form": "Carnaval",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "lobby · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

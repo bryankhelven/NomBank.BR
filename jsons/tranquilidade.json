@@ -6,24 +6,129 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "tranquilidade · acepção 1",
+      "sense_id": "s_af87df241f1c19d4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_af87df241f1c19d4",
+      "frame_id": "f_a4b57dcba179a29b",
+      "pt_roleset": null,
+      "sense_label": "tranquilidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "calm.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/calm.xml",
+          "source_xml_url": "data/nombank_sources/calm.xml",
+          "source_xml_sha256": "e75b243dd58758cea94ade35de0a7c8c6cada5e3512f06da4c39878ef2a22680",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador ambiental da tranquilidade",
+          "definition": "Theme cidade como in Tokyo original, sem null do gloss preenchido.",
+          "desc_pt": "Portador ambiental da tranquilidade",
+          "definition_pt": "Theme cidade como in Tokyo original, sem null do gloss preenchido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor da tranquilidade",
+          "definition": "Value expresso, não ainda/hipótese causal como grau.",
+          "desc_pt": "Valor da tranquilidade",
+          "definition_pt": "Value expresso, não ainda/hipótese causal como grau."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004107_SENT019::tranquilidade::1",
           "sent_ID": "FOLHA_DOC004107_SENT019",
           "text": "Talvez por isso a tranquilidade ainda impere em sua principal cidade, Vis Town.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tranquilidade",
             "char_start": 18,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "em sua principal cidade, Vis Town",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 78
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12320,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a4b57dcba179a29b",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 45,
+                    "char_end": 78,
+                    "head_token_id": 11,
+                    "head_form": "cidade",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "tranquilidade · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

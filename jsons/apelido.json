@@ -6,94 +6,669 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "apelido · acepção 1",
+      "sense_id": "s_4ea207f2e7aa8740",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4ea207f2e7aa8740",
+      "frame_id": "f_d7ad3c3e73501846",
+      "pt_roleset": null,
+      "sense_label": "apelido · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "nickname.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/nickname.xml",
+          "source_xml_url": "data/nombank_sources/nickname.xml",
+          "source_xml_sha256": "582507f3ab32caa633dbe8e55b2da5dc204d29f6840cfcf32ce92b117dd04d3c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem nomeia",
+          "definition": "Namer original; esperar ativar/ganhar/detestar apelido não prova criar nome.",
+          "desc_pt": "Quem nomeia",
+          "definition_pt": "Namer original; esperar ativar/ganhar/detestar apelido não prova criar nome."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade nomeada",
+          "definition": "Named original; indivíduo/grupo/parceria que recebe alcunha.",
+          "desc_pt": "Entidade nomeada",
+          "definition_pt": "Named original; indivíduo/grupo/parceria que recebe alcunha."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Forma do apelido",
+          "definition": "Name original pode incorporar nickname igual a REL. Nome independente exclui encoding; descrição de formação do nome não integra cadeia lexical do nome automaticamente.",
+          "desc_pt": "Forma do apelido",
+          "definition_pt": "Name original pode incorporar nickname igual a REL. Nome independente exclui encoding; descrição de formação do nome não integra cadeia lexical do nome automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003191_SENT012::apelido::1",
           "sent_ID": "FOLHA_DOC003191_SENT012",
           "text": "Nos EUA, a prática é comum a ponto de seus adeptos terem recebido um apelido.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apelido",
             "char_start": 69,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "seus adeptos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 38,
+                "char_end": 50
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 882,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7ad3c3e73501846",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13
+                    ],
+                    "char_start": 38,
+                    "char_end": 50,
+                    "head_token_id": 13,
+                    "head_form": "adeptos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003039_SENT004::apelido::1",
           "sent_ID": "FOLHA_DOC003039_SENT004",
           "text": "Macron espera ativar a parceria que já tem até um apelido -Merkron, unindo os nomes de ambos- para renovar a União Europeia, desafiada pela saída britânica, conhecida como \"brexit\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apelido",
             "char_start": 50,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a parceria",
+            "Arg2": "Merkron"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "appos"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 21,
+                "char_end": 31
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ]
+          },
+          "target_instance_id": 4267,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7ad3c3e73501846",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 21,
+                    "char_end": 31,
+                    "head_token_id": 5,
+                    "head_form": "parceria",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 59,
+                    "char_end": 66,
+                    "head_token_id": 13,
+                    "head_form": "Merkron",
+                    "head_deprel": "appos"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001173_SENT054::apelido::1",
           "sent_ID": "FOLHA_DOC001173_SENT054",
           "text": "Apelido que ele detesta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "Apelido",
             "char_start": 0,
             "char_end": 7
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8475,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7ad3c3e73501846",
+          "argument_details": {
+            "predicate_token_ids": [
+              1
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003059_SENT002::apelido::1",
           "sent_ID": "FOLHA_DOC003059_SENT002",
           "text": "José Batista Sobrinho, 84, começou a comprar e vender gado nos anos 1950, em Anápolis (GO), onde ganhou o apelido de Zé Mineiro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apelido",
             "char_start": 106,
             "char_end": 113
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "José Batista Sobrinho, 84",
+            "Arg2": "de Zé Mineiro"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 25
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 114,
+                "char_end": 127
+              }
+            ]
+          },
+          "target_instance_id": 9597,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7ad3c3e73501846",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 106,
+                "char_end": 113
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 25,
+                    "head_token_id": 1,
+                    "head_form": "José",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 114,
+                    "char_end": 127,
+                    "head_token_id": 29,
+                    "head_form": "Zé",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
         },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "appos": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_4ea207f2e7aa8740",
+      "frame_id": "f_d8989802e0d69b10",
+      "pt_roleset": null,
+      "sense_label": "apelido · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "nickname.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/nickname.xml",
+          "source_xml_url": "data/nombank_sources/nickname.xml",
+          "source_xml_sha256": "582507f3ab32caa633dbe8e55b2da5dc204d29f6840cfcf32ce92b117dd04d3c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da alcunha",
+          "definition": "Namer que atribui apelido, não papéis/documentos de identificação automaticamente autor.",
+          "desc_pt": "Autor da alcunha",
+          "definition_pt": "Namer que atribui apelido, não papéis/documentos de identificação automaticamente autor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa apelidada",
+          "definition": "Named, como Cunha/sobrinhos.",
+          "desc_pt": "Pessoa apelidada",
+          "definition_pt": "Named, como Cunha/sobrinhos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Alcunha",
+          "definition": "Name específico independente com aspas completas, sem encoding simultâneo quando expresso.",
+          "desc_pt": "Alcunha",
+          "definition_pt": "Name específico independente com aspas completas, sem encoding simultâneo quando expresso."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003054_SENT008::apelido::1",
           "sent_ID": "FOLHA_DOC003054_SENT008",
           "text": "Nos papéis, Cunha é identificado pelo apelido de \"Bob\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apelido",
             "char_start": 38,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Cunha",
+            "Arg2": "de \"Bob\""
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj:pass",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 12,
+                "char_end": 17
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 46,
+                "char_end": 54
+              }
+            ]
+          },
+          "target_instance_id": 11809,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d8989802e0d69b10",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 12,
+                    "char_end": 17,
+                    "head_token_id": 5,
+                    "head_form": "Cunha",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 46,
+                    "char_end": 54,
+                    "head_token_id": 13,
+                    "head_form": "Bob",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000071_SENT021::apelido::1",
           "sent_ID": "FOLHA_DOC000071_SENT021",
           "text": "Chamava os sobrinhos de 'bola murcha', apelido carinhoso.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apelido",
             "char_start": 39,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os sobrinhos",
+            "Arg2": "'bola murcha'"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 8,
+                "char_end": 20
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ]
+          },
+          "target_instance_id": 13406,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d8989802e0d69b10",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 8,
+                    "char_end": 20,
+                    "head_token_id": 3,
+                    "head_form": "sobrinhos",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 24,
+                    "char_end": 37,
+                    "head_token_id": 6,
+                    "head_form": "bola",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "apelido · acepção 1"
+      "syntactic_profile": {
+        "nsubj:pass": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

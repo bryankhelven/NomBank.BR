@@ -6,24 +6,127 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "autonomia · acepção 1",
+      "sense_id": "s_458629aa78a4576b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_458629aa78a4576b",
+      "frame_id": "f_0d2c662a5959abac",
+      "pt_roleset": null,
+      "sense_label": "autonomia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "autonomy.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/autonomy.xml",
+          "source_xml_url": "data/nombank_sources/autonomy.xml",
+          "source_xml_sha256": "22c63b928ac0e0b47c8f9637458a60185847cfd5cb0b9aacce18559a21337bdd",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Titular da autonomia",
+          "definition": "Depender original interpretado pelos exemplos como entidade autônoma, n1/source0 literal.",
+          "desc_pt": "Titular da autonomia",
+          "definition_pt": "Depender original interpretado pelos exemplos como entidade autônoma, n1/source0 literal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Tema beneficiário da autonomia",
+          "definition": "Beneficiary n2/source1 literal, sem dinheiro coordenado como beneficiário.",
+          "desc_pt": "Tema beneficiário da autonomia",
+          "definition_pt": "Beneficiary n2/source1 literal, sem dinheiro coordenado como beneficiário."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001555_SENT019::autonomia::1",
           "sent_ID": "FOLHA_DOC001555_SENT019",
           "text": "Cada um dos políticos vai descendo na estação que mais lhe convém, após ganhar um pouco mais de autonomia ou dinheiro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "autonomia",
             "char_start": 96,
             "char_end": 105
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Cada um dos políticos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 21
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4523,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0d2c662a5959abac",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 96,
+                "char_end": 105
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 21,
+                    "head_token_id": 2,
+                    "head_form": "um",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "autonomia · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

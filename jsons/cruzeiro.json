@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cruzeiro · acepção 1",
+      "sense_id": "s_b41c226cb63e816f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b41c226cb63e816f",
+      "frame_id": "f_65b639b2ef6cf8b8",
+      "pt_roleset": null,
+      "sense_label": "cruzeiro · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "journey.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/journey.xml",
+          "source_xml_url": "data/nombank_sources/journey.xml",
+          "source_xml_sha256": "b6bd66d87c55af5e7a9667bb982bc957e2f029250fc417a63ec1f285e4bb4514",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante",
+          "definition": "Traveller no giro de visitas ou viagem marítima turística conforme restrição por ocorrência.",
+          "desc_pt": "Viajante",
+          "definition_pt": "Traveller no giro de visitas ou viagem marítima turística conforme restrição por ocorrência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Percurso da viagem",
+          "definition": "Destination/path como América Latina/Caribe, sem tempo ou lugar de pouso prévio como rota automaticamente.",
+          "desc_pt": "Percurso da viagem",
+          "definition_pt": "Destination/path como América Latina/Caribe, sem tempo ou lugar de pouso prévio como rota automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004068_SENT029::cruzeiro::1",
           "sent_ID": "FOLHA_DOC004068_SENT029",
           "text": "Pousaram em Miami na segunda (4), onde ficariam até embarcarem em um cruzeiro pelo Caribe no dia 16.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cruzeiro",
             "char_start": 69,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pelo Caribe"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 78,
+                "char_end": 89
+              }
+            ]
+          },
+          "target_instance_id": 1269,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_65b639b2ef6cf8b8",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 78,
+                    "char_end": 89,
+                    "head_token_id": 20,
+                    "head_form": "Caribe",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cruzeiro · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

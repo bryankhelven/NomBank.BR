@@ -6,37 +6,202 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_cfa1ed44c9cc6b37",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_cfa1ed44c9cc6b37",
+      "frame_id": "f_995258a79a60b8ca",
+      "pt_roleset": "ânimo.03",
+      "sense_label": "ânimo.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "excitement.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/excitement.xml",
+          "source_xml_url": "data/nombank_sources/excitement.xml",
+          "source_xml_sha256": "7fcba2d896ae6d8a7a1c78329e9cd84a539b76285d8500c055883f2a2c246375",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa da exaltação",
+          "definition": "Quem causa excitação, não quem arrefece estado previamente existente automaticamente.",
+          "desc_pt": "Causa da exaltação",
+          "definition_pt": "Quem causa excitação, não quem arrefece estado previamente existente automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade exaltada",
+          "definition": "Experienciador do ânimo excitado no sentido frozen.",
+          "desc_pt": "Entidade exaltada",
+          "definition_pt": "Experienciador do ânimo excitado no sentido frozen."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento de exaltação",
+          "definition": "Instrument independente da causa, não data/duração.",
+          "desc_pt": "Instrumento de exaltação",
+          "definition_pt": "Instrument independente da causa, não data/duração."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002068_SENT005::ânimo::1",
           "sent_ID": "FOLHA_DOC002068_SENT005",
           "text": "Algumas canções novas arrefeceram um tanto o ânimo dos headbangers.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ânimo",
             "char_start": 45,
             "char_end": 50
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos headbangers",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 51,
+                "char_end": 66
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6336,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_995258a79a60b8ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 50
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 51,
+                    "char_end": 66,
+                    "head_token_id": 11,
+                    "head_form": "headbangers",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000034_SENT019::ânimo::1",
           "sent_ID": "FOLHA_DOC000034_SENT019",
           "text": "Os ânimos se acalmaram dias depois.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ânimos",
             "char_start": 3,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 13623,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_995258a79a60b8ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

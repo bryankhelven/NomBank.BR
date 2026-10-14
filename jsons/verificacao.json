@@ -6,24 +6,151 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "verificação · acepção 1",
+      "sense_id": "s_8e8231cf67402389",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_8e8231cf67402389",
+      "frame_id": "f_591c0ff22861c133",
+      "pt_roleset": null,
+      "sense_label": "verificação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "verification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/verification.xml",
+          "source_xml_url": "data/nombank_sources/verification.xml",
+          "source_xml_sha256": "ae66905b43289bf0a60015ee1a040895cd554da83ba3ea3de7776c377cc72e12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Verificador",
+          "definition": "Quem averigua/determina verdade como técnicos, sem fonte de reportagem externa.",
+          "desc_pt": "Verificador",
+          "definition_pt": "Quem averigua/determina verdade como técnicos, sem fonte de reportagem externa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Proposição averiguada",
+          "definition": "Verified conteúdo ligado à mesma verificação, como apenas um tremor, preservando atribuição científica.",
+          "desc_pt": "Proposição averiguada",
+          "definition_pt": "Verified conteúdo ligado à mesma verificação, como apenas um tremor, preservando atribuição científica."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003012_SENT005::verificação::1",
           "sent_ID": "FOLHA_DOC003012_SENT005",
           "text": "Na verificação dos técnicos, no entanto, foi confirmado que se tratava de apenas um tremor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "verificação",
             "char_start": 3,
             "char_end": 14
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos técnicos",
+            "Arg1": "que se tratava de apenas um tremor"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "ccomp"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 56,
+                "char_end": 90
+              }
+            ]
+          },
+          "target_instance_id": 92,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_591c0ff22861c133",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 14
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 15,
+                    "char_end": 27,
+                    "head_token_id": 6,
+                    "head_form": "técnicos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 56,
+                    "char_end": 90,
+                    "head_token_id": 16,
+                    "head_form": "tratava",
+                    "head_deprel": "ccomp"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "verificação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "ccomp": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

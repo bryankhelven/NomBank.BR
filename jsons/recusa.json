@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "recusa · acepção 1",
+      "sense_id": "s_090079f7e60e41a5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_090079f7e60e41a5",
+      "frame_id": "f_973fcbcfc0707923",
+      "pt_roleset": null,
+      "sense_label": "recusa · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "refusal.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/refusal.xml",
+          "source_xml_url": "data/nombank_sources/refusal.xml",
+          "source_xml_sha256": "6a36835df05b75056d9031358901678e27d9a0d51aa6baa9e811c77681d0c26b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Recusante",
+          "definition": "Entity refusing do uruguaio.",
+          "desc_pt": "Recusante",
+          "definition_pt": "Entity refusing do uruguaio."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa recusada",
+          "definition": "Refused action/object especificado.",
+          "desc_pt": "Coisa recusada",
+          "definition_pt": "Refused action/object especificado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parte desfavorecida",
+          "definition": "Anti-beneficiary explicitado, sem contrariedade como prova automática.",
+          "desc_pt": "Parte desfavorecida",
+          "definition_pt": "Anti-beneficiary explicitado, sem contrariedade como prova automática."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003091_SENT013::recusa::1",
           "sent_ID": "FOLHA_DOC003091_SENT013",
           "text": "Após a recusa do uruguaio, o camisa 10 saiu balançando a cabeça negativamente, visivelmente contrariado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recusa",
             "char_start": 7,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do uruguaio",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 14,
+                "char_end": 25
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12910,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_973fcbcfc0707923",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 7,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 14,
+                    "char_end": 25,
+                    "head_token_id": 6,
+                    "head_form": "uruguaio",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "recusa · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

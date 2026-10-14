@@ -6,24 +6,167 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "toque · acepção 1",
+      "sense_id": "s_f11bedb919bde621",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f11bedb919bde621",
+      "frame_id": "f_5e298a514faff975",
+      "pt_roleset": null,
+      "sense_label": "toque · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "touch.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/touch.xml",
+          "source_xml_url": "data/nombank_sources/touch.xml",
+          "source_xml_sha256": "cfe34c8ef7fe05c0722c6f7ad92575176dabf0431f955c2f4c44064042ff62eb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do toque",
+          "definition": "Causal agent de contato físico, zagueiro explícito.",
+          "desc_pt": "Autor do toque",
+          "definition_pt": "Causal agent de contato físico, zagueiro explícito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa tocada",
+          "definition": "Thing touched como pernas de Jô, sem pessoa que viu imagens.",
+          "desc_pt": "Coisa tocada",
+          "definition_pt": "Thing touched como pernas de Jô, sem pessoa que viu imagens."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento de toque",
+          "definition": "Touched with separado, sem imagem/TV meio de ver como instrumento físico.",
+          "desc_pt": "Instrumento de toque",
+          "definition_pt": "Touched with separado, sem imagem/TV meio de ver como instrumento físico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003101_SENT017::toque::1",
           "sent_ID": "FOLHA_DOC003101_SENT017",
           "text": "No segundo lance apontado por Carille, foi possível ver pelas imagens da transmissão de TV o zagueiro Breno dar um toque nas pernas de Jô dentro da área.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "toque",
             "char_start": 115,
             "char_end": 120
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o zagueiro Breno",
+            "Arg1": "nas pernas de Jô",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 91,
+                "char_end": 107
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 121,
+                "char_end": 137
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7427,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5e298a514faff975",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 115,
+                "char_end": 120
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 91,
+                    "char_end": 107,
+                    "head_token_id": 21,
+                    "head_form": "zagueiro",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 121,
+                    "char_end": 137,
+                    "head_token_id": 28,
+                    "head_form": "pernas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "toque · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

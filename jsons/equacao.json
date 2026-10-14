@@ -6,48 +6,276 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000098_SENT016::equação::1",
-          "sent_ID": "FOLHA_DOC000098_SENT016",
-          "text": "Falta, na equação, alguém com dinheiro capaz de esperar 20, 30 anos pelo retorno.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "equação",
-            "char_start": 10,
-            "char_end": 17
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "equação · acepção 1"
+      "sense_label": "equação · acepção 1",
+      "sense_id": "s_4d3115f65b9d3e98",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "equação · acepção 2",
+      "sense_id": "s_79e0e3797046b22c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4d3115f65b9d3e98",
+      "frame_id": "f_f5b432f89e560d62",
+      "pt_roleset": null,
+      "sense_label": "equação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "configuration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/configuration.xml",
+          "source_xml_url": "data/nombank_sources/configuration.xml",
+          "source_xml_sha256": "e70a13b585aa0bd272e814953e4362c765ab1579034f8bd4d640a0d85cd6879a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem organiza",
+          "definition": "Configurador de disposição contextual, sem financiador que falta como agente real.",
+          "desc_pt": "Quem organiza",
+          "definition_pt": "Configurador de disposição contextual, sem financiador que falta como agente real."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conjunto disposto",
+          "definition": "Theme organizado, sem componente ausente convertido no todo.",
+          "desc_pt": "Conjunto disposto",
+          "definition_pt": "Theme organizado, sem componente ausente convertido no todo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Disposição atribuída",
+          "definition": "Value específico do conjunto, não prazo de esperar retorno.",
+          "desc_pt": "Disposição atribuída",
+          "definition_pt": "Value específico do conjunto, não prazo de esperar retorno."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Beneficiário",
+          "definition": "Quem recebe benefício da disposição, quando inequívoco.",
+          "desc_pt": "Beneficiário",
+          "definition_pt": "Quem recebe benefício da disposição, quando inequívoco."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000098_SENT016::equação::1",
+          "sent_ID": "FOLHA_DOC000098_SENT016",
+          "text": "Falta, na equação, alguém com dinheiro capaz de esperar 20, 30 anos pelo retorno.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "equação",
+            "char_start": 10,
+            "char_end": 17
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 44,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f5b432f89e560d62",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 17
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_79e0e3797046b22c",
+      "frame_id": "f_e5cf490d21ac2710",
+      "pt_roleset": null,
+      "sense_label": "equação · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "equation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/equation.xml",
+          "source_xml_url": "data/nombank_sources/equation.xml",
+          "source_xml_sha256": "7c313682601d8924dd83b033049fd9bec4c50b866c8838e26bead610ee755e30",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da fórmula",
+          "definition": "Quem monta método de cálculo, como Fifa.",
+          "desc_pt": "Autor da fórmula",
+          "definition_pt": "Quem monta método de cálculo, como Fifa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo da fórmula",
+          "definition": "Tema/fatores matemáticos expressos, não lista resultado automaticamente.",
+          "desc_pt": "Conteúdo da fórmula",
+          "definition_pt": "Tema/fatores matemáticos expressos, não lista resultado automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fórmula resultante",
+          "definition": "Value incorporado conforme equation REF2 sem conteúdo inventado.",
+          "desc_pt": "Fórmula resultante",
+          "definition_pt": "Value incorporado conforme equation REF2 sem conteúdo inventado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000100_SENT030::equação::1",
           "sent_ID": "FOLHA_DOC000100_SENT030",
           "text": "A lista é montada a cada mês de acordo com equação montada pela Fifa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "equação",
             "char_start": 43,
             "char_end": 50
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pela Fifa",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 472,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e5cf490d21ac2710",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 43,
+                "char_end": 50
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 59,
+                    "char_end": 68,
+                    "head_token_id": 15,
+                    "head_form": "Fifa",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "equação · acepção 2"
+      "syntactic_profile": {
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

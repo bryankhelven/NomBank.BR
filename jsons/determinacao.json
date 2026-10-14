@@ -6,51 +6,373 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_00c42cf37a9dbf02",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_00c42cf37a9dbf02",
+      "frame_id": "f_c19e4ba5d67c2c8e",
+      "pt_roleset": "determinação.03",
+      "sense_label": "determinação.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "order.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/order.xml",
+          "source_xml_url": "data/nombank_sources/order.xml",
+          "source_xml_sha256": "59bf90c964433fab4d183606c22ce749b23675ea1ae1c3131319125731e110b7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor/forçador",
+          "definition": "Autoridade que impõe ordem, inclusive documento normativo por metonímia.",
+          "desc_pt": "Emissor/forçador",
+          "definition_pt": "Autoridade que impõe ordem, inclusive documento normativo por metonímia."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação/estado imposto",
+          "definition": "Conteúdo exigido, incluindo estado resultante imposto; n1/source2 nominal mantido.",
+          "desc_pt": "Ação/estado imposto",
+          "definition_pt": "Conteúdo exigido, incluindo estado resultante imposto; n1/source2 nominal mantido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Agente impelido",
+          "definition": "Executor a quem se ordena agir; n2/source1 mantido, distinto de paciente confinado.",
+          "desc_pt": "Agente impelido",
+          "definition_pt": "Executor a quem se ordena agir; n2/source1 mantido, distinto de paciente confinado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003072_SENT003::determinação::1",
           "sent_ID": "FOLHA_DOC003072_SENT003",
           "text": "Por determinação do governo, o jornalista esteve confinado em Pirassununga (SP) em razão de artigo que escreveu sobre o ex-presidente Castello Branco, no dia de sua morte (18 de julho).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "determinação",
             "char_start": 4,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do governo",
+            "Arg1": "o jornalista esteve confinado em Pirassununga (SP)",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 17,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 29,
+                "char_end": 79
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1651,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c19e4ba5d67c2c8e",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 17,
+                    "char_end": 27,
+                    "head_token_id": 5,
+                    "head_form": "governo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 29,
+                    "char_end": 79,
+                    "head_token_id": 10,
+                    "head_form": "confinado",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003019_SENT005::determinação::1",
           "sent_ID": "FOLHA_DOC003019_SENT005",
           "text": "As instituições financeiras atendem à determinação da Medida Provisória nº 788, de 24 de julho deste ano, de que os bancos devem bloquear de imediato os valores creditados em favor de falecidos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "determinação",
             "char_start": 38,
             "char_end": 50
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da Medida Provisória nº 788, de 24 de julho deste ano",
+            "Arg1": "bloquear de imediato os valores creditados em favor de falecidos",
+            "Arg2": "os bancos"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "xcomp",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 104
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 129,
+                "char_end": 193
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 113,
+                "char_end": 122
+              }
+            ]
+          },
+          "target_instance_id": 3718,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c19e4ba5d67c2c8e",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 50
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 51,
+                    "char_end": 104,
+                    "head_token_id": 10,
+                    "head_form": "Medida",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "char_start": 129,
+                    "char_end": 193,
+                    "head_token_id": 28,
+                    "head_form": "bloquear",
+                    "head_deprel": "xcomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26
+                    ],
+                    "char_start": 113,
+                    "char_end": 122,
+                    "head_token_id": 26,
+                    "head_form": "bancos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000024_SENT006::determinação::1",
           "sent_ID": "FOLHA_DOC000024_SENT006",
           "text": "Em segundo lugar no ranking estão as multas por não cumprir determinação (infração geral, como não comparecer para se explicar sobre reclamação), com 1.535 infrações, e alterar itinerário, com 1.097.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "determinação",
             "char_start": 60,
             "char_end": 72
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12151,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c19e4ba5d67c2c8e",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 72
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "root": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "xcomp": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

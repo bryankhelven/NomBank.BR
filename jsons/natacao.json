@@ -6,24 +6,86 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "natação · acepção 1",
+      "sense_id": "s_8666e8860983b6e0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_8666e8860983b6e0",
+      "frame_id": "f_0c67aed69d090f2d",
+      "pt_roleset": null,
+      "sense_label": "natação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exercise.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exercise.xml",
+          "source_xml_url": "data/nombank_sources/exercise.xml",
+          "source_xml_sha256": "46a96f44b658f075be36833d6e3fa2171530161f3f1a6852e42e6259e9cc85bb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Praticante do exercício",
+          "definition": "Athlete restrito a ginástica corporal ou natação por ocorrência; não emissor de pagamento.",
+          "desc_pt": "Praticante do exercício",
+          "definition_pt": "Athlete restrito a ginástica corporal ou natação por ocorrência; não emissor de pagamento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004090_SENT003::natação::1",
           "sent_ID": "FOLHA_DOC004090_SENT003",
           "text": "Respiro fundo e mergulho no mar cristalino para a sessão de natação mais incrível da minha vida.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "natação",
             "char_start": 60,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null
+          },
+          "syntax": {
+            "Arg0": null
+          },
+          "argument_positions": {
+            "Arg0": []
+          },
+          "target_instance_id": 7485,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c67aed69d090f2d",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "natação · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

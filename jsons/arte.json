@@ -6,48 +6,251 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002025_SENT009::arte::1",
-          "sent_ID": "FOLHA_DOC002025_SENT009",
-          "text": "Também perceptível que ética na política é a mais bonita arte de se dar ao respeito.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "arte",
-            "char_start": 57,
-            "char_end": 61
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "arte · acepção 1"
+      "sense_label": "arte · acepção 1",
+      "sense_id": "s_be83de9807f4ab74",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "arte · acepção 2",
+      "sense_id": "s_640dd898f6755aca",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_be83de9807f4ab74",
+      "frame_id": "f_7807848a0bbc778c",
+      "pt_roleset": null,
+      "sense_label": "arte · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "art.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/art.xml",
+          "source_xml_url": "data/nombank_sources/art.xml",
+          "source_xml_sha256": "a3faa00f6323b3f6dc11acd60b6fb5ee3c3f8068cc0d84044572cd83987f4e43",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Praticante da habilidade",
+          "definition": "Quem pratica/domina modo ou técnica, sem usuário de treinamento automaticamente tomado por mestre.",
+          "desc_pt": "Praticante da habilidade",
+          "definition_pt": "Quem pratica/domina modo ou técnica, sem usuário de treinamento automaticamente tomado por mestre."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação da habilidade",
+          "definition": "Ação/técnica que define arte, extensão do sobrevivência à maneira de se dar ao respeito e domínio marcial.",
+          "desc_pt": "Ação da habilidade",
+          "definition_pt": "Ação/técnica que define arte, extensão do sobrevivência à maneira de se dar ao respeito e domínio marcial."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002025_SENT009::arte::1",
+          "sent_ID": "FOLHA_DOC002025_SENT009",
+          "text": "Também perceptível que ética na política é a mais bonita arte de se dar ao respeito.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "arte",
+            "char_start": 57,
+            "char_end": 61
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de se dar ao respeito"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 62,
+                "char_end": 83
+              }
+            ]
+          },
+          "target_instance_id": 574,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7807848a0bbc778c",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 62,
+                    "char_end": 83,
+                    "head_token_id": 15,
+                    "head_form": "dar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_640dd898f6755aca",
+      "frame_id": "f_533c73dc8f1881c8",
+      "pt_roleset": null,
+      "sense_label": "arte · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "art.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/art.xml",
+          "source_xml_url": "data/nombank_sources/art.xml",
+          "source_xml_sha256": "a3faa00f6323b3f6dc11acd60b6fb5ee3c3f8068cc0d84044572cd83987f4e43",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Praticante da habilidade",
+          "definition": "Quem pratica/domina modo ou técnica, sem usuário de treinamento automaticamente tomado por mestre.",
+          "desc_pt": "Praticante da habilidade",
+          "definition_pt": "Quem pratica/domina modo ou técnica, sem usuário de treinamento automaticamente tomado por mestre."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação da habilidade",
+          "definition": "Ação/técnica que define arte, extensão do sobrevivência à maneira de se dar ao respeito e domínio marcial.",
+          "desc_pt": "Ação da habilidade",
+          "definition_pt": "Ação/técnica que define arte, extensão do sobrevivência à maneira de se dar ao respeito e domínio marcial."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003038_SENT002::arte::1",
           "sent_ID": "FOLHA_DOC003038_SENT002",
           "text": "Olga Curado já usou seu treinamento à base de aikidô (arte marcial japonesa) com os petistas Lula e Dilma Rousseff e o tucano Aécio Neves.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arte",
             "char_start": 54,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "marcial"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ]
+          },
+          "target_instance_id": 5389,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_533c73dc8f1881c8",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 66,
+                    "head_token_id": 14,
+                    "head_form": "marcial",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "arte · acepção 2"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

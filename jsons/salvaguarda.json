@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "salvaguarda · acepção 1",
+      "sense_id": "s_f15be7c06824f0df",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f15be7c06824f0df",
+      "frame_id": "f_c5a64fb04e5c6ed8",
+      "pt_roleset": null,
+      "sense_label": "salvaguarda · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "safeguard.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/safeguard.xml",
+          "source_xml_url": "data/nombank_sources/safeguard.xml",
+          "source_xml_sha256": "448231622f300f907e7ae87e7fe0a44f8f54ef3567fecbe3049e2bd7c7aaeb59",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Protetor",
+          "definition": "Protector das liberdades.",
+          "desc_pt": "Protetor",
+          "definition_pt": "Protector das liberdades."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa protegida",
+          "definition": "Entity protected como liberdades.",
+          "desc_pt": "Coisa protegida",
+          "definition_pt": "Entity protected como liberdades."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Perigo do qual se protege",
+          "definition": "Protected-from explícito, sem preço como perigo/instrumento.",
+          "desc_pt": "Perigo do qual se protege",
+          "definition_pt": "Protected-from explícito, sem preço como perigo/instrumento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002030_SENT023::salvaguarda::1",
           "sent_ID": "FOLHA_DOC002030_SENT023",
           "text": "Desde a formação do Estado nos idos da modernidade, a história nos lembra o alto preço exigido pela salvaguarda das liberdades.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "salvaguarda",
             "char_start": 100,
             "char_end": 111
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "das liberdades",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 112,
+                "char_end": 126
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13495,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c5a64fb04e5c6ed8",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 100,
+                "char_end": 111
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 112,
+                    "char_end": 126,
+                    "head_token_id": 27,
+                    "head_form": "liberdades",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "salvaguarda · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

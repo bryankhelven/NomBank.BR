@@ -6,24 +6,146 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "rejuvenescimento · acepção 1",
+      "sense_id": "s_423c28245f3983d4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_423c28245f3983d4",
+      "frame_id": "f_18d2a738abfd0112",
+      "pt_roleset": null,
+      "sense_label": "rejuvenescimento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rejuvenation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rejuvenation.xml",
+          "source_xml_url": "data/nombank_sources/rejuvenation.xml",
+          "source_xml_sha256": "4d9401d81a8a9438c04ef6289f08026dac68ba9efa65bfed80706955662b9965",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa da revitalização",
+          "definition": "Cause/agent como onda figurativa sob vai determinar, sem redução de idade humana ou fonte externa do fenômeno.",
+          "desc_pt": "Causa da revitalização",
+          "definition_pt": "Cause/agent como onda figurativa sob vai determinar, sem redução de idade humana ou fonte externa do fenômeno."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade revitalizada",
+          "definition": "Entity rejuvenated como agropecuária, conforme economic rejuvenation original.",
+          "desc_pt": "Entidade revitalizada",
+          "definition_pt": "Entity rejuvenated como agropecuária, conforme economic rejuvenation original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001762_SENT014::rejuvenescimento::1",
           "sent_ID": "FOLHA_DOC001762_SENT014",
           "text": "\"Vem vindo uma onda que vai determinar um rejuvenescimento da agropecuária brasileira\", diz Rodrigues.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rejuvenescimento",
             "char_start": 42,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "que",
+            "Arg1": "da agropecuária brasileira"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 20,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 85
+              }
+            ]
+          },
+          "target_instance_id": 2590,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_18d2a738abfd0112",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 20,
+                    "char_end": 23,
+                    "head_token_id": 6,
+                    "head_form": "que",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 85,
+                    "head_token_id": 13,
+                    "head_form": "agropecuária",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "rejuvenescimento · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

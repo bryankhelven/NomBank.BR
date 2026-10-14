@@ -6,80 +6,428 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "veto · acepção 1",
+      "sense_id": "s_3a422b574ff364d1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3a422b574ff364d1",
+      "frame_id": "f_4bdf474612c57aac",
+      "pt_roleset": null,
+      "sense_label": "veto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "veto.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/veto.xml",
+          "source_xml_url": "data/nombank_sources/veto.xml",
+          "source_xml_sha256": "1e1cae8f72c8fe35607290ce465ad0b98bcf9135d34427e1196445653124f399",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "autor do veto",
+          "definition": "Agente ou causa que proíbe ou impede.",
+          "desc_pt": "autor do veto",
+          "definition_pt": "Agente ou causa que proíbe ou impede."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto vetado",
+          "definition": "Entidade, norma ou prática cuja vigência ou ocorrência é vetada.",
+          "desc_pt": "objeto vetado",
+          "definition_pt": "Entidade, norma ou prática cuja vigência ou ocorrência é vetada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo",
+          "definition": "Propriedade atribuída à entidade vetada.",
+          "desc_pt": "atributo",
+          "definition_pt": "Propriedade atribuída à entidade vetada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000017_SENT009::veto::1",
           "sent_ID": "FOLHA_DOC000017_SENT009",
           "text": "Segundo o órgão, houve veto do Conselho Diretor, que determinou o cancelamento da nota fiscal.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "veto",
             "char_start": 23,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do Conselho Diretor",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 47
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 368,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4bdf474612c57aac",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 28,
+                    "char_end": 47,
+                    "head_token_id": 9,
+                    "head_form": "Conselho",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004017_SENT010::veto::1",
           "sent_ID": "FOLHA_DOC004017_SENT010",
           "text": "Não se sabe ainda quais serão os critérios para a permissão ou o veto.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "veto",
             "char_start": 65,
             "char_end": 69
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9596,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4bdf474612c57aac",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 69
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000090_SENT011::veto::1",
           "sent_ID": "FOLHA_DOC000090_SENT011",
           "text": "Coube então a Temer alterar a lei no veto, atendendo a pedido dos senadores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "veto",
             "char_start": 37,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a Temer",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 12,
+                "char_end": 19
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12855,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4bdf474612c57aac",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 12,
+                    "char_end": 19,
+                    "head_token_id": 4,
+                    "head_form": "Temer",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003170_SENT007::veto::1",
           "sent_ID": "FOLHA_DOC003170_SENT007",
           "text": "O veto derrubou uma conquista sofrida -o Brasil havia negociado 17 anos para abrir o mercado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "veto",
             "char_start": 2,
             "char_end": 6
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12945,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4bdf474612c57aac",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 6
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000084_SENT024::veto::1",
           "sent_ID": "FOLHA_DOC000084_SENT024",
           "text": "A cláusula de barreira e veto às coligações proporcionais passaram.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "veto",
             "char_start": 25,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "às coligações proporcionais",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15140,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4bdf474612c57aac",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 30,
+                    "char_end": 57,
+                    "head_token_id": 9,
+                    "head_form": "coligações",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "veto · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

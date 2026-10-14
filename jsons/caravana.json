@@ -6,38 +6,201 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "caravana · acepção 1",
+      "sense_id": "s_ea5bd033a1887c6d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ea5bd033a1887c6d",
+      "frame_id": "f_c3774e0660191bd5",
+      "pt_roleset": null,
+      "sense_label": "caravana · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "group.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/group.xml",
+          "source_xml_url": "data/nombank_sources/group.xml",
+          "source_xml_sha256": "a58212302c1d6680ea1415a77e41225bb30155eabadcf1f1cdf388d8223c0409",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Descrição dos integrantes",
+          "definition": "Quantified/descriptor do grupo de pessoas viajando, sem percurso como conteúdo automaticamente.",
+          "desc_pt": "Descrição dos integrantes",
+          "definition_pt": "Quantified/descriptor do grupo de pessoas viajando, sem percurso como conteúdo automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Titular ou parte associada",
+          "definition": "Employer/leader/member/whole do grupo, inclusive possessivo sua como his group sem resolver relação mais específica.",
+          "desc_pt": "Titular ou parte associada",
+          "definition_pt": "Employer/leader/member/whole do grupo, inclusive possessivo sua como his group sem resolver relação mais específica."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário do grupo",
+          "definition": "Secondary-theme independente, sem local da caravana como núcleo de viagem.",
+          "desc_pt": "Tema secundário do grupo",
+          "definition_pt": "Secondary-theme independente, sem local da caravana como núcleo de viagem."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004047_SENT010::caravana::1",
           "sent_ID": "FOLHA_DOC004047_SENT010",
           "text": "\"E disse que, depois desta caravana, nada consegue abatê-lo\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "caravana",
             "char_start": 27,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 1521,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c3774e0660191bd5",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000077_SENT015::caravana::1",
           "sent_ID": "FOLHA_DOC000077_SENT015",
           "text": "Quem acompanhou sua caravana pelo Nordeste percebeu isso nos olhos das pessoas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "caravana",
             "char_start": 20,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": "sua",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "det",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 16,
+                "char_end": 19
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 4795,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c3774e0660191bd5",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 16,
+                    "char_end": 19,
+                    "head_token_id": 3,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "caravana · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

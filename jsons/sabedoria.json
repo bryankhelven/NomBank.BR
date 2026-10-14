@@ -6,38 +6,213 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sabedoria · acepção 1",
+      "sense_id": "s_3179a0d0354c9fc0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3179a0d0354c9fc0",
+      "frame_id": "f_dcb52445e1ae038b",
+      "pt_roleset": null,
+      "sense_label": "sabedoria · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "wisdom.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/wisdom.xml",
+          "source_xml_url": "data/nombank_sources/wisdom.xml",
+          "source_xml_sha256": "ed8cf6594952d7562f9fd685524d444bc0b832d42c9c7f94979a2ff61aeb5394",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular sensato",
+          "definition": "Experienciador de bom senso, incluindo órgão sob negação.",
+          "desc_pt": "Titular sensato",
+          "definition_pt": "Experienciador de bom senso, incluindo órgão sob negação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação/tema sensatos",
+          "definition": "Conteúdo/domínio de sensatez, extensão do letting markets operate à ação que demanda julgamento.",
+          "desc_pt": "Ação/tema sensatos",
+          "definition_pt": "Conteúdo/domínio de sensatez, extensão do letting markets operate à ação que demanda julgamento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001401_SENT003::sabedoria::1",
           "sent_ID": "FOLHA_DOC001401_SENT003",
           "text": "A Primeira Turma do STF não teve essa sabedoria.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sabedoria",
             "char_start": 38,
             "char_end": 47
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A Primeira Turma do STF",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 23
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 3831,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dcb52445e1ae038b",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 0,
+                    "char_end": 23,
+                    "head_token_id": 2,
+                    "head_form": "Primeira",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001401_SENT002::sabedoria::1",
           "sent_ID": "FOLHA_DOC001401_SENT002",
           "text": "É preciso sabedoria para ter poder nas mãos e resistir à tentação de exercê-lo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sabedoria",
             "char_start": 10,
             "char_end": 19
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "para ter poder nas mãos e resistir à tentação de exercê-lo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "advcl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 20,
+                "char_end": 78
+              }
+            ]
+          },
+          "target_instance_id": 6991,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dcb52445e1ae038b",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 19
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 20,
+                    "char_end": 78,
+                    "head_token_id": 5,
+                    "head_form": "ter",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sabedoria · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

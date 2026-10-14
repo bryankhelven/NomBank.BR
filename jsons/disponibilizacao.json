@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "disponibilização · acepção 1",
+      "sense_id": "s_0619761fffd950ec",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0619761fffd950ec",
+      "frame_id": "f_80eeff947ac2450a",
+      "pt_roleset": null,
+      "sense_label": "disponibilização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "provision.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/provision.xml",
+          "source_xml_url": "data/nombank_sources/provision.xml",
+          "source_xml_sha256": "49db942f4eadd78a14f730811090b1ca710a9aef7e12160b2e70cc429bf0f0e6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Disponibilizador",
+          "definition": "Provider de ato de facultar acesso, extensão de provide/give a mensagens, não estado available.",
+          "desc_pt": "Disponibilizador",
+          "definition_pt": "Provider de ato de facultar acesso, extensão de provide/give a mensagens, não estado available."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa disponibilizada",
+          "definition": "Thing provided como mensagens.",
+          "desc_pt": "Coisa disponibilizada",
+          "definition_pt": "Thing provided como mensagens."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário ou finalidade",
+          "definition": "Beneficiary/purpose explícito, sem investigação sob risco como destinatário automático.",
+          "desc_pt": "Destinatário ou finalidade",
+          "definition_pt": "Beneficiary/purpose explícito, sem investigação sob risco como destinatário automático."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000017_SENT013::disponibilização::1",
           "sent_ID": "FOLHA_DOC000017_SENT013",
           "text": "O magistrado entendeu que até a disponibilização dessas mensagens, há risco à investigação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "disponibilização",
             "char_start": 32,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dessas mensagens",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 49,
+                "char_end": 65
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14871,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_80eeff947ac2450a",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 49,
+                    "char_end": 65,
+                    "head_token_id": 10,
+                    "head_form": "mensagens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "disponibilização · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

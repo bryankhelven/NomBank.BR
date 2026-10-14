@@ -6,108 +6,654 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "receio · acepção 1",
+      "sense_id": "s_bbc304ee332b39c5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_bbc304ee332b39c5",
+      "frame_id": "f_e808175fcf61015d",
+      "pt_roleset": null,
+      "sense_label": "receio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fear.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fear.xml",
+          "source_xml_url": "data/nombank_sources/fear.xml",
+          "source_xml_sha256": "67170ce00679ebdcd156e0cda54f94d6d7a7fb421231c1446d7c74b2c76f9f1d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "experienciador",
+          "definition": "Entidade que sente receio.",
+          "desc_pt": "experienciador",
+          "definition_pt": "Entidade que sente receio."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo temido",
+          "definition": "Proposição, ação ou objeto do receio.",
+          "desc_pt": "conteúdo temido",
+          "definition_pt": "Proposição, ação ou objeto do receio."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000136_SENT005::receio::1",
           "sent_ID": "FOLHA_DOC000136_SENT005",
           "text": "A obsessão em cumprir uma promessa a Nossa Senhora de Nazaré venceu o que havia de receio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 83,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 727,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000044_SENT083::receio::1",
           "sent_ID": "FOLHA_DOC000044_SENT083",
           "text": "Ou seja: ninguém deve ter receio, vergonha ou preguiça de perguntar, pesquisar e pedir ajuda.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 26,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ninguém",
+            "Arg1": "de perguntar, pesquisar e pedir ajuda"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 92
+              }
+            ]
+          },
+          "target_instance_id": 3022,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 26,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 9,
+                    "char_end": 16,
+                    "head_token_id": 4,
+                    "head_form": "ninguém",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 55,
+                    "char_end": 92,
+                    "head_token_id": 13,
+                    "head_form": "perguntar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000045_SENT008::receio::1",
           "sent_ID": "FOLHA_DOC000045_SENT008",
           "text": "Há receio de que ele aproveite a plenária para declarar a independência da Catalunha.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 3,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de que ele aproveite a plenária para declarar a independência da Catalunha"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 10,
+                "char_end": 84
+              }
+            ]
+          },
+          "target_instance_id": 5270,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 10,
+                    "char_end": 84,
+                    "head_token_id": 6,
+                    "head_form": "aproveite",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003053_SENT023::receio::1",
           "sent_ID": "FOLHA_DOC003053_SENT023",
           "text": "O maior receio dos bancos credores é que a crise atrapalhe as vendas de outros ativos do grupo, comprometendo a entrada de recursos para pagar dívidas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 8,
             "char_end": 14
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos bancos credores",
+            "Arg1": "que a crise atrapalhe as vendas de outros ativos do grupo, comprometendo a entrada de recursos para pagar dívidas"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 34
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 37,
+                "char_end": 150
+              }
+            ]
+          },
+          "target_instance_id": 5322,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 14
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 15,
+                    "char_end": 34,
+                    "head_token_id": 6,
+                    "head_form": "bancos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "char_start": 37,
+                    "char_end": 150,
+                    "head_token_id": 12,
+                    "head_form": "atrapalhe",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003112_SENT026::receio::1",
           "sent_ID": "FOLHA_DOC003112_SENT026",
           "text": "O maior receio dos bancos é que a crise atrapalhe as vendas de outros ativos do grupo, comprometendo a entrada de recursos para pagar dívidas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 8,
             "char_end": 14
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos bancos",
+            "Arg1": "que a crise atrapalhe as vendas de outros ativos do grupo, comprometendo a entrada de recursos para pagar dívidas"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "root"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 25
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 28,
+                "char_end": 141
+              }
+            ]
+          },
+          "target_instance_id": 5609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 14
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 15,
+                    "char_end": 25,
+                    "head_token_id": 6,
+                    "head_form": "bancos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 28,
+                    "char_end": 141,
+                    "head_token_id": 11,
+                    "head_form": "atrapalhe",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004015_SENT017::receio::1",
           "sent_ID": "FOLHA_DOC004015_SENT017",
           "text": "Compreende-se que a sociedade veja com receio as concessões feitas a grupos que causaram tanto sofrimento ao país.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 39,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a sociedade",
+            "Arg1": "as concessões feitas a grupos que causaram tanto sofrimento ao país"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 29
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 46,
+                "char_end": 113
+              }
+            ]
+          },
+          "target_instance_id": 7255,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 18,
+                    "char_end": 29,
+                    "head_token_id": 5,
+                    "head_form": "sociedade",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 46,
+                    "char_end": 113,
+                    "head_token_id": 10,
+                    "head_form": "concessões",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT098::receio::1",
           "sent_ID": "FOLHA_DOC003035_SENT098",
           "text": "Perguntei se não poderia ser na PGR e ele disse que havia receio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "receio",
             "char_start": 58,
             "char_end": 64
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 12941,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e808175fcf61015d",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "receio · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0
+        },
+        "root": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

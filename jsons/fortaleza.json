@@ -6,24 +6,140 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "fortaleza · acepção 1",
+      "sense_id": "s_858ff2de995d6a17",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_858ff2de995d6a17",
+      "frame_id": "f_5c5d9915334b4eec",
+      "pt_roleset": null,
+      "sense_label": "fortaleza · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "strength.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/strength.xml",
+          "source_xml_url": "data/nombank_sources/strength.xml",
+          "source_xml_sha256": "96a60fe641d27c95a9d442aa5ffe5450ebcccbea90e8282c92100a8f97dc3b5c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador da fortaleza",
+          "definition": "Theme com força psicológica, sem flexão verbal ou clítico parcial como token nominal inventado.",
+          "desc_pt": "Portador da fortaleza",
+          "definition_pt": "Theme com força psicológica, sem flexão verbal ou clítico parcial como token nominal inventado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor da força",
+          "definition": "Value incorporado conforme strengths REF2.",
+          "desc_pt": "Valor da força",
+          "definition_pt": "Value incorporado conforme strengths REF2."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Aspecto da força",
+          "definition": "Secondary-theme mental como domínio da força, não castelo físico.",
+          "desc_pt": "Aspecto da força",
+          "definition_pt": "Secondary-theme mental como domínio da força, não castelo físico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003178_SENT056::fortaleza::1",
           "sent_ID": "FOLHA_DOC003178_SENT056",
           "text": "\"Tenho uma fortaleza mental\", diz, com um sorriso contido que parece querer a todo custo contradizê-lo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fortaleza",
             "char_start": 11,
             "char_end": 20
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "mental"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 21,
+                "char_end": 27
+              }
+            ]
+          },
+          "target_instance_id": 11639,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5c5d9915334b4eec",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 20
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 21,
+                    "char_end": 27,
+                    "head_token_id": 5,
+                    "head_form": "mental",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "fortaleza · acepção 1"
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 1
+        }
+      }
     }
   ]
 }

@@ -6,60 +6,367 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003273_SENT013::combinação::1",
-          "sent_ID": "FOLHA_DOC003273_SENT013",
-          "text": "A empresa também disse no passado que estava aberta a uma combinação estratégica na região.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "combinação",
-            "char_start": 58,
-            "char_end": 68
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_1b25b8174291f61f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "combinação.03",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_d3e08df27b9b719a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1b25b8174291f61f",
+      "frame_id": "f_db51e11226cdea2b",
+      "pt_roleset": "combinação.06",
+      "sense_label": "combinação.06",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "agreement.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/agreement.xml",
+          "source_xml_url": "data/nombank_sources/agreement.xml",
+          "source_xml_sha256": "fabc6916d516b14824852e630b55d7a99f1c17544b1e70685b970000fc933fd7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Primeira parte",
+          "definition": "Participante que concorda ou se dispõe ao acordo.",
+          "desc_pt": "Primeira parte",
+          "definition_pt": "Participante que concorda ou se dispõe ao acordo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo",
+          "definition": "Proposição objeto do acordo.",
+          "desc_pt": "Conteúdo",
+          "definition_pt": "Proposição objeto do acordo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Outra parte",
+          "definition": "Contraparte separada do acordo.",
+          "desc_pt": "Outra parte",
+          "definition_pt": "Contraparte separada do acordo."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003273_SENT013::combinação::1",
+          "sent_ID": "FOLHA_DOC003273_SENT013",
+          "text": "A empresa também disse no passado que estava aberta a uma combinação estratégica na região.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "combinação",
+            "char_start": 58,
+            "char_end": 68
+          },
+          "realization": {
+            "Arg0": "A empresa",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 9
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2285,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_db51e11226cdea2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 9,
+                    "head_token_id": 2,
+                    "head_form": "empresa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_d3e08df27b9b719a",
+      "frame_id": "f_fa38dc115f291932",
+      "pt_roleset": "combinação.03",
+      "sense_label": "combinação.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "combination.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/combination.xml",
+          "source_xml_url": "data/nombank_sources/combination.xml",
+          "source_xml_sha256": "7b9aa6e8578672875f151c6f6cafff7116e170c790145a0e6bcedf089161d222",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Misturador",
+          "definition": "Agente da combinação.",
+          "desc_pt": "Misturador",
+          "definition_pt": "Agente da combinação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ingredientes",
+          "definition": "Primeiro ingrediente ou grupo explicitamente conjunto por adaptação merged.",
+          "desc_pt": "Ingredientes",
+          "definition_pt": "Primeiro ingrediente ou grupo explicitamente conjunto por adaptação merged."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Outro ingrediente",
+          "definition": "Segundo ingrediente separado, sem inventar divisão.",
+          "desc_pt": "Outro ingrediente",
+          "definition_pt": "Segundo ingrediente separado, sem inventar divisão."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Produto combinado",
+          "definition": "Produto da mistura, incorporado no próprio REL conforme exemplo original, distinto de mera consequência causal.",
+          "desc_pt": "Produto combinado",
+          "definition_pt": "Produto da mistura, incorporado no próprio REL conforme exemplo original, distinto de mera consequência causal."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002041_SENT023::combinação::1",
           "sent_ID": "FOLHA_DOC002041_SENT023",
           "text": "Foi esta combinação que permitiu a Joesley Batista pagar tão pouco imposto para tamanha renda total.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "combinação",
             "char_start": 9,
             "char_end": 19
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 4741,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fa38dc115f291932",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 19
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003151_SENT004::combinação::1",
           "sent_ID": "FOLHA_DOC003151_SENT004",
           "text": "A disposição para trocar de trabalho com frequência é resultado de uma combinação de fatores, dizem consultores de RH.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "combinação",
             "char_start": 71,
             "char_end": 81
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de fatores",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 82,
+                "char_end": 92
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 9045,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fa38dc115f291932",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 81
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 82,
+                    "char_end": 92,
+                    "head_token_id": 15,
+                    "head_form": "fatores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

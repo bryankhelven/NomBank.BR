@@ -6,65 +6,474 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b611686bade0d62f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b611686bade0d62f",
+      "frame_id": "f_0c30682bb5015441",
+      "pt_roleset": "decorrência.01",
+      "sense_label": "decorrência.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "consequence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/consequence.xml",
+          "source_xml_url": "data/nombank_sources/consequence.xml",
+          "source_xml_sha256": "8bc0a816a016c34e9eae457fa00967910fed01f5a6b88270c9defe78f33ddede",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causa",
+          "definition": "Forcer/causer original decision/of appropriations; doenças,movimento,conflitos,corrupção causas citadas,não validadas.",
+          "desc_pt": "Causa",
+          "definition_pt": "Forcer/causer original decision/of appropriations; doenças,movimento,conflitos,corrupção causas citadas,não validadas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Efeito",
+          "definition": "Impelled action original billion-dollar/No Money...; morte negada,quedas,morrem e levar à morte efeitos nominais/proposicionais locais.",
+          "desc_pt": "Efeito",
+          "definition_pt": "Impelled action original billion-dollar/No Money...; morte negada,quedas,morrem e levar à morte efeitos nominais/proposicionais locais."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário do efeito",
+          "definition": "Beneficiary original for manufacturers; pacientes assistidos/atores da morte não beneficiário automaticamente.",
+          "desc_pt": "Beneficiário do efeito",
+          "definition_pt": "Beneficiary original for manufacturers; pacientes assistidos/atores da morte não beneficiário automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003001_SENT014::decorrência::1",
           "sent_ID": "FOLHA_DOC003001_SENT014",
           "text": "Posteriormente, esses casos foram acompanhados e assistidos de perto pelo poder público, o que certamente contribuiu para que não houvesse nenhuma morte em decorrência dessas doenças.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "decorrência",
             "char_start": 156,
             "char_end": 167
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dessas doenças",
+            "Arg1": "nenhuma morte",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 168,
+                "char_end": 182
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 139,
+                "char_end": 152
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2714,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c30682bb5015441",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 156,
+                "char_end": 167
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 168,
+                    "char_end": 182,
+                    "head_token_id": 30,
+                    "head_form": "doenças",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25
+                    ],
+                    "char_start": 139,
+                    "char_end": 152,
+                    "head_token_id": 25,
+                    "head_form": "morte",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000154_SENT011::decorrência::1",
           "sent_ID": "FOLHA_DOC000154_SENT011",
           "text": "As quedas de vendas de combustíveis ocorreram em decorrência desse movimento das companhias.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "decorrência",
             "char_start": 49,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "desse movimento das companhias",
+            "Arg1": "As quedas de vendas de combustíveis",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 61,
+                "char_end": 91
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 35
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9619,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c30682bb5015441",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 61,
+                    "char_end": 91,
+                    "head_token_id": 12,
+                    "head_form": "movimento",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 0,
+                    "char_end": 35,
+                    "head_token_id": 2,
+                    "head_form": "quedas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004070_SENT028::decorrência::1",
           "sent_ID": "FOLHA_DOC004070_SENT028",
           "text": "Também há aqueles que atuam no crime e morrem em decorrência de conflitos, em acertos de conta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "decorrência",
             "char_start": 49,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de conflitos",
+            "Arg1": "morrem",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "conj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 61,
+                "char_end": 73
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 39,
+                "char_end": 45
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13162,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c30682bb5015441",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 61,
+                    "char_end": 73,
+                    "head_token_id": 14,
+                    "head_form": "conflitos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 39,
+                    "char_end": 45,
+                    "head_token_id": 10,
+                    "head_form": "morrem",
+                    "head_deprel": "conj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003187_SENT019::decorrência::1",
           "sent_ID": "FOLHA_DOC003187_SENT019",
           "text": "Ladrão do erário, que leva pessoas à morte em decorrência da corrupção, merece cadeia, e não condescendência.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "decorrência",
             "char_start": 46,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da corrupção",
+            "Arg1": "leva pessoas à morte",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl:relcl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 58,
+                "char_end": 70
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 22,
+                "char_end": 42
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14787,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c30682bb5015441",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 58,
+                    "char_end": 70,
+                    "head_token_id": 16,
+                    "head_form": "corrupção",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 22,
+                    "char_end": 42,
+                    "head_token_id": 7,
+                    "head_form": "leva",
+                    "head_deprel": "acl:relcl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 4,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "conj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "acl:relcl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "elo · acepção 1",
+      "sense_id": "s_7a5558d9f71e5ef4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7a5558d9f71e5ef4",
+      "frame_id": "f_16acf544547e5e88",
+      "pt_roleset": null,
+      "sense_label": "elo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "link.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/link.xml",
+          "source_xml_url": "data/nombank_sources/link.xml",
+          "source_xml_sha256": "078adc6536431598951fbdf8dd7d2dd26ef481c269b3a78238e95c8ffe049777",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador da ligação",
+          "definition": "Entity tying/agent, sem investigadores que averiguam possível elo necessariamente criadores.",
+          "desc_pt": "Criador da ligação",
+          "definition_pt": "Entity tying/agent, sem investigadores que averiguam possível elo necessariamente criadores."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Primeiro termo ligado",
+          "definition": "Patient como estragos na cidade.",
+          "desc_pt": "Primeiro termo ligado",
+          "definition_pt": "Patient como estragos na cidade."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Segundo termo ligado",
+          "definition": "Patient2 como abalos, sem inferir causalidade real pela presença de possível elo.",
+          "desc_pt": "Segundo termo ligado",
+          "definition_pt": "Patient2 como abalos, sem inferir causalidade real pela presença de possível elo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003012_SENT011::elo::1",
           "sent_ID": "FOLHA_DOC003012_SENT011",
           "text": "À época, o geólogo José Paulo Pinese, docente da UEL que estuda os tremores, disse que estavam investigando com cautela um possível elo entre estragos na cidade e os abalos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "elo",
             "char_start": 132,
             "char_end": 135
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "entre estragos na cidade",
+            "Arg2": "os abalos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "conj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 136,
+                "char_end": 160
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 163,
+                "char_end": 172
+              }
+            ]
+          },
+          "target_instance_id": 9104,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_16acf544547e5e88",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 132,
+                "char_end": 135
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29,
+                      30,
+                      31,
+                      32,
+                      33
+                    ],
+                    "char_start": 136,
+                    "char_end": 160,
+                    "head_token_id": 30,
+                    "head_form": "estragos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      35,
+                      36
+                    ],
+                    "char_start": 163,
+                    "char_end": 172,
+                    "head_token_id": 36,
+                    "head_form": "abalos",
+                    "head_deprel": "conj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "elo · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "conj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

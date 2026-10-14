@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "sensualidade · acepção 1",
+      "sense_id": "s_1af1bda9fa0b5e09",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1af1bda9fa0b5e09",
+      "frame_id": "f_a1b8a2daa961cbf0",
+      "pt_roleset": null,
+      "sense_label": "sensualidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "sensuality.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/sensuality.xml",
+          "source_xml_url": "data/nombank_sources/sensuality.xml",
+          "source_xml_sha256": "9a2de9cf89e77648fca87341a4ea99d4dab9ac0e45c9179006a25900604b9250",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador da sensualidade",
+          "definition": "Theme expressivo/artístico que simboliza volúpia, como picture sensuality original.",
+          "desc_pt": "Portador da sensualidade",
+          "definition_pt": "Theme expressivo/artístico que simboliza volúpia, como picture sensuality original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor sensual",
+          "definition": "Value lexical incorporado SELF2, sem pessoa desejante ou ato sexual novo.",
+          "desc_pt": "Valor sensual",
+          "definition_pt": "Value lexical incorporado SELF2, sem pessoa desejante ou ato sexual novo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002003_SENT013::sensualidade::1",
           "sent_ID": "FOLHA_DOC002003_SENT013",
           "text": "Foi o teor militante que abriu espaço para essa onda selvagem que, ironicamente, no século passado era emblema de sensualidade e extravagância.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sensualidade",
             "char_start": 114,
             "char_end": 126
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "essa onda selvagem",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 43,
+                "char_end": 61
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3363,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a1b8a2daa961cbf0",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 114,
+                "char_end": 126
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 43,
+                    "char_end": 61,
+                    "head_token_id": 10,
+                    "head_form": "onda",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "sensualidade · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

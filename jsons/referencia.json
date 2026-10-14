@@ -8,20 +8,6 @@
       "roles": null,
       "instances": [
         {
-          "instance_id": "FOLHA_DOC004017_SENT004::referência::1",
-          "sent_ID": "FOLHA_DOC004017_SENT004",
-          "text": "A declaração é uma referência a seus adversários, que não reconhecem a Casa chavista e a consideram uma fraude.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "referência",
-            "char_start": 19,
-            "char_end": 29
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
           "instance_id": "FOLHA_DOC000162_SENT019::referência::1",
           "sent_ID": "FOLHA_DOC000162_SENT019",
           "text": "No salão infantil, crianças se esbaldaram com as referências da artista japonesa.",
@@ -33,80 +19,730 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 12254,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_id": "s_0f5234e1e65dba62",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0f5234e1e65dba62",
+      "frame_id": "f_6500c6ffdfd895c1",
+      "pt_roleset": "referência.01",
+      "sense_label": "referência.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reference.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reference.xml",
+          "source_xml_url": "data/nombank_sources/reference.xml",
+          "source_xml_sha256": "620136942215304d2c8d5fd4b020dbaeabcf6d5e5c4fe3c7f4c62393eca877f4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da alusão",
+          "definition": "Labeller original; genitivo ambíguo não determina autor.",
+          "desc_pt": "Autor da alusão",
+          "definition_pt": "Labeller original; genitivo ambíguo não determina autor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo da alusão",
+          "definition": "Labelled original, pessoa/obra/assunto referido.",
+          "desc_pt": "Alvo da alusão",
+          "definition_pt": "Labelled original, pessoa/obra/assunto referido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Conteúdo ou significante da alusão",
+          "definition": "Label original; genericamente incorpora Arg2 conforme references REF, ou span independente de declaração. Estátuas/ruas são extensão local de significante material.",
+          "desc_pt": "Conteúdo ou significante da alusão",
+          "definition_pt": "Label original; genericamente incorpora Arg2 conforme references REF, ou span independente de declaração. Estátuas/ruas são extensão local de significante material."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004017_SENT004::referência::1",
+          "sent_ID": "FOLHA_DOC004017_SENT004",
+          "text": "A declaração é uma referência a seus adversários, que não reconhecem a Casa chavista e a consideram uma fraude.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "referência",
+            "char_start": 19,
+            "char_end": 29
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a seus adversários, que não reconhecem a Casa chavista e a consideram uma fraude",
+            "Arg2": "A declaração"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 110
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 12
+              }
+            ]
+          },
+          "target_instance_id": 3776,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6500c6ffdfd895c1",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 30,
+                    "char_end": 110,
+                    "head_token_id": 8,
+                    "head_form": "adversários",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 12,
+                    "head_token_id": 2,
+                    "head_form": "declaração",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003272_SENT050::referência::1",
           "sent_ID": "FOLHA_DOC003272_SENT050",
           "text": "Enquanto isso, referências ao filme Matrix servem para valorizar o discurso dos terraplanistas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "referências",
             "char_start": 15,
             "char_end": 26
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "ao filme Matrix",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 27,
+                "char_end": 42
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13073,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6500c6ffdfd895c1",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 27,
+                    "char_end": 42,
+                    "head_token_id": 7,
+                    "head_form": "filme",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000111_SENT004::referência::1",
           "sent_ID": "FOLHA_DOC000111_SENT004",
           "text": "Quase não há referências a ele na forma de estátuas ou ruas no país.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "referências",
             "char_start": 13,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a ele",
+            "Arg2": "na forma de estátuas ou ruas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 30
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 31,
+                "char_end": 59
+              }
+            ]
+          },
+          "target_instance_id": 13144,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6500c6ffdfd895c1",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 25,
+                    "char_end": 30,
+                    "head_token_id": 6,
+                    "head_form": "ele",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 31,
+                    "char_end": 59,
+                    "head_token_id": 9,
+                    "head_form": "forma",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 3,
+          "Arg2": 1
         },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_0f5234e1e65dba62",
+      "frame_id": "f_f152f412aaf993c9",
+      "pt_roleset": "referência.01",
+      "sense_label": "referência.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reference.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reference.xml",
+          "source_xml_url": "data/nombank_sources/reference.xml",
+          "source_xml_sha256": "620136942215304d2c8d5fd4b020dbaeabcf6d5e5c4fe3c7f4c62393eca877f4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fonte da alusão",
+          "definition": "Quem/qual artefato faz referência, inclusive símbolo/coleção por extensão de its original.",
+          "desc_pt": "Fonte da alusão",
+          "definition_pt": "Quem/qual artefato faz referência, inclusive símbolo/coleção por extensão de its original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Referido",
+          "definition": "Matéria aludida, incluindo motivo visual contextual explicitamente ligado à referência.",
+          "desc_pt": "Referido",
+          "definition_pt": "Matéria aludida, incluindo motivo visual contextual explicitamente ligado à referência."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Expressão alusiva",
+          "definition": "Label incorporado no REL conforme references REF2 original, sem duplicar inscrição em outro papel.",
+          "desc_pt": "Expressão alusiva",
+          "definition_pt": "Label incorporado no REL conforme references REF2 original, sem duplicar inscrição em outro papel."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003033_SENT007::referência::1",
           "sent_ID": "FOLHA_DOC003033_SENT007",
           "text": "O símbolo, em formato de coração e com a inscrição \"SP\", faz referência ao programa de zeladoria Cidade Linda, prioridade de Doria.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "referência",
             "char_start": 61,
             "char_end": 71
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O símbolo, em formato de coração e com a inscrição \"SP\",",
+            "Arg1": "ao programa de zeladoria Cidade Linda, prioridade de Doria",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 56
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 72,
+                "char_end": 130
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13469,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f152f412aaf993c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 71
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 0,
+                    "char_end": 56,
+                    "head_token_id": 2,
+                    "head_form": "símbolo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 72,
+                    "char_end": 130,
+                    "head_token_id": 20,
+                    "head_form": "programa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002035_SENT024::referência::1",
           "sent_ID": "FOLHA_DOC002035_SENT024",
           "text": "É recomendável procurar referências do nome da pessoa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "referências",
             "char_start": 24,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do nome da pessoa",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 53
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15128,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f152f412aaf993c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 36,
+                    "char_end": 53,
+                    "head_token_id": 7,
+                    "head_form": "nome",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002003_SENT005::referência::1",
           "sent_ID": "FOLHA_DOC002003_SENT005",
           "text": "Marcas indissociáveis do selo \"made in Italy\" cortaram panos de leopardo, onça, vaca e cobra na savana de referências de suas coleções.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "referências",
             "char_start": 106,
             "char_end": 117
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de suas coleções",
+            "Arg1": "de leopardo, onça, vaca e cobra",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 118,
+                "char_end": 134
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 61,
+                "char_end": 92
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15329,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f152f412aaf993c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 106,
+                "char_end": 117
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 118,
+                    "char_end": 134,
+                    "head_token_id": 28,
+                    "head_form": "coleções",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 61,
+                    "char_end": 92,
+                    "head_token_id": 14,
+                    "head_form": "leopardo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 3,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

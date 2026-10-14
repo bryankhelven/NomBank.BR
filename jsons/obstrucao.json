@@ -6,66 +6,390 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "obstrução · acepção 1",
+      "sense_id": "s_730fc12ade41fa36",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_730fc12ade41fa36",
+      "frame_id": "f_e8cffcc787377b0a",
+      "pt_roleset": null,
+      "sense_label": "obstrução · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "obstruction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/obstruction.xml",
+          "source_xml_url": "data/nombank_sources/obstruction.xml",
+          "source_xml_sha256": "9fde047ac567684e1099c0d1027e89548d7ea52ceae575dfa2279747f67170d1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "obstrutor",
+          "definition": "Agente ou causa que obstrui; ato obstrutor não pessoal documentado localmente.",
+          "desc_pt": "obstrutor",
+          "definition_pt": "Agente ou causa que obstrui; ato obstrutor não pessoal documentado localmente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto obstruído",
+          "definition": "Entidade ou atividade impedida pela obstrução.",
+          "desc_pt": "objeto obstruído",
+          "definition_pt": "Entidade ou atividade impedida pela obstrução."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003218_SENT019::obstrução::1",
           "sent_ID": "FOLHA_DOC003218_SENT019",
           "text": "Agora, usou o argumento de que não consumaram a idealizada obstrução de justiça, inexistindo o delito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obstrução",
             "char_start": 59,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de justiça"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 79
+              }
+            ]
+          },
+          "target_instance_id": 617,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e8cffcc787377b0a",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 69,
+                    "char_end": 79,
+                    "head_token_id": 14,
+                    "head_form": "justiça",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT118::obstrução::1",
           "sent_ID": "FOLHA_DOC003035_SENT118",
           "text": "O sr. passou essa gravação para o advogado da JBS, o que a PGR entende como tentativa de obstrução de Justiça e vazamento de dados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obstrução",
             "char_start": 89,
             "char_end": 98
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O sr.",
+            "Arg1": "de Justiça"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 99,
+                "char_end": 109
+              }
+            ]
+          },
+          "target_instance_id": 3597,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e8cffcc787377b0a",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 89,
+                "char_end": 98
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 5,
+                    "head_token_id": 2,
+                    "head_form": "sr.",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23
+                    ],
+                    "char_start": 99,
+                    "char_end": 109,
+                    "head_token_id": 23,
+                    "head_form": "Justiça",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT008::obstrução::1",
           "sent_ID": "FOLHA_DOC003035_SENT008",
           "text": "Alvo da Operação Patmos, de 18 de maio, ele foi denunciado por corrupção passiva, violação de sigilo funcional e obstrução de Justiça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obstrução",
             "char_start": 113,
             "char_end": 122
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "de Justiça"
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 40,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 123,
+                "char_end": 133
+              }
+            ]
+          },
+          "target_instance_id": 5732,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e8cffcc787377b0a",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 113,
+                "char_end": 122
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 40,
+                    "char_end": 43,
+                    "head_token_id": 12,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26
+                    ],
+                    "char_start": 123,
+                    "char_end": 133,
+                    "head_token_id": 26,
+                    "head_form": "Justiça",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004119_SENT012::obstrução::1",
           "sent_ID": "FOLHA_DOC004119_SENT012",
           "text": "Suas declarações, no entender do Supremo, tipificavam o crime de obstrução da Justiça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obstrução",
             "char_start": 65,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Suas declarações",
+            "Arg1": "da Justiça"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 16
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 75,
+                "char_end": 85
+              }
+            ]
+          },
+          "target_instance_id": 7916,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e8cffcc787377b0a",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 16,
+                    "head_token_id": 2,
+                    "head_form": "declarações",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 75,
+                    "char_end": 85,
+                    "head_token_id": 18,
+                    "head_form": "Justiça",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "obstrução · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 4
+        },
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0
+        },
+        "nsubj:pass": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

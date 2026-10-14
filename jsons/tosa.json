@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "tosa · acepção 1",
+      "sense_id": "s_40d3f14587f5ea1a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_40d3f14587f5ea1a",
+      "frame_id": "f_6183590b0e7400c4",
+      "pt_roleset": null,
+      "sense_label": "tosa · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "clipping.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/clipping.xml",
+          "source_xml_url": "data/nombank_sources/clipping.xml",
+          "source_xml_sha256": "07a420875db3fc798e7bfed89c20e2c715ba9483d56bda2c21ac33350c63af5e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Tosador",
+          "definition": "Clipper/agent restrito a cortar pelos.",
+          "desc_pt": "Tosador",
+          "definition_pt": "Clipper/agent restrito a cortar pelos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pelos cortados",
+          "definition": "Thing clipped explicitada, sem objeto de recorte jornalístico importado.",
+          "desc_pt": "Pelos cortados",
+          "definition_pt": "Thing clipped explicitada, sem objeto de recorte jornalístico importado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Animal de origem dos pelos",
+          "definition": "Clipped-from, restrito ao bicho de que se cortam pelos na tosa, sem selecionar clítico parcial.",
+          "desc_pt": "Animal de origem dos pelos",
+          "definition_pt": "Clipped-from, restrito ao bicho de que se cortam pelos na tosa, sem selecionar clítico parcial."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003121_SENT006::tosa::1",
           "sent_ID": "FOLHA_DOC003121_SENT006",
           "text": "Enquanto isso, o dono pode ou não acompanhar a diversão do bicho -a estrutura inclui piscina- e levá-lo para o banho e tosa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tosa",
             "char_start": 119,
             "char_end": 123
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "do bicho"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 56,
+                "char_end": 64
+              }
+            ]
+          },
+          "target_instance_id": 6783,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6183590b0e7400c4",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 119,
+                "char_end": 123
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 56,
+                    "char_end": 64,
+                    "head_token_id": 14,
+                    "head_form": "bicho",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "tosa · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

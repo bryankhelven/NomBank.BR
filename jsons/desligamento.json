@@ -19,24 +19,189 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 6023,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 47
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_id": "s_e01ed14430760c59",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e01ed14430760c59",
+      "frame_id": "f_d6d2a748215af1d2",
+      "pt_roleset": "desligamento.01",
+      "sense_label": "desligamento.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "removal.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/removal.xml",
+          "source_xml_url": "data/nombank_sources/removal.xml",
+          "source_xml_sha256": "f0126a2fe8b7aa5f26eea271348d0716de669462d6b46314a4d694a24b115371",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da remoção",
+          "definition": "Quem/o que remove, incluindo comportamento explicitamente causal, não fonte da fala por si.",
+          "desc_pt": "Causador da remoção",
+          "definition_pt": "Quem/o que remove, incluindo comportamento explicitamente causal, não fonte da fala por si."
         },
+        {
+          "id": "Arg1",
+          "desc": "Removido",
+          "definition": "Pessoa/entidade afastada, extensão institucional/política sem vínculo de emprego automático.",
+          "desc_pt": "Removido",
+          "definition_pt": "Pessoa/entidade afastada, extensão institucional/política sem vínculo de emprego automático."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem da remoção",
+          "definition": "De onde se afasta, sem genitivo plataforma irresolvido ou cargo inferido.",
+          "desc_pt": "Origem da remoção",
+          "definition_pt": "De onde se afasta, sem genitivo plataforma irresolvido ou cargo inferido."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003066_SENT063::desligamento::1",
           "sent_ID": "FOLHA_DOC003066_SENT063",
           "text": "A Uber afirma que a prática de recusar passageiros em busca de corridas mais lucrativas não é tolerada e leva ao desligamento de motoristas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desligamento",
             "char_start": 113,
             "char_end": 125
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a prática de recusar passageiros em busca de corridas mais lucrativas",
+            "Arg1": "de motoristas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 87
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 126,
+                "char_end": 139
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8784,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d6d2a748215af1d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 113,
+                "char_end": 125
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 18,
+                    "char_end": 87,
+                    "head_token_id": 6,
+                    "head_form": "prática",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25
+                    ],
+                    "char_start": 126,
+                    "char_end": 139,
+                    "head_token_id": 25,
+                    "head_form": "motoristas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj:pass": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,66 +6,399 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "utilização · acepção 1",
+      "sense_id": "s_0f575ed534226d01",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0f575ed534226d01",
+      "frame_id": "f_4daadae7cd6f11ca",
+      "pt_roleset": null,
+      "sense_label": "utilização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "use.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/use.xml",
+          "source_xml_url": "data/nombank_sources/use.xml",
+          "source_xml_sha256": "de62d1d48b77ff9e63c83284c1ad65658ee43cbabc4c6a21d8be96dcc3249d5d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "usuário",
+          "definition": "Entidade que utiliza recurso.",
+          "desc_pt": "usuário",
+          "definition_pt": "Entidade que utiliza recurso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "recurso utilizado",
+          "definition": "Objeto ou entidade usado.",
+          "desc_pt": "recurso utilizado",
+          "definition_pt": "Objeto ou entidade usado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "finalidade de uso",
+          "definition": "Propósito/domínio explicitamente ligado à utilização.",
+          "desc_pt": "finalidade de uso",
+          "definition_pt": "Propósito/domínio explicitamente ligado à utilização."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003064_SENT017::utilização::1",
           "sent_ID": "FOLHA_DOC003064_SENT017",
           "text": "Próximo ao fim do prazo para a utilização, a agência tem se omitido.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "utilização",
             "char_start": 31,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6456,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4daadae7cd6f11ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003166_SENT003::utilização::1",
           "sent_ID": "FOLHA_DOC003166_SENT003",
           "text": "\"Nossa corretora recomendou contratar apenas as coberturas que realmente se encaixem no nosso perfil e conforme a utilização do veículo\", diz a advogada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "utilização",
             "char_start": 114,
             "char_end": 124
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do veículo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 125,
+                "char_end": 135
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7215,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4daadae7cd6f11ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 114,
+                "char_end": 124
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 125,
+                    "char_end": 135,
+                    "head_token_id": 23,
+                    "head_form": "veículo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003166_SENT013::utilização::1",
           "sent_ID": "FOLHA_DOC003166_SENT013",
           "text": "Outra prática que vem ganhando mercado é a utilização de cartões de crédito vinculados à seguradora.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "utilização",
             "char_start": 43,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de cartões de crédito vinculados à seguradora",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 99
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9200,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4daadae7cd6f11ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 43,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 54,
+                    "char_end": 99,
+                    "head_token_id": 11,
+                    "head_form": "cartões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT089::utilização::1",
           "sent_ID": "FOLHA_DOC003035_SENT089",
           "text": "Janot diz, em relação ao sr., que há 'prováveis desvios no exercício da função e utilização desta para fins espúrios'.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "utilização",
             "char_start": 81,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "sr.",
+            "Arg1": "desta",
+            "Arg2": "para fins espúrios"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 25,
+                "char_end": 28
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 92,
+                "char_end": 97
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 98,
+                "char_end": 116
+              }
+            ]
+          },
+          "target_instance_id": 9374,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4daadae7cd6f11ca",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 25,
+                    "char_end": 28,
+                    "head_token_id": 8,
+                    "head_form": "sr.",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24
+                    ],
+                    "char_start": 92,
+                    "char_end": 97,
+                    "head_token_id": 24,
+                    "head_form": "esta",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 98,
+                    "char_end": 116,
+                    "head_token_id": 26,
+                    "head_form": "fins",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "utilização · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 3,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

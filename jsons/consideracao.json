@@ -6,38 +6,254 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "consideração · acepção 1",
+      "sense_id": "s_e99564ce7647ebb8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e99564ce7647ebb8",
+      "frame_id": "f_e5587585068d4100",
+      "pt_roleset": null,
+      "sense_label": "consideração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "consideration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/consideration.xml",
+          "source_xml_url": "data/nombank_sources/consideration.xml",
+          "source_xml_sha256": "e0ac7b16320d2316aaebc5dd45ae1983fbe338f1fbc8c9e83d5bfe5d6e6503d2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Apreciador",
+          "definition": "Quem examina/observa, inclusive sob alegação; valor a conceder não pessoa que pensa.",
+          "desc_pt": "Apreciador",
+          "definition_pt": "Quem examina/observa, inclusive sob alegação; valor a conceder não pessoa que pensa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto examinado",
+          "definition": "Coisa apreciada/levada em conta, extensão à observação verbalizada e benefício considerado.",
+          "desc_pt": "Objeto examinado",
+          "definition_pt": "Coisa apreciada/levada em conta, extensão à observação verbalizada e benefício considerado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo do objeto",
+          "definition": "Predicação sobre objeto, não genéricas qualificando considerações.",
+          "desc_pt": "Atributo do objeto",
+          "definition_pt": "Predicação sobre objeto, não genéricas qualificando considerações."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004042_SENT017::consideração::1",
           "sent_ID": "FOLHA_DOC004042_SENT017",
           "text": "Em sua defesa, os delatores alegam que fizeram considerações genéricas sobre os magistrados e que não possuem nenhuma informação comprometedora sobre eles.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "considerações",
             "char_start": 47,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os delatores",
+            "Arg1": "sobre os magistrados",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 71,
+                "char_end": 91
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1345,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e5587585068d4100",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 15,
+                    "char_end": 27,
+                    "head_token_id": 6,
+                    "head_form": "delatores",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 71,
+                    "char_end": 91,
+                    "head_token_id": 14,
+                    "head_form": "magistrados",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004045_SENT008::consideração::1",
           "sent_ID": "FOLHA_DOC004045_SENT008",
           "text": "O valor a ser concedido leva em consideração o benefício mensal que o aposentado ou pensionista recebe.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "consideração",
             "char_start": 32,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o benefício mensal que o aposentado ou pensionista recebe",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 102
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2419,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e5587585068d4100",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 45,
+                    "char_end": 102,
+                    "head_token_id": 10,
+                    "head_form": "benefício",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "consideração · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

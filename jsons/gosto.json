@@ -6,86 +6,475 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "gosto · acepção 1",
+      "sense_id": "s_fcf9b8d28271455f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "pt_roleset": null,
+      "description": null,
+      "origin_frames": [],
+      "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "gosto · acepção 2",
+      "sense_id": "s_9b5cec1ce695b49d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "pt_roleset": null,
+      "description": null,
+      "origin_frames": [],
+      "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "gosto · acepção 3",
+      "sense_id": "s_7e4c798e89171cf8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fcf9b8d28271455f",
+      "frame_id": "f_1cf898bfb4d3c2e6",
+      "pt_roleset": null,
+      "sense_label": "gosto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fondness.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fondness.xml",
+          "source_xml_url": "data/nombank_sources/fondness.xml",
+          "source_xml_sha256": "5bf6b05897a15aed2f12fe188bcf03d7b88cca649293d568d5a4890478fcfeaa",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Portador da simpatia",
+          "definition": "Experienciador que gosta/tem inclinação afetiva.",
+          "desc_pt": "Portador da simpatia",
+          "definition_pt": "Experienciador que gosta/tem inclinação afetiva."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto da simpatia",
+          "definition": "Pessoa/coisa de que se gosta.",
+          "desc_pt": "Objeto da simpatia",
+          "definition_pt": "Pessoa/coisa de que se gosta."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003171_SENT004::gosto::1",
           "sent_ID": "FOLHA_DOC003171_SENT004",
           "text": "Mas há um exército de outros animais que caíram no gosto das pessoas e começam a aparecer nas estatísticas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gosto",
             "char_start": 51,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "das pessoas",
+            "Arg1": "um exército de outros animais"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 57,
+                "char_end": 68
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 7,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 440,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1cf898bfb4d3c2e6",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 57,
+                    "char_end": 68,
+                    "head_token_id": 15,
+                    "head_form": "pessoas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 7,
+                    "char_end": 36,
+                    "head_token_id": 4,
+                    "head_form": "exército",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "gosto · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     },
     {
+      "sense_id": "s_9b5cec1ce695b49d",
+      "frame_id": "f_e3d6b7ef0938531d",
       "pt_roleset": null,
+      "sense_label": "gosto · acepção 2",
       "description": null,
-      "origin_frames": [],
-      "roles": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "preference.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/preference.xml",
+          "source_xml_url": "data/nombank_sources/preference.xml",
+          "source_xml_sha256": "b0a8190789d00f760325d812027fc2e850eb5f530dfec0f38e86a27d02320a6b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem prefere",
+          "definition": "Chooser original: pessoa que manifesta preferência.",
+          "desc_pt": "Quem prefere",
+          "definition_pt": "Chooser original: pessoa que manifesta preferência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade ou domínio preferido",
+          "definition": "Entity chosen original; domínio artístico é extensão local de capital-gains preference.",
+          "desc_pt": "Entidade ou domínio preferido",
+          "definition_pt": "Entity chosen original; domínio artístico é extensão local de capital-gains preference."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Alternativa comparada",
+          "definition": "Entidade considerada menos desejável em comparação explícita.",
+          "desc_pt": "Alternativa comparada",
+          "definition_pt": "Entidade considerada menos desejável em comparação explícita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000158_SENT008::gosto::1",
           "sent_ID": "FOLHA_DOC000158_SENT008",
           "text": "Isso se aplica a inclinações políticas, gostos artísticos, preferências sexuais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gostos",
             "char_start": 40,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "artísticos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1036,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e3d6b7ef0938531d",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 47,
+                    "char_end": 57,
+                    "head_token_id": 9,
+                    "head_form": "artísticos",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004086_SENT003::gosto::1",
           "sent_ID": "FOLHA_DOC004086_SENT003",
           "text": "São Paulo dispõe de um plano B para diversos gostos e endereços: as piscinas públicas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gostos",
             "char_start": 45,
             "char_end": 51
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10496,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e3d6b7ef0938531d",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "gosto · acepção 2"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     },
     {
+      "sense_id": "s_7e4c798e89171cf8",
+      "frame_id": "f_1ab77f8efdcb5f5f",
       "pt_roleset": null,
+      "sense_label": "gosto · acepção 3",
       "description": null,
-      "origin_frames": [],
-      "roles": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "flavor.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/flavor.xml",
+          "source_xml_url": "data/nombank_sources/flavor.xml",
+          "source_xml_sha256": "292d21008059436ea8c2e2eec71e535f2e54e44ed24f6f2f036c1eadb092b7fa",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Situação com sabor figurado",
+          "definition": "Theme, demissão como portadora de sabor figurativo conforme flavor to current dissents1 original.",
+          "desc_pt": "Situação com sabor figurado",
+          "definition_pt": "Theme, demissão como portadora de sabor figurativo conforme flavor to current dissents1 original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualidade do sabor",
+          "definition": "Value dito, não amarga presumida ou experiência humana acrescentada.",
+          "desc_pt": "Qualidade do sabor",
+          "definition_pt": "Value dito, não amarga presumida ou experiência humana acrescentada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001037_SENT034::gosto::1",
           "sent_ID": "FOLHA_DOC001037_SENT034",
           "text": "Foi lá que sentiu pela única vez o gosto da demissão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "gosto",
             "char_start": 35,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "da demissão",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 41,
+                "char_end": 52
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9685,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1ab77f8efdcb5f5f",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 41,
+                    "char_end": 52,
+                    "head_token_id": 13,
+                    "head_form": "demissão",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "gosto · acepção 3"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

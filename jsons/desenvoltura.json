@@ -6,24 +6,155 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "desenvoltura · acepção 1",
+      "sense_id": "s_d875e33bc656ae0b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d875e33bc656ae0b",
+      "frame_id": "f_d084215042a71f4e",
+      "pt_roleset": null,
+      "sense_label": "desenvoltura · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "skill.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/skill.xml",
+          "source_xml_url": "data/nombank_sources/skill.xml",
+          "source_xml_sha256": "2cebd6cee692047065a71d21389a56fec2d1d77a9902f270518f6b658ca317b9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Pessoa hábil",
+          "definition": "Agent que demonstra desenvoltura.",
+          "desc_pt": "Pessoa hábil",
+          "definition_pt": "Agent que demonstra desenvoltura."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação executada com destreza",
+          "definition": "Action completa de coordenar cabos até alcançar ponto.",
+          "desc_pt": "Ação executada com destreza",
+          "definition_pt": "Action completa de coordenar cabos até alcançar ponto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002060_SENT003::desenvoltura::1",
           "sent_ID": "FOLHA_DOC002060_SENT003",
           "text": "Com desenvoltura, ele conseguiu coordenar os cabos manualmente até chegar a um ponto próximo da base.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desenvoltura",
             "char_start": 4,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "coordenar os cabos manualmente até chegar a um ponto próximo da base"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "xcomp"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 21
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 32,
+                "char_end": 100
+              }
+            ]
+          },
+          "target_instance_id": 14703,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d084215042a71f4e",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 18,
+                    "char_end": 21,
+                    "head_token_id": 4,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 32,
+                    "char_end": 100,
+                    "head_token_id": 6,
+                    "head_form": "coordenar",
+                    "head_deprel": "xcomp"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "desenvoltura · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "xcomp": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

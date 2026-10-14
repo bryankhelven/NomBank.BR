@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "advertência · acepção 1",
+      "sense_id": "s_7e5c40c34cbe2943",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7e5c40c34cbe2943",
+      "frame_id": "f_2663a0e6b648ef02",
+      "pt_roleset": null,
+      "sense_label": "advertência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "warning.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/warning.xml",
+          "source_xml_url": "data/nombank_sources/warning.xml",
+          "source_xml_sha256": "4fba1e0f723f72ab18eec02a99896bca783463b2fb91baded25cefb666fdc059",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor do aviso",
+          "definition": "Entity warning, não Guimarães que explica regulamentos automaticamente.",
+          "desc_pt": "Emissor do aviso",
+          "definition_pt": "Entity warning, não Guimarães que explica regulamentos automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo de advertência",
+          "definition": "Warning/impelled action, incorporado conforme warning REF1 original quando não mensagem independente.",
+          "desc_pt": "Conteúdo de advertência",
+          "definition_pt": "Warning/impelled action, incorporado conforme warning REF1 original quando não mensagem independente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Recebedor do aviso",
+          "definition": "Entity getting warning expresso, sem público genérico inferido.",
+          "desc_pt": "Recebedor do aviso",
+          "definition_pt": "Entity getting warning expresso, sem público genérico inferido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003150_SENT039::advertência::1",
           "sent_ID": "FOLHA_DOC003150_SENT039",
           "text": "\"Há regulamento para tudo, da posição das advertências obrigatórias ao tamanho das letras\", diz Guimarães.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "advertências",
             "char_start": 42,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10616,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2663a0e6b648ef02",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "advertência · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

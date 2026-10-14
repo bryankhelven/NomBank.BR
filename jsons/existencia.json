@@ -6,52 +6,268 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "existência · acepção 1",
+      "sense_id": "s_673d34d21429f6b9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_673d34d21429f6b9",
+      "frame_id": "f_e262f12b86010bab",
+      "pt_roleset": null,
+      "sense_label": "existência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "existence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/existence.xml",
+          "source_xml_url": "data/nombank_sources/existence.xml",
+          "source_xml_sha256": "01ec32e1ec17e21753564addefcab560c83bbba9eb4c0ee3c54cd19aa5665e7e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Existente",
+          "definition": "Entidade/evento cujo existir se predica, inclusive sob necessidade/interrogação ou conteúdo atribuído.",
+          "desc_pt": "Existente",
+          "definition_pt": "Entidade/evento cujo existir se predica, inclusive sob necessidade/interrogação ou conteúdo atribuído."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo do existente",
+          "definition": "Condição da entidade existente, distinta da avaliação de necessidade de existir.",
+          "desc_pt": "Atributo do existente",
+          "definition_pt": "Condição da entidade existente, distinta da avaliação de necessidade de existir."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000072_SENT009::existência::1",
           "sent_ID": "FOLHA_DOC000072_SENT009",
           "text": "A compacidade urbana é importante, mas é imprescindível a existência de praças e parques para esses núcleos respirarem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "existência",
             "char_start": 58,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "de praças e parques",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 88
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6267,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e262f12b86010bab",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 69,
+                    "char_end": 88,
+                    "head_token_id": 13,
+                    "head_form": "praças",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000878_SENT021::existência::1",
           "sent_ID": "FOLHA_DOC000878_SENT021",
           "text": "Não consigo enxergar responsabilidade do MAM, que cumpriu sua obrigação ao orientar os visitantes sobre a existência de um nu.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "existência",
             "char_start": 106,
             "char_end": 116
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "de um nu",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 117,
+                "char_end": 125
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8773,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e262f12b86010bab",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 106,
+                "char_end": 116
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 117,
+                    "char_end": 125,
+                    "head_token_id": 23,
+                    "head_form": "nu",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002030_SENT007::existência::1",
           "sent_ID": "FOLHA_DOC002030_SENT007",
           "text": "Como afirmar a existência de fraude em uma autodeclaração?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "existência",
             "char_start": 15,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "de fraude em uma autodeclaração",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 26,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14336,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e262f12b86010bab",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 26,
+                    "char_end": 57,
+                    "head_token_id": 6,
+                    "head_form": "fraude",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "existência · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 3,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

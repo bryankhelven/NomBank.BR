@@ -6,38 +6,284 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cartão · acepção 1",
+      "sense_id": "s_b9c1277f54da3d2e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b9c1277f54da3d2e",
+      "frame_id": "f_7ad3e7102aea6ea8",
+      "pt_roleset": null,
+      "sense_label": "cartão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "penalty.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/penalty.xml",
+          "source_xml_url": "data/nombank_sources/penalty.xml",
+          "source_xml_sha256": "19c04bf16daa1153eea5a25fa952caa2944a8f325c1c5f063ca6ba4e77548716",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da sanção",
+          "definition": "Judge/jury restringido ao árbitro esportivo, sem criminalidade penal inferida.",
+          "desc_pt": "Autor da sanção",
+          "definition_pt": "Judge/jury restringido ao árbitro esportivo, sem criminalidade penal inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Jogador sancionado",
+          "definition": "Criminal original restringido ao destinatário de sanção disciplinar, inclusive hipótese sem recebimento efetivo afirmado.",
+          "desc_pt": "Jogador sancionado",
+          "definition_pt": "Criminal original restringido ao destinatário de sanção disciplinar, inclusive hipótese sem recebimento efetivo afirmado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Categoria disciplinar",
+          "definition": "Punishment designado por cor do cartão, extensão do NCAA death penalty esportivo à categoria vermelho/amarelo sem expulsão adicional inventada.",
+          "desc_pt": "Categoria disciplinar",
+          "definition_pt": "Punishment designado por cor do cartão, extensão do NCAA death penalty esportivo à categoria vermelho/amarelo sem expulsão adicional inventada."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Infração motivadora",
+          "definition": "Crime original restringido à infração esportiva expressa, sem carrinho anterior automaticamente julgado ilegal.",
+          "desc_pt": "Infração motivadora",
+          "definition_pt": "Crime original restringido à infração esportiva expressa, sem carrinho anterior automaticamente julgado ilegal."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003098_SENT007::cartão::1",
           "sent_ID": "FOLHA_DOC003098_SENT007",
           "text": "No fim do segundo tempo, David Luiz, que estava bem na partida, deu um carrinho em Kolasinac e recebeu o cartão vermelho.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cartão",
             "char_start": 105,
             "char_end": 111
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "David Luiz",
+            "Arg2": "vermelho",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "amod",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 35
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 112,
+                "char_end": 120
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 315,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7ad3e7102aea6ea8",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 105,
+                "char_end": 111
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 25,
+                    "char_end": 35,
+                    "head_token_id": 9,
+                    "head_form": "David",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28
+                    ],
+                    "char_start": 112,
+                    "char_end": 120,
+                    "head_token_id": 28,
+                    "head_form": "vermelho",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003165_SENT021::cartão::1",
           "sent_ID": "FOLHA_DOC003165_SENT021",
           "text": "Neymar tem menos de um ano para mostrar ao mundo que cartões amarelos ou vermelhos não vão tirá-lo da Copa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cartões",
             "char_start": 53,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Neymar",
+            "Arg2": "amarelos ou vermelhos",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": "amod",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 6
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 61,
+                "char_end": 82
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 14076,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7ad3e7102aea6ea8",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 6,
+                    "head_token_id": 1,
+                    "head_form": "Neymar",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 61,
+                    "char_end": 82,
+                    "head_token_id": 14,
+                    "head_form": "amarelos",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cartão · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

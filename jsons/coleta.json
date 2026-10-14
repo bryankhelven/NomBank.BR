@@ -6,52 +6,437 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "coleta · acepção 1",
+      "sense_id": "s_0440b7030df0f1a8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0440b7030df0f1a8",
+      "frame_id": "f_0aee9520bdb54ea8",
+      "pt_roleset": null,
+      "sense_label": "coleta · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "collection.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/collection.xml",
+          "source_xml_url": "data/nombank_sources/collection.xml",
+          "source_xml_sha256": "d318b073d3e70afc58f889892a5f02cf353256e1190441919d713f7f6db20390",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "coletor",
+          "definition": "Quem recolhe ou recebe material na atividade de coleta; instituição receptora nomeada pela função pode realizá-lo. Afiliado do relator ou organizador de incentivo não é coletor automaticamente.",
+          "desc_pt": "coletor",
+          "definition_pt": "Quem recolhe ou recebe material na atividade de coleta; instituição receptora nomeada pela função pode realizá-lo. Afiliado do relator ou organizador de incentivo não é coletor automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "material coletado",
+          "definition": "Coisa expressamente recolhida, sem inventar lixo ou material a partir do termo coleta isolado.",
+          "desc_pt": "material coletado",
+          "definition_pt": "Coisa expressamente recolhida, sem inventar lixo ou material a partir do termo coleta isolado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "fornecedor do material",
+          "definition": "Seller de origem adaptado a entidade de que se recolhe material, com apoio do exemplo nominal de cobrança de tributo from large companies. Não afirmar venda quando só entrega de material está expressa.",
+          "desc_pt": "fornecedor do material",
+          "definition_pt": "Seller de origem adaptado a entidade de que se recolhe material, com apoio do exemplo nominal de cobrança de tributo from large companies. Não afirmar venda quando só entrega de material está expressa."
+        },
+        {
+          "id": "Arg4",
+          "desc": "beneficiário da coleta",
+          "definition": "Quem explicitamente recebe benefício ou atendimento da atividade; conservar Arg4 original, sem preencher um Arg3 ausente nem renumerar.",
+          "desc_pt": "beneficiário da coleta",
+          "definition_pt": "Quem explicitamente recebe benefício ou atendimento da atividade; conservar Arg4 original, sem preencher um Arg3 ausente nem renumerar."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002059_SENT006::coleta::1",
           "sent_ID": "FOLHA_DOC002059_SENT006",
           "text": "Os Estados com os piores índices de população atendida pela coleta são Amapá, Pará e Rondônia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "coleta",
             "char_start": 60,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg4": "população"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg4": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg4": [
+              {
+                "char_start": 36,
+                "char_end": 45
+              }
+            ]
+          },
+          "target_instance_id": 1917,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0aee9520bdb54ea8",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 36,
+                    "char_end": 45,
+                    "head_token_id": 8,
+                    "head_form": "população",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003193_SENT011::coleta::1",
           "sent_ID": "FOLHA_DOC003193_SENT011",
           "text": "As famílias cadastradas levam embalagens aos postos de coleta nos bairros Capão Redondo e Grajaú (zona sul de São Paulo), que são revertidas em pontos, trocados por alimentos ou cursos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "coleta",
             "char_start": 55,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "aos postos",
+            "Arg1": "embalagens",
+            "Arg2": "As famílias cadastradas",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj",
+            "Arg2": "nsubj",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 41,
+                "char_end": 51
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 40
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 23
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 2526,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0aee9520bdb54ea8",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 41,
+                    "char_end": 51,
+                    "head_token_id": 8,
+                    "head_form": "postos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 30,
+                    "char_end": 40,
+                    "head_token_id": 5,
+                    "head_form": "embalagens",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 23,
+                    "head_token_id": 2,
+                    "head_form": "famílias",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg4": 1
         },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_0440b7030df0f1a8",
+      "frame_id": "f_08815f2f0146eb17",
+      "pt_roleset": null,
+      "sense_label": "coleta · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "collection.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/collection.xml",
+          "source_xml_url": "data/nombank_sources/collection.xml",
+          "source_xml_sha256": "d318b073d3e70afc58f889892a5f02cf353256e1190441919d713f7f6db20390",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Coletor",
+          "definition": "Agent/entity acquiring, não relator ou fornecedor automaticamente coletor.",
+          "desc_pt": "Coletor",
+          "definition_pt": "Agent/entity acquiring, não relator ou fornecedor automaticamente coletor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Material recolhido",
+          "definition": "Thing acquired, sem copiar tokens de sentença vizinha.",
+          "desc_pt": "Material recolhido",
+          "definition_pt": "Thing acquired, sem copiar tokens de sentença vizinha."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fornecedor do material",
+          "definition": "Seller original, extensão explícita a provedor de recicláveis por contexto de depósito, como fonte de tax collection.",
+          "desc_pt": "Fornecedor do material",
+          "definition_pt": "Seller original, extensão explícita a provedor de recicláveis por contexto de depósito, como fonte de tax collection."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Beneficiário da coleta",
+          "definition": "Beneficiary Arg4 literal, sem Arg3 criado.",
+          "desc_pt": "Beneficiário da coleta",
+          "definition_pt": "Beneficiary Arg4 literal, sem Arg3 criado."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003193_SENT005::coleta::1",
           "sent_ID": "FOLHA_DOC003193_SENT005",
           "text": "\"Ao reverter a participação em benefícios, trazemos mais gente para a coleta seletiva\", diz Felipe Cury, diretor-executivo da Triciclo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "coleta",
             "char_start": 70,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "mais gente",
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obj",
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 52,
+                "char_end": 62
+              }
+            ],
+            "Arg4": []
+          },
+          "target_instance_id": 14767,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_08815f2f0146eb17",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 70,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 52,
+                    "char_end": 62,
+                    "head_token_id": 12,
+                    "head_form": "gente",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "coleta · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

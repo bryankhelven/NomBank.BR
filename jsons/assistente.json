@@ -6,24 +6,174 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "assistente · acepção 1",
+      "sense_id": "s_6204cd1b6927b61f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6204cd1b6927b61f",
+      "frame_id": "f_c52bb1e1f7cb0fa9",
+      "pt_roleset": null,
+      "sense_label": "assistente · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "worker.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/worker.xml",
+          "source_xml_url": "data/nombank_sources/worker.xml",
+          "source_xml_sha256": "e2c37bafca67b47d88dc0ac96dc71b1c2e1d5bf67299d3b6e88294796187ad9b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Assistente social",
+          "definition": "Worker profissional restrito à assistência social frozen, SELF0 conforme profissão composta nominal original.",
+          "desc_pt": "Assistente social",
+          "definition_pt": "Worker profissional restrito à assistência social frozen, SELF0 conforme profissão composta nominal original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Campo de trabalho social",
+          "definition": "Job/project expresso por sociais relacional, como auto workers original; sem vídeos de outro ato como ocupação social.",
+          "desc_pt": "Campo de trabalho social",
+          "definition_pt": "Job/project expresso por sociais relacional, como auto workers original; sem vídeos de outro ato como ocupação social."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Empregador",
+          "definition": "Employer identificado, sem torcedoras necessariamente empregadoras.",
+          "desc_pt": "Empregador",
+          "definition_pt": "Employer identificado, sem torcedoras necessariamente empregadoras."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Colega de trabalho",
+          "definition": "Coworker de assistência social, sem co-produtoras do vídeo automaticamente colegas dessa profissão.",
+          "desc_pt": "Colega de trabalho",
+          "definition_pt": "Coworker de assistência social, sem co-produtoras do vídeo automaticamente colegas dessa profissão."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Instrumento de trabalho",
+          "definition": "Instrumental expresso.",
+          "desc_pt": "Instrumento de trabalho",
+          "definition_pt": "Instrumental expresso."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003018_SENT008::assistente::1",
           "sent_ID": "FOLHA_DOC003018_SENT008",
           "text": "São cada vez mais comuns sites independentes e páginas nas redes sociais com artigos de opinião, crônicas, vídeos e entrevistas produzidos por e para torcedoras -advogadas, jornalistas, assistentes sociais, estudantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "assistentes",
             "char_start": 186,
             "char_end": 197
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sociais",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 198,
+                "char_end": 205
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 14222,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c52bb1e1f7cb0fa9",
+          "argument_details": {
+            "predicate_token_ids": [
+              34
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 186,
+                "char_end": 197
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      35
+                    ],
+                    "char_start": 198,
+                    "char_end": 205,
+                    "head_token_id": 35,
+                    "head_form": "sociais",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "assistente · acepção 1"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

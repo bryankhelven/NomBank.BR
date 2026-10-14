@@ -6,24 +6,143 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "autobiografia · acepção 1",
+      "sense_id": "s_b50d99c7123bd2df",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b50d99c7123bd2df",
+      "frame_id": "f_c20d2206f876d1fc",
+      "pt_roleset": null,
+      "sense_label": "autobiografia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "autobiography.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/autobiography.xml",
+          "source_xml_url": "data/nombank_sources/autobiography.xml",
+          "source_xml_sha256": "1ee24f211145ebd9340d9d4c050ee403aee5b565a8570a98554b070113528f1f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Narrador/autor autobiográfico",
+          "definition": "Agent correferente do sujeito narrado por definição de autobiografia, sem ghostwriter externo inferido.",
+          "desc_pt": "Narrador/autor autobiográfico",
+          "definition_pt": "Agent correferente do sujeito narrado por definição de autobiografia, sem ghostwriter externo inferido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa autobiografada",
+          "definition": "Theme explicitado por pronome independente, sem duplicar mesmo token de agent0.",
+          "desc_pt": "Pessoa autobiografada",
+          "definition_pt": "Theme explicitado por pronome independente, sem duplicar mesmo token de agent0."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003062_SENT040::autobiografia::1",
           "sent_ID": "FOLHA_DOC003062_SENT040",
           "text": "Mas, em 2011, ela lançou uma autobiografia que a mostrava machucada e vulnerável, \"From This Moment On\" (deste momento em diante), e protagonizou uma série de documentários intitulada \"Why Not?\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "autobiografia",
             "char_start": 29,
             "char_end": 42
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ela",
+            "Arg1": "a"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 14,
+                "char_end": 17
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 48
+              }
+            ]
+          },
+          "target_instance_id": 13277,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c20d2206f876d1fc",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 29,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 14,
+                    "char_end": 17,
+                    "head_token_id": 6,
+                    "head_form": "ela",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 47,
+                    "char_end": 48,
+                    "head_token_id": 11,
+                    "head_form": "a",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "autobiografia · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

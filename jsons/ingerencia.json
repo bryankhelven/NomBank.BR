@@ -6,37 +6,238 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_5436c0d8bba7d155",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5436c0d8bba7d155",
+      "frame_id": "f_1d3ccfe7bc7de212",
+      "pt_roleset": "ingerência.01",
+      "sense_label": "ingerência.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "intervention.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/intervention.xml",
+          "source_xml_url": "data/nombank_sources/intervention.xml",
+          "source_xml_sha256": "8698c94d29bcf3e90fb9861ead167877a677f28d6caa37031d987c1e2f096e8b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Interveniente",
+          "definition": "Quem intervém/influencia, sob qualquer negação e sem pressupor ilegalidade.",
+          "desc_pt": "Interveniente",
+          "definition_pt": "Quem intervém/influencia, sob qualquer negação e sem pressupor ilegalidade."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio de ingerência",
+          "definition": "Intervene-in estendido à esfera institucional ou contas sujeitas a influência/controle.",
+          "desc_pt": "Domínio de ingerência",
+          "definition_pt": "Intervene-in estendido à esfera institucional ou contas sujeitas a influência/controle."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002018_SENT017::ingerência::1",
           "sent_ID": "FOLHA_DOC002018_SENT017",
           "text": "Foram casos em que essa agenda permitiu ao tribunal adotar decisões de extrema ingerência no Legislativo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ingerência",
             "char_start": 79,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ao tribunal",
+            "Arg1": "no Legislativo"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 40,
+                "char_end": 51
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 90,
+                "char_end": 104
+              }
+            ]
+          },
+          "target_instance_id": 10725,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1d3ccfe7bc7de212",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 79,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 40,
+                    "char_end": 51,
+                    "head_token_id": 10,
+                    "head_form": "tribunal",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 90,
+                    "char_end": 104,
+                    "head_token_id": 18,
+                    "head_form": "Legislativo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000017_SENT016::ingerência::1",
           "sent_ID": "FOLHA_DOC000017_SENT016",
           "text": "\"Assim, não há como afirmar que ele possui qualquer ingerência sobre as contas de e-mail\", diz a petição.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ingerência",
             "char_start": 52,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "sobre as contas de e-mail"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 32,
+                "char_end": 35
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 88
+              }
+            ]
+          },
+          "target_instance_id": 11075,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1d3ccfe7bc7de212",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 32,
+                    "char_end": 35,
+                    "head_token_id": 9,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 63,
+                    "char_end": 88,
+                    "head_token_id": 15,
+                    "head_form": "contas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

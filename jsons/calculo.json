@@ -6,90 +6,602 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003102_SENT022::cálculo::1",
-          "sent_ID": "FOLHA_DOC003102_SENT022",
-          "text": "A psicóloga Legna Rango, 48, e o empresário Alexandre Rebechi, 53, faziam o cálculo dos custos de um dia de festival com os dois filhos, Thamyres, 15, e Arthuro, 11.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "cálculo",
-            "char_start": 76,
-            "char_end": 83
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002020_SENT010::cálculo::1",
-          "sent_ID": "FOLHA_DOC002020_SENT010",
-          "text": "Ela refez o cálculo e estancou o fluxo migratório, mas às custas de um acordo da União Europeia com a Turquia.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "cálculo",
-            "char_start": 12,
-            "char_end": 19
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "cálculo · acepção 1"
+      "sense_label": "cálculo · acepção 1",
+      "sense_id": "s_f3f89883e6a86c20",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cálculo · acepção 2",
+      "sense_id": "s_33dd839122ff7f90",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f3f89883e6a86c20",
+      "frame_id": "f_7df7ce3d18d87b2f",
+      "pt_roleset": null,
+      "sense_label": "cálculo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "calculation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/calculation.xml",
+          "source_xml_url": "data/nombank_sources/calculation.xml",
+          "source_xml_sha256": "6b10e1c1f2808dd924e8fb4a5060027bd2e14328d26541e36ea58555a7d12efc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "calculador",
+          "definition": "Entidade que calcula, pondera ou raciocina.",
+          "desc_pt": "calculador",
+          "definition_pt": "Entidade que calcula, pondera ou raciocina."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo calculado",
+          "definition": "Grandeza, tema ou proposição sobre que incide cálculo; extensão inferencial documentada.",
+          "desc_pt": "conteúdo calculado",
+          "definition_pt": "Grandeza, tema ou proposição sobre que incide cálculo; extensão inferencial documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo",
+          "definition": "Propriedade ou resultado atribuído ao tema calculado.",
+          "desc_pt": "atributo",
+          "definition_pt": "Propriedade ou resultado atribuído ao tema calculado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003102_SENT022::cálculo::1",
+          "sent_ID": "FOLHA_DOC003102_SENT022",
+          "text": "A psicóloga Legna Rango, 48, e o empresário Alexandre Rebechi, 53, faziam o cálculo dos custos de um dia de festival com os dois filhos, Thamyres, 15, e Arthuro, 11.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "cálculo",
+            "char_start": 76,
+            "char_end": 83
+          },
+          "realization": {
+            "Arg0": "A psicóloga Legna Rango, 48, e o empresário Alexandre Rebechi, 53",
+            "Arg1": "dos custos de um dia de festival com os dois filhos, Thamyres, 15, e Arthuro, 11",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 65
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 84,
+                "char_end": 164
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3418,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7df7ce3d18d87b2f",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 83
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 0,
+                    "char_end": 65,
+                    "head_token_id": 2,
+                    "head_form": "psicóloga",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39
+                    ],
+                    "char_start": 84,
+                    "char_end": 164,
+                    "head_token_id": 21,
+                    "head_form": "custos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002020_SENT010::cálculo::1",
+          "sent_ID": "FOLHA_DOC002020_SENT010",
+          "text": "Ela refez o cálculo e estancou o fluxo migratório, mas às custas de um acordo da União Europeia com a Turquia.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "cálculo",
+            "char_start": 12,
+            "char_end": 19
+          },
+          "realization": {
+            "Arg0": "Ela",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8956,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7df7ce3d18d87b2f",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 19
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "Ela",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_33dd839122ff7f90",
+      "frame_id": "f_96c44a81b9f78bdb",
+      "pt_roleset": null,
+      "sense_label": "cálculo · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "calculation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/calculation.xml",
+          "source_xml_url": "data/nombank_sources/calculation.xml",
+          "source_xml_sha256": "6b10e1c1f2808dd924e8fb4a5060027bd2e14328d26541e36ea58555a7d12efc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "calculador",
+          "definition": "Entidade que calcula, pondera ou raciocina.",
+          "desc_pt": "calculador",
+          "definition_pt": "Entidade que calcula, pondera ou raciocina."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo calculado",
+          "definition": "Grandeza, tema ou proposição sobre que incide cálculo; extensão inferencial documentada.",
+          "desc_pt": "conteúdo calculado",
+          "definition_pt": "Grandeza, tema ou proposição sobre que incide cálculo; extensão inferencial documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atributo",
+          "definition": "Propriedade ou resultado atribuído ao tema calculado.",
+          "desc_pt": "atributo",
+          "definition_pt": "Propriedade ou resultado atribuído ao tema calculado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003118_SENT025::cálculo::1",
           "sent_ID": "FOLHA_DOC003118_SENT025",
           "text": "Antes de comparar, eles aplicaram um tratamento aos dados para que fatores como a alta generalizada da escolaridade e a presença de mulheres no mercado de trabalho não alterassem o cálculo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cálculo",
             "char_start": 181,
             "char_end": 188
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "eles",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 19,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8345,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_96c44a81b9f78bdb",
+          "argument_details": {
+            "predicate_token_ids": [
+              35
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 181,
+                "char_end": 188
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 19,
+                    "char_end": 23,
+                    "head_token_id": 5,
+                    "head_form": "eles",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000309_SENT006::cálculo::1",
           "sent_ID": "FOLHA_DOC000309_SENT006",
           "text": "Eles até nos mostraram cálculos matemáticos que acreditam provar que o míssil pode atingir a costa oeste dos Estados Unidos, disse Morozov, que é membro do comitê de relações exteriores do Parlamento russo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cálculos",
             "char_start": 23,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "que o míssil pode atingir a costa oeste dos Estados Unidos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 65,
+                "char_end": 123
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15411,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_96c44a81b9f78bdb",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 65,
+                    "char_end": 123,
+                    "head_token_id": 13,
+                    "head_form": "pode",
+                    "head_deprel": "ccomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003132_SENT012::cálculo::1",
           "sent_ID": "FOLHA_DOC003132_SENT012",
           "text": "Um breve cálculo mostrará que a produtividade brasileira em relação aos custos operacionais é cerca de dez vezes maior que a dos LNs americanos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cálculo",
             "char_start": 9,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "que a produtividade brasileira em relação aos custos operacionais é cerca de dez vezes maior que a dos LNs americanos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 26,
+                "char_end": 143
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15530,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_96c44a81b9f78bdb",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 26,
+                    "char_end": 143,
+                    "head_token_id": 20,
+                    "head_form": "maior",
+                    "head_deprel": "ccomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cálculo · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "ccomp": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

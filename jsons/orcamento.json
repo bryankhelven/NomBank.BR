@@ -6,93 +6,601 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_35f004a9f7fea6ca",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_35f004a9f7fea6ca",
+      "frame_id": "f_e68cf5f716986686",
+      "pt_roleset": "orçamento.01",
+      "sense_label": "orçamento.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "budget.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/budget.xml",
+          "source_xml_url": "data/nombank_sources/budget.xml",
+          "source_xml_sha256": "9a85be0382935b7b2e020c11d3d97ef6e7d89c56316cbd9e86ddc6d38b3b55b9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "alocador/titular",
+          "definition": "Pessoa ou instituição explicitamente titular/alocadora do orçamento.",
+          "desc_pt": "alocador/titular",
+          "definition_pt": "Pessoa ou instituição explicitamente titular/alocadora do orçamento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "dinheiro alocado",
+          "definition": "Montante do orçamento; corte ou remanejamento parcial não equivalem ao total.",
+          "desc_pt": "dinheiro alocado",
+          "definition_pt": "Montante do orçamento; corte ou remanejamento parcial não equivalem ao total."
+        },
+        {
+          "id": "Arg2",
+          "desc": "finalidade",
+          "definition": "Projeto ou propósito ao qual o dinheiro é alocado, inclusive adjetivo relacional de área/função.",
+          "desc_pt": "finalidade",
+          "definition_pt": "Projeto ou propósito ao qual o dinheiro é alocado, inclusive adjetivo relacional de área/função."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000153_SENT014::orçamento::1",
           "sent_ID": "FOLHA_DOC000153_SENT014",
           "text": "Cortes no orçamento científico têm um impacto que os seus autores não entendem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 10,
             "char_end": 19
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "científico"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 20,
+                "char_end": 30
+              }
+            ]
+          },
+          "target_instance_id": 2568,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 19
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 20,
+                    "char_end": 30,
+                    "head_token_id": 5,
+                    "head_form": "científico",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003132_SENT008::orçamento::1",
           "sent_ID": "FOLHA_DOC003132_SENT008",
           "text": "Em contraste, o Brasil possui quatro Laboratórios Nacionais semelhantes aos americanos (CNPEM), com um total de 600 funcionários e um orçamento de R$ 90 milhões.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 134,
             "char_end": 143
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "quatro Laboratórios Nacionais",
+            "Arg1": "de R$ 90 milhões",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 30,
+                "char_end": 59
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 144,
+                "char_end": 160
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3029,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 134,
+                "char_end": 143
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 30,
+                    "char_end": 59,
+                    "head_token_id": 8,
+                    "head_form": "Laboratórios",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 144,
+                    "char_end": 160,
+                    "head_token_id": 30,
+                    "head_form": "milhões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003132_SENT007::orçamento::1",
           "sent_ID": "FOLHA_DOC003132_SENT007",
           "text": "São hoje 17 Laboratórios Nacionais do Departamento de Energia dos EUA, com um total de 57,6 mil empregados em tempo integral, e com um orçamento operacional de cerca de US$ 14 bilhões.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 135,
             "char_end": 144
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "17 Laboratórios Nacionais do Departamento de Energia dos EUA",
+            "Arg1": "de cerca de US$ 14 bilhões",
+            "Arg2": "operacional"
+          },
+          "syntax": {
+            "Arg0": "root",
+            "Arg1": "nmod",
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 69
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 157,
+                "char_end": 183
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 145,
+                "char_end": 156
+              }
+            ]
+          },
+          "target_instance_id": 4310,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 144
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 9,
+                    "char_end": 69,
+                    "head_token_id": 4,
+                    "head_form": "Laboratórios",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36
+                    ],
+                    "char_start": 157,
+                    "char_end": 183,
+                    "head_token_id": 36,
+                    "head_form": "bilhões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30
+                    ],
+                    "char_start": 145,
+                    "char_end": 156,
+                    "head_token_id": 30,
+                    "head_form": "operacional",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003069_SENT021::orçamento::1",
           "sent_ID": "FOLHA_DOC003069_SENT021",
           "text": "Você fará um exercício derradeiro de reduzir mais R$ 200 no seu orçamento mensal.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 64,
             "char_end": 73
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "seu",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 60,
+                "char_end": 63
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7511,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 60,
+                    "char_end": 63,
+                    "head_token_id": 13,
+                    "head_form": "seu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003118_SENT002::orçamento::1",
           "sent_ID": "FOLHA_DOC003118_SENT002",
           "text": "O orçamento inicial de 2018 para o programa Luz para Todos diminuiu 4,3% na comparação com o número de 2017.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 2,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para o programa Luz para Todos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 28,
+                "char_end": 58
+              }
+            ]
+          },
+          "target_instance_id": 8989,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 28,
+                    "char_end": 58,
+                    "head_token_id": 8,
+                    "head_form": "programa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001528_SENT003::orçamento::1",
           "sent_ID": "FOLHA_DOC001528_SENT003",
           "text": "Em comunicado, a Petrobras informou que o valor representa 0,8% dos investimentos previstos no Plano de Negócios 2017-2021 e será remanejado dentro do orçamento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "orçamento",
             "char_start": 151,
             "char_end": 160
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14226,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e68cf5f716986686",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 151,
+                "char_end": 160
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 1
+        },
+        "root": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

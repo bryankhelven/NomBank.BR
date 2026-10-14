@@ -6,79 +6,579 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_3a72539945a38c5f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3a72539945a38c5f",
+      "frame_id": "f_6a9191f16ea0bbe6",
+      "pt_roleset": "recorde.01",
+      "sense_label": "recorde.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "record.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/record.xml",
+          "source_xml_url": "data/nombank_sources/record.xml",
+          "source_xml_sha256": "cd31bafc4345b88bdbd64de37dc6df87da15381aa5ec90f8a8c12b6ff6261d86",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Métrica ou tema do recorde",
+          "definition": "Theme original, exemplificado por net income e, em outro exemplo, artista; as aplicações métricas locais são justificadas por instância.",
+          "desc_pt": "Métrica ou tema do recorde",
+          "definition_pt": "Theme original, exemplificado por net income e, em outro exemplo, artista; as aplicações métricas locais são justificadas por instância."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor recorde",
+          "definition": "Value original; valor explícito é independente, valor genérico pode incorporar REL conforme Arg2 REF. Taxa de crescimento não é patamar absoluto automaticamente.",
+          "desc_pt": "Valor recorde",
+          "definition_pt": "Value original; valor explícito é independente, valor genérico pode incorporar REL conforme Arg2 REF. Taxa de crescimento não é patamar absoluto automaticamente."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Entidade associada ao recorde",
+          "definition": "Secondary-theme original, exemplificado por Nissan e price; filme aspirante ao recorde é extensão local.",
+          "desc_pt": "Entidade associada ao recorde",
+          "definition_pt": "Secondary-theme original, exemplificado por Nissan e price; filme aspirante ao recorde é extensão local."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000023_SENT001::recorde::1",
           "sent_ID": "FOLHA_DOC000023_SENT001",
           "text": "Captação líquida de fundos cresce 166% até setembro e bate recorde.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recorde",
             "char_start": 59,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Captação líquida de fundos",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 26
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 3676,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6a9191f16ea0bbe6",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 26,
+                    "head_token_id": 1,
+                    "head_form": "Captação",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000044_SENT007::recorde::1",
           "sent_ID": "FOLHA_DOC000044_SENT007",
           "text": "Esse percentual recorde equivale a 4,503 milhões de pessoas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recorde",
             "char_start": 16,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Esse percentual",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 15
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 6057,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6a9191f16ea0bbe6",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 15,
+                    "head_token_id": 2,
+                    "head_form": "percentual",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003293_SENT003::recorde::1",
           "sent_ID": "FOLHA_DOC003293_SENT003",
           "text": "O volume de renúncias fiscais deve atingir R$ 285 bilhões neste ano, recorde em termos nominais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recorde",
             "char_start": 69,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "O volume de renúncias fiscais",
+            "Arg2": "R$ 285 bilhões",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "obj",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 29
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 43,
+                "char_end": 57
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 12531,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6a9191f16ea0bbe6",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 29,
+                    "head_token_id": 2,
+                    "head_form": "volume",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 43,
+                    "char_end": 57,
+                    "head_token_id": 10,
+                    "head_form": "bilhões",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000174_SENT016::recorde::1",
           "sent_ID": "FOLHA_DOC000174_SENT016",
           "text": "Agora, o Capitão Cueca quer quebrar recordes nos cinemas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recordes",
             "char_start": 36,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "o Capitão Cueca"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": "nsubj"
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 7,
+                "char_end": 22
+              }
+            ]
+          },
+          "target_instance_id": 15387,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6a9191f16ea0bbe6",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 7,
+                    "char_end": 22,
+                    "head_token_id": 4,
+                    "head_form": "Capitão",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 3,
+          "Arg2": 0,
+          "Arg3": 1
         },
+        "obj": {
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_3a72539945a38c5f",
+      "frame_id": "f_91fce084546e7327",
+      "pt_roleset": "recorde.01",
+      "sense_label": "recorde.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "record.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/record.xml",
+          "source_xml_url": "data/nombank_sources/record.xml",
+          "source_xml_sha256": "cd31bafc4345b88bdbd64de37dc6df87da15381aa5ec90f8a8c12b6ff6261d86",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Objeto medido",
+          "definition": "Theme das conquistas repetidas, troféu por metonímia do prêmio ganho.",
+          "desc_pt": "Objeto medido",
+          "definition_pt": "Theme das conquistas repetidas, troféu por metonímia do prêmio ganho."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Quantidade recordista",
+          "definition": "Value sexta vez consecutiva, sem recorde atual certificado.",
+          "desc_pt": "Quantidade recordista",
+          "definition_pt": "Value sexta vez consecutiva, sem recorde atual certificado."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Titular secundário",
+          "definition": "Secondary-theme titular das conquistas Julia Louis-Dreyfus.",
+          "desc_pt": "Titular secundário",
+          "definition_pt": "Secondary-theme titular das conquistas Julia Louis-Dreyfus."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003015_SENT024::recorde::1",
           "sent_ID": "FOLHA_DOC003015_SENT024",
           "text": "Julia Louis-Dreyfus ganhou pela sexta vez consecutiva o troféu por sua atuação em \"Veep\", um recorde.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recorde",
             "char_start": 93,
             "char_end": 100
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "o troféu",
+            "Arg2": "pela sexta vez consecutiva",
+            "Arg3": "Julia Louis-Dreyfus"
+          },
+          "syntax": {
+            "Arg1": "obj",
+            "Arg2": "obl",
+            "Arg3": "nsubj"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 62
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 27,
+                "char_end": 53
+              }
+            ],
+            "Arg3": [
+              {
+                "char_start": 0,
+                "char_end": 19
+              }
+            ]
+          },
+          "target_instance_id": 15753,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_91fce084546e7327",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 93,
+                "char_end": 100
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 54,
+                    "char_end": 62,
+                    "head_token_id": 10,
+                    "head_form": "troféu",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 27,
+                    "char_end": 53,
+                    "head_token_id": 7,
+                    "head_form": "vez",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 19,
+                    "head_token_id": 1,
+                    "head_form": "Julia",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "obj": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "obl": {
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "nsubj": {
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 1
+        }
+      }
     }
   ]
 }

@@ -8,20 +8,6 @@
       "roles": null,
       "instances": [
         {
-          "instance_id": "FOLHA_DOC001063_SENT046::empurrão::1",
-          "sent_ID": "FOLHA_DOC001063_SENT046",
-          "text": "Porradas, empurrões, idosos arrastados.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "empurrões",
-            "char_start": 10,
-            "char_end": 19
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
           "instance_id": "FOLHA_DOC000061_SENT022::empurrão::1",
           "sent_ID": "FOLHA_DOC000061_SENT022",
           "text": "Segundo Thaler, pequenos \"empurrões\" seriam a resposta.",
@@ -33,7 +19,132 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 3145,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 26,
+                "char_end": 35
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_id": "s_29d5f168d712b911",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_29d5f168d712b911",
+      "frame_id": "f_d5efb281aec69af8",
+      "pt_roleset": "empurrão.01",
+      "sense_label": "empurrão.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "push.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/push.xml",
+          "source_xml_url": "data/nombank_sources/push.xml",
+          "source_xml_sha256": "b107988437540ec90b7eaa193b54417e7d39858fd2cec7a9396acfde4f8537d1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem empurra",
+          "definition": "Pusher de impulso corporal violento no sentido frozen; não estímulo comportamental sob gloss física.",
+          "desc_pt": "Quem empurra",
+          "definition_pt": "Pusher de impulso corporal violento no sentido frozen; não estímulo comportamental sob gloss física."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Empurrado",
+          "definition": "Coisa/pessoa que recebe impulso, sem vítima de arrastar automaticamente empurrada.",
+          "desc_pt": "Empurrado",
+          "definition_pt": "Coisa/pessoa que recebe impulso, sem vítima de arrastar automaticamente empurrada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Direção do impulso",
+          "definition": "Destino/direção expressos, sem instrumento corporal ou selfencoding inventados.",
+          "desc_pt": "Direção do impulso",
+          "definition_pt": "Destino/direção expressos, sem instrumento corporal ou selfencoding inventados."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001063_SENT046::empurrão::1",
+          "sent_ID": "FOLHA_DOC001063_SENT046",
+          "text": "Porradas, empurrões, idosos arrastados.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "empurrões",
+            "char_start": 10,
+            "char_end": 19
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2145,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d5efb281aec69af8",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 19
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

@@ -6,76 +6,446 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003092_SENT069::imposição::1",
-          "sent_ID": "FOLHA_DOC003092_SENT069",
-          "text": "E essa imposição ela não será fácil, ele trará problemas, podem ter certeza disso aí.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "imposição",
-            "char_start": 7,
-            "char_end": 16
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002042_SENT062::imposição::1",
-          "sent_ID": "FOLHA_DOC002042_SENT062",
-          "text": "Para ela, porém, isso não pode ser uma imposição.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "imposição",
-            "char_start": 39,
-            "char_end": 48
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003092_SENT003::imposição::1",
-          "sent_ID": "FOLHA_DOC003092_SENT003",
-          "text": "Mourão disse que poderá chegar um momento em que os militares terão que \"impor isso [ação militar]\" e que essa \"imposição não será fácil\".",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "imposição",
-            "char_start": 112,
-            "char_end": 121
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "imposição · acepção 1"
+      "sense_label": "imposição · acepção 1",
+      "sense_id": "s_1c17e0cc3b073f63",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "imposição · acepção 2",
+      "sense_id": "s_8ec8fbe78ae348c5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1c17e0cc3b073f63",
+      "frame_id": "f_d7fe0018209db985",
+      "pt_roleset": null,
+      "sense_label": "imposição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "imposition.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/imposition.xml",
+          "source_xml_url": "data/nombank_sources/imposition.xml",
+          "source_xml_sha256": "e73d1dbb18a324c552411e1cf781374c77520c379077e570b3fd9af9f54a4158",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "impositor",
+          "definition": "Agente ou causa que impõe algo; causa abstrata não volitiva documentada.",
+          "desc_pt": "impositor",
+          "definition_pt": "Agente ou causa que impõe algo; causa abstrata não volitiva documentada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo imposto",
+          "definition": "Recurso, ação ou condição imposto.",
+          "desc_pt": "conteúdo imposto",
+          "definition_pt": "Recurso, ação ou condição imposto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário da imposição",
+          "definition": "Entidade sobre quem algo é imposto.",
+          "desc_pt": "destinatário da imposição",
+          "definition_pt": "Entidade sobre quem algo é imposto."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003092_SENT069::imposição::1",
+          "sent_ID": "FOLHA_DOC003092_SENT069",
+          "text": "E essa imposição ela não será fácil, ele trará problemas, podem ter certeza disso aí.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "imposição",
+            "char_start": 7,
+            "char_end": 16
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 3184,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7fe0018209db985",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 7,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002042_SENT062::imposição::1",
+          "sent_ID": "FOLHA_DOC002042_SENT062",
+          "text": "Para ela, porém, isso não pode ser uma imposição.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "imposição",
+            "char_start": 39,
+            "char_end": 48
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "isso",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 21
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9517,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7fe0018209db985",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 17,
+                    "char_end": 21,
+                    "head_token_id": 6,
+                    "head_form": "isso",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003092_SENT003::imposição::1",
+          "sent_ID": "FOLHA_DOC003092_SENT003",
+          "text": "Mourão disse que poderá chegar um momento em que os militares terão que \"impor isso [ação militar]\" e que essa \"imposição não será fácil\".",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "imposição",
+            "char_start": 112,
+            "char_end": 121
+          },
+          "realization": {
+            "Arg0": "os militares",
+            "Arg1": "isso [ação militar]",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 49,
+                "char_end": 61
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 79,
+                "char_end": 98
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14141,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d7fe0018209db985",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 112,
+                "char_end": 121
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11
+                    ],
+                    "char_start": 49,
+                    "char_end": 61,
+                    "head_token_id": 11,
+                    "head_form": "militares",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 79,
+                    "char_end": 98,
+                    "head_token_id": 16,
+                    "head_form": "isso",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_8ec8fbe78ae348c5",
+      "frame_id": "f_79ec18a2b07f7242",
+      "pt_roleset": null,
+      "sense_label": "imposição · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "imposition.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/imposition.xml",
+          "source_xml_url": "data/nombank_sources/imposition.xml",
+          "source_xml_sha256": "e73d1dbb18a324c552411e1cf781374c77520c379077e570b3fd9af9f54a4158",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "impositor",
+          "definition": "Agente ou causa que impõe algo; causa abstrata não volitiva documentada.",
+          "desc_pt": "impositor",
+          "definition_pt": "Agente ou causa que impõe algo; causa abstrata não volitiva documentada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo imposto",
+          "definition": "Recurso, ação ou condição imposto.",
+          "desc_pt": "conteúdo imposto",
+          "definition_pt": "Recurso, ação ou condição imposto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário da imposição",
+          "definition": "Entidade sobre quem algo é imposto.",
+          "desc_pt": "destinatário da imposição",
+          "definition_pt": "Entidade sobre quem algo é imposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001777_SENT015::imposição::1",
           "sent_ID": "FOLHA_DOC001777_SENT015",
           "text": "Entretanto imposições da realidade, mais até do que convicções, levam também a avanços.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "imposições",
             "char_start": 11,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da realidade",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 22,
+                "char_end": 34
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5347,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_79ec18a2b07f7242",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 22,
+                    "char_end": 34,
+                    "head_token_id": 5,
+                    "head_form": "realidade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "imposição · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,127 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "monopólio · acepção 1",
+      "sense_id": "s_b6851f74ef5cae93",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b6851f74ef5cae93",
+      "frame_id": "f_938ac35e26df6894",
+      "pt_roleset": null,
+      "sense_label": "monopólio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "monopoly.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/monopoly.xml",
+          "source_xml_url": "data/nombank_sources/monopoly.xml",
+          "source_xml_sha256": "c6d097dde282c13c6b0a0402ea95f94279ab6af0da7b4cebf4e6ce844d13b3ea",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Detentor da exclusividade",
+          "definition": "Monopolist agent que controla domínio, sem pessoas mortas automaticamente monopolistas.",
+          "desc_pt": "Detentor da exclusividade",
+          "definition_pt": "Monopolist agent que controla domínio, sem pessoas mortas automaticamente monopolistas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio exclusivo",
+          "definition": "Entity monopolized, como venda de droga inteira.",
+          "desc_pt": "Domínio exclusivo",
+          "definition_pt": "Entity monopolized, como venda de droga inteira."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003063_SENT006::monopólio::1",
           "sent_ID": "FOLHA_DOC003063_SENT006",
           "text": "Pelo menos duas pessoas morreram na disputa pelo monopólio da venda de droga.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "monopólio",
             "char_start": 49,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da venda de droga"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 76
+              }
+            ]
+          },
+          "target_instance_id": 5914,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_938ac35e26df6894",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 59,
+                    "char_end": 76,
+                    "head_token_id": 15,
+                    "head_form": "venda",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "monopólio · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

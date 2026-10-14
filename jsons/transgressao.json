@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "transgressão · acepção 1",
+      "sense_id": "s_e8175f94a5c9c269",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e8175f94a5c9c269",
+      "frame_id": "f_3df2d2f9dd5e01ae",
+      "pt_roleset": null,
+      "sense_label": "transgressão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "violation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/violation.xml",
+          "source_xml_url": "data/nombank_sources/violation.xml",
+          "source_xml_sha256": "170a3563348c8f26a569d665f4ac57b8e35bd34c863a40f97b2eff533c4d0bd1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Transgressor",
+          "definition": "Violator de ruptura de convenções/violação, sob desejo sem culpabilidade jurídica presumida.",
+          "desc_pt": "Transgressor",
+          "definition_pt": "Violator de ruptura de convenções/violação, sob desejo sem culpabilidade jurídica presumida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Norma transgredida",
+          "definition": "Thing violated/rule particular nomeada, sem mar de caretice como norma individual automaticamente.",
+          "desc_pt": "Norma transgredida",
+          "definition_pt": "Thing violated/rule particular nomeada, sem mar de caretice como norma individual automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000114_SENT013::transgressão::1",
           "sent_ID": "FOLHA_DOC000114_SENT013",
           "text": "Queremos exercer nosso papel de ilha de transgressão e reflexão crítica nesse mar de caretice.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "transgressão",
             "char_start": 40,
             "char_end": 52
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 11376,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3df2d2f9dd5e01ae",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 52
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "transgressão · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

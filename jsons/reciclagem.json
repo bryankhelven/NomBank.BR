@@ -6,66 +6,376 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reciclagem · acepção 1",
+      "sense_id": "s_1920690d35e17942",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1920690d35e17942",
+      "frame_id": "f_ae2a910e4c9c4503",
+      "pt_roleset": null,
+      "sense_label": "reciclagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recycling.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recycling.xml",
+          "source_xml_url": "data/nombank_sources/recycling.xml",
+          "source_xml_sha256": "bac63d201eff541df5f5c482af6fa753d5e072f0cd6b40ab2bda1eeb8afd48ac",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "reciclador",
+          "definition": "Entidade que transforma material para reutilização.",
+          "desc_pt": "reciclador",
+          "definition_pt": "Entidade que transforma material para reutilização."
+        },
+        {
+          "id": "Arg1",
+          "desc": "material reciclado",
+          "definition": "Material usado/residual que passa por reciclagem.",
+          "desc_pt": "material reciclado",
+          "definition_pt": "Material usado/residual que passa por reciclagem."
+        },
+        {
+          "id": "Arg2",
+          "desc": "produto resultante",
+          "definition": "Novo produto resultante da reciclagem.",
+          "desc_pt": "produto resultante",
+          "definition_pt": "Novo produto resultante da reciclagem."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003193_SENT003::reciclagem::1",
           "sent_ID": "FOLHA_DOC003193_SENT003",
           "text": "Na máquina de autoatendimento para reciclagem, o usuário deposita garrafas pet, latas de alumínio, vidro ou caixas de produtos \"longa vida\" e ganha pontos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reciclagem",
             "char_start": 35,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "garrafas pet, latas de alumínio, vidro ou caixas de produtos \"longa vida\"",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 66,
+                "char_end": 139
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3513,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ae2a910e4c9c4503",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 66,
+                    "char_end": 139,
+                    "head_token_id": 12,
+                    "head_form": "garrafas",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003147_SENT022::reciclagem::1",
           "sent_ID": "FOLHA_DOC003147_SENT022",
           "text": "Na segunda vertente está uma experiência de um consórcio europeu para a reciclagem de PET, o Polymark.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reciclagem",
             "char_start": 72,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de PET",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 83,
+                "char_end": 89
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4290,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ae2a910e4c9c4503",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 72,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16
+                    ],
+                    "char_start": 83,
+                    "char_end": 89,
+                    "head_token_id": 16,
+                    "head_form": "PET",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003193_SENT022::reciclagem::1",
           "sent_ID": "FOLHA_DOC003193_SENT022",
           "text": "Em alguns casos, essas características dificultam a reciclagem, segundo Luciana Pellegrino, diretora-executiva da Abre (Associação Brasileira de Embalagem).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reciclagem",
             "char_start": 52,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6126,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ae2a910e4c9c4503",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003193_SENT018::reciclagem::1",
           "sent_ID": "FOLHA_DOC003193_SENT018",
           "text": "Nós vendemos certificados para mostrar que a indústria está adequada e distribuímos o valor para a cadeia de reciclagem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reciclagem",
             "char_start": 109,
             "char_end": 119
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "cadeia",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 99,
+                "char_end": 105
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9040,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ae2a910e4c9c4503",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 109,
+                "char_end": 119
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17
+                    ],
+                    "char_start": 99,
+                    "char_end": 105,
+                    "head_token_id": 17,
+                    "head_form": "cadeia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reciclagem · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

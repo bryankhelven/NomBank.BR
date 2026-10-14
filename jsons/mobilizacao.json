@@ -6,24 +6,12 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002053_SENT005::mobilização::1",
-          "sent_ID": "FOLHA_DOC002053_SENT005",
-          "text": "A mobilização de atores e cineastas foi imediata e conseguiu com que fossem ouvidos por congressistas.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "mobilização",
-            "char_start": 2,
-            "char_end": 13
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "mobilização · acepção 1"
+      "sense_label": "mobilização · acepção 1",
+      "sense_id": "s_088d36a3d259bd18",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
@@ -43,11 +31,144 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 13456,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 27
+              }
+            ],
+            "arguments": []
+          }
         }
       ],
       "syntactic_profile": {},
-      "sense_label": "mobilização · acepção 2"
+      "sense_label": "mobilização · acepção 2",
+      "sense_id": "s_58a83b621193fb45",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_088d36a3d259bd18",
+      "frame_id": "f_db220d9745380e8f",
+      "pt_roleset": null,
+      "sense_label": "mobilização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "mobilization.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/mobilization.xml",
+          "source_xml_url": "data/nombank_sources/mobilization.xml",
+          "source_xml_sha256": "d46419abea61f9e0afc5b0a9830c0ee81b7be43d51d01a25b69997baff4844a4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Mobilizador",
+          "definition": "Quem convoca à associação reivindicatória.",
+          "desc_pt": "Mobilizador",
+          "definition_pt": "Quem convoca à associação reivindicatória."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Mobilizados",
+          "definition": "Pessoas reunidas, sem genitivo coletivo automaticamente causador.",
+          "desc_pt": "Mobilizados",
+          "definition_pt": "Pessoas reunidas, sem genitivo coletivo automaticamente causador."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002053_SENT005::mobilização::1",
+          "sent_ID": "FOLHA_DOC002053_SENT005",
+          "text": "A mobilização de atores e cineastas foi imediata e conseguiu com que fossem ouvidos por congressistas.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "mobilização",
+            "char_start": 2,
+            "char_end": 13
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de atores e cineastas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 14,
+                "char_end": 35
+              }
+            ]
+          },
+          "target_instance_id": 1963,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_db220d9745380e8f",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 14,
+                    "char_end": 35,
+                    "head_token_id": 4,
+                    "head_form": "atores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

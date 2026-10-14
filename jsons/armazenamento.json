@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "armazenamento · acepção 1",
+      "sense_id": "s_f9f908dadcad8249",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f9f908dadcad8249",
+      "frame_id": "f_9720505a4b29be04",
+      "pt_roleset": null,
+      "sense_label": "armazenamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "storage.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/storage.xml",
+          "source_xml_url": "data/nombank_sources/storage.xml",
+          "source_xml_sha256": "308419ea718780d70963a2e75f199f4ab7d6b181333243a2edfd6e8cd4c4f8e3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Armazenador",
+          "definition": "Storer que guarda em depósito.",
+          "desc_pt": "Armazenador",
+          "definition_pt": "Storer que guarda em depósito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa armazenada",
+          "definition": "Commodity como alimento, com contração completa.",
+          "desc_pt": "Coisa armazenada",
+          "definition_pt": "Commodity como alimento, com contração completa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da guarda",
+          "definition": "Beneficiary explícito, sem resultado como pessoa.",
+          "desc_pt": "Beneficiário da guarda",
+          "definition_pt": "Beneficiary explícito, sem resultado como pessoa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003099_SENT034::armazenamento::1",
           "sent_ID": "FOLHA_DOC003099_SENT034",
           "text": "Para obter o melhor resultado possível, é preciso que sejam obedecidas certas regras básicas de preparo, refrigeração e armazenamento do alimento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "armazenamento",
             "char_start": 120,
             "char_end": 133
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do alimento",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 134,
+                "char_end": 145
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7169,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9720505a4b29be04",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 120,
+                "char_end": 133
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 134,
+                    "char_end": 145,
+                    "head_token_id": 24,
+                    "head_form": "alimento",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "armazenamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,149 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "guarda · acepção 1",
+      "sense_id": "s_23cb2c44d8ef2d7a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_23cb2c44d8ef2d7a",
+      "frame_id": "f_ba6991788d3649f3",
+      "pt_roleset": null,
+      "sense_label": "guarda · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "surveillance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/surveillance.xml",
+          "source_xml_url": "data/nombank_sources/surveillance.xml",
+          "source_xml_sha256": "75296e00fece23b392e68fb1d5b5b082f6a4668f6681ef64a7b47fe7d0571999",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem vigia",
+          "definition": "Observer guardas-civis na função atribuída, sem competência jurídica atual certificada.",
+          "desc_pt": "Quem vigia",
+          "definition_pt": "Observer guardas-civis na função atribuída, sem competência jurídica atual certificada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto vigiado",
+          "definition": "Theme bens públicos municipais, não perigoso instrumental de protection.",
+          "desc_pt": "Objeto vigiado",
+          "definition_pt": "Theme bens públicos municipais, não perigoso instrumental de protection."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004129_SENT009::guarda::1",
           "sent_ID": "FOLHA_DOC004129_SENT009",
           "text": "\"O que compete às guardas-civis é a guarda dos bens públicos municipais\", afirma.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "guarda",
             "char_start": 36,
             "char_end": 42
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "às guardas-civis",
+            "Arg1": "dos bens públicos municipais"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 31
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 43,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 14282,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ba6991788d3649f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 15,
+                    "char_end": 31,
+                    "head_token_id": 7,
+                    "head_form": "guardas-civis",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 43,
+                    "char_end": 71,
+                    "head_token_id": 13,
+                    "head_form": "bens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "guarda · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

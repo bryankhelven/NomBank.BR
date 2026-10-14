@@ -6,122 +6,808 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "repasse · acepção 1",
+      "sense_id": "s_d65dff59da9db600",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d65dff59da9db600",
+      "frame_id": "f_793a87784fbde659",
+      "pt_roleset": null,
+      "sense_label": "repasse · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "transfer.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/transfer.xml",
+          "source_xml_url": "data/nombank_sources/transfer.xml",
+          "source_xml_sha256": "32dacf344ede9a4de83b66f79ed9dcb335a94b2b66f45346c358daf579a4b416",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "agente da transferência",
+          "definition": "Entidade que efetua o envio, inclusive entidade institucional explicitamente responsável.",
+          "desc_pt": "agente da transferência",
+          "definition_pt": "Entidade que efetua o envio, inclusive entidade institucional explicitamente responsável."
+        },
+        {
+          "id": "Arg1",
+          "desc": "recurso transferido",
+          "definition": "Objeto, recurso ou montante enviado, inclusive parcela monetária expressa.",
+          "desc_pt": "recurso transferido",
+          "definition_pt": "Objeto, recurso ou montante enviado, inclusive parcela monetária expressa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário da transferência",
+          "definition": "Entidade que recebe o recurso, seguindo os atributos originais dos papéis, com conflito de exemplo documentado.",
+          "desc_pt": "destinatário da transferência",
+          "definition_pt": "Entidade que recebe o recurso, seguindo os atributos originais dos papéis, com conflito de exemplo documentado."
+        },
+        {
+          "id": "Arg3",
+          "desc": "origem da transferência",
+          "definition": "Fonte/lugar de onde o recurso parte; canal de passagem ou agente institucional não são duplicados automaticamente como origem.",
+          "desc_pt": "origem da transferência",
+          "definition_pt": "Fonte/lugar de onde o recurso parte; canal de passagem ou agente institucional não são duplicados automaticamente como origem."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003054_SENT020::repasse::1",
           "sent_ID": "FOLHA_DOC003054_SENT020",
           "text": "Segundo a PF, os repasses somaram \"mais de R$ 17 milhões\" de 2012 a 2015.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 17,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "\"mais de R$ 17 milhões\"",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 57
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 355,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 34,
+                    "char_end": 57,
+                    "head_token_id": 13,
+                    "head_form": "milhões",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001587_SENT019::repasse::1",
           "sent_ID": "FOLHA_DOC001587_SENT019",
           "text": "Os três já afirmaram que, em princípio, não farão repasses.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 50,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Os três",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 1797,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 7,
+                    "head_token_id": 2,
+                    "head_form": "três",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004095_SENT016::repasse::1",
           "sent_ID": "FOLHA_DOC004095_SENT016",
           "text": "Essas diretorias foram nomeadas e ao longo do tempo se desenvolveu (repasses) através delas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 68,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2937,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT005::repasse::1",
           "sent_ID": "FOLHA_DOC003209_SENT005",
           "text": "Ao mesmo tempo, a associação dos reitores defende a criação desses fundos, mas teme que o governo use as doações para substituir repasses de recursos públicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 129,
             "char_end": 137
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o governo",
+            "Arg1": "de recursos públicos",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 88,
+                "char_end": 97
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 138,
+                "char_end": 158
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 3712,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 129,
+                "char_end": 137
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22
+                    ],
+                    "char_start": 88,
+                    "char_end": 97,
+                    "head_token_id": 22,
+                    "head_form": "governo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29,
+                      30,
+                      31
+                    ],
+                    "char_start": 138,
+                    "char_end": 158,
+                    "head_token_id": 30,
+                    "head_form": "recursos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004082_SENT028::repasse::1",
           "sent_ID": "FOLHA_DOC004082_SENT028",
           "text": "Os repasses atrasados estão em negociação com as operadoras, e não deverão ser judicializados, afirma Balestrin.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 3,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 5239,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000013_SENT009::repasse::1",
           "sent_ID": "FOLHA_DOC000013_SENT009",
           "text": "Após a operação Bullish, da Polícia Federal, apontar supostos favorecimentos no repasse de recursos à JBS, o banco montou uma comissão interna sobre o assunto, mas não encontrou desvios cometidos por funcionários.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasse",
             "char_start": 80,
             "char_end": 87
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de recursos",
+            "Arg2": "à JBS",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 88,
+                "char_end": 99
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 100,
+                "char_end": 105
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 7466,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 80,
+                "char_end": 87
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18
+                    ],
+                    "char_start": 88,
+                    "char_end": 99,
+                    "head_token_id": 18,
+                    "head_form": "recursos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 100,
+                    "char_end": 105,
+                    "head_token_id": 21,
+                    "head_form": "JBS",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003054_SENT022::repasse::1",
           "sent_ID": "FOLHA_DOC003054_SENT022",
           "text": "Observa-se que o repasse no ano de 2014 representou a maioria dos valores, ano que Geddel foi candidato a senador [pela Bahia], diz o relatório.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasse",
             "char_start": 17,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a maioria dos valores",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 52,
+                "char_end": 73
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 9964,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 52,
+                    "char_end": 73,
+                    "head_token_id": 13,
+                    "head_form": "maioria",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004056_SENT010::repasse::1",
           "sent_ID": "FOLHA_DOC004056_SENT010",
           "text": "Se os repasses de Estados e municípios não forem suficientes, a lei determina que a União faça aportes para complementar o fundo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "repasses",
             "char_start": 6,
             "char_end": 14
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de Estados e municípios",
+            "Arg1": null,
+            "Arg2": "o fundo",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "obj",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 121,
+                "char_end": 128
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 13267,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_793a87784fbde659",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 14
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 15,
+                    "char_end": 38,
+                    "head_token_id": 5,
+                    "head_form": "Estados",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23
+                    ],
+                    "char_start": 121,
+                    "char_end": 128,
+                    "head_token_id": 23,
+                    "head_form": "fundo",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "repasse · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 1,
+          "Arg3": 0
+        },
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 2,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

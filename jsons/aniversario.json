@@ -6,38 +6,191 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "aniversário · acepção 1",
+      "sense_id": "s_d9ea7113abc07110",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d9ea7113abc07110",
+      "frame_id": "f_70b7b33d3a4b3074",
+      "pt_roleset": null,
+      "sense_label": "aniversário · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "birthday.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/birthday.xml",
+          "source_xml_url": "data/nombank_sources/birthday.xml",
+          "source_xml_sha256": "243428fa12ad3ec3fb0dccc6ed39655b2f9f1a96841c954caa9b87d33bd8481f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Aniversariante",
+          "definition": "Titular do aniversário pessoal, inclusive possessivo direto ou herdado de dia, sem coreferência ambígua resolvida fora da frase.",
+          "desc_pt": "Aniversariante",
+          "definition_pt": "Titular do aniversário pessoal, inclusive possessivo direto ou herdado de dia, sem coreferência ambígua resolvida fora da frase."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Número de anos",
+          "definition": "Number de idade completada, não presente ou data temporal de outro ato.",
+          "desc_pt": "Número de anos",
+          "definition_pt": "Number de idade completada, não presente ou data temporal de outro ato."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003050_SENT015::aniversário::1",
           "sent_ID": "FOLHA_DOC003050_SENT015",
           "text": "A ideia surgiu depois que Gil a presenteou com uma composição em seu aniversário.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aniversário",
             "char_start": 69,
             "char_end": 80
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "seu",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 65,
+                "char_end": 68
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1311,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_70b7b33d3a4b3074",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 80
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 65,
+                    "char_end": 68,
+                    "head_token_id": 13,
+                    "head_form": "seu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000136_SENT043::aniversário::1",
           "sent_ID": "FOLHA_DOC000136_SENT043",
           "text": "Era assim, esbaforida e rezando, que a jovem começava seu dia de aniversário.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aniversário",
             "char_start": 65,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "seu",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1600,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_70b7b33d3a4b3074",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 54,
+                    "char_end": 57,
+                    "head_token_id": 12,
+                    "head_form": "seu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aniversário · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

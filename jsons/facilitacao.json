@@ -6,38 +6,223 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "facilitação · acepção 1",
+      "sense_id": "s_4464cdbe11341191",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4464cdbe11341191",
+      "frame_id": "f_63590ef25b73fade",
+      "pt_roleset": null,
+      "sense_label": "facilitação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "help.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/help.xml",
+          "source_xml_url": "data/nombank_sources/help.xml",
+          "source_xml_sha256": "b2682a13563c480a3dab260e0796fef1e9dee3ac33095b476e3652da34a95301",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Facilitador",
+          "definition": "Quem ajuda/torna mais fácil, extensão funcional restrita à ação facilitar comércio.",
+          "desc_pt": "Facilitador",
+          "definition_pt": "Quem ajuda/torna mais fácil, extensão funcional restrita à ação facilitar comércio."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Atividade facilitada",
+          "definition": "Project ajudado, inclusive comércio adjetival sem conteúdo de acordo fabricado.",
+          "desc_pt": "Atividade facilitada",
+          "definition_pt": "Project ajudado, inclusive comércio adjetival sem conteúdo de acordo fabricado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário",
+          "definition": "Quem recebe ajuda, distinto de quem recebe ganhos consequentes automaticamente.",
+          "desc_pt": "Beneficiário",
+          "definition_pt": "Quem recebe ajuda, distinto de quem recebe ganhos consequentes automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003186_SENT017::facilitação::1",
           "sent_ID": "FOLHA_DOC003186_SENT017",
           "text": "Apesar de não ser um assunto sexy, a facilitação de comércio resulta em ganhos para o setor privado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "facilitação",
             "char_start": 37,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de comércio",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 49,
+                "char_end": 60
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3929,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63590ef25b73fade",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 49,
+                    "char_end": 60,
+                    "head_token_id": 12,
+                    "head_form": "comércio",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003186_SENT016::facilitação::1",
           "sent_ID": "FOLHA_DOC003186_SENT016",
           "text": "É o caso das negociações de facilitação comercial, para eliminação de barreiras técnicas e padronização de regras.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "facilitação",
             "char_start": 28,
             "char_end": 39
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "comercial",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 49
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6308,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_63590ef25b73fade",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 40,
+                    "char_end": 49,
+                    "head_token_id": 9,
+                    "head_form": "comercial",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "facilitação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

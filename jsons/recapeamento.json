@@ -6,24 +6,159 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "recapeamento · acepção 1",
+      "sense_id": "s_bb513e4007482453",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_bb513e4007482453",
+      "frame_id": "f_cc87fd8f08e492ae",
+      "pt_roleset": null,
+      "sense_label": "recapeamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "coating.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/coating.xml",
+          "source_xml_url": "data/nombank_sources/coating.xml",
+          "source_xml_sha256": "6c371f8b10e0f1a90f5ce5a4e4ef8ddc3f5824d1624faabe02468cf4ea6e9798",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do recapeamento",
+          "definition": "Agent que reaplica camada externa.",
+          "desc_pt": "Autor do recapeamento",
+          "definition_pt": "Agent que reaplica camada externa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Via recapeada",
+          "definition": "Patient que recebe revestimento.",
+          "desc_pt": "Via recapeada",
+          "definition_pt": "Patient que recebe revestimento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Material de revestimento",
+          "definition": "Instrument original aplicado ao asfalto como revestimento, sem novo slot material.",
+          "desc_pt": "Material de revestimento",
+          "definition_pt": "Instrument original aplicado ao asfalto como revestimento, sem novo slot material."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000139_SENT023::recapeamento::1",
           "sent_ID": "FOLHA_DOC000139_SENT023",
           "text": "Até a produção de asfalto para recapeamento das vias foi paralisada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recapeamento",
             "char_start": 31,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "das vias",
+            "Arg2": "de asfalto"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 44,
+                "char_end": 52
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 15,
+                "char_end": 25
+              }
+            ]
+          },
+          "target_instance_id": 13161,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cc87fd8f08e492ae",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 44,
+                    "char_end": 52,
+                    "head_token_id": 10,
+                    "head_form": "vias",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 15,
+                    "char_end": 25,
+                    "head_token_id": 5,
+                    "head_form": "asfalto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "recapeamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

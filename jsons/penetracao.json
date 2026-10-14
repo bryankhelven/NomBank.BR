@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "penetração · acepção 1",
+      "sense_id": "s_3e3801526911a668",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3e3801526911a668",
+      "frame_id": "f_4980abd675f68568",
+      "pt_roleset": null,
+      "sense_label": "penetração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "influence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/influence.xml",
+          "source_xml_url": "data/nombank_sources/influence.xml",
+          "source_xml_sha256": "f5573bb53db3cae8929f5beceee832046f0dcf63a94586d039b2071271251d5b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da penetração",
+          "definition": "Influencer de influência/alcance eleitoral, ex-presidente não nomeado.",
+          "desc_pt": "Titular da penetração",
+          "definition_pt": "Influencer de influência/alcance eleitoral, ex-presidente não nomeado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação induzida",
+          "definition": "Induced action n1/source2 literal, sem voto inferido.",
+          "desc_pt": "Ação induzida",
+          "definition_pt": "Induced action n1/source2 literal, sem voto inferido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Eleitorado alcançado",
+          "definition": "Influenced n2/source1 literal, pobre/conservador explícito, sem candidatos de outro ato sobrepostos.",
+          "desc_pt": "Eleitorado alcançado",
+          "definition_pt": "Influenced n2/source1 literal, pobre/conservador explícito, sem candidatos de outro ato sobrepostos."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004001_SENT021::penetração::1",
           "sent_ID": "FOLHA_DOC004001_SENT021",
           "text": "O ex-presidente tem grande penetração em eleitorado pobre e conservador, que pode ser atraído por candidatos de outras faixas do espectro político.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "penetração",
             "char_start": 27,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O ex-presidente",
+            "Arg1": null,
+            "Arg2": "em eleitorado pobre e conservador"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 15
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 38,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 11344,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4980abd675f68568",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 15,
+                    "head_token_id": 2,
+                    "head_form": "ex-presidente",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 71,
+                    "head_token_id": 7,
+                    "head_form": "eleitorado",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "penetração · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

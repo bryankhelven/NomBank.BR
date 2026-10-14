@@ -6,24 +6,164 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "alcunha · acepção 1",
+      "sense_id": "s_61cf6107655ce4e4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_61cf6107655ce4e4",
+      "frame_id": "f_030cb0a08658abb2",
+      "pt_roleset": null,
+      "sense_label": "alcunha · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "nickname.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/nickname.xml",
+          "source_xml_url": "data/nombank_sources/nickname.xml",
+          "source_xml_sha256": "582507f3ab32caa633dbe8e55b2da5dc204d29f6840cfcf32ce92b117dd04d3c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem atribui alcunha",
+          "definition": "Namer como Rodrigo ao referir-se à pessoa por apelido.",
+          "desc_pt": "Quem atribui alcunha",
+          "definition_pt": "Namer como Rodrigo ao referir-se à pessoa por apelido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa apelidada",
+          "definition": "Named identificada, contração à completa.",
+          "desc_pt": "Pessoa apelidada",
+          "definition_pt": "Named identificada, contração à completa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Nome atribuído",
+          "definition": "Name incorporado conforme nickname REF2 quando alcunha específica não citada; depreciativa é qualidade, não nome específico.",
+          "desc_pt": "Nome atribuído",
+          "definition_pt": "Name incorporado conforme nickname REF2 quando alcunha específica não citada; depreciativa é qualidade, não nome específico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003035_SENT079::alcunha::1",
           "sent_ID": "FOLHA_DOC003035_SENT079",
           "text": "Mas o Rodrigo se referia à Raquel com uma alcunha depreciativa para demonstrar que estavam em lados totalmente opostos na política interna.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "alcunha",
             "char_start": 42,
             "char_end": 49
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o Rodrigo",
+            "Arg1": "à Raquel",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 4,
+                "char_end": 13
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 33
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9699,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_030cb0a08658abb2",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 49
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 4,
+                    "char_end": 13,
+                    "head_token_id": 3,
+                    "head_form": "Rodrigo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 25,
+                    "char_end": 33,
+                    "head_token_id": 8,
+                    "head_form": "Raquel",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "alcunha · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

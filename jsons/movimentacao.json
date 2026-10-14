@@ -6,66 +6,380 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "movimentação · acepção 1",
+      "sense_id": "s_0ad106b3ded4ea7a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0ad106b3ded4ea7a",
+      "frame_id": "f_3d9b266a5e61ee73",
+      "pt_roleset": null,
+      "sense_label": "movimentação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "movement.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/movement.xml",
+          "source_xml_url": "data/nombank_sources/movement.xml",
+          "source_xml_sha256": "d0ce1cab20952851415d17243062fd7df1fa3b3c58a2a52dd122931f89cc1256",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador do movimento",
+          "definition": "Agente que move outra entidade; observador não basta.",
+          "desc_pt": "Causador do movimento",
+          "definition_pt": "Agente que move outra entidade; observador não basta."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade movida",
+          "definition": "Aquilo que circula ou muda de lugar; extensão financeira é proposta local.",
+          "desc_pt": "Entidade movida",
+          "definition_pt": "Aquilo que circula ou muda de lugar; extensão financeira é proposta local."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino",
+          "definition": "Lugar para o qual a entidade é movida, não mero local de circulação.",
+          "desc_pt": "Destino",
+          "definition_pt": "Lugar para o qual a entidade é movida, não mero local de circulação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003201_SENT002::movimentação::1",
           "sent_ID": "FOLHA_DOC003201_SENT002",
           "text": "É quase meia-noite e a movimentação de gente é intensa atrás da famosa Torre do Relógio, na entrada da cidade histórica de Cartagena.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "movimentação",
             "char_start": 23,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003032_SENT013::movimentação::1",
-          "sent_ID": "FOLHA_DOC003032_SENT013",
-          "text": "Graças à movimentação da chef e ativista Roberta Sudbrack, o caso reverberou nas redes sociais, mobilizou cozinheiros, produtores e formadores de opinião.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "movimentação",
-            "char_start": 9,
-            "char_end": 21
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de gente",
+            "Arg2": null
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 44
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1069,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d9b266a5e61ee73",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 36,
+                    "char_end": 44,
+                    "head_token_id": 8,
+                    "head_form": "gente",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000019_SENT003::movimentação::1",
           "sent_ID": "FOLHA_DOC000019_SENT003",
           "text": "O dólar se valorizou em relação ao real, também como reflexo da movimentação financeira menor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "movimentação",
             "char_start": 64,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11067,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d9b266a5e61ee73",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003074_SENT021::movimentação::1",
           "sent_ID": "FOLHA_DOC003074_SENT021",
           "text": "Quando ela percebeu a movimentação, o aparelho tinha sumido e sua identidade estava no chão devido à bolsa remexida.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "movimentação",
             "char_start": 22,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11836,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d9b266a5e61ee73",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "movimentação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_0ad106b3ded4ea7a",
+      "frame_id": "f_fee5666289789eec",
+      "pt_roleset": null,
+      "sense_label": "movimentação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "movement.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/movement.xml",
+          "source_xml_url": "data/nombank_sources/movement.xml",
+          "source_xml_sha256": "d0ce1cab20952851415d17243062fd7df1fa3b3c58a2a52dd122931f89cc1256",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da iniciativa",
+          "definition": "Quem toma medidas ou intervém.",
+          "desc_pt": "Autor da iniciativa",
+          "definition_pt": "Quem toma medidas ou intervém."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Medida",
+          "definition": "Ação/medida tomada; consequências da iniciativa não se transferem automaticamente.",
+          "desc_pt": "Medida",
+          "definition_pt": "Ação/medida tomada; consequências da iniciativa não se transferem automaticamente."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003032_SENT013::movimentação::1",
+          "sent_ID": "FOLHA_DOC003032_SENT013",
+          "text": "Graças à movimentação da chef e ativista Roberta Sudbrack, o caso reverberou nas redes sociais, mobilizou cozinheiros, produtores e formadores de opinião.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "movimentação",
+            "char_start": 9,
+            "char_end": 21
+          },
+          "realization": {
+            "Arg0": "da chef e ativista Roberta Sudbrack",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 22,
+                "char_end": 57
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 4339,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fee5666289789eec",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 22,
+                    "char_end": 57,
+                    "head_token_id": 7,
+                    "head_form": "chef",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

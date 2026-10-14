@@ -6,66 +6,363 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "personalidade · acepção 1",
+      "sense_id": "s_45293b21ddcbfcf0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_45293b21ddcbfcf0",
+      "frame_id": "f_dfb0bafac3b7425e",
+      "pt_roleset": null,
+      "sense_label": "personalidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "personality.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/personality.xml",
+          "source_xml_url": "data/nombank_sources/personality.xml",
+          "source_xml_sha256": "5c61e48cbb7fed3ddf685350d26085b3edc6299f31e59559700dcfa710e4a43e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador do caráter",
+          "definition": "Theme original Americans/she; possessivo é identificação independente, sem duplicar antecedente.",
+          "desc_pt": "Portador do caráter",
+          "definition_pt": "Theme original Americans/she; possessivo é identificação independente, sem duplicar antecedente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualificação do caráter",
+          "definition": "Value original split/outsized; bufônica/explosiva citadas são valores, sem endosso ou diagnóstico. Comportamento negado e oposição entre personalidades não são rótulos individuais; XML não prova encoding genérico.",
+          "desc_pt": "Qualificação do caráter",
+          "definition_pt": "Value original split/outsized; bufônica/explosiva citadas são valores, sem endosso ou diagnóstico. Comportamento negado e oposição entre personalidades não são rótulos individuais; XML não prova encoding genérico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003037_SENT005::personalidade::1",
           "sent_ID": "FOLHA_DOC003037_SENT005",
           "text": "No campo da política externa, onde Trump tem mais margem de manobra, a sua personalidade bufônica tem ofuscado a atuação do secretário de Estado, Rex Tillerson.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "personalidade",
             "char_start": 75,
             "char_end": 88
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "sua",
+            "Arg2": "bufônica"
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 71,
+                "char_end": 74
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 89,
+                "char_end": 97
+              }
+            ]
+          },
+          "target_instance_id": 771,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dfb0bafac3b7425e",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 88
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18
+                    ],
+                    "char_start": 71,
+                    "char_end": 74,
+                    "head_token_id": 18,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20
+                    ],
+                    "char_start": 89,
+                    "char_end": 97,
+                    "head_token_id": 20,
+                    "head_form": "bufônica",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004043_SENT002::personalidade::1",
           "sent_ID": "FOLHA_DOC004043_SENT002",
           "text": "Ator-encrenca, Shia LaBeouf encontrou aquele que talvez seja o papel mais afeito à sua explosiva personalidade: o temperamental tenista John McEnroe.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "personalidade",
             "char_start": 97,
             "char_end": 110
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "sua",
+            "Arg2": "explosiva"
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 83,
+                "char_end": 86
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 87,
+                "char_end": 96
+              }
+            ]
+          },
+          "target_instance_id": 1428,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dfb0bafac3b7425e",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 97,
+                "char_end": 110
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16
+                    ],
+                    "char_start": 83,
+                    "char_end": 86,
+                    "head_token_id": 16,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17
+                    ],
+                    "char_start": 87,
+                    "char_end": 96,
+                    "head_token_id": 17,
+                    "head_form": "explosiva",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003219_SENT049::personalidade::1",
           "sent_ID": "FOLHA_DOC003219_SENT049",
           "text": "Eu não lideraria um grupo de mulheres, não é da minha personalidade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "personalidade",
             "char_start": 54,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "minha",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 48,
+                "char_end": 53
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5543,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dfb0bafac3b7425e",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 48,
+                    "char_end": 53,
+                    "head_token_id": 13,
+                    "head_form": "minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003031_SENT026::personalidade::1",
           "sent_ID": "FOLHA_DOC003031_SENT026",
           "text": "Graças à relação entre esses dois personagens, os diretores conseguem alguns momentos interessantes, principalmente pela oposição entre suas personalidades.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "personalidades",
             "char_start": 141,
             "char_end": 155
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "suas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 136,
+                "char_end": 140
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6622,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dfb0bafac3b7425e",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 141,
+                "char_end": 155
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22
+                    ],
+                    "char_start": 136,
+                    "char_end": 140,
+                    "head_token_id": 22,
+                    "head_form": "suas",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "personalidade · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 4,
+          "Arg2": 0
+        },
+        "amod": {
+          "Arg1": 0,
+          "Arg2": 2
+        }
+      }
     }
   ]
 }

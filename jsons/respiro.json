@@ -6,37 +6,149 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_6fe98111ba7b709c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6fe98111ba7b709c",
+      "frame_id": "f_d88f396757266cc7",
+      "pt_roleset": "respiro.02",
+      "sense_label": "respiro.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "breather.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/breather.xml",
+          "source_xml_url": "data/nombank_sources/breather.xml",
+          "source_xml_sha256": "facb0d344179f019af842a2f93175cd35d3cb0a1813736a84791f118fa30cd92",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem ou o que pausa",
+          "definition": "Pessoa/ação que toma ou busca folga/descanso, restrição PT da pausa conforme give markets a breather; não causador da folga automaticamente.",
+          "desc_pt": "Quem ou o que pausa",
+          "definition_pt": "Pessoa/ação que toma ou busca folga/descanso, restrição PT da pausa conforme give markets a breather; não causador da folga automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000103_SENT045::respiro::1",
           "sent_ID": "FOLHA_DOC000103_SENT045",
           "text": "Se aumentar a capacidade contributiva cobrando mais, dá um respiro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "respiro",
             "char_start": 59,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null
+          },
+          "syntax": {
+            "Arg0": null
+          },
+          "argument_positions": {
+            "Arg0": []
+          },
+          "target_instance_id": 3253,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d88f396757266cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003139_SENT008::respiro::1",
           "sent_ID": "FOLHA_DOC003139_SENT008",
           "text": "Não que ela hoje não seja, mas as pessoas buscavam um respiro, elas precisavam disso, diz Tony Ramos, que vive José Augusto, o pai da mocinha.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "respiro",
             "char_start": 54,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "as pessoas"
+          },
+          "syntax": {
+            "Arg0": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ]
+          },
+          "target_instance_id": 11078,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d88f396757266cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 31,
+                    "char_end": 41,
+                    "head_token_id": 10,
+                    "head_form": "pessoas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1
+        }
+      }
     }
   ]
 }
