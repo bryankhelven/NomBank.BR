@@ -6,24 +6,162 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reintegração · acepção 1",
+      "sense_id": "s_40a5948f159d6234",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_40a5948f159d6234",
+      "frame_id": "f_e91b12a093e24f21",
+      "pt_roleset": null,
+      "sense_label": "reintegração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recovery.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recovery.xml",
+          "source_xml_url": "data/nombank_sources/recovery.xml",
+          "source_xml_sha256": "a12bcef0648c9e2f978de419c1e92a97b1ab74cf80ef54fda1e62e07616597e2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da retomada",
+          "definition": "Entity getting back, como quem tentou recuperar posse sob não conseguiu.",
+          "desc_pt": "Autor da retomada",
+          "definition_pt": "Entity getting back, como quem tentou recuperar posse sob não conseguiu."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa retomada",
+          "definition": "Thing gotten, posse explicitada sem área duplicada.",
+          "desc_pt": "Coisa retomada",
+          "definition_pt": "Thing gotten, posse explicitada sem área duplicada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem da retomada",
+          "definition": "Gotten-from identificada, sem Justiça via de tentativa como origem automaticamente.",
+          "desc_pt": "Origem da retomada",
+          "definition_pt": "Gotten-from identificada, sem Justiça via de tentativa como origem automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003252_SENT023::reintegração::1",
           "sent_ID": "FOLHA_DOC003252_SENT023",
           "text": "A área pertence à construtora MZM, que não conseguiu a reintegração de posse na Justiça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reintegração",
             "char_start": 55,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "que",
+            "Arg1": "de posse",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 35,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 68,
+                "char_end": 76
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7919,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e91b12a093e24f21",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 35,
+                    "char_end": 38,
+                    "head_token_id": 9,
+                    "head_form": "que",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 68,
+                    "char_end": 76,
+                    "head_token_id": 15,
+                    "head_form": "posse",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reintegração · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

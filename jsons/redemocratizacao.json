@@ -6,38 +6,203 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "redemocratização · acepção 1",
+      "sense_id": "s_1821ed2d25d2d3c0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1821ed2d25d2d3c0",
+      "frame_id": "f_06a8fb495fbdba32",
+      "pt_roleset": null,
+      "sense_label": "redemocratização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "restoration.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/restoration.xml",
+          "source_xml_url": "data/nombank_sources/restoration.xml",
+          "source_xml_sha256": "ee15db1781a3059f560b0a107c862e5b35dfce71cdf34551e958ac8917d5dc18",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Restaurador",
+          "definition": "Quem restabelece ordem democrática, extensão explícita da renovação física.",
+          "desc_pt": "Restaurador",
+          "definition_pt": "Quem restabelece ordem democrática, extensão explícita da renovação física."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade restaurada",
+          "definition": "País/ordem cuja democracia se restabelece, sem país inferido quando omitido.",
+          "desc_pt": "Entidade restaurada",
+          "definition_pt": "País/ordem cuja democracia se restabelece, sem país inferido quando omitido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado final",
+          "definition": "Condição renovada explicitada independentemente; sem encoding2 sem prova nominal original.",
+          "desc_pt": "Estado final",
+          "definition_pt": "Condição renovada explicitada independentemente; sem encoding2 sem prova nominal original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003002_SENT008::redemocratização::1",
           "sent_ID": "FOLHA_DOC003002_SENT008",
           "text": "Veja, na galeria, quem foram os antecessores de Dodge desde 1985, marco da redemocratização do país.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "redemocratização",
             "char_start": 75,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do país",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 92,
+                "char_end": 99
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 458,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_06a8fb495fbdba32",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 92,
+                    "char_end": 99,
+                    "head_token_id": 22,
+                    "head_form": "país",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003128_SENT021::redemocratização::1",
           "sent_ID": "FOLHA_DOC003128_SENT021",
           "text": "Está em jogo, afinal, um dos objetivos centrais da redemocratização e do texto constitucional de 1988.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "redemocratização",
             "char_start": 51,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6427,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_06a8fb495fbdba32",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "redemocratização · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,37 +6,149 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_47838023846d8214",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_47838023846d8214",
+      "frame_id": "f_453eca6fca67289e",
+      "pt_roleset": "assunto.02",
+      "sense_label": "assunto.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "subject.03",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/subject.xml",
+          "source_xml_url": "data/nombank_sources/subject.xml",
+          "source_xml_sha256": "281d524bb7b5b221c6cf763b794d95d5dc0a25b255b6077b71f9c1fd74c2dc2b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Tópico de discussão",
+          "definition": "Único topic1 assunto referido como situação, sem texto suporte de produção automaticamente conteúdo temático.",
+          "desc_pt": "Tópico de discussão",
+          "definition_pt": "Único topic1 assunto referido como situação, sem texto suporte de produção automaticamente conteúdo temático."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003091_SENT005::assunto::1",
           "sent_ID": "FOLHA_DOC003091_SENT005",
           "text": "Essa situação já tinha virado assunto no PSG, pois Cavani estava cobrando todos pênaltis.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "assunto",
             "char_start": 30,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Essa situação"
+          },
+          "syntax": {
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 13
+              }
+            ]
+          },
+          "target_instance_id": 6924,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_453eca6fca67289e",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 13,
+                    "head_token_id": 2,
+                    "head_form": "situação",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000097_SENT001::assunto::1",
           "sent_ID": "FOLHA_DOC000097_SENT001",
           "text": "Sem mais assunto para autobiografias, youtubers escrevem livros de ficção.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "assunto",
             "char_start": 9,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg1": []
+          },
+          "target_instance_id": 13119,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_453eca6fca67289e",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

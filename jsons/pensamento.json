@@ -6,118 +6,630 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000025_SENT016::pensamento::1",
-          "sent_ID": "FOLHA_DOC000025_SENT016",
-          "text": "Meu grande desafio foi entender que, para criar o personagem, eu tinha que limpá-lo, porque é a cultura que traz a independência do pensamento.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "pensamento",
-            "char_start": 132,
-            "char_end": 142
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "pensamento · acepção 1"
+      "sense_label": "pensamento · acepção 1",
+      "sense_id": "s_73b3285366d8c68d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "pensamento · acepção 2",
+      "sense_id": "s_5da9244fb655f63f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_73b3285366d8c68d",
+      "frame_id": "f_050a712be8290e49",
+      "pt_roleset": null,
+      "sense_label": "pensamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "mind.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/mind.xml",
+          "source_xml_url": "data/nombank_sources/mind.xml",
+          "source_xml_sha256": "da13bc9881d58c6711abf80a72e7b93ac9c69dca1b33ca8eec87e11d672eea80",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da faculdade mental",
+          "definition": "Knower, sem vincular relator ou cultura por proximidade.",
+          "desc_pt": "Titular da faculdade mental",
+          "definition_pt": "Knower, sem vincular relator ou cultura por proximidade."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo mental",
+          "definition": "Thing known or thought independente.",
+          "desc_pt": "Conteúdo mental",
+          "definition_pt": "Thing known or thought independente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo do conteúdo",
+          "definition": "Attribute of arg1, sem independência da faculdade convertida em conteúdo.",
+          "desc_pt": "Atributo do conteúdo",
+          "definition_pt": "Attribute of arg1, sem independência da faculdade convertida em conteúdo."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000025_SENT016::pensamento::1",
+          "sent_ID": "FOLHA_DOC000025_SENT016",
+          "text": "Meu grande desafio foi entender que, para criar o personagem, eu tinha que limpá-lo, porque é a cultura que traz a independência do pensamento.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "pensamento",
+            "char_start": 132,
+            "char_end": 142
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 3269,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_050a712be8290e49",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 132,
+                "char_end": 142
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_5da9244fb655f63f",
+      "frame_id": "f_388dd1001723f0d7",
+      "pt_roleset": null,
+      "sense_label": "pensamento · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "thought.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/thought.xml",
+          "source_xml_url": "data/nombank_sources/thought.xml",
+          "source_xml_sha256": "1963a89a9a6db0dbc12a3441d770b9d4261f618903ecb7615188d7f6576ce66f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "pensador",
+          "definition": "Entidade que pensa ou produz o pensamento.",
+          "desc_pt": "pensador",
+          "definition_pt": "Entidade que pensa ou produz o pensamento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo pensado",
+          "definition": "Proposição ou assunto que constitui o pensamento.",
+          "desc_pt": "conteúdo pensado",
+          "definition_pt": "Proposição ou assunto que constitui o pensamento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "atribuição ou orientação",
+          "definition": "Juízo ou orientação expressamente atribuída ao pensamento, com adaptações locais identificadas.",
+          "desc_pt": "atribuição ou orientação",
+          "definition_pt": "Juízo ou orientação expressamente atribuída ao pensamento, com adaptações locais identificadas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003065_SENT030::pensamento::1",
           "sent_ID": "FOLHA_DOC003065_SENT030",
           "text": "Sua publicação obedece ao propósito de estimular o debate dos problemas brasileiros e mundiais e de refletir as diversas tendências do pensamento contemporâneo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamento",
             "char_start": 135,
             "char_end": 145
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4424,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_388dd1001723f0d7",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 145
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000114_SENT012::pensamento::1",
           "sent_ID": "FOLHA_DOC000114_SENT012",
           "text": "\"Temos como princípio ser um espaço de pensamento crítico e celebração da diversidade\", resume Youssef.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamento",
             "char_start": 39,
             "char_end": 49
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "crítico"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ]
+          },
+          "target_instance_id": 6803,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_388dd1001723f0d7",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 49
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 50,
+                    "char_end": 57,
+                    "head_token_id": 10,
+                    "head_form": "crítico",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002025_SENT047::pensamento::1",
           "sent_ID": "FOLHA_DOC002025_SENT047",
           "text": "Sua publicação obedece ao propósito de estimular o debate dos problemas brasileiros e mundiais e de refletir as diversas tendências do pensamento contemporâneo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamento",
             "char_start": 135,
             "char_end": 145
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7928,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_388dd1001723f0d7",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 145
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_5da9244fb655f63f",
+      "frame_id": "f_dd350c90fa0f4da0",
+      "pt_roleset": null,
+      "sense_label": "pensamento · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "thought.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/thought.xml",
+          "source_xml_url": "data/nombank_sources/thought.xml",
+          "source_xml_sha256": "1963a89a9a6db0dbc12a3441d770b9d4261f618903ecb7615188d7f6576ce66f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Produtor intelectual",
+          "definition": "Pensador/instituição/coletividade a que se atribui pensamento; extensão explícita de produção institucional à intelectual coletiva de época, inclusive atribuição nacional.",
+          "desc_pt": "Produtor intelectual",
+          "definition_pt": "Pensador/instituição/coletividade a que se atribui pensamento; extensão explícita de produção institucional à intelectual coletiva de época, inclusive atribuição nacional."
         },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo pensado",
+          "definition": "Matéria do pensamento expressa, não tópico do debate ou publicação distinta.",
+          "desc_pt": "Conteúdo pensado",
+          "definition_pt": "Matéria do pensamento expressa, não tópico do debate ou publicação distinta."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributivo",
+          "definition": "Predicação de conteúdo pensado, não todo juízo sobre o produto intelectual como um todo.",
+          "desc_pt": "Atributivo",
+          "definition_pt": "Predicação de conteúdo pensado, não todo juízo sobre o produto intelectual como um todo."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003132_SENT018::pensamento::1",
           "sent_ID": "FOLHA_DOC003132_SENT018",
           "text": "Sua publicação obedece ao propósito de estimular o debate dos problemas brasileiros e mundiais e de refletir as diversas tendências do pensamento contemporâneo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamento",
             "char_start": 135,
             "char_end": 145
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11472,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dd350c90fa0f4da0",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 145
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000094_SENT020::pensamento::1",
           "sent_ID": "FOLHA_DOC000094_SENT020",
           "text": "A subalternidade do pensamento brasileiro se manifesta aí.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamento",
             "char_start": 20,
             "char_end": 30
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "brasileiro",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 31,
+                "char_end": 41
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14347,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dd350c90fa0f4da0",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 30
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 31,
+                    "char_end": 41,
+                    "head_token_id": 6,
+                    "head_form": "brasileiro",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003024_SENT030::pensamento::1",
           "sent_ID": "FOLHA_DOC003024_SENT030",
           "text": "Sua publicação obedece ao propósito de estimular o debate dos problemas brasileiros e mundiais e de refletir as diversas tendências do pensamentos contemporâneo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pensamentos",
             "char_start": 135,
             "char_end": 146
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14643,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dd350c90fa0f4da0",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 135,
+                "char_end": 146
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "pensamento · acepção 2"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

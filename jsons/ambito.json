@@ -6,23 +6,119 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b4625b8c7c096fb0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b4625b8c7c096fb0",
+      "frame_id": "f_7641cfdca4d8e3e8",
+      "pt_roleset": "âmbito.01",
+      "sense_label": "âmbito.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "field.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/field.xml",
+          "source_xml_url": "data/nombank_sources/field.xml",
+          "source_xml_sha256": "4469ce85668f807e5d677690c6dbe7fbc57748fd314fe3e0f56c55c9b64e452a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Domínio de atuação",
+          "definition": "Topic do âmbito, digital e impresso como canais separados, sem medir alcance.",
+          "desc_pt": "Domínio de atuação",
+          "definition_pt": "Topic do âmbito, digital e impresso como canais separados, sem medir alcance."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004046_SENT007::âmbito::1",
           "sent_ID": "FOLHA_DOC004046_SENT007",
           "text": "Quero ir estando totalmente em forma, tanto no âmbito digital como no impresso.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "âmbito",
             "char_start": 47,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "digital … impresso"
+          },
+          "syntax": {
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 61
+              },
+              {
+                "char_start": 70,
+                "char_end": 78
+              }
+            ]
+          },
+          "target_instance_id": 13066,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7641cfdca4d8e3e8",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 54,
+                    "char_end": 61,
+                    "head_token_id": 12,
+                    "head_form": "digital",
+                    "head_deprel": "amod"
+                  },
+                  {
+                    "token_ids": [
+                      16
+                    ],
+                    "char_start": 70,
+                    "char_end": 78,
+                    "head_token_id": 16,
+                    "head_form": "impresso",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

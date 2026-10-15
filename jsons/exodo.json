@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "êxodo · acepção 1",
+      "sense_id": "s_d80f8712dda52b1b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d80f8712dda52b1b",
+      "frame_id": "f_83bc288757475c37",
+      "pt_roleset": null,
+      "sense_label": "êxodo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exodus.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exodus.xml",
+          "source_xml_url": "data/nombank_sources/exodus.xml",
+          "source_xml_sha256": "f231aa580721242e08972d83471a428a09383bf1803a595ca308444318314dc5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem emigra",
+          "definition": "Entity leaving, não autoridades que administram êxodo automaticamente.",
+          "desc_pt": "Quem emigra",
+          "definition_pt": "Entity leaving, não autoridades que administram êxodo automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Lugar abandonado",
+          "definition": "Place left expresso.",
+          "desc_pt": "Lugar abandonado",
+          "definition_pt": "Place left expresso."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino do êxodo",
+          "definition": "Goal expresso, sem país/população inferidos.",
+          "desc_pt": "Destino do êxodo",
+          "definition_pt": "Goal expresso, sem país/população inferidos."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003268_SENT012::êxodo::1",
           "sent_ID": "FOLHA_DOC003268_SENT012",
           "text": "Autoridades locais e organizações internacionais se esforçam para administrar o crescente êxodo, sem precedentes neste conflito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "êxodo",
             "char_start": 90,
             "char_end": 95
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8789,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_83bc288757475c37",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 95
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "êxodo · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

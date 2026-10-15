@@ -6,24 +6,168 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "descrição · acepção 1",
+      "sense_id": "s_59a9c128e3535740",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_59a9c128e3535740",
+      "frame_id": "f_32c7c80e071db4ed",
+      "pt_roleset": null,
+      "sense_label": "descrição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "description.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/description.xml",
+          "source_xml_url": "data/nombank_sources/description.xml",
+          "source_xml_sha256": "31e34cdd42e89f9a772a2085aacb201328b3f1887db860bf0e096a170036f0b7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Descritor",
+          "definition": "Describer que fornece detalhamento nos questionários da mesma atividade.",
+          "desc_pt": "Descritor",
+          "definition_pt": "Describer que fornece detalhamento nos questionários da mesma atividade."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa descrita",
+          "definition": "Thing described como alimentos contidos na dieta, não características externas inferidas.",
+          "desc_pt": "Coisa descrita",
+          "definition_pt": "Thing described como alimentos contidos na dieta, não características externas inferidas."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Caracterização atribuída",
+          "definition": "Described-as/secondary attribute explícita, não instrumento questionário.",
+          "desc_pt": "Caracterização atribuída",
+          "definition_pt": "Described-as/secondary attribute explícita, não instrumento questionário."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003301_SENT012::descrição::1",
           "sent_ID": "FOLHA_DOC003301_SENT012",
           "text": "Periodicamente, os participantes responderam a questionários padronizados para a descrição dos alimentos contidos na dieta.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "descrição",
             "char_start": 81,
             "char_end": 90
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os participantes",
+            "Arg1": "dos alimentos contidos na dieta",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 91,
+                "char_end": 122
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7446,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_32c7c80e071db4ed",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 90
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 16,
+                    "char_end": 32,
+                    "head_token_id": 4,
+                    "head_form": "participantes",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 91,
+                    "char_end": 122,
+                    "head_token_id": 14,
+                    "head_form": "alimentos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "descrição · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

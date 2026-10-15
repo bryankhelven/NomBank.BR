@@ -6,38 +6,198 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "agilidade · acepção 1",
+      "sense_id": "s_404be2bd393443d3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_404be2bd393443d3",
+      "frame_id": "f_17342f0076d4807d",
+      "pt_roleset": null,
+      "sense_label": "agilidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rapidity.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rapidity.xml",
+          "source_xml_url": "data/nombank_sources/rapidity.xml",
+          "source_xml_sha256": "4d5c920020160a4bf7dd1763f9d60549eeb45d1e4b21482f68a9921c9f08ea8a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Atividade rápida",
+          "definition": "Theme da rapidez frozen, como avaliações/entrega, sem causa da velocidade automaticamente titular.",
+          "desc_pt": "Atividade rápida",
+          "definition_pt": "Theme da rapidez frozen, como avaliações/entrega, sem causa da velocidade automaticamente titular."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor de rapidez",
+          "definition": "Value incorporado conforme rapidity REF2 original, não destreza física como sentido alternativo.",
+          "desc_pt": "Valor de rapidez",
+          "definition_pt": "Value incorporado conforme rapidity REF2 original, não destreza física como sentido alternativo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003041_SENT019::agilidade::1",
           "sent_ID": "FOLHA_DOC003041_SENT019",
           "text": "Igor Chalfoun, presidente da TBIT, empresa nascida na Universidade Federal de Lavras (MG), defende que a \"visão\" das máquinas diminui a subjetividade e aumenta a agilidade em avaliações.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agilidade",
             "char_start": 162,
             "char_end": 171
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "em avaliações",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 172,
+                "char_end": 185
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5850,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_17342f0076d4807d",
+          "argument_details": {
+            "predicate_token_ids": [
+              36
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 162,
+                "char_end": 171
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      37,
+                      38
+                    ],
+                    "char_start": 172,
+                    "char_end": 185,
+                    "head_token_id": 38,
+                    "head_form": "avaliações",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003046_SENT011::agilidade::1",
           "sent_ID": "FOLHA_DOC003046_SENT011",
           "text": "O crescimento do comércio eletrônico é baseado na facilidade da compra e na agilidade da entrega.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agilidade",
             "char_start": 76,
             "char_end": 85
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "da entrega",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 86,
+                "char_end": 96
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7632,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_17342f0076d4807d",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 85
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 86,
+                    "char_end": 96,
+                    "head_token_id": 21,
+                    "head_form": "entrega",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "agilidade · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

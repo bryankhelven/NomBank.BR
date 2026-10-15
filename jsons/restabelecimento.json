@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "restabelecimento · acepção 1",
+      "sense_id": "s_7c87612952c7bba5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7c87612952c7bba5",
+      "frame_id": "f_b44199ffa0475115",
+      "pt_roleset": null,
+      "sense_label": "restabelecimento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "restoration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/restoration.xml",
+          "source_xml_url": "data/nombank_sources/restoration.xml",
+          "source_xml_sha256": "ee15db1781a3059f560b0a107c862e5b35dfce71cdf34551e958ac8917d5dc18",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Restabelecedor",
+          "definition": "Giver/restorer que restitui estado anterior.",
+          "desc_pt": "Restabelecedor",
+          "definition_pt": "Giver/restorer que restitui estado anterior."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa restabelecida",
+          "definition": "Gift/thing restored estendido ao estado paz, não renovar edifício.",
+          "desc_pt": "Coisa restabelecida",
+          "definition_pt": "Gift/thing restored estendido ao estado paz, não renovar edifício."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino da restituição",
+          "definition": "Beneficiary/restored-to expresso, sem bem duradouro como destinatário.",
+          "desc_pt": "Destino da restituição",
+          "definition_pt": "Beneficiary/restored-to expresso, sem bem duradouro como destinatário."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004015_SENT018::restabelecimento::1",
           "sent_ID": "FOLHA_DOC004015_SENT018",
           "text": "Não parece haver outro caminho, entretanto, para alcançar um bem mais duradouro: o restabelecimento da paz.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "restabelecimento",
             "char_start": 83,
             "char_end": 99
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da paz",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 100,
+                "char_end": 106
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14351,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b44199ffa0475115",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 99
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 100,
+                    "char_end": 106,
+                    "head_token_id": 20,
+                    "head_form": "paz",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "restabelecimento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

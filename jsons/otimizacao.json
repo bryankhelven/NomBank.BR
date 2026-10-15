@@ -6,38 +6,193 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "otimização · acepção 1",
+      "sense_id": "s_3664a3c10605b07b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3664a3c10605b07b",
+      "frame_id": "f_f9a8b8ad8d898b27",
+      "pt_roleset": null,
+      "sense_label": "otimização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "improvement.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/improvement.xml",
+          "source_xml_url": "data/nombank_sources/improvement.xml",
+          "source_xml_sha256": "64452bd65ca32686cd1adcce2879adaebcff79008f7f42df13ea5363e2b1beb6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Otimizador",
+          "definition": "Improver que torna ótimo/melhor o uso do recurso, não empresa que aposta ou sistemas que sustentam automaticamente executor.",
+          "desc_pt": "Otimizador",
+          "definition_pt": "Improver que torna ótimo/melhor o uso do recurso, não empresa que aposta ou sistemas que sustentam automaticamente executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa otimizada",
+          "definition": "Thing improving tempo/recurso quanto ao uso, restrição processual explícita conforme gloss frozen.",
+          "desc_pt": "Coisa otimizada",
+          "definition_pt": "Thing improving tempo/recurso quanto ao uso, restrição processual explícita conforme gloss frozen."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003242_SENT024::otimização::1",
           "sent_ID": "FOLHA_DOC003242_SENT024",
           "text": "A otimização de tempo também tem sido a aposta da Valtra para conquistar mercado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "otimização",
             "char_start": 2,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de tempo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 13,
+                "char_end": 21
+              }
+            ]
+          },
+          "target_instance_id": 5557,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f9a8b8ad8d898b27",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 13,
+                    "char_end": 21,
+                    "head_token_id": 4,
+                    "head_form": "tempo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003046_SENT012::otimização::1",
           "sent_ID": "FOLHA_DOC003046_SENT012",
           "text": "Ele é dependente, portanto, de aperfeiçoamento dos sistemas de transporte de mercadorias, principalmente na otimização de recursos e na redução de custos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "otimização",
             "char_start": 108,
             "char_end": 118
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de recursos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 119,
+                "char_end": 130
+              }
+            ]
+          },
+          "target_instance_id": 13804,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f9a8b8ad8d898b27",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 108,
+                "char_end": 118
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22
+                    ],
+                    "char_start": 119,
+                    "char_end": 130,
+                    "head_token_id": 22,
+                    "head_form": "recursos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "otimização · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

@@ -6,90 +6,502 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003018_SENT021::paixão::1",
-          "sent_ID": "FOLHA_DOC003018_SENT021",
-          "text": "Jéssica herdou a paixão pelo esporte de outra mulher: a mãe, que nunca sai de perto do rádio e sempre levou a filha aos jogos do São Paulo.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "paixão",
-            "char_start": 17,
-            "char_end": 23
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003130_SENT034::paixão::1",
-          "sent_ID": "FOLHA_DOC003130_SENT034",
-          "text": "\"Para pesquisar a pico-de-jaca, precisa ser maluco e ter paixão pelo trabalho\", afirma Padron.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "paixão",
-            "char_start": 57,
-            "char_end": 63
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003219_SENT078::paixão::1",
-          "sent_ID": "FOLHA_DOC003219_SENT078",
-          "text": "Brinco que minha paixão pela cerveja é conquistada, não à primeira vista.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "paixão",
-            "char_start": 17,
-            "char_end": 23
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "paixão · acepção 1"
+      "sense_label": "paixão · acepção 1",
+      "sense_id": "s_3caebe7a28fe5afc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "paixão · acepção 2",
+      "sense_id": "s_3a69e1bca10ee14e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3caebe7a28fe5afc",
+      "frame_id": "f_7e4e9a50a5539e7c",
+      "pt_roleset": null,
+      "sense_label": "paixão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "passion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/passion.xml",
+          "source_xml_url": "data/nombank_sources/passion.xml",
+          "source_xml_sha256": "8fed0fb6897b1b4fbf907076536b5a614cc38f7d13e6e156055bebfe25ba7e54",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "detentor da paixão",
+          "definition": "Entidade que tem predileção ou sentimento intenso, em conformidade com exemplos nominais de paixão por futebol e public passions.",
+          "desc_pt": "detentor da paixão",
+          "definition_pt": "Entidade que tem predileção ou sentimento intenso, em conformidade com exemplos nominais de paixão por futebol e public passions."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto da paixão",
+          "definition": "Aquilo para o qual se dirige a predileção/sentimento; qualificador ideológico não é automaticamente objeto desejado.",
+          "desc_pt": "objeto da paixão",
+          "definition_pt": "Aquilo para o qual se dirige a predileção/sentimento; qualificador ideológico não é automaticamente objeto desejado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003018_SENT021::paixão::1",
+          "sent_ID": "FOLHA_DOC003018_SENT021",
+          "text": "Jéssica herdou a paixão pelo esporte de outra mulher: a mãe, que nunca sai de perto do rádio e sempre levou a filha aos jogos do São Paulo.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "paixão",
+            "char_start": 17,
+            "char_end": 23
+          },
+          "realization": {
+            "Arg0": "Jéssica",
+            "Arg1": "pelo esporte"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 7
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 24,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 1841,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7e4e9a50a5539e7c",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 7,
+                    "head_token_id": 1,
+                    "head_form": "Jéssica",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 24,
+                    "char_end": 36,
+                    "head_token_id": 7,
+                    "head_form": "esporte",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003130_SENT034::paixão::1",
+          "sent_ID": "FOLHA_DOC003130_SENT034",
+          "text": "\"Para pesquisar a pico-de-jaca, precisa ser maluco e ter paixão pelo trabalho\", afirma Padron.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "paixão",
+            "char_start": 57,
+            "char_end": 63
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pelo trabalho"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 77
+              }
+            ]
+          },
+          "target_instance_id": 10517,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7e4e9a50a5539e7c",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 63
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 64,
+                    "char_end": 77,
+                    "head_token_id": 15,
+                    "head_form": "trabalho",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
+    },
+    {
+      "sense_id": "s_3a69e1bca10ee14e",
+      "frame_id": "f_eee2a9ee830f0bcd",
+      "pt_roleset": null,
+      "sense_label": "paixão · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "passion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/passion.xml",
+          "source_xml_url": "data/nombank_sources/passion.xml",
+          "source_xml_sha256": "8fed0fb6897b1b4fbf907076536b5a614cc38f7d13e6e156055bebfe25ba7e54",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "detentor da paixão",
+          "definition": "Entidade que tem predileção ou sentimento intenso, em conformidade com exemplos nominais de paixão por futebol e public passions.",
+          "desc_pt": "detentor da paixão",
+          "definition_pt": "Entidade que tem predileção ou sentimento intenso, em conformidade com exemplos nominais de paixão por futebol e public passions."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto da paixão",
+          "definition": "Aquilo para o qual se dirige a predileção/sentimento; qualificador ideológico não é automaticamente objeto desejado.",
+          "desc_pt": "objeto da paixão",
+          "definition_pt": "Aquilo para o qual se dirige a predileção/sentimento; qualificador ideológico não é automaticamente objeto desejado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000149_SENT018::paixão::1",
           "sent_ID": "FOLHA_DOC000149_SENT018",
           "text": "A paixão pode ser destrutiva e feroz quando é fanatismo e racismo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "paixão",
             "char_start": 2,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 9810,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eee2a9ee830f0bcd",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000149_SENT019::paixão::1",
           "sent_ID": "FOLHA_DOC000149_SENT019",
           "text": "O pior de tudo, que causou mais danos na história, é a paixão nacionalista.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "paixão",
             "char_start": 55,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 10715,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eee2a9ee830f0bcd",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "paixão · acepção 2"
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_3caebe7a28fe5afc",
+      "frame_id": "f_ab42cff74c285cfb",
+      "pt_roleset": null,
+      "sense_label": "paixão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "passion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/passion.xml",
+          "source_xml_url": "data/nombank_sources/passion.xml",
+          "source_xml_sha256": "8fed0fb6897b1b4fbf907076536b5a614cc38f7d13e6e156055bebfe25ba7e54",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da predileção",
+          "definition": "Wanter de gosto vivo, possessivo minha explicitado.",
+          "desc_pt": "Titular da predileção",
+          "definition_pt": "Wanter de gosto vivo, possessivo minha explicitado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto da paixão",
+          "definition": "Wanted como cerveja, não paixão romântica ou evento clínico presumidos.",
+          "desc_pt": "Objeto da paixão",
+          "definition_pt": "Wanted como cerveja, não paixão romântica ou evento clínico presumidos."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003219_SENT078::paixão::1",
+          "sent_ID": "FOLHA_DOC003219_SENT078",
+          "text": "Brinco que minha paixão pela cerveja é conquistada, não à primeira vista.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "paixão",
+            "char_start": 17,
+            "char_end": 23
+          },
+          "realization": {
+            "Arg0": "minha",
+            "Arg1": "pela cerveja"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 24,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 11268,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab42cff74c285cfb",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 11,
+                    "char_end": 16,
+                    "head_token_id": 3,
+                    "head_form": "minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 24,
+                    "char_end": 36,
+                    "head_token_id": 7,
+                    "head_form": "cerveja",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

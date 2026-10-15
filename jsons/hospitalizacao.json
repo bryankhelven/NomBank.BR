@@ -6,24 +6,102 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "hospitalização · acepção 1",
+      "sense_id": "s_516a02b0913e3da5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_516a02b0913e3da5",
+      "frame_id": "f_69960a43c52cd595",
+      "pt_roleset": null,
+      "sense_label": "hospitalização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "hospitalization.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/hospitalization.xml",
+          "source_xml_url": "data/nombank_sources/hospitalization.xml",
+          "source_xml_sha256": "514789301005ed06bad9c60fb8e961f0808c7ec7fff4255893438d0f309f951e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da internação",
+          "definition": "Sender que hospitaliza, não source da lembrança ou autor de questões.",
+          "desc_pt": "Autor da internação",
+          "definition_pt": "Sender que hospitaliza, não source da lembrança ou autor de questões."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa hospitalizada",
+          "definition": "Injured/ill entity expresso, sem possessivo de questões como paciente independente.",
+          "desc_pt": "Pessoa hospitalizada",
+          "definition_pt": "Injured/ill entity expresso, sem possessivo de questões como paciente independente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004124_SENT008::hospitalização::1",
           "sent_ID": "FOLHA_DOC004124_SENT008",
           "text": "Muitas delas remetem às minhas questões com hospitalização, tratamento, doença.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "hospitalização",
             "char_start": 44,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 883,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_69960a43c52cd595",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "hospitalização · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

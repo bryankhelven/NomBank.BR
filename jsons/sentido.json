@@ -6,37 +6,218 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_b904560041f68b4d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b904560041f68b4d",
+      "frame_id": "f_541c99a07817b39a",
+      "pt_roleset": "sentido.07",
+      "sense_label": "sentido.07",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "direction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/direction.xml",
+          "source_xml_url": "data/nombank_sources/direction.xml",
+          "source_xml_sha256": "ac439b84339a8abfe1e5db2a76d243cd4ba09911d8e133182e6587f2549d2a94",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Orientador",
+          "definition": "Director que dirige/orienta, não quem bloqueia via por si.",
+          "desc_pt": "Orientador",
+          "definition_pt": "Director que dirige/orienta, não quem bloqueia via por si."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa orientada",
+          "definition": "Thing directed, sem lugar Anel Rodoviário bloqueado automaticamente movente/objeto orientado.",
+          "desc_pt": "Coisa orientada",
+          "definition_pt": "Thing directed, sem lugar Anel Rodoviário bloqueado automaticamente movente/objeto orientado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Orientação ou destino",
+          "definition": "Towards what expresso como Vitória/Rio de Janeiro, não significado/percepção.",
+          "desc_pt": "Orientação ou destino",
+          "definition_pt": "Towards what expresso como Vitória/Rio de Janeiro, não significado/percepção."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004065_SENT015::sentido::1",
           "sent_ID": "FOLHA_DOC004065_SENT015",
           "text": "O Anel Rodoviário chegou a ser bloqueado tanto no sentido Vitória, como no sentido Rio de Janeiro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sentido",
             "char_start": 50,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Vitória"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 58,
+                "char_end": 65
+              }
+            ]
+          },
+          "target_instance_id": 10550,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_541c99a07817b39a",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 58,
+                    "char_end": 65,
+                    "head_token_id": 12,
+                    "head_form": "Vitória",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004065_SENT015::sentido::2",
           "sent_ID": "FOLHA_DOC004065_SENT015",
           "text": "O Anel Rodoviário chegou a ser bloqueado tanto no sentido Vitória, como no sentido Rio de Janeiro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sentido",
             "char_start": 75,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Rio de Janeiro"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 83,
+                "char_end": 97
+              }
+            ]
+          },
+          "target_instance_id": 10551,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_541c99a07817b39a",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 83,
+                    "char_end": 97,
+                    "head_token_id": 18,
+                    "head_form": "Rio",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        }
+      }
     }
   ]
 }

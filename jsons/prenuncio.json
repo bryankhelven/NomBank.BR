@@ -6,38 +6,213 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "prenúncio · acepção 1",
+      "sense_id": "s_39860349afbc7ba8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_39860349afbc7ba8",
+      "frame_id": "f_4e8df2b7260692f4",
+      "pt_roleset": null,
+      "sense_label": "prenúncio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "harbinger.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/harbinger.xml",
+          "source_xml_url": "data/nombank_sources/harbinger.xml",
+          "source_xml_sha256": "41a63c8374d86daccdaf1f78cb440358ce430680b9eb5f004e965ba97a671246",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Sinal prognóstico",
+          "definition": "Fortune teller estendido ao indicador não humano de evento futuro, independente quando Patmos/isso nomeiam sinal.",
+          "desc_pt": "Sinal prognóstico",
+          "definition_pt": "Fortune teller estendido ao indicador não humano de evento futuro, independente quando Patmos/isso nomeiam sinal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Evento prenunciado",
+          "definition": "Prediction/conteúdo anunciado, sem bíblico genérico como evento futuro particular.",
+          "desc_pt": "Evento prenunciado",
+          "definition_pt": "Prediction/conteúdo anunciado, sem bíblico genérico como evento futuro particular."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003035_SENT059::prenúncio::1",
           "sent_ID": "FOLHA_DOC003035_SENT059",
           "text": "O outro era que, derrubando o presidente, e até o nome da operação era nesse sentido -Patmos, prenúncio do apocalipse-, ele impediria que Temer indicasse Raquel.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prenúncio",
             "char_start": 94,
             "char_end": 103
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Patmos",
+            "Arg1": "do apocalipse"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 86,
+                "char_end": 92
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 104,
+                "char_end": 117
+              }
+            ]
+          },
+          "target_instance_id": 5984,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4e8df2b7260692f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 94,
+                "char_end": 103
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22
+                    ],
+                    "char_start": 86,
+                    "char_end": 92,
+                    "head_token_id": 22,
+                    "head_form": "Patmos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 104,
+                    "char_end": 117,
+                    "head_token_id": 27,
+                    "head_form": "apocalipse",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003192_SENT030::prenúncio::1",
           "sent_ID": "FOLHA_DOC003192_SENT030",
           "text": "Mas sempre haverá alguma tensão no mundo -e parece que também haverá um oportunista para interpretar isso como um prenúncio bíblico.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "prenúncio",
             "char_start": 114,
             "char_end": 123
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "isso",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 101,
+                "char_end": 105
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 15379,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4e8df2b7260692f4",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 114,
+                "char_end": 123
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19
+                    ],
+                    "char_start": 101,
+                    "char_end": 105,
+                    "head_token_id": 19,
+                    "head_form": "isso",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "prenúncio · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

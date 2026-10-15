@@ -6,24 +6,124 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "apostador · acepção 1",
+      "sense_id": "s_6e7dcd9d639f6a23",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6e7dcd9d639f6a23",
+      "frame_id": "f_2635498d7d5f46a8",
+      "pt_roleset": null,
+      "sense_label": "apostador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "gambler.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/gambler.xml",
+          "source_xml_url": "data/nombank_sources/gambler.xml",
+          "source_xml_sha256": "b65de254e5253aebf09d6b94f33e6e2782434798d926282df83a3725a315d1a3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Apostador",
+          "definition": "Agent que aposta, SELF0 conforme original, sem intérprete/gerenciadora automaticamente titular.",
+          "desc_pt": "Apostador",
+          "definition_pt": "Agent que aposta, SELF0 conforme original, sem intérprete/gerenciadora automaticamente titular."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema da aposta",
+          "definition": "Theme restrito ao jogo pôquer explicitado, sem valor apostado inventado.",
+          "desc_pt": "Tema da aposta",
+          "definition_pt": "Theme restrito ao jogo pôquer explicitado, sem valor apostado inventado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003108_SENT004::apostador::1",
           "sent_ID": "FOLHA_DOC003108_SENT004",
           "text": "A atriz Jessica Chastain também pode se somar ao grupo por seu papel como Molly Bloom, ex-esquiadora que se tornou gerenciadora de um esquema clandestino de apostadores de pôquer.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apostadores",
             "char_start": 157,
             "char_end": 168
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de pôquer"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 169,
+                "char_end": 178
+              }
+            ]
+          },
+          "target_instance_id": 13961,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2635498d7d5f46a8",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 157,
+                "char_end": 168
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30,
+                      31
+                    ],
+                    "char_start": 169,
+                    "char_end": 178,
+                    "head_token_id": 31,
+                    "head_form": "pôquer",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "apostador · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

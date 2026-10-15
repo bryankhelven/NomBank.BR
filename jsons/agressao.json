@@ -6,52 +6,313 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "agressão · acepção 1",
+      "sense_id": "s_f56b9489f762fadc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f56b9489f762fadc",
+      "frame_id": "f_2e92de92c3dbd985",
+      "pt_roleset": null,
+      "sense_label": "agressão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "assault.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/assault.xml",
+          "source_xml_url": "data/nombank_sources/assault.xml",
+          "source_xml_sha256": "721d3dba2aeff8d7d6c2a3eacbb7ff9f660e0556a1c4b19181d3d4503b54a85b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Atacante",
+          "definition": "Quem faz investida/agressão, inclusive sob hipótese ou atribuição.",
+          "desc_pt": "Atacante",
+          "definition_pt": "Quem faz investida/agressão, inclusive sob hipótese ou atribuição."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo",
+          "definition": "Entidade agredida, sem impor modalidade física; original admite mercado/salários metaforicamente.",
+          "desc_pt": "Alvo",
+          "definition_pt": "Entidade agredida, sem impor modalidade física; original admite mercado/salários metaforicamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio distinto do atacante, sem inventar arma ou tomar iniciativa como instrumento.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio distinto do atacante, sem inventar arma ou tomar iniciativa como instrumento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004049_SENT015::agressão::1",
           "sent_ID": "FOLHA_DOC004049_SENT015",
           "text": "Também disse que não tem medo de ser alvo de agressões tanto de apoiadores quanto de críticos do ex-presidente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agressões",
             "char_start": 45,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "tanto de apoiadores quanto de críticos do ex-presidente",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 55,
+                "char_end": 110
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7193,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2e92de92c3dbd985",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 55,
+                    "char_end": 110,
+                    "head_token_id": 14,
+                    "head_form": "apoiadores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001694_SENT004::agressão::1",
           "sent_ID": "FOLHA_DOC001694_SENT004",
           "text": "Ao perceber a agressão, a vítima gritou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agressão",
             "char_start": 14,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a vítima",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 24,
+                "char_end": 32
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7347,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2e92de92c3dbd985",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 24,
+                    "char_end": 32,
+                    "head_token_id": 8,
+                    "head_form": "vítima",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000123_SENT012::agressão::1",
           "sent_ID": "FOLHA_DOC000123_SENT012",
           "text": "\"Quem tomou a iniciativa de fazer as agressões foi ele\", afirmou em relação a Goldman.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agressões",
             "char_start": 37,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "ccomp:speech",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 54
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8309,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2e92de92c3dbd985",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 51,
+                    "char_end": 54,
+                    "head_token_id": 11,
+                    "head_form": "ele",
+                    "head_deprel": "ccomp:speech"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "agressão · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "ccomp:speech": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

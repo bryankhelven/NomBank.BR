@@ -6,24 +6,124 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "fúria · acepção 1",
+      "sense_id": "s_9b1d21b4b9734293",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9b1d21b4b9734293",
+      "frame_id": "f_a2f77305b1ec25e5",
+      "pt_roleset": null,
+      "sense_label": "fúria · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fury.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fury.xml",
+          "source_xml_url": "data/nombank_sources/fury.xml",
+          "source_xml_sha256": "2147a955d90680deeb66526303709750cfc48d5fc2af34066f3f35d9507cee35",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da fúria",
+          "definition": "Experiencer n0/source1 literal como mulheres, sem ato assassino necessariamente.",
+          "desc_pt": "Titular da fúria",
+          "definition_pt": "Experiencer n0/source1 literal como mulheres, sem ato assassino necessariamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema da cólera",
+          "definition": "Theme n1/source0 literal, sem evento temporal antecedente necessariamente alvo/causa.",
+          "desc_pt": "Tema da cólera",
+          "definition_pt": "Theme n1/source0 literal, sem evento temporal antecedente necessariamente alvo/causa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000170_SENT016::fúria::1",
           "sent_ID": "FOLHA_DOC000170_SENT016",
           "text": "Quando os homens retiram esse \"capacete\" de gosma, as mulheres acordam com fúria assassina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fúria",
             "char_start": 75,
             "char_end": 80
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "as mulheres",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 62
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 4461,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a2f77305b1ec25e5",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 80
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13
+                    ],
+                    "char_start": 51,
+                    "char_end": 62,
+                    "head_token_id": 13,
+                    "head_form": "mulheres",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "fúria · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

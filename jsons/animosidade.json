@@ -6,52 +6,303 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "animosidade · acepção 1",
+      "sense_id": "s_94b8c38714e1e5a1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_94b8c38714e1e5a1",
+      "frame_id": "f_23199ea14b24756c",
+      "pt_roleset": null,
+      "sense_label": "animosidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "hostility.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/hostility.xml",
+          "source_xml_url": "data/nombank_sources/hostility.xml",
+          "source_xml_sha256": "9539d690e4d125fadcbfe5443a176f7760f93cc1c86cce7165516218ac487e04",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador",
+          "definition": "Tema/entidade que apresenta hostilidade; grupo recíproco pode permanecer conjunto por adaptação merged.",
+          "desc_pt": "Portador",
+          "definition_pt": "Tema/entidade que apresenta hostilidade; grupo recíproco pode permanecer conjunto por adaptação merged."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor hostil",
+          "definition": "Hostilidade incorporada no REL conforme hostility REF2 nominal.",
+          "desc_pt": "Valor hostil",
+          "definition_pt": "Hostilidade incorporada no REL conforme hostility REF2 nominal."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Alvo inimigo",
+          "definition": "Objeto da animosidade separado do grupo portador.",
+          "desc_pt": "Alvo inimigo",
+          "definition_pt": "Objeto da animosidade separado do grupo portador."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000039_SENT014::animosidade::1",
           "sent_ID": "FOLHA_DOC000039_SENT014",
           "text": "Outros instigavam a divisão nos EUA, promovendo sentimentos de hostilidade a imigrantes e de animosidade racial.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "animosidade",
             "char_start": 93,
             "char_end": 104
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 3127,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_23199ea14b24756c",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 93,
+                "char_end": 104
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003312_SENT013::animosidade::1",
           "sent_ID": "FOLHA_DOC003312_SENT013",
           "text": "Argumentam que isso só aumentaria a animosidade do Ministério Público Federal em relação a eles.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "animosidade",
             "char_start": 36,
             "char_end": 47
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "do Ministério Público Federal",
+            "Arg2": null,
+            "Arg3": "em relação a eles"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 48,
+                "char_end": 77
+              }
+            ],
+            "Arg2": [],
+            "Arg3": [
+              {
+                "char_start": 78,
+                "char_end": 95
+              }
+            ]
+          },
+          "target_instance_id": 5495,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_23199ea14b24756c",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 48,
+                    "char_end": 77,
+                    "head_token_id": 10,
+                    "head_form": "Ministério",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 78,
+                    "char_end": 95,
+                    "head_token_id": 14,
+                    "head_form": "relação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000095_SENT016::animosidade::1",
           "sent_ID": "FOLHA_DOC000095_SENT016",
           "text": "Por que então o alvoroço tucano pela troca de animosidades entre os dois?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "animosidades",
             "char_start": 46,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "entre os dois",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 72
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 9067,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_23199ea14b24756c",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 72,
+                    "head_token_id": 14,
+                    "head_form": "dois",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "animosidade · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg3": 1
+        }
+      }
     }
   ]
 }

@@ -6,104 +6,686 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003023_SENT030::posse::1",
-          "sent_ID": "FOLHA_DOC003023_SENT030",
-          "text": "São 24 rodadas e, em metade, o líder teve mais posse de bola do que o adversário.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "posse",
-            "char_start": 47,
-            "char_end": 52
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000021_SENT015::posse::1",
-          "sent_ID": "FOLHA_DOC000021_SENT015",
-          "text": "O povo clama por segurança, pela posse de armas de fogo dentro das residências.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "posse",
-            "char_start": 33,
-            "char_end": 38
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003023_SENT018::posse::1",
-          "sent_ID": "FOLHA_DOC003023_SENT018",
-          "text": "É o time de maior índice de posse de bola do Brasileiro e mesmo assim ocupa a zona de rebaixamento.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "posse",
-            "char_start": 28,
-            "char_end": 33
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003252_SENT023::posse::1",
-          "sent_ID": "FOLHA_DOC003252_SENT023",
-          "text": "A área pertence à construtora MZM, que não conseguiu a reintegração de posse na Justiça.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "posse",
-            "char_start": 71,
-            "char_end": 76
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000006_SENT006::posse::1",
-          "sent_ID": "FOLHA_DOC000006_SENT006",
-          "text": "Maldonado havia se juntado a um protesto de indígenas mapuche que reivindicam um território na Província de Chubut, no sul do país, hoje sob posse da companhia italiana Benetton.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "posse",
-            "char_start": 141,
-            "char_end": 146
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "posse · acepção 1"
+      "sense_label": "posse · acepção 1",
+      "sense_id": "s_48765597b7b83c52",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "posse · acepção 2",
+      "sense_id": "s_d9ffe7dac4a3bddc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_48765597b7b83c52",
+      "frame_id": "f_c6a3f5350648eb00",
+      "pt_roleset": null,
+      "sense_label": "posse · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "possession.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/possession.xml",
+          "source_xml_url": "data/nombank_sources/possession.xml",
+          "source_xml_sha256": "c8958d10104df6a25271db330c137bd4c05e2b0e99c4cc12849113783bf5bd9f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "possuidor",
+          "definition": "Entidade que tem ou pretende recuperar a posse; controle esportivo e titularidade pretendida são extensões documentadas.",
+          "desc_pt": "possuidor",
+          "definition_pt": "Entidade que tem ou pretende recuperar a posse; controle esportivo e titularidade pretendida são extensões documentadas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto possuído",
+          "definition": "Aquilo de que se tem ou pretende obter posse/controle.",
+          "desc_pt": "objeto possuído",
+          "definition_pt": "Aquilo de que se tem ou pretende obter posse/controle."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003023_SENT030::posse::1",
+          "sent_ID": "FOLHA_DOC003023_SENT030",
+          "text": "São 24 rodadas e, em metade, o líder teve mais posse de bola do que o adversário.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "posse",
+            "char_start": 47,
+            "char_end": 52
+          },
+          "realization": {
+            "Arg0": "o líder",
+            "Arg1": "de bola"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 29,
+                "char_end": 36
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ]
+          },
+          "target_instance_id": 2603,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c6a3f5350648eb00",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 52
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 29,
+                    "char_end": 36,
+                    "head_token_id": 10,
+                    "head_form": "líder",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 53,
+                    "char_end": 60,
+                    "head_token_id": 15,
+                    "head_form": "bola",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000021_SENT015::posse::1",
+          "sent_ID": "FOLHA_DOC000021_SENT015",
+          "text": "O povo clama por segurança, pela posse de armas de fogo dentro das residências.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "posse",
+            "char_start": 33,
+            "char_end": 38
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de armas de fogo"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 39,
+                "char_end": 55
+              }
+            ]
+          },
+          "target_instance_id": 5428,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c6a3f5350648eb00",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 39,
+                    "char_end": 55,
+                    "head_token_id": 11,
+                    "head_form": "armas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003023_SENT018::posse::1",
+          "sent_ID": "FOLHA_DOC003023_SENT018",
+          "text": "É o time de maior índice de posse de bola do Brasileiro e mesmo assim ocupa a zona de rebaixamento.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "posse",
+            "char_start": 28,
+            "char_end": 33
+          },
+          "realization": {
+            "Arg0": "o time",
+            "Arg1": "de bola"
+          },
+          "syntax": {
+            "Arg0": "root",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 2,
+                "char_end": 8
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 41
+              }
+            ]
+          },
+          "target_instance_id": 6748,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c6a3f5350648eb00",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 33
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 2,
+                    "char_end": 8,
+                    "head_token_id": 3,
+                    "head_form": "time",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 34,
+                    "char_end": 41,
+                    "head_token_id": 10,
+                    "head_form": "bola",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003252_SENT023::posse::1",
+          "sent_ID": "FOLHA_DOC003252_SENT023",
+          "text": "A área pertence à construtora MZM, que não conseguiu a reintegração de posse na Justiça.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "posse",
+            "char_start": 71,
+            "char_end": 76
+          },
+          "realization": {
+            "Arg0": "à construtora MZM",
+            "Arg1": "A área"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 33
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 6
+              }
+            ]
+          },
+          "target_instance_id": 7920,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c6a3f5350648eb00",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 16,
+                    "char_end": 33,
+                    "head_token_id": 6,
+                    "head_form": "construtora",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 6,
+                    "head_token_id": 2,
+                    "head_form": "área",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 3
+        },
+        "root": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_d9ffe7dac4a3bddc",
+      "frame_id": "f_21e325678b581acf",
+      "pt_roleset": null,
+      "sense_label": "posse · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "inauguration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/inauguration.xml",
+          "source_xml_url": "data/nombank_sources/inauguration.xml",
+          "source_xml_sha256": "a080adcbeac884df68a69b5960e792c17308944f3c466b6ba07c800fe2e6b77f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da investidura",
+          "definition": "Quem investe/swear into office, não presente na cerimônia automaticamente.",
+          "desc_pt": "Autor da investidura",
+          "definition_pt": "Quem investe/swear into office, não presente na cerimônia automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Novo ocupante",
+          "definition": "Quem toma posse de cargo, como Dodge.",
+          "desc_pt": "Novo ocupante",
+          "definition_pt": "Quem toma posse de cargo, como Dodge."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Cargo de posse",
+          "definition": "Office/role nomeados, sem órgão inferido do nome da pessoa.",
+          "desc_pt": "Cargo de posse",
+          "definition_pt": "Office/role nomeados, sem órgão inferido do nome da pessoa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003058_SENT003::posse::1",
           "sent_ID": "FOLHA_DOC003058_SENT003",
           "text": "Dodge toma posse nesta segunda-feira (18) em uma rápida cerimônia com a presença do presidente Temer.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "posse",
             "char_start": 11,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Dodge",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 5
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9144,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_21e325678b581acf",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 5,
+                    "head_token_id": 1,
+                    "head_form": "Dodge",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "posse · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_48765597b7b83c52",
+      "frame_id": "f_00e35bfda69820a4",
+      "pt_roleset": null,
+      "sense_label": "posse · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "possession.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/possession.xml",
+          "source_xml_url": "data/nombank_sources/possession.xml",
+          "source_xml_sha256": "c8958d10104df6a25271db330c137bd4c05e2b0e99c4cc12849113783bf5bd9f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Possuidor",
+          "definition": "Quem detém bem para utilidade econômica no sentido frozen, sem titularidade jurídica externa inferida.",
+          "desc_pt": "Possuidor",
+          "definition_pt": "Quem detém bem para utilidade econômica no sentido frozen, sem titularidade jurídica externa inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa possuída",
+          "definition": "Bem detido, com qualificadores locativos e sem span que invada REL.",
+          "desc_pt": "Coisa possuída",
+          "definition_pt": "Bem detido, com qualificadores locativos e sem span que invada REL."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000006_SENT006::posse::1",
+          "sent_ID": "FOLHA_DOC000006_SENT006",
+          "text": "Maldonado havia se juntado a um protesto de indígenas mapuche que reivindicam um território na Província de Chubut, no sul do país, hoje sob posse da companhia italiana Benetton.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "posse",
+            "char_start": 141,
+            "char_end": 146
+          },
+          "realization": {
+            "Arg0": "da companhia italiana Benetton",
+            "Arg1": "um território na Província de Chubut, no sul do país"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 147,
+                "char_end": 177
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 78,
+                "char_end": 130
+              }
+            ]
+          },
+          "target_instance_id": 12071,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_00e35bfda69820a4",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 141,
+                "char_end": 146
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      31,
+                      32,
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 147,
+                    "char_end": 177,
+                    "head_token_id": 33,
+                    "head_form": "companhia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 78,
+                    "char_end": 130,
+                    "head_token_id": 14,
+                    "head_form": "território",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

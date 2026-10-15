@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "perseguidor · acepção 1",
+      "sense_id": "s_93bf2aa812f2a9b8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_93bf2aa812f2a9b8",
+      "frame_id": "f_d877335a31e81153",
+      "pt_roleset": null,
+      "sense_label": "perseguidor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "pursuer.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/pursuer.xml",
+          "source_xml_url": "data/nombank_sources/pursuer.xml",
+          "source_xml_sha256": "dabca64b00363c71e2ca24d7963a4ca31e60a193301b8de141fdd1ab33057b6a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Perseguidor",
+          "definition": "Thing following, restrito a rival em encalço na classificação esportiva, SELF0 conforme original.",
+          "desc_pt": "Perseguidor",
+          "definition_pt": "Thing following, restrito a rival em encalço na classificação esportiva, SELF0 conforme original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade perseguida",
+          "definition": "Thing followed como Corinthians pelo possessivo seus, não empregador/possuidor de trabalhador automaticamente.",
+          "desc_pt": "Entidade perseguida",
+          "definition_pt": "Thing followed como Corinthians pelo possessivo seus, não empregador/possuidor de trabalhador automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003048_SENT017::perseguidor::1",
           "sent_ID": "FOLHA_DOC003048_SENT017",
           "text": "Só que é exatamente por isso que o Brasil desanima e está mais longe da Dinamarca que o Corinthians de seus perseguidores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "perseguidores",
             "char_start": 108,
             "char_end": 121
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "seus"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 103,
+                "char_end": 107
+              }
+            ]
+          },
+          "target_instance_id": 12156,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d877335a31e81153",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 108,
+                "char_end": 121
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22
+                    ],
+                    "char_start": 103,
+                    "char_end": 107,
+                    "head_token_id": 22,
+                    "head_form": "seus",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "perseguidor · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

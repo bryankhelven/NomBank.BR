@@ -6,38 +6,285 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "dedicatória · acepção 1",
+      "sense_id": "s_e0bd65bf1c4c7a88",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e0bd65bf1c4c7a88",
+      "frame_id": "f_bfb87f0e57b991bf",
+      "pt_roleset": null,
+      "sense_label": "dedicatória · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dedication.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dedication.xml",
+          "source_xml_url": "data/nombank_sources/dedication.xml",
+          "source_xml_sha256": "15bb834ba291d091632b289c534d2c90d50271a3201b506ff8503273185a2de7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da dedicatória",
+          "definition": "Dedicator do oferecimento, extensão resultativa ao texto que registra dedicação.",
+          "desc_pt": "Autor da dedicatória",
+          "definition_pt": "Dedicator do oferecimento, extensão resultativa ao texto que registra dedicação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Produção oferecida",
+          "definition": "Coisa dedicada, como show sob intenção explicitada, sem livro inferido de contracapa.",
+          "desc_pt": "Produção oferecida",
+          "definition_pt": "Coisa dedicada, como show sob intenção explicitada, sem livro inferido de contracapa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário",
+          "definition": "A quem se oferece produção, com referência/aspas preservadas.",
+          "desc_pt": "Destinatário",
+          "definition_pt": "A quem se oferece produção, com referência/aspas preservadas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002064_SENT009::dedicatória::1",
           "sent_ID": "FOLHA_DOC002064_SENT009",
           "text": "Na contracapa, Kataguiri escreveu dedicatória \"para o futuro presidente da República\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "dedicatória",
             "char_start": 34,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Kataguiri",
+            "Arg1": null,
+            "Arg2": "\"para o futuro presidente da República\""
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 15,
+                "char_end": 24
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 46,
+                "char_end": 85
+              }
+            ]
+          },
+          "target_instance_id": 6317,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bfb87f0e57b991bf",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 15,
+                    "char_end": 24,
+                    "head_token_id": 5,
+                    "head_form": "Kataguiri",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 46,
+                    "char_end": 85,
+                    "head_token_id": 12,
+                    "head_form": "presidente",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003081_SENT006::dedicatória::1",
           "sent_ID": "FOLHA_DOC003081_SENT006",
           "text": "Todo de branco, com uma boina e longos dreads, Rodgers abriu a apresentação com uma dedicatória: \"Minha grande amiga Lady Gaga não pôde vir, e eu quero dedicar esse show a ela.\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "dedicatória",
             "char_start": 84,
             "char_end": 95
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Rodgers",
+            "Arg1": "esse show",
+            "Arg2": "a ela"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 160,
+                "char_end": 169
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 170,
+                "char_end": 175
+              }
+            ]
+          },
+          "target_instance_id": 15559,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bfb87f0e57b991bf",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 84,
+                "char_end": 95
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 47,
+                    "char_end": 54,
+                    "head_token_id": 12,
+                    "head_form": "Rodgers",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      34,
+                      35
+                    ],
+                    "char_start": 160,
+                    "char_end": 169,
+                    "head_token_id": 35,
+                    "head_form": "show",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      36,
+                      37
+                    ],
+                    "char_start": 170,
+                    "char_end": 175,
+                    "head_token_id": 37,
+                    "head_form": "ela",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "dedicatória · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

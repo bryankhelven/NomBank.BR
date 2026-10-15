@@ -6,24 +6,168 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "saudação · acepção 1",
+      "sense_id": "s_063fe4def4f89a79",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_063fe4def4f89a79",
+      "frame_id": "f_83f070cc3e7ffab7",
+      "pt_roleset": null,
+      "sense_label": "saudação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "communication.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/communication.xml",
+          "source_xml_url": "data/nombank_sources/communication.xml",
+          "source_xml_sha256": "5586aa8f8111a47600c2ad710ed6deb83c4ad597633b212f64c52d75ef59bb48",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Emissor da saudação",
+          "definition": "First/all communicator restrito a gesto verbal de cumprimento, sem adjetivo como pessoa.",
+          "desc_pt": "Emissor da saudação",
+          "definition_pt": "First/all communicator restrito a gesto verbal de cumprimento, sem adjetivo como pessoa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Fórmula da saudação",
+          "definition": "Utterance como e aí Rio inteira, sem pedido posterior fundido.",
+          "desc_pt": "Fórmula da saudação",
+          "definition_pt": "Utterance como e aí Rio inteira, sem pedido posterior fundido."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da saudação",
+          "definition": "Other communicator como público com quem interagiu mediante cumprimento.",
+          "desc_pt": "Destinatário da saudação",
+          "definition_pt": "Other communicator como público com quem interagiu mediante cumprimento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003071_SENT010::saudação::1",
           "sent_ID": "FOLHA_DOC003071_SENT010",
           "text": "Carismática, interagiu com o público a todo tempo, inclusive em português, com uma saudação \"e aí, Rio\", até mesmo pedindo para que o público cantasse, \"quero ouvir vocês\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "saudação",
             "char_start": 83,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "\"e aí, Rio\"",
+            "Arg2": "com o público"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 92,
+                "char_end": 103
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 23,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 15609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_83f070cc3e7ffab7",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 92,
+                    "char_end": 103,
+                    "head_token_id": 20,
+                    "head_form": "aí",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 23,
+                    "char_end": 36,
+                    "head_token_id": 6,
+                    "head_form": "público",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "saudação · acepção 1"
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

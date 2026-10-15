@@ -6,38 +6,237 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "monitoramento · acepção 1",
+      "sense_id": "s_9553c978e6a5e785",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9553c978e6a5e785",
+      "frame_id": "f_0f2e00d3fb3a36c6",
+      "pt_roleset": null,
+      "sense_label": "monitoramento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "monitoring.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/monitoring.xml",
+          "source_xml_url": "data/nombank_sources/monitoring.xml",
+          "source_xml_sha256": "74e18beadd12fd63885cc8a450c432b1f3bbd9216f3007e8ce2d7e720a3940d4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Observador",
+          "definition": "Quem observa/controla, extensão instrumental explícita à câmera que registra, sem dono de mecanismos necessariamente executor.",
+          "desc_pt": "Observador",
+          "definition_pt": "Quem observa/controla, extensão instrumental explícita à câmera que registra, sem dono de mecanismos necessariamente executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Cena ou entidade monitorada",
+          "definition": "Coisa observada, incluindo cena integral de registro de câmera.",
+          "desc_pt": "Cena ou entidade monitorada",
+          "definition_pt": "Coisa observada, incluindo cena integral de registro de câmera."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Objeto de busca",
+          "definition": "Looking-for específico, sem instrumento inferido neste slot.",
+          "desc_pt": "Objeto de busca",
+          "definition_pt": "Looking-for específico, sem instrumento inferido neste slot."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002034_SENT040::monitoramento::1",
           "sent_ID": "FOLHA_DOC002034_SENT040",
           "text": "Imagens de uma câmera de monitoramento mostram o registro dele chegando ao local, conduzido por um motorista de aplicativo, e sendo baleado pouco depois.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "monitoramento",
             "char_start": 25,
             "char_end": 38
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de uma câmera",
+            "Arg1": "dele chegando ao local, conduzido por um motorista de aplicativo, e sendo baleado pouco depois",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 8,
+                "char_end": 21
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 58,
+                "char_end": 152
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4644,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0f2e00d3fb3a36c6",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 8,
+                    "char_end": 21,
+                    "head_token_id": 4,
+                    "head_form": "câmera",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 58,
+                    "char_end": 152,
+                    "head_token_id": 11,
+                    "head_form": "ele",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000013_SENT003::monitoramento::1",
           "sent_ID": "FOLHA_DOC000013_SENT003",
           "text": "O executivo disse que o banco tem mecanismos de monitoramento, mas não pode ser \"babá de empresário\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "monitoramento",
             "char_start": 48,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6801,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0f2e00d3fb3a36c6",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 48,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "monitoramento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

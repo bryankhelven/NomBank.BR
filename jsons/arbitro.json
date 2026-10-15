@@ -6,104 +6,640 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003055_SENT021::árbitro::1",
-          "sent_ID": "FOLHA_DOC003055_SENT021",
-          "text": "Entender que arte só é arte se ela não \"invadir o espaço do senso comum\" é pressupor que existe um árbitro do senso comum.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "árbitro",
-            "char_start": 99,
-            "char_end": 106
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003055_SENT025::árbitro::1",
-          "sent_ID": "FOLHA_DOC003055_SENT025",
-          "text": "E o árbitro -para além da decisão da Justiça, que não orientou nem a ação do Santander nem a da polícia de Campo Grande- muitas vezes acaba sendo unicamente quem tem poder.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "árbitro",
-            "char_start": 4,
-            "char_end": 11
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "árbitro · acepção 1"
+      "sense_label": "árbitro · acepção 1",
+      "sense_id": "s_9bb67999381db12a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "árbitro · acepção 2",
+      "sense_id": "s_1cadb9bd00d5a7bc",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9bb67999381db12a",
+      "frame_id": "f_b855322e2a7cac85",
+      "pt_roleset": null,
+      "sense_label": "árbitro · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "judge.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/judge.xml",
+          "source_xml_url": "data/nombank_sources/judge.xml",
+          "source_xml_sha256": "5986e71e8d894a78c7fb198d6998122def2863143d328fdf179fc34095ff5e8a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "julgador",
+          "definition": "Entidade que julga/avalia, com adaptação local explícita a árbitro figurado/esportivo.",
+          "desc_pt": "julgador",
+          "definition_pt": "Entidade que julga/avalia, com adaptação local explícita a árbitro figurado/esportivo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto julgado",
+          "definition": "Ocorrência, entidade ou domínio avaliado.",
+          "desc_pt": "objeto julgado",
+          "definition_pt": "Ocorrência, entidade ou domínio avaliado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "julgamento/atributo",
+          "definition": "Atributo ou julgamento sobre o objeto, quando realizado independentemente.",
+          "desc_pt": "julgamento/atributo",
+          "definition_pt": "Atributo ou julgamento sobre o objeto, quando realizado independentemente."
+        },
+        {
+          "id": "Arg3",
+          "desc": "critério",
+          "definition": "Base/critério explícito do julgamento, sem classificar toda informação técnica como critério.",
+          "desc_pt": "critério",
+          "definition_pt": "Base/critério explícito do julgamento, sem classificar toda informação técnica como critério."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003055_SENT021::árbitro::1",
+          "sent_ID": "FOLHA_DOC003055_SENT021",
+          "text": "Entender que arte só é arte se ela não \"invadir o espaço do senso comum\" é pressupor que existe um árbitro do senso comum.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "árbitro",
+            "char_start": 99,
+            "char_end": 106
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do senso comum",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 107,
+                "char_end": 121
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 652,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b855322e2a7cac85",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 107,
+                    "char_end": 121,
+                    "head_token_id": 27,
+                    "head_form": "senso",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003055_SENT025::árbitro::1",
+          "sent_ID": "FOLHA_DOC003055_SENT025",
+          "text": "E o árbitro -para além da decisão da Justiça, que não orientou nem a ação do Santander nem a da polícia de Campo Grande- muitas vezes acaba sendo unicamente quem tem poder.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "árbitro",
+            "char_start": 4,
+            "char_end": 11
+          },
+          "realization": {
+            "Arg0": "quem tem poder",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "xcomp",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 157,
+                "char_end": 171
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 1634,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b855322e2a7cac85",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      37,
+                      38,
+                      39
+                    ],
+                    "char_start": 157,
+                    "char_end": 171,
+                    "head_token_id": 37,
+                    "head_form": "quem",
+                    "head_deprel": "xcomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "xcomp": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_1cadb9bd00d5a7bc",
+      "frame_id": "f_ab37fa6bc75d6fd9",
+      "pt_roleset": null,
+      "sense_label": "árbitro · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "judge.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/judge.xml",
+          "source_xml_url": "data/nombank_sources/judge.xml",
+          "source_xml_sha256": "5986e71e8d894a78c7fb198d6998122def2863143d328fdf179fc34095ff5e8a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "julgador",
+          "definition": "Entidade que julga/avalia, com adaptação local explícita a árbitro figurado/esportivo.",
+          "desc_pt": "julgador",
+          "definition_pt": "Entidade que julga/avalia, com adaptação local explícita a árbitro figurado/esportivo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto julgado",
+          "definition": "Ocorrência, entidade ou domínio avaliado.",
+          "desc_pt": "objeto julgado",
+          "definition_pt": "Ocorrência, entidade ou domínio avaliado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "julgamento/atributo",
+          "definition": "Atributo ou julgamento sobre o objeto, quando realizado independentemente.",
+          "desc_pt": "julgamento/atributo",
+          "definition_pt": "Atributo ou julgamento sobre o objeto, quando realizado independentemente."
+        },
+        {
+          "id": "Arg3",
+          "desc": "critério",
+          "definition": "Base/critério explícito do julgamento, sem classificar toda informação técnica como critério.",
+          "desc_pt": "critério",
+          "definition_pt": "Base/critério explícito do julgamento, sem classificar toda informação técnica como critério."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003018_SENT035::árbitro::1",
           "sent_ID": "FOLHA_DOC003018_SENT035",
           "text": "Há quase dois anos, elas contam a história de atletas, treinadoras, árbitras e dirigentes esportivas por meio de entrevistas em podcasts semanais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "árbitras",
             "char_start": 68,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2179,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab37fa6bc75d6fd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002073_SENT014::árbitro::1",
           "sent_ID": "FOLHA_DOC002073_SENT014",
           "text": "A vantagem palmeirense poderia ter sido maior se o árbitro Anderson Daronco tivesse visto pênalti em Dudu.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "árbitro",
             "char_start": 51,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pênalti em Dudu",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 90,
+                "char_end": 105
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2866,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab37fa6bc75d6fd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 90,
+                    "char_end": 105,
+                    "head_token_id": 15,
+                    "head_form": "pênalti",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003264_SENT007::árbitro::1",
           "sent_ID": "FOLHA_DOC003264_SENT007",
           "text": "O caso foi reportado após a partida e o árbitro de vídeo conferiu a gravação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "árbitro",
             "char_start": 40,
             "char_end": 47
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 6055,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab37fa6bc75d6fd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 40,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003101_SENT004::árbitro::1",
           "sent_ID": "FOLHA_DOC003101_SENT004",
           "text": "Os jogadores vascaínos reclamaram muito, mas o árbitro Elmo Alves Resende Cunha validou o gol diante da festa dos mais de 41 mil torcedores corintianos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "árbitro",
             "char_start": 47,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o gol",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 88,
+                "char_end": 93
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 8170,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab37fa6bc75d6fd9",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16
+                    ],
+                    "char_start": 88,
+                    "char_end": 93,
+                    "head_token_id": 16,
+                    "head_form": "gol",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "árbitro · acepção 2"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

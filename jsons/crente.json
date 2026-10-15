@@ -6,24 +6,130 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "crente · acepção 1",
+      "sense_id": "s_4bfadccd1736e8f5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4bfadccd1736e8f5",
+      "frame_id": "f_2de08166ab0477f9",
+      "pt_roleset": null,
+      "sense_label": "crente · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "believer.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/believer.xml",
+          "source_xml_url": "data/nombank_sources/believer.xml",
+          "source_xml_sha256": "e80d0cafe43fc52f4b70aa52b26ea48631ebc700c0cc0d4b03b39e29cbf8b8a8",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Crente",
+          "definition": "Believer incorporado conforme believer0 original.",
+          "desc_pt": "Crente",
+          "definition_pt": "Believer incorporado conforme believer0 original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Crença",
+          "definition": "Belief proposição celeste atribuída, sem afirmar sua veracidade.",
+          "desc_pt": "Crença",
+          "definition_pt": "Belief proposição celeste atribuída, sem afirmar sua veracidade."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003192_SENT035::crente::1",
           "sent_ID": "FOLHA_DOC003192_SENT035",
           "text": "Como, para os crentes, os céus são a morada dos deuses, atribuir uma aparição celeste estranha a uma mensagem divina é algo quase que natural.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "crentes",
             "char_start": 14,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os céus são a morada dos deuses"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "advcl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 23,
+                "char_end": 54
+              }
+            ]
+          },
+          "target_instance_id": 13285,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2de08166ab0477f9",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 23,
+                    "char_end": 54,
+                    "head_token_id": 11,
+                    "head_form": "morada",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "crente · acepção 1"
+      "syntactic_profile": {
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,163 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "intermediação · acepção 1",
+      "sense_id": "s_e3a574af86ab0b3c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e3a574af86ab0b3c",
+      "frame_id": "f_5e2387d8b07942ab",
+      "pt_roleset": null,
+      "sense_label": "intermediação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "brokerage.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/brokerage.xml",
+          "source_xml_url": "data/nombank_sources/brokerage.xml",
+          "source_xml_sha256": "b392f7a0f92eb8f930133ec8cb1b020e92297e9fd066a9dfcf1b2441e9aa4303",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Intermediador",
+          "definition": "Arranger do gerenciamento/corretagem comercial/publicitária, como relativo das empresas ou agência.",
+          "desc_pt": "Intermediador",
+          "definition_pt": "Arranger do gerenciamento/corretagem comercial/publicitária, como relativo das empresas ou agência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto intermediado",
+          "definition": "Entity brokered como transações, não mídia/anunciante mercadorias por identidade automática.",
+          "desc_pt": "Objeto intermediado",
+          "definition_pt": "Entity brokered como transações, não mídia/anunciante mercadorias por identidade automática."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Partes atendidas",
+          "definition": "Beneficiary entidades para quem se intermedeia, inclusive coletivo entre mídia/anunciante, sem dois novos slots de partes.",
+          "desc_pt": "Partes atendidas",
+          "definition_pt": "Beneficiary entidades para quem se intermedeia, inclusive coletivo entre mídia/anunciante, sem dois novos slots de partes."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002017_SENT024::intermediação::1",
           "sent_ID": "FOLHA_DOC002017_SENT024",
           "text": "As empresas que fazem a intermediação das transações cobram uma taxa, que varia de 0,3% a 0,7% do valor da operação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "intermediação",
             "char_start": 24,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "que",
+            "Arg1": "das transações",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 12,
+                "char_end": 15
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 38,
+                "char_end": 52
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1058,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5e2387d8b07942ab",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 12,
+                    "char_end": 15,
+                    "head_token_id": 3,
+                    "head_form": "que",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 38,
+                    "char_end": 52,
+                    "head_token_id": 9,
+                    "head_form": "transações",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "intermediação · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

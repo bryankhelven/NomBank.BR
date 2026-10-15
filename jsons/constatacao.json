@@ -6,24 +6,134 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "constatação · acepção 1",
+      "sense_id": "s_5980445740dea864",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5980445740dea864",
+      "frame_id": "f_3bb18543957897d6",
+      "pt_roleset": null,
+      "sense_label": "constatação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "verification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/verification.xml",
+          "source_xml_url": "data/nombank_sources/verification.xml",
+          "source_xml_sha256": "ae66905b43289bf0a60015ee1a040895cd554da83ba3ea3de7776c377cc72e12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da constatação",
+          "definition": "Verifier que verifica verdade, base parlamentar inteira.",
+          "desc_pt": "Autor da constatação",
+          "definition_pt": "Verifier que verifica verdade, base parlamentar inteira."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Fato constatado",
+          "definition": "Verified proposição explícita, sem apoiado presidente como proposição.",
+          "desc_pt": "Fato constatado",
+          "definition_pt": "Verified proposição explícita, sem apoiado presidente como proposição."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002043_SENT003::constatação::1",
           "sent_ID": "FOLHA_DOC002043_SENT003",
           "text": "A constatação é da própria base parlamentar que apoia o presidente da República.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "constatação",
             "char_start": 2,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da própria base parlamentar que apoia o presidente da República",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "root",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 79
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 14541,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3bb18543957897d6",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 16,
+                    "char_end": 79,
+                    "head_token_id": 7,
+                    "head_form": "base",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "constatação · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

@@ -6,108 +6,621 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "barulho · acepção 1",
+      "sense_id": "s_6dfc9f49428050a9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6dfc9f49428050a9",
+      "frame_id": "f_0141a013c50a86e4",
+      "pt_roleset": null,
+      "sense_label": "barulho · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "noise.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/noise.xml",
+          "source_xml_url": "data/nombank_sources/noise.xml",
+          "source_xml_sha256": "6a643b5bfe1104a3c15b540f2a05f4c9ffa7c2b93b1d40175598893f19e014d5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Fonte ou portador do ruído",
+          "definition": "Theme nominal n=1/source=0, como engine; conservar numeração nominal.",
+          "desc_pt": "Fonte ou portador do ruído",
+          "definition_pt": "Theme nominal n=1/source=0, como engine; conservar numeração nominal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor sonoro",
+          "definition": "Value nominal n=2/source=1; noise REF incorpora som genérico, sem duplicar span. Comuns indica normalidade, sem grau acústico.",
+          "desc_pt": "Valor sonoro",
+          "definition_pt": "Value nominal n=2/source=1; noise REF incorpora som genérico, sem duplicar span. Comuns indica normalidade, sem grau acústico."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário",
+          "definition": "Secondary-theme original; destino de propagação do som não preenche automaticamente atributo.",
+          "desc_pt": "Tema secundário",
+          "definition_pt": "Secondary-theme original; destino de propagação do som não preenche automaticamente atributo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000161_SENT007::barulho::1",
           "sent_ID": "FOLHA_DOC000161_SENT007",
           "text": "Estava incomodado com o barulho e as vibrações do carro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulho",
             "char_start": 24,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "do carro",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 55
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 4826,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0141a013c50a86e4",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 47,
+                    "char_end": 55,
+                    "head_token_id": 11,
+                    "head_form": "carro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000161_SENT001::barulho::1",
           "sent_ID": "FOLHA_DOC000161_SENT001",
           "text": "Como diferenciar ruídos que indicam problema no carro de barulhos comuns.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulhos",
             "char_start": 57,
             "char_end": 65
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 6145,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0141a013c50a86e4",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 65
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000161_SENT010::barulho::1",
           "sent_ID": "FOLHA_DOC000161_SENT010",
           "text": "Os motoristas demoram a fazer a manutenção mesmo quando esses componentes começam a fazer barulho.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulho",
             "char_start": 90,
             "char_end": 97
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "esses componentes",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 56,
+                "char_end": 73
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 6396,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0141a013c50a86e4",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 97
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11
+                    ],
+                    "char_start": 56,
+                    "char_end": 73,
+                    "head_token_id": 11,
+                    "head_form": "componentes",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002003_SENT023::barulho::1",
           "sent_ID": "FOLHA_DOC002003_SENT023",
           "text": "O barulho não chegou nem perto da boca de cena.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulho",
             "char_start": 2,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 7043,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0141a013c50a86e4",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
         },
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_6dfc9f49428050a9",
+      "frame_id": "f_753a65ecb3890794",
+      "pt_roleset": null,
+      "sense_label": "barulho · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "noise.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/noise.xml",
+          "source_xml_url": "data/nombank_sources/noise.xml",
+          "source_xml_sha256": "6a643b5bfe1104a3c15b540f2a05f4c9ffa7c2b93b1d40175598893f19e014d5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Fonte sonora",
+          "definition": "Entidade que produz ruído, n1/source0 original; não quem ouve nem lugar do problema por default.",
+          "desc_pt": "Fonte sonora",
+          "definition_pt": "Entidade que produz ruído, n1/source0 original; não quem ouve nem lugar do problema por default."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor sonoro",
+          "definition": "Ruído incorporado conforme REF2, n2/source1 original, sem duplicar REL.",
+          "desc_pt": "Valor sonoro",
+          "definition_pt": "Ruído incorporado conforme REF2, n2/source1 original, sem duplicar REL."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário",
+          "definition": "Entidade secundária explícita, sem destinatário/ouvinte inferidos.",
+          "desc_pt": "Tema secundário",
+          "definition_pt": "Entidade secundária explícita, sem destinatário/ouvinte inferidos."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC000161_SENT015::barulho::1",
           "sent_ID": "FOLHA_DOC000161_SENT015",
           "text": "De onde vêm e o que indicam os barulhos do carro 1.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulhos",
             "char_start": 31,
             "char_end": 39
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "do carro 1",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 50
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 8242,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_753a65ecb3890794",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 40,
+                    "char_end": 50,
+                    "head_token_id": 12,
+                    "head_form": "carro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001046_SENT007::barulho::1",
           "sent_ID": "FOLHA_DOC001046_SENT007",
           "text": "Vitória despertou com o barulho.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulho",
             "char_start": 24,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 10226,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_753a65ecb3890794",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004059_SENT019::barulho::1",
           "sent_ID": "FOLHA_DOC004059_SENT019",
           "text": "Pelo barulho, sinto que nessa praça há muitos jovens, porque só jovens fazem essa bagunça.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "barulho",
             "char_start": 5,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "jovens",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 70
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 10620,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_753a65ecb3890794",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 5,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16
+                    ],
+                    "char_start": 64,
+                    "char_end": 70,
+                    "head_token_id": 16,
+                    "head_form": "jovens",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "barulho · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

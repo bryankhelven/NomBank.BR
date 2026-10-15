@@ -6,52 +6,323 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "publicidade · acepção 1",
+      "sense_id": "s_5ff665aeaa47776f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5ff665aeaa47776f",
+      "frame_id": "f_7712e7788406a29a",
+      "pt_roleset": null,
+      "sense_label": "publicidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "advertising.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/advertising.xml",
+          "source_xml_url": "data/nombank_sources/advertising.xml",
+          "source_xml_sha256": "b2f26d318233967ea0177a4e6e85b891f6aac43cf90701fbb61fc7d96c4e3b81",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "anunciante",
+          "definition": "Entidade que promove a publicidade, incluindo marca em relação contextual expressa com sua campanha. Regulador, autorizador, termo de comparação e pessoa ligada a outro episódio não são anunciantes automaticamente.",
+          "desc_pt": "anunciante",
+          "definition_pt": "Entidade que promove a publicidade, incluindo marca em relação contextual expressa com sua campanha. Regulador, autorizador, termo de comparação e pessoa ligada a outro episódio não são anunciantes automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "item anunciado",
+          "definition": "Produto ou coisa promovida pelo anúncio; avaliação polêmica, local, placas como suporte e a publicidade genérica não bastam.",
+          "desc_pt": "item anunciado",
+          "definition_pt": "Produto ou coisa promovida pelo anúncio; avaliação polêmica, local, placas como suporte e a publicidade genérica não bastam."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003033_SENT015::publicidade::1",
           "sent_ID": "FOLHA_DOC003033_SENT015",
           "text": "Em agosto, a prefeitura já havia passado por cima da lei que regulou a publicidade na cidade ao instalar 12 placas de propaganda na avenida Brasil sem autorização da CPPU.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "publicidade",
             "char_start": 71,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC001768_SENT054::publicidade::1",
-          "sent_ID": "FOLHA_DOC001768_SENT054",
-          "text": "A publicidade da publicidade elaborada pelo publicitário Mario DAndrea é uma bela história do tipo conto de fadas.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "publicidade",
-            "char_start": 2,
-            "char_end": 13
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 5296,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7712e7788406a29a",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000058_SENT020::publicidade::1",
           "sent_ID": "FOLHA_DOC000058_SENT020",
           "text": "Mas, como a Dove, a Nivea já havia escorregado em publicidade polêmica anteriormente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "publicidade",
             "char_start": 50,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a Nivea",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 25
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 12288,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7712e7788406a29a",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 18,
+                    "char_end": 25,
+                    "head_token_id": 8,
+                    "head_form": "Nivea",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "publicidade · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_5ff665aeaa47776f",
+      "frame_id": "f_3d03ef4f73ed8668",
+      "pt_roleset": null,
+      "sense_label": "publicidade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "publicity.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/publicity.xml",
+          "source_xml_url": "data/nombank_sources/publicity.xml",
+          "source_xml_sha256": "a7dc299eff0418fe2cef238683c25965bc76811ad7639a55fb02c4a390b24fe5",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Tema da divulgação",
+          "definition": "Theme publicidade interna elaborada pelo publicitário, não ele autor da divulgação externa.",
+          "desc_pt": "Tema da divulgação",
+          "definition_pt": "Theme publicidade interna elaborada pelo publicitário, não ele autor da divulgação externa."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Qualificação da divulgação",
+          "definition": "Value avaliativo/metafórico de bela história, sem gênero cinematográfico criado.",
+          "desc_pt": "Qualificação da divulgação",
+          "definition_pt": "Value avaliativo/metafórico de bela história, sem gênero cinematográfico criado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001768_SENT054::publicidade::1",
+          "sent_ID": "FOLHA_DOC001768_SENT054",
+          "text": "A publicidade da publicidade elaborada pelo publicitário Mario DAndrea é uma bela história do tipo conto de fadas.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "publicidade",
+            "char_start": 2,
+            "char_end": 13
+          },
+          "realization": {
+            "Arg1": "da publicidade elaborada pelo publicitário Mario DAndrea",
+            "Arg2": "uma bela história do tipo conto de fadas"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": "root"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 14,
+                "char_end": 70
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 73,
+                "char_end": 113
+              }
+            ]
+          },
+          "target_instance_id": 5469,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d03ef4f73ed8668",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 14,
+                    "char_end": 70,
+                    "head_token_id": 5,
+                    "head_form": "publicidade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 73,
+                    "char_end": 113,
+                    "head_token_id": 15,
+                    "head_form": "história",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "root": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

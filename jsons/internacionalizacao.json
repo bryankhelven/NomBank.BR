@@ -6,23 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_e9e1a2d6586af06f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e9e1a2d6586af06f",
+      "frame_id": "f_35d7ad3c64818e43",
+      "pt_roleset": "internacionalização.01",
+      "sense_label": "internacionalização.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "internationalization.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/internationalization.xml",
+          "source_xml_url": "data/nombank_sources/internationalization.xml",
+          "source_xml_sha256": "ef688b13252654b40c0902c8c08970e9d04c58a51ea2e4a205f18350f4f33805",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Internacionalizador",
+          "definition": "Agent que torna internacional, empresa que inicia processo de seu negócio.",
+          "desc_pt": "Internacionalizador",
+          "definition_pt": "Agent que torna internacional, empresa que inicia processo de seu negócio."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa internacionalizada",
+          "definition": "Theme/atividade de negócio explicitada, sem compra/empresa adquirida como tema automático.",
+          "desc_pt": "Coisa internacionalizada",
+          "definition_pt": "Theme/atividade de negócio explicitada, sem compra/empresa adquirida como tema automático."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003059_SENT016::internacionalização::1",
           "sent_ID": "FOLHA_DOC003059_SENT016",
           "text": "Em 2005, a empresa passou a se chamar JBS (iniciais do nome de Zé Mineiro) e iniciou a internacionalização, com a compra da Swift Argentina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "internacionalização",
             "char_start": 87,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a empresa",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 18
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 6612,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_35d7ad3c64818e43",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 87,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 9,
+                    "char_end": 18,
+                    "head_token_id": 5,
+                    "head_form": "empresa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

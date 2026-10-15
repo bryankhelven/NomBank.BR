@@ -6,24 +6,129 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "absorção · acepção 1",
+      "sense_id": "s_e4e807775cb5cb93",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e4e807775cb5cb93",
+      "frame_id": "f_e5a255520cb9d9b2",
+      "pt_roleset": null,
+      "sense_label": "absorção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "absorption.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/absorption.xml",
+          "source_xml_url": "data/nombank_sources/absorption.xml",
+          "source_xml_sha256": "da801e14dfa964d692582b4a13ffd75985e9f90cbd04f7df838a4171c8a1e283",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Absorvedor",
+          "definition": "Absorber, incluindo áreas por metonímia de aceitação econômica.",
+          "desc_pt": "Absorvedor",
+          "definition_pt": "Absorber, incluindo áreas por metonímia de aceitação econômica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa absorvida",
+          "definition": "Absorbed como conteúdo/objeto aceito no sentido frozen; não negativa medida de saldo como objeto.",
+          "desc_pt": "Coisa absorvida",
+          "definition_pt": "Absorbed como conteúdo/objeto aceito no sentido frozen; não negativa medida de saldo como objeto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000154_SENT034::absorção::1",
           "sent_ID": "FOLHA_DOC000154_SENT034",
           "text": "As áreas mais afastadas da capital, porém, tiveram absorção líquida negativa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "absorção",
             "char_start": 51,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "As áreas mais afastadas da capital",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 34
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 3599,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e5a255520cb9d9b2",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 0,
+                    "char_end": 34,
+                    "head_token_id": 2,
+                    "head_form": "áreas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "absorção · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

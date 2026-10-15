@@ -6,38 +6,223 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "punição · acepção 1",
+      "sense_id": "s_d2f3aadab008398e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d2f3aadab008398e",
+      "frame_id": "f_bfa06cce039d3321",
+      "pt_roleset": null,
+      "sense_label": "punição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "punishment.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/punishment.xml",
+          "source_xml_url": "data/nombank_sources/punishment.xml",
+          "source_xml_sha256": "0cdf135d0cd7ab2208c97aeb659eb9126593e60b90449b0d573db95a89848dae",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Punidor",
+          "definition": "Quem aplica castigo, sem órgão presumido.",
+          "desc_pt": "Punidor",
+          "definition_pt": "Quem aplica castigo, sem órgão presumido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Punido",
+          "definition": "Paciente da pena, inclusive ameaçado sob resistência.",
+          "desc_pt": "Punido",
+          "definition_pt": "Paciente da pena, inclusive ameaçado sob resistência."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Razão do castigo",
+          "definition": "Motivo da punição, não conteúdo dito automaticamente paciente humano.",
+          "desc_pt": "Razão do castigo",
+          "definition_pt": "Motivo da punição, não conteúdo dito automaticamente paciente humano."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004039_SENT017::punição::1",
           "sent_ID": "FOLHA_DOC004039_SENT017",
           "text": "Apesar da ameaça de punições, os parlamentares independentistas catalães dizem que não vão ceder.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "punições",
             "char_start": 20,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "os parlamentares independentistas catalães",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 72
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3388,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bfa06cce039d3321",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 30,
+                    "char_end": 72,
+                    "head_token_id": 9,
+                    "head_form": "parlamentares",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003025_SENT041::punição::1",
           "sent_ID": "FOLHA_DOC003025_SENT041",
           "text": "Ou que o que você disse é passível de punição e, quem sabe, criar uma dívida enorme como fruto de uma frase que você colocou numa música ou num livro?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "punição",
             "char_start": 38,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "o que você disse"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 7,
+                "char_end": 23
+              }
+            ]
+          },
+          "target_instance_id": 11700,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bfa06cce039d3321",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 7,
+                    "char_end": 23,
+                    "head_token_id": 3,
+                    "head_form": "o",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "punição · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

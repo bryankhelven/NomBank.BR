@@ -6,48 +6,303 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002013_SENT018::síntese::1",
-          "sent_ID": "FOLHA_DOC002013_SENT018",
-          "text": "Em síntese, o músico sobe ao palco com a tela do seu computador projetada em uma tela.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "síntese",
-            "char_start": 3,
-            "char_end": 10
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "síntese · acepção 1"
+      "sense_label": "síntese · acepção 1",
+      "sense_id": "s_fd8856aee43d15f4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "síntese · acepção 2",
+      "sense_id": "s_43ab15c175695576",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fd8856aee43d15f4",
+      "frame_id": "f_5bb4bb48e2d68356",
+      "pt_roleset": null,
+      "sense_label": "síntese · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "summary.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/summary.xml",
+          "source_xml_url": "data/nombank_sources/summary.xml",
+          "source_xml_sha256": "b06403a7bb72ef8ad95eb5100b9c0fdce20bb103bd62c526c7a4e33527513efe",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Resumidor",
+          "definition": "Quem faz síntese/resumo, quando expresso.",
+          "desc_pt": "Resumidor",
+          "definition_pt": "Quem faz síntese/resumo, quando expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa resumida",
+          "definition": "Material original reduzido ao resumo, como histórico.",
+          "desc_pt": "Coisa resumida",
+          "definition_pt": "Material original reduzido ao resumo, como histórico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Mensagem resultante",
+          "definition": "Resumo independente, inclusive oração sob em síntese; sem encoding2 não atestado na fonte.",
+          "desc_pt": "Mensagem resultante",
+          "definition_pt": "Resumo independente, inclusive oração sob em síntese; sem encoding2 não atestado na fonte."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002013_SENT018::síntese::1",
+          "sent_ID": "FOLHA_DOC002013_SENT018",
+          "text": "Em síntese, o músico sobe ao palco com a tela do seu computador projetada em uma tela.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "síntese",
+            "char_start": 3,
+            "char_end": 10
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "o músico sobe ao palco com a tela do seu computador projetada em uma tela"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "root"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 12,
+                "char_end": 85
+              }
+            ]
+          },
+          "target_instance_id": 9010,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5bb4bb48e2d68356",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 12,
+                    "char_end": 85,
+                    "head_token_id": 6,
+                    "head_form": "sobe",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_43ab15c175695576",
+      "frame_id": "f_77f4fefd5abbf4f2",
+      "pt_roleset": null,
+      "sense_label": "síntese · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "summary.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/summary.xml",
+          "source_xml_url": "data/nombank_sources/summary.xml",
+          "source_xml_sha256": "b06403a7bb72ef8ad95eb5100b9c0fdce20bb103bd62c526c7a4e33527513efe",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Resumidor",
+          "definition": "Quem faz síntese/resumo, quando expresso.",
+          "desc_pt": "Resumidor",
+          "definition_pt": "Quem faz síntese/resumo, quando expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa resumida",
+          "definition": "Material original reduzido ao resumo, como histórico.",
+          "desc_pt": "Coisa resumida",
+          "definition_pt": "Material original reduzido ao resumo, como histórico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Mensagem resultante",
+          "definition": "Resumo independente, inclusive oração sob em síntese; sem encoding2 não atestado na fonte.",
+          "desc_pt": "Mensagem resultante",
+          "definition_pt": "Resumo independente, inclusive oração sob em síntese; sem encoding2 não atestado na fonte."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000087_SENT015::síntese::1",
           "sent_ID": "FOLHA_DOC000087_SENT015",
           "text": "Será uma síntese do histórico do tomador de crédito.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "síntese",
             "char_start": 9,
             "char_end": 16
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do histórico do tomador de crédito",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 51
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 11389,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_77f4fefd5abbf4f2",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 17,
+                    "char_end": 51,
+                    "head_token_id": 6,
+                    "head_form": "histórico",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "síntese · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

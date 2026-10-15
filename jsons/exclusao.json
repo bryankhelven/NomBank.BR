@@ -6,24 +6,143 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "exclusão · acepção 1",
+      "sense_id": "s_0b0bb4f682988400",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0b0bb4f682988400",
+      "frame_id": "f_8f7137cfc4629418",
+      "pt_roleset": null,
+      "sense_label": "exclusão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exclusion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exclusion.xml",
+          "source_xml_url": "data/nombank_sources/exclusion.xml",
+          "source_xml_sha256": "b11fa9b77d0842058ad50c3f5b93a6376156df5ba04ea9b7dfbd5825367c7f2a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Excludente",
+          "definition": "Agent que marginaliza, não instituição que combate a exclusão.",
+          "desc_pt": "Excludente",
+          "definition_pt": "Agent que marginaliza, não instituição que combate a exclusão."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Pessoa marginalizada",
+          "definition": "Patient excluído com qualificador integral, restrição social de exclude.",
+          "desc_pt": "Pessoa marginalizada",
+          "definition_pt": "Patient excluído com qualificador integral, restrição social de exclude."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Conjunto de exclusão",
+          "definition": "Excluded-from explícito, sem sociedade/sistema socioeconômico recuperado só da gloss.",
+          "desc_pt": "Conjunto de exclusão",
+          "definition_pt": "Excluded-from explícito, sem sociedade/sistema socioeconômico recuperado só da gloss."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003050_SENT031::exclusão::1",
           "sent_ID": "FOLHA_DOC003050_SENT031",
           "text": "O instituto do atleta Fernando Fernandes, que combate a exclusão de pessoas com deficiência, comemorou quatro anos na quinta (14), com uma festa no Villa Blue Tree.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "exclusão",
             "char_start": 56,
             "char_end": 64
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de pessoas com deficiência",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 65,
+                "char_end": 91
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2249,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8f7137cfc4629418",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 65,
+                    "char_end": 91,
+                    "head_token_id": 14,
+                    "head_form": "pessoas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "exclusão · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,23 +6,122 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_03ec47cbbcd2f97e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_03ec47cbbcd2f97e",
+      "frame_id": "f_530a35b8c4d61301",
+      "pt_roleset": "governo.01",
+      "sense_label": "governo.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "governance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/governance.xml",
+          "source_xml_url": "data/nombank_sources/governance.xml",
+          "source_xml_sha256": "1e144ceb540e8238030a73e659b93ac4bfc9827728737abdbf0e8236d785b76b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Governante",
+          "definition": "Entity having control/influence no ato de governar frozen, potencial titular sob negação sem atividade exercida afirmada.",
+          "desc_pt": "Governante",
+          "definition_pt": "Entity having control/influence no ato de governar frozen, potencial titular sob negação sem atividade exercida afirmada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa governada",
+          "definition": "Thing governed especificada, sem República de presidente transferida automaticamente.",
+          "desc_pt": "Coisa governada",
+          "definition_pt": "Thing governed especificada, sem República de presidente transferida automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000020_SENT014::governo::1",
           "sent_ID": "FOLHA_DOC000020_SENT014",
           "text": "Você tem um presidente da República, mas ele não entra na tarefa de governo no dia a dia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "governo",
             "char_start": 68,
             "char_end": 75
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 41,
+                "char_end": 44
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 15231,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_530a35b8c4d61301",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 68,
+                "char_end": 75
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 41,
+                    "char_end": 44,
+                    "head_token_id": 10,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

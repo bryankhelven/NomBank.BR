@@ -6,23 +6,140 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_11a41e697c442201",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_11a41e697c442201",
+      "frame_id": "f_0a870411f8524e9c",
+      "pt_roleset": "sono.01",
+      "sense_label": "sono.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "sleep.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/sleep.xml",
+          "source_xml_url": "data/nombank_sources/sleep.xml",
+          "source_xml_sha256": "4c02135dd789c07b16ed0140041e346cb766d3e0ac584ba4a5031454af8e1d4c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem dorme",
+          "definition": "Sleeper explicitado por ninguém sob negação, sem pessoa positiva criada.",
+          "desc_pt": "Quem dorme",
+          "definition_pt": "Sleeper explicitado por ninguém sob negação, sem pessoa positiva criada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto cognato de sono",
+          "definition": "Cognate object expresso independentemente, sem REL repetido sem prova.",
+          "desc_pt": "Objeto cognato de sono",
+          "definition_pt": "Cognate object expresso independentemente, sem REL repetido sem prova."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Termo do sono",
+          "definition": "Expected terminus expresso, não noite da emissão de gás como fim do sono.",
+          "desc_pt": "Termo do sono",
+          "definition_pt": "Expected terminus expresso, não noite da emissão de gás como fim do sono."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003167_SENT004::sono::1",
           "sent_ID": "FOLHA_DOC003167_SENT004",
           "text": "O vegetal libera gás carbônico à noite, mas a quantidade não é suficiente para prejudicar o sono de ninguém.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "sono",
             "char_start": 92,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de ninguém",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 97,
+                "char_end": 107
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14345,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0a870411f8524e9c",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 92,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21
+                    ],
+                    "char_start": 97,
+                    "char_end": 107,
+                    "head_token_id": 21,
+                    "head_form": "ninguém",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

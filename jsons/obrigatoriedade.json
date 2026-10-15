@@ -6,38 +6,274 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "obrigatoriedade · acepção 1",
+      "sense_id": "s_076c2b8afd1e689f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_076c2b8afd1e689f",
+      "frame_id": "f_9a1cac77c66b3dee",
+      "pt_roleset": null,
+      "sense_label": "obrigatoriedade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "obligation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/obligation.xml",
+          "source_xml_url": "data/nombank_sources/obligation.xml",
+          "source_xml_sha256": "1153633a7753e177ce1d3c79188b1b1a61039ed5e979936273d0ec37427ec26e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Impositor",
+          "definition": "Quem estabelece exigência, incluindo entidade estatal metonímica.",
+          "desc_pt": "Impositor",
+          "definition_pt": "Quem estabelece exigência, incluindo entidade estatal metonímica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Obrigado",
+          "definition": "A quem obrigação se aplica, com exceções explícitas dentro da delimitação.",
+          "desc_pt": "Obrigado",
+          "definition_pt": "A quem obrigação se aplica, com exceções explícitas dentro da delimitação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Exigência",
+          "definition": "Ação/documento imposto, incluindo publicação ou visto sob escopo atribuído.",
+          "desc_pt": "Exigência",
+          "definition_pt": "Ação/documento imposto, incluindo publicação ou visto sob escopo atribuído."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002025_SENT038::obrigatoriedade::1",
           "sent_ID": "FOLHA_DOC002025_SENT038",
           "text": "Da obrigatoriedade de publicação das folhas de pagamento dos agentes públicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obrigatoriedade",
             "char_start": 3,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "de publicação das folhas de pagamento dos agentes públicos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 19,
+                "char_end": 77
+              }
+            ]
+          },
+          "target_instance_id": 5145,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9a1cac77c66b3dee",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 19,
+                    "char_end": 77,
+                    "head_token_id": 5,
+                    "head_form": "publicação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003056_SENT010::obrigatoriedade::1",
           "sent_ID": "FOLHA_DOC003056_SENT010",
           "text": "Um exemplo citado é o movimento feito pelo Panamá, que recentemente estabeleceu a obrigatoriedade de visto a venezuelanos (com exceção para refugiados), atingindo pessoas do alto escalão do governo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "obrigatoriedade",
             "char_start": 82,
             "char_end": 97
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pelo Panamá",
+            "Arg1": "a venezuelanos (com exceção para refugiados)",
+            "Arg2": "de visto"
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 38,
+                "char_end": 49
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 107,
+                "char_end": 151
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 98,
+                "char_end": 106
+              }
+            ]
+          },
+          "target_instance_id": 8835,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9a1cac77c66b3dee",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 82,
+                "char_end": 97
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 49,
+                    "head_token_id": 10,
+                    "head_form": "Panamá",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 107,
+                    "char_end": 151,
+                    "head_token_id": 20,
+                    "head_form": "venezuelanos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18
+                    ],
+                    "char_start": 98,
+                    "char_end": 106,
+                    "head_token_id": 18,
+                    "head_form": "visto",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "obrigatoriedade · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 2
+        },
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

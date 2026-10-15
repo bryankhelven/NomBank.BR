@@ -6,24 +6,164 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "inserção · acepção 1",
+      "sense_id": "s_52dc37b9a0657e0c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_52dc37b9a0657e0c",
+      "frame_id": "f_d06c55a36c263580",
+      "pt_roleset": null,
+      "sense_label": "inserção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "inclusion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/inclusion.xml",
+          "source_xml_url": "data/nombank_sources/inclusion.xml",
+          "source_xml_sha256": "f009a91a733f21f7c5a72fade85de029f60ae1e5788cef9fe8ff059bd62cd829",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da inserção",
+          "definition": "Entity causing grouping, sem solicitante necessariamente executor.",
+          "desc_pt": "Autor da inserção",
+          "definition_pt": "Entity causing grouping, sem solicitante necessariamente executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Item inserido",
+          "definition": "Theme colocado no conjunto, como itens Friboi.",
+          "desc_pt": "Item inserido",
+          "definition_pt": "Theme colocado no conjunto, como itens Friboi."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Conjunto de destino",
+          "definition": "Group incluindo espaço editorial encartes por extensão explícita.",
+          "desc_pt": "Conjunto de destino",
+          "definition_pt": "Group incluindo espaço editorial encartes por extensão explícita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003198_SENT015::inserção::1",
           "sent_ID": "FOLHA_DOC003198_SENT015",
           "text": "Nas últimas semanas, a empresa voltou a solicitar a inserção dos itens Friboi nos encartes dos distribuidores, segundo a Folha apurou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "inserção",
             "char_start": 52,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos itens Friboi",
+            "Arg2": "nos encartes dos distribuidores"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 61,
+                "char_end": 77
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 78,
+                "char_end": 109
+              }
+            ]
+          },
+          "target_instance_id": 14560,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d06c55a36c263580",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 61,
+                    "char_end": 77,
+                    "head_token_id": 15,
+                    "head_form": "itens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 78,
+                    "char_end": 109,
+                    "head_token_id": 19,
+                    "head_form": "encartes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "inserção · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

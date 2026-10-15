@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "exportador · acepção 1",
+      "sense_id": "s_d3ec9dfa053c954d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d3ec9dfa053c954d",
+      "frame_id": "f_4ee7354ed366268d",
+      "pt_roleset": null,
+      "sense_label": "exportador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exporter.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exporter.xml",
+          "source_xml_url": "data/nombank_sources/exporter.xml",
+          "source_xml_sha256": "a945cbbb43372aba4fb357e9fbbcd44d60bacb495609c47515b1cba35b4c01ab",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Exportador",
+          "definition": "Titular que exporta, SELF0 nominal; associação/presidente não titulares duplicados.",
+          "desc_pt": "Exportador",
+          "definition_pt": "Titular que exporta, SELF0 nominal; associação/presidente não titulares duplicados."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Produto exportado",
+          "definition": "Product expresso, sem mercadoria dos exemplos da gloss.",
+          "desc_pt": "Produto exportado",
+          "definition_pt": "Product expresso, sem mercadoria dos exemplos da gloss."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Importador",
+          "definition": "Importer identificado, sem associação como comprador.",
+          "desc_pt": "Importador",
+          "definition_pt": "Importer identificado, sem associação como comprador."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003198_SENT025::exportador::1",
           "sent_ID": "FOLHA_DOC003198_SENT025",
           "text": "\"Foi um semestre ímpar\", diz Antônio Camardelli, presidente da Abiec (associação de exportadores).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "exportadores",
             "char_start": 84,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12654,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4ee7354ed366268d",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 84,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "exportador · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

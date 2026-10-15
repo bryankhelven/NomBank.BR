@@ -6,66 +6,398 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "indício · acepção 1",
+      "sense_id": "s_6482f249029bb935",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_6482f249029bb935",
+      "frame_id": "f_f1bb5ead0e1ba5c9",
+      "pt_roleset": null,
+      "sense_label": "indício · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "indication.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/indication.xml",
+          "source_xml_url": "data/nombank_sources/indication.xml",
+          "source_xml_sha256": "178a91995a84a7002ccde235f9478bcab3f98afa3ccf8fecfb95af14d55a7dfb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Sinal indicador",
+          "definition": "Indicator original indication/indications REF incorpora REL; produtor do sinal ou fonte do relato não se confunde com indicador independente.",
+          "desc_pt": "Sinal indicador",
+          "definition_pt": "Indicator original indication/indications REF incorpora REL; produtor do sinal ou fonte do relato não se confunde com indicador independente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo indicado",
+          "definition": "Thing indicated original nuclear radiation/support; proposição e relação inferível sob negação recebem adaptação local.",
+          "desc_pt": "Conteúdo indicado",
+          "definition_pt": "Thing indicated original nuclear radiation/support; proposição e relação inferível sob negação recebem adaptação local."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da indicação",
+          "definition": "Indicated to original they detected; instrumento de coleta/relator não é destinatário explicitado por si.",
+          "desc_pt": "Destinatário da indicação",
+          "definition_pt": "Indicated to original they detected; instrumento de coleta/relator não é destinatário explicitado por si."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003153_SENT007::indício::1",
           "sent_ID": "FOLHA_DOC003153_SENT007",
           "text": "A nova procuradora-geral da República já deu indícios de que pretende imprimir seu estilo no rumo da Operação Lava Jato.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "indícios",
             "char_start": 45,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de que pretende imprimir seu estilo no rumo da Operação Lava Jato",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 119
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 5889,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1bb5ead0e1ba5c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 54,
+                    "char_end": 119,
+                    "head_token_id": 12,
+                    "head_form": "pretende",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004081_SENT005::indício::1",
           "sent_ID": "FOLHA_DOC004081_SENT005",
           "text": "Mesmo com alguns problemas (e até grandes), o processo tem sido o grande instrumento para coletar indícios e provas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "indícios",
             "char_start": 98,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12923,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1bb5ead0e1ba5c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 98,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000011_SENT018::indício::1",
           "sent_ID": "FOLHA_DOC000011_SENT018",
           "text": "\"Até o momento, os indícios sugerem que a omissão destes fatos foi intencional, premeditada e de má-fé\", diz Dodge.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "indícios",
             "char_start": 19,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "que a omissão destes fatos foi intencional, premeditada e de má-fé",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 102
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14018,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1bb5ead0e1ba5c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 36,
+                    "char_end": 102,
+                    "head_token_id": 16,
+                    "head_form": "intencional",
+                    "head_deprel": "ccomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003086_SENT007::indício::1",
           "sent_ID": "FOLHA_DOC003086_SENT007",
           "text": "A polícia francesa descreveu a suspeita como desequilibrada e disse que não havia indícios para relacionar o ataque à uma ação terrorista.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "indícios",
             "char_start": 82,
             "char_end": 90
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "para relacionar o ataque à uma ação terrorista",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "advcl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 91,
+                "char_end": 137
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15655,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1bb5ead0e1ba5c9",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 82,
+                "char_end": 90
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 91,
+                    "char_end": 137,
+                    "head_token_id": 16,
+                    "head_form": "relacionar",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "indício · acepção 1"
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "ccomp": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,66 +6,356 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "soco · acepção 1",
+      "sense_id": "s_502147e4dea14da6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_502147e4dea14da6",
+      "frame_id": "f_2fa393cc4cd09e3c",
+      "pt_roleset": null,
+      "sense_label": "soco · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "punching.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/punching.xml",
+          "source_xml_url": "data/nombank_sources/punching.xml",
+          "source_xml_sha256": "47799ffa666d2ac9f41f14662ce8afe81f237cf6491a695cc4de4cef3dd661fe",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do soco",
+          "definition": "Quem golpeia com punho; exemplo original inclui punching and slapping by coaches.",
+          "desc_pt": "Autor do soco",
+          "definition_pt": "Quem golpeia com punho; exemplo original inclui punching and slapping by coaches."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo do soco",
+          "definition": "Pessoa ou coisa atingida/potencialmente atingida; partes corporais não duplicam paciente já selecionado.",
+          "desc_pt": "Alvo do soco",
+          "definition_pt": "Pessoa ou coisa atingida/potencialmente atingida; partes corporais não duplicam paciente já selecionado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003215_SENT024::soco::1",
           "sent_ID": "FOLHA_DOC003215_SENT024",
           "text": "Advertido por uma funcionária, gritou palavrões e disse que iria dar um soco nela.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "soco",
             "char_start": 72,
             "char_end": 76
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nela"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 77,
+                "char_end": 81
+              }
+            ]
+          },
+          "target_instance_id": 8838,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2fa393cc4cd09e3c",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 72,
+                "char_end": 76
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16
+                    ],
+                    "char_start": 77,
+                    "char_end": 81,
+                    "head_token_id": 16,
+                    "head_form": "ela",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002061_SENT014::soco::1",
           "sent_ID": "FOLHA_DOC002061_SENT014",
           "text": "Acho que ele segurou minha camisa pra tentar me dar um soco.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "soco",
             "char_start": 55,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "me"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "iobj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 12
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 47
+              }
+            ]
+          },
+          "target_instance_id": 14579,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2fa393cc4cd09e3c",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 9,
+                    "char_end": 12,
+                    "head_token_id": 3,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 45,
+                    "char_end": 47,
+                    "head_token_id": 9,
+                    "head_form": "me",
+                    "head_deprel": "iobj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003215_SENT006::soco::1",
           "sent_ID": "FOLHA_DOC003215_SENT006",
           "text": "Há educadores atingidos com lixeiras, carteiras escolares, socos, chutes e pontapés.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "socos",
             "char_start": 59,
             "char_end": 64
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "educadores"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 3,
+                "char_end": 13
+              }
+            ]
+          },
+          "target_instance_id": 14732,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2fa393cc4cd09e3c",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 3,
+                    "char_end": 13,
+                    "head_token_id": 2,
+                    "head_form": "educadores",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003215_SENT020::soco::1",
           "sent_ID": "FOLHA_DOC003215_SENT020",
           "text": "Quem é que sai para trabalhar pensando em tomar um soco na cara?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "soco",
             "char_start": 51,
             "char_end": 55
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Quem"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 4
+              }
+            ]
+          },
+          "target_instance_id": 15130,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2fa393cc4cd09e3c",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 55
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 4,
+                    "head_token_id": 1,
+                    "head_form": "Quem",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "soco · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "iobj": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

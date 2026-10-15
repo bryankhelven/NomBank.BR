@@ -6,24 +6,162 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "incursão · acepção 1",
+      "sense_id": "s_d200597611ffd8f3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d200597611ffd8f3",
+      "frame_id": "f_f6991c6bc7897e98",
+      "pt_roleset": null,
+      "sense_label": "incursão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "entry.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/entry.xml",
+          "source_xml_url": "data/nombank_sources/entry.xml",
+          "source_xml_sha256": "bd66f945533d18a47ca73bf991c67ab1f154d31ffd4462ff0e8c76206618c42f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Participante da incursão",
+          "definition": "Entity entering como policiais com unidades completas, não incursion penalty do cognato.",
+          "desc_pt": "Participante da incursão",
+          "definition_pt": "Entity entering como policiais com unidades completas, não incursion penalty do cognato."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Lugar penetrado",
+          "definition": "Place/thing entered como morro, restrição à entrada/incursão frozen sem ataque súbito obrigatório.",
+          "desc_pt": "Lugar penetrado",
+          "definition_pt": "Place/thing entered como morro, restrição à entrada/incursão frozen sem ataque súbito obrigatório."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000016_SENT022::incursão::1",
           "sent_ID": "FOLHA_DOC000016_SENT022",
           "text": "Policiais do Bope, do Batalhão de Choque e do Batalhão de Operações com Cães fazem diariamente incursões no morro em busca de criminosos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "incursões",
             "char_start": 95,
             "char_end": 104
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Policiais do Bope, do Batalhão de Choque e do Batalhão de Operações com Cães",
+            "Arg1": "no morro"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 76
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 105,
+                "char_end": 113
+              }
+            ]
+          },
+          "target_instance_id": 8794,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f6991c6bc7897e98",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 95,
+                "char_end": 104
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 0,
+                    "char_end": 76,
+                    "head_token_id": 1,
+                    "head_form": "Policiais",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 105,
+                    "char_end": 113,
+                    "head_token_id": 24,
+                    "head_form": "morro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "incursão · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,37 +6,218 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_e85fed53c96b51db",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e85fed53c96b51db",
+      "frame_id": "f_a2fef5c52217c7b9",
+      "pt_roleset": "derrubada.02",
+      "sense_label": "derrubada.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "removal.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/removal.xml",
+          "source_xml_url": "data/nombank_sources/removal.xml",
+          "source_xml_sha256": "f0126a2fe8b7aa5f26eea271348d0716de669462d6b46314a4d694a24b115371",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da remoção",
+          "definition": "Quem/o que remove, incluindo comportamento explicitamente causal, não fonte da fala por si.",
+          "desc_pt": "Causador da remoção",
+          "definition_pt": "Quem/o que remove, incluindo comportamento explicitamente causal, não fonte da fala por si."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Removido",
+          "definition": "Pessoa/entidade afastada, extensão institucional/política sem vínculo de emprego automático.",
+          "desc_pt": "Removido",
+          "definition_pt": "Pessoa/entidade afastada, extensão institucional/política sem vínculo de emprego automático."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem da remoção",
+          "definition": "De onde se afasta, sem genitivo plataforma irresolvido ou cargo inferido.",
+          "desc_pt": "Origem da remoção",
+          "definition_pt": "De onde se afasta, sem genitivo plataforma irresolvido ou cargo inferido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001290_SENT021::derrubada::1",
           "sent_ID": "FOLHA_DOC001290_SENT021",
           "text": "As seguidas falas militares sobre a conjuntura, que vão sendo naturalizadas, fazem parte dos surtos de exceção desencadeados pela derrubada de Dilma.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "derrubada",
             "char_start": 130,
             "char_end": 139
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de Dilma",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 140,
+                "char_end": 148
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6045,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a2fef5c52217c7b9",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 130,
+                "char_end": 139
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26
+                    ],
+                    "char_start": 140,
+                    "char_end": 148,
+                    "head_token_id": 26,
+                    "head_form": "Dilma",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003036_SENT022::derrubada::1",
           "sent_ID": "FOLHA_DOC003036_SENT022",
           "text": "E, visto que a maioria da população, na época, apoiou o impeachment, não há como vencer sem conquistar gente que apoiou a derrubada de Dilma.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "derrubada",
             "char_start": 122,
             "char_end": 131
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de Dilma",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 132,
+                "char_end": 140
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9431,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a2fef5c52217c7b9",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 122,
+                "char_end": 131
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30,
+                      31
+                    ],
+                    "char_start": 132,
+                    "char_end": 140,
+                    "head_token_id": 31,
+                    "head_form": "Dilma",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

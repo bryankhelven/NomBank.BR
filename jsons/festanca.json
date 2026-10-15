@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "festança · acepção 1",
+      "sense_id": "s_3d7150f68ad6dd22",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3d7150f68ad6dd22",
+      "frame_id": "f_44ed77d5ab78566f",
+      "pt_roleset": null,
+      "sense_label": "festança · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "party.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/party.xml",
+          "source_xml_url": "data/nombank_sources/party.xml",
+          "source_xml_sha256": "4a686876e7bc5348219d9ee52d19009ec60aa9f0aa43f20d81bb09dbc3a5a40c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Participante da festança",
+          "definition": "Celebrator(s) expresso.",
+          "desc_pt": "Participante da festança",
+          "definition_pt": "Celebrator(s) expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ocasião festiva",
+          "definition": "Party/occasion definido, não vésperas da audiência.",
+          "desc_pt": "Ocasião festiva",
+          "definition_pt": "Party/occasion definido, não vésperas da audiência."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da festa",
+          "definition": "Beneficiary identificado.",
+          "desc_pt": "Beneficiário da festa",
+          "definition_pt": "Beneficiary identificado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002007_SENT010::festança::1",
           "sent_ID": "FOLHA_DOC002007_SENT010",
           "text": "A audiência às vésperas da festança custou ao defensor um bate-e-volta Lisboa-Brasília-Lisboa em jatinho particular.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "festança",
             "char_start": 27,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 15576,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_44ed77d5ab78566f",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "festança · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

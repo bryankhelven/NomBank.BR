@@ -6,37 +6,206 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_f53ca556273a359e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f53ca556273a359e",
+      "frame_id": "f_99a3937c569fdbaa",
+      "pt_roleset": "coincidência.03",
+      "sense_label": "coincidência.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "coincidence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/coincidence.xml",
+          "source_xml_url": "data/nombank_sources/coincidence.xml",
+          "source_xml_sha256": "27df1992cb3549c6c60e4db8f3841f187e875dc308059b24451683756cad50b3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Acontecimento casual",
+          "definition": "Thing happening/timing classificado casual, inclusive sob negação e correlação descrita.",
+          "desc_pt": "Acontecimento casual",
+          "definition_pt": "Thing happening/timing classificado casual, inclusive sob negação e correlação descrita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003021_SENT020::coincidência::1",
           "sent_ID": "FOLHA_DOC003021_SENT020",
           "text": "Não é coincidência que essa lei esteja sendo proposta justamente nas vésperas de um dos anos eleitorais mais importantes e desafiadores da história recente do país.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "coincidência",
             "char_start": 6,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "que essa lei esteja sendo proposta justamente nas vésperas de um dos anos eleitorais mais importantes e desafiadores da história recente do país"
+          },
+          "syntax": {
+            "Arg1": "csubj"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 19,
+                "char_end": 163
+              }
+            ]
+          },
+          "target_instance_id": 3961,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_99a3937c569fdbaa",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 19,
+                    "char_end": 163,
+                    "head_token_id": 9,
+                    "head_form": "proposta",
+                    "head_deprel": "csubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004067_SENT008::coincidência::1",
           "sent_ID": "FOLHA_DOC004067_SENT008",
           "text": "Não é coincidência o fato de muitos desses temores estarem ligados a avanços científicos e tecnológicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "coincidência",
             "char_start": 6,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "o fato de muitos desses temores estarem ligados a avanços científicos e tecnológicos"
+          },
+          "syntax": {
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 19,
+                "char_end": 103
+              }
+            ]
+          },
+          "target_instance_id": 8286,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_99a3937c569fdbaa",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 6,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 19,
+                    "char_end": 103,
+                    "head_token_id": 5,
+                    "head_form": "fato",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "csubj": {
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

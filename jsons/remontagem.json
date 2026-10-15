@@ -6,24 +6,134 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "remontagem · acepção 1",
+      "sense_id": "s_a10f672bf9e14968",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a10f672bf9e14968",
+      "frame_id": "f_4fdb1186f0074bae",
+      "pt_roleset": null,
+      "sense_label": "remontagem · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "staging.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/staging.xml",
+          "source_xml_url": "data/nombank_sources/staging.xml",
+          "source_xml_sha256": "2751f18d4255f9c8b454c0a4edec12e6bef0971ec09ab8b233dc64f5ecac3086",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da remontagem",
+          "definition": "Agent que encena de novo, sem quem marcou teatro como encenador.",
+          "desc_pt": "Autor da remontagem",
+          "definition_pt": "Agent que encena de novo, sem quem marcou teatro como encenador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Peça remontada",
+          "definition": "Theme como peça teatral com título/apposição íntegros, conforme classics original.",
+          "desc_pt": "Peça remontada",
+          "definition_pt": "Theme como peça teatral com título/apposição íntegros, conforme classics original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000155_SENT001::remontagem::1",
           "sent_ID": "FOLHA_DOC000155_SENT001",
           "text": "Rei da Vela, peça que marcou o teatro brasileiro, ganhará remontagem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "remontagem",
             "char_start": 58,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Rei da Vela, peça que marcou o teatro brasileiro,"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 49
+              }
+            ]
+          },
+          "target_instance_id": 15238,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4fdb1186f0074bae",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 0,
+                    "char_end": 49,
+                    "head_token_id": 1,
+                    "head_form": "Rei",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "remontagem · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,38 +6,224 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "recepção · acepção 1",
+      "sense_id": "s_0964e8342475064b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0964e8342475064b",
+      "frame_id": "f_375b7cef5118bb83",
+      "pt_roleset": null,
+      "sense_label": "recepção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reception.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reception.xml",
+          "source_xml_url": "data/nombank_sources/reception.xml",
+          "source_xml_sha256": "9a29a43aaa15ccef910fba46ecdc4cf7e5fa4288de79870b1456320e47d0db9a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Homenageador",
+          "definition": "Quem oferece festejo, distinto de local da recepção.",
+          "desc_pt": "Homenageador",
+          "definition_pt": "Quem oferece festejo, distinto de local da recepção."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Homenageado",
+          "definition": "Entidade recebida com homenagem, incluindo possessivo objeto.",
+          "desc_pt": "Homenageado",
+          "definition_pt": "Entidade recebida com homenagem, incluindo possessivo objeto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Motivo da homenagem",
+          "definition": "Razão de festejar, não grau efusivo.",
+          "desc_pt": "Motivo da homenagem",
+          "definition_pt": "Razão de festejar, não grau efusivo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000021_SENT006::recepção::1",
           "sent_ID": "FOLHA_DOC000021_SENT006",
           "text": "Debaixo de chuva, sua recepção na cidade com uma das maiores comunidades brasileiras nos EUA foi menos efusiva do que em Miami, onde esteve no fim de semana, atraindo longas filas de espera para um encontro com ele.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recepção",
             "char_start": 22,
             "char_end": 30
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 18,
+                "char_end": 21
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1815,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_375b7cef5118bb83",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 30
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 18,
+                    "char_end": 21,
+                    "head_token_id": 5,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000034_SENT021::recepção::1",
           "sent_ID": "FOLHA_DOC000034_SENT021",
           "text": "A recepção do Neymar vocês viram como foi.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "recepção",
             "char_start": 2,
             "char_end": 10
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do Neymar",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 11,
+                "char_end": 20
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 10058,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_375b7cef5118bb83",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 10
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 11,
+                    "char_end": 20,
+                    "head_token_id": 5,
+                    "head_form": "Neymar",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "recepção · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

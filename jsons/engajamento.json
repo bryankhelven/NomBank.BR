@@ -6,38 +6,223 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "engajamento · acepção 1",
+      "sense_id": "s_d6382e7f71467180",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d6382e7f71467180",
+      "frame_id": "f_38ab6eafd501ae8a",
+      "pt_roleset": null,
+      "sense_label": "engajamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "participation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/participation.xml",
+          "source_xml_url": "data/nombank_sources/participation.xml",
+          "source_xml_sha256": "b4ad078887d9e5cb9c62e73270a1eb4d02fb4693290f731f4ecd5f6ccd217f31",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Engajado",
+          "definition": "Quem participa/aderiu, extensão explícita à filiação/alistamento figurado em causas, sem registro formal.",
+          "desc_pt": "Engajado",
+          "definition_pt": "Quem participa/aderiu, extensão explícita à filiação/alistamento figurado em causas, sem registro formal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Causa de engajamento",
+          "definition": "Campo/atividade de adesão, incluindo questões com exemplificações integrais.",
+          "desc_pt": "Causa de engajamento",
+          "definition_pt": "Campo/atividade de adesão, incluindo questões com exemplificações integrais."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003006_SENT019::engajamento::1",
           "sent_ID": "FOLHA_DOC003006_SENT019",
           "text": "Temos um longo caminho para reconstrução do Brasil e será a nossa determinação e engajamento, nas causas prioritárias, que definirão a velocidade e o sucesso das mudanças que queremos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "engajamento",
             "char_start": 81,
             "char_end": 92
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "nossa",
+            "Arg1": "nas causas prioritárias"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 60,
+                "char_end": 65
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 94,
+                "char_end": 117
+              }
+            ]
+          },
+          "target_instance_id": 7317,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_38ab6eafd501ae8a",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 60,
+                    "char_end": 65,
+                    "head_token_id": 13,
+                    "head_form": "nossa",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 94,
+                    "char_end": 117,
+                    "head_token_id": 20,
+                    "head_form": "causas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004067_SENT032::engajamento::1",
           "sent_ID": "FOLHA_DOC004067_SENT032",
           "text": "Ser cientificamente bem informado não é pré-requisito para o engajamento com questões importantes como a mudança climática ou os transgênicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "engajamento",
             "char_start": 61,
             "char_end": 72
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "com questões importantes como a mudança climática ou os transgênicos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 73,
+                "char_end": 141
+              }
+            ]
+          },
+          "target_instance_id": 13872,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_38ab6eafd501ae8a",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 72
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 73,
+                    "char_end": 141,
+                    "head_token_id": 12,
+                    "head_form": "questões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "engajamento · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

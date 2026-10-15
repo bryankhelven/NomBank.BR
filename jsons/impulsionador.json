@@ -6,24 +6,167 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "impulsionador · acepção 1",
+      "sense_id": "s_11f8383616d19320",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_11f8383616d19320",
+      "frame_id": "f_13b4e747b313c9a2",
+      "pt_roleset": null,
+      "sense_label": "impulsionador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "promoter.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/promoter.xml",
+          "source_xml_url": "data/nombank_sources/promoter.xml",
+          "source_xml_sha256": "d9e39eff3a0f93792f0b545c33c10924a68f522cd733bf99e0538b938997d7e0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Promotor da imagem",
+          "definition": "Advertiser grupo explícito.",
+          "desc_pt": "Promotor da imagem",
+          "definition_pt": "Advertiser grupo explícito."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Imagem promovida",
+          "definition": "Thing pitched/advertised imagem do prefeito.",
+          "desc_pt": "Imagem promovida",
+          "definition_pt": "Thing pitched/advertised imagem do prefeito."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Público da promoção",
+          "definition": "Audience pessoa/grupo explicitado, não redes como público automaticamente.",
+          "desc_pt": "Público da promoção",
+          "definition_pt": "Audience pessoa/grupo explicitado, não redes como público automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002040_SENT004::impulsionador::1",
           "sent_ID": "FOLHA_DOC002040_SENT004",
           "text": "Formado por jovens liberais, o grupo é impulsionador da imagem do prefeito nas redes sociais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "impulsionador",
             "char_start": 39,
             "char_end": 52
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o grupo",
+            "Arg1": "da imagem do prefeito",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 29,
+                "char_end": 36
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 53,
+                "char_end": 74
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1988,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_13b4e747b313c9a2",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 39,
+                "char_end": 52
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 29,
+                    "char_end": 36,
+                    "head_token_id": 7,
+                    "head_form": "grupo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 53,
+                    "char_end": 74,
+                    "head_token_id": 12,
+                    "head_form": "imagem",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "impulsionador · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

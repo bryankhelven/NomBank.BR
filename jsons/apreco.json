@@ -6,24 +6,147 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "apreço · acepção 1",
+      "sense_id": "s_5f03f5bac30249e8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5f03f5bac30249e8",
+      "frame_id": "f_088b623567a18066",
+      "pt_roleset": null,
+      "sense_label": "apreço · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "appreciation.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/appreciation.xml",
+          "source_xml_url": "data/nombank_sources/appreciation.xml",
+          "source_xml_sha256": "26eaf5b5394ab721db5314a22054e2767a36899b06f9d3d2110d6115389f169c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular do apreço",
+          "definition": "Emoter que estima, coletivo camponeses sob não obter apreço.",
+          "desc_pt": "Titular do apreço",
+          "definition_pt": "Emoter que estima, coletivo camponeses sob não obter apreço."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade estimada",
+          "definition": "Thing appreciated como Che Guevara pelo referente, não fama causada.",
+          "desc_pt": "Entidade estimada",
+          "definition_pt": "Thing appreciated como Che Guevara pelo referente, não fama causada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000018_SENT035::apreço::1",
           "sent_ID": "FOLHA_DOC000018_SENT035",
           "text": "Che Guevara era conhecido pelo mundo afora, mas sua fama não lhe valera grande apreço entre os camponeses bolivianos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "apreço",
             "char_start": 79,
             "char_end": 85
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "entre os camponeses bolivianos",
+            "Arg1": "Che Guevara"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 86,
+                "char_end": 116
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 11
+              }
+            ]
+          },
+          "target_instance_id": 13898,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_088b623567a18066",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 79,
+                "char_end": 85
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 86,
+                    "char_end": 116,
+                    "head_token_id": 20,
+                    "head_form": "camponeses",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 11,
+                    "head_token_id": 1,
+                    "head_form": "Che",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "apreço · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

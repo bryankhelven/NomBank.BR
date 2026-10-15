@@ -6,24 +6,129 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "perigo · acepção 1",
+      "sense_id": "s_50aec2d8fdae7ff5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_50aec2d8fdae7ff5",
+      "frame_id": "f_14e60f76e285c9ad",
+      "pt_roleset": null,
+      "sense_label": "perigo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "danger.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/danger.xml",
+          "source_xml_url": "data/nombank_sources/danger.xml",
+          "source_xml_sha256": "1afff2f71ac726f8498765c3d3ef6ba9175542ad06aa883a43221ab487ab0b59",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Evento perigoso",
+          "definition": "Theme proposição indesejável sob risco, não fato realizado.",
+          "desc_pt": "Evento perigoso",
+          "definition_pt": "Theme proposição indesejável sob risco, não fato realizado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parte em risco",
+          "definition": "Beneficiary at risk expresso, sem ameaçador0 inexistente.",
+          "desc_pt": "Parte em risco",
+          "definition_pt": "Beneficiary at risk expresso, sem ameaçador0 inexistente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000015_SENT012::perigo::1",
           "sent_ID": "FOLHA_DOC000015_SENT012",
           "text": "Um dos maiores perigos é que o fornecimento não acompanhe a retomada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "perigos",
             "char_start": 15,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "que o fornecimento não acompanhe a retomada",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 68
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13754,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_14e60f76e285c9ad",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 25,
+                    "char_end": 68,
+                    "head_token_id": 11,
+                    "head_form": "acompanhe",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "perigo · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

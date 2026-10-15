@@ -6,76 +6,460 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004100_SENT023::provocação::1",
-          "sent_ID": "FOLHA_DOC004100_SENT023",
-          "text": "Elas não me incomodam menos hoje do que me incomodavam quando o Millôr lançou sua provocação libertária.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "provocação",
-            "char_start": 82,
-            "char_end": 92
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "provocação · acepção 1"
+      "sense_label": "provocação · acepção 1",
+      "sense_id": "s_dbe8965e9df196d9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "provocação · acepção 2",
+      "sense_id": "s_bf636155bc73da45",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_dbe8965e9df196d9",
+      "frame_id": "f_f8e8345ad31171fc",
+      "pt_roleset": null,
+      "sense_label": "provocação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "provocation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/provocation.xml",
+          "source_xml_url": "data/nombank_sources/provocation.xml",
+          "source_xml_sha256": "114dbd2da65aa07dcc046067933840a1c3e6f96622e1a9201275483265157b87",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "causador",
+          "definition": "Causa de reação emocional; extensão autoral do ato ao autor explicitada por instância.",
+          "desc_pt": "causador",
+          "definition_pt": "Causa de reação emocional; extensão autoral do ato ao autor explicitada por instância."
+        },
+        {
+          "id": "Arg1",
+          "desc": "reação provocada",
+          "definition": "Estado/reação produzido ou contextualizado pela provocação.",
+          "desc_pt": "reação provocada",
+          "definition_pt": "Estado/reação produzido ou contextualizado pela provocação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "provocado",
+          "definition": "Entidade que recebe/experiencia provocação.",
+          "desc_pt": "provocado",
+          "definition_pt": "Entidade que recebe/experiencia provocação."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004100_SENT023::provocação::1",
+          "sent_ID": "FOLHA_DOC004100_SENT023",
+          "text": "Elas não me incomodam menos hoje do que me incomodavam quando o Millôr lançou sua provocação libertária.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "provocação",
+            "char_start": 82,
+            "char_end": 92
+          },
+          "realization": {
+            "Arg0": "o Millôr",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 62,
+                "char_end": 70
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 451,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8e8345ad31171fc",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 82,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 62,
+                    "char_end": 70,
+                    "head_token_id": 14,
+                    "head_form": "Millôr",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_bf636155bc73da45",
+      "frame_id": "f_05de5749768862d2",
+      "pt_roleset": null,
+      "sense_label": "provocação · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "provocation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/provocation.xml",
+          "source_xml_url": "data/nombank_sources/provocation.xml",
+          "source_xml_sha256": "114dbd2da65aa07dcc046067933840a1c3e6f96622e1a9201275483265157b87",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "causador",
+          "definition": "Causa de reação emocional; extensão autoral do ato ao autor explicitada por instância.",
+          "desc_pt": "causador",
+          "definition_pt": "Causa de reação emocional; extensão autoral do ato ao autor explicitada por instância."
+        },
+        {
+          "id": "Arg1",
+          "desc": "reação provocada",
+          "definition": "Estado/reação produzido ou contextualizado pela provocação.",
+          "desc_pt": "reação provocada",
+          "definition_pt": "Estado/reação produzido ou contextualizado pela provocação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "provocado",
+          "definition": "Entidade que recebe/experiencia provocação.",
+          "desc_pt": "provocado",
+          "definition_pt": "Entidade que recebe/experiencia provocação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002071_SENT017::provocação::1",
           "sent_ID": "FOLHA_DOC002071_SENT017",
           "text": "Se a provocação do Gabriel aconteceu, vamos chamar a atenção na hora da cobrança.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "provocação",
             "char_start": 5,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do Gabriel",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 26
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 3199,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_05de5749768862d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 5,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 16,
+                    "char_end": 26,
+                    "head_token_id": 6,
+                    "head_form": "Gabriel",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004631_SENT014::provocação::1",
           "sent_ID": "FOLHA_DOC004631_SENT014",
           "text": "Contra o Equador, Neymar jogou para ele e não para o time, se descontrolou sem motivos, pareceu mais irritado consigo mesmo, por não conseguir se dar bem nas tentativas que fez, do que com as provocações, de resto comuns dos rivais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "provocações",
             "char_start": 192,
             "char_end": 203
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos rivais",
+            "Arg1": null,
+            "Arg2": "Neymar"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 221,
+                "char_end": 231
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 18,
+                "char_end": 24
+              }
+            ]
+          },
+          "target_instance_id": 5418,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_05de5749768862d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              44
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 192,
+                "char_end": 203
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      49,
+                      50,
+                      51
+                    ],
+                    "char_start": 221,
+                    "char_end": 231,
+                    "head_token_id": 51,
+                    "head_form": "rivais",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 18,
+                    "char_end": 24,
+                    "head_token_id": 5,
+                    "head_form": "Neymar",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003165_SENT016::provocação::1",
           "sent_ID": "FOLHA_DOC003165_SENT016",
           "text": "Ele só reclama, simula ou comete atitudes infantis, daquelas que caracterizam menos um mau menino, mas apenas um garoto mimado, mal-educado, irritadiço, incapaz de conviver com frustrações, provocações e safanões.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "provocações",
             "char_start": 190,
             "char_end": 201
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Ele"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ]
+          },
+          "target_instance_id": 7500,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_05de5749768862d2",
+          "argument_details": {
+            "predicate_token_ids": [
+              36
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 190,
+                "char_end": 201
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "Ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "provocação · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        }
+      }
     }
   ]
 }

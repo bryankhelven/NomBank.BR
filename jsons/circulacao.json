@@ -6,51 +6,246 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_49b934edf52d18f2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_49b934edf52d18f2",
+      "frame_id": "f_3b476d62ff956a90",
+      "pt_roleset": "circulação.01",
+      "sense_label": "circulação.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "circulation.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/circulation.xml",
+          "source_xml_url": "data/nombank_sources/circulation.xml",
+          "source_xml_sha256": "181dd2315e09776e6a26ff7cb02b30497505b431f08d9bcc5a66538635cf2519",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador",
+          "definition": "Quem faz circular, distinto de mero espaço que permite passagem.",
+          "desc_pt": "Causador",
+          "definition_pt": "Quem faz circular, distinto de mero espaço que permite passagem."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Circulante",
+          "definition": "Entidade que se move/circula; extensão explícita de dinheiro/listas a veículos e pessoas, não tiragem impressa.",
+          "desc_pt": "Circulante",
+          "definition_pt": "Entidade que se move/circula; extensão explícita de dinheiro/listas a veículos e pessoas, não tiragem impressa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003119_SENT005::circulação::1",
           "sent_ID": "FOLHA_DOC003119_SENT005",
           "text": "No trecho entre as estações Butantã e Paulista, a circulação dos trens ocorrerá normalmente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "circulação",
             "char_start": 50,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos trens"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 61,
+                "char_end": 70
+              }
+            ]
+          },
+          "target_instance_id": 1982,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b476d62ff956a90",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 61,
+                    "char_end": 70,
+                    "head_token_id": 15,
+                    "head_form": "trens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003179_SENT005::circulação::1",
           "sent_ID": "FOLHA_DOC003179_SENT005",
           "text": "O governo federal dedicava seus projetos inovadores à capital, Rio de Janeiro, como o Palácio Capanema, que se ergue sobre pilotis, deixando um imenso vão livre para a circulação das pessoas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "circulação",
             "char_start": 168,
             "char_end": 178
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "das pessoas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 179,
+                "char_end": 190
+              }
+            ]
+          },
+          "target_instance_id": 6764,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b476d62ff956a90",
+          "argument_details": {
+            "predicate_token_ids": [
+              34
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 168,
+                "char_end": 178
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      35,
+                      36,
+                      37
+                    ],
+                    "char_start": 179,
+                    "char_end": 190,
+                    "head_token_id": 37,
+                    "head_form": "pessoas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002022_SENT025::circulação::1",
           "sent_ID": "FOLHA_DOC002022_SENT025",
           "text": "Cidade do Rock com o dobro do tamanho permitiu circulação melhor.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "circulação",
             "char_start": 47,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 8474,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b476d62ff956a90",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

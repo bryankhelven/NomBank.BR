@@ -6,108 +6,686 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "atentado · acepção 1",
+      "sense_id": "s_25cd0cb539b68927",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_25cd0cb539b68927",
+      "frame_id": "f_21acf6e2f0805a00",
+      "pt_roleset": null,
+      "sense_label": "atentado · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "attack.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/attack.xml",
+          "source_xml_url": "data/nombank_sources/attack.xml",
+          "source_xml_sha256": "b1149b637dcef135fcc789278f57ad2a93840a6da8ba9b4fc2f876308f1f012f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "atacante",
+          "definition": "Entidade que promove o ataque físico.",
+          "desc_pt": "atacante",
+          "definition_pt": "Entidade que promove o ataque físico."
+        },
+        {
+          "id": "Arg1",
+          "desc": "paciente ou alvo",
+          "definition": "Entidade alvo ou fisicamente afetada pelo ataque, sem exigir que toda vítima tenha sido alvo intencional.",
+          "desc_pt": "paciente ou alvo",
+          "definition_pt": "Entidade alvo ou fisicamente afetada pelo ataque, sem exigir que toda vítima tenha sido alvo intencional."
+        },
+        {
+          "id": "Arg2",
+          "desc": "instrumento ou meio",
+          "definition": "Meio físico/tático utilizado para o ataque, com extensões locais explicitadas.",
+          "desc_pt": "instrumento ou meio",
+          "definition_pt": "Meio físico/tático utilizado para o ataque, com extensões locais explicitadas."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000173_SENT009::atentado::1",
           "sent_ID": "FOLHA_DOC000173_SENT009",
           "text": "O atentado deixou outros 41 feridos, muitos em estado grave.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentado",
             "char_start": 2,
             "char_end": 10
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "outros 41 feridos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 18,
+                "char_end": 35
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 222,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_21acf6e2f0805a00",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 10
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 18,
+                    "char_end": 35,
+                    "head_token_id": 6,
+                    "head_form": "feridos",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003140_SENT015::atentado::1",
           "sent_ID": "FOLHA_DOC003140_SENT015",
           "text": "Concluímos que os atentados de 2001, da mesma maneira que a Primavera Árabe [iniciada em 2010], tinham sido um acelerador para a multiplicação de muros, mas não um desencadeador.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentados",
             "char_start": 18,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 378,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_21acf6e2f0805a00",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000173_SENT068::atentado::1",
           "sent_ID": "FOLHA_DOC000173_SENT068",
           "text": "No dia do atentado, completavam exatos três anos da morte de seu pai.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentado",
             "char_start": 10,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 1274,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_21acf6e2f0805a00",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003162_SENT035::atentado::1",
           "sent_ID": "FOLHA_DOC003162_SENT035",
           "text": "Estratégia ventilada: \"Arrombar a residência de um policial civil [aposentado], a fim de pegar farda, colete e distintivo\", um disfarce para executar o atentado contra o juiz.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentado",
             "char_start": 152,
             "char_end": 160
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "contra o juiz",
+            "Arg2": "um disfarce"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl",
+            "Arg2": "appos"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 161,
+                "char_end": 174
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 124,
+                "char_end": 135
+              }
+            ]
+          },
+          "target_instance_id": 1910,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_21acf6e2f0805a00",
+          "argument_details": {
+            "predicate_token_ids": [
+              32
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 152,
+                "char_end": 160
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 161,
+                    "char_end": 174,
+                    "head_token_id": 35,
+                    "head_form": "juiz",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28
+                    ],
+                    "char_start": 124,
+                    "char_end": 135,
+                    "head_token_id": 28,
+                    "head_form": "disfarce",
+                    "head_deprel": "appos"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
         },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "appos": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_25cd0cb539b68927",
+      "frame_id": "f_c07e19441a710c59",
+      "pt_roleset": null,
+      "sense_label": "atentado · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "attack.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/attack.xml",
+          "source_xml_url": "data/nombank_sources/attack.xml",
+          "source_xml_sha256": "b1149b637dcef135fcc789278f57ad2a93840a6da8ba9b4fc2f876308f1f012f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Atacante",
+          "definition": "Autor/participante de ataque físico criminal no contexto, inclusive sob suspeita ou alternativa hipotética explicitada.",
+          "desc_pt": "Atacante",
+          "definition_pt": "Autor/participante de ataque físico criminal no contexto, inclusive sob suspeita ou alternativa hipotética explicitada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo",
+          "definition": "Entidade atacada, não todo local de instalação de instrumento.",
+          "desc_pt": "Alvo",
+          "definition_pt": "Entidade atacada, não todo local de instalação de instrumento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio de atacar, inclusive bomba na hipótese em análise.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio de atacar, inclusive bomba na hipótese em análise."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC001163_SENT011::atentado::1",
           "sent_ID": "FOLHA_DOC001163_SENT011",
           "text": "A Polícia Civil identificou parte dos supostos autores dos atentados, em investigação que corre em sigilo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentados",
             "char_start": 59,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "parte dos supostos autores",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 54
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10312,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07e19441a710c59",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 28,
+                    "char_end": 54,
+                    "head_token_id": 5,
+                    "head_form": "parte",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003120_SENT006::atentado::1",
           "sent_ID": "FOLHA_DOC003120_SENT006",
           "text": "A polícia investiga se o jovem carregou e instalou a bomba caseira na estação de Parsons Green ou se ele desempenhou um papel de apoio ao atentado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentado",
             "char_start": 138,
             "char_end": 146
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o jovem",
+            "Arg1": null,
+            "Arg2": "a bomba caseira"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 23,
+                "char_end": 30
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 51,
+                "char_end": 66
+              }
+            ]
+          },
+          "target_instance_id": 12928,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07e19441a710c59",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 138,
+                "char_end": 146
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 23,
+                    "char_end": 30,
+                    "head_token_id": 6,
+                    "head_form": "jovem",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 51,
+                    "char_end": 66,
+                    "head_token_id": 11,
+                    "head_form": "bomba",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004063_SENT038::atentado::1",
           "sent_ID": "FOLHA_DOC004063_SENT038",
           "text": "No período, seis suspeitos de participarem dos atentados foram mortos pela polícia e 41 foram detidos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atentados",
             "char_start": 47,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "seis suspeitos",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj:pass",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 12,
+                "char_end": 26
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14690,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c07e19441a710c59",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6
+                    ],
+                    "char_start": 12,
+                    "char_end": 26,
+                    "head_token_id": 6,
+                    "head_form": "suspeitos",
+                    "head_deprel": "nsubj:pass"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "atentado · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj:pass": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

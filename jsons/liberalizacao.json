@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "liberalização · acepção 1",
+      "sense_id": "s_b4cf77e1d4d0517f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b4cf77e1d4d0517f",
+      "frame_id": "f_f98cab5de2b8581e",
+      "pt_roleset": null,
+      "sense_label": "liberalização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "liberalization.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/liberalization.xml",
+          "source_xml_url": "data/nombank_sources/liberalization.xml",
+          "source_xml_sha256": "68b64dabf183c2ac448cfab6772d3b84e430a6d61a8f45672e2f86cd304f96be",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da liberação",
+          "definition": "Agent que liberaliza, não setores que reivindicam acordo como executores.",
+          "desc_pt": "Autor da liberação",
+          "definition_pt": "Agent que liberaliza, não setores que reivindicam acordo como executores."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio liberalizado",
+          "definition": "Thing becoming liberal, como comercial/trade, sem redução de tarifa coordenada como segundo campo indevidamente.",
+          "desc_pt": "Domínio liberalizado",
+          "definition_pt": "Thing becoming liberal, como comercial/trade, sem redução de tarifa coordenada como segundo campo indevidamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003186_SENT012::liberalização::1",
           "sent_ID": "FOLHA_DOC003186_SENT012",
           "text": "Um acordo de liberalização comercial, com redução de tarifas, reivindicação de alguns setores da indústria brasileira, tampouco está no horizonte.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "liberalização",
             "char_start": 13,
             "char_end": 26
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "comercial"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 27,
+                "char_end": 36
+              }
+            ]
+          },
+          "target_instance_id": 1753,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f98cab5de2b8581e",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 27,
+                    "char_end": 36,
+                    "head_token_id": 5,
+                    "head_form": "comercial",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "liberalização · acepção 1"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

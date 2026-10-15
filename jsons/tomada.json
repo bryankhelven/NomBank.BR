@@ -6,48 +6,259 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000061_SENT001::tomada::1",
-          "sent_ID": "FOLHA_DOC000061_SENT001",
-          "text": "Estudo do comportamento na tomada de decisões rende Nobel de Economia.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "tomada",
-            "char_start": 27,
-            "char_end": 33
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "tomada · acepção 1"
+      "sense_label": "tomada · acepção 1",
+      "sense_id": "s_ca39d2149e1ccbf4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "tomada · acepção 2",
+      "sense_id": "s_14072129924b9f1a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_ca39d2149e1ccbf4",
+      "frame_id": "f_93616dd29ab36d95",
+      "pt_roleset": null,
+      "sense_label": "tomada · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "taking.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/taking.xml",
+          "source_xml_url": "data/nombank_sources/taking.xml",
+          "source_xml_sha256": "8e2960b8aedab9bdff3d95815caaeb3ca48fba4e1f14202470fe72b02613a7af",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da tomada",
+          "definition": "Quem toma decisão/providência; take suporte nominal estendido a decisão sem quem estuda comportamento automaticamente autor.",
+          "desc_pt": "Autor da tomada",
+          "definition_pt": "Quem toma decisão/providência; take suporte nominal estendido a decisão sem quem estuda comportamento automaticamente autor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema da tomada",
+          "definition": "Decisão/providência que se toma no sentido de obtenção frozen, não bem adquirido por compra.",
+          "desc_pt": "Tema da tomada",
+          "definition_pt": "Decisão/providência que se toma no sentido de obtenção frozen, não bem adquirido por compra."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000061_SENT001::tomada::1",
+          "sent_ID": "FOLHA_DOC000061_SENT001",
+          "text": "Estudo do comportamento na tomada de decisões rende Nobel de Economia.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "tomada",
+            "char_start": 27,
+            "char_end": 33
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de decisões"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 45
+              }
+            ]
+          },
+          "target_instance_id": 12338,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_93616dd29ab36d95",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 33
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 34,
+                    "char_end": 45,
+                    "head_token_id": 9,
+                    "head_form": "decisões",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_14072129924b9f1a",
+      "frame_id": "f_910ff37adb1494ba",
+      "pt_roleset": null,
+      "sense_label": "tomada · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conquest.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conquest.xml",
+          "source_xml_url": "data/nombank_sources/conquest.xml",
+          "source_xml_sha256": "8e57a146115bb93cf983ec4e3efca846bcec6c7ab201f6ed0fb442b1f86bef7c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Conquistador",
+          "definition": "Quem toma controle, distinto de quem transmite ou mata em outro evento.",
+          "desc_pt": "Conquistador",
+          "definition_pt": "Quem toma controle, distinto de quem transmite ou mata em outro evento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade conquistada",
+          "definition": "Território/comunidade ou entidade de que se toma controle, com localização integral.",
+          "desc_pt": "Entidade conquistada",
+          "definition_pt": "Território/comunidade ou entidade de que se toma controle, com localização integral."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003095_SENT002::tomada::1",
           "sent_ID": "FOLHA_DOC003095_SENT002",
           "text": "Um miliciano teria sido morto pelos próprios comparsas após transmitir ao vivo por redes sociais a tomada da comunidade Nogueira, em Realengo, zona oeste da cidade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tomada",
             "char_start": 99,
             "char_end": 105
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da comunidade Nogueira, em Realengo, zona oeste da cidade"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 106,
+                "char_end": 163
+              }
+            ]
+          },
+          "target_instance_id": 14298,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_910ff37adb1494ba",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 105
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "char_start": 106,
+                    "char_end": 163,
+                    "head_token_id": 22,
+                    "head_form": "comunidade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "tomada · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

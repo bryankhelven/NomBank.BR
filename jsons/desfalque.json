@@ -6,24 +6,146 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "desfalque · acepção 1",
+      "sense_id": "s_d8555a8816911ec3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d8555a8816911ec3",
+      "frame_id": "f_2d1b0e15a816bffc",
+      "pt_roleset": null,
+      "sense_label": "desfalque · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "absence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/absence.xml",
+          "source_xml_url": "data/nombank_sources/absence.xml",
+          "source_xml_sha256": "9f4c1c6f202089b2586316a86437d15a6f812c474f1f8ee39c2c069bfed3b3ff",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Ausente",
+          "definition": "Theme pessoa ausente da competição, sem incorporar REL quando Ele independente.",
+          "desc_pt": "Ausente",
+          "definition_pt": "Theme pessoa ausente da competição, sem incorporar REL quando Ele independente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Evento da ausência",
+          "definition": "Source evento do qual ausente como reunião original, restrito à rodada esportiva.",
+          "desc_pt": "Evento da ausência",
+          "definition_pt": "Source evento do qual ausente como reunião original, restrito à rodada esportiva."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003098_SENT008::desfalque::1",
           "sent_ID": "FOLHA_DOC003098_SENT008",
           "text": "Ele será desfalque certo para a próxima rodada, quando o Chelsea visita o Stoke City.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desfalque",
             "char_start": 9,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Ele",
+            "Arg2": "para a próxima rodada"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 25,
+                "char_end": 46
+              }
+            ]
+          },
+          "target_instance_id": 12197,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2d1b0e15a816bffc",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "Ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 25,
+                    "char_end": 46,
+                    "head_token_id": 8,
+                    "head_form": "rodada",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "desfalque · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,51 +6,331 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_06b99d85915491c8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_06b99d85915491c8",
+      "frame_id": "f_803b6b1fe2dc49bf",
+      "pt_roleset": "trajetória.02",
+      "sense_label": "trajetória.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "course.03",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/course.xml",
+          "source_xml_url": "data/nombank_sources/course.xml",
+          "source_xml_sha256": "5986b30665e2b3ff845c36f853b9757761206fc61ab6c3b767b8f3fc15a14f12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular do percurso",
+          "definition": "Entidade a que se atribui percurso, sem inferir agente de processo contido no tema.",
+          "desc_pt": "Titular do percurso",
+          "definition_pt": "Entidade a que se atribui percurso, sem inferir agente de processo contido no tema."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Processo percorrido",
+          "definition": "Ação/domínio cujo percurso se descreve, extensão de percurso do socialismo a crescimento econômico.",
+          "desc_pt": "Processo percorrido",
+          "definition_pt": "Ação/domínio cujo percurso se descreve, extensão de percurso do socialismo a crescimento econômico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003212_SENT014::trajetória::1",
           "sent_ID": "FOLHA_DOC003212_SENT014",
           "text": "A história econômica mostra que não há diferença na trajetória de crescimento da economia americana em comparação aos casos canadense ou australiano.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "trajetória",
             "char_start": 52,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de crescimento da economia americana"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 99
+              }
+            ]
+          },
+          "target_instance_id": 4535,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_803b6b1fe2dc49bf",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 63,
+                    "char_end": 99,
+                    "head_token_id": 13,
+                    "head_form": "crescimento",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_06b99d85915491c8",
+      "frame_id": "f_64ea26fc25bf2ab5",
+      "pt_roleset": "trajetória.02",
+      "sense_label": "trajetória.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "career.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/career.xml",
+          "source_xml_url": "data/nombank_sources/career.xml",
+          "source_xml_sha256": "b546359b48963a40b37c6ff5cc99c374d02a2e7bb288e2a49e2749fef74b094d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da trajetória",
+          "definition": "Entidade cuja carreira/percurso se descreve; extensão explícita de pessoa a instituição.",
+          "desc_pt": "Titular da trajetória",
+          "definition_pt": "Entidade cuja carreira/percurso se descreve; extensão explícita de pessoa a instituição."
         },
+        {
+          "id": "Arg1",
+          "desc": "Atividade/domínio",
+          "definition": "Campo de percurso; extensão da carreira profissional à trajetória de vida.",
+          "desc_pt": "Atividade/domínio",
+          "definition_pt": "Campo de percurso; extensão da carreira profissional à trajetória de vida."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003016_SENT023::trajetória::1",
           "sent_ID": "FOLHA_DOC003016_SENT023",
           "text": "O que foi feito para o Renildo, que tem uma trajetória de vida muito difícil, já tem reflexos para outras pessoas que estão nos procurando, diz o fisiatra Sagawara.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "trajetória",
             "char_start": 44,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "para o Renildo",
+            "Arg1": "de vida"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 30
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 62
+              }
+            ]
+          },
+          "target_instance_id": 13117,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64ea26fc25bf2ab5",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 16,
+                    "char_end": 30,
+                    "head_token_id": 7,
+                    "head_form": "Renildo",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 55,
+                    "char_end": 62,
+                    "head_token_id": 14,
+                    "head_form": "vida",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003028_SENT017::trajetória::1",
           "sent_ID": "FOLHA_DOC003028_SENT017",
           "text": "No ano passado, viu os negócios crescerem 130%, mas nem sempre a trajetória de suas empresas foi positiva assim.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "trajetória",
             "char_start": 65,
             "char_end": 75
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de suas empresas",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 76,
+                "char_end": 92
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 15450,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_64ea26fc25bf2ab5",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 75
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 76,
+                    "char_end": 92,
+                    "head_token_id": 20,
+                    "head_form": "empresas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

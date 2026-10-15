@@ -6,24 +6,187 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "pretexto · acepção 1",
+      "sense_id": "s_0cd174047fc8b2ab",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0cd174047fc8b2ab",
+      "frame_id": "f_131d56ee23d70e1a",
+      "pt_roleset": null,
+      "sense_label": "pretexto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "pretext.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/pretext.xml",
+          "source_xml_url": "data/nombank_sources/pretext.xml",
+          "source_xml_sha256": "dc6a70c094b0485a8244436b5df4ab8ba6e506e0d2c700e4609a57368b7701bc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem invoca pretexto",
+          "definition": "Justifier que usa razão aparente.",
+          "desc_pt": "Quem invoca pretexto",
+          "definition_pt": "Justifier que usa razão aparente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação dissimulada",
+          "definition": "Theme justificado, vender vento virtual.",
+          "desc_pt": "Ação dissimulada",
+          "definition_pt": "Theme justificado, vender vento virtual."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Razão aparente",
+          "definition": "Instrument/reason, bitcoin alegado como motivo.",
+          "desc_pt": "Razão aparente",
+          "definition_pt": "Instrument/reason, bitcoin alegado como motivo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002035_SENT018::pretexto::1",
           "sent_ID": "FOLHA_DOC002035_SENT018",
           "text": "Geralmente, elas estão usando o pretexto do bitcoin para vender vento virtual, diz Fernando Ulrich, consultor da área.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "pretexto",
             "char_start": 32,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "elas",
+            "Arg1": "para vender vento virtual",
+            "Arg2": "do bitcoin"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "advcl",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 12,
+                "char_end": 16
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 52,
+                "char_end": 77
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 41,
+                "char_end": 51
+              }
+            ]
+          },
+          "target_instance_id": 14947,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_131d56ee23d70e1a",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 12,
+                    "char_end": 16,
+                    "head_token_id": 3,
+                    "head_form": "elas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 52,
+                    "char_end": 77,
+                    "head_token_id": 12,
+                    "head_form": "vender",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 41,
+                    "char_end": 51,
+                    "head_token_id": 10,
+                    "head_form": "bitcoin",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "pretexto · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

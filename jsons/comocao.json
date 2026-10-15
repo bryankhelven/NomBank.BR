@@ -6,38 +6,252 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "comoção · acepção 1",
+      "sense_id": "s_3926211403117eaa",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3926211403117eaa",
+      "frame_id": "f_09c15aee25da8d63",
+      "pt_roleset": null,
+      "sense_label": "comoção · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "commotion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/commotion.xml",
+          "source_xml_url": "data/nombank_sources/commotion.xml",
+          "source_xml_sha256": "f38a88db343dad9100a5b29d6895b0a881f92d554ed8324aa33b4c25e3c8b51d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da comoção",
+          "definition": "Disturber de abalo/perturbação emocional, como assunto/caso, sem riot físico inferido.",
+          "desc_pt": "Causador da comoção",
+          "definition_pt": "Disturber de abalo/perturbação emocional, como assunto/caso, sem riot físico inferido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Comunidade abalada",
+          "definition": "Disturbed pessoa/coletivo, incluindo rede estadual metonímica de comunidade escolar.",
+          "desc_pt": "Comunidade abalada",
+          "definition_pt": "Disturbed pessoa/coletivo, incluindo rede estadual metonímica de comunidade escolar."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento separado",
+          "definition": "Instrument independente da causa0, sem objeto de outra oração como instrumento automático.",
+          "desc_pt": "Instrumento separado",
+          "definition_pt": "Instrument independente da causa0, sem objeto de outra oração como instrumento automático."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004134_SENT018::comoção::1",
           "sent_ID": "FOLHA_DOC004134_SENT018",
           "text": "O assunto provocou comoção porque colocou em xeque a qualidade da carne brasileira.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "comoção",
             "char_start": 19,
             "char_end": 26
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O assunto",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 9
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12755,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_09c15aee25da8d63",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 19,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 9,
+                    "head_token_id": 2,
+                    "head_form": "assunto",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003215_SENT089::comoção::1",
           "sent_ID": "FOLHA_DOC003215_SENT089",
           "text": "Seu caso, ocorrido no fim do ano passado, causou comoção na rede estadual.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "comoção",
             "char_start": 49,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Seu caso, ocorrido no fim do ano passado",
+            "Arg1": "na rede estadual",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 40
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 57,
+                "char_end": 73
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13467,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_09c15aee25da8d63",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 0,
+                    "char_end": 40,
+                    "head_token_id": 2,
+                    "head_form": "caso",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 57,
+                    "char_end": 73,
+                    "head_token_id": 17,
+                    "head_form": "rede",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "comoção · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

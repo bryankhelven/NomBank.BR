@@ -6,23 +6,139 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_73411be5b1efc5e0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_73411be5b1efc5e0",
+      "frame_id": "f_18d8f35b7228c1da",
+      "pt_roleset": "emenda.02",
+      "sense_label": "emenda.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "amendment.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/amendment.xml",
+          "source_xml_url": "data/nombank_sources/amendment.xml",
+          "source_xml_sha256": "5a907c701ea83a23863695ecfc1ef4f1258b177c14fe7d35618608314a10a0b7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da alteração",
+          "definition": "Amender corrector, sem votar automaticamente redigir.",
+          "desc_pt": "Autor da alteração",
+          "definition_pt": "Amender corrector, sem votar automaticamente redigir."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto jurídico alterado",
+          "definition": "Thing amended, constitucional por adjetivo relacional, como original.",
+          "desc_pt": "Objeto jurídico alterado",
+          "definition_pt": "Thing amended, constitucional por adjetivo relacional, como original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da emenda",
+          "definition": "Beneficiary n2/source3 literal, não matéria da alteração.",
+          "desc_pt": "Beneficiário da emenda",
+          "definition_pt": "Beneficiary n2/source3 literal, não matéria da alteração."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002018_SENT018::emenda::1",
           "sent_ID": "FOLHA_DOC002018_SENT018",
           "text": "Esse histórico indica como o Supremo pode votar uma emenda constitucional sobre o fim das coligações e a cláusula de barreira, afirmou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "emenda",
             "char_start": 52,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "constitucional",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 73
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8265,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_18d8f35b7228c1da",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 59,
+                    "char_end": 73,
+                    "head_token_id": 11,
+                    "head_form": "constitucional",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

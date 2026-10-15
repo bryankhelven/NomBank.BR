@@ -6,24 +6,126 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "filme · acepção 1",
+      "sense_id": "s_baa3c0582aa2ca0e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_baa3c0582aa2ca0e",
+      "frame_id": "f_1676cf37c73c49ff",
+      "pt_roleset": null,
+      "sense_label": "filme · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "movie.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/movie.xml",
+          "source_xml_url": "data/nombank_sources/movie.xml",
+          "source_xml_sha256": "5d7370697f6e37ec19afe75b889645521462f86c4efa6a8dc6e338246379b6e6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do filme",
+          "definition": "Agent que produz representação, sem observador automaticamente autor.",
+          "desc_pt": "Autor do filme",
+          "definition_pt": "Agent que produz representação, sem observador automaticamente autor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "História representada",
+          "definition": "Theme incluindo trajetória dos últimos anos por extensão explícita da representação contínua contrastada com instantâneos; não filme real inventado.",
+          "desc_pt": "História representada",
+          "definition_pt": "Theme incluindo trajetória dos últimos anos por extensão explícita da representação contínua contrastada com instantâneos; não filme real inventado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000246_SENT007::filme::1",
           "sent_ID": "FOLHA_DOC000246_SENT007",
           "text": "Se, porém, desviarmos a atenção dos instantâneos e nos concentrarmos no filme dos últimos anos, a situação parece menos desesperadora.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "filme",
             "char_start": 72,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos últimos anos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 78,
+                "char_end": 94
+              }
+            ]
+          },
+          "target_instance_id": 4255,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1676cf37c73c49ff",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 72,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 78,
+                    "char_end": 94,
+                    "head_token_id": 20,
+                    "head_form": "anos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "filme · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

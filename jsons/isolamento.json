@@ -6,38 +6,196 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "isolamento · acepção 1",
+      "sense_id": "s_76d7f976076ac926",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_76d7f976076ac926",
+      "frame_id": "f_7da53340280526d3",
+      "pt_roleset": null,
+      "sense_label": "isolamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "isolation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/isolation.xml",
+          "source_xml_url": "data/nombank_sources/isolation.xml",
+          "source_xml_sha256": "23b585b51a7abe95f6daa8d39695e9ddebb952095cc59e1896956403e35d2bfb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "causador do isolamento",
+          "definition": "Entidade que separa/isola.",
+          "desc_pt": "causador do isolamento",
+          "definition_pt": "Entidade que separa/isola."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade isolada",
+          "definition": "Objeto ou entidade separado/isolado.",
+          "desc_pt": "entidade isolada",
+          "definition_pt": "Objeto ou entidade separado/isolado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003104_SENT012::isolamento::1",
           "sent_ID": "FOLHA_DOC003104_SENT012",
           "text": "Desde a criação do comitê, Abbas intensificou esforços para enfraquecer o Hamas, que enfrenta bloqueio israelense e egípcio, além de isolamento internacional.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "isolamento",
             "char_start": 133,
             "char_end": 143
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o Hamas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 72,
+                "char_end": 79
+              }
+            ]
+          },
+          "target_instance_id": 212,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7da53340280526d3",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 133,
+                "char_end": 143
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 72,
+                    "char_end": 79,
+                    "head_token_id": 14,
+                    "head_form": "Hamas",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003313_SENT018::isolamento::1",
           "sent_ID": "FOLHA_DOC003313_SENT018",
           "text": "Além da dimensão econômica, há o desejo israelense de romper o isolamento político.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "isolamento",
             "char_start": 63,
             "char_end": 73
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "israelense"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 50
+              }
+            ]
+          },
+          "target_instance_id": 3020,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7da53340280526d3",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 63,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 40,
+                    "char_end": 50,
+                    "head_token_id": 10,
+                    "head_form": "israelense",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "isolamento · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

@@ -6,52 +6,336 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "seminário · acepção 1",
+      "sense_id": "s_d9e67aa6754ff479",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d9e67aa6754ff479",
+      "frame_id": "f_0037c4c9ec1e751c",
+      "pt_roleset": null,
+      "sense_label": "seminário · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "discussion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/discussion.xml",
+          "source_xml_url": "data/nombank_sources/discussion.xml",
+          "source_xml_sha256": "f38194658be2e7796494fe9b8cee85a0504c45196d96e8ce8fbf32028b4cb16d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Participante discursivo",
+          "definition": "Quem discute/fala em colóquio; promotor não participante automático.",
+          "desc_pt": "Participante discursivo",
+          "definition_pt": "Quem discute/fala em colóquio; promotor não participante automático."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tópico",
+          "definition": "Matéria do colóquio, preservando tema anafórico.",
+          "desc_pt": "Tópico",
+          "definition_pt": "Matéria do colóquio, preservando tema anafórico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parceiro discursivo",
+          "definition": "Interlocutor explícito, distinto de companheiro de viagem ou pessoa mencionada.",
+          "desc_pt": "Parceiro discursivo",
+          "definition_pt": "Interlocutor explícito, distinto de companheiro de viagem ou pessoa mencionada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000101_SENT006::seminário::1",
           "sent_ID": "FOLHA_DOC000101_SENT006",
           "text": "Seminário sobre o tema promovido por esta Folha revelou alguns consensos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "Seminário",
             "char_start": 0,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sobre o tema",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 10,
+                "char_end": 22
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 293,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0037c4c9ec1e751c",
+          "argument_details": {
+            "predicate_token_ids": [
+              1
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 0,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 10,
+                    "char_end": 22,
+                    "head_token_id": 4,
+                    "head_form": "tema",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003056_SENT016::seminário::1",
           "sent_ID": "FOLHA_DOC003056_SENT016",
           "text": "Antes de embarcar de volta, ele falará em um seminário sobre o Brasil promovido pelo jornal \"Financial Times\", na companhia do ministro da Fazenda, Henrique Meirelles.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "seminário",
             "char_start": 45,
             "char_end": 54
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "sobre o Brasil",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 31
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 69
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 4160,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0037c4c9ec1e751c",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 45,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7
+                    ],
+                    "char_start": 28,
+                    "char_end": 31,
+                    "head_token_id": 7,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 55,
+                    "char_end": 69,
+                    "head_token_id": 14,
+                    "head_form": "Brasil",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000001_SENT005::seminário::1",
           "sent_ID": "FOLHA_DOC000001_SENT005",
           "text": "Eu não quero nem que Moro me absolva, eu só quero que ele peça desculpas, disse Lula durante um seminário sobre educação em Brasília.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "seminário",
             "char_start": 96,
             "char_end": 105
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Lula",
+            "Arg1": "sobre educação",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 80,
+                "char_end": 84
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 106,
+                "char_end": 120
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8578,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0037c4c9ec1e751c",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 96,
+                "char_end": 105
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19
+                    ],
+                    "char_start": 80,
+                    "char_end": 84,
+                    "head_token_id": 19,
+                    "head_form": "Lula",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24
+                    ],
+                    "char_start": 106,
+                    "char_end": 120,
+                    "head_token_id": 24,
+                    "head_form": "educação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "seminário · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 3,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

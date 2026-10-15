@@ -6,62 +6,334 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002022_SENT029::aquecimento::1",
-          "sent_ID": "FOLHA_DOC002022_SENT029",
-          "text": "Encontros de artistas brasileiros mostrou cena nacional consistente e foi bom aquecimento.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "aquecimento",
-            "char_start": 78,
-            "char_end": 89
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "aquecimento · acepção 1"
+      "sense_label": "aquecimento · acepção 1",
+      "sense_id": "s_37d9d1b6682eea33",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "aquecimento · acepção 2",
+      "sense_id": "s_acdd55f2dd5d3375",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_37d9d1b6682eea33",
+      "frame_id": "f_4111613be864ace7",
+      "pt_roleset": null,
+      "sense_label": "aquecimento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "preparation.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/preparation.xml",
+          "source_xml_url": "data/nombank_sources/preparation.xml",
+          "source_xml_sha256": "9f5d7cbff2e7779b8bc9b49c736ebb6394e0b706d1fdb62fce052dff90ec3139",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Preparador",
+          "definition": "Entidade/evento que prepara; extensão explícita de instrumental booklets0 ao encontro preparatório.",
+          "desc_pt": "Preparador",
+          "definition_pt": "Entidade/evento que prepara; extensão explícita de instrumental booklets0 ao encontro preparatório."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Preparado",
+          "definition": "Entidade posta em condição de realizar algo.",
+          "desc_pt": "Preparado",
+          "definition_pt": "Entidade posta em condição de realizar algo."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atividade futura",
+          "definition": "Aquilo para que se prepara, distinto dos participantes internos de evento preparador.",
+          "desc_pt": "Atividade futura",
+          "definition_pt": "Aquilo para que se prepara, distinto dos participantes internos de evento preparador."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002022_SENT029::aquecimento::1",
+          "sent_ID": "FOLHA_DOC002022_SENT029",
+          "text": "Encontros de artistas brasileiros mostrou cena nacional consistente e foi bom aquecimento.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "aquecimento",
+            "char_start": 78,
+            "char_end": 89
+          },
+          "realization": {
+            "Arg0": "Encontros de artistas brasileiros",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 33
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4156,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_4111613be864ace7",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 78,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 33,
+                    "head_token_id": 1,
+                    "head_form": "Encontros",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_acdd55f2dd5d3375",
+      "frame_id": "f_2c3eefbf16db5034",
+      "pt_roleset": null,
+      "sense_label": "aquecimento · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "warming.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/warming.xml",
+          "source_xml_url": "data/nombank_sources/warming.xml",
+          "source_xml_sha256": "77bdd517d70767c86e1a5d8e6cf3aa32e83c0db95802eda96e150491842c6182",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador do aquecimento",
+          "definition": "Quem causa elevação térmica, não quem pede combate ou contesta relação causal.",
+          "desc_pt": "Causador do aquecimento",
+          "definition_pt": "Quem causa elevação térmica, não quem pede combate ou contesta relação causal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio/coisa aquecida",
+          "definition": "Entidade que aquece; global n1 diretamente comprovado pelo exemplo original, sem planeta implícito reconstruído.",
+          "desc_pt": "Domínio/coisa aquecida",
+          "definition_pt": "Entidade que aquece; global n1 diretamente comprovado pelo exemplo original, sem planeta implícito reconstruído."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003020_SENT019::aquecimento::1",
           "sent_ID": "FOLHA_DOC003020_SENT019",
           "text": "O governo vem politizando os furacões, só que na direção contrária, fingindo que não há relação com aquecimento global, diz Robert Richardson, outro cientista demitido.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aquecimento",
             "char_start": 100,
             "char_end": 111
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "global"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 112,
+                "char_end": 118
+              }
+            ]
+          },
+          "target_instance_id": 8812,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2c3eefbf16db5034",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 100,
+                "char_end": 111
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22
+                    ],
+                    "char_start": 112,
+                    "char_end": 118,
+                    "head_token_id": 22,
+                    "head_form": "global",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004060_SENT010::aquecimento::1",
           "sent_ID": "FOLHA_DOC004060_SENT010",
           "text": "Ele também pediu esforços concentrados no combate ao aquecimento global para prevenir desastres naturais semelhantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aquecimento",
             "char_start": 53,
             "char_end": 64
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "global"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 65,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 11694,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2c3eefbf16db5034",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 65,
+                    "char_end": 71,
+                    "head_token_id": 12,
+                    "head_form": "global",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aquecimento · acepção 2"
+      "syntactic_profile": {
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "expulsão · acepção 1",
+      "sense_id": "s_c293c7dbb7e0c773",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_c293c7dbb7e0c773",
+      "frame_id": "f_f1a96b5743129a9a",
+      "pt_roleset": null,
+      "sense_label": "expulsão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exclusion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exclusion.xml",
+          "source_xml_url": "data/nombank_sources/exclusion.xml",
+          "source_xml_sha256": "b11fa9b77d0842058ad50c3f5b93a6376156df5ba04ea9b7dfbd5825367c7f2a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Expulsor",
+          "definition": "Excluder da retirada disciplinar, restrição à expulsão futebolística.",
+          "desc_pt": "Expulsor",
+          "definition_pt": "Excluder da retirada disciplinar, restrição à expulsão futebolística."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Jogador expulso",
+          "definition": "Thing excluded como Jucilei, sem agente do relato transformado em árbitro.",
+          "desc_pt": "Jogador expulso",
+          "definition_pt": "Thing excluded como Jucilei, sem agente do relato transformado em árbitro."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Domínio de exclusão",
+          "definition": "Excluded-from explícito, não adversário do jogo contra Ponte Preta por preposição.",
+          "desc_pt": "Domínio de exclusão",
+          "definition_pt": "Excluded-from explícito, não adversário do jogo contra Ponte Preta por preposição."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003094_SENT015::expulsão::1",
           "sent_ID": "FOLHA_DOC003094_SENT015",
           "text": "Sem Jucilei, suspenso por causa da expulsão contra a Ponte Preta, o meio-campo titular do São Paulo teve Petros, Gómez, Lucas Fernandes, Hernanes e Marcos Guilherme.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "expulsão",
             "char_start": 35,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Sem Jucilei",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 11
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 10816,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1a96b5743129a9a",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 11,
+                    "head_token_id": 2,
+                    "head_form": "Jucilei",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "expulsão · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,38 +6,218 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "caçada · acepção 1",
+      "sense_id": "s_26ab7fd34d8030ba",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_26ab7fd34d8030ba",
+      "frame_id": "f_2eced257194da738",
+      "pt_roleset": null,
+      "sense_label": "caçada · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "hunt.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/hunt.xml",
+          "source_xml_url": "data/nombank_sources/hunt.xml",
+          "source_xml_sha256": "ccea45d0b0354ca8e515a8835724468aa5edd11e97fddf1e251748bc4ddb2db7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Perseguidor",
+          "definition": "Quem participa da perseguição, sustentado por ligação à caçada e relativa.",
+          "desc_pt": "Perseguidor",
+          "definition_pt": "Quem participa da perseguição, sustentado por ligação à caçada e relativa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo perseguido",
+          "definition": "Entidade perseguida, restrição à perseguição humana do sentido frozen.",
+          "desc_pt": "Alvo perseguido",
+          "definition_pt": "Entidade perseguida, restrição à perseguição humana do sentido frozen."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000018_SENT047::caçada::1",
           "sent_ID": "FOLHA_DOC000018_SENT047",
           "text": "Entre os que participaram da caçada estava Gary Prado, na época um jovem oficial que passara o verão todo perseguindo Guevara nas montanhas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "caçada",
             "char_start": 29,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Gary Prado",
+            "Arg1": "Guevara"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 43,
+                "char_end": 53
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 118,
+                "char_end": 125
+              }
+            ]
+          },
+          "target_instance_id": 146,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2eced257194da738",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 29,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 43,
+                    "char_end": 53,
+                    "head_token_id": 9,
+                    "head_form": "Gary",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24
+                    ],
+                    "char_start": 118,
+                    "char_end": 125,
+                    "head_token_id": 24,
+                    "head_form": "Guevara",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003113_SENT009::caçada::1",
           "sent_ID": "FOLHA_DOC003113_SENT009",
           "text": "A primeira e a segunda se concentraram na ascensão e na caçada a Pablo Escobar, e a terceira, no Cartel de Cali.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "caçada",
             "char_start": 56,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a Pablo Escobar"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 78
+              }
+            ]
+          },
+          "target_instance_id": 6997,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2eced257194da738",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 63,
+                    "char_end": 78,
+                    "head_token_id": 16,
+                    "head_form": "Pablo",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "caçada · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

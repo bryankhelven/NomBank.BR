@@ -161,3 +161,6 @@ body,html{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#333;
 .lemma-page .back-floating{background:#3f4f7f;border-radius:10px;padding:12px 18px}
 @media(max-width:900px){.lemma-page .content{width:94%;padding:22px 24px 80px}}
 @media(max-width:600px){.lemma-page{font-size:16px}.lemma-page .site-nav{padding:9px 12px;gap:8px;grid-template-columns:auto 1fr auto}.lemma-page .download-json{font-size:.84rem;padding:10px}.lemma-page .home-link{padding:9px}.lemma-page .content{width:auto;margin:16px 12px 0;padding:18px 18px 80px}.lemma-page h1{font-size:1.65rem;margin:14px 0 22px}.lemma-page h3{font-size:1.25rem}.lemma-page .roles-list,.lemma-page .example-role-list{padding-left:26px}.lemma-page .sentence{line-height:1.75}}
+
+/* Keep argument words intact within the existing tables. */
+.lemma-page .occ-table td:not(.texto){overflow-wrap:normal;word-break:normal;hyphens:none;min-width:110px}

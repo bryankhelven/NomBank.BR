@@ -6,24 +6,165 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "murro · acepção 1",
+      "sense_id": "s_362f7d86c2e2132f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_362f7d86c2e2132f",
+      "frame_id": "f_fc4f4a1281af9b71",
+      "pt_roleset": null,
+      "sense_label": "murro · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "blow.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/blow.xml",
+          "source_xml_url": "data/nombank_sources/blow.xml",
+          "source_xml_sha256": "1e1a6bf462f018b2b79a2b5a60574003287c23e6831054111cf098e15435be81",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do murro",
+          "definition": "Hitter animate only, concubino na versão/farsa atribuída sem ocorrência comprovada.",
+          "desc_pt": "Autor do murro",
+          "definition_pt": "Hitter animate only, concubino na versão/farsa atribuída sem ocorrência comprovada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade atingida",
+          "definition": "Thing hit, mulher mencionada na cena hipotética.",
+          "desc_pt": "Entidade atingida",
+          "definition_pt": "Thing hit, mulher mencionada na cena hipotética."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento do murro",
+          "definition": "Thing hit with independente, sem punho como novo span ou olho roxo efeito como instrumento.",
+          "desc_pt": "Instrumento do murro",
+          "definition_pt": "Thing hit with independente, sem punho como novo span ou olho roxo efeito como instrumento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003162_SENT055::murro::1",
           "sent_ID": "FOLHA_DOC003162_SENT055",
           "text": "A versão de Oliveira: um grupo criou a farsa de uma mulher que cruzaria a fronteira, iria até uma TV com olho roxo e diria que recebeu um murro do concubino.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "murro",
             "char_start": 138,
             "char_end": 143
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do concubino",
+            "Arg1": "de uma mulher",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 144,
+                "char_end": 156
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 45,
+                "char_end": 58
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9307,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_fc4f4a1281af9b71",
+          "argument_details": {
+            "predicate_token_ids": [
+              31
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 138,
+                "char_end": 143
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "char_start": 144,
+                    "char_end": 156,
+                    "head_token_id": 34,
+                    "head_form": "concubino",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 45,
+                    "char_end": 58,
+                    "head_token_id": 13,
+                    "head_form": "mulher",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "murro · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

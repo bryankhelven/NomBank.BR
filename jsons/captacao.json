@@ -6,23 +6,11 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003035_SENT152::captação::1",
-          "sent_ID": "FOLHA_DOC003035_SENT152",
-          "text": "No meu, não há sugestão de captação de voz nem direcionamento de delação nem orientação do que fazer.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "captação",
-            "char_start": 27,
-            "char_end": 35
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_4521d8c0e56123d4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "captação.04",
@@ -33,29 +21,39 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/collection.xml",
           "adapted": true,
-          "gloss": "acquire"
+          "gloss": "acquire",
+          "source_xml_url": "data/nombank_sources/collection.xml",
+          "source_xml_sha256": "d318b073d3e70afc58f889892a5f02cf353256e1190441919d713f7f6db20390"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "captador ou veículo da captação",
-          "definition": "Quem recolhe/obtém recursos; fundo/produto financeiro como veículo receptor por adaptação metonímica explicitada, sem investidor individual inventado."
+          "definition": "Quem recolhe/obtém recursos; fundo/produto financeiro como veículo receptor por adaptação metonímica explicitada, sem investidor individual inventado.",
+          "desc_pt": "captador ou veículo da captação",
+          "definition_pt": "Quem recolhe/obtém recursos; fundo/produto financeiro como veículo receptor por adaptação metonímica explicitada, sem investidor individual inventado."
         },
         {
           "id": "Arg1",
           "desc": "recursos ou medida do fluxo captado",
-          "definition": "Bem/quantia recolhida; por adaptação financeira explícita, medidas de captação líquida/saldo contrastivo inclusive negativo, sem afirmar aquisição bruta positiva."
+          "definition": "Bem/quantia recolhida; por adaptação financeira explícita, medidas de captação líquida/saldo contrastivo inclusive negativo, sem afirmar aquisição bruta positiva.",
+          "desc_pt": "recursos ou medida do fluxo captado",
+          "definition_pt": "Bem/quantia recolhida; por adaptação financeira explícita, medidas de captação líquida/saldo contrastivo inclusive negativo, sem afirmar aquisição bruta positiva."
         },
         {
           "id": "Arg2",
           "desc": "fonte dos recursos",
-          "definition": "Entidade de quem se obtém, por adaptação dirigida ao exemplo tax-from-companies; não necessariamente vendedor comercial."
+          "definition": "Entidade de quem se obtém, por adaptação dirigida ao exemplo tax-from-companies; não necessariamente vendedor comercial.",
+          "desc_pt": "fonte dos recursos",
+          "definition_pt": "Entidade de quem se obtém, por adaptação dirigida ao exemplo tax-from-companies; não necessariamente vendedor comercial."
         },
         {
           "id": "Arg4",
           "desc": "beneficiário da captação",
-          "definition": "Entidade para quem se recolhem recursos, distinta do captador e da fonte quando explicitamente expressa."
+          "definition": "Entidade para quem se recolhem recursos, distinta do captador e da fonte quando explicitamente expressa.",
+          "desc_pt": "beneficiário da captação",
+          "definition_pt": "Entidade para quem se recolhem recursos, distinta do captador e da fonte quando explicitamente expressa."
         }
       ],
       "instances": [
@@ -101,6 +99,93 @@
               }
             ],
             "Arg4": []
+          },
+          "target_instance_id": 1524,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 42
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 4,
+                    "char_end": 11
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 43,
+                    "char_end": 54
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31
+                    ],
+                    "char_start": 55,
+                    "char_end": 174
+                  }
+                ]
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -135,6 +220,56 @@
             "Arg1": [],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 3675,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              1
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 17,
+                    "char_end": 26
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -164,6 +299,47 @@
             "Arg1": [],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 4241,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 104,
+                "char_end": 113
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -198,6 +374,58 @@
             "Arg1": [],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 8492,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 27,
+                    "char_end": 51
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -232,6 +460,57 @@
             ],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 9554,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 36
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 43,
+                    "char_end": 58
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -266,6 +545,57 @@
             "Arg1": [],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 13323,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 67,
+                    "char_end": 82
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -315,6 +645,79 @@
             ],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 14660,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 29,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 0,
+                    "char_end": 18
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 47,
+                    "char_end": 64
+                  },
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 113,
+                    "char_end": 130
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -354,6 +757,69 @@
             ],
             "Arg2": [],
             "Arg4": []
+          },
+          "target_instance_id": 14674,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_9b1cf75526f51cc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 31,
+                    "char_end": 49
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 54,
+                    "char_end": 72
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
@@ -369,6 +835,121 @@
         },
         "Arg2": {
           "nmod": 1
+        }
+      },
+      "sense_id": "s_343156712c4eb4c8",
+      "frame_id": "f_9b1cf75526f51cc7",
+      "inventory_authority": "accepted_in_formal_base"
+    },
+    {
+      "sense_id": "s_4521d8c0e56123d4",
+      "frame_id": "f_b387a4c15c9a762c",
+      "pt_roleset": "captação.03",
+      "sense_label": "captação.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recording.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recording.xml",
+          "source_xml_url": "data/nombank_sources/recording.xml",
+          "source_xml_sha256": "6f5d08a00a6c45bab3b95a19a98bb05c40716958135015c78a7f6870e47a9259",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da captação",
+          "definition": "Recorder de coleta/registro de voz/áudio, conforme monitored conversations, não posse de documento omitido como gravador.",
+          "desc_pt": "Autor da captação",
+          "definition_pt": "Recorder de coleta/registro de voz/áudio, conforme monitored conversations, não posse de documento omitido como gravador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo captado",
+          "definition": "Record de voz explicitado sob ausência de sugestão, sem ato de interceptação real ou equipamento inventados.",
+          "desc_pt": "Conteúdo captado",
+          "definition_pt": "Record de voz explicitado sob ausência de sugestão, sem ato de interceptação real ou equipamento inventados."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003035_SENT152::captação::1",
+          "sent_ID": "FOLHA_DOC003035_SENT152",
+          "text": "No meu, não há sugestão de captação de voz nem direcionamento de delação nem orientação do que fazer.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "captação",
+            "char_start": 27,
+            "char_end": 35
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de voz"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 42
+              }
+            ]
+          },
+          "target_instance_id": 1354,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b387a4c15c9a762c",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11
+                    ],
+                    "char_start": 36,
+                    "char_end": 42,
+                    "head_token_id": 11,
+                    "head_form": "voz",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
         }
       }
     }

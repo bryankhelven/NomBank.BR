@@ -6,24 +6,156 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "impaciência · acepção 1",
+      "sense_id": "s_68c21015f95e0494",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_68c21015f95e0494",
+      "frame_id": "f_805959fc49706a9c",
+      "pt_roleset": null,
+      "sense_label": "impaciência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "impatience.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/impatience.xml",
+          "source_xml_url": "data/nombank_sources/impatience.xml",
+          "source_xml_sha256": "67bbf1b0b008bdb3d4687d528dd7d01065212f5ebc8cf23bf9b03c5ec8687b12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem está impaciente",
+          "definition": "Experiencer jovens, explicação do estado após dois-pontos.",
+          "desc_pt": "Quem está impaciente",
+          "definition_pt": "Experiencer jovens, explicação do estado após dois-pontos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo da impaciência",
+          "definition": "Theme aspectos da vida que não se resolvem depressa, não causa genérica do efeito automaticamente alvo.",
+          "desc_pt": "Alvo da impaciência",
+          "definition_pt": "Theme aspectos da vida que não se resolvem depressa, não causa genérica do efeito automaticamente alvo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003123_SENT006::impaciência::1",
           "sent_ID": "FOLHA_DOC003123_SENT006",
           "text": "Outro efeito colateral desse processo é a impaciência: os jovens estão com dificuldade de lidar com quaisquer aspectos da vida que não se resolvam em brevíssimo tempo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "impaciência",
             "char_start": 42,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os jovens",
+            "Arg1": "com quaisquer aspectos da vida que não se resolvam em brevíssimo tempo"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 55,
+                "char_end": 64
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 96,
+                "char_end": 166
+              }
+            ]
+          },
+          "target_instance_id": 14264,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_805959fc49706a9c",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 55,
+                    "char_end": 64,
+                    "head_token_id": 12,
+                    "head_form": "jovens",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 96,
+                    "char_end": 166,
+                    "head_token_id": 20,
+                    "head_form": "aspectos",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "impaciência · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

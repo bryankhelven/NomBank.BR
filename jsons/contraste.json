@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "contraste · acepção 1",
+      "sense_id": "s_1a6aa5810f756002",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1a6aa5810f756002",
+      "frame_id": "f_0be9296c25673f89",
+      "pt_roleset": null,
+      "sense_label": "contraste · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "contrast.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/contrast.xml",
+          "source_xml_url": "data/nombank_sources/contrast.xml",
+          "source_xml_sha256": "34a3ac4cd5a51937c0672841220818c8ec3beaeb2584bfb11615d2f29baa11f8",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Comparador",
+          "definition": "Entity making comparison quando explícita.",
+          "desc_pt": "Comparador",
+          "definition_pt": "Entity making comparison quando explícita."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Primeiro termo do contraste",
+          "definition": "First item in comparison, sem discurso anterior reconstruído.",
+          "desc_pt": "Primeiro termo do contraste",
+          "definition_pt": "First item in comparison, sem discurso anterior reconstruído."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Segundo termo do contraste",
+          "definition": "Second item inclusive proposição inteira no uso discourse-connective in contrast do original.",
+          "desc_pt": "Segundo termo do contraste",
+          "definition_pt": "Second item inclusive proposição inteira no uso discourse-connective in contrast do original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003132_SENT008::contraste::1",
           "sent_ID": "FOLHA_DOC003132_SENT008",
           "text": "Em contraste, o Brasil possui quatro Laboratórios Nacionais semelhantes aos americanos (CNPEM), com um total de 600 funcionários e um orçamento de R$ 90 milhões.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "contraste",
             "char_start": 3,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "o Brasil possui quatro Laboratórios Nacionais semelhantes aos americanos (CNPEM), com um total de 600 funcionários e um orçamento de R$ 90 milhões"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "root"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 14,
+                "char_end": 160
+              }
+            ]
+          },
+          "target_instance_id": 3028,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0be9296c25673f89",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 14,
+                    "char_end": 160,
+                    "head_token_id": 6,
+                    "head_form": "possui",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "contraste · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

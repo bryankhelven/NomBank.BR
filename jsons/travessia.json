@@ -6,24 +6,146 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "travessia · acepção 1",
+      "sense_id": "s_81db792ce3aade21",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_81db792ce3aade21",
+      "frame_id": "f_ca910c172689edd0",
+      "pt_roleset": null,
+      "sense_label": "travessia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "journey.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/journey.xml",
+          "source_xml_url": "data/nombank_sources/journey.xml",
+          "source_xml_sha256": "b6bd66d87c55af5e7a9667bb982bc957e2f029250fc417a63ec1f285e4bb4514",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem atravessa",
+          "definition": "Traveller restrito ao percurso de cruzar, como veterano de travessia sob tentativa, sem diagnóstico externo.",
+          "desc_pt": "Quem atravessa",
+          "definition_pt": "Traveller restrito ao percurso de cruzar, como veterano de travessia sob tentativa, sem diagnóstico externo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destino ou caminho",
+          "definition": "Destination/path pretendido como EUA, não chegada já consumada ou fonte não declarada.",
+          "desc_pt": "Destino ou caminho",
+          "definition_pt": "Destination/path pretendido como EUA, não chegada já consumada ou fonte não declarada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003131_SENT041::travessia::1",
           "sent_ID": "FOLHA_DOC003131_SENT041",
           "text": "É um veterano de travessia: tentava pela quarta vez chegar aos EUA, apesar de ser esquizofrênico.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "travessia",
             "char_start": 17,
             "char_end": 26
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "um veterano",
+            "Arg1": "aos EUA"
+          },
+          "syntax": {
+            "Arg0": "root",
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ]
+          },
+          "target_instance_id": 1608,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ca910c172689edd0",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 26
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 2,
+                    "char_end": 13,
+                    "head_token_id": 3,
+                    "head_form": "veterano",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 59,
+                    "char_end": 66,
+                    "head_token_id": 15,
+                    "head_form": "EUA",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "travessia · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

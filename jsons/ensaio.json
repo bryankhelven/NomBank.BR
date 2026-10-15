@@ -6,48 +6,284 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000095_SENT017::ensaio::1",
-          "sent_ID": "FOLHA_DOC000095_SENT017",
-          "text": "Porque todos viram um ensaio de discurso para a eventual saída de Doria do partido.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "ensaio",
-            "char_start": 22,
-            "char_end": 28
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "ensaio · acepção 1"
+      "sense_label": "ensaio · acepção 1",
+      "sense_id": "s_f007576d1eab14d9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "ensaio · acepção 2",
+      "sense_id": "s_79199068ca890d92",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f007576d1eab14d9",
+      "frame_id": "f_f09cd3b71a0aa888",
+      "pt_roleset": null,
+      "sense_label": "ensaio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "attempt.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/attempt.xml",
+          "source_xml_url": "data/nombank_sources/attempt.xml",
+          "source_xml_sha256": "4dd33194414c8d9d0bef35f5de9ca1d597c8c16f34c475ae0fe6d7eb61bf7ac3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Tentador",
+          "definition": "Quem tenta ação, não observador ou pessoa de eventual saída necessariamente autor.",
+          "desc_pt": "Tentador",
+          "definition_pt": "Quem tenta ação, não observador ou pessoa de eventual saída necessariamente autor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação tentada",
+          "definition": "Coisa que se tenta, incluindo discurso político como tentativa frozen.",
+          "desc_pt": "Ação tentada",
+          "definition_pt": "Coisa que se tenta, incluindo discurso político como tentativa frozen."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000095_SENT017::ensaio::1",
+          "sent_ID": "FOLHA_DOC000095_SENT017",
+          "text": "Porque todos viram um ensaio de discurso para a eventual saída de Doria do partido.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "ensaio",
+            "char_start": 22,
+            "char_end": 28
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de discurso para a eventual saída de Doria do partido"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 29,
+                "char_end": 82
+              }
+            ]
+          },
+          "target_instance_id": 6340,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f09cd3b71a0aa888",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 29,
+                    "char_end": 82,
+                    "head_token_id": 7,
+                    "head_form": "discurso",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_79199068ca890d92",
+      "frame_id": "f_6f5d8cbcabd1de22",
+      "pt_roleset": null,
+      "sense_label": "ensaio · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "practice.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/practice.xml",
+          "source_xml_url": "data/nombank_sources/practice.xml",
+          "source_xml_sha256": "262f83ea3d9b600f045e6671ac115a2f5c5be64360a58b92fa4aae6e6a6aa23c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Praticante do ensaio",
+          "definition": "Artistas que treinam/apresentam preparatoriamente, não observador.",
+          "desc_pt": "Praticante do ensaio",
+          "definition_pt": "Artistas que treinam/apresentam preparatoriamente, não observador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Habilidade praticada",
+          "definition": "Skill exercido, sem coreografia recuperada de futura apresentação genérica.",
+          "desc_pt": "Habilidade praticada",
+          "definition_pt": "Skill exercido, sem coreografia recuperada de futura apresentação genérica."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio de prática, distinto de local da apresentação futura.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio de prática, distinto de local da apresentação futura."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003176_SENT002::ensaio::1",
           "sent_ID": "FOLHA_DOC003176_SENT002",
           "text": "Paralisado por um acidente doméstico, pela primeira vez acompanhei os ensaios dos artistas que hoje se apresentarão no Rock in Rio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ensaios",
             "char_start": 70,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos artistas que hoje se apresentarão no Rock in Rio",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 78,
+                "char_end": 130
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 15252,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6f5d8cbcabd1de22",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 70,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 78,
+                    "char_end": 130,
+                    "head_token_id": 16,
+                    "head_form": "artistas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "ensaio · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

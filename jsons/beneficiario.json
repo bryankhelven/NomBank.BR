@@ -6,52 +6,229 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "beneficiário · acepção 1",
+      "sense_id": "s_55e8a7d5498d267a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_55e8a7d5498d267a",
+      "frame_id": "f_0b13e4cd6b1e5b56",
+      "pt_roleset": null,
+      "sense_label": "beneficiário · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "beneficiary.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/beneficiary.xml",
+          "source_xml_url": "data/nombank_sources/beneficiary.xml",
+          "source_xml_sha256": "363c74b627a1fc7e2db1eb38cd8058adc888751fe4a1ea832cd4fbcd74a416d4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fonte da vantagem",
+          "definition": "Entidade ou fenômeno que confere vantagem; extensão do boom/revival a programa.",
+          "desc_pt": "Fonte da vantagem",
+          "definition_pt": "Entidade ou fenômeno que confere vantagem; extensão do boom/revival a programa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Beneficiário",
+          "definition": "Quem recebe vantagem, normalmente incorporado no próprio nominal conforme exemplo original.",
+          "desc_pt": "Beneficiário",
+          "definition_pt": "Quem recebe vantagem, normalmente incorporado no próprio nominal conforme exemplo original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004098_SENT011::beneficiário::1",
           "sent_ID": "FOLHA_DOC004098_SENT011",
           "text": "Simples de entender: os beneficiários do Daca são cultural e educacionalmente americanos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "beneficiários",
             "char_start": 24,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do Daca",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 38,
+                "char_end": 45
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 329,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0b13e4cd6b1e5b56",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 38,
+                    "char_end": 45,
+                    "head_token_id": 9,
+                    "head_form": "Daca",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003019_SENT002::beneficiário::1",
           "sent_ID": "FOLHA_DOC003019_SENT002",
           "text": "Os bancos começam a devolver ao INSS valores que haviam sido pagos após a morte de beneficiários.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "beneficiários",
             "char_start": 83,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 9165,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0b13e4cd6b1e5b56",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 83,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003019_SENT007::beneficiário::1",
           "sent_ID": "FOLHA_DOC003019_SENT007",
           "text": "CGU alega que o INSS tinha dificuldade para recuperar os valores pagos pelas instituições financeiras depois do óbito de beneficiários.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "beneficiários",
             "char_start": 121,
             "char_end": 134
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 15027,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0b13e4cd6b1e5b56",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 121,
+                "char_end": 134
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "beneficiário · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

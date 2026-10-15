@@ -6,20 +6,114 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_aba546a80a5bbe9f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_aba546a80a5bbe9f",
+      "frame_id": "f_2ab3f84ccd85fdc7",
+      "pt_roleset": "arrancada.03",
+      "sense_label": "arrancada.03",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "start.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/start.xml",
+          "source_xml_url": "data/nombank_sources/start.xml",
+          "source_xml_sha256": "76fb396269bde891eeba0a28740d5a642767172b2bd7b6a625abad5ee2f608c3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem arranca",
+          "definition": "Agent que começa, restrito ao início esportivo, sem sujeito elíptico inventado.",
+          "desc_pt": "Quem arranca",
+          "definition_pt": "Agent que começa, restrito ao início esportivo, sem sujeito elíptico inventado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa começada",
+          "definition": "Theme-creation explícita, sem disputa futura de título necessariamente campanha começada.",
+          "desc_pt": "Coisa começada",
+          "definition_pt": "Theme-creation explícita, sem disputa futura de título necessariamente campanha começada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento do início",
+          "definition": "Instrument expresso, não boa qualidade de arrancada.",
+          "desc_pt": "Instrumento do início",
+          "definition_pt": "Instrument expresso, não boa qualidade de arrancada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003045_SENT004::arrancada::1",
           "sent_ID": "FOLHA_DOC003045_SENT004",
           "text": "\"Se conseguirmos uma boa arrancada saberemos se vamos brigar pelo título\", afirmou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arrancada",
             "char_start": 25,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10866,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_2ab3f84ccd85fdc7",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

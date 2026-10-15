@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "saque · acepção 1",
+      "sense_id": "s_69ba1330eba9843f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_69ba1330eba9843f",
+      "frame_id": "f_c9406cb1979b2c20",
+      "pt_roleset": null,
+      "sense_label": "saque · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "looting.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/looting.xml",
+          "source_xml_url": "data/nombank_sources/looting.xml",
+          "source_xml_sha256": "cce3fac5b461e2bdaa87320b4a661921a4942efa02e441f56fdd95b7272bdf05",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Saqueador",
+          "definition": "Looter que pilha, não autoridades que decretam toque de recolher.",
+          "desc_pt": "Saqueador",
+          "definition_pt": "Looter que pilha, não autoridades que decretam toque de recolher."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa saqueada",
+          "definition": "Ill-gotten goods expressos.",
+          "desc_pt": "Coisa saqueada",
+          "definition_pt": "Ill-gotten goods expressos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem do saque",
+          "definition": "Source explícita, sem cidade/bens inferidos do medo de saques.",
+          "desc_pt": "Origem do saque",
+          "definition_pt": "Source explícita, sem cidade/bens inferidos do medo de saques."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000012_SENT011::saque::1",
           "sent_ID": "FOLHA_DOC000012_SENT011",
           "text": "No fim da tarde, as autoridades decretaram toque de recolher pelo risco de saques.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "saques",
             "char_start": 75,
             "char_end": 81
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10160,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c9406cb1979b2c20",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 75,
+                "char_end": 81
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "saque · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

@@ -6,48 +6,285 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004057_SENT009::batismo::1",
-          "sent_ID": "FOLHA_DOC004057_SENT009",
-          "text": "O batismo é anual e segue a ordem alfabética, começando com nomes populares pela letra \"A\".",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "batismo",
-            "char_start": 2,
-            "char_end": 9
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "batismo · acepção 1"
+      "sense_label": "batismo · acepção 1",
+      "sense_id": "s_54cb09b93314e193",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "batismo · acepção 2",
+      "sense_id": "s_e5ce31f1fe46321d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_54cb09b93314e193",
+      "frame_id": "f_e6b6758d1547f27a",
+      "pt_roleset": null,
+      "sense_label": "batismo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "naming.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/naming.xml",
+          "source_xml_url": "data/nombank_sources/naming.xml",
+          "source_xml_sha256": "a143cf7b85a0bcbddd61471a9718565093cf991c03cbcbd074884eab65bf7753",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Nomeador",
+          "definition": "Quem atribui denominação, não calendário/procedimento.",
+          "desc_pt": "Nomeador",
+          "definition_pt": "Quem atribui denominação, não calendário/procedimento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade nomeada",
+          "definition": "Coisa que recebe nome, sem furacão/pessoa inferidos.",
+          "desc_pt": "Entidade nomeada",
+          "definition_pt": "Coisa que recebe nome, sem furacão/pessoa inferidos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Nome atribuído",
+          "definition": "Denominação aplicada, inclusive nomes populares genericamente, não letra de ordenação como nome único.",
+          "desc_pt": "Nome atribuído",
+          "definition_pt": "Denominação aplicada, inclusive nomes populares genericamente, não letra de ordenação como nome único."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004057_SENT009::batismo::1",
+          "sent_ID": "FOLHA_DOC004057_SENT009",
+          "text": "O batismo é anual e segue a ordem alfabética, começando com nomes populares pela letra \"A\".",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "batismo",
+            "char_start": 2,
+            "char_end": 9
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "com nomes populares"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 56,
+                "char_end": 75
+              }
+            ]
+          },
+          "target_instance_id": 7648,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e6b6758d1547f27a",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 56,
+                    "char_end": 75,
+                    "head_token_id": 13,
+                    "head_form": "nomes",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_e5ce31f1fe46321d",
+      "frame_id": "f_e91bb05cf18bbefc",
+      "pt_roleset": null,
+      "sense_label": "batismo · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "name.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/name.xml",
+          "source_xml_url": "data/nombank_sources/name.xml",
+          "source_xml_sha256": "5116acb405885d12578472ea5646689ca5b409565319d21b3720b5b14b4fb78f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Titular do nome",
+          "definition": "Theme que recebe denominação, inclusive cujo relativo sem duplicar antecedente.",
+          "desc_pt": "Titular do nome",
+          "definition_pt": "Theme que recebe denominação, inclusive cujo relativo sem duplicar antecedente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor nominal",
+          "definition": "Nome próprio atribuído, como Ernesto, restrição a batismo nome frozen.",
+          "desc_pt": "Valor nominal",
+          "definition_pt": "Nome próprio atribuído, como Ernesto, restrição a batismo nome frozen."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000018_SENT005::batismo::1",
           "sent_ID": "FOLHA_DOC000018_SENT005",
           "text": "Nesta segunda-feira (9) se completa meio século desde a execução de Che Guevara, peripatético médico argentino cujo nome de batismo era Ernesto e que liderou combatentes guerrilheiros em países de Cuba ao Congo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "batismo",
             "char_start": 124,
             "char_end": 131
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "cujo",
+            "Arg2": "Ernesto"
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": "acl:relcl"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 111,
+                "char_end": 115
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 136,
+                "char_end": 143
+              }
+            ]
+          },
+          "target_instance_id": 9277,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e91bb05cf18bbefc",
+          "argument_details": {
+            "predicate_token_ids": [
+              24
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 124,
+                "char_end": 131
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21
+                    ],
+                    "char_start": 111,
+                    "char_end": 115,
+                    "head_token_id": 21,
+                    "head_form": "cujo",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      26
+                    ],
+                    "char_start": 136,
+                    "char_end": 143,
+                    "head_token_id": 26,
+                    "head_form": "Ernesto",
+                    "head_deprel": "acl:relcl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "batismo · acepção 2"
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "acl:relcl": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,124 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reformulação · acepção 1",
+      "sense_id": "s_b1690b6335fd0100",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b1690b6335fd0100",
+      "frame_id": "f_5ea95b570229a360",
+      "pt_roleset": null,
+      "sense_label": "reformulação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "reformulation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/reformulation.xml",
+          "source_xml_url": "data/nombank_sources/reformulation.xml",
+          "source_xml_sha256": "87ea2d16a8e39317c1829d3ebcff43e1355e0ce218eebb0fccaee4440d8448a6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Reformulador",
+          "definition": "Formulator/agent que revê ou formula novamente.",
+          "desc_pt": "Reformulador",
+          "definition_pt": "Formulator/agent que revê ou formula novamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa reformulada",
+          "definition": "Entity reformulated, como lojas submetidas à revisão, sem tipo físico específico imposto.",
+          "desc_pt": "Coisa reformulada",
+          "definition_pt": "Entity reformulated, como lojas submetidas à revisão, sem tipo físico específico imposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004016_SENT027::reformulação::1",
           "sent_ID": "FOLHA_DOC004016_SENT027",
           "text": "As lojas que já passaram por essa reformulação vendem de 20% a 30% a mais que as outras, diz Farrel.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reformulação",
             "char_start": 34,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "As lojas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ]
+          },
+          "target_instance_id": 2886,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5ea95b570229a360",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 8,
+                    "head_token_id": 2,
+                    "head_form": "lojas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reformulação · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

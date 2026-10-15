@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "espetáculo · acepção 1",
+      "sense_id": "s_0f69ef3b8b22e83c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0f69ef3b8b22e83c",
+      "frame_id": "f_5e7eaeb47f5ad113",
+      "pt_roleset": null,
+      "sense_label": "espetáculo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "play.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/play.xml",
+          "source_xml_url": "data/nombank_sources/play.xml",
+          "source_xml_sha256": "d2d37ae9220df98cb4ef79e2f3457d4c25830d8c86179ee1b40f2279946025f9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor ou montador da versão cênica",
+          "definition": "Agent de obra teatral, explicitamente estendido a montagem, não só redação.",
+          "desc_pt": "Autor ou montador da versão cênica",
+          "definition_pt": "Agent de obra teatral, explicitamente estendido a montagem, não só redação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo ou base da peça",
+          "definition": "Theme expresso, sem título de exemplo da própria peça como assunto garantido.",
+          "desc_pt": "Conteúdo ou base da peça",
+          "definition_pt": "Theme expresso, sem título de exemplo da própria peça como assunto garantido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001159_SENT089::espetáculo::1",
           "sent_ID": "FOLHA_DOC001159_SENT089",
           "text": "Foi na capital que ela montou cinco espetáculos, caso de \"Cabaret Stravaganza\", com Os Satyros.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "espetáculos",
             "char_start": 36,
             "char_end": 47
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ela",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 19,
+                "char_end": 22
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 11820,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5e7eaeb47f5ad113",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 47
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 19,
+                    "char_end": 22,
+                    "head_token_id": 6,
+                    "head_form": "ela",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "espetáculo · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

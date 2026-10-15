@@ -6,38 +6,225 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "preparação · acepção 1",
+      "sense_id": "s_4d31c097585bbc92",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4d31c097585bbc92",
+      "frame_id": "f_e2d0fe3792144f0f",
+      "pt_roleset": null,
+      "sense_label": "preparação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "preparation.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/preparation.xml",
+          "source_xml_url": "data/nombank_sources/preparation.xml",
+          "source_xml_sha256": "9f5d7cbff2e7779b8bc9b49c736ebb6394e0b706d1fdb62fce052dff90ec3139",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do treino",
+          "definition": "Agent que apronta por treinamento, restrição make ready à preparação frozen, sem fonte da avaliação como treinador.",
+          "desc_pt": "Autor do treino",
+          "definition_pt": "Agent que apronta por treinamento, restrição make ready à preparação frozen, sem fonte da avaliação como treinador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade preparada",
+          "definition": "Theme pessoa que se apronta/treina, como profissionais de saúde, não creation de preparation.01.",
+          "desc_pt": "Entidade preparada",
+          "definition_pt": "Theme pessoa que se apronta/treina, como profissionais de saúde, não creation de preparation.01."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Propósito do treino",
+          "definition": "Purpose como para o Mundial, sem torneio como skill automaticamente.",
+          "desc_pt": "Propósito do treino",
+          "definition_pt": "Purpose como para o Mundial, sem torneio como skill automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000008_SENT025::preparação::1",
           "sent_ID": "FOLHA_DOC000008_SENT025",
           "text": "Se mexer demais, perde a organização, a coordenação e a preparação para o Mundial.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "preparação",
             "char_start": 56,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para o Mundial"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 67,
+                "char_end": 81
+              }
+            ]
+          },
+          "target_instance_id": 11131,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e2d0fe3792144f0f",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 67,
+                    "char_end": 81,
+                    "head_token_id": 16,
+                    "head_form": "Mundial",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003001_SENT026::preparação::1",
           "sent_ID": "FOLHA_DOC003001_SENT026",
           "text": "Segundo a coordenadora de atenção à saúde, Tânia Queiroz, a ferramenta é excelente, mas teve seu sucesso baseado também na preparação dos profissionais da saúde envolvidos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "preparação",
             "char_start": 123,
             "char_end": 133
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos profissionais da saúde envolvidos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 134,
+                "char_end": 171
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12381,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e2d0fe3792144f0f",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 123,
+                "char_end": 133
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33
+                    ],
+                    "char_start": 134,
+                    "char_end": 171,
+                    "head_token_id": 29,
+                    "head_form": "profissionais",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "preparação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

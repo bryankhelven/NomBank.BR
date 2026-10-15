@@ -6,76 +6,449 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002032_SENT035::crítica::1",
-          "sent_ID": "FOLHA_DOC002032_SENT035",
-          "text": "Para Pacheco, a descrença na política \"freia os ímpetos de crítica\" da oposição, que também precisa \"corrigir problemas dentro de casa\".",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "crítica",
-            "char_start": 59,
-            "char_end": 66
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000024_SENT043::crítica::1",
-          "sent_ID": "FOLHA_DOC000024_SENT043",
-          "text": "Sobre a crítica do especialista, a EMTU disse que há 45 km de corredores e faixa preferencial para ônibus no sistema ABD (região do ABC).",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "crítica",
-            "char_start": 8,
-            "char_end": 15
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "crítica · acepção 1"
+      "sense_label": "crítica · acepção 1",
+      "sense_id": "s_1f92ba3c377559ac",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "crítica · acepção 2",
+      "sense_id": "s_b0a05c98d471e774",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1f92ba3c377559ac",
+      "frame_id": "f_3d678e06fd7ea470",
+      "pt_roleset": null,
+      "sense_label": "crítica · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "criticism.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/criticism.xml",
+          "source_xml_url": "data/nombank_sources/criticism.xml",
+          "source_xml_sha256": "db3f901af22bbb9869b5a8737aadc612ee34c6458ec3153cdd83f57448c16ba0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "crítico",
+          "definition": "Quem formula ou possui intenção de formular a crítica, não relator ou entidade que responde automaticamente.",
+          "desc_pt": "crítico",
+          "definition_pt": "Quem formula ou possui intenção de formular a crítica, não relator ou entidade que responde automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "alvo criticado",
+          "definition": "Entidade sobre a qual recai a crítica; não inferir alvo apenas porque alguém responde ou aparece na notícia.",
+          "desc_pt": "alvo criticado",
+          "definition_pt": "Entidade sobre a qual recai a crítica; não inferir alvo apenas porque alguém responde ou aparece na notícia."
+        },
+        {
+          "id": "Arg2",
+          "desc": "fundamento da crítica",
+          "definition": "Razão ou propriedade que motiva a crítica, expressamente vinculada a ela; conteúdo de resposta e obrigação adicional não bastam.",
+          "desc_pt": "fundamento da crítica",
+          "definition_pt": "Razão ou propriedade que motiva a crítica, expressamente vinculada a ela; conteúdo de resposta e obrigação adicional não bastam."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002032_SENT035::crítica::1",
+          "sent_ID": "FOLHA_DOC002032_SENT035",
+          "text": "Para Pacheco, a descrença na política \"freia os ímpetos de crítica\" da oposição, que também precisa \"corrigir problemas dentro de casa\".",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "crítica",
+            "char_start": 59,
+            "char_end": 66
+          },
+          "realization": {
+            "Arg0": "da oposição",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 68,
+                "char_end": 79
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2288,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d678e06fd7ea470",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 68,
+                    "char_end": 79,
+                    "head_token_id": 18,
+                    "head_form": "oposição",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000024_SENT043::crítica::1",
+          "sent_ID": "FOLHA_DOC000024_SENT043",
+          "text": "Sobre a crítica do especialista, a EMTU disse que há 45 km de corredores e faixa preferencial para ônibus no sistema ABD (região do ABC).",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "crítica",
+            "char_start": 8,
+            "char_end": 15
+          },
+          "realization": {
+            "Arg0": "do especialista",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 31
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7762,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3d678e06fd7ea470",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 16,
+                    "char_end": 31,
+                    "head_token_id": 6,
+                    "head_form": "especialista",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_b0a05c98d471e774",
+      "frame_id": "f_ccc1c7a4ba5c4ad4",
+      "pt_roleset": null,
+      "sense_label": "crítica · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "critic.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/critic.xml",
+          "source_xml_url": "data/nombank_sources/critic.xml",
+          "source_xml_sha256": "a43591efdf900c874feb7b66bcfa43b8b1b5a1b00da44fc4dc5bf629d3c4e8a3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Coletivo de críticos",
+          "definition": "Critic incorporado no REL coletivo conforme critics0 original.",
+          "desc_pt": "Coletivo de críticos",
+          "definition_pt": "Critic incorporado no REL coletivo conforme critics0 original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto avaliado",
+          "definition": "Entity criticized, shows ou trabalho referido na sentença, sem performer como crítico.",
+          "desc_pt": "Objeto avaliado",
+          "definition_pt": "Entity criticized, shows ou trabalho referido na sentença, sem performer como crítico."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Critério de crítica",
+          "definition": "On what grounds, não grau de unanimidade como motivo.",
+          "desc_pt": "Critério de crítica",
+          "definition_pt": "On what grounds, não grau de unanimidade como motivo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002022_SENT010::crítica::1",
           "sent_ID": "FOLHA_DOC002022_SENT010",
           "text": "Bon Jovi e Timberlake fizeram shows perfeitos para os fãs, e nem tanto para a crítica.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "crítica",
             "char_start": 78,
             "char_end": 85
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "shows",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 35
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7752,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ccc1c7a4ba5c4ad4",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 78,
+                "char_end": 85
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 30,
+                    "char_end": 35,
+                    "head_token_id": 6,
+                    "head_form": "shows",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004118_SENT162::crítica::1",
           "sent_ID": "FOLHA_DOC004118_SENT162",
           "text": "A crítica em geral não era unânime em relação a nada que eu e meus colegas fazíamos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "crítica",
             "char_start": 2,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nada que eu e meus colegas fazíamos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 48,
+                "char_end": 83
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9403,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ccc1c7a4ba5c4ad4",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 48,
+                    "char_end": 83,
+                    "head_token_id": 11,
+                    "head_form": "nada",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "crítica · acepção 2"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

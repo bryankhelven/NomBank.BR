@@ -6,38 +6,244 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "jogada · acepção 1",
+      "sense_id": "s_4453ffc203c69bc0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4453ffc203c69bc0",
+      "frame_id": "f_09447f5c0aa0830d",
+      "pt_roleset": null,
+      "sense_label": "jogada · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "play.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/play.xml",
+          "source_xml_url": "data/nombank_sources/play.xml",
+          "source_xml_sha256": "d2d37ae9220df98cb4ef79e2f3457d4c25830d8c86179ee1b40f2279946025f9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Jogador da jogada",
+          "definition": "Participante que realiza lance/estratégia, inclusive finalizador projetado e quem derruba em cada lance; não exige iniciador único.",
+          "desc_pt": "Jogador da jogada",
+          "definition_pt": "Participante que realiza lance/estratégia, inclusive finalizador projetado e quem derruba em cada lance; não exige iniciador único."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Jogo ou tema da jogada",
+          "definition": "Theme a que pertence lance/estratégia, como jogo referido na frase.",
+          "desc_pt": "Jogo ou tema da jogada",
+          "definition_pt": "Theme a que pertence lance/estratégia, como jogo referido na frase."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento da jogada",
+          "definition": "Instrument conforme diving fielding/morality originais, não destino de foco final.",
+          "desc_pt": "Instrumento da jogada",
+          "definition_pt": "Instrument conforme diving fielding/morality originais, não destino de foco final."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002081_SENT034::jogada::1",
           "sent_ID": "FOLHA_DOC002081_SENT034",
           "text": "O argentino é finalizador e deveria ser o foco final da jogada, não inicial.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogada",
             "char_start": 56,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O argentino",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 11
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 2072,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_09447f5c0aa0830d",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 11,
+                    "head_token_id": 2,
+                    "head_form": "argentino",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004013_SENT093::jogada::1",
           "sent_ID": "FOLHA_DOC004013_SENT093",
           "text": "Houve um jogo em que ele resolveu humilhar o menino que o derrubava em todas as jogadas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "jogadas",
             "char_start": 80,
             "char_end": 87
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o menino que o derrubava",
+            "Arg1": "um jogo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 43,
+                "char_end": 67
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 6,
+                "char_end": 13
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13795,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_09447f5c0aa0830d",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 80,
+                "char_end": 87
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 43,
+                    "char_end": 67,
+                    "head_token_id": 10,
+                    "head_form": "menino",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 6,
+                    "char_end": 13,
+                    "head_token_id": 3,
+                    "head_form": "jogo",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "jogada · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

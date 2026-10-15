@@ -6,37 +6,196 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_7526df7d2b681848",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7526df7d2b681848",
+      "frame_id": "f_cf0935c9cba9074f",
+      "pt_roleset": "alegria.01",
+      "sense_label": "alegria.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "joy.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/joy.xml",
+          "source_xml_url": "data/nombank_sources/joy.xml",
+          "source_xml_sha256": "e0dd16f186675a471822b00bc57522f6a47e8f07fc40575297cbaa5ffef25ee4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Experienciador do contentamento",
+          "definition": "Quem tem ou busca alegria, inclusive possessivo e metonímia do cargo para ocupante.",
+          "desc_pt": "Experienciador do contentamento",
+          "definition_pt": "Quem tem ou busca alegria, inclusive possessivo e metonímia do cargo para ocupante."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema da alegria",
+          "definition": "Coisa/situação que dá contentamento, sem adversidade concessiva ou efeito de não guardar segredo como causa automática.",
+          "desc_pt": "Tema da alegria",
+          "definition_pt": "Coisa/situação que dá contentamento, sem adversidade concessiva ou efeito de não guardar segredo como causa automática."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003076_SENT008::alegria::1",
           "sent_ID": "FOLHA_DOC003076_SENT008",
           "text": "Que a nova PGR encontre alegria mesmo diante das adversidades e que seja firme frente aos desafios, diz Janot na mensagem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "alegria",
             "char_start": 24,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a nova PGR",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 4,
+                "char_end": 14
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 6628,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cf0935c9cba9074f",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 4,
+                    "char_end": 14,
+                    "head_token_id": 4,
+                    "head_form": "PGR",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002561_SENT017::alegria::1",
           "sent_ID": "FOLHA_DOC002561_SENT017",
           "text": "Escreva que a minha alegria é tão grande que não consigo guardar segredo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "alegria",
             "char_start": 20,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "minha",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 14,
+                "char_end": 19
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 13909,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cf0935c9cba9074f",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 14,
+                    "char_end": 19,
+                    "head_token_id": 4,
+                    "head_form": "minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

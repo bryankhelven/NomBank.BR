@@ -6,76 +6,439 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000041_SENT052::dependência::1",
-          "sent_ID": "FOLHA_DOC000041_SENT052",
-          "text": "Uma mulher lutando contra a dependência muito raramente vai ter o apoio do companheiro.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "dependência",
-            "char_start": 28,
-            "char_end": 39
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000041_SENT001::dependência::1",
-          "sent_ID": "FOLHA_DOC000041_SENT001",
-          "text": "Por que é mais difícil para as mulheres lutar contra alcoolismo e dependência às drogas?",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "dependência",
-            "char_start": 66,
-            "char_end": 77
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000041_SENT089::dependência::1",
-          "sent_ID": "FOLHA_DOC000041_SENT089",
-          "text": "Centenas pesquisas feitas nos EUA apontam as diferenças entre os gêneros na questão da dependência química.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "dependência",
-            "char_start": 87,
-            "char_end": 98
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "dependência · acepção 1"
+      "sense_label": "dependência · acepção 1",
+      "sense_id": "s_7b53a266bd9987e0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "dependência · acepção 2",
+      "sense_id": "s_253e859a747d75d4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7b53a266bd9987e0",
+      "frame_id": "f_1cc79187acc98fc3",
+      "pt_roleset": null,
+      "sense_label": "dependência · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dependency.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dependency.xml",
+          "source_xml_url": "data/nombank_sources/dependency.xml",
+          "source_xml_sha256": "699a9adca205cceccf335d667c942f9958c269f70fd822bad814b4aaeb16f4ce",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Dependente",
+          "definition": "Pessoa ou entidade sujeita à dependência; aplicação clínica é adaptação local ancorada no exemplo chemical dependency.",
+          "desc_pt": "Dependente",
+          "definition_pt": "Pessoa ou entidade sujeita à dependência; aplicação clínica é adaptação local ancorada no exemplo chemical dependency."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Base ou substância",
+          "definition": "Aquilo de que se depende; o original admite chemical como classe de substância.",
+          "desc_pt": "Base ou substância",
+          "definition_pt": "Aquilo de que se depende; o original admite chemical como classe de substância."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000041_SENT052::dependência::1",
+          "sent_ID": "FOLHA_DOC000041_SENT052",
+          "text": "Uma mulher lutando contra a dependência muito raramente vai ter o apoio do companheiro.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "dependência",
+            "char_start": 28,
+            "char_end": 39
+          },
+          "realization": {
+            "Arg0": "Uma mulher",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 10
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 2694,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1cc79187acc98fc3",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 39
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 10,
+                    "head_token_id": 2,
+                    "head_form": "mulher",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000041_SENT001::dependência::1",
+          "sent_ID": "FOLHA_DOC000041_SENT001",
+          "text": "Por que é mais difícil para as mulheres lutar contra alcoolismo e dependência às drogas?",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "dependência",
+            "char_start": 66,
+            "char_end": 77
+          },
+          "realization": {
+            "Arg0": "para as mulheres",
+            "Arg1": "às drogas"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 23,
+                "char_end": 39
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 78,
+                "char_end": 87
+              }
+            ]
+          },
+          "target_instance_id": 12579,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1cc79187acc98fc3",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 66,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 23,
+                    "char_end": 39,
+                    "head_token_id": 8,
+                    "head_form": "mulheres",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 78,
+                    "char_end": 87,
+                    "head_token_id": 16,
+                    "head_form": "drogas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000041_SENT089::dependência::1",
+          "sent_ID": "FOLHA_DOC000041_SENT089",
+          "text": "Centenas pesquisas feitas nos EUA apontam as diferenças entre os gêneros na questão da dependência química.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "dependência",
+            "char_start": 87,
+            "char_end": 98
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "química"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ]
+          },
+          "target_instance_id": 13321,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1cc79187acc98fc3",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 87,
+                "char_end": 98
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19
+                    ],
+                    "char_start": 99,
+                    "char_end": 106,
+                    "head_token_id": 19,
+                    "head_form": "química",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_253e859a747d75d4",
+      "frame_id": "f_5af05035800bccfb",
+      "pt_roleset": null,
+      "sense_label": "dependência · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dependence.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dependence.xml",
+          "source_xml_url": "data/nombank_sources/dependence.xml",
+          "source_xml_sha256": "c883decee7b7e14074fc112b81a49c8c158ec78e5b2b7cf3485e090bc1f2724f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Dependente",
+          "definition": "Entidade cujo resultado ou funcionamento depende de outra entidade/base.",
+          "desc_pt": "Dependente",
+          "definition_pt": "Entidade cujo resultado ou funcionamento depende de outra entidade/base."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Base da dependência",
+          "definition": "Entidade, recurso ou condição de que o dependente necessita.",
+          "desc_pt": "Base da dependência",
+          "definition_pt": "Entidade, recurso ou condição de que o dependente necessita."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002006_SENT006::dependência::1",
           "sent_ID": "FOLHA_DOC002006_SENT006",
           "text": "A dependência que a moeda digital tem da China é um dos fatores de preocupação dos investidores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "dependência",
             "char_start": 2,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a moeda digital",
+            "Arg1": "da China"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 18,
+                "char_end": 33
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 38,
+                "char_end": 46
+              }
+            ]
+          },
+          "target_instance_id": 12346,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5af05035800bccfb",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 18,
+                    "char_end": 33,
+                    "head_token_id": 5,
+                    "head_form": "moeda",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 46,
+                    "head_token_id": 10,
+                    "head_form": "China",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "dependência · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

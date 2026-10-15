@@ -6,24 +6,127 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "fiscalização · acepção 1",
+      "sense_id": "s_c8c0ba1bf354ba4d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_c8c0ba1bf354ba4d",
+      "frame_id": "f_b06b553be89285a9",
+      "pt_roleset": null,
+      "sense_label": "fiscalização · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "oversight.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/oversight.xml",
+          "source_xml_url": "data/nombank_sources/oversight.xml",
+          "source_xml_sha256": "5b64fc891795f68a533b3af2328e18656e26e4bbc9acdda6d527c8c377ed4219",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fiscalizador",
+          "definition": "Supervisor de vigilância do cumprimento de obrigações, não agente de lidar com incêndios automaticamente.",
+          "desc_pt": "Fiscalizador",
+          "definition_pt": "Supervisor de vigilância do cumprimento de obrigações, não agente de lidar com incêndios automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa fiscalizada",
+          "definition": "Thing supervised como queimadas/atividades, sob condição negativa, sem infração confirmada.",
+          "desc_pt": "Coisa fiscalizada",
+          "definition_pt": "Thing supervised como queimadas/atividades, sob condição negativa, sem infração confirmada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001578_SENT020::fiscalização::1",
           "sent_ID": "FOLHA_DOC001578_SENT020",
           "text": "Enquanto não houver uma fiscalização que consiga dar conta desse monte de queimadas, a gente vai lidar com incêndios florestais.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fiscalização",
             "char_start": 24,
             "char_end": 36
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "desse monte de queimadas"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 83
+              }
+            ]
+          },
+          "target_instance_id": 9285,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b06b553be89285a9",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 36
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 83,
+                    "head_token_id": 12,
+                    "head_form": "monte",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "fiscalização · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

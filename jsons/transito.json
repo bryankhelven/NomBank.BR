@@ -6,24 +6,123 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "trânsito · acepção 1",
+      "sense_id": "s_a35e72bd00f83934",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a35e72bd00f83934",
+      "frame_id": "f_554113c0c08bdc31",
+      "pt_roleset": null,
+      "sense_label": "trânsito · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "passage.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/passage.xml",
+          "source_xml_url": "data/nombank_sources/passage.xml",
+          "source_xml_sha256": "35b25ab331570a79a39c34842a323ac457a515ce1984664794bab5e125f65a9b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Entidade em trânsito",
+          "definition": "Thing passing que circula, sem população implícita nomeada.",
+          "desc_pt": "Entidade em trânsito",
+          "definition_pt": "Thing passing que circula, sem população implícita nomeada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Território de passagem",
+          "definition": "Thing passed by, restrito ao país por onde se transita, não volume ou tráfico.",
+          "desc_pt": "Território de passagem",
+          "definition_pt": "Thing passed by, restrito ao país por onde se transita, não volume ou tráfico."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003131_SENT017::trânsito::1",
           "sent_ID": "FOLHA_DOC003131_SENT017",
           "text": "Guatemala, que sempre foi um país de fuga e trânsito, passou a ser também um de permanência.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "trânsito",
             "char_start": 44,
             "char_end": 52
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": "Guatemala"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 9
+              }
+            ]
+          },
+          "target_instance_id": 7869,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_554113c0c08bdc31",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 52
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 9,
+                    "head_token_id": 1,
+                    "head_form": "Guatemala",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "trânsito · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

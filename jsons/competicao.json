@@ -6,38 +6,255 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "competição · acepção 1",
+      "sense_id": "s_dcb2cdd251f96289",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_dcb2cdd251f96289",
+      "frame_id": "f_44175c3a674833ae",
+      "pt_roleset": null,
+      "sense_label": "competição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "competition.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/competition.xml",
+          "source_xml_url": "data/nombank_sources/competition.xml",
+          "source_xml_sha256": "f93c542fd0e64e67689e4271b96e4f2f7afa6829afbe8a87e210099227418799",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "competidor focal",
+          "definition": "Entidade que participa da competição, expressa independentemente do REL, inclusive pronome sem antecedente expandido.",
+          "desc_pt": "competidor focal",
+          "definition_pt": "Entidade que participa da competição, expressa independentemente do REL, inclusive pronome sem antecedente expandido."
+        },
+        {
+          "id": "Arg1",
+          "desc": "oponente",
+          "definition": "Grupo/entidade em oposição na competição. Grupo coordenado permanece inteiro sem divisão arbitrária.",
+          "desc_pt": "oponente",
+          "definition_pt": "Grupo/entidade em oposição na competição. Grupo coordenado permanece inteiro sem divisão arbitrária."
+        },
+        {
+          "id": "Arg2",
+          "desc": "prêmio disputado",
+          "definition": "Objeto/posição pelo qual se compete. Comissão de outra atividade e avaliação dos rivais não bastam.",
+          "desc_pt": "prêmio disputado",
+          "definition_pt": "Objeto/posição pelo qual se compete. Comissão de outra atividade e avaliação dos rivais não bastam."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003159_SENT013::competição::1",
           "sent_ID": "FOLHA_DOC003159_SENT013",
           "text": "Isto é, a campanha contra rivais supostamente mais fracos é a que a afunda na competição.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competição",
             "char_start": 78,
             "char_end": 88
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a",
+            "Arg1": "contra rivais supostamente mais fracos",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 66,
+                "char_end": 67
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 19,
+                "char_end": 57
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7403,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_44175c3a674833ae",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 78,
+                "char_end": 88
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 66,
+                    "char_end": 67,
+                    "head_token_id": 14,
+                    "head_form": "a",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 19,
+                    "char_end": 57,
+                    "head_token_id": 7,
+                    "head_form": "rivais",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003201_SENT013::competição::1",
           "sent_ID": "FOLHA_DOC003201_SENT013",
           "text": "\"O único problema é a competição com as colombianas, e com os taxistas que as defendem porque ganham comissão\", conta em voz baixa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competição",
             "char_start": 22,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "com as colombianas, e com os taxistas que as defendem porque ganham comissão",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 33,
+                "char_end": 109
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13293,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_44175c3a674833ae",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 33,
+                    "char_end": 109,
+                    "head_token_id": 10,
+                    "head_form": "colombianas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "competição · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

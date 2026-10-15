@@ -6,62 +6,345 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000103_SENT016::abuso::1",
-          "sent_ID": "FOLHA_DOC000103_SENT016",
-          "text": "Mas há muito abuso em relação a reajustes dos planos coletivos.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "abuso",
-            "char_start": 13,
-            "char_end": 18
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000059_SENT012::abuso::1",
-          "sent_ID": "FOLHA_DOC000059_SENT012",
-          "text": "A grande corrupção é definida como abuso para se atingir altos níveis de poder.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "abuso",
-            "char_start": 35,
-            "char_end": 40
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "abuso · acepção 1"
+      "sense_label": "abuso · acepção 1",
+      "sense_id": "s_435a9d2ecd9176dd",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "abuso · acepção 2",
+      "sense_id": "s_c02306bcab9438a3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_435a9d2ecd9176dd",
+      "frame_id": "f_366b5b024e417e3c",
+      "pt_roleset": null,
+      "sense_label": "abuso · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "abuse.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/abuse.xml",
+          "source_xml_url": "data/nombank_sources/abuse.xml",
+          "source_xml_sha256": "868a7aecbd0ac5946e19df4dea2fcb08333db44abc3a6dd673ead7224a48d120",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Usuário indevido",
+          "definition": "Quem pratica uso inadequado/excessos.",
+          "desc_pt": "Usuário indevido",
+          "definition_pt": "Quem pratica uso inadequado/excessos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto/prática",
+          "definition": "Objeto ou atividade usado indevidamente, extensão de dual-trading a reajustes explícitos.",
+          "desc_pt": "Objeto/prática",
+          "definition_pt": "Objeto ou atividade usado indevidamente, extensão de dual-trading a reajustes explícitos."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000103_SENT016::abuso::1",
+          "sent_ID": "FOLHA_DOC000103_SENT016",
+          "text": "Mas há muito abuso em relação a reajustes dos planos coletivos.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "abuso",
+            "char_start": 13,
+            "char_end": 18
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "em relação a reajustes dos planos coletivos"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 19,
+                "char_end": 62
+              }
+            ]
+          },
+          "target_instance_id": 1866,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_366b5b024e417e3c",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 19,
+                    "char_end": 62,
+                    "head_token_id": 6,
+                    "head_form": "relação",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_c02306bcab9438a3",
+      "frame_id": "f_0e74d57e0c44e6c8",
+      "pt_roleset": null,
+      "sense_label": "abuso · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "abuse.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/abuse.xml",
+          "source_xml_url": "data/nombank_sources/abuse.xml",
+          "source_xml_sha256": "868a7aecbd0ac5946e19df4dea2fcb08333db44abc3a6dd673ead7224a48d120",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Abusador",
+          "definition": "Agente de uso indevido/maltrato/excesso de poder, inclusive sob investigação.",
+          "desc_pt": "Abusador",
+          "definition_pt": "Agente de uso indevido/maltrato/excesso de poder, inclusive sob investigação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade abusada",
+          "definition": "Objeto/pessoa sobre que recai abuso, não definição abstrata do abuso ou lugar da conduta.",
+          "desc_pt": "Entidade abusada",
+          "definition_pt": "Objeto/pessoa sobre que recai abuso, não definição abstrata do abuso ou lugar da conduta."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004088_SENT015::abuso::1",
           "sent_ID": "FOLHA_DOC004088_SENT015",
           "text": "Não por acaso, a Ouvidoria da polícia requisitou investigação para apurar se houve irregularidade ou abuso na conduta das equipes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "abuso",
             "char_start": 101,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "das equipes",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 118,
+                "char_end": 129
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5340,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0e74d57e0c44e6c8",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 101,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 118,
+                    "char_end": 129,
+                    "head_token_id": 24,
+                    "head_form": "equipes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "abuso · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_435a9d2ecd9176dd",
+      "frame_id": "f_b54c3b14cfec08af",
+      "pt_roleset": null,
+      "sense_label": "abuso · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "abuse.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/abuse.xml",
+          "source_xml_url": "data/nombank_sources/abuse.xml",
+          "source_xml_sha256": "868a7aecbd0ac5946e19df4dea2fcb08333db44abc3a6dd673ead7224a48d120",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Abusador",
+          "definition": "Agente de uso indevido/maltrato/excesso de poder, inclusive sob investigação.",
+          "desc_pt": "Abusador",
+          "definition_pt": "Agente de uso indevido/maltrato/excesso de poder, inclusive sob investigação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade abusada",
+          "definition": "Objeto/pessoa sobre que recai abuso, não definição abstrata do abuso ou lugar da conduta.",
+          "desc_pt": "Entidade abusada",
+          "definition_pt": "Objeto/pessoa sobre que recai abuso, não definição abstrata do abuso ou lugar da conduta."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000059_SENT012::abuso::1",
+          "sent_ID": "FOLHA_DOC000059_SENT012",
+          "text": "A grande corrupção é definida como abuso para se atingir altos níveis de poder.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "abuso",
+            "char_start": 35,
+            "char_end": 40
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 9221,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b54c3b14cfec08af",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
     }
   ]
 }

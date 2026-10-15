@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "contestação · acepção 1",
+      "sense_id": "s_00bd151c651ad141",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_00bd151c651ad141",
+      "frame_id": "f_a26f9a7cf23d995c",
+      "pt_roleset": null,
+      "sense_label": "contestação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "objection.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/objection.xml",
+          "source_xml_url": "data/nombank_sources/objection.xml",
+          "source_xml_sha256": "da576fb45418a4190af29dcc0e6215cbac463be71bdd8b013fbfeb2a665b1dfd",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Contestador",
+          "definition": "Complainer das contestações, operadoras explícitas.",
+          "desc_pt": "Contestador",
+          "definition_pt": "Complainer das contestações, operadoras explícitas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa contestada",
+          "definition": "Thing objected to identificada.",
+          "desc_pt": "Coisa contestada",
+          "definition_pt": "Thing objected to identificada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Conteúdo da objeção",
+          "definition": "Value/proposição que expressa objeção, não percentual de receita que mede repercussão.",
+          "desc_pt": "Conteúdo da objeção",
+          "definition_pt": "Value/proposição que expressa objeção, não percentual de receita que mede repercussão."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004082_SENT026::contestação::1",
           "sent_ID": "FOLHA_DOC004082_SENT026",
           "text": "As contestações pelas operadoras representavam 3% da receita líquida em 2016, taxa que subiu para 4% neste ano.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "contestações",
             "char_start": 3,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "pelas operadoras",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 32
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5534,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a26f9a7cf23d995c",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 16,
+                    "char_end": 32,
+                    "head_token_id": 5,
+                    "head_form": "operadoras",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "contestação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

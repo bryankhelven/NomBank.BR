@@ -6,38 +6,191 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "infração · acepção 1",
+      "sense_id": "s_1d75bab2be0ba27f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1d75bab2be0ba27f",
+      "frame_id": "f_07b01209de3bfeec",
+      "pt_roleset": null,
+      "sense_label": "infração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "infraction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/infraction.xml",
+          "source_xml_url": "data/nombank_sources/infraction.xml",
+          "source_xml_sha256": "57c0ca969a9ce8f50a222f2100fc4d3d216352a9613ed83ac84d4c5f3ee184f1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Infrator",
+          "definition": "Quem viola ordem, sem agente elíptico ou penalidade convertido em violador.",
+          "desc_pt": "Infrator",
+          "definition_pt": "Quem viola ordem, sem agente elíptico ou penalidade convertido em violador."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Regra violada",
+          "definition": "Lei/ordem/determinação descumprida, distinta de quantidade ou exemplo de ação.",
+          "desc_pt": "Regra violada",
+          "definition_pt": "Lei/ordem/determinação descumprida, distinta de quantidade ou exemplo de ação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000024_SENT006::infração::1",
           "sent_ID": "FOLHA_DOC000024_SENT006",
           "text": "Em segundo lugar no ranking estão as multas por não cumprir determinação (infração geral, como não comparecer para se explicar sobre reclamação), com 1.535 infrações, e alterar itinerário, com 1.097.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "infração",
             "char_start": 74,
             "char_end": 82
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "determinação"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 72
+              }
+            ]
+          },
+          "target_instance_id": 12152,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_07b01209de3bfeec",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 74,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 60,
+                    "char_end": 72,
+                    "head_token_id": 13,
+                    "head_form": "determinação",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000024_SENT006::infração::2",
           "sent_ID": "FOLHA_DOC000024_SENT006",
           "text": "Em segundo lugar no ranking estão as multas por não cumprir determinação (infração geral, como não comparecer para se explicar sobre reclamação), com 1.535 infrações, e alterar itinerário, com 1.097.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "infrações",
             "char_start": 156,
             "char_end": 165
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "determinação"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 72
+              }
+            ]
+          },
+          "target_instance_id": 12154,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_07b01209de3bfeec",
+          "argument_details": {
+            "predicate_token_ids": [
+              30
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 156,
+                "char_end": 165
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 60,
+                    "char_end": 72,
+                    "head_token_id": 13,
+                    "head_form": "determinação",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "infração · acepção 1"
+      "syntactic_profile": {
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

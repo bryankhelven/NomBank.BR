@@ -6,38 +6,226 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "aglomeração · acepção 1",
+      "sense_id": "s_89336b71a8a43a0d",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_89336b71a8a43a0d",
+      "frame_id": "f_f8f2d50348064431",
+      "pt_roleset": null,
+      "sense_label": "aglomeração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "crowd.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/crowd.xml",
+          "source_xml_url": "data/nombank_sources/crowd.xml",
+          "source_xml_sha256": "58a26283913ad4a80a98e42b30c359d355e04c38ece0f7c7f4a267215c2a35c7",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Descrição dos integrantes",
+          "definition": "Quantified/descriptor do agrupamento, sem grandes tamanho geral como composição dos integrantes.",
+          "desc_pt": "Descrição dos integrantes",
+          "definition_pt": "Quantified/descriptor do agrupamento, sem grandes tamanho geral como composição dos integrantes."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Organizador ou pivô do grupo",
+          "definition": "Employer/leader/pivot original preservado; inclui pivô espacial expresso em torno de promotores sem liderança/emprego alegados.",
+          "desc_pt": "Organizador ou pivô do grupo",
+          "definition_pt": "Employer/leader/pivot original preservado; inclui pivô espacial expresso em torno de promotores sem liderança/emprego alegados."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Tema secundário do grupo",
+          "definition": "Secondary-theme independente da aglomeração.",
+          "desc_pt": "Tema secundário do grupo",
+          "definition_pt": "Secondary-theme independente da aglomeração."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003074_SENT009::aglomeração::1",
           "sent_ID": "FOLHA_DOC003074_SENT009",
           "text": "Os criminosos aproveitaram aglomeração em torno de promotores da empresa DHL, de transportes, que distribuía uma espécie de luva com o formato de uma mão amarela grande.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aglomeração",
             "char_start": 27,
             "char_end": 38
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": "em torno de promotores da empresa DHL, de transportes, que distribuía uma espécie de luva com o formato de uma mão amarela grande",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 39,
+                "char_end": 168
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 3284,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8f2d50348064431",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 39,
+                    "char_end": 168,
+                    "head_token_id": 6,
+                    "head_form": "torno",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002077_SENT007::aglomeração::1",
           "sent_ID": "FOLHA_DOC002077_SENT007",
           "text": "Tampouco havia grandes aglomerações, em uma campanha marcada pela discrição.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "aglomerações",
             "char_start": 23,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 13994,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8f2d50348064431",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "aglomeração · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

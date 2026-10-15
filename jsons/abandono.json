@@ -6,38 +6,220 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "abandono · acepção 1",
+      "sense_id": "s_45b952722f9bac0a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_45b952722f9bac0a",
+      "frame_id": "f_7925ebcd98cfa4cb",
+      "pt_roleset": null,
+      "sense_label": "abandono · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "abandonment.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/abandonment.xml",
+          "source_xml_url": "data/nombank_sources/abandonment.xml",
+          "source_xml_sha256": "f786b86696954db8d1cf3501db5a3348e7c3ecc51f16a76d3402b0a6a3fb4be2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Desistente",
+          "definition": "Quem deixa atividade, extensão de leave project à desistência de competidor.",
+          "desc_pt": "Desistente",
+          "definition_pt": "Quem deixa atividade, extensão de leave project à desistência de competidor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa abandonada",
+          "definition": "Atividade/objeto de que se desiste, sem corrida reconstruída.",
+          "desc_pt": "Coisa abandonada",
+          "definition_pt": "Atividade/objeto de que se desiste, sem corrida reconstruída."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Atributo",
+          "definition": "Predicação secundária sobre coisa abandonada.",
+          "desc_pt": "Atributo",
+          "definition_pt": "Predicação secundária sobre coisa abandonada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003105_SENT044::abandono::1",
           "sent_ID": "FOLHA_DOC003105_SENT044",
           "text": "Com um rendimento pior do que Red Bull e Ferrari nos treinos, o britânico viu no abandono de Vettel a chance de abrir vantagem no campeonato.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "abandono",
             "char_start": 81,
             "char_end": 89
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de Vettel",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 90,
+                "char_end": 99
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4493,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7925ebcd98cfa4cb",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 89
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23
+                    ],
+                    "char_start": 90,
+                    "char_end": 99,
+                    "head_token_id": 23,
+                    "head_form": "Vettel",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003105_SENT003::abandono::1",
           "sent_ID": "FOLHA_DOC003105_SENT003",
           "text": "Contando com o abandono de Sebastian Vettel, o britânico da Mercedes liderou de ponta a ponta e conquistou uma improvável vitória no GP de Cingapura, neste domingo (17).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "abandono",
             "char_start": 15,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de Sebastian Vettel",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 24,
+                "char_end": 43
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11314,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7925ebcd98cfa4cb",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 24,
+                    "char_end": 43,
+                    "head_token_id": 6,
+                    "head_form": "Sebastian",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "abandono · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

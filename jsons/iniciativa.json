@@ -6,118 +6,775 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004134_SENT029::iniciativa::1",
-          "sent_ID": "FOLHA_DOC004134_SENT029",
-          "text": "Segundo assessores da J&F, o executivo gravou o presidente por iniciativa própria.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "iniciativa",
-            "char_start": 63,
-            "char_end": 73
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "iniciativa · acepção 1"
+      "sense_label": "iniciativa · acepção 1",
+      "sense_id": "s_927bea42e6039390",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "iniciativa · acepção 2",
+      "sense_id": "s_3763fc7e73c8c1e2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_927bea42e6039390",
+      "frame_id": "f_f1fbc373774759a4",
+      "pt_roleset": null,
+      "sense_label": "iniciativa · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "initiative.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/initiative.xml",
+          "source_xml_url": "data/nombank_sources/initiative.xml",
+          "source_xml_sha256": "4010fa16710fe22a2cfb68bc46e671dbe23988f82230ec522db0c1438408256d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem inicia",
+          "definition": "Agent original his; agente da ação ligada por iniciativa própria/autoria/foco explicitado. Relator ou participante reflexivo interno à ação não gera titular independente automático.",
+          "desc_pt": "Quem inicia",
+          "definition_pt": "Agent original his; agente da ação ligada por iniciativa própria/autoria/foco explicitado. Relator ou participante reflexivo interno à ação não gera titular independente automático."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação iniciada",
+          "definition": "Action original crime/anti-toxic; atividade concreta verbal e proposição integral com prazo recebem extensão local de domínio. Não fragmentar conteúdo para duplicar participante.",
+          "desc_pt": "Ação iniciada",
+          "definition_pt": "Action original crime/anti-toxic; atividade concreta verbal e proposição integral com prazo recebem extensão local de domínio. Não fragmentar conteúdo para duplicar participante."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004134_SENT029::iniciativa::1",
+          "sent_ID": "FOLHA_DOC004134_SENT029",
+          "text": "Segundo assessores da J&F, o executivo gravou o presidente por iniciativa própria.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "iniciativa",
+            "char_start": 63,
+            "char_end": 73
+          },
+          "realization": {
+            "Arg0": "o executivo",
+            "Arg1": "gravou o presidente"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "root"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 27,
+                "char_end": 38
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 39,
+                "char_end": 58
+              }
+            ]
+          },
+          "target_instance_id": 542,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f1fbc373774759a4",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 63,
+                "char_end": 73
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 27,
+                    "char_end": 38,
+                    "head_token_id": 8,
+                    "head_form": "executivo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 39,
+                    "char_end": 58,
+                    "head_token_id": 9,
+                    "head_form": "gravou",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "root": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_3763fc7e73c8c1e2",
+      "frame_id": "f_ab3c7e019114ea04",
+      "pt_roleset": null,
+      "sense_label": "iniciativa · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "initiative.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/initiative.xml",
+          "source_xml_url": "data/nombank_sources/initiative.xml",
+          "source_xml_sha256": "4010fa16710fe22a2cfb68bc46e671dbe23988f82230ec522db0c1438408256d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem inicia",
+          "definition": "Agent original his; agente da ação ligada por iniciativa própria/autoria/foco explicitado. Relator ou participante reflexivo interno à ação não gera titular independente automático.",
+          "desc_pt": "Quem inicia",
+          "definition_pt": "Agent original his; agente da ação ligada por iniciativa própria/autoria/foco explicitado. Relator ou participante reflexivo interno à ação não gera titular independente automático."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação iniciada",
+          "definition": "Action original crime/anti-toxic; atividade concreta verbal e proposição integral com prazo recebem extensão local de domínio. Não fragmentar conteúdo para duplicar participante.",
+          "desc_pt": "Ação iniciada",
+          "definition_pt": "Action original crime/anti-toxic; atividade concreta verbal e proposição integral com prazo recebem extensão local de domínio. Não fragmentar conteúdo para duplicar participante."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004052_SENT024::iniciativa::1",
           "sent_ID": "FOLHA_DOC004052_SENT024",
           "text": "PSDB é o meu partido, tomei a iniciativa de me filiar em 2001.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativa",
             "char_start": 30,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de me filiar em 2001"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 41,
+                "char_end": 61
+              }
+            ]
+          },
+          "target_instance_id": 4020,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab3c7e019114ea04",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 41,
+                    "char_end": 61,
+                    "head_token_id": 12,
+                    "head_form": "filiar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000092_SENT040::iniciativa::1",
           "sent_ID": "FOLHA_DOC000092_SENT040",
           "text": "Parabenizo a Folha pela iniciativa de abrir espaço para manifestação de crianças.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativa",
             "char_start": 24,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a Folha",
+            "Arg1": "de abrir espaço para manifestação de crianças"
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 11,
+                "char_end": 18
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 35,
+                "char_end": 80
+              }
+            ]
+          },
+          "target_instance_id": 5499,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab3c7e019114ea04",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 11,
+                    "char_end": 18,
+                    "head_token_id": 3,
+                    "head_form": "Folha",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 35,
+                    "char_end": 80,
+                    "head_token_id": 8,
+                    "head_form": "abrir",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000123_SENT012::iniciativa::1",
           "sent_ID": "FOLHA_DOC000123_SENT012",
           "text": "\"Quem tomou a iniciativa de fazer as agressões foi ele\", afirmou em relação a Goldman.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativa",
             "char_start": 14,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "ele",
+            "Arg1": "de fazer as agressões"
+          },
+          "syntax": {
+            "Arg0": "ccomp:speech",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 51,
+                "char_end": 54
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 46
+              }
+            ]
+          },
+          "target_instance_id": 8308,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_ab3c7e019114ea04",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 51,
+                    "char_end": 54,
+                    "head_token_id": 11,
+                    "head_form": "ele",
+                    "head_deprel": "ccomp:speech"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 25,
+                    "char_end": 46,
+                    "head_token_id": 7,
+                    "head_form": "fazer",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 3
         },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "ccomp:speech": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_3763fc7e73c8c1e2",
+      "frame_id": "f_733bd6f15358f069",
+      "pt_roleset": null,
+      "sense_label": "iniciativa · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "initiation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/initiation.xml",
+          "source_xml_url": "data/nombank_sources/initiation.xml",
+          "source_xml_sha256": "c8c1e6ef9011d23524036641050f239ae1edfa75f17aa38fb5c2d81a7bcb4fd9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Iniciador",
+          "definition": "Quem toma primeiro passo, não todo princípio manifestado pela iniciativa.",
+          "desc_pt": "Iniciador",
+          "definition_pt": "Quem toma primeiro passo, não todo princípio manifestado pela iniciativa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema iniciado",
+          "definition": "Objeto/processo cuja primeira iniciativa se explicita; inclui proposta inicial de participação sem afirmar consumação.",
+          "desc_pt": "Tema iniciado",
+          "definition_pt": "Objeto/processo cuja primeira iniciativa se explicita; inclui proposta inicial de participação sem afirmar consumação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio de iniciar, não qualidade/tempo.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio de iniciar, não qualidade/tempo."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003092_SENT028::iniciativa::1",
           "sent_ID": "FOLHA_DOC003092_SENT028",
           "text": "O texto, portanto, condiciona uma eventual ação militar a uma iniciativa anterior dos poderes Executivo, Legislativo e Judiciário.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativa",
             "char_start": 62,
             "char_end": 72
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dos poderes Executivo, Legislativo e Judiciário",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 82,
+                "char_end": 129
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11616,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_733bd6f15358f069",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 72
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 82,
+                    "char_end": 129,
+                    "head_token_id": 17,
+                    "head_form": "poderes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003043_SENT021::iniciativa::1",
           "sent_ID": "FOLHA_DOC003043_SENT021",
           "text": "\"Achei maravilhosa a iniciativa delas de querer participar\", disse o secretário municipal da Educação, Alexandre Schneider.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativa",
             "char_start": 21,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "delas",
+            "Arg1": "de querer participar",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 32,
+                "char_end": 37
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 38,
+                "char_end": 58
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12107,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_733bd6f15358f069",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 21,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 32,
+                    "char_end": 37,
+                    "head_token_id": 7,
+                    "head_form": "elas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 58,
+                    "head_token_id": 9,
+                    "head_form": "querer",
+                    "head_deprel": "acl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002025_SENT030::iniciativa::1",
           "sent_ID": "FOLHA_DOC002025_SENT030",
           "text": "Da soberania popular que se manifesta por iniciativas de projetos de leis.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "iniciativas",
             "char_start": 42,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de projetos de leis",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 54,
+                "char_end": 73
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 12712,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_733bd6f15358f069",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 54,
+                    "char_end": 73,
+                    "head_token_id": 11,
+                    "head_form": "projetos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "iniciativa · acepção 2"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 2,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

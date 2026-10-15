@@ -6,37 +6,325 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_4bfc30655e15b03f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4bfc30655e15b03f",
+      "frame_id": "f_25a537b935b569f3",
+      "pt_roleset": "desvalorização.01",
+      "sense_label": "desvalorização.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "decrease.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/decrease.xml",
+          "source_xml_url": "data/nombank_sources/decrease.xml",
+          "source_xml_sha256": "819a690e0840c197bca6d05fe7e7081fae878d5849bb4a0c399c1c25ce19f80a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da perda",
+          "definition": "Quem provoca diminuição/perda de valor, omitido se não explicitado.",
+          "desc_pt": "Causador da perda",
+          "definition_pt": "Quem provoca diminuição/perda de valor, omitido se não explicitado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa desvalorizada",
+          "definition": "Grandeza ou relevância que perde valor, extensão explícita a notícia e valor acionário.",
+          "desc_pt": "Coisa desvalorizada",
+          "definition_pt": "Grandeza ou relevância que perde valor, extensão explícita a notícia e valor acionário."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Extensão ou maneira",
+          "definition": "Quantidade/grau da redução, incluindo marginal e percentagem explícita.",
+          "desc_pt": "Extensão ou maneira",
+          "definition_pt": "Quantidade/grau da redução, incluindo marginal e percentagem explícita."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Valor inicial",
+          "definition": "Ponto de partida lexicalizado.",
+          "desc_pt": "Valor inicial",
+          "definition_pt": "Ponto de partida lexicalizado."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Valor final",
+          "definition": "Ponto de chegada lexicalizado, distinto de percentual de variação.",
+          "desc_pt": "Valor final",
+          "definition_pt": "Ponto de chegada lexicalizado, distinto de percentual de variação."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000108_SENT014::desvalorização::1",
           "sent_ID": "FOLHA_DOC000108_SENT014",
           "text": "Há nítida \"desvalorização marginal\" das notícias sobre corrupção.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desvalorização",
             "char_start": 11,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "das notícias sobre corrupção",
+            "Arg2": "marginal",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "amod",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 36,
+                "char_end": 64
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 26,
+                "char_end": 34
+              }
+            ],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 4,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_25a537b935b569f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 36,
+                    "char_end": 64,
+                    "head_token_id": 9,
+                    "head_form": "notícias",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5
+                    ],
+                    "char_start": 26,
+                    "char_end": 34,
+                    "head_token_id": 5,
+                    "head_form": "marginal",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000019_SENT016::desvalorização::1",
           "sent_ID": "FOLHA_DOC000019_SENT016",
           "text": "A maior queda foi registrada pelas ações da Marfrig, com desvalorização de 4,63%.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desvalorização",
             "char_start": 57,
             "char_end": 71
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pelas ações da Marfrig",
+            "Arg2": "de 4,63%",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl:agent",
+            "Arg2": "nmod",
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 29,
+                "char_end": 51
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 72,
+                "char_end": 80
+              }
+            ],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 922,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_25a537b935b569f3",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 71
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 29,
+                    "char_end": 51,
+                    "head_token_id": 8,
+                    "head_form": "ações",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 72,
+                    "char_end": 80,
+                    "head_token_id": 17,
+                    "head_form": "%",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1,
+          "Arg3": 0,
+          "Arg4": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0,
+          "Arg4": 0
+        },
+        "obl:agent": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

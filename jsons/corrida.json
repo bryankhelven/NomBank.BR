@@ -6,24 +6,144 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "corrida · acepção 1",
+      "sense_id": "s_4ce82fed886203f7",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4ce82fed886203f7",
+      "frame_id": "f_f8312234dd5ee21d",
+      "pt_roleset": null,
+      "sense_label": "corrida · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rush.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rush.xml",
+          "source_xml_url": "data/nombank_sources/rush.xml",
+          "source_xml_sha256": "3d63c5fb31017faa67328171685224100f9e1dbacd5e65c3a4f3cfdcbb3e02ec",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da correria",
+          "definition": "Causer of motion expresso.",
+          "desc_pt": "Causador da correria",
+          "definition_pt": "Causer of motion expresso."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Quem corre",
+          "definition": "Entity in motion identificada, sem consumidores reconstruídos.",
+          "desc_pt": "Quem corre",
+          "definition_pt": "Entity in motion identificada, sem consumidores reconstruídos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Finalidade da correria",
+          "definition": "Goal/action como estocar água e combustível integral.",
+          "desc_pt": "Finalidade da correria",
+          "definition_pt": "Goal/action como estocar água e combustível integral."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004035_SENT017::corrida::1",
           "sent_ID": "FOLHA_DOC004035_SENT017",
           "text": "A corrida para estocar água e combustível levou a um aumento no valor desses itens.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "corrida",
             "char_start": 2,
             "char_end": 9
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "para estocar água e combustível"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 10,
+                "char_end": 41
+              }
+            ]
+          },
+          "target_instance_id": 14077,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f8312234dd5ee21d",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 9
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 10,
+                    "char_end": 41,
+                    "head_token_id": 4,
+                    "head_form": "estocar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "corrida · acepção 1"
+      "syntactic_profile": {
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,88 +6,514 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000088_SENT029::classificação::1",
-          "sent_ID": "FOLHA_DOC000088_SENT029",
-          "text": "Tudo isto indica dificuldades para os chilenos na partida que pode definir sua classificação ou eliminação.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "classificação",
-            "char_start": 79,
-            "char_end": 92
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002005_SENT040::classificação::1",
-          "sent_ID": "FOLHA_DOC002005_SENT040",
-          "text": "Mas atacar o Barcelona teria sido uma maneira mais firme de tentar a classificação quarta passada.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "classificação",
-            "char_start": 69,
-            "char_end": 82
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000042_SENT003::classificação::1",
-          "sent_ID": "FOLHA_DOC000042_SENT003",
-          "text": "A classificação da equipe para a Copa do Mundo de 2018 se apoia nisso.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "classificação",
-            "char_start": 2,
-            "char_end": 15
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_adfa1e6cb8ca3732",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "classificação.01",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_2ea99ab095b5d886",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_adfa1e6cb8ca3732",
+      "frame_id": "f_0c4ed37610e5156e",
+      "pt_roleset": "classificação.02",
+      "sense_label": "classificação.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "qualification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/qualification.xml",
+          "source_xml_url": "data/nombank_sources/qualification.xml",
+          "source_xml_sha256": "10f0fc8e10830380072f939aae3dd8315024261f86cefe482dd71505c6fdd0ef",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "entidade qualificanda",
+          "definition": "Entidade cuja habilitação/adequação se verifica; extensão esportiva documentada.",
+          "desc_pt": "entidade qualificanda",
+          "definition_pt": "Entidade cuja habilitação/adequação se verifica; extensão esportiva documentada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destino ou requisito de qualificação",
+          "definition": "Atividade, cargo ou competição para a qual se qualifica.",
+          "desc_pt": "destino ou requisito de qualificação",
+          "definition_pt": "Atividade, cargo ou competição para a qual se qualifica."
+        }
+      ],
       "instances": [
         {
-          "instance_id": "FOLHA_DOC000003_SENT010::classificação::1",
-          "sent_ID": "FOLHA_DOC000003_SENT010",
-          "text": "A classificação das informações impossibilitava a consulta pública de 157 documentos num prazo de 25 anos.",
-          "arguments_annotated": false,
+          "instance_id": "FOLHA_DOC000088_SENT029::classificação::1",
+          "sent_ID": "FOLHA_DOC000088_SENT029",
+          "text": "Tudo isto indica dificuldades para os chilenos na partida que pode definir sua classificação ou eliminação.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "classificação",
+            "char_start": 79,
+            "char_end": 92
+          },
+          "realization": {
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 75,
+                "char_end": 78
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 345,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c4ed37610e5156e",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 79,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 75,
+                    "char_end": 78,
+                    "head_token_id": 14,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002005_SENT040::classificação::1",
+          "sent_ID": "FOLHA_DOC002005_SENT040",
+          "text": "Mas atacar o Barcelona teria sido uma maneira mais firme de tentar a classificação quarta passada.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "classificação",
+            "char_start": 69,
+            "char_end": 82
+          },
+          "realization": {
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11942,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c4ed37610e5156e",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 82
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000042_SENT003::classificação::1",
+          "sent_ID": "FOLHA_DOC000042_SENT003",
+          "text": "A classificação da equipe para a Copa do Mundo de 2018 se apoia nisso.",
+          "arguments_annotated": true,
           "predicate": {
             "form": "classificação",
             "char_start": 2,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "da equipe",
+            "Arg2": "para a Copa do Mundo de 2018"
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 16,
+                "char_end": 25
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 26,
+                "char_end": 54
+              }
+            ]
+          },
+          "target_instance_id": 14120,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0c4ed37610e5156e",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 16,
+                    "char_end": 25,
+                    "head_token_id": 5,
+                    "head_form": "equipe",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 26,
+                    "char_end": 54,
+                    "head_token_id": 8,
+                    "head_form": "Copa",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_2ea99ab095b5d886",
+      "frame_id": "f_103648c51c631fef",
+      "pt_roleset": "classificação.01",
+      "sense_label": "classificação.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "classification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/classification.xml",
+          "source_xml_url": "data/nombank_sources/classification.xml",
+          "source_xml_sha256": "62734f4068a5e7c8e5a4891ae178e6da97a090bb922b41ca28d10ba20ccedf48",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "classificador",
+          "definition": "Entidade que atribui categoria.",
+          "desc_pt": "classificador",
+          "definition_pt": "Entidade que atribui categoria."
+        },
+        {
+          "id": "Arg1",
+          "desc": "objeto classificado",
+          "definition": "Entidade a que se atribui classificação.",
+          "desc_pt": "objeto classificado",
+          "definition_pt": "Entidade a que se atribui classificação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "categoria atribuída",
+          "definition": "Categoria/atributo definido ou explicitamente interrogado.",
+          "desc_pt": "categoria atribuída",
+          "definition_pt": "Categoria/atributo definido ou explicitamente interrogado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000003_SENT010::classificação::1",
+          "sent_ID": "FOLHA_DOC000003_SENT010",
+          "text": "A classificação das informações impossibilitava a consulta pública de 157 documentos num prazo de 25 anos.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "classificação",
+            "char_start": 2,
+            "char_end": 15
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "das informações",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 16,
+                "char_end": 31
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6507,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_103648c51c631fef",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 16,
+                    "char_end": 31,
+                    "head_token_id": 5,
+                    "head_form": "informações",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000180_SENT092::classificação::1",
           "sent_ID": "FOLHA_DOC000180_SENT092",
           "text": "Até quantos graus vai a classificação de uma queimadura?",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "classificação",
             "char_start": 24,
             "char_end": 37
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de uma queimadura",
+            "Arg2": "Até quantos graus"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 38,
+                "char_end": 55
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 17
+              }
+            ]
+          },
+          "target_instance_id": 7090,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_103648c51c631fef",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 38,
+                    "char_end": 55,
+                    "head_token_id": 9,
+                    "head_form": "queimadura",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 17,
+                    "head_token_id": 3,
+                    "head_form": "graus",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

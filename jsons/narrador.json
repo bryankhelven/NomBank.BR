@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "narrador · acepção 1",
+      "sense_id": "s_5d9035b33bf9f48e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5d9035b33bf9f48e",
+      "frame_id": "f_60be4751589c869f",
+      "pt_roleset": null,
+      "sense_label": "narrador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "narrator.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/narrator.xml",
+          "source_xml_url": "data/nombank_sources/narrator.xml",
+          "source_xml_sha256": "7a0ed0e3247e8a03323443bcd3b8ed4a53adceec6899fb80348f0056f8cf9829",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Narrador",
+          "definition": "Agent que relata/conta, nomes coordenados independentes ou SELF comprovado.",
+          "desc_pt": "Narrador",
+          "definition_pt": "Agent que relata/conta, nomes coordenados independentes ou SELF comprovado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo narrado",
+          "definition": "Theme/histórias integralmente descritas, sem show exterior importado do exemplo original.",
+          "desc_pt": "Conteúdo narrado",
+          "definition_pt": "Theme/histórias integralmente descritas, sem show exterior importado do exemplo original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003126_SENT010::narrador::1",
           "sent_ID": "FOLHA_DOC003126_SENT010",
           "text": "Durante sete horas, nove narradores (Ana Luísa Lacombe, Penélope Martins, Giuliano Tierno e outros) contarão histórias cheias de princesas medrosas, ratinhos manhosos e brincadeiras de quintal.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "narradores",
             "char_start": 25,
             "char_end": 35
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "(Ana Luísa Lacombe, Penélope Martins, Giuliano Tierno e outros)",
+            "Arg1": "histórias cheias de princesas medrosas, ratinhos manhosos e brincadeiras de quintal"
+          },
+          "syntax": {
+            "Arg0": "appos",
+            "Arg1": "obj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 36,
+                "char_end": 99
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 109,
+                "char_end": 192
+              }
+            ]
+          },
+          "target_instance_id": 10132,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_60be4751589c869f",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 35
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 36,
+                    "char_end": 99,
+                    "head_token_id": 8,
+                    "head_form": "Ana",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "char_start": 109,
+                    "char_end": 192,
+                    "head_token_id": 21,
+                    "head_form": "histórias",
+                    "head_deprel": "obj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "narrador · acepção 1"
+      "syntactic_profile": {
+        "appos": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

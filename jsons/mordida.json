@@ -6,24 +6,129 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "mordida · acepção 1",
+      "sense_id": "s_5e17c30a1d1b9d07",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5e17c30a1d1b9d07",
+      "frame_id": "f_5babadee14b27f2b",
+      "pt_roleset": null,
+      "sense_label": "mordida · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "bite.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/bite.xml",
+          "source_xml_url": "data/nombank_sources/bite.xml",
+          "source_xml_sha256": "c4468fefc79cc243425554be1c7328533a6c032c801b1cc5060d4e47e3cf2890",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da mordida",
+          "definition": "Biter agent se nomeado, sem pessoa suspeita reconstruída.",
+          "desc_pt": "Autor da mordida",
+          "definition_pt": "Biter agent se nomeado, sem pessoa suspeita reconstruída."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Região ou entidade mordida",
+          "definition": "Theme física, incluindo superfície corporal marcada pela mordida em contexto literal.",
+          "desc_pt": "Região ou entidade mordida",
+          "definition_pt": "Theme física, incluindo superfície corporal marcada pela mordida em contexto literal."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001776_SENT056::mordida::1",
           "sent_ID": "FOLHA_DOC001776_SENT056",
           "text": "Só lembro de acordar com dores no ânus e marcas de mordidas nas costas e na bunda, disse.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "mordidas",
             "char_start": 51,
             "char_end": 59
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "nas costas e na bunda"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 81
+              }
+            ]
+          },
+          "target_instance_id": 10036,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5babadee14b27f2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 51,
+                "char_end": 59
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 60,
+                    "char_end": 81,
+                    "head_token_id": 16,
+                    "head_form": "costas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "mordida · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

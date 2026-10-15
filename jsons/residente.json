@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "residente · acepção 1",
+      "sense_id": "s_97e7377fec246fee",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_97e7377fec246fee",
+      "frame_id": "f_b4c5b329f536ddc9",
+      "pt_roleset": null,
+      "sense_label": "residente · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "resident.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/resident.xml",
+          "source_xml_url": "data/nombank_sources/resident.xml",
+          "source_xml_sha256": "29468899ea6c40b814c41e4a3e86c7eccfc968f9e01a6b07923bda45d0439e4b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Morador",
+          "definition": "Entity residing incorporado conforme residents0.",
+          "desc_pt": "Morador",
+          "definition_pt": "Entity residing incorporado conforme residents0."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Local de residência",
+          "definition": "Location território, conforme Canadian1 original.",
+          "desc_pt": "Local de residência",
+          "definition_pt": "Location território, conforme Canadian1 original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003104_SENT014::residente::1",
           "sent_ID": "FOLHA_DOC003104_SENT014",
           "text": "Com isso, os residentes do território têm energia elétrica para apenas algumas horas por dia.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "residentes",
             "char_start": 13,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do território"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ]
+          },
+          "target_instance_id": 8857,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b4c5b329f536ddc9",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 24,
+                    "char_end": 37,
+                    "head_token_id": 8,
+                    "head_form": "território",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "residente · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

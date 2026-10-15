@@ -6,52 +6,328 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "enfrentamento · acepção 1",
+      "sense_id": "s_e14594a121173706",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e14594a121173706",
+      "frame_id": "f_9d0e9d9379f17c90",
+      "pt_roleset": null,
+      "sense_label": "enfrentamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fight.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fight.xml",
+          "source_xml_url": "data/nombank_sources/fight.xml",
+          "source_xml_sha256": "3fc99f4298aa9498f2cc03f1ce9f94b75f607c9bc83a60de9fa7638ac916a4cc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Primeiro lutador",
+          "definition": "Uma parte no enfrentamento, inclusive tópico possessivo explicitamente atribuído.",
+          "desc_pt": "Primeiro lutador",
+          "definition_pt": "Uma parte no enfrentamento, inclusive tópico possessivo explicitamente atribuído."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Outra parte",
+          "definition": "Oponente separado no confronto.",
+          "desc_pt": "Outra parte",
+          "definition_pt": "Oponente separado no confronto."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Objeto disputado",
+          "definition": "Espólio/objeto pelo qual se luta; não simples resultado do confronto.",
+          "desc_pt": "Objeto disputado",
+          "definition_pt": "Espólio/objeto pelo qual se luta; não simples resultado do confronto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000018_SENT051::enfrentamento::1",
           "sent_ID": "FOLHA_DOC000018_SENT051",
           "text": "Mas, recordou Gary Prado, esse enfrentamento teria final diferente de outros anteriores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "enfrentamento",
             "char_start": 31,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 997,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d0e9d9379f17c90",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 31,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000006_SENT007::enfrentamento::1",
           "sent_ID": "FOLHA_DOC000006_SENT007",
           "text": "Na ocasião, houve enfrentamento da Gendarmeria (polícia de fronteiras argentina) com os manifestantes, e testemunhas alegam que Maldonado foi levado pelos agentes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "enfrentamento",
             "char_start": 18,
             "char_end": 31
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da Gendarmeria (polícia de fronteiras argentina)",
+            "Arg1": "com os manifestantes",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 32,
+                "char_end": 80
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 81,
+                "char_end": 101
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14554,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d0e9d9379f17c90",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 31
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 32,
+                    "char_end": 80,
+                    "head_token_id": 9,
+                    "head_form": "Gendarmeria",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 81,
+                    "char_end": 101,
+                    "head_token_id": 18,
+                    "head_form": "manifestantes",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001783_SENT004::enfrentamento::1",
           "sent_ID": "FOLHA_DOC001783_SENT004",
           "text": "De Anita, gostava do enfrentamento com a elite.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "enfrentamento",
             "char_start": 21,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "De Anita",
+            "Arg1": "com a elite",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 8
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 35,
+                "char_end": 46
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15425,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d0e9d9379f17c90",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 21,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 8,
+                    "head_token_id": 2,
+                    "head_form": "Anita",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 35,
+                    "char_end": 46,
+                    "head_token_id": 10,
+                    "head_form": "elite",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "enfrentamento · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

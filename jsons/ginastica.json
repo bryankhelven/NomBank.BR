@@ -6,24 +6,106 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "ginástica · acepção 1",
+      "sense_id": "s_79ae5d10ce778a17",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_79ae5d10ce778a17",
+      "frame_id": "f_de75eb85d43d9228",
+      "pt_roleset": null,
+      "sense_label": "ginástica · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exercise.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exercise.xml",
+          "source_xml_url": "data/nombank_sources/exercise.xml",
+          "source_xml_sha256": "46a96f44b658f075be36833d6e3fa2171530161f3f1a6852e42e6259e9cc85bb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Praticante do exercício",
+          "definition": "Athlete restrito a ginástica corporal ou natação por ocorrência; não emissor de pagamento.",
+          "desc_pt": "Praticante do exercício",
+          "definition_pt": "Athlete restrito a ginástica corporal ou natação por ocorrência; não emissor de pagamento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003188_SENT023::ginástica::1",
           "sent_ID": "FOLHA_DOC003188_SENT023",
           "text": "Para fingir que não sabia o que eu estava fazendo, todo mês me mandava, por meio de um de meus irmãos, o \"dinheiro para pagar minha ginástica\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ginástica",
             "char_start": 132,
             "char_end": 141
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "minha"
+          },
+          "syntax": {
+            "Arg0": "det"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 126,
+                "char_end": 131
+              }
+            ]
+          },
+          "target_instance_id": 5635,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_de75eb85d43d9228",
+          "argument_details": {
+            "predicate_token_ids": [
+              31
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 132,
+                "char_end": 141
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30
+                    ],
+                    "char_start": 126,
+                    "char_end": 131,
+                    "head_token_id": 30,
+                    "head_form": "minha",
+                    "head_deprel": "det"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "ginástica · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1
+        }
+      }
     }
   ]
 }

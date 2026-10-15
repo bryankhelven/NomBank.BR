@@ -6,24 +6,173 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "celebridade · acepção 1",
+      "sense_id": "s_627e8fb2f32d678b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_627e8fb2f32d678b",
+      "frame_id": "f_03d28d17908e3ff2",
+      "pt_roleset": null,
+      "sense_label": "celebridade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "fame.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/fame.xml",
+          "source_xml_url": "data/nombank_sources/fame.xml",
+          "source_xml_sha256": "8f3be51b3020371aa23d330360d3ace63fa970a3a8f06e1ea088b75a8db6bc2f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular da celebridade",
+          "definition": "Experiencer cuja fama se aprecia, possessivos/portadores em spans distintos.",
+          "desc_pt": "Titular da celebridade",
+          "definition_pt": "Experiencer cuja fama se aprecia, possessivos/portadores em spans distintos."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Motivo da notoriedade",
+          "definition": "Theme/reason expresso, não gostar de fama como motivo de ser famoso.",
+          "desc_pt": "Motivo da notoriedade",
+          "definition_pt": "Theme/reason expresso, não gostar de fama como motivo de ser famoso."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor da fama",
+          "definition": "Value incorporado conforme fame REF2, sem inventar grau ou riqueza.",
+          "desc_pt": "Valor da fama",
+          "definition_pt": "Value incorporado conforme fame REF2, sem inventar grau ou riqueza."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Domínio secundário de fama",
+          "definition": "Secondary-theme expresso.",
+          "desc_pt": "Domínio secundário de fama",
+          "definition_pt": "Secondary-theme expresso."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001613_SENT094::celebridade::1",
           "sent_ID": "FOLHA_DOC001613_SENT094",
           "text": "Ao mesmo tempo, Hefner adorava a celebridade, a sua e a dos outros.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "celebridade",
             "char_start": 33,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "sua … dos outros",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "parataxis",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 48,
+                "char_end": 51
+              },
+              {
+                "char_start": 56,
+                "char_end": 66
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 11554,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_03d28d17908e3ff2",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12
+                    ],
+                    "char_start": 48,
+                    "char_end": 51,
+                    "head_token_id": 12,
+                    "head_form": "sua",
+                    "head_deprel": "parataxis"
+                  },
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 56,
+                    "char_end": 66,
+                    "head_token_id": 17,
+                    "head_form": "outros",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "celebridade · acepção 1"
+      "syntactic_profile": {
+        "parataxis": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

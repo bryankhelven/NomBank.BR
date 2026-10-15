@@ -6,74 +6,407 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004007_SENT016::exame::1",
-          "sent_ID": "FOLHA_DOC004007_SENT016",
-          "text": "Eu buscaria vovô em Campinas e o traria pra minha casa, onde ele descansaria um pouco antes da bateria de exames.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "exames",
-            "char_start": 106,
-            "char_end": 112
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004007_SENT023::exame::1",
-          "sent_ID": "FOLHA_DOC004007_SENT023",
-          "text": "Vovô fez os exames no hospital do interior e está tudo bem.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "exames",
-            "char_start": 12,
-            "char_end": 18
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC003257_SENT007::exame::1",
-          "sent_ID": "FOLHA_DOC003257_SENT007",
-          "text": "Resolvemos fazer exames complementares e o diagnóstico apontou uma fratura no osso escafoide.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "exames",
-            "char_start": 17,
-            "char_end": 23
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_df2aeac58903c7a8",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "exame.05",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_49b940dbfc4c5ec1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_df2aeac58903c7a8",
+      "frame_id": "f_156687c65c48ee53",
+      "pt_roleset": "exame.04",
+      "sense_label": "exame.04",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "examination.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/examination.xml",
+          "source_xml_url": "data/nombank_sources/examination.xml",
+          "source_xml_sha256": "443cc9862bff99cb27690ec693b8f4f3a98726f6bd83a8ab0abe384ed02c5dd9",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Examinador",
+          "definition": "Quem examina atentamente; médicos/técnicos precisam de realização independente.",
+          "desc_pt": "Examinador",
+          "definition_pt": "Quem examina atentamente; médicos/técnicos precisam de realização independente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto ou pessoa examinada",
+          "definition": "Pessoa ou coisa submetida a exame; uso diagnóstico é adaptação local do exemplo nominal de exame de pessoa.",
+          "desc_pt": "Objeto ou pessoa examinada",
+          "definition_pt": "Pessoa ou coisa submetida a exame; uso diagnóstico é adaptação local do exemplo nominal de exame de pessoa."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004007_SENT016::exame::1",
+          "sent_ID": "FOLHA_DOC004007_SENT016",
+          "text": "Eu buscaria vovô em Campinas e o traria pra minha casa, onde ele descansaria um pouco antes da bateria de exames.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "exames",
+            "char_start": 106,
+            "char_end": 112
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "ele"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 61,
+                "char_end": 64
+              }
+            ]
+          },
+          "target_instance_id": 4798,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_156687c65c48ee53",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 106,
+                "char_end": 112
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 61,
+                    "char_end": 64,
+                    "head_token_id": 14,
+                    "head_form": "ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004007_SENT023::exame::1",
+          "sent_ID": "FOLHA_DOC004007_SENT023",
+          "text": "Vovô fez os exames no hospital do interior e está tudo bem.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "exames",
+            "char_start": 12,
+            "char_end": 18
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Vovô"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 4
+              }
+            ]
+          },
+          "target_instance_id": 9053,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_156687c65c48ee53",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 4,
+                    "head_token_id": 1,
+                    "head_form": "Vovô",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC003257_SENT007::exame::1",
+          "sent_ID": "FOLHA_DOC003257_SENT007",
+          "text": "Resolvemos fazer exames complementares e o diagnóstico apontou uma fratura no osso escafoide.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "exames",
+            "char_start": 17,
+            "char_end": 23
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 12194,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_156687c65c48ee53",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 17,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
+    },
+    {
+      "sense_id": "s_49b940dbfc4c5ec1",
+      "frame_id": "f_033dd2aeb90eefde",
+      "pt_roleset": "exame.05",
+      "sense_label": "exame.05",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "test.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/test.xml",
+          "source_xml_url": "data/nombank_sources/test.xml",
+          "source_xml_sha256": "5e441e9afb89004a7216e510dc5abdf11757ed6c3f9573fca9fb3355a2c6a819",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Examinador",
+          "definition": "Quem aplica a verificação.",
+          "desc_pt": "Examinador",
+          "definition_pt": "Quem aplica a verificação."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Examinado",
+          "definition": "Pessoa ou coisa cuja aptidão/condição se verifica.",
+          "desc_pt": "Examinado",
+          "definition_pt": "Pessoa ou coisa cuja aptidão/condição se verifica."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Critério ou domínio verificado",
+          "definition": "Aquilo procurado/avaliado no teste; matéria escolar é adaptação local de for what.",
+          "desc_pt": "Critério ou domínio verificado",
+          "definition_pt": "Aquilo procurado/avaliado no teste; matéria escolar é adaptação local de for what."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004003_SENT008::exame::1",
           "sent_ID": "FOLHA_DOC004003_SENT008",
           "text": "No exame de história da arte, o professor perguntou por Renoir.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "exame",
             "char_start": 3,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o professor",
+            "Arg1": null,
+            "Arg2": "de história da arte"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 30,
+                "char_end": 41
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 9,
+                "char_end": 28
+              }
+            ]
+          },
+          "target_instance_id": 13541,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_033dd2aeb90eefde",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11
+                    ],
+                    "char_start": 30,
+                    "char_end": 41,
+                    "head_token_id": 11,
+                    "head_form": "professor",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 9,
+                    "char_end": 28,
+                    "head_token_id": 5,
+                    "head_form": "história",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

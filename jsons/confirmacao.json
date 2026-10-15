@@ -10,24 +10,32 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/confirmation.xml",
           "adapted": false,
-          "gloss": null
+          "gloss": null,
+          "source_xml_url": "data/nombank_sources/confirmation.xml",
+          "source_xml_sha256": "e47df33dc03553e8414ab7179e5b71ab4100da02b895c4e158c7bb94068fbedd"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "confirmer",
-          "definition": "confirmer"
+          "definition": "confirmer",
+          "desc_pt": "entidade que confirma",
+          "definition_pt": "entidade que confirma"
         },
         {
           "id": "Arg1",
           "desc": "thing confirmed, statement or proposition",
-          "definition": "thing confirmed, statement or proposition"
+          "definition": "thing confirmed, statement or proposition",
+          "desc_pt": "conteúdo confirmado",
+          "definition_pt": "conteúdo confirmado"
         },
         {
           "id": "Arg2",
           "desc": "beneficiary, hearer",
-          "definition": "beneficiary, hearer"
+          "definition": "beneficiary, hearer",
+          "desc_pt": "beneficiário ou ouvinte",
+          "definition_pt": "beneficiário ou ouvinte"
         }
       ],
       "instances": [
@@ -55,10 +63,48 @@
             "Arg0": [],
             "Arg1": [],
             "Arg2": []
+          },
+          "target_instance_id": 7228,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_2f58b98c9b7c5157",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 66,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {},
+      "sense_id": "s_8139b29ad5d7cfc0",
+      "frame_id": "f_2f58b98c9b7c5157",
+      "inventory_authority": "accepted_in_formal_base"
     }
   ]
 }

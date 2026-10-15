@@ -10,29 +10,39 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/fee.xml",
           "adapted": false,
-          "gloss": "cf cost"
+          "gloss": "cf cost",
+          "source_xml_url": "data/nombank_sources/fee.xml",
+          "source_xml_sha256": "87e7e629a3186d075e911d3bfd459a995ed76d4f9ce324b8cdd37ad7b692dc70"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "prestador/cobrador do serviço",
-          "definition": "prestador/cobrador do serviço"
+          "definition": "prestador/cobrador do serviço",
+          "desc_pt": "prestador/cobrador do serviço",
+          "definition_pt": "prestador/cobrador do serviço"
         },
         {
           "id": "Arg1",
           "desc": "serviço tarifado",
-          "definition": "serviço tarifado"
+          "definition": "serviço tarifado",
+          "desc_pt": "serviço tarifado",
+          "definition_pt": "serviço tarifado"
         },
         {
           "id": "Arg2",
           "desc": "preço do serviço",
-          "definition": "preço do serviço"
+          "definition": "preço do serviço",
+          "desc_pt": "preço do serviço",
+          "definition_pt": "preço do serviço"
         },
         {
           "id": "Arg3",
           "desc": "comprador/usuário pagador",
-          "definition": "comprador/usuário pagador"
+          "definition": "comprador/usuário pagador",
+          "desc_pt": "comprador/usuário pagador",
+          "definition_pt": "comprador/usuário pagador"
         }
       ],
       "instances": [
@@ -48,7 +58,23 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 1755,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ],
+            "arguments": []
+          }
         },
         {
           "instance_id": "FOLHA_DOC003170_SENT005::tarifa::1",
@@ -62,7 +88,23 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 2230,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 67,
+                "char_end": 73
+              }
+            ],
+            "arguments": []
+          }
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT032::tarifa::1",
@@ -96,6 +138,57 @@
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 3637,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 109,
+                "char_end": 116
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 128,
+                    "char_end": 140
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -135,6 +228,70 @@
             ],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 4312,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 21,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 38,
+                    "char_end": 59
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 60,
+                    "char_end": 86
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -149,7 +306,23 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 5573,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 44
+              }
+            ],
+            "arguments": []
+          }
         },
         {
           "instance_id": "FOLHA_DOC003170_SENT011::tarifa::1",
@@ -163,7 +336,23 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 8819,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              37
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 206,
+                "char_end": 212
+              }
+            ],
+            "arguments": []
+          }
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT004::tarifa::1",
@@ -207,6 +396,64 @@
               }
             ],
             "Arg3": []
+          },
+          "target_instance_id": 9551,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 71
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16
+                    ],
+                    "char_start": 72,
+                    "char_end": 83
+                  },
+                  {
+                    "token_ids": [
+                      19,
+                      20
+                    ],
+                    "char_start": 88,
+                    "char_end": 97
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -221,7 +468,23 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 12812,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 123,
+                "char_end": 129
+              }
+            ],
+            "arguments": []
+          }
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT018::tarifa::1",
@@ -255,6 +518,56 @@
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 12834,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 109,
+                "char_end": 116
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 54,
+                    "char_end": 63
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -289,6 +602,56 @@
             ],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 13210,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 63,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8
+                    ],
+                    "char_start": 27,
+                    "char_end": 35
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -321,6 +684,59 @@
               {
                 "char_start": 5,
                 "char_end": 37
+              }
+            ]
+          },
+          "target_instance_id": 13944,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 96,
+                "char_end": 103
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 5,
+                    "char_end": 37
+                  }
+                ]
               }
             ]
           }
@@ -362,6 +778,69 @@
             ],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 14100,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 55,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 70,
+                    "char_end": 86
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "char_start": 124,
+                    "char_end": 142
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -396,6 +875,58 @@
               }
             ],
             "Arg3": []
+          },
+          "target_instance_id": 14888,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 113,
+                "char_end": 120
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "char_start": 131,
+                    "char_end": 146
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         },
         {
@@ -430,6 +961,56 @@
             "Arg1": [],
             "Arg2": [],
             "Arg3": []
+          },
+          "target_instance_id": 14916,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_958ec17863e6f115",
+          "argument_details": {
+            "predicate_token_ids": [
+              33
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 146,
+                "char_end": 153
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      29,
+                      30
+                    ],
+                    "char_start": 122,
+                    "char_end": 133
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
@@ -449,7 +1030,10 @@
         "Arg3": {
           "nmod": 1
         }
-      }
+      },
+      "sense_id": "s_84f9a89471c8de63",
+      "frame_id": "f_958ec17863e6f115",
+      "inventory_authority": "accepted_in_formal_base"
     }
   ]
 }

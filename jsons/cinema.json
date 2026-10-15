@@ -6,38 +6,175 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "cinema · acepção 1",
+      "sense_id": "s_18a5ca1add20329f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_18a5ca1add20329f",
+      "frame_id": "f_c5cc35d9be1dcbb6",
+      "pt_roleset": null,
+      "sense_label": "cinema · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "film.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/film.xml",
+          "source_xml_url": "data/nombank_sources/film.xml",
+          "source_xml_sha256": "41fc02320e2667f2b5ac923af4c207329266ff3345420f56a51a06c68e84a38f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Criador cinematográfico",
+          "definition": "Recorder/filmer restringido à criação pela arte/técnica cinematográfica, sem câmera operada ou gravação concluída inferidas de intenção.",
+          "desc_pt": "Criador cinematográfico",
+          "definition_pt": "Recorder/filmer restringido à criação pela arte/técnica cinematográfica, sem câmera operada ou gravação concluída inferidas de intenção."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa filmada",
+          "definition": "Cena/objeto/título cinematográfico registrado, não edifício ou obra inventados.",
+          "desc_pt": "Coisa filmada",
+          "definition_pt": "Cena/objeto/título cinematográfico registrado, não edifício ou obra inventados."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000097_SENT047::cinema::1",
           "sent_ID": "FOLHA_DOC000097_SENT047",
           "text": "Além de seguir escrevendo e atuando, quer dirigir teatro e cinema.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cinema",
             "char_start": 59,
             "char_end": 65
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 2560,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c5cc35d9be1dcbb6",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 65
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001046_SENT048::cinema::1",
           "sent_ID": "FOLHA_DOC001046_SENT048",
           "text": "Já Gabriel quer fazer cinema.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "cinema",
             "char_start": 22,
             "char_end": 28
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Gabriel",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 2958,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c5cc35d9be1dcbb6",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 3,
+                    "char_end": 10,
+                    "head_token_id": 2,
+                    "head_form": "Gabriel",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "cinema · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

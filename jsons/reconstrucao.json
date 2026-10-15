@@ -6,66 +6,364 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "reconstrução · acepção 1",
+      "sense_id": "s_4193e37a6e4278e1",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4193e37a6e4278e1",
+      "frame_id": "f_85df8516624ef3c5",
+      "pt_roleset": null,
+      "sense_label": "reconstrução · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "restoration.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/restoration.xml",
+          "source_xml_url": "data/nombank_sources/restoration.xml",
+          "source_xml_sha256": "ee15db1781a3059f560b0a107c862e5b35dfce71cdf34551e958ac8917d5dc18",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Restaurador",
+          "definition": "Quem renova ou reconstrói o alvo.",
+          "desc_pt": "Restaurador",
+          "definition_pt": "Quem renova ou reconstrói o alvo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Alvo renovado",
+          "definition": "Aquilo restaurado como novo; fonte inclui edifícios, com extensão institucional/territorial explicitada.",
+          "desc_pt": "Alvo renovado",
+          "definition_pt": "Aquilo restaurado como novo; fonte inclui edifícios, com extensão institucional/territorial explicitada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado final",
+          "definition": "Estado para o qual o alvo é renovado; não beneficiário ou custo.",
+          "desc_pt": "Estado final",
+          "definition_pt": "Estado para o qual o alvo é renovado; não beneficiário ou custo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003006_SENT019::reconstrução::1",
           "sent_ID": "FOLHA_DOC003006_SENT019",
           "text": "Temos um longo caminho para reconstrução do Brasil e será a nossa determinação e engajamento, nas causas prioritárias, que definirão a velocidade e o sucesso das mudanças que queremos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reconstrução",
             "char_start": 28,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do Brasil",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 41,
+                "char_end": 50
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7315,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_85df8516624ef3c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 28,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 41,
+                    "char_end": 50,
+                    "head_token_id": 9,
+                    "head_form": "Brasil",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002002_SENT005::reconstrução::1",
           "sent_ID": "FOLHA_DOC002002_SENT005",
           "text": "Porto Rico ainda está sem energia elétrica, e sua reconstrução levará anos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reconstrução",
             "char_start": 50,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "sua",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 46,
+                "char_end": 49
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 8699,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_85df8516624ef3c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 50,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 46,
+                    "char_end": 49,
+                    "head_token_id": 10,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003039_SENT006::reconstrução::1",
           "sent_ID": "FOLHA_DOC003039_SENT006",
           "text": "Tampouco foi por acaso que Macron viajou, um dia após a posse, para a capital alemã, onde ao lado de Merkel pediu uma \"reconstrução histórica para a Europa\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reconstrução",
             "char_start": 119,
             "char_end": 131
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9317,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_85df8516624ef3c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              29
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 119,
+                "char_end": 131
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003185_SENT031::reconstrução::1",
           "sent_ID": "FOLHA_DOC003185_SENT031",
           "text": "O que conta, na verdade, é o montante necessário para a reconstrução da residência mais os bens no seu interior.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "reconstrução",
             "char_start": 56,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da residência",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 69,
+                "char_end": 82
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14280,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_85df8516624ef3c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              15
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 69,
+                    "char_end": 82,
+                    "head_token_id": 18,
+                    "head_form": "residência",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "reconstrução · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

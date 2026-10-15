@@ -6,24 +6,144 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "fadiga · acepção 1",
+      "sense_id": "s_82f42362eaccf212",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_82f42362eaccf212",
+      "frame_id": "f_6ada156f6701e35b",
+      "pt_roleset": null,
+      "sense_label": "fadiga · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "deterioration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/deterioration.xml",
+          "source_xml_url": "data/nombank_sources/deterioration.xml",
+          "source_xml_sha256": "b5082b60c0577f9c26ae30c46d3569d986e8a51bc8406034dde2158548a9bdf3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da fadiga material",
+          "definition": "Causer da deterioração restrita à perda de elasticidade/desgaste mecânico.",
+          "desc_pt": "Causador da fadiga material",
+          "definition_pt": "Causer da deterioração restrita à perda de elasticidade/desgaste mecânico."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Material fatigado",
+          "definition": "Entity deteriorating como rolamentos de roda íntegros.",
+          "desc_pt": "Material fatigado",
+          "definition_pt": "Entity deteriorating como rolamentos de roda íntegros."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado final do material",
+          "definition": "Endstate explícito, sem ronco sinal detector como causa/grau da perda.",
+          "desc_pt": "Estado final do material",
+          "definition_pt": "Endstate explícito, sem ronco sinal detector como causa/grau da perda."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000161_SENT041::fadiga::1",
           "sent_ID": "FOLHA_DOC000161_SENT041",
           "text": "A fadiga dos rolamentos de roda é identificada pelo ronco emitido com o carro em movimento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "fadiga",
             "char_start": 2,
             "char_end": 8
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos rolamentos de roda",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 9,
+                "char_end": 31
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2279,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6ada156f6701e35b",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 8
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 9,
+                    "char_end": 31,
+                    "head_token_id": 5,
+                    "head_form": "rolamentos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "fadiga · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

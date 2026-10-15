@@ -6,52 +6,282 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "tecnologia · acepção 1",
+      "sense_id": "s_a978c583fab24f32",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_a978c583fab24f32",
+      "frame_id": "f_f6868abb131b486c",
+      "pt_roleset": null,
+      "sense_label": "tecnologia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "technology.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/technology.xml",
+          "source_xml_url": "data/nombank_sources/technology.xml",
+          "source_xml_sha256": "73a5b3b3df935143ec5dcef4ea6ebe55e8f599418e0320844c3b70b547bd56db",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular tecnológico",
+          "definition": "Quem tem capacidade/processos tecnológicos, como its original, sem autoria de invenção inferida da posse.",
+          "desc_pt": "Titular tecnológico",
+          "definition_pt": "Quem tem capacidade/processos tecnológicos, como its original, sem autoria de invenção inferida da posse."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Atividade/domínio técnico",
+          "definition": "Campo operacional da tecnologia, extensão explícita de processos computing/recovery ao funcionamento do bitcoin.",
+          "desc_pt": "Atividade/domínio técnico",
+          "definition_pt": "Campo operacional da tecnologia, extensão explícita de processos computing/recovery ao funcionamento do bitcoin."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003041_SENT014::tecnologia::1",
           "sent_ID": "FOLHA_DOC003041_SENT014",
           "text": "A tecnologia da Softline, distribuidora de itens de internet das coisas da Microsoft, deve chegar ao mercado em 2018.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tecnologia",
             "char_start": 2,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da Softline, distribuidora de itens de internet das coisas da Microsoft",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 13,
+                "char_end": 84
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 2429,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f6868abb131b486c",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 13,
+                    "char_end": 84,
+                    "head_token_id": 5,
+                    "head_form": "Softline",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000150_SENT010::tecnologia::1",
           "sent_ID": "FOLHA_DOC000150_SENT010",
           "text": "Tínhamos empresas de porte menor com tecnologias avançadas, mas sem escala.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tecnologias",
             "char_start": 37,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "empresas de porte menor",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 9,
+                "char_end": 32
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5124,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f6868abb131b486c",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 9,
+                    "char_end": 32,
+                    "head_token_id": 2,
+                    "head_form": "empresas",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002012_SENT032::tecnologia::1",
           "sent_ID": "FOLHA_DOC002012_SENT032",
           "text": "Protocolos mais eficientes para pagamentos eletrônicos certamente ajudariam, e há muito a aprender com a tecnologia do bitcoin.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tecnologia",
             "char_start": 105,
             "char_end": 115
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "do bitcoin"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 116,
+                "char_end": 126
+              }
+            ]
+          },
+          "target_instance_id": 9911,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f6868abb131b486c",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 105,
+                "char_end": 115
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 116,
+                    "char_end": 126,
+                    "head_token_id": 20,
+                    "head_form": "bitcoin",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "tecnologia · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

@@ -6,43 +6,271 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC001716_SENT038::capitalização::1",
-          "sent_ID": "FOLHA_DOC001716_SENT038",
-          "text": "Quanto menor a capitalização de um banco, menos prejuízos ele poderá aceitar antes que se torne insolvente.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "capitalização",
-            "char_start": 15,
-            "char_end": 28
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
-      "syntactic_profile": {}
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_7a0bdd5830ee9d37",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": "capitalização.01",
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_9b0f83cb36b99342",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7a0bdd5830ee9d37",
+      "frame_id": "f_1f0fa9414f47c375",
+      "pt_roleset": "capitalização.02",
+      "sense_label": "capitalização.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "accumulation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/accumulation.xml",
+          "source_xml_url": "data/nombank_sources/accumulation.xml",
+          "source_xml_sha256": "c15bc1e32fd19b3fdaa720833745a41727cff82f665fd17a9acaea448643202a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade acumuladora",
+          "definition": "Quem amassa capital no sentido frozen, incluindo banco titular do acúmulo.",
+          "desc_pt": "Entidade acumuladora",
+          "definition_pt": "Quem amassa capital no sentido frozen, incluindo banco titular do acúmulo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Capital acumulado",
+          "definition": "Thing/stuff amassado, sem encoding ou span do recurso só lexicalmente implicado.",
+          "desc_pt": "Capital acumulado",
+          "definition_pt": "Thing/stuff amassado, sem encoding ou span do recurso só lexicalmente implicado."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Preço da acumulação",
+          "definition": "Price original3, sem grau menor convertido em preço ou Arg2 inventado.",
+          "desc_pt": "Preço da acumulação",
+          "definition_pt": "Price original3, sem grau menor convertido em preço ou Arg2 inventado."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001716_SENT038::capitalização::1",
+          "sent_ID": "FOLHA_DOC001716_SENT038",
+          "text": "Quanto menor a capitalização de um banco, menos prejuízos ele poderá aceitar antes que se torne insolvente.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "capitalização",
+            "char_start": 15,
+            "char_end": 28
+          },
+          "realization": {
+            "Arg0": "de um banco",
+            "Arg1": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 29,
+                "char_end": 40
+              }
+            ],
+            "Arg1": [],
+            "Arg3": []
+          },
+          "target_instance_id": 13023,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1f0fa9414f47c375",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 28
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 29,
+                    "char_end": 40,
+                    "head_token_id": 7,
+                    "head_form": "banco",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg3": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_9b0f83cb36b99342",
+      "frame_id": "f_8b64e8324ef8cef0",
+      "pt_roleset": "capitalização.01",
+      "sense_label": "capitalização.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "conversion.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/conversion.xml",
+          "source_xml_url": "data/nombank_sources/conversion.xml",
+          "source_xml_sha256": "f0eada12de88517ee924ef3e26220780e7bb4d9f3908e6b72dbc695cf105d237",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador da conversão",
+          "definition": "Quem transforma em capital, não quem exige necessariamente executor.",
+          "desc_pt": "Causador da conversão",
+          "definition_pt": "Quem transforma em capital, não quem exige necessariamente executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa convertida",
+          "definition": "Entidade que muda para capital, sem dívida de finalidade tomada automaticamente como coisa transformada.",
+          "desc_pt": "Coisa convertida",
+          "definition_pt": "Entidade que muda para capital, sem dívida de finalidade tomada automaticamente como coisa transformada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado final",
+          "definition": "Capital como resultado se lexicalizado independentemente; sem encoding não atestado.",
+          "desc_pt": "Estado final",
+          "definition_pt": "Capital como resultado se lexicalizado independentemente; sem encoding não atestado."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Estado inicial",
+          "definition": "Condição de origem da transformação quando expressa.",
+          "desc_pt": "Estado inicial",
+          "definition_pt": "Condição de origem da transformação quando expressa."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004096_SENT030::capitalização::1",
           "sent_ID": "FOLHA_DOC004096_SENT030",
           "text": "A capitalização foi uma exigência de Joesley para reduzir a dívida da JBS.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "capitalização",
             "char_start": 2,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 13816,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8b64e8324ef8cef0",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

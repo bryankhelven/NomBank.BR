@@ -6,24 +6,166 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "disseminação · acepção 1",
+      "sense_id": "s_005b35b2fcec86e4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_005b35b2fcec86e4",
+      "frame_id": "f_40264d459288a4e5",
+      "pt_roleset": null,
+      "sense_label": "disseminação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dissemination.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dissemination.xml",
+          "source_xml_url": "data/nombank_sources/dissemination.xml",
+          "source_xml_sha256": "929028e1a13c2aaa69ca473a288bfcef82925ac5e27291dac41abf5560afb057",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Disseminador",
+          "definition": "Agent que propaga/divulga, incluindo mídias metonímicas como brokerage firms print for original, não deixar de punir causador genérico automaticamente.",
+          "desc_pt": "Disseminador",
+          "definition_pt": "Agent que propaga/divulga, incluindo mídias metonímicas como brokerage firms print for original, não deixar de punir causador genérico automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa disseminada",
+          "definition": "Theme como conluios/programas completos com descrição, sob hipótese/intenção.",
+          "desc_pt": "Coisa disseminada",
+          "definition_pt": "Theme como conluios/programas completos com descrição, sob hipótese/intenção."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destino da disseminação",
+          "definition": "Recipient/goal como pelo país conforme in U.S. original, não cidadania finalidade de programa como destinatário.",
+          "desc_pt": "Destino da disseminação",
+          "definition_pt": "Recipient/goal como pelo país conforme in U.S. original, não cidadania finalidade de programa como destinatário."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003067_SENT005::disseminação::1",
           "sent_ID": "FOLHA_DOC003067_SENT005",
           "text": "Deixar de punir com a anulação das provas esse desvio, uma vez comprovado, seria favorecer a disseminação pelo país dos conluios entre investigadores estatais e réus desesperados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "disseminação",
             "char_start": 93,
             "char_end": 105
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "dos conluios entre investigadores estatais e réus desesperados",
+            "Arg2": "pelo país"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 116,
+                "char_end": 178
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 106,
+                "char_end": 115
+              }
+            ]
+          },
+          "target_instance_id": 8393,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_40264d459288a4e5",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 93,
+                "char_end": 105
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "char_start": 116,
+                    "char_end": 178,
+                    "head_token_id": 26,
+                    "head_form": "conluios",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 106,
+                    "char_end": 115,
+                    "head_token_id": 23,
+                    "head_form": "país",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "disseminação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

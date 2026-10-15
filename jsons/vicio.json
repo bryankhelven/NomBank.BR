@@ -6,37 +6,199 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_0543362c9e5688c5",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_0543362c9e5688c5",
+      "frame_id": "f_69ec819c053120c5",
+      "pt_roleset": "vício.06",
+      "sense_label": "vício.06",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "habit.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/habit.xml",
+          "source_xml_url": "data/nombank_sources/habit.xml",
+          "source_xml_sha256": "f027efc9481925f08735eb6279fc9a6f3a523d445c5e602bff997dcdcd7547f6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Titular do mau hábito",
+          "definition": "Quem tem costume prejudicial, restrição PT de hábito genérico sem dependência química inferida.",
+          "desc_pt": "Titular do mau hábito",
+          "definition_pt": "Quem tem costume prejudicial, restrição PT de hábito genérico sem dependência química inferida."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Ação habitual",
+          "definition": "Ação que se repete prejudicialmente, quando nomeada.",
+          "desc_pt": "Ação habitual",
+          "definition_pt": "Ação que se repete prejudicialmente, quando nomeada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000041_SENT063::vício::1",
           "sent_ID": "FOLHA_DOC000041_SENT063",
           "text": "Era uma negação mesmo de que a filhinha deles pudesse ter um vício.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "vício",
             "char_start": 61,
             "char_end": 66
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a filhinha deles",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 29,
+                "char_end": 45
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5183,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_69ec819c053120c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 66
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 29,
+                    "char_end": 45,
+                    "head_token_id": 8,
+                    "head_form": "filhinha",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003187_SENT037::vício::1",
           "sent_ID": "FOLHA_DOC003187_SENT037",
           "text": "Mas que nenhum deles tenha sido político até então: só gente nova, sem vícios.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "vícios",
             "char_start": 71,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "só gente nova",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "parataxis",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 52,
+                "char_end": 65
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 14862,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_69ec819c053120c5",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 71,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 52,
+                    "char_end": 65,
+                    "head_token_id": 13,
+                    "head_form": "gente",
+                    "head_deprel": "parataxis"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "parataxis": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

@@ -10,19 +10,25 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/resignation.xml",
           "adapted": false,
-          "gloss": null
+          "gloss": null,
+          "source_xml_url": "data/nombank_sources/resignation.xml",
+          "source_xml_sha256": "bd1546fcd34c881a730f43d4841137c5f56ea10ebde410d6201fea49bb0df8f9"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "resigner",
-          "definition": "resigner"
+          "definition": "resigner",
+          "desc_pt": "entidade que renuncia",
+          "definition_pt": "entidade que renuncia"
         },
         {
           "id": "Arg1",
           "desc": "position resigned",
-          "definition": "position resigned"
+          "definition": "position resigned",
+          "desc_pt": "cargo do qual se renuncia",
+          "definition_pt": "cargo do qual se renuncia"
         }
       ],
       "instances": [
@@ -52,6 +58,45 @@
               }
             ],
             "Arg1": []
+          },
+          "target_instance_id": 2102,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_2b4b21e9bea2cb64",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 13,
+                    "head_token_id": 2
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
           }
         }
       ],
@@ -59,7 +104,10 @@
         "Arg0": {
           "nsubj": 1
         }
-      }
+      },
+      "sense_id": "s_16199e5266ca42d0",
+      "frame_id": "f_2b4b21e9bea2cb64",
+      "inventory_authority": "accepted_in_formal_base"
     },
     {
       "pt_roleset": "renúncia.01",
@@ -70,29 +118,39 @@
           "resource": "English NomBank",
           "url": "https://nlp.cs.nyu.edu/meyers/nombank/nombank.1.0/frames/resignation.xml",
           "adapted": false,
-          "gloss": null
+          "gloss": null,
+          "source_xml_url": "data/nombank_sources/resignation.xml",
+          "source_xml_sha256": "bd1546fcd34c881a730f43d4841137c5f56ea10ebde410d6201fea49bb0df8f9"
         }
       ],
       "roles": [
         {
           "id": "Arg0",
           "desc": "governo/autoridade fiscal",
-          "definition": "governo/autoridade fiscal"
+          "definition": "governo/autoridade fiscal",
+          "desc_pt": "governo/autoridade fiscal",
+          "definition_pt": "governo/autoridade fiscal"
         },
         {
           "id": "Arg1",
           "desc": "renúncia fiscal",
-          "definition": "renúncia fiscal"
+          "definition": "renúncia fiscal",
+          "desc_pt": "renúncia fiscal",
+          "definition_pt": "renúncia fiscal"
         },
         {
           "id": "Arg2",
           "desc": "tributo/receita não arrecadada",
-          "definition": "tributo/receita não arrecadada"
+          "definition": "tributo/receita não arrecadada",
+          "desc_pt": "tributo/receita não arrecadada",
+          "definition_pt": "tributo/receita não arrecadada"
         },
         {
           "id": "Arg3",
           "desc": "valor,beneficiário,período ou base legal",
-          "definition": "valor,beneficiário,período ou base legal"
+          "definition": "valor,beneficiário,período ou base legal",
+          "desc_pt": "valor,beneficiário,período ou base legal",
+          "definition_pt": "valor,beneficiário,período ou base legal"
         }
       ],
       "instances": [
@@ -128,6 +186,58 @@
                 "char_end": 57
               }
             ]
+          },
+          "target_instance_id": 12530,
+          "annotation_authority": "accepted_in_formal_base",
+          "annotation_status": "annotated",
+          "frame_id": "f_6d6a4207e5d6a702",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 43,
+                    "char_end": 57,
+                    "head_token_id": 10
+                  }
+                ]
+              }
+            ]
           }
         }
       ],
@@ -135,7 +245,10 @@
         "Arg3": {
           "obj": 1
         }
-      }
+      },
+      "sense_id": "s_69fa3ecae6a05eaf",
+      "frame_id": "f_6d6a4207e5d6a702",
+      "inventory_authority": "accepted_in_formal_base"
     }
   ]
 }

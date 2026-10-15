@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "partilha · acepção 1",
+      "sense_id": "s_aad8d67f6c7463b2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_aad8d67f6c7463b2",
+      "frame_id": "f_9d10d0563df8f6eb",
+      "pt_roleset": null,
+      "sense_label": "partilha · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "division.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/division.xml",
+          "source_xml_url": "data/nombank_sources/division.xml",
+          "source_xml_sha256": "712eb0e16e6d63aa2788184f79b81bce26f9480cfd01e435da6c793aae9859d1",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da partilha",
+          "definition": "Entity causing separation/distribuição, sem quem quer participar necessariamente dividir.",
+          "desc_pt": "Autor da partilha",
+          "definition_pt": "Entity causing separation/distribuição, sem quem quer participar necessariamente dividir."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa partilhada",
+          "definition": "Thing being divided expresso.",
+          "desc_pt": "Coisa partilhada",
+          "definition_pt": "Thing being divided expresso."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Termos separados da partilha",
+          "definition": "Divided among/between if separate, sem participantes pretendidos automaticamente destinatários.",
+          "desc_pt": "Termos separados da partilha",
+          "definition_pt": "Divided among/between if separate, sem participantes pretendidos automaticamente destinatários."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004008_SENT005::partilha::1",
           "sent_ID": "FOLHA_DOC004008_SENT005",
           "text": "O que muda, em tempos de redes sociais, é a pulverização dos agrupamentos que querem participar da partilha.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "partilha",
             "char_start": 99,
             "char_end": 107
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5458,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9d10d0563df8f6eb",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 107
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "partilha · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

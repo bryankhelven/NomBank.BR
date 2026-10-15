@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "conúbio · acepção 1",
+      "sense_id": "s_bfff3a5adbaf132f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_bfff3a5adbaf132f",
+      "frame_id": "f_508ff6dac94e03a5",
+      "pt_roleset": null,
+      "sense_label": "conúbio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "association.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/association.xml",
+          "source_xml_url": "data/nombank_sources/association.xml",
+          "source_xml_sha256": "a436742aabe27db8d51c2b0184d8e5c698699b3005c2f699dc4ed69951670c9e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Associador",
+          "definition": "Entity causing grouping/association.",
+          "desc_pt": "Associador",
+          "definition_pt": "Entity causing grouping/association."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Parte associada",
+          "definition": "Theme incluído em vínculo de conúbio, não união conjugal presumida.",
+          "desc_pt": "Parte associada",
+          "definition_pt": "Theme incluído em vínculo de conúbio, não união conjugal presumida."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Contraparte associada",
+          "definition": "Group/associated-with identificado, sem Leviatã distante como parte conjecturada.",
+          "desc_pt": "Contraparte associada",
+          "definition_pt": "Group/associated-with identificado, sem Leviatã distante como parte conjecturada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003067_SENT014::conúbio::1",
           "sent_ID": "FOLHA_DOC003067_SENT014",
           "text": "Abalado o conúbio e exposta a chaga, é preciso agora cuidar um pouco mais das cautelas que, numa democracia, refreiam no Leviatã o seu instinto devorador.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conúbio",
             "char_start": 10,
             "char_end": 17
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 6141,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_508ff6dac94e03a5",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 10,
+                "char_end": 17
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "conúbio · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

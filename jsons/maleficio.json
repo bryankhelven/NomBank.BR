@@ -6,24 +6,118 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "malefício · acepção 1",
+      "sense_id": "s_4a80f8189eaef5df",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4a80f8189eaef5df",
+      "frame_id": "f_636bf47a356737c4",
+      "pt_roleset": null,
+      "sense_label": "malefício · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "harm.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/harm.xml",
+          "source_xml_url": "data/nombank_sources/harm.xml",
+          "source_xml_sha256": "88b12a928ef38a44407f03aa08c4c3472e2a25dcc9c59e0c0d11cc7a713fc823",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Causador do malefício",
+          "definition": "Agent causer expresso, sem ego que pode realizar ato automaticamente autor de dano futuro particular.",
+          "desc_pt": "Causador do malefício",
+          "definition_pt": "Agent causer expresso, sem ego que pode realizar ato automaticamente autor de dano futuro particular."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade lesada",
+          "definition": "Entity damaged identificada, sem vítima inventada.",
+          "desc_pt": "Entidade lesada",
+          "definition_pt": "Entity damaged identificada, sem vítima inventada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento do dano",
+          "definition": "Instrument expresso, sem gloss nulo preenchido.",
+          "desc_pt": "Instrumento do dano",
+          "definition_pt": "Instrument expresso, sem gloss nulo preenchido."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004002_SENT025::malefício::1",
           "sent_ID": "FOLHA_DOC004002_SENT025",
           "text": "É inacreditável o que o ego ferido pode realizar sem avaliar os malefícios que virão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "malefícios",
             "char_start": 64,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11108,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_636bf47a356737c4",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "malefício · acepção 1"
+      "syntactic_profile": {}
     }
   ]
 }

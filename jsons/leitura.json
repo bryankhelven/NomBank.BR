@@ -6,38 +6,260 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "leitura · acepção 1",
+      "sense_id": "s_06db64a17f1da628",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_06db64a17f1da628",
+      "frame_id": "f_b22cd72082cd652c",
+      "pt_roleset": null,
+      "sense_label": "leitura · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "interpretation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/interpretation.xml",
+          "source_xml_url": "data/nombank_sources/interpretation.xml",
+          "source_xml_sha256": "c92b4d9980fd35c4d9fb59d63e26cdd8da61757f63b0344b0aaace3d289ec127",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Intérprete",
+          "definition": "Quem interpreta, incluindo possessivo nossa, não chave conceitual automaticamente.",
+          "desc_pt": "Intérprete",
+          "definition_pt": "Quem interpreta, incluindo possessivo nossa, não chave conceitual automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa interpretada",
+          "definition": "Debates/situação/proposição a que se dá sentido, extensão explícita de interpretação cultural.",
+          "desc_pt": "Coisa interpretada",
+          "definition_pt": "Debates/situação/proposição a que se dá sentido, extensão explícita de interpretação cultural."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Interpretação atribuída",
+          "definition": "Atributo específico que exprime leitura resultante da entidade, não método crítica ou chave/instrumento por si.",
+          "desc_pt": "Interpretação atribuída",
+          "definition_pt": "Atributo específico que exprime leitura resultante da entidade, não método crítica ou chave/instrumento por si."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000110_SENT024::leitura::1",
           "sent_ID": "FOLHA_DOC000110_SENT024",
           "text": "Muitos debates políticos e intelectuais do século 19 russo têm essa oposição como chave importante de leitura.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "leitura",
             "char_start": 102,
             "char_end": 109
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Muitos debates políticos e intelectuais do século 19 russo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 58
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9323,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b22cd72082cd652c",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 102,
+                "char_end": 109
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 0,
+                    "char_end": 58,
+                    "head_token_id": 2,
+                    "head_form": "debates",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004092_SENT017::leitura::1",
           "sent_ID": "FOLHA_DOC004092_SENT017",
           "text": "A nossa leitura crítica reconhece que falta muito para o fim da Aids.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "leitura",
             "char_start": 8,
             "char_end": 15
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "nossa",
+            "Arg1": "que falta muito para o fim da Aids",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "ccomp",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 2,
+                "char_end": 7
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 68
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 15647,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b22cd72082cd652c",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 8,
+                "char_end": 15
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2
+                    ],
+                    "char_start": 2,
+                    "char_end": 7,
+                    "head_token_id": 2,
+                    "head_form": "nossa",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 34,
+                    "char_end": 68,
+                    "head_token_id": 7,
+                    "head_form": "falta",
+                    "head_deprel": "ccomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "leitura · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "ccomp": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,52 +6,365 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "triunfo · acepção 1",
+      "sense_id": "s_b78baefff5788eda",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b78baefff5788eda",
+      "frame_id": "f_8e3906f271421f5d",
+      "pt_roleset": null,
+      "sense_label": "triunfo · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "triumph.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/triumph.xml",
+          "source_xml_url": "data/nombank_sources/triumph.xml",
+          "source_xml_sha256": "eee42a35489ead25cd69c87c789982df2383ebca7c6c7a98023896ce4ede657c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Vencedor",
+          "definition": "Quem obtém triunfo, inclusive referência possessiva.",
+          "desc_pt": "Vencedor",
+          "definition_pt": "Quem obtém triunfo, inclusive referência possessiva."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Oponente vencido",
+          "definition": "Parte sobre a qual se vence, inclusive exemplar partitivo explicitamente marcado.",
+          "desc_pt": "Oponente vencido",
+          "definition_pt": "Parte sobre a qual se vence, inclusive exemplar partitivo explicitamente marcado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Competição",
+          "definition": "Disputa ou série delimitada em que se vence, não mero estádio/local.",
+          "desc_pt": "Competição",
+          "definition_pt": "Disputa ou série delimitada em que se vence, não mero estádio/local."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003159_SENT026::triunfo::1",
           "sent_ID": "FOLHA_DOC003159_SENT026",
           "text": "Efeito da reação sob o comando do técnico Vagner Mancini, com direito a triunfo no Itaquerão contra o líder Corinthians, que é o rival do São Paulo na próxima rodada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "triunfo",
             "char_start": 72,
             "char_end": 79
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "contra o líder Corinthians, que é o rival do São Paulo na próxima rodada",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 93,
+                "char_end": 165
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1763,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8e3906f271421f5d",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 72,
+                "char_end": 79
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "char_start": 93,
+                    "char_end": 165,
+                    "head_token_id": 23,
+                    "head_form": "líder",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003015_SENT003::triunfo::1",
           "sent_ID": "FOLHA_DOC003015_SENT003",
           "text": "\"A culpa é de vocês\", zombou o apresentador Stephen Colbert, na abertura do prêmio da TV americana, responsabilizando júris e público pelo triunfo do republicano.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "triunfo",
             "char_start": 139,
             "char_end": 146
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do republicano",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 147,
+                "char_end": 161
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 11285,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8e3906f271421f5d",
+          "argument_details": {
+            "predicate_token_ids": [
+              32
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 139,
+                "char_end": 146
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      33,
+                      34,
+                      35
+                    ],
+                    "char_start": 147,
+                    "char_end": 161,
+                    "head_token_id": 35,
+                    "head_form": "republicano",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003159_SENT022::triunfo::1",
           "sent_ID": "FOLHA_DOC003159_SENT022",
           "text": "Em meio a números mais desanimadores, se há um alento para a torcida são-paulina, é que um de seus triunfos nesse punhado de jogos foi justamente contra o Vitória, oponente deste domingo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "triunfos",
             "char_start": 99,
             "char_end": 107
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "seus",
+            "Arg1": "contra o Vitória, oponente deste domingo",
+            "Arg2": "nesse punhado de jogos"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "obl",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 94,
+                "char_end": 98
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 146,
+                "char_end": 186
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 108,
+                "char_end": 130
+              }
+            ]
+          },
+          "target_instance_id": 12275,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8e3906f271421f5d",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 107
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21
+                    ],
+                    "char_start": 94,
+                    "char_end": 98,
+                    "head_token_id": 21,
+                    "head_form": "seus",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "char_start": 146,
+                    "char_end": 186,
+                    "head_token_id": 32,
+                    "head_form": "Vitória",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 108,
+                    "char_end": 130,
+                    "head_token_id": 25,
+                    "head_form": "punhado",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "triunfo · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 1,
+          "Arg2": 1
+        },
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

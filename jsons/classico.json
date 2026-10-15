@@ -8,20 +8,6 @@
       "roles": null,
       "instances": [
         {
-          "instance_id": "FOLHA_DOC003023_SENT043::clássico::1",
-          "sent_ID": "FOLHA_DOC003023_SENT043",
-          "text": "Os dois níveis vão se enfrentar no clássico, daqui a seis dias.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "clássico",
-            "char_start": 35,
-            "char_end": 43
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
           "instance_id": "FOLHA_DOC003208_SENT025::clássico::1",
           "sent_ID": "FOLHA_DOC003208_SENT025",
           "text": "Aqui é possível encontrar opções como as clássicas Dead Pony (pale ale) e Punk IPA (R$ 22, 300 ml), ou a não tão conhecida lager Kingpin.",
@@ -33,25 +19,289 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {}
+          "argument_positions": {},
+          "target_instance_id": 6731,
+          "annotation_authority": "manual_review_required",
+          "annotation_status": "not_started",
+          "frame_id": null,
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 41,
+                "char_end": 50
+              }
+            ],
+            "arguments": []
+          }
+        }
+      ],
+      "syntactic_profile": {},
+      "sense_label": "clássico · acepção 1",
+      "sense_id": "s_b81da7729f1a7f5f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_b81da7729f1a7f5f",
+      "frame_id": "f_9ee65509976aab03",
+      "pt_roleset": null,
+      "sense_label": "clássico · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "match.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/match.xml",
+          "source_xml_url": "data/nombank_sources/match.xml",
+          "source_xml_sha256": "3c44f0dad2c3cdea96bf3ceff9415e70358b29edc1e0a79072f4a847019d00fb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Competidor",
+          "definition": "Parte ou conjunto bilateral que disputa confronto clássico, sem ordenar entidades indiferenciadas.",
+          "desc_pt": "Competidor",
+          "definition_pt": "Parte ou conjunto bilateral que disputa confronto clássico, sem ordenar entidades indiferenciadas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Modalidade/tema",
+          "definition": "Campo de competição, não todo campeonato de oração anterior.",
+          "desc_pt": "Modalidade/tema",
+          "definition_pt": "Campo de competição, não todo campeonato de oração anterior."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Adversário",
+          "definition": "Parte oposta nomeada; source1 original preservado em n2.",
+          "desc_pt": "Adversário",
+          "definition_pt": "Parte oposta nomeada; source1 original preservado em n2."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Prêmio",
+          "definition": "Aquilo por que se compete; source2 original preservado em n3.",
+          "desc_pt": "Prêmio",
+          "definition_pt": "Aquilo por que se compete; source2 original preservado em n3."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003023_SENT043::clássico::1",
+          "sent_ID": "FOLHA_DOC003023_SENT043",
+          "text": "Os dois níveis vão se enfrentar no clássico, daqui a seis dias.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "clássico",
+            "char_start": 35,
+            "char_end": 43
+          },
+          "realization": {
+            "Arg0": "Os dois níveis",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 14
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 2767,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9ee65509976aab03",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 14,
+                    "head_token_id": 3,
+                    "head_form": "níveis",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003101_SENT025::clássico::1",
           "sent_ID": "FOLHA_DOC003101_SENT025",
           "text": "Após a viagem que definirá o futuro do time na competição continental, o Corinthians terá o clássico contra o São Paulo, no domingo (24).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "clássico",
             "char_start": 92,
             "char_end": 100
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o Corinthians",
+            "Arg1": null,
+            "Arg2": "contra o São Paulo",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": "nmod",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 71,
+                "char_end": 84
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 101,
+                "char_end": 119
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 10574,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9ee65509976aab03",
+          "argument_details": {
+            "predicate_token_ids": [
+              20
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 92,
+                "char_end": 100
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      16,
+                      17
+                    ],
+                    "char_start": 71,
+                    "char_end": 84,
+                    "head_token_id": 17,
+                    "head_form": "Corinthians",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 101,
+                    "char_end": 119,
+                    "head_token_id": 23,
+                    "head_form": "São",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "clássico · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg3": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

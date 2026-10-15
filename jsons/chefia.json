@@ -6,24 +6,147 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "chefia · acepção 1",
+      "sense_id": "s_4b27b4586c7abd0a",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4b27b4586c7abd0a",
+      "frame_id": "f_edb1e66a5dd52d4c",
+      "pt_roleset": null,
+      "sense_label": "chefia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "leadership.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/leadership.xml",
+          "source_xml_url": "data/nombank_sources/leadership.xml",
+          "source_xml_sha256": "fe965726cbba4117435c20628e77250965eef1194d275ad2d508a76a02b352cc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Chefe",
+          "definition": "Agent que exerce ou assumirá comando, como quem.",
+          "desc_pt": "Chefe",
+          "definition_pt": "Agent que exerce ou assumirá comando, como quem."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade comandada",
+          "definition": "Theme institucional dirigido, como Banco Central Europeu, não antecessor da chefia.",
+          "desc_pt": "Entidade comandada",
+          "definition_pt": "Theme institucional dirigido, como Banco Central Europeu, não antecessor da chefia."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003039_SENT028::chefia::1",
           "sent_ID": "FOLHA_DOC003039_SENT028",
           "text": "Essa dinâmica também vai depender, segundo Hénard, de quem assumir a chefia do Banco Central Europeu no lugar do italiano Mario Draghi, cujo mandato expira em 2019.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "chefia",
             "char_start": 69,
             "char_end": 75
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "quem",
+            "Arg1": "do Banco Central Europeu"
+          },
+          "syntax": {
+            "Arg0": "obl",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 54,
+                "char_end": 58
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 76,
+                "char_end": 100
+              }
+            ]
+          },
+          "target_instance_id": 4564,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_edb1e66a5dd52d4c",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 69,
+                "char_end": 75
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 54,
+                    "char_end": 58,
+                    "head_token_id": 11,
+                    "head_form": "quem",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 76,
+                    "char_end": 100,
+                    "head_token_id": 17,
+                    "head_form": "Banco",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "chefia · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

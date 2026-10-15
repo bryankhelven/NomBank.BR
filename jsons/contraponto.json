@@ -6,52 +6,328 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "contraponto · acepção 1",
+      "sense_id": "s_2bd7cddd8f5339b2",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2bd7cddd8f5339b2",
+      "frame_id": "f_0e472544c96ac608",
+      "pt_roleset": null,
+      "sense_label": "contraponto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "counterpoint.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/counterpoint.xml",
+          "source_xml_url": "data/nombank_sources/counterpoint.xml",
+          "source_xml_sha256": "43227d8f79d71342e431bb33efc84cb39bca665b771aa734605fb11e57333d06",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Primeiro elemento",
+          "definition": "Entidade/proposição apresentada como contraponto, incorporada apenas sem referência independente e com exemplo original.",
+          "desc_pt": "Primeiro elemento",
+          "definition_pt": "Entidade/proposição apresentada como contraponto, incorporada apenas sem referência independente e com exemplo original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Segundo elemento",
+          "definition": "Elemento em relação ao qual o primeiro se contrapõe.",
+          "desc_pt": "Segundo elemento",
+          "definition_pt": "Elemento em relação ao qual o primeiro se contrapõe."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002005_SENT028::contraponto::1",
           "sent_ID": "FOLHA_DOC002005_SENT028",
           "text": "O contraponto foi o erro em duas alterações, que puxaram o São Paulo para trás e permitiram o empate.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "contraponto",
             "char_start": 2,
             "char_end": 13
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "o erro em duas alterações, que puxaram o São Paulo para trás e permitiram o empate",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "root",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 18,
+                "char_end": 100
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 914,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0e472544c96ac608",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 13
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 18,
+                    "char_end": 100,
+                    "head_token_id": 5,
+                    "head_form": "erro",
+                    "head_deprel": "root"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003142_SENT020::contraponto::1",
           "sent_ID": "FOLHA_DOC003142_SENT020",
           "text": "Essa virada entre gêneros daria um prato cheio para que o autor de \"Homens Difíceis\" lançasse agora o contraponto \"Mulheres Nada Fáceis\", com toda a cafajestice pejorativa que esse título pudesse carregar.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "contraponto",
             "char_start": 102,
             "char_end": 113
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "\"Mulheres Nada Fáceis\"",
+            "Arg2": "\"Homens Difíceis\""
+          },
+          "syntax": {
+            "Arg1": "appos",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 114,
+                "char_end": 136
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 67,
+                "char_end": 84
+              }
+            ]
+          },
+          "target_instance_id": 7742,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0e472544c96ac608",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 102,
+                "char_end": 113
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "char_start": 114,
+                    "char_end": 136,
+                    "head_token_id": 23,
+                    "head_form": "Mulheres",
+                    "head_deprel": "appos"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 67,
+                    "char_end": 84,
+                    "head_token_id": 15,
+                    "head_form": "Homens",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002028_SENT014::contraponto::1",
           "sent_ID": "FOLHA_DOC002028_SENT014",
           "text": "Se de fato seguir esse caminho, Merkel perderá o rótulo de contraponto liberal a Donald Trump.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "contraponto",
             "char_start": 59,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "Merkel",
+            "Arg2": "a Donald Trump"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 32,
+                "char_end": 38
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 79,
+                "char_end": 93
+              }
+            ]
+          },
+          "target_instance_id": 10298,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0e472544c96ac608",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8
+                    ],
+                    "char_start": 32,
+                    "char_end": 38,
+                    "head_token_id": 8,
+                    "head_form": "Merkel",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 79,
+                    "char_end": 93,
+                    "head_token_id": 16,
+                    "head_form": "Donald",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "contraponto · acepção 1"
+      "syntactic_profile": {
+        "root": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "appos": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

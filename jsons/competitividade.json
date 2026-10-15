@@ -6,66 +6,302 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "competitividade · acepção 1",
+      "sense_id": "s_15be9ad7221c1483",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_15be9ad7221c1483",
+      "frame_id": "f_e82eb387d80b0e4f",
+      "pt_roleset": null,
+      "sense_label": "competitividade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "competitiveness.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/competitiveness.xml",
+          "source_xml_url": "data/nombank_sources/competitiveness.xml",
+          "source_xml_sha256": "d6cea1074d47b14edb91b6df205e39ccd7b4b1f8709cc3588608d6513c0a8d3c",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Portador da competitividade",
+          "definition": "Experiencer original, como country’s; fornecedores e partido político são extensões institucionais locais.",
+          "desc_pt": "Portador da competitividade",
+          "definition_pt": "Experiencer original, como country’s; fornecedores e partido político são extensões institucionais locais."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Domínio competitivo",
+          "definition": "Theme original television market; destination de exportação não é automaticamente domínio caracterizado. A fonte não possui value, sem acrescentar Arg2 para mais.",
+          "desc_pt": "Domínio competitivo",
+          "definition_pt": "Theme original television market; destination de exportação não é automaticamente domínio caracterizado. A fonte não possui value, sem acrescentar Arg2 para mais."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000015_SENT013::competitividade::1",
           "sent_ID": "FOLHA_DOC000015_SENT013",
           "text": "Em relação ao fim do Inovar-Auto e uma possibilidade de aumento das importações de componentes, Di Si afirma que é preciso que os fornecedores locais tenham mais competitividade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competitividade",
             "char_start": 162,
             "char_end": 177
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os fornecedores locais",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 127,
+                "char_end": 149
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 5881,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e82eb387d80b0e4f",
+          "argument_details": {
+            "predicate_token_ids": [
+              32
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 162,
+                "char_end": 177
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      27,
+                      28,
+                      29
+                    ],
+                    "char_start": 127,
+                    "char_end": 149,
+                    "head_token_id": 28,
+                    "head_form": "fornecedores",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003051_SENT029::competitividade::1",
           "sent_ID": "FOLHA_DOC003051_SENT029",
           "text": "Parte da competitividade vem do custo menor e da maior eficiência das baterias de íon de lítio, que caíram 65% desde 2010, para cerca de US$ 300 o quilowatt/hora.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competitividade",
             "char_start": 9,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 6383,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e82eb387d80b0e4f",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 9,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000015_SENT006::competitividade::1",
           "sent_ID": "FOLHA_DOC000015_SENT006",
           "text": "\"Precisamos melhorar a competitividade para exportar também a novos mercados emergentes, como Turquia, Egito, Chile.\"",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competitividade",
             "char_start": 23,
             "char_end": 38
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 7560,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e82eb387d80b0e4f",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 38
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004001_SENT012::competitividade::1",
           "sent_ID": "FOLHA_DOC004001_SENT012",
           "text": "A meta é menos a vitória e mais a competitividade que mantenha o partido em evidência no cenário político.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "competitividade",
             "char_start": 34,
             "char_end": 49
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o partido",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "obj",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 63,
+                "char_end": 72
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 13384,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e82eb387d80b0e4f",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 49
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 63,
+                    "char_end": 72,
+                    "head_token_id": 14,
+                    "head_form": "partido",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "competitividade · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

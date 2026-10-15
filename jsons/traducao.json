@@ -6,38 +6,244 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "tradução · acepção 1",
+      "sense_id": "s_fc3dba8a86f2dd92",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fc3dba8a86f2dd92",
+      "frame_id": "f_eec0dbcaee1960a2",
+      "pt_roleset": null,
+      "sense_label": "tradução · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "translation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/translation.xml",
+          "source_xml_url": "data/nombank_sources/translation.xml",
+          "source_xml_sha256": "a4a03fabf6309d42c6064ad4bc5a9709fcbe9e6634a195712daf8df73a5d7b78",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Tradutor",
+          "definition": "Quem faz mudança linguística, distinto de helper potencial/publicador automaticamente.",
+          "desc_pt": "Tradutor",
+          "definition_pt": "Quem faz mudança linguística, distinto de helper potencial/publicador automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa traduzida",
+          "definition": "Conteúdo que muda de língua, com qualificadores íntegros.",
+          "desc_pt": "Coisa traduzida",
+          "definition_pt": "Conteúdo que muda de língua, com qualificadores íntegros."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Versão resultante",
+          "definition": "End state incorporado conforme translation REF2 original quando língua final não especificada.",
+          "desc_pt": "Versão resultante",
+          "definition_pt": "End state incorporado conforme translation REF2 original quando língua final não especificada."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Língua inicial",
+          "definition": "Estado linguístico de origem, não nacionalidade ou lugar de edição.",
+          "desc_pt": "Língua inicial",
+          "definition_pt": "Estado linguístico de origem, não nacionalidade ou lugar de edição."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003066_SENT042::tradução::1",
           "sent_ID": "FOLHA_DOC003066_SENT042",
           "text": "O empresário chinês Jonathan Yan, 39, corria de um lado para o outro no desembarque atrás de alguém que pudesse ajudá-lo com a tradução.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "tradução",
             "char_start": 127,
             "char_end": 135
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 7955,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eec0dbcaee1960a2",
+          "argument_details": {
+            "predicate_token_ids": [
+              28
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 127,
+                "char_end": 135
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003148_SENT002::tradução::1",
           "sent_ID": "FOLHA_DOC003148_SENT002",
           "text": "A \"Ilustríssima\" publica traduções inéditas de poemas do americano John Ashbery, morto último dia 3 e nunca editado no Brasil.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "traduções",
             "char_start": 25,
             "char_end": 34
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de poemas do americano John Ashbery, morto último dia 3 e nunca editado no Brasil",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 44,
+                "char_end": 125
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 13501,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eec0dbcaee1960a2",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 25,
+                "char_end": 34
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 44,
+                    "char_end": 125,
+                    "head_token_id": 9,
+                    "head_form": "poemas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "tradução · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

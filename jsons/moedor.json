@@ -6,24 +6,141 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "moedor · acepção 1",
+      "sense_id": "s_f13671941bf34490",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f13671941bf34490",
+      "frame_id": "f_0a5838302e8b280a",
+      "pt_roleset": null,
+      "sense_label": "moedor · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "grinder.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/grinder.xml",
+          "source_xml_url": "data/nombank_sources/grinder.xml",
+          "source_xml_sha256": "0e1e02091f134c77a24fb1a0ef18fd1e36bdadaa0cf8a56cdb424bcb3d9d6d85",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Moedor dispositivo",
+          "definition": "Grinder agente funcional incorporado conforme sausage-grinder SELF0 original, não operador humano inventado.",
+          "desc_pt": "Moedor dispositivo",
+          "definition_pt": "Grinder agente funcional incorporado conforme sausage-grinder SELF0 original, não operador humano inventado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa moída",
+          "definition": "Thing crushed como pimenta-do-reino independente, sem repetir o REL em1 do composto original.",
+          "desc_pt": "Coisa moída",
+          "definition_pt": "Thing crushed como pimenta-do-reino independente, sem repetir o REL em1 do composto original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado após moer",
+          "definition": "End state explícito, sem carne dourada de outro predicado como resultado.",
+          "desc_pt": "Estado após moer",
+          "definition_pt": "End state explícito, sem carne dourada de outro predicado como resultado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003124_SENT024::moedor::1",
           "sent_ID": "FOLHA_DOC003124_SENT024",
           "text": "Preparei a carne só chapeada de um e de outro lado até dourar, com sal e uma rodada no moedor de pimenta-do-reino.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "moedor",
             "char_start": 87,
             "char_end": 93
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de pimenta-do-reino",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 94,
+                "char_end": 113
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9587,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0a5838302e8b280a",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 87,
+                "char_end": 93
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24
+                    ],
+                    "char_start": 94,
+                    "char_end": 113,
+                    "head_token_id": 24,
+                    "head_form": "pimenta-do-reino",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "moedor · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

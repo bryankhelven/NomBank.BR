@@ -6,62 +6,464 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003202_SENT029::resgate::1",
-          "sent_ID": "FOLHA_DOC003202_SENT029",
-          "text": "E, de quebra, Atala imagina que vai ajudar a melhorar o bairro e iniciar um resgate da região.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "resgate",
-            "char_start": 76,
-            "char_end": 83
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004118_SENT193::resgate::1",
-          "sent_ID": "FOLHA_DOC004118_SENT193",
-          "text": "Um resgate da música negra no Brasil, num outro momento da urbanização brasileira.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "resgate",
-            "char_start": 3,
-            "char_end": 10
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "resgate · acepção 1"
+      "sense_label": "resgate · acepção 1",
+      "sense_id": "s_acaafb040181ca00",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "resgate · acepção 2",
+      "sense_id": "s_91f68ec5d5f37fb3",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_acaafb040181ca00",
+      "frame_id": "f_0acb2fbfbed25ee9",
+      "pt_roleset": null,
+      "sense_label": "resgate · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "restoration.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/restoration.xml",
+          "source_xml_url": "data/nombank_sources/restoration.xml",
+          "source_xml_sha256": "ee15db1781a3059f560b0a107c862e5b35dfce71cdf34551e958ac8917d5dc18",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Restaurador",
+          "definition": "Quem promove recuperação/renovação; pode estar sob projeção.",
+          "desc_pt": "Restaurador",
+          "definition_pt": "Quem promove recuperação/renovação; pode estar sob projeção."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto recuperado",
+          "definition": "Entidade restaurada ou renovada; extensão local de edifícios a região.",
+          "desc_pt": "Objeto recuperado",
+          "definition_pt": "Entidade restaurada ou renovada; extensão local de edifícios a região."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Estado final",
+          "definition": "Estado atingido explicitamente pela restauração.",
+          "desc_pt": "Estado final",
+          "definition_pt": "Estado atingido explicitamente pela restauração."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003202_SENT029::resgate::1",
+          "sent_ID": "FOLHA_DOC003202_SENT029",
+          "text": "E, de quebra, Atala imagina que vai ajudar a melhorar o bairro e iniciar um resgate da região.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "resgate",
+            "char_start": 76,
+            "char_end": 83
+          },
+          "realization": {
+            "Arg0": "Atala",
+            "Arg1": "da região",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 14,
+                "char_end": 19
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 84,
+                "char_end": 93
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 872,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_0acb2fbfbed25ee9",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 76,
+                "char_end": 83
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6
+                    ],
+                    "char_start": 14,
+                    "char_end": 19,
+                    "head_token_id": 6,
+                    "head_form": "Atala",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 84,
+                    "char_end": 93,
+                    "head_token_id": 21,
+                    "head_form": "região",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_acaafb040181ca00",
+      "frame_id": "f_eba5eaf84f31fc25",
+      "pt_roleset": null,
+      "sense_label": "resgate · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "recovery.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/recovery.xml",
+          "source_xml_url": "data/nombank_sources/recovery.xml",
+          "source_xml_sha256": "a12bcef0648c9e2f978de419c1e92a97b1ab74cf80ef54fda1e62e07616597e2",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Recuperador",
+          "definition": "Entidade que retoma/recupera algo.",
+          "desc_pt": "Recuperador",
+          "definition_pt": "Entidade que retoma/recupera algo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa retomada",
+          "definition": "Objeto recuperado, inclusive tradição cultural por extensão local.",
+          "desc_pt": "Coisa retomada",
+          "definition_pt": "Objeto recuperado, inclusive tradição cultural por extensão local."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Fonte",
+          "definition": "De onde a coisa é recuperada, sem confundir marco temporal.",
+          "desc_pt": "Fonte",
+          "definition_pt": "De onde a coisa é recuperada, sem confundir marco temporal."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004118_SENT193::resgate::1",
+          "sent_ID": "FOLHA_DOC004118_SENT193",
+          "text": "Um resgate da música negra no Brasil, num outro momento da urbanização brasileira.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "resgate",
+            "char_start": 3,
+            "char_end": 10
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da música negra no Brasil",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 11,
+                "char_end": 36
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3668,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_eba5eaf84f31fc25",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 11,
+                    "char_end": 36,
+                    "head_token_id": 5,
+                    "head_form": "música",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_91f68ec5d5f37fb3",
+      "frame_id": "f_cb807cae65feb9cd",
+      "pt_roleset": null,
+      "sense_label": "resgate · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rescue.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rescue.xml",
+          "source_xml_url": "data/nombank_sources/rescue.xml",
+          "source_xml_sha256": "e81083067d68ad993e1c9d3d0ca819a65a3bfa94c1bf72db487428f7c393ef82",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Salvador",
+          "definition": "Agente do salvamento.",
+          "desc_pt": "Salvador",
+          "definition_pt": "Agente do salvamento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Entidade salva",
+          "definition": "Pessoa/entidade resgatada, inclusive explicitada pela ação participante no mesmo salvamento.",
+          "desc_pt": "Entidade salva",
+          "definition_pt": "Pessoa/entidade resgatada, inclusive explicitada pela ação participante no mesmo salvamento."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem do perigo",
+          "definition": "De que ameaça/situação a entidade é salva; não simples instrumento ou local.",
+          "desc_pt": "Origem do perigo",
+          "definition_pt": "De que ameaça/situação a entidade é salva; não simples instrumento ou local."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002060_SENT005::resgate::1",
           "sent_ID": "FOLHA_DOC002060_SENT005",
           "text": "Um funcionário do festival fez o resgate, também pela tirolesa, se atrelando ao usuário.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "resgate",
             "char_start": 33,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Um funcionário do festival",
+            "Arg1": "ao usuário",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 26
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 77,
+                "char_end": 87
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 14118,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_cb807cae65feb9cd",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "char_start": 0,
+                    "char_end": 26,
+                    "head_token_id": 2,
+                    "head_form": "funcionário",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 77,
+                    "char_end": 87,
+                    "head_token_id": 19,
+                    "head_form": "usuário",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "resgate · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

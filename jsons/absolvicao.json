@@ -6,38 +6,204 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "absolvição · acepção 1",
+      "sense_id": "s_5ebd82caf8d67562",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5ebd82caf8d67562",
+      "frame_id": "f_a6ccdc475323d6bc",
+      "pt_roleset": null,
+      "sense_label": "absolvição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "acquittal.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/acquittal.xml",
+          "source_xml_url": "data/nombank_sources/acquittal.xml",
+          "source_xml_sha256": "fc68d5487214b7278158aa1e66c50069a4e41ccc85a0583dbc701e9188877ced",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Absolvedor",
+          "definition": "Quem afasta culpa/condenação, não defesa que acredita ou manifestante opositor.",
+          "desc_pt": "Absolvedor",
+          "definition_pt": "Quem afasta culpa/condenação, não defesa que acredita ou manifestante opositor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Absolvido",
+          "definition": "Pessoa de cuja absolvição se fala, inclusive sob crença projetada.",
+          "desc_pt": "Absolvido",
+          "definition_pt": "Pessoa de cuja absolvição se fala, inclusive sob crença projetada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Culpa mencionada",
+          "definition": "Explicit mention of guilt, não ausência de provas ou motivo de protesto como crime automático.",
+          "desc_pt": "Culpa mencionada",
+          "definition_pt": "Explicit mention of guilt, não ausência de provas ou motivo de protesto como crime automático."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003077_SENT010::absolvição::1",
           "sent_ID": "FOLHA_DOC003077_SENT010",
           "text": "Denunciando o racismo institucional, os manifestantes anunciaram que pretendiam levar a cabo ações de bloqueio e protesto durante vários dias contra o veredicto de absolvição.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "absolvição",
             "char_start": 164,
             "char_end": 174
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 7667,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a6ccdc475323d6bc",
+          "argument_details": {
+            "predicate_token_ids": [
+              26
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 164,
+                "char_end": 174
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003109_SENT006::absolvição::1",
           "sent_ID": "FOLHA_DOC003109_SENT006",
           "text": "A defesa dos outros três réus preferiu não recorrer de decisão porque afirma acreditar na absolvição de todos os réus por absoluta falta de provas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "absolvição",
             "char_start": 90,
             "char_end": 100
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de todos os réus",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 101,
+                "char_end": 117
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 10462,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a6ccdc475323d6bc",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 100
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 101,
+                    "char_end": 117,
+                    "head_token_id": 22,
+                    "head_form": "réus",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "absolvição · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

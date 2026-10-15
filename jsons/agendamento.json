@@ -6,24 +6,158 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "agendamento · acepção 1",
+      "sense_id": "s_e435bcd38aa64eaf",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e435bcd38aa64eaf",
+      "frame_id": "f_d735d7d595fb9ac4",
+      "pt_roleset": null,
+      "sense_label": "agendamento · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "scheduling.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/scheduling.xml",
+          "source_xml_url": "data/nombank_sources/scheduling.xml",
+          "source_xml_sha256": "2b58bafa1d8820379656472bd35398506bca5f81a09b23d3ef429b4f283eac07",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Agendador",
+          "definition": "Planner que inclui em agenda.",
+          "desc_pt": "Agendador",
+          "definition_pt": "Planner que inclui em agenda."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Evento agendado",
+          "definition": "Theme/evento identificado, sem grupos convertidos em eventos.",
+          "desc_pt": "Evento agendado",
+          "definition_pt": "Theme/evento identificado, sem grupos convertidos em eventos."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário do agendamento",
+          "definition": "Beneficiary como grupos visitantes, conforme for plants original.",
+          "desc_pt": "Beneficiário do agendamento",
+          "definition_pt": "Beneficiary como grupos visitantes, conforme for plants original."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Data agendada",
+          "definition": "Time of event explicitado, sem sob agendamento como data determinada.",
+          "desc_pt": "Data agendada",
+          "definition_pt": "Time of event explicitado, sem sob agendamento como data determinada."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003184_SENT018::agendamento::1",
           "sent_ID": "FOLHA_DOC003184_SENT018",
           "text": "Grupos escolares são bem-vindos, sob agendamento, informa o site do evento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "agendamento",
             "char_start": 37,
             "char_end": 48
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Grupos escolares",
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj",
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 16
+              }
+            ],
+            "Arg3": []
+          },
+          "target_instance_id": 8845,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d735d7d595fb9ac4",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 37,
+                "char_end": 48
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 16,
+                    "head_token_id": 1,
+                    "head_form": "Grupos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "agendamento · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

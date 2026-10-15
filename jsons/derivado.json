@@ -6,20 +6,146 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_13df0766d7762c69",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_13df0766d7762c69",
+      "frame_id": "f_753968cb0609cf84",
+      "pt_roleset": "derivado.02",
+      "sense_label": "derivado.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "derivative.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/derivative.xml",
+          "source_xml_url": "data/nombank_sources/derivative.xml",
+          "source_xml_sha256": "4fe6c44e35521587d30a1afaf3d8687c311fed25f103d01e4b629e72e5e1f81a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da derivação",
+          "definition": "Creator de produto/substância derivada, não produção que cai como entidade humana.",
+          "desc_pt": "Autor da derivação",
+          "definition_pt": "Creator de produto/substância derivada, não produção que cai como entidade humana."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Produto derivado",
+          "definition": "Thing created incorporado conforme derivatives REF1 original, sem combustível coordenado como produto deste REL automaticamente.",
+          "desc_pt": "Produto derivado",
+          "definition_pt": "Thing created incorporado conforme derivatives REF1 original, sem combustível coordenado como produto deste REL automaticamente."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário",
+          "definition": "Beneficiary n2/source3 literal.",
+          "desc_pt": "Beneficiário",
+          "definition_pt": "Beneficiary n2/source3 literal."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Matéria de origem",
+          "definition": "Source n3/source2, sem petróleo/resina inferidos por assunto.",
+          "desc_pt": "Matéria de origem",
+          "definition_pt": "Source n3/source2, sem petróleo/resina inferidos por assunto."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Atributo do derivado",
+          "definition": "Secondary predication particular, não em geral como natureza de produto definida.",
+          "desc_pt": "Atributo do derivado",
+          "definition_pt": "Secondary predication particular, não em geral como natureza de produto definida."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004024_SENT021::derivado::1",
           "sent_ID": "FOLHA_DOC004024_SENT021",
           "text": "Mas a produção caiu em torno de 6,5%, seja de derivados em geral ou de combustíveis.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "derivados",
             "char_start": 46,
             "char_end": 55
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null,
+            "Arg3": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [],
+            "Arg3": [],
+            "Arg4": []
+          },
+          "target_instance_id": 393,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_753968cb0609cf84",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 55
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
       "syntactic_profile": {}

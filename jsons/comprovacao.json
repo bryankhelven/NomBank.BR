@@ -6,24 +6,163 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "comprovação · acepção 1",
+      "sense_id": "s_7b7000d269672ace",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_7b7000d269672ace",
+      "frame_id": "f_3b1784a3e2134a8a",
+      "pt_roleset": null,
+      "sense_label": "comprovação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "proof.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/proof.xml",
+          "source_xml_url": "data/nombank_sources/proof.xml",
+          "source_xml_sha256": "31f1334ed177e685ef303d793bc4faecaffc598c15975b350fb2d1bd0e5182fe",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Comprovador ou evidência",
+          "definition": "Prover que demonstra verdade; quando evidência incorporada no REL há proof REF0 original sem pessoa inventada.",
+          "desc_pt": "Comprovador ou evidência",
+          "definition_pt": "Prover que demonstra verdade; quando evidência incorporada no REL há proof REF0 original sem pessoa inventada."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa comprovada",
+          "definition": "Proposition/conteúdo a demonstrar, como renda.",
+          "desc_pt": "Coisa comprovada",
+          "definition_pt": "Proposition/conteúdo a demonstrar, como renda."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário da prova",
+          "definition": "Beneficiary/proved-to que exige demonstração, não diretor fonte da fala automaticamente.",
+          "desc_pt": "Destinatário da prova",
+          "definition_pt": "Beneficiary/proved-to que exige demonstração, não diretor fonte da fala automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002017_SENT020::comprovação::1",
           "sent_ID": "FOLHA_DOC002017_SENT020",
           "text": "Guto Schiavon, diretor de operações da Foxbit, explica que a empresa exige ainda comprovação de renda para transações acima de R$ 25 mil.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "comprovação",
             "char_start": 81,
             "char_end": 92
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de renda",
+            "Arg2": "a empresa"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 93,
+                "char_end": 101
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ]
+          },
+          "target_instance_id": 7842,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3b1784a3e2134a8a",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 92
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19
+                    ],
+                    "char_start": 93,
+                    "char_end": 101,
+                    "head_token_id": 19,
+                    "head_form": "renda",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 68,
+                    "head_token_id": 14,
+                    "head_form": "empresa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "comprovação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

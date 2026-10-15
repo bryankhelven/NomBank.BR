@@ -6,24 +6,163 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "importador · acepção 1",
+      "sense_id": "s_29921a41186b75ea",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_29921a41186b75ea",
+      "frame_id": "f_796708ba3646094d",
+      "pt_roleset": null,
+      "sense_label": "importador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "importer.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/importer.xml",
+          "source_xml_url": "data/nombank_sources/importer.xml",
+          "source_xml_sha256": "eab786b9c1cc473d168e5bac339e0a24ec825d130a453855849b27a678e45d84",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Empresa importadora",
+          "definition": "Agent expresso em empresas.",
+          "desc_pt": "Empresa importadora",
+          "definition_pt": "Agent expresso em empresas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Mercadoria importada",
+          "definition": "Theme carros.",
+          "desc_pt": "Mercadoria importada",
+          "definition_pt": "Theme carros."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Beneficiário da importação",
+          "definition": "Beneficiary expresso, sem país de origem em papel não inventariado.",
+          "desc_pt": "Beneficiário da importação",
+          "definition_pt": "Beneficiary expresso, sem país de origem em papel não inventariado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004123_SENT002::importador::1",
           "sent_ID": "FOLHA_DOC004123_SENT002",
           "text": "As empresas importadoras de carros aguardam ansiosamente pelo dia 31 de dezembro deste ano.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "importadoras",
             "char_start": 12,
             "char_end": 24
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "As empresas",
+            "Arg1": "de carros",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 11
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 25,
+                "char_end": 34
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6040,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_796708ba3646094d",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 24
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 11,
+                    "head_token_id": 2,
+                    "head_form": "empresas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5
+                    ],
+                    "char_start": 25,
+                    "char_end": 34,
+                    "head_token_id": 5,
+                    "head_form": "carros",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "importador · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

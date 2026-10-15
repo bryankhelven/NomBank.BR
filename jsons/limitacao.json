@@ -6,76 +6,498 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004007_SENT007::limitação::1",
-          "sent_ID": "FOLHA_DOC004007_SENT007",
-          "text": "Minha tia do interior me ligou para explicar toda a limitação locomotiva causada por seus esporões.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "limitação",
-            "char_start": 52,
-            "char_end": 61
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC000163_SENT039::limitação::1",
-          "sent_ID": "FOLHA_DOC000163_SENT039",
-          "text": "Certamente, deveríamos ouvir os professores quando expressam as limitações que sentem em sua capacidade de ensinar o currículo.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "limitações",
-            "char_start": 64,
-            "char_end": 74
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "limitação · acepção 1"
+      "sense_label": "limitação · acepção 1",
+      "sense_id": "s_17f3d6d7cb661162",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "limitação · acepção 2",
+      "sense_id": "s_30f1613adfbb4161",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_17f3d6d7cb661162",
+      "frame_id": "f_d93e97b6923c89a0",
+      "pt_roleset": null,
+      "sense_label": "limitação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "limitation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/limitation.xml",
+          "source_xml_url": "data/nombank_sources/limitation.xml",
+          "source_xml_sha256": "0164b72b644aba07d42e4b20fcd82d2f4efdcaa425970f4310f5415106a3808d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "limitador",
+          "definition": "Entidade que impõe ou causa restrição, com adaptação a causa não humana quando relação causal está explícita. Dominação descrita no cenário não prova causalidade específica.",
+          "desc_pt": "limitador",
+          "definition_pt": "Entidade que impõe ou causa restrição, com adaptação a causa não humana quando relação causal está explícita. Dominação descrita no cenário não prova causalidade específica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade ou capacidade limitada",
+          "definition": "Coisa, domínio ou atividade afetada pela restrição, inclusive realização possessiva ou adjetival explicitamente justificada.",
+          "desc_pt": "entidade ou capacidade limitada",
+          "definition_pt": "Coisa, domínio ou atividade afetada pela restrição, inclusive realização possessiva ou adjetival explicitamente justificada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "limite",
+          "definition": "Valor, teto ou limite independente explicitamente expresso. Exemplos ingleses que referem o próprio REL não autorizam duplicá-lo em ArgN neste corpus.",
+          "desc_pt": "limite",
+          "definition_pt": "Valor, teto ou limite independente explicitamente expresso. Exemplos ingleses que referem o próprio REL não autorizam duplicá-lo em ArgN neste corpus."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004007_SENT007::limitação::1",
+          "sent_ID": "FOLHA_DOC004007_SENT007",
+          "text": "Minha tia do interior me ligou para explicar toda a limitação locomotiva causada por seus esporões.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "limitação",
+            "char_start": 52,
+            "char_end": 61
+          },
+          "realization": {
+            "Arg0": "por seus esporões",
+            "Arg1": "locomotiva",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "obl:agent",
+            "Arg1": "amod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 81,
+                "char_end": 98
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 62,
+                "char_end": 72
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 637,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d93e97b6923c89a0",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 52,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 81,
+                    "char_end": 98,
+                    "head_token_id": 17,
+                    "head_form": "esporões",
+                    "head_deprel": "obl:agent"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 62,
+                    "char_end": 72,
+                    "head_token_id": 13,
+                    "head_form": "locomotiva",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC000163_SENT039::limitação::1",
+          "sent_ID": "FOLHA_DOC000163_SENT039",
+          "text": "Certamente, deveríamos ouvir os professores quando expressam as limitações que sentem em sua capacidade de ensinar o currículo.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "limitações",
+            "char_start": 64,
+            "char_end": 74
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "em sua capacidade de ensinar o currículo",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 86,
+                "char_end": 126
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 1550,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_d93e97b6923c89a0",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 86,
+                    "char_end": 126,
+                    "head_token_id": 15,
+                    "head_form": "capacidade",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obl:agent": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_30f1613adfbb4161",
+      "frame_id": "f_8bfb3ef07f56af05",
+      "pt_roleset": null,
+      "sense_label": "limitação · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "limitation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/limitation.xml",
+          "source_xml_url": "data/nombank_sources/limitation.xml",
+          "source_xml_sha256": "0164b72b644aba07d42e4b20fcd82d2f4efdcaa425970f4310f5415106a3808d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "limitador",
+          "definition": "Entidade que impõe ou causa restrição, com adaptação a causa não humana quando relação causal está explícita. Dominação descrita no cenário não prova causalidade específica.",
+          "desc_pt": "limitador",
+          "definition_pt": "Entidade que impõe ou causa restrição, com adaptação a causa não humana quando relação causal está explícita. Dominação descrita no cenário não prova causalidade específica."
+        },
+        {
+          "id": "Arg1",
+          "desc": "entidade ou capacidade limitada",
+          "definition": "Coisa, domínio ou atividade afetada pela restrição, inclusive realização possessiva ou adjetival explicitamente justificada.",
+          "desc_pt": "entidade ou capacidade limitada",
+          "definition_pt": "Coisa, domínio ou atividade afetada pela restrição, inclusive realização possessiva ou adjetival explicitamente justificada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "limite",
+          "definition": "Valor, teto ou limite independente explicitamente expresso. Exemplos ingleses que referem o próprio REL não autorizam duplicá-lo em ArgN neste corpus.",
+          "desc_pt": "limite",
+          "definition_pt": "Valor, teto ou limite independente explicitamente expresso. Exemplos ingleses que referem o próprio REL não autorizam duplicá-lo em ArgN neste corpus."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001901_SENT027::limitação::1",
           "sent_ID": "FOLHA_DOC001901_SENT027",
           "text": "É onde descobre caminhos para as limitações que a idade vai impondo (\"não consigo mais cuidar da horta, então vou plantar mandioca\").",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "limitações",
             "char_start": 33,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a idade",
+            "Arg1": "cuidar da horta",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "xcomp",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 48,
+                "char_end": 55
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 87,
+                "char_end": 102
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9230,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8bfb3ef07f56af05",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 48,
+                    "char_end": 55,
+                    "head_token_id": 10,
+                    "head_form": "idade",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 87,
+                    "char_end": 102,
+                    "head_token_id": 18,
+                    "head_form": "cuidar",
+                    "head_deprel": "xcomp"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002010_SENT013::limitação::1",
           "sent_ID": "FOLHA_DOC002010_SENT013",
           "text": "Isso influenciou sua maneira de perceber o gênero e suas limitações em um mundo político dominado pelos homens.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "limitações",
             "char_start": 57,
             "char_end": 67
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "suas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 52,
+                "char_end": 56
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 11965,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8bfb3ef07f56af05",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 57,
+                "char_end": 67
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10
+                    ],
+                    "char_start": 52,
+                    "char_end": 56,
+                    "head_token_id": 10,
+                    "head_form": "suas",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "limitação · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "xcomp": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

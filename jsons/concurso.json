@@ -6,66 +6,345 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "concurso · acepção 1",
+      "sense_id": "s_402f8295cf4e7330",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_402f8295cf4e7330",
+      "frame_id": "f_6ec215f1c6f888fa",
+      "pt_roleset": null,
+      "sense_label": "concurso · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "contest.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/contest.xml",
+          "source_xml_url": "data/nombank_sources/contest.xml",
+          "source_xml_sha256": "1d768de7b71a4a4d904a448b0e8b75d965e65a0bcd1e98edce8650a998d16929",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Concorrente ou conjunto concorrente",
+          "definition": "Participante(s) da competição; conjunto simétrico pode ocupar um slot como no exemplo contest between auto giants.",
+          "desc_pt": "Concorrente ou conjunto concorrente",
+          "definition_pt": "Participante(s) da competição; conjunto simétrico pode ocupar um slot como no exemplo contest between auto giants."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Oponente separado",
+          "definition": "Adversário explicitamente distinto do participante Arg0.",
+          "desc_pt": "Oponente separado",
+          "definition_pt": "Adversário explicitamente distinto do participante Arg0."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Prêmio ou objetivo disputado",
+          "definition": "Aquilo em disputa; produto vencedor não equivale automaticamente a prêmio.",
+          "desc_pt": "Prêmio ou objetivo disputado",
+          "definition_pt": "Aquilo em disputa; produto vencedor não equivale automaticamente a prêmio."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002024_SENT005::concurso::1",
           "sent_ID": "FOLHA_DOC002024_SENT005",
           "text": "A programação ocorre em quatro palcos simultâneos e inclui debates, entrevistas com Youtubers, palestras e um concurso de criadores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "concurso",
             "char_start": 110,
             "char_end": 118
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de criadores",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 119,
+                "char_end": 131
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 981,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6ec215f1c6f888fa",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 110,
+                "char_end": 118
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20,
+                      21
+                    ],
+                    "char_start": 119,
+                    "char_end": 131,
+                    "head_token_id": 21,
+                    "head_form": "criadores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003073_SENT007::concurso::1",
           "sent_ID": "FOLHA_DOC003073_SENT007",
           "text": "Adotou o nome artístico Wic Cris e fazia questão de convidar modelos e misses da região para mostrar seu trabalho em cursos e concursos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "concursos",
             "char_start": 126,
             "char_end": 135
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 5383,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6ec215f1c6f888fa",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 126,
+                "char_end": 135
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003043_SENT010::concurso::1",
           "sent_ID": "FOLHA_DOC003043_SENT010",
           "text": "Dias depois, a direção da escola recebeu uma ligação da prefeitura explicando que elas não poderiam participar do concurso por serem menores de idade, mas foram convidadas para a consultoria mirim.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "concurso",
             "char_start": 114,
             "char_end": 122
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "elas",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 82,
+                "char_end": 86
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12178,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6ec215f1c6f888fa",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 114,
+                "char_end": 122
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      17
+                    ],
+                    "char_start": 82,
+                    "char_end": 86,
+                    "head_token_id": 17,
+                    "head_form": "elas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003208_SENT073::concurso::1",
           "sent_ID": "FOLHA_DOC003208_SENT073",
           "text": "No final, um concurso ainda elege a melhor IPA das redondezas!",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "concurso",
             "char_start": 13,
             "char_end": 21
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 15570,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_6ec215f1c6f888fa",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 13,
+                "char_end": 21
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "concurso · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

@@ -6,24 +6,143 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "profanação · acepção 1",
+      "sense_id": "s_d793d3c75dd9f3a9",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d793d3c75dd9f3a9",
+      "frame_id": "f_5b5041c9205edbfb",
+      "pt_roleset": null,
+      "sense_label": "profanação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "desecration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/desecration.xml",
+          "source_xml_url": "data/nombank_sources/desecration.xml",
+          "source_xml_sha256": "8355e44c59d61594a0a9f4fe155186fdc1c95f01b00494b1736fb9cc358d24b3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Profanador",
+          "definition": "Agent que viola santidade, sem locutor que critica lei automaticamente.",
+          "desc_pt": "Profanador",
+          "definition_pt": "Agent que viola santidade, sem locutor que critica lei automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa profanada",
+          "definition": "Theme potencialmente violado sob proteção/modal, como pedaço de pano.",
+          "desc_pt": "Coisa profanada",
+          "definition_pt": "Theme potencialmente violado sob proteção/modal, como pedaço de pano."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento de profanação",
+          "definition": "Instrument explícito, sem legislações da analogia como instrumento.",
+          "desc_pt": "Instrumento de profanação",
+          "definition_pt": "Instrument explícito, sem legislações da analogia como instrumento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001102_SENT015::profanação::1",
           "sent_ID": "FOLHA_DOC001102_SENT015",
           "text": "Por mais que eu tente entender os sentimentos patrióticos, não consigo levar muito a sério a ideia -que não fica a dever nada às legislações de bruxaria da Idade Média- de que um pedaço de pano deva ser protegido contra maus-tratos e outras formas de profanação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "profanação",
             "char_start": 251,
             "char_end": 261
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "um pedaço de pano",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 176,
+                "char_end": 193
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 7158,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_5b5041c9205edbfb",
+          "argument_details": {
+            "predicate_token_ids": [
+              51
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 251,
+                "char_end": 261
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      38,
+                      39,
+                      40,
+                      41
+                    ],
+                    "char_start": 176,
+                    "char_end": 193,
+                    "head_token_id": 39,
+                    "head_form": "pedaço",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "profanação · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

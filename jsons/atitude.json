@@ -6,164 +6,987 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "atitude · acepção 1",
+      "sense_id": "s_4c4bb07842f77a1e",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_4c4bb07842f77a1e",
+      "frame_id": "f_8da64cf943c44431",
+      "pt_roleset": null,
+      "sense_label": "atitude · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "behavior.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/behavior.xml",
+          "source_xml_url": "data/nombank_sources/behavior.xml",
+          "source_xml_sha256": "0967b073cad23cd9263e9a6c7dce0a8d7dcdc69a6b486266e655051e8a070afc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Quem procede",
+          "definition": "Entity behaving original of fellow New Yorkers; pessoa/instituição com conduta atribuída, sem diagnosticar emoções.",
+          "desc_pt": "Quem procede",
+          "definition_pt": "Entity behaving original of fellow New Yorkers; pessoa/instituição com conduta atribuída, sem diagnosticar emoções."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Modo de proceder",
+          "definition": "Manner original voting/self-destructive; anormal,assim,infantis propostas locais. Procedimento do gloss não forçado para emotion de attitude.01.",
+          "desc_pt": "Modo de proceder",
+          "definition_pt": "Manner original voting/self-destructive; anormal,assim,infantis propostas locais. Procedimento do gloss não forçado para emotion de attitude.01."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003188_SENT027::atitude::1",
           "sent_ID": "FOLHA_DOC003188_SENT027",
           "text": "Apavorada, me dediquei a picar papel e a tentar entender essa atitude anormal da polícia política.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 62,
             "char_end": 69
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da polícia política",
+            "Arg1": "anormal"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 78,
+                "char_end": 97
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 70,
+                "char_end": 77
+              }
+            ]
+          },
+          "target_instance_id": 1590,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8da64cf943c44431",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 69
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 78,
+                    "char_end": 97,
+                    "head_token_id": 17,
+                    "head_form": "polícia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14
+                    ],
+                    "char_start": 70,
+                    "char_end": 77,
+                    "head_token_id": 14,
+                    "head_form": "anormal",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003020_SENT033::atitude::1",
           "sent_ID": "FOLHA_DOC003020_SENT033",
           "text": "Essas tempestades não vão mudar o que eles dizem em público, mas podem vir a causar uma mudança de atitude, mesmo que seja apenas nos bastidores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 99,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 3857,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8da64cf943c44431",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 99,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003264_SENT010::atitude::1",
           "sent_ID": "FOLHA_DOC003264_SENT010",
           "text": "Prometo que aprenderei com isso e jamais tomarei qualquer atitude assim mais uma vez.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 58,
             "char_end": 65
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "assim"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "advmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 66,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 5774,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8da64cf943c44431",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 65
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 66,
+                    "char_end": 71,
+                    "head_token_id": 11,
+                    "head_form": "assim",
+                    "head_deprel": "advmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003165_SENT016::atitude::1",
           "sent_ID": "FOLHA_DOC003165_SENT016",
           "text": "Ele só reclama, simula ou comete atitudes infantis, daquelas que caracterizam menos um mau menino, mas apenas um garoto mimado, mal-educado, irritadiço, incapaz de conviver com frustrações, provocações e safanões.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitudes",
             "char_start": 33,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "Ele",
+            "Arg1": "infantis"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 42,
+                "char_end": 50
+              }
+            ]
+          },
+          "target_instance_id": 7498,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8da64cf943c44431",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "Ele",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 42,
+                    "char_end": 50,
+                    "head_token_id": 9,
+                    "head_form": "infantis",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
         },
+        "amod": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "advmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
+    },
+    {
+      "sense_id": "s_4c4bb07842f77a1e",
+      "frame_id": "f_3c3c708e3c53ce9a",
+      "pt_roleset": null,
+      "sense_label": "atitude · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "behavior.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/behavior.xml",
+          "source_xml_url": "data/nombank_sources/behavior.xml",
+          "source_xml_sha256": "0967b073cad23cd9263e9a6c7dce0a8d7dcdc69a6b486266e655051e8a070afc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade que age",
+          "definition": "Agent original fellow New Yorkers; classe política/sociedade,artista,meninas e alguém portadores de conduta/boas maneiras. Classificador não executor.",
+          "desc_pt": "Entidade que age",
+          "definition_pt": "Agent original fellow New Yorkers; classe política/sociedade,artista,meninas e alguém portadores de conduta/boas maneiras. Classificador não executor."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Modo ou conteúdo da conduta",
+          "definition": "Manner original voting/self-destructive; pouco profissional,fácil e defender continuidade aplicações locais. Atitude emoção de attitude.01 não define procedimento PT.",
+          "desc_pt": "Modo ou conteúdo da conduta",
+          "definition_pt": "Manner original voting/self-destructive; pouco profissional,fácil e defender continuidade aplicações locais. Atitude emoção de attitude.01 não define procedimento PT."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003066_SENT046::atitude::1",
           "sent_ID": "FOLHA_DOC003066_SENT046",
           "text": "Quando entendeu a situação, Yan classificou a atitude como \"pouco profissional\".",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 46,
             "char_end": 53
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pouco profissional"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 60,
+                "char_end": 78
+              }
+            ]
+          },
+          "target_instance_id": 11387,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3c3c708e3c53ce9a",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 53
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13
+                    ],
+                    "char_start": 60,
+                    "char_end": 78,
+                    "head_token_id": 13,
+                    "head_form": "profissional",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003037_SENT015::atitude::1",
           "sent_ID": "FOLHA_DOC003037_SENT015",
           "text": "A superação desse desafio passaria por uma mudança da atitude da classe política e da sociedade civil em geral.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 54,
             "char_end": 61
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da classe política e da sociedade civil em geral",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 62,
+                "char_end": 110
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 12218,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3c3c708e3c53ce9a",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 54,
+                "char_end": 61
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 62,
+                    "char_end": 110,
+                    "head_token_id": 15,
+                    "head_form": "classe",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003298_SENT009::atitude::1",
           "sent_ID": "FOLHA_DOC003298_SENT009",
           "text": "Não importava o conhecimento técnico, mas a atitude e a intenção do artista.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 44,
             "char_end": 51
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do artista",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 65,
+                "char_end": 75
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 12373,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3c3c708e3c53ce9a",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 65,
+                    "char_end": 75,
+                    "head_token_id": 15,
+                    "head_form": "artista",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001464_SENT021::atitude::1",
           "sent_ID": "FOLHA_DOC001464_SENT021",
           "text": "Vejo como absolutamente normal e louvável a atitude das meninas de defenderem a continuidade do trabalho.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 44,
             "char_end": 51
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "das meninas",
+            "Arg1": "de defenderem a continuidade do trabalho"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "acl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 52,
+                "char_end": 63
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 64,
+                "char_end": 104
+              }
+            ]
+          },
+          "target_instance_id": 12663,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3c3c708e3c53ce9a",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 44,
+                "char_end": 51
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 52,
+                    "char_end": 63,
+                    "head_token_id": 11,
+                    "head_form": "meninas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 64,
+                    "char_end": 104,
+                    "head_token_id": 13,
+                    "head_form": "defenderem",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
         },
+        "nmod": {
+          "Arg0": 3,
+          "Arg1": 0
+        },
+        "acl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_4c4bb07842f77a1e",
+      "frame_id": "f_9c843ce82e7d4da3",
+      "pt_roleset": null,
+      "sense_label": "atitude · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "behavior.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/behavior.xml",
+          "source_xml_url": "data/nombank_sources/behavior.xml",
+          "source_xml_sha256": "0967b073cad23cd9263e9a6c7dce0a8d7dcdc69a6b486266e655051e8a070afc",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Agente da conduta",
+          "definition": "Quem procede de determinada forma, sem denunciante ou reclamante automaticamente tomado por agente.",
+          "desc_pt": "Agente da conduta",
+          "definition_pt": "Quem procede de determinada forma, sem denunciante ou reclamante automaticamente tomado por agente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Modo de proceder",
+          "definition": "Conduta/modo descritos, incluindo colaboração em aposição; atividade circunstancial não descreve necessariamente outras atitudes.",
+          "desc_pt": "Modo de proceder",
+          "definition_pt": "Conduta/modo descritos, incluindo colaboração em aposição; atividade circunstancial não descreve necessariamente outras atitudes."
+        }
+      ],
+      "instances": [
         {
           "instance_id": "FOLHA_DOC003046_SENT018::atitude::1",
           "sent_ID": "FOLHA_DOC003046_SENT018",
           "text": "Aliás, muitas dessas pessoas engajadas no processo não estão só pelo dinheiro, mas para colaborar com a comunidade, atitude que devemos incentivar se queremos viver em uma sociedade realmente evoluída.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 116,
             "char_end": 123
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "muitas dessas pessoas engajadas no processo",
+            "Arg1": "para colaborar com a comunidade"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "conj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 7,
+                "char_end": 50
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 83,
+                "char_end": 114
+              }
+            ]
+          },
+          "target_instance_id": 12791,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9c843ce82e7d4da3",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 116,
+                "char_end": 123
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 7,
+                    "char_end": 50,
+                    "head_token_id": 3,
+                    "head_form": "muitas",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "char_start": 83,
+                    "char_end": 114,
+                    "head_token_id": 20,
+                    "head_form": "colaborar",
+                    "head_deprel": "conj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC001065_SENT029::atitude::1",
           "sent_ID": "FOLHA_DOC001065_SENT029",
           "text": "Garotinho também reclamou de outras atitudes da Polícia Federal ao realizar a prisão.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitudes",
             "char_start": 36,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "da Polícia Federal",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 45,
+                "char_end": 63
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 13357,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9c843ce82e7d4da3",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 45,
+                    "char_end": 63,
+                    "head_token_id": 9,
+                    "head_form": "Polícia",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003066_SENT064::atitude::1",
           "sent_ID": "FOLHA_DOC003066_SENT064",
           "text": "A empresa também orienta que usuários denunciem esse tipo de atitude por meio do aplicativo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "atitude",
             "char_start": 61,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 15684,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_9c843ce82e7d4da3",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "atitude · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "conj": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

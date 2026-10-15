@@ -6,24 +6,124 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "ilustrador · acepção 1",
+      "sense_id": "s_e3e7e66aca302499",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e3e7e66aca302499",
+      "frame_id": "f_33593c853d4d7d59",
+      "pt_roleset": null,
+      "sense_label": "ilustrador · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "artist.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/artist.xml",
+          "source_xml_url": "data/nombank_sources/artist.xml",
+          "source_xml_sha256": "85a37b953a49678ed8f916f8b95a5d49656f717a2aa9ac4e5c5e1860e7d410d0",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Ilustrador",
+          "definition": "Agent artístico restrito a criador de desenhos/ilustrações, nome independente quando disponível.",
+          "desc_pt": "Ilustrador",
+          "definition_pt": "Agent artístico restrito a criador de desenhos/ilustrações, nome independente quando disponível."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Tema artístico",
+          "definition": "Topic do trabalho ilustrado explicitado, sem adaptação geral automaticamente trabalho exclusivo.",
+          "desc_pt": "Tema artístico",
+          "definition_pt": "Topic do trabalho ilustrado explicitado, sem adaptação geral automaticamente trabalho exclusivo."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004022_SENT007::ilustrador::1",
           "sent_ID": "FOLHA_DOC004022_SENT007",
           "text": "A adaptação foi feita por dois israelenses, o ilustrador David Polonsky e o cineasta Ari Folman.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "ilustrador",
             "char_start": 46,
             "char_end": 56
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "David Polonsky",
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 57,
+                "char_end": 71
+              }
+            ],
+            "Arg1": []
+          },
+          "target_instance_id": 15171,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_33593c853d4d7d59",
+          "argument_details": {
+            "predicate_token_ids": [
+              10
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 46,
+                "char_end": 56
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11,
+                      12
+                    ],
+                    "char_start": 57,
+                    "char_end": 71,
+                    "head_token_id": 11,
+                    "head_form": "David",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "ilustrador · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0
+        }
+      }
     }
   ]
 }

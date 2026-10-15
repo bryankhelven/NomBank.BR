@@ -6,24 +6,125 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "dispersão · acepção 1",
+      "sense_id": "s_fe3e318d1eff70fb",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fe3e318d1eff70fb",
+      "frame_id": "f_7e59133281fb444f",
+      "pt_roleset": null,
+      "sense_label": "dispersão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "spread.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/spread.xml",
+          "source_xml_url": "data/nombank_sources/spread.xml",
+          "source_xml_sha256": "3b8142b2ae98749712c9151c99fe79d82cff0883368c3f8744937874a8479770",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Coisa difundida",
+          "definition": "Substance coletivo de pessoas espacialmente disperso ou mensagem divulgada por restrição explícita do extend, sem doença literal imposta.",
+          "desc_pt": "Coisa difundida",
+          "definition_pt": "Substance coletivo de pessoas espacialmente disperso ou mensagem divulgada por restrição explícita do extend, sem doença literal imposta."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Caminho ou extensão",
+          "definition": "Path/extent n2/sourceM original numérico mantido emArg2, sem tempo/período como extensão espacial ou novoArgM.",
+          "desc_pt": "Caminho ou extensão",
+          "definition_pt": "Path/extent n2/sourceM original numérico mantido emArg2, sem tempo/período como extensão espacial ou novoArgM."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003014_SENT002::dispersão::1",
           "sent_ID": "FOLHA_DOC003014_SENT002",
           "text": "Depois das 14h, quando os portões da Cidade do Rock são abertos, as duas horas seguintes registram o maior período de dispersão do público.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "dispersão",
             "char_start": 118,
             "char_end": 127
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "do público",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 128,
+                "char_end": 138
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 706,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_7e59133281fb444f",
+          "argument_details": {
+            "predicate_token_ids": [
+              27
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 118,
+                "char_end": 127
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      28,
+                      29,
+                      30
+                    ],
+                    "char_start": 128,
+                    "char_end": 138,
+                    "head_token_id": 30,
+                    "head_form": "público",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "dispersão · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

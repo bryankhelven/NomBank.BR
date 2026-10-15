@@ -6,24 +6,154 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "releitura · acepção 1",
+      "sense_id": "s_072ddc2af92db509",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_072ddc2af92db509",
+      "frame_id": "f_312b12c47997aaaa",
+      "pt_roleset": null,
+      "sense_label": "releitura · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "rendition.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/rendition.xml",
+          "source_xml_url": "data/nombank_sources/rendition.xml",
+          "source_xml_sha256": "4dbbab8236dacef446d05829d0ed1119a253541f847a2bfe126e4a3dea38fa12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Intérprete da releitura",
+          "definition": "Agent criador de nova versão musical como orquestra, conforme rendition musical original.",
+          "desc_pt": "Intérprete da releitura",
+          "definition_pt": "Agent criador de nova versão musical como orquestra, conforme rendition musical original."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Obra reinterpretada",
+          "definition": "Theme/álbum com título e autor completo, sem autor da obra original como intérprete novo automaticamente.",
+          "desc_pt": "Obra reinterpretada",
+          "definition_pt": "Theme/álbum com título e autor completo, sem autor da obra original como intérprete novo automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003312_SENT040::releitura::1",
           "sent_ID": "FOLHA_DOC003312_SENT040",
           "text": "A Orkestra Rumpilezz apresenta hoje releitura do álbum \"Coisas\", de Moacir Santos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "releitura",
             "char_start": 36,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A Orkestra Rumpilezz",
+            "Arg1": "do álbum \"Coisas\", de Moacir Santos"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 20
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 46,
+                "char_end": 81
+              }
+            ]
+          },
+          "target_instance_id": 11149,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_312b12c47997aaaa",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 20,
+                    "head_token_id": 2,
+                    "head_form": "Orkestra",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "char_start": 46,
+                    "char_end": 81,
+                    "head_token_id": 9,
+                    "head_form": "álbum",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "releitura · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

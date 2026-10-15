@@ -6,37 +6,197 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_9a0a6b5ffbac8f30",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_9a0a6b5ffbac8f30",
+      "frame_id": "f_a073baa4a177258e",
+      "pt_roleset": "abraço.01",
+      "sense_label": "abraço.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "hug.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/hug.xml",
+          "source_xml_url": "data/nombank_sources/hug.xml",
+          "source_xml_sha256": "4abc98b56f2569caf34d1bc9f5ca5af4859fdd6f52b4c6703eeb3904cf4cf9d6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do abraço",
+          "definition": "Hugger do amplexo/saudação afetiva por extensão comprovada no hug from Campbell, sem possessivo da vontade automaticamente pessoa independente.",
+          "desc_pt": "Autor do abraço",
+          "definition_pt": "Hugger do amplexo/saudação afetiva por extensão comprovada no hug from Campbell, sem possessivo da vontade automaticamente pessoa independente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destinatário do abraço",
+          "definition": "Hugged expresso, com destinatário nomeado; não conteúdo do dizer ou evento Rock in Rio.",
+          "desc_pt": "Destinatário do abraço",
+          "definition_pt": "Hugged expresso, com destinatário nomeado; não conteúdo do dizer ou evento Rock in Rio."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003176_SENT019::abraço::1",
           "sent_ID": "FOLHA_DOC003176_SENT019",
           "text": "Desejo sucesso ao Rock in Rio 2017 e mando meu afetuoso abraço ao Roberto Medina.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "abraço",
             "char_start": 56,
             "char_end": 62
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "meu",
+            "Arg1": "ao Roberto Medina"
+          },
+          "syntax": {
+            "Arg0": "det",
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 43,
+                "char_end": 46
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 63,
+                "char_end": 80
+              }
+            ]
+          },
+          "target_instance_id": 3112,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a073baa4a177258e",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 56,
+                "char_end": 62
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      11
+                    ],
+                    "char_start": 43,
+                    "char_end": 46,
+                    "head_token_id": 11,
+                    "head_form": "meu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 63,
+                    "char_end": 80,
+                    "head_token_id": 16,
+                    "head_form": "Roberto",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002061_SENT024::abraço::1",
           "sent_ID": "FOLHA_DOC002061_SENT024",
           "text": "Minha vontade é dar um abraço e dizer que já passou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "abraço",
             "char_start": 23,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 7872,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a073baa4a177258e",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 23,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "det": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

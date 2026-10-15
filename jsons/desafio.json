@@ -6,150 +6,930 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "desafio · acepção 1",
+      "sense_id": "s_fc0d9500e2335def",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fc0d9500e2335def",
+      "frame_id": "f_8a1b12b2b03cad02",
+      "pt_roleset": null,
+      "sense_label": "desafio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "challenge.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/challenge.xml",
+          "source_xml_url": "data/nombank_sources/challenge.xml",
+          "source_xml_sha256": "297a9dbc6b9d1f3183f26fcc4b3780c60983452929462dc7e72f8032ace29460",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "desafiante",
+          "definition": "Quem lança ou provoca o desafio; relator, avaliador e estímulo genérico não são desafiantes automaticamente.",
+          "desc_pt": "desafiante",
+          "definition_pt": "Quem lança ou provoca o desafio; relator, avaliador e estímulo genérico não são desafiantes automaticamente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "parte desafiada",
+          "definition": "Quem enfrenta a tarefa difícil, conforme Her no exemplo nominal Her challenge is to keep... . Preservar número nominal, sem trocar por Arg0 por analogia a outros inventários.",
+          "desc_pt": "parte desafiada",
+          "definition_pt": "Quem enfrenta a tarefa difícil, conforme Her no exemplo nominal Her challenge is to keep... . Preservar número nominal, sem trocar por Arg0 por analogia a outros inventários."
+        },
+        {
+          "id": "Arg2",
+          "desc": "tarefa desafiadora",
+          "definition": "Tarefa, ação ou obstáculo expressamente identificado como desafio, inclusive oração predicativa ou anáfora independente. Método, finalidade de um método e mera avaliação não bastam por si.",
+          "desc_pt": "tarefa desafiadora",
+          "definition_pt": "Tarefa, ação ou obstáculo expressamente identificado como desafio, inclusive oração predicativa ou anáfora independente. Método, finalidade de um método e mera avaliação não bastam por si."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000072_SENT001::desafio::1",
           "sent_ID": "FOLHA_DOC000072_SENT001",
           "text": "Preservar passado é um dos grandes desafios dos processos de revitalização.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafios",
             "char_start": 35,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Preservar passado"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "csubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 17
+              }
+            ]
+          },
+          "target_instance_id": 609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 35,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 17,
+                    "head_token_id": 1,
+                    "head_form": "Preservar",
+                    "head_deprel": "csubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003046_SENT019::desafio::1",
           "sent_ID": "FOLHA_DOC003046_SENT019",
           "text": "Contudo, para que esse modelo de solução logística inovadora funcione, torna-se necessária uma regulamentação adequada e esse pode ser o grande desafio para a implementação eficiente e segura desse novo sistema de entrega de mercadorias.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafio",
             "char_start": 144,
             "char_end": 151
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "esse"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 121,
+                "char_end": 125
+              }
+            ]
+          },
+          "target_instance_id": 1402,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 144,
+                "char_end": 151
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20
+                    ],
+                    "char_start": 121,
+                    "char_end": 125,
+                    "head_token_id": 20,
+                    "head_form": "esse",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002027_SENT020::desafio::1",
           "sent_ID": "FOLHA_DOC002027_SENT020",
           "text": "Precificar o produto é um dos grandes desafios desses empreendedores, segundo Berbert.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafios",
             "char_start": 38,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "desses empreendedores",
+            "Arg2": "Precificar o produto"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "csubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 47,
+                "char_end": 68
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 20
+              }
+            ]
+          },
+          "target_instance_id": 1609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 47,
+                    "char_end": 68,
+                    "head_token_id": 12,
+                    "head_form": "empreendedores",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 20,
+                    "head_token_id": 1,
+                    "head_form": "Precificar",
+                    "head_deprel": "csubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000025_SENT016::desafio::1",
           "sent_ID": "FOLHA_DOC000025_SENT016",
           "text": "Meu grande desafio foi entender que, para criar o personagem, eu tinha que limpá-lo, porque é a cultura que traz a independência do pensamento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafio",
             "char_start": 11,
             "char_end": 18
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Meu",
+            "Arg2": "entender que, para criar o personagem, eu tinha que limpá-lo, porque é a cultura que traz a independência do pensamento"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "det",
+            "Arg2": "root"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 3
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 23,
+                "char_end": 142
+              }
+            ]
+          },
+          "target_instance_id": 3265,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 11,
+                "char_end": 18
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 3,
+                    "head_token_id": 1,
+                    "head_form": "Meu",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "char_start": 23,
+                    "char_end": 142,
+                    "head_token_id": 5,
+                    "head_form": "entender",
+                    "head_deprel": "root"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003144_SENT015::desafio::1",
           "sent_ID": "FOLHA_DOC003144_SENT015",
           "text": "O filósofo Harry Frankfurt (\"On Inequality\") defende que é só a eliminação da pobreza que representa um desafio moral para a sociedade.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafio",
             "char_start": 104,
             "char_end": 111
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "para a sociedade",
+            "Arg2": "que"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 118,
+                "char_end": 134
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 86,
+                "char_end": 89
+              }
+            ]
+          },
+          "target_instance_id": 5691,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              23
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 104,
+                "char_end": 111
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      25,
+                      26,
+                      27
+                    ],
+                    "char_start": 118,
+                    "char_end": 134,
+                    "head_token_id": 27,
+                    "head_form": "sociedade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      20
+                    ],
+                    "char_start": 86,
+                    "char_end": 89,
+                    "head_token_id": 20,
+                    "head_form": "que",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003076_SENT008::desafio::1",
           "sent_ID": "FOLHA_DOC003076_SENT008",
           "text": "Que a nova PGR encontre alegria mesmo diante das adversidades e que seja firme frente aos desafios, diz Janot na mensagem.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafios",
             "char_start": 90,
             "char_end": 98
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a nova PGR",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 4,
+                "char_end": 14
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 6630,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 90,
+                "char_end": 98
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 4,
+                    "char_end": 14,
+                    "head_token_id": 4,
+                    "head_form": "PGR",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002030_SENT021::desafio::1",
           "sent_ID": "FOLHA_DOC002030_SENT021",
           "text": "A tropa deve ter orgulho e confiança em uma liderança capaz de enfrentar desafios de maneira austera, racional e ponderada.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafios",
             "char_start": 73,
             "char_end": 81
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "uma liderança",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 40,
+                "char_end": 53
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 9385,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 73,
+                "char_end": 81
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 40,
+                    "char_end": 53,
+                    "head_token_id": 10,
+                    "head_form": "liderança",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003156_SENT034::desafio::1",
           "sent_ID": "FOLHA_DOC003156_SENT034",
           "text": "Os desafios que se puseram perante ele [Janot] eram muito centrados no combate à corrupção.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafios",
             "char_start": 3,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "perante ele",
+            "Arg2": "no combate à corrupção"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 27,
+                "char_end": 38
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 68,
+                "char_end": 90
+              }
+            ]
+          },
+          "target_instance_id": 11480,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 27,
+                    "char_end": 38,
+                    "head_token_id": 7,
+                    "head_form": "ele",
+                    "head_deprel": "obl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 68,
+                    "char_end": 90,
+                    "head_token_id": 16,
+                    "head_form": "combate",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003037_SENT015::desafio::1",
           "sent_ID": "FOLHA_DOC003037_SENT015",
           "text": "A superação desse desafio passaria por uma mudança da atitude da classe política e da sociedade civil em geral.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafio",
             "char_start": 18,
             "char_end": 25
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12216,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 18,
+                "char_end": 25
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003128_SENT025::desafio::1",
           "sent_ID": "FOLHA_DOC003128_SENT025",
           "text": "A fim de dar conta do desafio, será necessário investimento certeiro na infraestrutura econômica das regiões mais carentes, de forma a integrar amplas camadas de sua população ao mercado.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "desafio",
             "char_start": 22,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 14620,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8a1b12b2b03cad02",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 22,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "desafio · acepção 1"
+      "syntactic_profile": {
+        "csubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 2
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 3,
+          "Arg2": 0
+        },
+        "det": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "root": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

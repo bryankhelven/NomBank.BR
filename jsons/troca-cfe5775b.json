@@ -6,24 +6,160 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "troça · acepção 1",
+      "sense_id": "s_41547cec785e8a25",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_41547cec785e8a25",
+      "frame_id": "f_3cbcda22f2db0371",
+      "pt_roleset": null,
+      "sense_label": "troça · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "mockery.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/mockery.xml",
+          "source_xml_url": "data/nombank_sources/mockery.xml",
+          "source_xml_sha256": "f56b4e5227571d283ab45eab3982c1696c850d1a9beae1be3d1640c0e233a7b4",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor da troça",
+          "definition": "Mocker nomeado, sem se impessoal como pessoa.",
+          "desc_pt": "Autor da troça",
+          "definition_pt": "Mocker nomeado, sem se impessoal como pessoa."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Objeto ridicularizado",
+          "definition": "Mocked incluindo relativa identificadora da defesa, sem comentário seguinte como parte.",
+          "desc_pt": "Objeto ridicularizado",
+          "definition_pt": "Mocked incluindo relativa identificadora da defesa, sem comentário seguinte como parte."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Razão jocosa separada",
+          "definition": "Reason what is so funny se distinta do alvo, sem duplicar relativa nos papéis1/2.",
+          "desc_pt": "Razão jocosa separada",
+          "definition_pt": "Reason what is so funny se distinta do alvo, sem duplicar relativa nos papéis1/2."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003067_SENT012::troça::1",
           "sent_ID": "FOLHA_DOC003067_SENT012",
           "text": "Faz-se troça da linha de defesa de Lula, que atribui a outros ao seu redor a responsabilidade por ações suspeitas, mas essa parece ser sua melhor opção nesse quadro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "troça",
             "char_start": 7,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "da linha de defesa de Lula, que atribui a outros ao seu redor a responsabilidade por ações suspeitas",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 13,
+                "char_end": 113
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 13580,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_3cbcda22f2db0371",
+          "argument_details": {
+            "predicate_token_ids": [
+              3
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 7,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "char_start": 13,
+                    "char_end": 113,
+                    "head_token_id": 6,
+                    "head_form": "linha",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "troça · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

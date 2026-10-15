@@ -6,93 +6,461 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_fbe17d25fa3d105b",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_fbe17d25fa3d105b",
+      "frame_id": "f_15950c888e10bab2",
+      "pt_roleset": "habitante.01",
+      "sense_label": "habitante.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "resident.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/resident.xml",
+          "source_xml_url": "data/nombank_sources/resident.xml",
+          "source_xml_sha256": "29468899ea6c40b814c41e4a3e86c7eccfc968f9e01a6b07923bda45d0439e4b",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "habitante",
+          "definition": "Entidade que reside, incorporada no REL nominal.",
+          "desc_pt": "habitante",
+          "definition_pt": "Entidade que reside, incorporada no REL nominal."
+        },
+        {
+          "id": "Arg1",
+          "desc": "residência",
+          "definition": "Lugar em que reside; numeração do role location preservada, com conflito LOC do exemplo original documentado.",
+          "desc_pt": "residência",
+          "definition_pt": "Lugar em que reside; numeração do role location preservada, com conflito LOC do exemplo original documentado."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003063_SENT009::habitante::1",
           "sent_ID": "FOLHA_DOC003063_SENT009",
           "text": "Até 2016, a taxa de homicídios no Rio estava em 30 assassinatos para cada grupo de 100 mil habitantes -duas vezes maior do que a de São Paulo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 91,
             "char_end": 101
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "no Rio"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 31,
+                "char_end": 37
+              }
+            ]
+          },
+          "target_instance_id": 811,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              21
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 91,
+                "char_end": 101
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 31,
+                    "char_end": 37,
+                    "head_token_id": 10,
+                    "head_form": "Rio",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002028_SENT011::habitante::1",
           "sent_ID": "FOLHA_DOC002028_SENT011",
           "text": "Isso, a Alemanha sabe fazer, tanto que abriga 18,5 milhões de habitantes de origem estrangeiras, 9,5 milhões dos quais já são cidadãos alemães.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 62,
             "char_end": 72
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "a Alemanha"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 6,
+                "char_end": 16
+              }
+            ]
+          },
+          "target_instance_id": 873,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 62,
+                "char_end": 72
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4
+                    ],
+                    "char_start": 6,
+                    "char_end": 16,
+                    "head_token_id": 4,
+                    "head_form": "Alemanha",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003143_SENT009::habitante::1",
           "sent_ID": "FOLHA_DOC003143_SENT009",
           "text": "Em Cartagena, cidade com 900 mil habitantes, mais de 300 mil pessoas estão abaixo da linha de pobreza.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 33,
             "char_end": 43
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "Em Cartagena"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 12
+              }
+            ]
+          },
+          "target_instance_id": 10316,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 43
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 12,
+                    "head_token_id": 2,
+                    "head_form": "Cartagena",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003017_SENT027::habitante::1",
           "sent_ID": "FOLHA_DOC003017_SENT027",
           "text": "Depois de assumir que isso era inaceitável, o país reduziu esse número em 60% em uma década, e agora estão com 1,6 mil/ano (3 para cada 100 mil habitantes).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 144,
             "char_end": 154
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "o país"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 44,
+                "char_end": 50
+              }
+            ]
+          },
+          "target_instance_id": 12001,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              35
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 144,
+                "char_end": 154
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9,
+                      10
+                    ],
+                    "char_start": 44,
+                    "char_end": 50,
+                    "head_token_id": 10,
+                    "head_form": "país",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003017_SENT026::habitante::1",
           "sent_ID": "FOLHA_DOC003017_SENT026",
           "text": "São 2 mortos para cada 10 mil habitantes (lá era a metade).",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 30,
             "char_end": 40
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 13376,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 30,
+                "char_end": 40
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004013_SENT025::habitante::1",
           "sent_ID": "FOLHA_DOC004013_SENT025",
           "text": "Todos os anos, Messi passa férias no município de 989 mil habitantes.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "habitantes",
             "char_start": 58,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "no município"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 34,
+                "char_end": 46
+              }
+            ]
+          },
+          "target_instance_id": 13768,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_15950c888e10bab2",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 58,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 34,
+                    "char_end": 46,
+                    "head_token_id": 10,
+                    "head_form": "município",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 2
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

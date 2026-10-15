@@ -6,76 +6,523 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC001677_SENT004::notificação::1",
-          "sent_ID": "FOLHA_DOC001677_SENT004",
-          "text": "O assessor presidencial também recebeu as notificações contra os ministros Eliseu Padilha (Casa Civil) e Moreira Franco (Secretaria-Geral).",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "notificações",
-            "char_start": 42,
-            "char_end": 54
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC004121_SENT030::notificação::1",
-          "sent_ID": "FOLHA_DOC004121_SENT030",
-          "text": "Nem notificações de casos como a difteria ou dengue, nem informações sobre taxas de natalidade ou mortalidade.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "notificações",
-            "char_start": 4,
-            "char_end": 16
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        },
-        {
-          "instance_id": "FOLHA_DOC002045_SENT007::notificação::1",
-          "sent_ID": "FOLHA_DOC002045_SENT007",
-          "text": "Não se descarta que parte do aumento se deva a um incremento na notificação.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "notificação",
-            "char_start": 64,
-            "char_end": 75
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "notificação · acepção 1"
+      "sense_label": "notificação · acepção 1",
+      "sense_id": "s_e4a7c5c05d8d70f0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "notificação · acepção 2",
+      "sense_id": "s_16270b169c137e61",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_e4a7c5c05d8d70f0",
+      "frame_id": "f_dc5260f458db5a2b",
+      "pt_roleset": null,
+      "sense_label": "notificação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "notification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/notification.xml",
+          "source_xml_url": "data/nombank_sources/notification.xml",
+          "source_xml_sha256": "b53a327c276fadda0459bb771ce3f788df8fb2fa40456e1b3562fc8a89f43897",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "notificador",
+          "definition": "Entidade que comunica ou alerta.",
+          "desc_pt": "notificador",
+          "definition_pt": "Entidade que comunica ou alerta."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo notificado",
+          "definition": "Informação ou ação comunicada; n=1 nominal com source=2 original.",
+          "desc_pt": "conteúdo notificado",
+          "definition_pt": "Informação ou ação comunicada; n=1 nominal com source=2 original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário",
+          "definition": "Entidade que recebe comunicação; n=2 nominal com source=1 original.",
+          "desc_pt": "destinatário",
+          "definition_pt": "Entidade que recebe comunicação; n=2 nominal com source=1 original."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001677_SENT004::notificação::1",
+          "sent_ID": "FOLHA_DOC001677_SENT004",
+          "text": "O assessor presidencial também recebeu as notificações contra os ministros Eliseu Padilha (Casa Civil) e Moreira Franco (Secretaria-Geral).",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "notificações",
+            "char_start": 42,
+            "char_end": 54
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "contra os ministros Eliseu Padilha (Casa Civil) e Moreira Franco (Secretaria-Geral)",
+            "Arg2": "O assessor presidencial"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 138
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 23
+              }
+            ]
+          },
+          "target_instance_id": 940,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dc5260f458db5a2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 42,
+                "char_end": 54
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22
+                    ],
+                    "char_start": 55,
+                    "char_end": 138,
+                    "head_token_id": 10,
+                    "head_form": "ministros",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 23,
+                    "head_token_id": 2,
+                    "head_form": "assessor",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC004121_SENT030::notificação::1",
+          "sent_ID": "FOLHA_DOC004121_SENT030",
+          "text": "Nem notificações de casos como a difteria ou dengue, nem informações sobre taxas de natalidade ou mortalidade.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "notificações",
+            "char_start": 4,
+            "char_end": 16
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de casos como a difteria ou dengue",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 17,
+                "char_end": 51
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 3770,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dc5260f458db5a2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 16
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "char_start": 17,
+                    "char_end": 51,
+                    "head_token_id": 4,
+                    "head_form": "casos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        },
+        {
+          "instance_id": "FOLHA_DOC002045_SENT007::notificação::1",
+          "sent_ID": "FOLHA_DOC002045_SENT007",
+          "text": "Não se descarta que parte do aumento se deva a um incremento na notificação.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "notificação",
+            "char_start": 64,
+            "char_end": 75
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 9214,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_dc5260f458db5a2b",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 75
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
+    },
+    {
+      "sense_id": "s_16270b169c137e61",
+      "frame_id": "f_57b01e11339ae668",
+      "pt_roleset": null,
+      "sense_label": "notificação · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "notification.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/notification.xml",
+          "source_xml_url": "data/nombank_sources/notification.xml",
+          "source_xml_sha256": "b53a327c276fadda0459bb771ce3f788df8fb2fa40456e1b3562fc8a89f43897",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "notificador",
+          "definition": "Entidade que comunica ou alerta.",
+          "desc_pt": "notificador",
+          "definition_pt": "Entidade que comunica ou alerta."
+        },
+        {
+          "id": "Arg1",
+          "desc": "conteúdo notificado",
+          "definition": "Informação ou ação comunicada; n=1 nominal com source=2 original.",
+          "desc_pt": "conteúdo notificado",
+          "definition_pt": "Informação ou ação comunicada; n=1 nominal com source=2 original."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário",
+          "definition": "Entidade que recebe comunicação; n=2 nominal com source=1 original.",
+          "desc_pt": "destinatário",
+          "definition_pt": "Entidade que recebe comunicação; n=2 nominal com source=1 original."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003033_SENT017::notificação::1",
           "sent_ID": "FOLHA_DOC003033_SENT017",
           "text": "Elas foram retiradas após a Folha publicar reportagem na qual informava que a CPPU enviara uma notificação à prefeitura cobrando providências e alertando que os infratores estavam sujeitos às penas previstas na lei Cidade Limpa.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "notificação",
             "char_start": 95,
             "char_end": 106
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "a CPPU",
+            "Arg1": "cobrando providências e alertando que os infratores estavam sujeitos às penas previstas na lei Cidade Limpa",
+            "Arg2": "à prefeitura"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "advcl",
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 76,
+                "char_end": 82
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 120,
+                "char_end": 227
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 107,
+                "char_end": 119
+              }
+            ]
+          },
+          "target_instance_id": 10609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_57b01e11339ae668",
+          "argument_details": {
+            "predicate_token_ids": [
+              18
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 95,
+                "char_end": 106
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15
+                    ],
+                    "char_start": 76,
+                    "char_end": 82,
+                    "head_token_id": 15,
+                    "head_form": "CPPU",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39
+                    ],
+                    "char_start": 120,
+                    "char_end": 227,
+                    "head_token_id": 22,
+                    "head_form": "cobrando",
+                    "head_deprel": "advcl"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 107,
+                    "char_end": 119,
+                    "head_token_id": 21,
+                    "head_form": "prefeitura",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "notificação · acepção 2"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "advcl": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

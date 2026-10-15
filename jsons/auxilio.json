@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "auxílio · acepção 1",
+      "sense_id": "s_88fc96336903058c",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_88fc96336903058c",
+      "frame_id": "f_1756f88852b90564",
+      "pt_roleset": null,
+      "sense_label": "auxílio · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "aid.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/aid.xml",
+          "source_xml_url": "data/nombank_sources/aid.xml",
+          "source_xml_sha256": "337174eaea1473c521ad55d7da8d025384566c51b241ee6c4520fea290c3f865",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Fornecedor de auxílio",
+          "definition": "Helper que fornece ajuda, incluindo muitos deles, sem tipo concreto inventado.",
+          "desc_pt": "Fornecedor de auxílio",
+          "definition_pt": "Helper que fornece ajuda, incluindo muitos deles, sem tipo concreto inventado."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Projeto ajudado",
+          "definition": "Project particular do auxílio.",
+          "desc_pt": "Projeto ajudado",
+          "definition_pt": "Project particular do auxílio."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário de auxílio",
+          "definition": "Source descr benefactor literal preservado; interpretação pelos exemplos to East/to Kabul como destinatário beneficiado, sem correção silenciosa do XML.",
+          "desc_pt": "Destinatário de auxílio",
+          "definition_pt": "Source descr benefactor literal preservado; interpretação pelos exemplos to East/to Kabul como destinatário beneficiado, sem correção silenciosa do XML."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000044_SENT017::auxílio::1",
           "sent_ID": "FOLHA_DOC000044_SENT017",
           "text": "E muitos deles não apenas são gratuitos como fornecem vários tipos de auxílio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "auxílio",
             "char_start": 70,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "muitos deles",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 2,
+                "char_end": 14
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 1444,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_1756f88852b90564",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 70,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "char_start": 2,
+                    "char_end": 14,
+                    "head_token_id": 2,
+                    "head_form": "muitos",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "auxílio · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

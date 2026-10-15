@@ -6,51 +6,318 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_3f25c2cfbaca3333",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3f25c2cfbaca3333",
+      "frame_id": "f_26a7fa8717d32354",
+      "pt_roleset": "disposição.02",
+      "sense_label": "disposição.02",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "disposition.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/disposition.xml",
+          "source_xml_url": "data/nombank_sources/disposition.xml",
+          "source_xml_sha256": "7dbb4115dc4d0f6fac9bc2f79e85e163c984f96e4efa2e71023dff99bef91ff3",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador",
+          "definition": "Entidade com desejo/predisposição, inclusive atribuição popular e falta explicitamente possuída.",
+          "desc_pt": "Portador",
+          "definition_pt": "Entidade com desejo/predisposição, inclusive atribuição popular e falta explicitamente possuída."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Matéria da predisposição",
+          "definition": "Para que/com que orientação se dispõe; prepared for what/kind literal, sem renumerar como disposição de desfazer-se.",
+          "desc_pt": "Matéria da predisposição",
+          "definition_pt": "Para que/com que orientação se dispõe; prepared for what/kind literal, sem renumerar como disposição de desfazer-se."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000045_SENT015::disposição::1",
           "sent_ID": "FOLHA_DOC000045_SENT015",
           "text": "A mensagem aos investidores é grave, e afeta a disposição popular pela independência dessa região.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "disposição",
             "char_start": 47,
             "char_end": 57
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "popular",
+            "Arg2": "pela independência dessa região"
+          },
+          "syntax": {
+            "Arg1": "amod",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 58,
+                "char_end": 65
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 66,
+                "char_end": 97
+              }
+            ]
+          },
+          "target_instance_id": 2689,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_26a7fa8717d32354",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 47,
+                "char_end": 57
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13
+                    ],
+                    "char_start": 58,
+                    "char_end": 65,
+                    "head_token_id": 13,
+                    "head_form": "popular",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 66,
+                    "char_end": 97,
+                    "head_token_id": 16,
+                    "head_form": "independência",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003151_SENT004::disposição::1",
           "sent_ID": "FOLHA_DOC003151_SENT004",
           "text": "A disposição para trocar de trabalho com frequência é resultado de uma combinação de fatores, dizem consultores de RH.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "disposição",
             "char_start": 2,
             "char_end": 12
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": null,
+            "Arg2": "para trocar de trabalho com frequência"
+          },
+          "syntax": {
+            "Arg1": null,
+            "Arg2": "acl"
+          },
+          "argument_positions": {
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 13,
+                "char_end": 51
+              }
+            ]
+          },
+          "target_instance_id": 9041,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_26a7fa8717d32354",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 2,
+                "char_end": 12
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 13,
+                    "char_end": 51,
+                    "head_token_id": 4,
+                    "head_form": "trocar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003036_SENT002::disposição::1",
           "sent_ID": "FOLHA_DOC003036_SENT002",
           "text": "Para tirar o foco de sua falta de disposição para protestar contra Temer, o Movimento Brasil Livre resolveu protestar contra uma exposição de arte com temática LGBT.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "disposição",
             "char_start": 34,
             "char_end": 44
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "o Movimento Brasil Livre",
+            "Arg2": "para protestar contra Temer"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "acl"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 74,
+                "char_end": 98
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 45,
+                "char_end": 72
+              }
+            ]
+          },
+          "target_instance_id": 11216,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_26a7fa8717d32354",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 34,
+                "char_end": 44
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 74,
+                    "char_end": 98,
+                    "head_token_id": 16,
+                    "head_form": "Movimento",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "char_start": 45,
+                    "char_end": 72,
+                    "head_token_id": 11,
+                    "head_form": "protestar",
+                    "head_deprel": "acl"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "acl": {
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

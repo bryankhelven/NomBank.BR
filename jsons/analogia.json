@@ -6,24 +6,147 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "analogia · acepção 1",
+      "sense_id": "s_1234e73c2df76706",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1234e73c2df76706",
+      "frame_id": "f_8974dd22f5568ebc",
+      "pt_roleset": null,
+      "sense_label": "analogia · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "resemblance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/resemblance.xml",
+          "source_xml_url": "data/nombank_sources/resemblance.xml",
+          "source_xml_sha256": "a3de7274b7044b3bcb3c9260dc89b24c3ed93b05a3cf2396b6c46d0ee2585b9a",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Item semelhante",
+          "definition": "Copy sob comparação de semelhança, nome mineração ou papéis conforme unidade frozen, não ato intencional de comparar.",
+          "desc_pt": "Item semelhante",
+          "definition_pt": "Copy sob comparação de semelhança, nome mineração ou papéis conforme unidade frozen, não ato intencional de comparar."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Referência de semelhança",
+          "definition": "Original a que se assemelha, como ouro; não referência reconstruída quando pares não nomeados.",
+          "desc_pt": "Referência de semelhança",
+          "definition_pt": "Original a que se assemelha, como ouro; não referência reconstruída quando pares não nomeados."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002047_SENT003::analogia::1",
           "sent_ID": "FOLHA_DOC002047_SENT003",
           "text": "O nome mineração vem da analogia com o ouro.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "analogia",
             "char_start": 24,
             "char_end": 32
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "O nome mineração",
+            "Arg2": "com o ouro"
+          },
+          "syntax": {
+            "Arg1": "nsubj",
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 0,
+                "char_end": 16
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 33,
+                "char_end": 43
+              }
+            ]
+          },
+          "target_instance_id": 2861,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8974dd22f5568ebc",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 32
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "char_start": 0,
+                    "char_end": 16,
+                    "head_token_id": 2,
+                    "head_form": "nome",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 33,
+                    "char_end": 43,
+                    "head_token_id": 10,
+                    "head_form": "ouro",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "analogia · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg1": 1,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

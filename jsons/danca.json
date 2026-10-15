@@ -6,48 +6,220 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC001129_SENT037::dança::1",
-          "sent_ID": "FOLHA_DOC001129_SENT037",
-          "text": "Devido à sua enorme distância, Ligo não pôde detectar essa dança.",
-          "arguments_annotated": false,
-          "predicate": {
-            "form": "dança",
-            "char_start": 59,
-            "char_end": 64
-          },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
-        }
-      ],
+      "instances": [],
       "syntactic_profile": {},
-      "sense_label": "dança · acepção 1"
+      "sense_label": "dança · acepção 1",
+      "sense_id": "s_f3657fd1b03c36c4",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "dança · acepção 2",
+      "sense_id": "s_dbdfcb3c01147341",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_f3657fd1b03c36c4",
+      "frame_id": "f_75d442697d218de6",
+      "pt_roleset": null,
+      "sense_label": "dança · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dance.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dance.xml",
+          "source_xml_url": "data/nombank_sources/dance.xml",
+          "source_xml_sha256": "afc1b18648464311243ca36581d10da8e7a5c37f1b015c42dba80b7526b95a30",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Entidade em movimento",
+          "definition": "Mover de movimento ritmado figurado, como Dow Jones original, sem observador como corpo movente.",
+          "desc_pt": "Entidade em movimento",
+          "definition_pt": "Mover de movimento ritmado figurado, como Dow Jones original, sem observador como corpo movente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Caminho do movimento",
+          "definition": "Path expresso, não distância que dificulta observação.",
+          "desc_pt": "Caminho do movimento",
+          "definition_pt": "Path expresso, não distância que dificulta observação."
+        }
+      ],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC001129_SENT037::dança::1",
+          "sent_ID": "FOLHA_DOC001129_SENT037",
+          "text": "Devido à sua enorme distância, Ligo não pôde detectar essa dança.",
+          "arguments_annotated": true,
+          "predicate": {
+            "form": "dança",
+            "char_start": 59,
+            "char_end": 64
+          },
+          "realization": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": []
+          },
+          "target_instance_id": 2795,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_75d442697d218de6",
+          "argument_details": {
+            "predicate_token_ids": [
+              13
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 64
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
+        }
+      ],
+      "syntactic_profile": {}
+    },
+    {
+      "sense_id": "s_dbdfcb3c01147341",
+      "frame_id": "f_8964a62c5cca53ed",
+      "pt_roleset": null,
+      "sense_label": "dança · acepção 2",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "dance.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/dance.xml",
+          "source_xml_url": "data/nombank_sources/dance.xml",
+          "source_xml_sha256": "afc1b18648464311243ca36581d10da8e7a5c37f1b015c42dba80b7526b95a30",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Dançarino",
+          "definition": "Autor/praticante da arte coreográfica, sem lista de nomes de várias artes como dançarinos individualizados.",
+          "desc_pt": "Dançarino",
+          "definition_pt": "Autor/praticante da arte coreográfica, sem lista de nomes de várias artes como dançarinos individualizados."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Dança executada",
+          "definition": "Dance/coreografia particular.",
+          "desc_pt": "Dança executada",
+          "definition_pt": "Dance/coreografia particular."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Parceiro da dança",
+          "definition": "Partner da prática coreográfica.",
+          "desc_pt": "Parceiro da dança",
+          "definition_pt": "Partner da prática coreográfica."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003155_SENT009::dança::1",
           "sent_ID": "FOLHA_DOC003155_SENT009",
           "text": "Há oficinas e uma série de apresentações, entre as quais teatro, dança, música e moda, com nomes importantes de cada uma das áreas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "dança",
             "char_start": 65,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 15122,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_8964a62c5cca53ed",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 65,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "dança · acepção 2"
+      "syntactic_profile": {}
     }
   ]
 }

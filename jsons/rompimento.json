@@ -6,65 +6,483 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_3100422b550a1655",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_3100422b550a1655",
+      "frame_id": "f_bf557babd42e8b89",
+      "pt_roleset": "rompimento.01",
+      "sense_label": "rompimento.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "break.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/break.xml",
+          "source_xml_url": "data/nombank_sources/break.xml",
+          "source_xml_sha256": "6cb2c863b23f63b5ed4d2de6bbe030d9fb93e4fad7e2919f505a8dda39d2d834",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Parte que rompe",
+          "definition": "Pessoa ou entidade que interrompe relação ou vínculo.",
+          "desc_pt": "Parte que rompe",
+          "definition_pt": "Pessoa ou entidade que interrompe relação ou vínculo."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Vínculo ou contraparte afetada",
+          "definition": "Aquilo quebrado ou parte com quem se rompe; o original inclui break with mentor.",
+          "desc_pt": "Vínculo ou contraparte afetada",
+          "definition_pt": "Aquilo quebrado ou parte com quem se rompe; o original inclui break with mentor."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Instrumento",
+          "definition": "Meio explicitamente usado para romper.",
+          "desc_pt": "Instrumento",
+          "definition_pt": "Meio explicitamente usado para romper."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Partes resultantes",
+          "definition": "Fragmentos produzidos pela quebra; consequências genéricas não bastam.",
+          "desc_pt": "Partes resultantes",
+          "definition_pt": "Fragmentos produzidos pela quebra; consequências genéricas não bastam."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003141_SENT012::rompimento::1",
           "sent_ID": "FOLHA_DOC003141_SENT012",
           "text": "Com base em cálculos eleitorais, o governador queria se afastar, mas temia que o rompimento do PSDB com Temer inviabilizasse as reformas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rompimento",
             "char_start": 81,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do PSDB",
+            "Arg1": "com Temer",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 92,
+                "char_end": 99
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 100,
+                "char_end": 109
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 985,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bf557babd42e8b89",
+          "argument_details": {
+            "predicate_token_ids": [
+              17
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 81,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "char_start": 92,
+                    "char_end": 99,
+                    "head_token_id": 20,
+                    "head_form": "PSDB",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      21,
+                      22
+                    ],
+                    "char_start": 100,
+                    "char_end": 109,
+                    "head_token_id": 22,
+                    "head_form": "Temer",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003141_SENT003::rompimento::1",
           "sent_ID": "FOLHA_DOC003141_SENT003",
           "text": "Depois de oscilar no debate sobre o rompimento do PSDB com o presidente, o tucano deu início a um movimento gradual para se descolar da imagem desgastada e impopular do peemedebista.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rompimento",
             "char_start": 36,
             "char_end": 46
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do PSDB",
+            "Arg1": "com o presidente",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 47,
+                "char_end": 54
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 55,
+                "char_end": 71
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 3945,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bf557babd42e8b89",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 36,
+                "char_end": 46
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "char_start": 47,
+                    "char_end": 54,
+                    "head_token_id": 12,
+                    "head_form": "PSDB",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 55,
+                    "char_end": 71,
+                    "head_token_id": 15,
+                    "head_form": "presidente",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC002037_SENT039::rompimento::1",
           "sent_ID": "FOLHA_DOC002037_SENT039",
           "text": "Sem contar as demandas de documentos para comprovar o que falou, o rompimento de amizades de décadas.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rompimento",
             "char_start": 67,
             "char_end": 77
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "de amizades de décadas",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 78,
+                "char_end": 100
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 5751,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bf557babd42e8b89",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 67,
+                "char_end": 77
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 78,
+                    "char_end": 100,
+                    "head_token_id": 16,
+                    "head_form": "amizades",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003035_SENT028::rompimento::1",
           "sent_ID": "FOLHA_DOC003035_SENT028",
           "text": "A partir do rompimento dele com Eugênio Aragão [ex-procurador e ex-ministro da Justiça], fiquei distante porque nutro amizade e carinho enorme por ele [Aragão].",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "rompimento",
             "char_start": 12,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "dele",
+            "Arg1": "com Eugênio Aragão [ex-procurador e ex-ministro da Justiça]",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 23,
+                "char_end": 27
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 28,
+                "char_end": 87
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 10636,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_bf557babd42e8b89",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 12,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 23,
+                    "char_end": 27,
+                    "head_token_id": 7,
+                    "head_form": "ele",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 28,
+                    "char_end": 87,
+                    "head_token_id": 9,
+                    "head_form": "Eugênio",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 3,
+          "Arg1": 4,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

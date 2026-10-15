@@ -6,24 +6,147 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "supressão · acepção 1",
+      "sense_id": "s_2fdbed672bf0c95f",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2fdbed672bf0c95f",
+      "frame_id": "f_aa1d490c0035da0d",
+      "pt_roleset": null,
+      "sense_label": "supressão · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "suppression.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/suppression.xml",
+          "source_xml_url": "data/nombank_sources/suppression.xml",
+          "source_xml_sha256": "e17b9e335623693c785deefc2db8a54b4ce7b89cd37875beaa09267265a2347e",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Supressor",
+          "definition": "Agent que inibe/esconde, metonímia lulismo explícita no procedimento.",
+          "desc_pt": "Supressor",
+          "definition_pt": "Agent que inibe/esconde, metonímia lulismo explícita no procedimento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Coisa suprimida",
+          "definition": "Theme como divergência ideológica, com virtual preservado sem apagamento total imposto.",
+          "desc_pt": "Coisa suprimida",
+          "definition_pt": "Theme como divergência ideológica, com virtual preservado sem apagamento total imposto."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003316_SENT017::supressão::1",
           "sent_ID": "FOLHA_DOC003316_SENT017",
           "text": "O lulismo garantiu a unidade por meio da virtual supressão da divergência ideológica.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "supressão",
             "char_start": 49,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "O lulismo",
+            "Arg1": "da divergência ideológica"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 0,
+                "char_end": 9
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 59,
+                "char_end": 84
+              }
+            ]
+          },
+          "target_instance_id": 9464,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_aa1d490c0035da0d",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1,
+                      2
+                    ],
+                    "char_start": 0,
+                    "char_end": 9,
+                    "head_token_id": 2,
+                    "head_form": "lulismo",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 59,
+                    "char_end": 84,
+                    "head_token_id": 14,
+                    "head_form": "divergência",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "supressão · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

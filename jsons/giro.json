@@ -6,23 +6,153 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_db349ca505aae773",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_db349ca505aae773",
+      "frame_id": "f_f95681e8fa3d20b5",
+      "pt_roleset": "giro.01",
+      "sense_label": "giro.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "journey.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/journey.xml",
+          "source_xml_url": "data/nombank_sources/journey.xml",
+          "source_xml_sha256": "b6bd66d87c55af5e7a9667bb982bc957e2f029250fc417a63ec1f285e4bb4514",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante",
+          "definition": "Traveller no giro de visitas ou viagem marítima turística conforme restrição por ocorrência.",
+          "desc_pt": "Viajante",
+          "definition_pt": "Traveller no giro de visitas ou viagem marítima turística conforme restrição por ocorrência."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Percurso da viagem",
+          "definition": "Destination/path como América Latina/Caribe, sem tempo ou lugar de pouso prévio como rota automaticamente.",
+          "desc_pt": "Percurso da viagem",
+          "definition_pt": "Destination/path como América Latina/Caribe, sem tempo ou lugar de pouso prévio como rota automaticamente."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003170_SENT028::giro::1",
           "sent_ID": "FOLHA_DOC003170_SENT028",
           "text": "Em giro pela América Latina em agosto, o vice-presidente dos EUA, Mike Pence, passou por Colômbia, Argentina, Chile e Panamá.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "giro",
             "char_start": 3,
             "char_end": 7
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "o vice-presidente dos EUA, Mike Pence,",
+            "Arg1": "pela América Latina"
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 39,
+                "char_end": 77
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 8,
+                "char_end": 27
+              }
+            ]
+          },
+          "target_instance_id": 15542,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f95681e8fa3d20b5",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 7
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "char_start": 39,
+                    "char_end": 77,
+                    "head_token_id": 11,
+                    "head_form": "vice-presidente",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 8,
+                    "char_end": 27,
+                    "head_token_id": 5,
+                    "head_form": "América",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1
+        }
+      }
     }
   ]
 }

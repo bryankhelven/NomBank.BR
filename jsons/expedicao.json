@@ -6,24 +6,142 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "expedição · acepção 1",
+      "sense_id": "s_5ee7634ae23d7eee",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_5ee7634ae23d7eee",
+      "frame_id": "f_c2965734916b619e",
+      "pt_roleset": null,
+      "sense_label": "expedição · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "trip.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/trip.xml",
+          "source_xml_url": "data/nombank_sources/trip.xml",
+          "source_xml_sha256": "3f0ff254bd66c190fc5cc548cb1afde31360ee68b14b3e400ec227630a9dc011",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Viajante",
+          "definition": "Traveller da viagem/passeio expedicionário, sem lives/experiences como pessoas.",
+          "desc_pt": "Viajante",
+          "definition_pt": "Traveller da viagem/passeio expedicionário, sem lives/experiences como pessoas."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Destino ou caminho",
+          "definition": "Destination or path da expedição, como pela África, não local ArgM transferido do expedition.",
+          "desc_pt": "Destino ou caminho",
+          "definition_pt": "Destination or path da expedição, como pela África, não local ArgM transferido do expedition."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Origem da viagem",
+          "definition": "Source explícita do deslocamento.",
+          "desc_pt": "Origem da viagem",
+          "definition_pt": "Source explícita do deslocamento."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003142_SENT013::expedição::1",
           "sent_ID": "FOLHA_DOC003142_SENT013",
           "text": "A transição de uma vida divertida, com experiências que incluem expedições pela África, para uma vida de responsabilidade e medos se configura no primeiro episódio.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "expedições",
             "char_start": 64,
             "char_end": 74
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": "pela África",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": "nmod",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [
+              {
+                "char_start": 75,
+                "char_end": 86
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 2897,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_c2965734916b619e",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 64,
+                "char_end": 74
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "char_start": 75,
+                    "char_end": 86,
+                    "head_token_id": 15,
+                    "head_form": "África",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "expedição · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 1,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

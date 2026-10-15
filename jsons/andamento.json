@@ -6,51 +6,230 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_2b223ee0b6002e78",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_2b223ee0b6002e78",
+      "frame_id": "f_242d079c81f871af",
+      "pt_roleset": "andamento.01",
+      "sense_label": "andamento.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "course.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/course.xml",
+          "source_xml_url": "data/nombank_sources/course.xml",
+          "source_xml_sha256": "5986b30665e2b3ff845c36f853b9757761206fc61ab6c3b767b8f3fc15a14f12",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Evento em curso",
+          "definition": "Aquilo cujo curso/duração decorre, extensão local de session a processo/votação/conversas; não melhoria ou destino futuro inventados.",
+          "desc_pt": "Evento em curso",
+          "definition_pt": "Aquilo cujo curso/duração decorre, extensão local de session a processo/votação/conversas; não melhoria ou destino futuro inventados."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004001_SENT007::andamento::1",
           "sent_ID": "FOLHA_DOC004001_SENT007",
           "text": "Segundo advogados do petista, o andamento processual até aqui permite prever um julgamento entre meados de março e começo de abril.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "andamento",
             "char_start": 32,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "processual"
+          },
+          "syntax": {
+            "Arg1": "amod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 42,
+                "char_end": 52
+              }
+            ]
+          },
+          "target_instance_id": 3038,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_242d079c81f871af",
+          "argument_details": {
+            "predicate_token_ids": [
+              8
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 32,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      9
+                    ],
+                    "char_start": 42,
+                    "char_end": 52,
+                    "head_token_id": 9,
+                    "head_form": "processual",
+                    "head_deprel": "amod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003006_SENT020::andamento::1",
           "sent_ID": "FOLHA_DOC003006_SENT020",
           "text": "Acompanhar e influenciar o andamento dessas votações é o início do trabalho de renovação.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "andamento",
             "char_start": 27,
             "char_end": 36
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "dessas votações"
+          },
+          "syntax": {
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 37,
+                "char_end": 52
+              }
+            ]
+          },
+          "target_instance_id": 4997,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_242d079c81f871af",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 27,
+                "char_end": 36
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "char_start": 37,
+                    "char_end": 52,
+                    "head_token_id": 8,
+                    "head_form": "votações",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC004038_SENT009::andamento::1",
           "sent_ID": "FOLHA_DOC004038_SENT009",
           "text": "Questionado sobre o andamento das conversas, o emir do Kuait disse ter \"esperança\" que o conflito será resolvido logo.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "andamento",
             "char_start": 20,
             "char_end": 29
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "das conversas"
+          },
+          "syntax": {
+            "Arg1": "nmod"
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 30,
+                "char_end": 43
+              }
+            ]
+          },
+          "target_instance_id": 14581,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_242d079c81f871af",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 20,
+                "char_end": 29
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "char_start": 30,
+                    "char_end": 43,
+                    "head_token_id": 7,
+                    "head_form": "conversas",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "amod": {
+          "Arg1": 1
+        },
+        "nmod": {
+          "Arg1": 2
+        }
+      }
     }
   ]
 }

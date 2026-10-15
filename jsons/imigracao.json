@@ -6,66 +6,346 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "imigração · acepção 1",
+      "sense_id": "s_667162791cc1cab0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_667162791cc1cab0",
+      "frame_id": "f_e19bdef925150ce8",
+      "pt_roleset": null,
+      "sense_label": "imigração · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "immigration.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/immigration.xml",
+          "source_xml_url": "data/nombank_sources/immigration.xml",
+          "source_xml_sha256": "153644f39e759bb4e02999a642b4de7a1146cd432679fd4915167933faf19bc6",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "população migrante",
+          "definition": "Pessoas que efetuam movimento migratório.",
+          "desc_pt": "população migrante",
+          "definition_pt": "Pessoas que efetuam movimento migratório."
+        },
+        {
+          "id": "Arg1",
+          "desc": "destino migratório",
+          "definition": "Lugar para o qual se migra, distinto de local citado em outra ação.",
+          "desc_pt": "destino migratório",
+          "definition_pt": "Lugar para o qual se migra, distinto de local citado em outra ação."
+        },
+        {
+          "id": "Arg2",
+          "desc": "origem migratória",
+          "definition": "Lugar de proveniência do movimento populacional.",
+          "desc_pt": "origem migratória",
+          "definition_pt": "Lugar de proveniência do movimento populacional."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003140_SENT068::imigração::1",
           "sent_ID": "FOLHA_DOC003140_SENT068",
           "text": "Atualmente, a justificativa mais frequente para os muros é a imigração, a segunda é o terrorismo e a terceira é o contrabando.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "imigração",
             "char_start": 61,
             "char_end": 70
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 244,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e19bdef925150ce8",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 61,
+                "char_end": 70
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003131_SENT009::imigração::1",
           "sent_ID": "FOLHA_DOC003131_SENT009",
           "text": "A legislação mais dura, porém, não impediu que a imigração de cidadãos de Honduras, El Salvador e Guatemala -que sofrem com a violência das gangues- crescesse desde 2013.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "imigração",
             "char_start": 49,
             "char_end": 58
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de cidadãos",
+            "Arg1": null,
+            "Arg2": "de Honduras, El Salvador e Guatemala"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 59,
+                "char_end": 70
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 71,
+                "char_end": 107
+              }
+            ]
+          },
+          "target_instance_id": 2606,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e19bdef925150ce8",
+          "argument_details": {
+            "predicate_token_ids": [
+              12
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 49,
+                "char_end": 58
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      13,
+                      14
+                    ],
+                    "char_start": 59,
+                    "char_end": 70,
+                    "head_token_id": 14,
+                    "head_form": "cidadãos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "char_start": 71,
+                    "char_end": 107,
+                    "head_token_id": 16,
+                    "head_form": "Honduras",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000057_SENT001::imigração::1",
           "sent_ID": "FOLHA_DOC000057_SENT001",
           "text": "Em troca de proteção aos 'dreamers', Trump quer restringir imigração.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "imigração",
             "char_start": 59,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 8175,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e19bdef925150ce8",
+          "argument_details": {
+            "predicate_token_ids": [
+              14
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 59,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000057_SENT012::imigração::1",
           "sent_ID": "FOLHA_DOC000057_SENT012",
           "text": "Entre as exigências de Trump estão também a contratação de mais 10 mil agentes de imigração, o uso de um sistema que dificulta que ilegais consigam empregos nos EUA e a suspensão de verbas do governo federal para as chamadas cidades-santuário -entre elas Nova York, Los Angeles e Chicago-, que se recusam a seguir a política migratória do presidente.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "imigração",
             "char_start": 82,
             "char_end": 91
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12669,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_e19bdef925150ce8",
+          "argument_details": {
+            "predicate_token_ids": [
+              16
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 82,
+                "char_end": 91
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "imigração · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

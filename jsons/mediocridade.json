@@ -6,24 +6,140 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "mediocridade · acepção 1",
+      "sense_id": "s_87c03f78f47f24c6",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_87c03f78f47f24c6",
+      "frame_id": "f_879e1aec3bf4f4e5",
+      "pt_roleset": null,
+      "sense_label": "mediocridade · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "quality.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/quality.xml",
+          "source_xml_url": "data/nombank_sources/quality.xml",
+          "source_xml_sha256": "b9ae13ae4f7c136f28f9bd83fbf8c8509ce7dcc1feeca8a053d0b0ad54c7f82f",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg1",
+          "desc": "Portador da qualidade",
+          "definition": "Theme do juízo de mediocridade, incluindo possessivo pessoal.",
+          "desc_pt": "Portador da qualidade",
+          "definition_pt": "Theme do juízo de mediocridade, incluindo possessivo pessoal."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Valor da qualidade",
+          "definition": "Value baixo/inexpressivo incorporado, conforme lower-quality REL/2 nominal original.",
+          "desc_pt": "Valor da qualidade",
+          "definition_pt": "Value baixo/inexpressivo incorporado, conforme lower-quality REL/2 nominal original."
+        },
+        {
+          "id": "Arg3",
+          "desc": "Domínio secundário",
+          "definition": "Secondary-theme expresso, sem povo de outro ficar como domínio da mesma mediocridade.",
+          "desc_pt": "Domínio secundário",
+          "definition_pt": "Secondary-theme expresso, sem povo de outro ficar como domínio da mesma mediocridade."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000068_SENT012::mediocridade::1",
           "sent_ID": "FOLHA_DOC000068_SENT012",
           "text": "\"Fique com sua mediocridade que eu fico com o povo\", declarou.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "mediocridade",
             "char_start": 15,
             "char_end": 27
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg1": "sua",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "syntax": {
+            "Arg1": "det",
+            "Arg2": null,
+            "Arg3": null
+          },
+          "argument_positions": {
+            "Arg1": [
+              {
+                "char_start": 11,
+                "char_end": 14
+              }
+            ],
+            "Arg2": [],
+            "Arg3": []
+          },
+          "target_instance_id": 10791,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_879e1aec3bf4f4e5",
+          "argument_details": {
+            "predicate_token_ids": [
+              5
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 15,
+                "char_end": 27
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4
+                    ],
+                    "char_start": 11,
+                    "char_end": 14,
+                    "head_token_id": 4,
+                    "head_form": "sua",
+                    "head_deprel": "det"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg3",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "mediocridade · acepção 1"
+      "syntactic_profile": {
+        "det": {
+          "Arg1": 1,
+          "Arg2": 0,
+          "Arg3": 0
+        }
+      }
     }
   ]
 }

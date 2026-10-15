@@ -6,38 +6,149 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "esporte · acepção 1",
+      "sense_id": "s_254d1c229e3ece02",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_254d1c229e3ece02",
+      "frame_id": "f_07f98907512bf0dd",
+      "pt_roleset": null,
+      "sense_label": "esporte · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "exercise.02",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/exercise.xml",
+          "source_xml_url": "data/nombank_sources/exercise.xml",
+          "source_xml_sha256": "46a96f44b658f075be36833d6e3fa2171530161f3f1a6852e42e6259e9cc85bb",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Atleta",
+          "definition": "Único athlete0 praticante do esporte, incluindo relativo sob tentativa, sem beneficiário de regeneração automaticamente atleta.",
+          "desc_pt": "Atleta",
+          "definition_pt": "Único athlete0 praticante do esporte, incluindo relativo sob tentativa, sem beneficiário de regeneração automaticamente atleta."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004068_SENT011::esporte::1",
           "sent_ID": "FOLHA_DOC004068_SENT011",
           "text": "O outro morto foi um surfista que tentava praticar o esporte no mar revolto em Barbados.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "esporte",
             "char_start": 53,
             "char_end": 60
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "que"
+          },
+          "syntax": {
+            "Arg0": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 30,
+                "char_end": 33
+              }
+            ]
+          },
+          "target_instance_id": 5384,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_07f98907512bf0dd",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 53,
+                "char_end": 60
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      7
+                    ],
+                    "char_start": 30,
+                    "char_end": 33,
+                    "head_token_id": 7,
+                    "head_form": "que",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000025_SENT022::esporte::1",
           "sent_ID": "FOLHA_DOC000025_SENT022",
           "text": "\"Ele buscava no esporte uma regeneração, mas toda hora era jogado de volta para o tráfico, que era um universo que achava encantador\", diz o ator.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "esporte",
             "char_start": 16,
             "char_end": 23
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null
+          },
+          "syntax": {
+            "Arg0": null
+          },
+          "argument_positions": {
+            "Arg0": []
+          },
+          "target_instance_id": 6215,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_07f98907512bf0dd",
+          "argument_details": {
+            "predicate_token_ids": [
+              6
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 16,
+                "char_end": 23
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "esporte · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 1
+        }
+      }
     }
   ]
 }

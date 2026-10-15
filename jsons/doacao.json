@@ -6,94 +6,591 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "doação · acepção 1",
+      "sense_id": "s_faa18a1473281366",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_faa18a1473281366",
+      "frame_id": "f_b6b29f68fbbb9c95",
+      "pt_roleset": null,
+      "sense_label": "doação · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "donation.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/donation.xml",
+          "source_xml_url": "data/nombank_sources/donation.xml",
+          "source_xml_sha256": "57bf253800eef7bf85e97c048deb7ad564bd1afcd5ade2716fd172a03965a931",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "doador",
+          "definition": "Entidade que oferece a doação, inclusive classe empresarial explicitamente expressa por adjetivo relacional.",
+          "desc_pt": "doador",
+          "definition_pt": "Entidade que oferece a doação, inclusive classe empresarial explicitamente expressa por adjetivo relacional."
+        },
+        {
+          "id": "Arg1",
+          "desc": "coisa/valor doado",
+          "definition": "Recurso ou expressão independente do montante doado.",
+          "desc_pt": "coisa/valor doado",
+          "definition_pt": "Recurso ou expressão independente do montante doado."
+        },
+        {
+          "id": "Arg2",
+          "desc": "destinatário",
+          "definition": "Entidade que recebe a doação; uso posterior do recurso não implica esse papel.",
+          "desc_pt": "destinatário",
+          "definition_pt": "Entidade que recebe a doação; uso posterior do recurso não implica esse papel."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003057_SENT016::doação::1",
           "sent_ID": "FOLHA_DOC003057_SENT016",
           "text": "Com doações até de desconhecidos de fora do país, o casal de Joinville, em Santa Catarina, já arrecadou R$ 3,6 milhões, o suficiente para um ano de tratamento.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 4,
             "char_end": 11
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "de desconhecidos de fora do país",
+            "Arg1": "R$ 3,6 milhões",
+            "Arg2": "o casal de Joinville, em Santa Catarina"
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": "obj",
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 16,
+                "char_end": 48
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 104,
+                "char_end": 118
+              }
+            ],
+            "Arg2": [
+              {
+                "char_start": 50,
+                "char_end": 89
+              }
+            ]
+          },
+          "target_instance_id": 729,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 4,
+                "char_end": 11
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "char_start": 16,
+                    "char_end": 48,
+                    "head_token_id": 5,
+                    "head_form": "desconhecidos",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      23,
+                      24,
+                      25
+                    ],
+                    "char_start": 104,
+                    "char_end": 118,
+                    "head_token_id": 25,
+                    "head_form": "milhões",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "char_start": 50,
+                    "char_end": 89,
+                    "head_token_id": 13,
+                    "head_form": "casal",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT005::doação::1",
           "sent_ID": "FOLHA_DOC003209_SENT005",
           "text": "Ao mesmo tempo, a associação dos reitores defende a criação desses fundos, mas teme que o governo use as doações para substituir repasses de recursos públicos.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 105,
             "char_end": 112
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 3711,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              25
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 105,
+                "char_end": 112
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000139_SENT014::doação::1",
           "sent_ID": "FOLHA_DOC000139_SENT014",
           "text": "As doações empresariais à cidade continuam sendo mal vistas pelos moradores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 3,
             "char_end": 10
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "empresariais",
+            "Arg1": null,
+            "Arg2": "à cidade"
+          },
+          "syntax": {
+            "Arg0": "amod",
+            "Arg1": null,
+            "Arg2": "nmod"
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 11,
+                "char_end": 23
+              }
+            ],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 24,
+                "char_end": 32
+              }
+            ]
+          },
+          "target_instance_id": 8335,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              2
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 3,
+                "char_end": 10
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      3
+                    ],
+                    "char_start": 11,
+                    "char_end": 23,
+                    "head_token_id": 3,
+                    "head_form": "empresariais",
+                    "head_deprel": "amod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "char_start": 24,
+                    "char_end": 32,
+                    "head_token_id": 6,
+                    "head_form": "cidade",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT008::doação::1",
           "sent_ID": "FOLHA_DOC003209_SENT008",
           "text": "No Senado, a Comissão de Assuntos Econômicos aprovou um projeto de 2015 que prevê que as doações possam ser usadas para obras, equipamentos, bolsa de estudos e qualificação, entre outros.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 89,
             "char_end": 96
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10686,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              19
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 89,
+                "char_end": 96
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT013::doação::1",
           "sent_ID": "FOLHA_DOC003209_SENT013",
           "text": "O texto da Câmara prevê que os doadores tenham a opção de deduzir do IR os valores das doações até o limite de 12%, assim como as demais deduções.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 87,
             "char_end": 94
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "os doadores",
+            "Arg1": "os valores",
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "obj",
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 28,
+                "char_end": 39
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 72,
+                "char_end": 82
+              }
+            ],
+            "Arg2": []
+          },
+          "target_instance_id": 11138,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              22
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 87,
+                "char_end": 94
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9
+                    ],
+                    "char_start": 28,
+                    "char_end": 39,
+                    "head_token_id": 9,
+                    "head_form": "doadores",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      18,
+                      19
+                    ],
+                    "char_start": 72,
+                    "char_end": 82,
+                    "head_token_id": 19,
+                    "head_form": "valores",
+                    "head_deprel": "obj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003057_SENT015::doação::1",
           "sent_ID": "FOLHA_DOC003057_SENT015",
           "text": "Eles abriram três contas para receber doações e criaram uma página no Facebook, que conseguiu 170 mil seguidores.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "doações",
             "char_start": 38,
             "char_end": 45
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "Eles"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "nsubj"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 0,
+                "char_end": 4
+              }
+            ]
+          },
+          "target_instance_id": 12370,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_b6b29f68fbbb9c95",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 38,
+                "char_end": 45
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      1
+                    ],
+                    "char_start": 0,
+                    "char_end": 4,
+                    "head_token_id": 1,
+                    "head_form": "Eles",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "doação · acepção 1"
+      "syntactic_profile": {
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 1
+        },
+        "obj": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0
+        },
+        "nsubj": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 2
+        },
+        "amod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }

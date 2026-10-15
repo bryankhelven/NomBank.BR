@@ -6,38 +6,289 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "arauto · acepção 1",
+      "sense_id": "s_1f5976651b5d4559",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_1f5976651b5d4559",
+      "frame_id": "f_f9f11329592e979f",
+      "pt_roleset": null,
+      "sense_label": "arauto · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "advocate.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/advocate.xml",
+          "source_xml_url": "data/nombank_sources/advocate.xml",
+          "source_xml_sha256": "11842013656af109828d24c0538d15e38f1dd01b579194c36e77a3589df04217",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Defensor propagador",
+          "definition": "Quem propaga/defende causa, incluindo imprensa metonímica independente.",
+          "desc_pt": "Defensor propagador",
+          "definition_pt": "Quem propaga/defende causa, incluindo imprensa metonímica independente."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Causa defendida",
+          "definition": "Sugestão/conduta/cultura propagada, restrição PT arauto defensor.",
+          "desc_pt": "Causa defendida",
+          "definition_pt": "Sugestão/conduta/cultura propagada, restrição PT arauto defensor."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário influenciado",
+          "definition": "A quem se propaga causa.",
+          "desc_pt": "Destinatário influenciado",
+          "definition_pt": "A quem se propaga causa."
+        },
+        {
+          "id": "Arg4",
+          "desc": "Empregador",
+          "definition": "Entidade para quem trabalha defensor; Arg4 literal sem fabricar Arg3.",
+          "desc_pt": "Empregador",
+          "definition_pt": "Entidade para quem trabalha defensor; Arg4 literal sem fabricar Arg3."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000035_SENT012::arauto::1",
           "sent_ID": "FOLHA_DOC000035_SENT012",
           "text": "\"A imprensa se tornou o arauto dessa conduta punitiva\", afirmou ele.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arauto",
             "char_start": 24,
             "char_end": 30
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A imprensa",
+            "Arg1": "dessa conduta punitiva",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 1,
+                "char_end": 11
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 31,
+                "char_end": 53
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 1644,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f9f11329592e979f",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 30
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 1,
+                    "char_end": 11,
+                    "head_token_id": 3,
+                    "head_form": "imprensa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 31,
+                    "char_end": 53,
+                    "head_token_id": 10,
+                    "head_form": "conduta",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000035_SENT001::arauto::1",
           "sent_ID": "FOLHA_DOC000035_SENT001",
           "text": "'A imprensa se tornou o arauto da cultura punitiva', diz Mariz.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "arauto",
             "char_start": 24,
             "char_end": 30
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "A imprensa",
+            "Arg1": "da cultura punitiva",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "syntax": {
+            "Arg0": "nsubj",
+            "Arg1": "nmod",
+            "Arg2": null,
+            "Arg4": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 1,
+                "char_end": 11
+              }
+            ],
+            "Arg1": [
+              {
+                "char_start": 31,
+                "char_end": 50
+              }
+            ],
+            "Arg2": [],
+            "Arg4": []
+          },
+          "target_instance_id": 4561,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_f9f11329592e979f",
+          "argument_details": {
+            "predicate_token_ids": [
+              7
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 24,
+                "char_end": 30
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      2,
+                      3
+                    ],
+                    "char_start": 1,
+                    "char_end": 11,
+                    "head_token_id": 3,
+                    "head_form": "imprensa",
+                    "head_deprel": "nsubj"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "char_start": 31,
+                    "char_end": 50,
+                    "head_token_id": 10,
+                    "head_form": "cultura",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg4",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "arauto · acepção 1"
+      "syntactic_profile": {
+        "nsubj": {
+          "Arg0": 2,
+          "Arg1": 0,
+          "Arg2": 0,
+          "Arg4": 0
+        },
+        "nmod": {
+          "Arg0": 0,
+          "Arg1": 2,
+          "Arg2": 0,
+          "Arg4": 0
+        }
+      }
     }
   ]
 }

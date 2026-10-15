@@ -6,38 +6,203 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_label": "dedução · acepção 1",
+      "sense_id": "s_d951d3ca8a2b84f0",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d951d3ca8a2b84f0",
+      "frame_id": "f_a21c9ac3e228b454",
+      "pt_roleset": null,
+      "sense_label": "dedução · acepção 1",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "subtraction.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/subtraction.xml",
+          "source_xml_url": "data/nombank_sources/subtraction.xml",
+          "source_xml_sha256": "4a180a236963a7794c74481cb8734d33553339db0f76ffb49a803faa7a122f4d",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do abatimento",
+          "definition": "Quem subtrai valor, sem autor de projeto ou doador da opção principal automaticamente autor de demais deduções.",
+          "desc_pt": "Autor do abatimento",
+          "definition_pt": "Quem subtrai valor, sem autor de projeto ou doador da opção principal automaticamente autor de demais deduções."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Valor abatido",
+          "definition": "Thing being subtracted incorporado conforme subtraction REF1 quando quantia não individualizada.",
+          "desc_pt": "Valor abatido",
+          "definition_pt": "Thing being subtracted incorporado conforme subtraction REF1 quando quantia não individualizada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Base do abatimento",
+          "definition": "De onde se tira valor, incluindo IR compartilhado por paralelismo fiscal; restrição PT ao desconto fiscal.",
+          "desc_pt": "Base do abatimento",
+          "definition_pt": "De onde se tira valor, incluindo IR compartilhado por paralelismo fiscal; restrição PT ao desconto fiscal."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003209_SENT013::dedução::1",
           "sent_ID": "FOLHA_DOC003209_SENT013",
           "text": "O texto da Câmara prevê que os doadores tenham a opção de deduzir do IR os valores das doações até o limite de 12%, assim como as demais deduções.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "deduções",
             "char_start": 137,
             "char_end": 145
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "do IR"
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": "obl"
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": [
+              {
+                "char_start": 66,
+                "char_end": 71
+              }
+            ]
+          },
+          "target_instance_id": 11140,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a21c9ac3e228b454",
+          "argument_details": {
+            "predicate_token_ids": [
+              34
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 137,
+                "char_end": 145
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "char_start": 66,
+                    "char_end": 71,
+                    "head_token_id": 17,
+                    "head_form": "IR",
+                    "head_deprel": "obl"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT014::dedução::1",
           "sent_ID": "FOLHA_DOC003209_SENT014",
           "text": "O projeto do Senado prevê que as deduções só possam ocorrer a partir de 2021.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "deduções",
             "char_start": 33,
             "char_end": 41
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": null,
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 12020,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_a21c9ac3e228b454",
+          "argument_details": {
+            "predicate_token_ids": [
+              9
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 33,
+                "char_end": 41
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {},
-      "sense_label": "dedução · acepção 1"
+      "syntactic_profile": {
+        "obl": {
+          "Arg0": 0,
+          "Arg1": 0,
+          "Arg2": 1
+        }
+      }
     }
   ]
 }

@@ -6,37 +6,224 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
+      "instances": [],
+      "syntactic_profile": {},
+      "sense_id": "s_d41bec24317effcf",
+      "frame_id": null,
+      "inventory_authority": "no_defined_inventory"
+    },
+    {
+      "sense_id": "s_d41bec24317effcf",
+      "frame_id": "f_084e44e585beefd5",
+      "pt_roleset": "conselho.01",
+      "sense_label": "conselho.01",
+      "description": null,
+      "inventory_authority": "local_proposal_pending_reconciliation",
+      "origin_frames": [
+        {
+          "roleset": "warning.01",
+          "resource": "English NomBank",
+          "url": "data/nombank_sources/warning.xml",
+          "source_xml_url": "data/nombank_sources/warning.xml",
+          "source_xml_sha256": "4fba1e0f723f72ab18eec02a99896bca783463b2fb91baded25cefb666fdc059",
+          "adapted": true,
+          "gloss": null
+        }
+      ],
+      "roles": [
+        {
+          "id": "Arg0",
+          "desc": "Autor do aviso",
+          "definition": "Quem adverte, incluindo fonte genitiva ou vocativo em agradecimento.",
+          "desc_pt": "Autor do aviso",
+          "definition_pt": "Quem adverte, incluindo fonte genitiva ou vocativo em agradecimento."
+        },
+        {
+          "id": "Arg1",
+          "desc": "Conteúdo do aviso",
+          "definition": "Advertência incorporada conforme warning REF1 quando não particularizada.",
+          "desc_pt": "Conteúdo do aviso",
+          "definition_pt": "Advertência incorporada conforme warning REF1 quando não particularizada."
+        },
+        {
+          "id": "Arg2",
+          "desc": "Destinatário do aviso",
+          "definition": "Quem recebe aviso, sem sujeito elíptico de seguir ou agradecer reconstruído.",
+          "desc_pt": "Destinatário do aviso",
+          "definition_pt": "Quem recebe aviso, sem sujeito elíptico de seguir ou agradecer reconstruído."
+        }
+      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001478_SENT065::conselho::1",
           "sent_ID": "FOLHA_DOC001478_SENT065",
           "text": "Obrigado pelo conselho, mister Golson.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conselho",
             "char_start": 14,
             "char_end": 22
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "mister Golson",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "vocative",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 24,
+                "char_end": 37
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 4609,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_084e44e585beefd5",
+          "argument_details": {
+            "predicate_token_ids": [
+              4
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 14,
+                "char_end": 22
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      6,
+                      7
+                    ],
+                    "char_start": 24,
+                    "char_end": 37,
+                    "head_token_id": 6,
+                    "head_form": "mister",
+                    "head_deprel": "vocative"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         },
         {
           "instance_id": "FOLHA_DOC000100_SENT025::conselho::1",
           "sent_ID": "FOLHA_DOC000100_SENT025",
           "text": "Calculados os pontos, descobriram que se tivessem seguido o conselho do romeno, seriam cabeças de chave.",
-          "arguments_annotated": false,
+          "arguments_annotated": true,
           "predicate": {
             "form": "conselho",
             "char_start": 60,
             "char_end": 68
           },
-          "realization": {},
-          "syntax": {},
-          "argument_positions": {}
+          "realization": {
+            "Arg0": "do romeno",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "syntax": {
+            "Arg0": "nmod",
+            "Arg1": null,
+            "Arg2": null
+          },
+          "argument_positions": {
+            "Arg0": [
+              {
+                "char_start": 69,
+                "char_end": 78
+              }
+            ],
+            "Arg1": [],
+            "Arg2": []
+          },
+          "target_instance_id": 10055,
+          "annotation_authority": "local_completed_pending_reconciliation",
+          "annotation_status": "annotated",
+          "frame_id": "f_084e44e585beefd5",
+          "argument_details": {
+            "predicate_token_ids": [
+              11
+            ],
+            "predicate_spans": [
+              {
+                "char_start": 60,
+                "char_end": 68
+              }
+            ],
+            "arguments": [
+              {
+                "slot": "Arg0",
+                "realization_mode": "INDEPENDENT_SPAN",
+                "status": "REALIZED",
+                "spans": [
+                  {
+                    "token_ids": [
+                      12,
+                      13,
+                      14
+                    ],
+                    "char_start": 69,
+                    "char_end": 78,
+                    "head_token_id": 14,
+                    "head_form": "romeno",
+                    "head_deprel": "nmod"
+                  }
+                ]
+              },
+              {
+                "slot": "Arg1",
+                "realization_mode": "REL_ENCODED",
+                "status": "ENCODED_IN_REL",
+                "spans": []
+              },
+              {
+                "slot": "Arg2",
+                "realization_mode": "NONE_SELECTED",
+                "status": "UNREALIZED_IN_CONTEXT",
+                "spans": []
+              }
+            ]
+          }
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {
+        "vocative": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        },
+        "nmod": {
+          "Arg0": 1,
+          "Arg1": 0,
+          "Arg2": 0
+        }
+      }
     }
   ]
 }
