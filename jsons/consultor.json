@@ -6,641 +6,122 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "consultor · acepção 1",
-      "sense_id": "s_65e525020998447a",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_65e525020998447a",
-      "frame_id": "f_1ea8e7b803b3b45d",
-      "pt_roleset": null,
-      "sense_label": "consultor · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "consultant.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/consultant.xml",
-          "source_xml_url": "data/nombank_sources/consultant.xml",
-          "source_xml_sha256": "9f29763fca08fd344774feaab321e362e2d78782d19bd638c517fcf9c43d501b",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "consultor",
-          "definition": "Participante consultor conforme exemplo nominal, incorporado no REL quando não há predicação externa independente.",
-          "desc_pt": "consultor",
-          "definition_pt": "Participante consultor conforme exemplo nominal, incorporado no REL quando não há predicação externa independente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "assunto",
-          "definition": "Área/assunto da consultoria, com número nominal n=1 (source=2 preservado).",
-          "desc_pt": "assunto",
-          "definition_pt": "Área/assunto da consultoria, com número nominal n=1 (source=2 preservado)."
-        },
-        {
-          "id": "Arg2",
-          "desc": "contraparte consultada",
-          "definition": "Pessoa ou entidade consultada/com quem se presta consulta, com número nominal n=2 (source=1 preservado); afiliação não basta.",
-          "desc_pt": "contraparte consultada",
-          "definition_pt": "Pessoa ou entidade consultada/com quem se presta consulta, com número nominal n=2 (source=1 preservado); afiliação não basta."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002027_SENT011::consultor::1",
           "sent_ID": "FOLHA_DOC002027_SENT011",
           "text": "A tática ajuda a criar chances para que o cliente experimente o produto inusitado, aponta a consultora do Sebrae Juliana Berbert.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultora",
             "char_start": 92,
             "char_end": 102
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 700,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              18
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 92,
-                "char_end": 102
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003034_SENT009::consultor::1",
           "sent_ID": "FOLHA_DOC003034_SENT009",
           "text": "E as atuais condições do país dão margem para que isso aconteça, diz o consultor de investimentos Marcelo DAgosto.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultor",
             "char_start": 71,
             "char_end": 80
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de investimentos",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 81,
-                "char_end": 97
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 5425,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 71,
-                "char_end": 80
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      18,
-                      19
-                    ],
-                    "char_start": 81,
-                    "char_end": 97,
-                    "head_token_id": 19,
-                    "head_form": "investimentos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003136_SENT014::consultor::1",
           "sent_ID": "FOLHA_DOC003136_SENT014",
           "text": "É preciso ficar de olho nessas demandas e observar, por exemplo, se a concorrência já está mudando o tamanho ou a aparência do pacote, diz Beatriz Micheletto, consultora do Sebrae.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultora",
             "char_start": 159,
             "char_end": 169
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 7891,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              34
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 159,
-                "char_end": 169
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003038_SENT010::consultor::1",
           "sent_ID": "FOLHA_DOC003038_SENT010",
           "text": "Bolsonaro foi atendido pela consultora em seu consultório, em São Paulo, há cerca de um ano.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultora",
             "char_start": 28,
             "char_end": 38
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "Bolsonaro"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nsubj:pass"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 0,
-                "char_end": 9
-              }
-            ]
-          },
-          "target_instance_id": 8525,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 28,
-                "char_end": 38
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 9,
-                    "head_token_id": 1,
-                    "head_form": "Bolsonaro",
-                    "head_deprel": "nsubj:pass"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003151_SENT004::consultor::1",
           "sent_ID": "FOLHA_DOC003151_SENT004",
           "text": "A disposição para trocar de trabalho com frequência é resultado de uma combinação de fatores, dizem consultores de RH.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultores",
             "char_start": 100,
             "char_end": 111
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de RH",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 112,
-                "char_end": 117
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 9046,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              18
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 100,
-                "char_end": 111
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      19,
-                      20
-                    ],
-                    "char_start": 112,
-                    "char_end": 117,
-                    "head_token_id": 20,
-                    "head_form": "RH",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC002037_SENT006::consultor::1",
           "sent_ID": "FOLHA_DOC002037_SENT006",
           "text": "Como consultor de crises, trabalhei no epicentro de escândalos nos últimos vinte anos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultor",
             "char_start": 5,
             "char_end": 14
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de crises",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 15,
-                "char_end": 24
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 12942,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 5,
-                "char_end": 14
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4
-                    ],
-                    "char_start": 15,
-                    "char_end": 24,
-                    "head_token_id": 4,
-                    "head_form": "crises",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC002035_SENT018::consultor::1",
           "sent_ID": "FOLHA_DOC002035_SENT018",
           "text": "Geralmente, elas estão usando o pretexto do bitcoin para vender vento virtual, diz Fernando Ulrich, consultor da área.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultor",
             "char_start": 100,
             "char_end": 109
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "da área",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 110,
-                "char_end": 117
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 14948,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              20
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 100,
-                "char_end": 109
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      21,
-                      22,
-                      23
-                    ],
-                    "char_start": 110,
-                    "char_end": 117,
-                    "head_token_id": 23,
-                    "head_form": "área",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003136_SENT016::consultor::1",
           "sent_ID": "FOLHA_DOC003136_SENT016",
           "text": "A consultora do Sebrae sugere, para quem não tem muita verba, entrar em contato com empresas juniores na área de design, \"que podem ajudar a criar um material bonito e funcional\".",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "consultora",
             "char_start": 2,
             "char_end": 12
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 15726,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1ea8e7b803b3b45d",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 12
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 4,
-          "Arg2": 0
-        },
-        "nsubj:pass": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "consultor · acepção 1"
     }
   ]
 }

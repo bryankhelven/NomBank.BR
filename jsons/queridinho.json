@@ -6,165 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_b5c6c9be4a4c09a4",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_b5c6c9be4a4c09a4",
-      "frame_id": "f_c0bc01af7dff5962",
-      "pt_roleset": "queridinho.01",
-      "sense_label": "queridinho.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "favorite.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/favorite.xml",
-          "source_xml_url": "data/nombank_sources/favorite.xml",
-          "source_xml_sha256": "a3f5fce6ee2341265298efa330dc30a158620728a65de5cdea159701d50eff13",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Comunidade que prefere",
-          "definition": "Liker gastronomia local por metonímia de cena.",
-          "desc_pt": "Comunidade que prefere",
-          "definition_pt": "Liker gastronomia local por metonímia de cena."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Entidade preferida",
-          "definition": "Thing preferred/favored Contramar.",
-          "desc_pt": "Entidade preferida",
-          "definition_pt": "Thing preferred/favored Contramar."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento da preferência",
-          "definition": "Instrument expresso, sem cantina resultante como instrumento.",
-          "desc_pt": "Instrumento da preferência",
-          "definition_pt": "Instrument expresso, sem cantina resultante como instrumento."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002023_SENT015::queridinho::1",
           "sent_ID": "FOLHA_DOC002023_SENT015",
           "text": "Ali ao lado, o Contramar, restaurante que está entre os queridinhos da cena gastronômica local, virou uma cantina comunitária.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "queridinhos",
             "char_start": 56,
             "char_end": 67
           },
-          "realization": {
-            "Arg0": "da cena gastronômica local",
-            "Arg1": "o Contramar",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nsubj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 68,
-                "char_end": 94
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 13,
-                "char_end": 24
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 8976,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_c0bc01af7dff5962",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 56,
-                "char_end": 67
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15,
-                      16,
-                      17,
-                      18,
-                      19
-                    ],
-                    "char_start": 68,
-                    "char_end": 94,
-                    "head_token_id": 17,
-                    "head_form": "cena",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7
-                    ],
-                    "char_start": 13,
-                    "char_end": 24,
-                    "head_token_id": 7,
-                    "head_form": "Contramar",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

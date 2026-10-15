@@ -6,286 +6,51 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_cc83319dca1a678e",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_cc83319dca1a678e",
-      "frame_id": "f_88ae9bdc00929c16",
-      "pt_roleset": "apuração.01",
-      "sense_label": "apuração.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "investigation.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/investigation.xml",
-          "source_xml_url": "data/nombank_sources/investigation.xml",
-          "source_xml_sha256": "cab4a65fa21dc9d0fa1be72e0bf2caca7c698fd3d9ecc01a5449a881ce06939e",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Examinador",
-          "definition": "Quem investiga.",
-          "desc_pt": "Examinador",
-          "definition_pt": "Quem investiga."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Examinado",
-          "definition": "Pessoa/atividade apurada, inclusive alvo descrito por relação contextual com investigadores.",
-          "desc_pt": "Examinado",
-          "definition_pt": "Pessoa/atividade apurada, inclusive alvo descrito por relação contextual com investigadores."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Matéria procurada",
-          "definition": "Infração/objeto para cuja verificação se investiga, não toda suspeita de interferir.",
-          "desc_pt": "Matéria procurada",
-          "definition_pt": "Infração/objeto para cuja verificação se investiga, não toda suspeita de interferir."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000038_SENT010::apuração::1",
           "sent_ID": "FOLHA_DOC000038_SENT010",
           "text": "Cancellier não era suspeito de desvio de recursos, mas de tentar intervir em uma apuração interna.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "apuração",
             "char_start": 81,
             "char_end": 89
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 6990,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_88ae9bdc00929c16",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 81,
-                "char_end": 89
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000001_SENT009::apuração::1",
           "sent_ID": "FOLHA_DOC000001_SENT009",
           "text": "O ex-presidente disse ainda não ter \"medo\" dos investigadores que, de acordo com ele, estão acostumados a \"mexer com deputados e senadores\" que temem as apurações.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "apurações",
             "char_start": 153,
             "char_end": 162
           },
-          "realization": {
-            "Arg0": "dos investigadores",
-            "Arg1": "deputados e senadores",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "obl",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 43,
-                "char_end": 61
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 117,
-                "char_end": 138
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 9378,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_88ae9bdc00929c16",
-          "argument_details": {
-            "predicate_token_ids": [
-              33
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 153,
-                "char_end": 162
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10,
-                      11,
-                      12
-                    ],
-                    "char_start": 43,
-                    "char_end": 61,
-                    "head_token_id": 12,
-                    "head_form": "investigadores",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      26,
-                      27,
-                      28
-                    ],
-                    "char_start": 117,
-                    "char_end": 138,
-                    "head_token_id": 26,
-                    "head_form": "deputados",
-                    "head_deprel": "obl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000179_SENT012::apuração::1",
           "sent_ID": "FOLHA_DOC000179_SENT012",
           "text": "Em depoimento, o reitor negou que tentasse barrar a apuração.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "apuração",
             "char_start": 52,
             "char_end": 60
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 12407,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_88ae9bdc00929c16",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 52,
-                "char_end": 60
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

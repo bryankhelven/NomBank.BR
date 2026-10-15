@@ -6,417 +6,76 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002015_SENT019::denominação::1",
+          "sent_ID": "FOLHA_DOC002015_SENT019",
+          "text": "A denominação do fundo e a queda na taxa básica de juros ajudam a explicar o resultado favorável.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "denominação",
+            "char_start": 2,
+            "char_end": 13
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        },
+        {
+          "instance_id": "FOLHA_DOC002015_SENT011::denominação::1",
+          "sent_ID": "FOLHA_DOC002015_SENT011",
+          "text": "A categoria \"Renda Fixa\" por sua vez se desdobra em subcategorias, cujas denominações ajudam o investidor a entender a política de investimento de cada fundo.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "denominações",
+            "char_start": 73,
+            "char_end": 85
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "denominação · acepção 1",
-      "sense_id": "s_63967c0f742b4c45",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "denominação · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "denominação · acepção 2",
-      "sense_id": "s_61af24335b0066b4",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_63967c0f742b4c45",
-      "frame_id": "f_7deb17768eee4e0d",
-      "pt_roleset": null,
-      "sense_label": "denominação · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "name.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/name.xml",
-          "source_xml_url": "data/nombank_sources/name.xml",
-          "source_xml_sha256": "5116acb405885d12578472ea5646689ca5b409565319d21b3720b5b14b4fb78f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "portador do nome",
-          "definition": "Entidade cujo nome/denominação é atributo.",
-          "desc_pt": "portador do nome",
-          "definition_pt": "Entidade cujo nome/denominação é atributo."
-        },
-        {
-          "id": "Arg2",
-          "desc": "nome",
-          "definition": "Valor nominal atribuído à entidade.",
-          "desc_pt": "nome",
-          "definition_pt": "Valor nominal atribuído à entidade."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002015_SENT019::denominação::1",
-          "sent_ID": "FOLHA_DOC002015_SENT019",
-          "text": "A denominação do fundo e a queda na taxa básica de juros ajudam a explicar o resultado favorável.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "denominação",
-            "char_start": 2,
-            "char_end": 13
-          },
-          "realization": {
-            "Arg1": "do fundo",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 14,
-                "char_end": 22
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 2213,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7deb17768eee4e0d",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 13
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5
-                    ],
-                    "char_start": 14,
-                    "char_end": 22,
-                    "head_token_id": 5,
-                    "head_form": "fundo",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        },
-        {
-          "instance_id": "FOLHA_DOC002015_SENT011::denominação::1",
-          "sent_ID": "FOLHA_DOC002015_SENT011",
-          "text": "A categoria \"Renda Fixa\" por sua vez se desdobra em subcategorias, cujas denominações ajudam o investidor a entender a política de investimento de cada fundo.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "denominações",
-            "char_start": 73,
-            "char_end": 85
-          },
-          "realization": {
-            "Arg1": "cujas",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg1": "det",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 67,
-                "char_end": 72
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 4822,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7deb17768eee4e0d",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 73,
-                "char_end": 85
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15
-                    ],
-                    "char_start": 67,
-                    "char_end": 72,
-                    "head_token_id": 15,
-                    "head_form": "cujas",
-                    "head_deprel": "det"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "det": {
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_61af24335b0066b4",
-      "frame_id": "f_cfbde888100bc3f2",
-      "pt_roleset": null,
-      "sense_label": "denominação · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "organization.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/organization.xml",
-          "source_xml_url": "data/nombank_sources/organization.xml",
-          "source_xml_sha256": "098b23669da74842b32d42090a88ed0894faa2b154c1ce2288dc002a79a46537",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "Descritor da confissão",
-          "definition": "Quantified/descriptor, domínio evangélico delimita instituição religiosa.",
-          "desc_pt": "Descritor da confissão",
-          "definition_pt": "Quantified/descriptor, domínio evangélico delimita instituição religiosa."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Líder/pivô da instituição",
-          "definition": "Employer/leader/pivot explicitado, não membro ou representante automaticamente.",
-          "desc_pt": "Líder/pivô da instituição",
-          "definition_pt": "Employer/leader/pivot explicitado, não membro ou representante automaticamente."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Aspecto secundário da instituição",
-          "definition": "Secondary-theme independente.",
-          "desc_pt": "Aspecto secundário da instituição",
-          "definition_pt": "Secondary-theme independente."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000025_SENT019::denominação::1",
           "sent_ID": "FOLHA_DOC000025_SENT019",
           "text": "Católico, e depois convertido a alguma denominação evangélica, Julio mata porque crê que se as pessoas nascem por obra de Deus, a morte delas também está nos desígnios divinos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "denominação",
             "char_start": 39,
             "char_end": 50
           },
-          "realization": {
-            "Arg1": "evangélica",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg1": "amod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 51,
-                "char_end": 61
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 3365,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_cfbde888100bc3f2",
-          "argument_details": {
-            "predicate_token_ids": [
-              8
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 39,
-                "char_end": 50
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      9
-                    ],
-                    "char_start": 51,
-                    "char_end": 61,
-                    "head_token_id": 9,
-                    "head_form": "evangélica",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC001658_SENT014::denominação::1",
           "sent_ID": "FOLHA_DOC001658_SENT014",
           "text": "Lá estavam representantes de algumas das maiores denominações evangélicas do país, como as Assembleias de Deus Belém e Madureira.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "denominações",
             "char_start": 49,
             "char_end": 61
           },
-          "realization": {
-            "Arg1": "evangélicas do país",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg1": "amod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 62,
-                "char_end": 81
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 8154,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_cfbde888100bc3f2",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 49,
-                "char_end": 61
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10,
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 62,
-                    "char_end": 81,
-                    "head_token_id": 10,
-                    "head_form": "evangélicas",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "amod": {
-          "Arg1": 2,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "denominação · acepção 2"
     }
   ]
 }

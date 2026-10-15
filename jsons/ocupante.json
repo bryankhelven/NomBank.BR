@@ -6,297 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000040_SENT006::ocupante::1",
+          "sent_ID": "FOLHA_DOC000040_SENT006",
+          "text": "Os outros dois ocupantes eram o empresário Caique Caciolato e o médico Alisson Lima dos Santos Versionato.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "ocupantes",
+            "char_start": 15,
+            "char_end": 24
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "ocupante · acepção 1",
-      "sense_id": "s_c26d98312dbee3dc",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "ocupante · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "ocupante · acepção 2",
-      "sense_id": "s_280245b812517b20",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_c26d98312dbee3dc",
-      "frame_id": "f_82c8780a79dc584a",
-      "pt_roleset": null,
-      "sense_label": "ocupante · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "passenger.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/passenger.xml",
-          "source_xml_url": "data/nombank_sources/passenger.xml",
-          "source_xml_sha256": "38623add5d7239e9ae304758d5714e6327184b19b8928f303030c0b507482362",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Passageiros",
-          "definition": "Pessoas ocupantes do transporte, sem função/cargo ou incorporação duplicados se nomeadas.",
-          "desc_pt": "Passageiros",
-          "definition_pt": "Pessoas ocupantes do transporte, sem função/cargo ou incorporação duplicados se nomeadas."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Meio de transporte",
-          "definition": "Steed/veículo ocupado, sem recuperar veículo elíptico da gloss.",
-          "desc_pt": "Meio de transporte",
-          "definition_pt": "Steed/veículo ocupado, sem recuperar veículo elíptico da gloss."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000040_SENT006::ocupante::1",
-          "sent_ID": "FOLHA_DOC000040_SENT006",
-          "text": "Os outros dois ocupantes eram o empresário Caique Caciolato e o médico Alisson Lima dos Santos Versionato.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "ocupantes",
-            "char_start": 15,
-            "char_end": 24
-          },
-          "realization": {
-            "Arg0": "o empresário Caique Caciolato e o médico Alisson Lima dos Santos Versionato",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "root",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 30,
-                "char_end": 105
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 1996,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_82c8780a79dc584a",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 15,
-                "char_end": 24
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 30,
-                    "char_end": 105,
-                    "head_token_id": 7,
-                    "head_form": "empresário",
-                    "head_deprel": "root"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "root": {
-          "Arg0": 1,
-          "Arg1": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_280245b812517b20",
-      "frame_id": "f_366742ec0e21cf20",
-      "pt_roleset": null,
-      "sense_label": "ocupante · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "holder.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/holder.xml",
-          "source_xml_url": "data/nombank_sources/holder.xml",
-          "source_xml_sha256": "12cb52f73bd1fc9bd8333dc150a1eff1ba43976682bc60ef426d94d90fd97ba7",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Titular de função",
-          "definition": "Quem exerce função, incorporado conforme holders sob quantificador negativo.",
-          "desc_pt": "Titular de função",
-          "definition_pt": "Quem exerce função, incorporado conforme holders sob quantificador negativo."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Função detida",
-          "definition": "Cargo exercido, extensão de credit-card holder à titularidade funcional.",
-          "desc_pt": "Função detida",
-          "definition_pt": "Cargo exercido, extensão de credit-card holder à titularidade funcional."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Beneficiário",
-          "definition": "Para quem exerce, distinto de país âmbito.",
-          "desc_pt": "Beneficiário",
-          "definition_pt": "Para quem exerce, distinto de país âmbito."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Atributo da função",
-          "definition": "Predicação secundária independente do cargo.",
-          "desc_pt": "Atributo da função",
-          "definition_pt": "Predicação secundária independente do cargo."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003021_SENT015::ocupante::1",
           "sent_ID": "FOLHA_DOC003021_SENT015",
           "text": "Se é esse o caso, por que não incluir artigo dizendo que \"o disposto nesse projeto não se aplica a nenhum ocupante de cargo público no país\"?",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "ocupante",
             "char_start": 106,
             "char_end": 114
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de cargo público no país",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 115,
-                "char_end": 139
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 14564,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_366742ec0e21cf20",
-          "argument_details": {
-            "predicate_token_ids": [
-              25
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 106,
-                "char_end": 114
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      26,
-                      27,
-                      28,
-                      29,
-                      30,
-                      31
-                    ],
-                    "char_start": 115,
-                    "char_end": 139,
-                    "head_token_id": 27,
-                    "head_form": "cargo",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "ocupante · acepção 2"
     }
   ]
 }

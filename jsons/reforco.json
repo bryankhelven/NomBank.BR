@@ -6,415 +6,62 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000016_SENT016::reforço::1",
+          "sent_ID": "FOLHA_DOC000016_SENT016",
+          "text": "A polícia interviu e após cinco dias de intensos confrontos, as Forças Armadas, que já estavam no Rio para reforço na segurança pública, foram acionadas.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "reforço",
+            "char_start": 107,
+            "char_end": 114
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "reforço · acepção 1",
-      "sense_id": "s_0a082f279cff03e9",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "reforço · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "reforço · acepção 2",
-      "sense_id": "s_bcb23315bde6b041",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_0a082f279cff03e9",
-      "frame_id": "f_d869fb22f80d6dbb",
-      "pt_roleset": null,
-      "sense_label": "reforço · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "reinforcement.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/reinforcement.xml",
-          "source_xml_url": "data/nombank_sources/reinforcement.xml",
-          "source_xml_sha256": "19e809a2d913855ed4ef3fa9cfeae9ad2fd34b75361da89f640b68e0c616b19d",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Reforçador",
-          "definition": "Quem promove fortalecimento, inclusive propósito não consumado.",
-          "desc_pt": "Reforçador",
-          "definition_pt": "Quem promove fortalecimento, inclusive propósito não consumado."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa fortalecida",
-          "definition": "Entidade/campo cuja resistência/capacidade aumenta.",
-          "desc_pt": "Coisa fortalecida",
-          "definition_pt": "Entidade/campo cuja resistência/capacidade aumenta."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio de fortalecer.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio de fortalecer."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000016_SENT016::reforço::1",
-          "sent_ID": "FOLHA_DOC000016_SENT016",
-          "text": "A polícia interviu e após cinco dias de intensos confrontos, as Forças Armadas, que já estavam no Rio para reforço na segurança pública, foram acionadas.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "reforço",
-            "char_start": 107,
-            "char_end": 114
-          },
-          "realization": {
-            "Arg0": "as Forças Armadas",
-            "Arg1": "na segurança pública",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 61,
-                "char_end": 78
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 115,
-                "char_end": 135
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 5564,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_d869fb22f80d6dbb",
-          "argument_details": {
-            "predicate_token_ids": [
-              23
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 107,
-                "char_end": 114
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13,
-                      14
-                    ],
-                    "char_start": 61,
-                    "char_end": 78,
-                    "head_token_id": 13,
-                    "head_form": "Forças",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      24,
-                      25,
-                      26,
-                      27
-                    ],
-                    "char_start": 115,
-                    "char_end": 135,
-                    "head_token_id": 26,
-                    "head_form": "segurança",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_bcb23315bde6b041",
-      "frame_id": "f_be8764576bf85fc9",
-      "pt_roleset": null,
-      "sense_label": "reforço · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "support.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/support.xml",
-          "source_xml_url": "data/nombank_sources/support.xml",
-          "source_xml_sha256": "2b400556e2edc4a6b56f958f2a6b37ed5031df9a1e441b83640b4df60736f927",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Apoiador",
-          "definition": "Fonte/agente de ajuda, inclusive atribuição a marcas/regiões por metonímia explícita.",
-          "desc_pt": "Apoiador",
-          "definition_pt": "Fonte/agente de ajuda, inclusive atribuição a marcas/regiões por metonímia explícita."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Apoiado",
-          "definition": "Pessoa/projeto que recebe apoio, não implicitamente resolvido fora da sentença.",
-          "desc_pt": "Apoiado",
-          "definition_pt": "Pessoa/projeto que recebe apoio, não implicitamente resolvido fora da sentença."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002083_SENT034::reforço::1",
           "sent_ID": "FOLHA_DOC002083_SENT034",
           "text": "Rogério teve o reforço de bandidos do CV (Comando Vermelho).",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "reforço",
             "char_start": 15,
             "char_end": 22
           },
-          "realization": {
-            "Arg0": "de bandidos do CV (Comando Vermelho)",
-            "Arg1": "Rogério"
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 23,
-                "char_end": 59
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 7
-              }
-            ]
-          },
-          "target_instance_id": 11507,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_be8764576bf85fc9",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 15,
-                "char_end": 22
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 23,
-                    "char_end": 59,
-                    "head_token_id": 6,
-                    "head_form": "bandidos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 7,
-                    "head_token_id": 1,
-                    "head_form": "Rogério",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000169_SENT024::reforço::1",
           "sent_ID": "FOLHA_DOC000169_SENT024",
           "text": "Elas ganham o reforço de Santa Catarina (Blumenau e Schornstein) e das alemãs Erdinger e Hofbräu.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "reforço",
             "char_start": 14,
             "char_end": 21
           },
-          "realization": {
-            "Arg0": "de Santa Catarina (Blumenau e Schornstein) e das alemãs Erdinger e Hofbräu",
-            "Arg1": "Elas"
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 22,
-                "char_end": 96
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 4
-              }
-            ]
-          },
-          "target_instance_id": 14974,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_be8764576bf85fc9",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 14,
-                "char_end": 21
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19
-                    ],
-                    "char_start": 22,
-                    "char_end": 96,
-                    "head_token_id": 6,
-                    "head_form": "Santa",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 4,
-                    "head_token_id": 1,
-                    "head_form": "Elas",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 2,
-          "Arg1": 0
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 2
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "reforço · acepção 2"
     }
   ]
 }

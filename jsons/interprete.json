@@ -6,448 +6,76 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003142_SENT010::intérprete::1",
+          "sent_ID": "FOLHA_DOC003142_SENT010",
+          "text": "Não são apenas as personagens que ganharam destaque, suas intérpretes também vieram a primeiro plano.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "intérpretes",
+            "char_start": 58,
+            "char_end": 69
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "intérprete · acepção 1",
-      "sense_id": "s_aea000f72f08c1b9",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "intérprete · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "intérprete · acepção 2",
-      "sense_id": "s_b757b380f7224a7c",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_aea000f72f08c1b9",
-      "frame_id": "f_2804f99f231de84a",
-      "pt_roleset": null,
-      "sense_label": "intérprete · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "actor.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/actor.xml",
-          "source_xml_url": "data/nombank_sources/actor.xml",
-          "source_xml_sha256": "1db8fc99fcb6bd763aab32334c9b2853b72468ae1609fe690311a849c44552ff",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Ator ou atriz",
-          "definition": "Pessoa que representa; intérprete teatral/cinematográfico é adaptação lexical local. Fonte incorpora actor Arg0.",
-          "desc_pt": "Ator ou atriz",
-          "definition_pt": "Pessoa que representa; intérprete teatral/cinematográfico é adaptação lexical local. Fonte incorpora actor Arg0."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Papel representado",
-          "definition": "Personagem ou papel dramatizado, não pessoa que atua.",
-          "desc_pt": "Papel representado",
-          "definition_pt": "Personagem ou papel dramatizado, não pessoa que atua."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003142_SENT010::intérprete::1",
-          "sent_ID": "FOLHA_DOC003142_SENT010",
-          "text": "Não são apenas as personagens que ganharam destaque, suas intérpretes também vieram a primeiro plano.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "intérpretes",
-            "char_start": 58,
-            "char_end": 69
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "as personagens"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "root"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 15,
-                "char_end": 29
-              }
-            ]
-          },
-          "target_instance_id": 4413,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_2804f99f231de84a",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 58,
-                "char_end": 69
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4,
-                      5
-                    ],
-                    "char_start": 15,
-                    "char_end": 29,
-                    "head_token_id": 5,
-                    "head_form": "personagens",
-                    "head_deprel": "root"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "root": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_b757b380f7224a7c",
-      "frame_id": "f_d2974c4de12c7232",
-      "pt_roleset": null,
-      "sense_label": "intérprete · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "performer.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/performer.xml",
-          "source_xml_url": "data/nombank_sources/performer.xml",
-          "source_xml_sha256": "2203672a7c9b286b4d5a8ae6c26cbc9d20c0bfa244f785bbaa3ae75b0de4ec35",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Executante",
-          "definition": "Quem executa interpretação/apresentação; musical é extensão local sem pressupor cantar ou tocar instrumento particular.",
-          "desc_pt": "Executante",
-          "definition_pt": "Quem executa interpretação/apresentação; musical é extensão local sem pressupor cantar ou tocar instrumento particular."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Obra ou atuação executada",
-          "definition": "Thing performed original, adaptado à canção/obra musical.",
-          "desc_pt": "Obra ou atuação executada",
-          "definition_pt": "Thing performed original, adaptado à canção/obra musical."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio usado para executar a obra, explicitamente declarado.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio usado para executar a obra, explicitamente declarado."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003062_SENT046::intérprete::1",
           "sent_ID": "FOLHA_DOC003062_SENT046",
           "text": "Ela continuou a compor, ainda que imaginasse que tivesse de entregar suas canções a outros intérpretes.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "intérpretes",
             "char_start": 91,
             "char_end": 102
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "suas canções",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 69,
-                "char_end": 81
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 6281,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_d2974c4de12c7232",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 91,
-                "char_end": 102
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      13,
-                      14
-                    ],
-                    "char_start": 69,
-                    "char_end": 81,
-                    "head_token_id": 14,
-                    "head_form": "canções",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC002036_SENT007::intérprete::1",
           "sent_ID": "FOLHA_DOC002036_SENT007",
           "text": "Algumas horas de dedicação a uma canção podem fazer do seu intérprete um milionário instantâneo.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "intérprete",
             "char_start": 59,
             "char_end": 69
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "uma canção",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 29,
-                "char_end": 39
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 6881,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_d2974c4de12c7232",
-          "argument_details": {
-            "predicate_token_ids": [
-              13
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 59,
-                "char_end": 69
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7
-                    ],
-                    "char_start": 29,
-                    "char_end": 39,
-                    "head_token_id": 7,
-                    "head_form": "canção",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003176_SENT008::intérprete::1",
           "sent_ID": "FOLHA_DOC003176_SENT008",
           "text": "Comprometida com o rock, intérprete de alguns sucessos, ela parecia drogada, procurou uma clínica em Laranjeiras.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "intérprete",
             "char_start": 25,
             "char_end": 35
           },
-          "realization": {
-            "Arg0": "ela",
-            "Arg1": "de alguns sucessos",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 56,
-                "char_end": 59
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 36,
-                "char_end": 54
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 8727,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_d2974c4de12c7232",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 25,
-                "char_end": 35
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11
-                    ],
-                    "char_start": 56,
-                    "char_end": 59,
-                    "head_token_id": 11,
-                    "head_form": "ela",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 36,
-                    "char_end": 54,
-                    "head_token_id": 9,
-                    "head_form": "sucessos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 2,
-          "Arg2": 0
-        },
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "intérprete · acepção 2"
     }
   ]
 }

@@ -6,139 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_0177c9274f032955",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_0177c9274f032955",
-      "frame_id": "f_7a948d8856c75df3",
-      "pt_roleset": "favor.01",
-      "sense_label": "favor.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "favor.02",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/favor.xml",
-          "source_xml_url": "data/nombank_sources/favor.xml",
-          "source_xml_sha256": "a8a3d25c239e794befeb243507250f15a4e4fcf7c100eec5d2a401615ddfc8af",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Prestador do favor",
-          "definition": "Giver prospectivo a quem cortesia foi pedida, me, sem serviço prestado afirmado.",
-          "desc_pt": "Prestador do favor",
-          "definition_pt": "Giver prospectivo a quem cortesia foi pedida, me, sem serviço prestado afirmado."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Cortesia prestada",
-          "definition": "Thing given incorporado conforme favor REF1 quando ato concreto elíptico.",
-          "desc_pt": "Cortesia prestada",
-          "definition_pt": "Thing given incorporado conforme favor REF1 quando ato concreto elíptico."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destinatário do favor",
-          "definition": "Entity given-to específico, sem solicitante necessariamente recebedor nem tribunal locativo como pessoa.",
-          "desc_pt": "Destinatário do favor",
-          "definition_pt": "Entity given-to específico, sem solicitante necessariamente recebedor nem tribunal locativo como pessoa."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003035_SENT037::favor::1",
           "sent_ID": "FOLHA_DOC003035_SENT037",
           "text": "No dia em que pede a minha prisão, ele me pediu um favor no TSE, numa questão de multas, algo que não tinha nada a ver com minhas atribuições.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "favor",
             "char_start": 51,
             "char_end": 56
           },
-          "realization": {
-            "Arg0": "me",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "iobj",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 39,
-                "char_end": 41
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 5007,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7a948d8856c75df3",
-          "argument_details": {
-            "predicate_token_ids": [
-              15
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 51,
-                "char_end": 56
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12
-                    ],
-                    "char_start": 39,
-                    "char_end": 41,
-                    "head_token_id": 12,
-                    "head_form": "me",
-                    "head_deprel": "iobj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "iobj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

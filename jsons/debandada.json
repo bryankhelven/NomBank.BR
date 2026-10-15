@@ -6,160 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_f49fa30553dfb2d9",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_f49fa30553dfb2d9",
-      "frame_id": "f_2200289052287794",
-      "pt_roleset": "debandada.01",
-      "sense_label": "debandada.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "exodus.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/exodus.xml",
-          "source_xml_url": "data/nombank_sources/exodus.xml",
-          "source_xml_sha256": "f231aa580721242e08972d83471a428a09383bf1803a595ca308444318314dc5",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Entidades em debandada",
-          "definition": "Entity leaving coletivo, explicitamente estendido a empresas/bancos que se retiram.",
-          "desc_pt": "Entidades em debandada",
-          "definition_pt": "Entity leaving coletivo, explicitamente estendido a empresas/bancos que se retiram."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Região deixada",
-          "definition": "Place left identificada em origem genitiva/grupo como East Germany refugee exodus original.",
-          "desc_pt": "Região deixada",
-          "definition_pt": "Place left identificada em origem genitiva/grupo como East Germany refugee exodus original."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destino da debandada",
-          "definition": "Goal especificado, sem última data como destino.",
-          "desc_pt": "Destino da debandada",
-          "definition_pt": "Goal especificado, sem última data como destino."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000045_SENT011::debandada::1",
           "sent_ID": "FOLHA_DOC000045_SENT011",
           "text": "Outro revés é a grave debandada de bancos e empresas dessa região durante os últimos dias.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "debandada",
             "char_start": 22,
             "char_end": 31
           },
-          "realization": {
-            "Arg0": "de bancos e empresas",
-            "Arg1": "dessa região",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 32,
-                "char_end": 52
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 53,
-                "char_end": 65
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 14253,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_2200289052287794",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 22,
-                "char_end": 31
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
-                    "char_start": 32,
-                    "char_end": 52,
-                    "head_token_id": 8,
-                    "head_form": "bancos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 53,
-                    "char_end": 65,
-                    "head_token_id": 13,
-                    "head_form": "região",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

@@ -6,238 +6,43 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_39798e13992dd0b2",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC004022_SENT023::fidelidade::1",
+          "sent_ID": "FOLHA_DOC004022_SENT023",
+          "text": "Em outras ocasiões, a entidade recusou sua chancela por preocupação com a fidelidade histórica de novas versões.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "fidelidade",
+            "char_start": 74,
+            "char_end": 84
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "fidelidade.01",
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_3c5c78b64b9dc08e",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_39798e13992dd0b2",
-      "frame_id": "f_f28d1cd9e7c2f367",
-      "pt_roleset": "fidelidade.03",
-      "sense_label": "fidelidade.03",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "fidelity.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/fidelity.xml",
-          "source_xml_url": "data/nombank_sources/fidelity.xml",
-          "source_xml_sha256": "040383fc183b5f5148171fdc90d69b4dc4f38cf587e37300d6da898f7f8ee0e8",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "Coisa cuja fidelidade se mede",
-          "definition": "Entidade reproduzida com exatidão, extensão de equipamento de áudio às versões históricas.",
-          "desc_pt": "Coisa cuja fidelidade se mede",
-          "definition_pt": "Entidade reproduzida com exatidão, extensão de equipamento de áudio às versões históricas."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Grau de exatidão",
-          "definition": "Value expresso, não histórica domínio ou preocupação em si.",
-          "desc_pt": "Grau de exatidão",
-          "definition_pt": "Value expresso, não histórica domínio ou preocupação em si."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC004022_SENT023::fidelidade::1",
-          "sent_ID": "FOLHA_DOC004022_SENT023",
-          "text": "Em outras ocasiões, a entidade recusou sua chancela por preocupação com a fidelidade histórica de novas versões.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "fidelidade",
-            "char_start": 74,
-            "char_end": 84
-          },
-          "realization": {
-            "Arg1": "de novas versões",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 95,
-                "char_end": 111
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 10220,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_f28d1cd9e7c2f367",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 74,
-                "char_end": 84
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 95,
-                    "char_end": 111,
-                    "head_token_id": 18,
-                    "head_form": "versões",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_3c5c78b64b9dc08e",
-      "frame_id": "f_b24da1fb4ee7912a",
-      "pt_roleset": "fidelidade.01",
-      "sense_label": "fidelidade.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "loyalty.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/loyalty.xml",
-          "source_xml_url": "data/nombank_sources/loyalty.xml",
-          "source_xml_sha256": "e6c870552e37cb207f6894cdee904f460e3e50e827d2ef2ebea3b12bb1875622",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Titular da lealdade",
-          "definition": "Agente leal, sem torcedor elíptico reconstruído.",
-          "desc_pt": "Titular da lealdade",
-          "definition_pt": "Agente leal, sem torcedor elíptico reconstruído."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Alvo da lealdade",
-          "definition": "Entidade à qual se é leal, sem dono de plano automaticamente alvo.",
-          "desc_pt": "Alvo da lealdade",
-          "definition_pt": "Entidade à qual se é leal, sem dono de plano automaticamente alvo."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Grau da lealdade",
-          "definition": "Value do vínculo, não estádio lotado como valor automaticamente.",
-          "desc_pt": "Grau da lealdade",
-          "definition_pt": "Value do vínculo, não estádio lotado como valor automaticamente."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001058_SENT043::fidelidade::1",
           "sent_ID": "FOLHA_DOC001058_SENT043",
           "text": "Estádio lotado em jogo do tamanho do deste domingo só com plano de fidelidade, como têm Corinthians, São Paulo e Palmeiras neste Brasileiro.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "fidelidade",
             "char_start": 67,
             "char_end": 77
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 10324,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_b24da1fb4ee7912a",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 67,
-                "char_end": 77
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
       "syntactic_profile": {}

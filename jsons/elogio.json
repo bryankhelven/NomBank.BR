@@ -6,305 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "elogio · acepção 1",
-      "sense_id": "s_cb8cd1df226a99c8",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_cb8cd1df226a99c8",
-      "frame_id": "f_3b9c4754d219bdf7",
-      "pt_roleset": null,
-      "sense_label": "elogio · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "praise.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/praise.xml",
-          "source_xml_url": "data/nombank_sources/praise.xml",
-          "source_xml_sha256": "57e7be16ea9d3e84931937f7d6997bd05e2bf1d13c50dd2617ef21fbfd8afdbb",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Elogiador",
-          "definition": "Quem louva, sem crítico específico recuperado.",
-          "desc_pt": "Elogiador",
-          "definition_pt": "Quem louva, sem crítico específico recuperado."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Elogiado",
-          "definition": "Entidade/objeto louvado, incluindo pessoas com coordenação e elipse distributivas.",
-          "desc_pt": "Elogiado",
-          "definition_pt": "Entidade/objeto louvado, incluindo pessoas com coordenação e elipse distributivas."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Fundamento do louvor",
-          "definition": "Razão/atributo elogiado, com respectivos papéis ficcionais delimitados.",
-          "desc_pt": "Fundamento do louvor",
-          "definition_pt": "Razão/atributo elogiado, com respectivos papéis ficcionais delimitados."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003108_SENT003::elogio::1",
           "sent_ID": "FOLHA_DOC003108_SENT003",
           "text": "Margot Robbie tem colhido elogios por sua performance como a controversa patinadora Tonya Harding em \"I, Tonya\", e Frances McDormand por sua mãe justiceira em \"Thee Billboards Outisde Ebbing, Missouri\".",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "elogios",
             "char_start": 26,
             "char_end": 33
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "Margot Robbie … Frances McDormand",
-            "Arg2": "por sua performance como a controversa patinadora Tonya Harding em \"I, Tonya\" … por sua mãe justiceira em \"Thee Billboards Outisde Ebbing, Missouri\""
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj",
-            "Arg2": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 13
-              },
-              {
-                "char_start": 115,
-                "char_end": 132
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 34,
-                "char_end": 111
-              },
-              {
-                "char_start": 133,
-                "char_end": 201
-              }
-            ]
-          },
-          "target_instance_id": 3064,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_3b9c4754d219bdf7",
-          "argument_details": {
-            "predicate_token_ids": [
-              5
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 26,
-                "char_end": 33
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2
-                    ],
-                    "char_start": 0,
-                    "char_end": 13,
-                    "head_token_id": 1,
-                    "head_form": "Margot",
-                    "head_deprel": "nsubj"
-                  },
-                  {
-                    "token_ids": [
-                      23,
-                      24
-                    ],
-                    "char_start": 115,
-                    "char_end": 132,
-                    "head_token_id": 23,
-                    "head_form": "Frances",
-                    "head_deprel": "conj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20
-                    ],
-                    "char_start": 34,
-                    "char_end": 111,
-                    "head_token_id": 8,
-                    "head_form": "performance",
-                    "head_deprel": "obl"
-                  },
-                  {
-                    "token_ids": [
-                      25,
-                      26,
-                      27,
-                      28,
-                      29,
-                      30,
-                      31,
-                      32,
-                      33,
-                      34,
-                      35,
-                      36,
-                      37
-                    ],
-                    "char_start": 133,
-                    "char_end": 201,
-                    "head_token_id": 27,
-                    "head_form": "mãe",
-                    "head_deprel": "orphan"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC004079_SENT016::elogio::1",
           "sent_ID": "FOLHA_DOC004079_SENT016",
           "text": "Erros e acertos contabilizados, sobram críticas, elogios e perguntas sobre o instrumento das delações premiadas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "elogios",
             "char_start": 49,
             "char_end": 56
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "sobre o instrumento das delações premiadas",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 69,
-                "char_end": 111
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 12492,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_3b9c4754d219bdf7",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 49,
-                "char_end": 56
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 69,
-                    "char_end": 111,
-                    "head_token_id": 14,
-                    "head_form": "instrumento",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "elogio · acepção 1"
     }
   ]
 }

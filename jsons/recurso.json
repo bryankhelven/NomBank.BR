@@ -6,365 +6,60 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_c75739782f5d0961",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000009_SENT002::recurso::1",
+          "sent_ID": "FOLHA_DOC000009_SENT002",
+          "text": "O STF (Supremo Tribunal Federal) negou na quinta-feira (5) um recurso para analisar um pedido de impeachment contra o ministro Gilmar Mendes.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "recurso",
+            "char_start": 62,
+            "char_end": 69
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        },
+        {
+          "instance_id": "FOLHA_DOC004039_SENT005::recurso::1",
+          "sent_ID": "FOLHA_DOC004039_SENT005",
+          "text": "Ao apresentar o recurso, o premiê Mariano Rajoy havia pedido que a votação seja declarada ilegal.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "recurso",
+            "char_start": 16,
+            "char_end": 23
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "recurso.01",
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_db204bf1bcbd0f58",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_c75739782f5d0961",
-      "frame_id": "f_b6dcf01095452330",
-      "pt_roleset": "recurso.02",
-      "sense_label": "recurso.02",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "appeal.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/appeal.xml",
-          "source_xml_url": "data/nombank_sources/appeal.xml",
-          "source_xml_sha256": "93e9c9e511d6112bc012a48e4d5a9d7ab9b892c7706e20dc184de1422d65b6a6",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Recorrente",
-          "definition": "Quem interpõe recurso.",
-          "desc_pt": "Recorrente",
-          "definition_pt": "Quem interpõe recurso."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Decisão contestada",
-          "definition": "Decisão anterior da qual se discorda; não todo assunto ou resultado solicitado.",
-          "desc_pt": "Decisão contestada",
-          "definition_pt": "Decisão anterior da qual se discorda; não todo assunto ou resultado solicitado."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Autoridade destinatária",
-          "definition": "A quem se recorre, inclusive autoridade que decide o recurso.",
-          "desc_pt": "Autoridade destinatária",
-          "definition_pt": "A quem se recorre, inclusive autoridade que decide o recurso."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000009_SENT002::recurso::1",
-          "sent_ID": "FOLHA_DOC000009_SENT002",
-          "text": "O STF (Supremo Tribunal Federal) negou na quinta-feira (5) um recurso para analisar um pedido de impeachment contra o ministro Gilmar Mendes.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "recurso",
-            "char_start": 62,
-            "char_end": 69
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "O STF (Supremo Tribunal Federal)"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 0,
-                "char_end": 32
-              }
-            ]
-          },
-          "target_instance_id": 2141,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_b6dcf01095452330",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 62,
-                "char_end": 69
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7
-                    ],
-                    "char_start": 0,
-                    "char_end": 32,
-                    "head_token_id": 2,
-                    "head_form": "STF",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "instance_id": "FOLHA_DOC004039_SENT005::recurso::1",
-          "sent_ID": "FOLHA_DOC004039_SENT005",
-          "text": "Ao apresentar o recurso, o premiê Mariano Rajoy havia pedido que a votação seja declarada ilegal.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "recurso",
-            "char_start": 16,
-            "char_end": 23
-          },
-          "realization": {
-            "Arg0": "o premiê Mariano Rajoy",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 25,
-                "char_end": 47
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 10371,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_b6dcf01095452330",
-          "argument_details": {
-            "predicate_token_ids": [
-              5
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 16,
-                "char_end": 23
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
-                    "char_start": 25,
-                    "char_end": 47,
-                    "head_token_id": 8,
-                    "head_form": "premiê",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_db204bf1bcbd0f58",
-      "frame_id": "f_c70bccbd6bc38ab2",
-      "pt_roleset": "recurso.01",
-      "sense_label": "recurso.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "recourse.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/recourse.xml",
-          "source_xml_url": "data/nombank_sources/recourse.xml",
-          "source_xml_sha256": "246c71154ec863d11b2c940c05cf620d09e7eb295268393d4d36004db85c4350",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Usuário",
-          "definition": "Quem lança mão/acessa fonte.",
-          "desc_pt": "Usuário",
-          "definition_pt": "Quem lança mão/acessa fonte."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Ação",
-          "definition": "Ação/finalidade explicitamente relacionada ao acesso, como to effect change original.",
-          "desc_pt": "Ação",
-          "definition_pt": "Ação/finalidade explicitamente relacionada ao acesso, como to effect change original."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Fonte acessada",
-          "definition": "Fonte/meio a que se recorre; n2/source1 nominal mantido.",
-          "desc_pt": "Fonte acessada",
-          "definition_pt": "Fonte/meio a que se recorre; n2/source1 nominal mantido."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000063_SENT016::recurso::1",
           "sent_ID": "FOLHA_DOC000063_SENT016",
           "text": "Nunca, porém, isso havia sido detectado com minúcia molecular e com recurso a minicérebros.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "recurso",
             "char_start": 68,
             "char_end": 75
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "a minicérebros"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 76,
-                "char_end": 90
-              }
-            ]
-          },
-          "target_instance_id": 4585,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_c70bccbd6bc38ab2",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 68,
-                "char_end": 75
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15,
-                      16
-                    ],
-                    "char_start": 76,
-                    "char_end": 90,
-                    "head_token_id": 16,
-                    "head_form": "minicérebros",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

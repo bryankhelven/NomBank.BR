@@ -6,281 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "analista-chefe.c01",
-      "sense_id": "s_44a6bb2b117ce7cc",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_44a6bb2b117ce7cc",
-      "frame_id": "f_8abd60f8e3443161",
-      "pt_roleset": "analista-chefe.c01",
-      "sense_label": "analista-chefe.c01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "analyst.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/analyst.xml",
-          "source_xml_url": "data/nombank_sources/analyst.xml",
-          "source_xml_sha256": "4d73f8b9186e17953b10f09de28494b4dda8d355abc5833483cb05b3a50db8eb",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Analista profissional",
-          "definition": "Student original restringido ao analista que exerce chefia frozen, não aluno literal ou rank3 inventado.",
-          "desc_pt": "Analista profissional",
-          "definition_pt": "Student original restringido ao analista que exerce chefia frozen, não aluno literal ou rank3 inventado."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Campo analisado",
-          "definition": "Subject explicitado, como moedas criptografadas, não tema da citação automaticamente área profissional permanente.",
-          "desc_pt": "Campo analisado",
-          "definition_pt": "Subject explicitado, como moedas criptografadas, não tema da citação automaticamente área profissional permanente."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Firma de análise",
-          "definition": "Analysis firm, como corretora/XP, com nome e contração completos.",
-          "desc_pt": "Firma de análise",
-          "definition_pt": "Analysis firm, como corretora/XP, com nome e contração completos."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000019_SENT008::analista-chefe::1",
           "sent_ID": "FOLHA_DOC000019_SENT008",
           "text": "A queda da Bolsa brasileira, a segunda seguida, ocorreu por movimento técnico de realização de lucros, após altas na semana passada, afirma Pedro Galdi, analista-chefe da Magliano Corretora.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "analista-chefe",
             "char_start": 153,
             "char_end": 167
           },
-          "realization": {
-            "Arg0": "Pedro Galdi",
-            "Arg1": null,
-            "Arg2": "da Magliano Corretora"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 140,
-                "char_end": 151
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 168,
-                "char_end": 189
-              }
-            ]
-          },
-          "target_instance_id": 2322,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8abd60f8e3443161",
-          "argument_details": {
-            "predicate_token_ids": [
-              32
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 153,
-                "char_end": 167
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      29,
-                      30
-                    ],
-                    "char_start": 140,
-                    "char_end": 151,
-                    "head_token_id": 29,
-                    "head_form": "Pedro",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      33,
-                      34,
-                      35,
-                      36
-                    ],
-                    "char_start": 168,
-                    "char_end": 189,
-                    "head_token_id": 35,
-                    "head_form": "Magliano",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC002017_SENT031::analista-chefe::1",
           "sent_ID": "FOLHA_DOC002017_SENT031",
           "text": "É de extremo risco, afirma João Paulo Oliveira, analista-chefe de moedas criptografadas da XP Investimentos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "analista-chefe",
             "char_start": 48,
             "char_end": 62
           },
-          "realization": {
-            "Arg0": "João Paulo Oliveira",
-            "Arg1": "de moedas criptografadas",
-            "Arg2": "da XP Investimentos"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nmod",
-            "Arg2": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 27,
-                "char_end": 46
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 63,
-                "char_end": 87
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 88,
-                "char_end": 107
-              }
-            ]
-          },
-          "target_instance_id": 6262,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8abd60f8e3443161",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 48,
-                "char_end": 62
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 27,
-                    "char_end": 46,
-                    "head_token_id": 7,
-                    "head_form": "João",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13,
-                      14
-                    ],
-                    "char_start": 63,
-                    "char_end": 87,
-                    "head_token_id": 13,
-                    "head_form": "moedas",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15,
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 88,
-                    "char_end": 107,
-                    "head_token_id": 17,
-                    "head_form": "XP",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 2,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 2
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "analista-chefe.c01"
     }
   ]
 }

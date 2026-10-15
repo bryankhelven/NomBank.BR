@@ -6,174 +6,37 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_d5f1c04466f5dbbb",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_d5f1c04466f5dbbb",
-      "frame_id": "f_ec939918d9115ec0",
-      "pt_roleset": "assalto.01",
-      "sense_label": "assalto.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "robbery.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/robbery.xml",
-          "source_xml_url": "data/nombank_sources/robbery.xml",
-          "source_xml_sha256": "94098ea06d0847c6fcbfa3c06988cc1a17e5c0f83859f67943873bfca3d05c9a",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Assaltante",
-          "definition": "Quem comete roubo súbito/violento, sem quem conversa antes automaticamente autor.",
-          "desc_pt": "Assaltante",
-          "definition_pt": "Quem comete roubo súbito/violento, sem quem conversa antes automaticamente autor."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Pessoa assaltada",
-          "definition": "Entidade roubada, como PMs explicitamente vítimas; fonte sem instrumento2.",
-          "desc_pt": "Pessoa assaltada",
-          "definition_pt": "Entidade roubada, como PMs explicitamente vítimas; fonte sem instrumento2."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004070_SENT023::assalto::1",
           "sent_ID": "FOLHA_DOC004070_SENT023",
           "text": "PMs são vítimas frequentes de assalto e, por andarem armados, são mortos ao reagirem ou serem identificados.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "assalto",
             "char_start": 30,
             "char_end": 37
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "PMs"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 3
-              }
-            ]
-          },
-          "target_instance_id": 8841,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ec939918d9115ec0",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 30,
-                "char_end": 37
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 3,
-                    "head_token_id": 1,
-                    "head_form": "PMs",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC004031_SENT007::assalto::1",
           "sent_ID": "FOLHA_DOC004031_SENT007",
           "text": "As imagens mostram que dois criminosos conversam na esquina momentos antes do assalto.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "assalto",
             "char_start": 78,
             "char_end": 85
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": []
-          },
-          "target_instance_id": 10673,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ec939918d9115ec0",
-          "argument_details": {
-            "predicate_token_ids": [
-              15
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 78,
-                "char_end": 85
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

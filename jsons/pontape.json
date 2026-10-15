@@ -6,298 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003028_SENT026::pontapé::1",
+          "sent_ID": "FOLHA_DOC003028_SENT026",
+          "text": "Para validar a ideia, Krummenauer conversou com mais de 20 empresas do ramo no Estado de Santa Catarina, \"O negócio tomou outro rumo, mas esse contato foi um bom pontapé inicial\", afirma.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "pontapé",
+            "char_start": 162,
+            "char_end": 169
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "pontapé · acepção 1",
-      "sense_id": "s_4fc5ebf7d45cce09",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "pontapé · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "pontapé · acepção 2",
-      "sense_id": "s_fe1570e1fdb4c66f",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_4fc5ebf7d45cce09",
-      "frame_id": "f_5503306a1b3e21bf",
-      "pt_roleset": null,
-      "sense_label": "pontapé · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "impetus.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/impetus.xml",
-          "source_xml_url": "data/nombank_sources/impetus.xml",
-          "source_xml_sha256": "19e736cae4ef5a48a3687c4d045a7f0b84368146189849c330bc336c09799a6f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Motivação inicial",
-          "definition": "Contato/evento que dá impulso, como impetus from hearing.",
-          "desc_pt": "Motivação inicial",
-          "definition_pt": "Contato/evento que dá impulso, como impetus from hearing."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Atividade impelida",
-          "definition": "Projeto/negócio que recebe impulso, n1/source2 literal.",
-          "desc_pt": "Atividade impelida",
-          "definition_pt": "Projeto/negócio que recebe impulso, n1/source2 literal."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Agente impelido",
-          "definition": "Pessoa motivada a agir, n2/source1 literal, sem quem conversa automaticamente tomado como impelido.",
-          "desc_pt": "Agente impelido",
-          "definition_pt": "Pessoa motivada a agir, n2/source1 literal, sem quem conversa automaticamente tomado como impelido."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003028_SENT026::pontapé::1",
-          "sent_ID": "FOLHA_DOC003028_SENT026",
-          "text": "Para validar a ideia, Krummenauer conversou com mais de 20 empresas do ramo no Estado de Santa Catarina, \"O negócio tomou outro rumo, mas esse contato foi um bom pontapé inicial\", afirma.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "pontapé",
-            "char_start": 162,
-            "char_end": 169
-          },
-          "realization": {
-            "Arg0": "esse contato",
-            "Arg1": "O negócio",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nsubj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 138,
-                "char_end": 150
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 106,
-                "char_end": 115
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 4043,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5503306a1b3e21bf",
-          "argument_details": {
-            "predicate_token_ids": [
-              36
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 162,
-                "char_end": 169
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      31,
-                      32
-                    ],
-                    "char_start": 138,
-                    "char_end": 150,
-                    "head_token_id": 32,
-                    "head_form": "contato",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      24,
-                      25
-                    ],
-                    "char_start": 106,
-                    "char_end": 115,
-                    "head_token_id": 25,
-                    "head_form": "negócio",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_fe1570e1fdb4c66f",
-      "frame_id": "f_c1716e30e932d823",
-      "pt_roleset": null,
-      "sense_label": "pontapé · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "hit.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/hit.xml",
-          "source_xml_url": "data/nombank_sources/hit.xml",
-          "source_xml_sha256": "2c9fafb7270c022907842ab22dd624f905ff19d1d7cbf01922c9f93265613ccf",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Agente do pontapé",
-          "definition": "Quem golpeia, animate only preservado.",
-          "desc_pt": "Agente do pontapé",
-          "definition_pt": "Quem golpeia, animate only preservado."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Alvo atingido",
-          "definition": "Entidade atingida por golpe físico com ponta do pé, sem intenção inferida.",
-          "desc_pt": "Alvo atingido",
-          "definition_pt": "Entidade atingida por golpe físico com ponta do pé, sem intenção inferida."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio independente, não outros meios coordenados ou pé apenas lexicalmente implicado.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio independente, não outros meios coordenados ou pé apenas lexicalmente implicado."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003215_SENT006::pontapé::1",
           "sent_ID": "FOLHA_DOC003215_SENT006",
           "text": "Há educadores atingidos com lixeiras, carteiras escolares, socos, chutes e pontapés.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "pontapés",
             "char_start": 75,
             "char_end": 83
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "educadores",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 3,
-                "char_end": 13
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 14734,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_c1716e30e932d823",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 75,
-                "char_end": 83
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      2
-                    ],
-                    "char_start": 3,
-                    "char_end": 13,
-                    "head_token_id": 2,
-                    "head_form": "educadores",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "pontapé · acepção 2"
     }
   ]
 }

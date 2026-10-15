@@ -6,217 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "biografia · acepção 1",
-      "sense_id": "s_ff7b4ef022e4c02b",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_ff7b4ef022e4c02b",
-      "frame_id": "f_996f95174a81fade",
-      "pt_roleset": null,
-      "sense_label": "biografia · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "biography.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/biography.xml",
-          "source_xml_url": "data/nombank_sources/biography.xml",
-          "source_xml_sha256": "4f5aca060a250e91140e5f13171bba68cdf676a1d4f3e2f9b7d3aabf6133336f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Autor da biografia",
-          "definition": "Agent criador do texto/obra gráfica, incluindo autores da escrita e do desenho em spans disjuntos, sem proponente automaticamente escritor.",
-          "desc_pt": "Autor da biografia",
-          "definition_pt": "Agent criador do texto/obra gráfica, incluindo autores da escrita e do desenho em spans disjuntos, sem proponente automaticamente escritor."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Pessoa biografada",
-          "definition": "Theme cuja vida se descreve, sem título da obra como pessoa.",
-          "desc_pt": "Pessoa biografada",
-          "definition_pt": "Theme cuja vida se descreve, sem título da obra como pessoa."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003158_SENT003::biografia::1",
           "sent_ID": "FOLHA_DOC003158_SENT003",
           "text": "Essa é uma das atrações de \"Vida, Luta e Glória\", uma biografia autorizada em formato de história em quadrinhos, escrita por Rubens Franscisco Lucchetti e desenhada por Sérgio M. Lima.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "biografia",
             "char_start": 54,
             "char_end": 63
           },
-          "realization": {
-            "Arg0": "por Rubens Franscisco Lucchetti … por Sérgio M. Lima",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "obl:agent",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 121,
-                "char_end": 152
-              },
-              {
-                "char_start": 165,
-                "char_end": 183
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 10801,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_996f95174a81fade",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 54,
-                "char_end": 63
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      27,
-                      28,
-                      29,
-                      30
-                    ],
-                    "char_start": 121,
-                    "char_end": 152,
-                    "head_token_id": 28,
-                    "head_form": "Rubens",
-                    "head_deprel": "obl:agent"
-                  },
-                  {
-                    "token_ids": [
-                      33,
-                      34,
-                      35,
-                      36
-                    ],
-                    "char_start": 165,
-                    "char_end": 183,
-                    "head_token_id": 34,
-                    "head_form": "Sérgio",
-                    "head_deprel": "obl:agent"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003158_SENT022::biografia::1",
           "sent_ID": "FOLHA_DOC003158_SENT022",
           "text": "Além do programa de rádio quadrinizado, o ousado Lucchetti propôs de supetão a biografia do apresentador.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "biografia",
             "char_start": 79,
             "char_end": 88
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "do apresentador"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 89,
-                "char_end": 104
-              }
-            ]
-          },
-          "target_instance_id": 14719,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_996f95174a81fade",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 79,
-                "char_end": 88
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      17,
-                      18,
-                      19
-                    ],
-                    "char_start": 89,
-                    "char_end": 104,
-                    "head_token_id": 19,
-                    "head_form": "apresentador",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obl:agent": {
-          "Arg0": 1,
-          "Arg1": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "biografia · acepção 1"
     }
   ]
 }

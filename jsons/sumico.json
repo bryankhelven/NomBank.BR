@@ -6,123 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_65b55e40f3a58822",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_65b55e40f3a58822",
-      "frame_id": "f_3591425d0a8aeb02",
-      "pt_roleset": "sumiço.01",
-      "sense_label": "sumiço.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "disappearance.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/disappearance.xml",
-          "source_xml_url": "data/nombank_sources/disappearance.xml",
-          "source_xml_sha256": "3e84396089521a80d68e4334222da3b001827a8813118e0f7f829b181309a1be",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Causador do sumiço",
-          "definition": "Causal agent expresso, sem investigação criminal inferida.",
-          "desc_pt": "Causador do sumiço",
-          "definition_pt": "Causal agent expresso, sem investigação criminal inferida."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Desaparecido",
-          "definition": "The disappeared como Maldonado, sem morte pressuposta.",
-          "desc_pt": "Desaparecido",
-          "definition_pt": "The disappeared como Maldonado, sem morte pressuposta."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000006_SENT004::sumiço::1",
           "sent_ID": "FOLHA_DOC000006_SENT004",
           "text": "O sumiço de Maldonado se transformou em um dos temas da campanha para as eleições legislativas que ocorrem no próximo dia 22.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "sumiço",
             "char_start": 2,
             "char_end": 8
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de Maldonado"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 9,
-                "char_end": 21
-              }
-            ]
-          },
-          "target_instance_id": 999,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_3591425d0a8aeb02",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4
-                    ],
-                    "char_start": 9,
-                    "char_end": 21,
-                    "head_token_id": 4,
-                    "head_form": "Maldonado",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

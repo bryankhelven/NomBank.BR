@@ -6,614 +6,93 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_6b0b4e606567328a",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_6b0b4e606567328a",
-      "frame_id": "f_1c712a1c4c180727",
-      "pt_roleset": "incentivo.01",
-      "sense_label": "incentivo.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "encouragement.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/encouragement.xml",
-          "source_xml_url": "data/nombank_sources/encouragement.xml",
-          "source_xml_sha256": "852fd50695c2c73e0aea72266eae3f14b8b2f1aa58d4e30b970e08dc3d043f3c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "fonte do incentivo",
-          "definition": "Quem fornece incentivo ou encoraja a ação. Identificação da própria lei como incentivo não é necessariamente fonte independente.",
-          "desc_pt": "fonte do incentivo",
-          "definition_pt": "Quem fornece incentivo ou encoraja a ação. Identificação da própria lei como incentivo não é necessariamente fonte independente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "atividade incentivada",
-          "definition": "Ação ou domínio de atividade promovido pelo incentivo, com adaptações culturais, esportivas ou econômicas justificadas por contexto. Finalidade ulterior não é automaticamente outra realização da atividade.",
-          "desc_pt": "atividade incentivada",
-          "definition_pt": "Ação ou domínio de atividade promovido pelo incentivo, com adaptações culturais, esportivas ou econômicas justificadas por contexto. Finalidade ulterior não é automaticamente outra realização da atividade."
-        },
-        {
-          "id": "Arg2",
-          "desc": "destinatário do incentivo",
-          "definition": "Pessoa, grupo ou setor que recebe ou explicitamente tem o incentivo, inclusive sob ausência/negação. Setor proprietário do benefício é adaptação metonímica documentada, sem inventar instituições.",
-          "desc_pt": "destinatário do incentivo",
-          "definition_pt": "Pessoa, grupo ou setor que recebe ou explicitamente tem o incentivo, inclusive sob ausência/negação. Setor proprietário do benefício é adaptação metonímica documentada, sem inventar instituições."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003244_SENT007::incentivo::1",
           "sent_ID": "FOLHA_DOC003244_SENT007",
           "text": "Era um incentivo às exportações para reduzir o deficit da balança comercial.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivo",
             "char_start": 7,
             "char_end": 16
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "às exportações",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 17,
-                "char_end": 31
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 1848,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 7,
-                "char_end": 16
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4,
-                      5,
-                      6
-                    ],
-                    "char_start": 17,
-                    "char_end": 31,
-                    "head_token_id": 6,
-                    "head_form": "exportações",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003059_SENT007::incentivo::1",
           "sent_ID": "FOLHA_DOC003059_SENT007",
           "text": "Zé Mineiro aproveitou o incentivo de Juscelino Kubitschek, que dava quatro anos de isenção fiscal a fornecedores, para ampliar sua atividade na nova capital.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivo",
             "char_start": 24,
             "char_end": 33
           },
-          "realization": {
-            "Arg0": "de Juscelino Kubitschek",
-            "Arg1": "para ampliar sua atividade na nova capital",
-            "Arg2": "Zé Mineiro … a fornecedores"
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "advcl",
-            "Arg2": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 34,
-                "char_end": 57
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 114,
-                "char_end": 156
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 0,
-                "char_end": 10
-              },
-              {
-                "char_start": 98,
-                "char_end": 112
-              }
-            ]
-          },
-          "target_instance_id": 3218,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              5
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 24,
-                "char_end": 33
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7,
-                      8
-                    ],
-                    "char_start": 34,
-                    "char_end": 57,
-                    "head_token_id": 7,
-                    "head_form": "Juscelino",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      20,
-                      21,
-                      22,
-                      23,
-                      24,
-                      25,
-                      26,
-                      27
-                    ],
-                    "char_start": 114,
-                    "char_end": 156,
-                    "head_token_id": 21,
-                    "head_form": "ampliar",
-                    "head_deprel": "advcl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2
-                    ],
-                    "char_start": 0,
-                    "char_end": 10,
-                    "head_token_id": 1,
-                    "head_form": "Zé",
-                    "head_deprel": "nsubj"
-                  },
-                  {
-                    "token_ids": [
-                      17,
-                      18
-                    ],
-                    "char_start": 98,
-                    "char_end": 112,
-                    "head_token_id": 18,
-                    "head_form": "fornecedores",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003069_SENT046::incentivo::1",
           "sent_ID": "FOLHA_DOC003069_SENT046",
           "text": "Aos 50 anos, o incentivo será bem menor e o investidor receberá de juros aproximadamente o mesmo valor que investiu.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivo",
             "char_start": 15,
             "char_end": 24
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "o investidor"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 42,
-                "char_end": 54
-              }
-            ]
-          },
-          "target_instance_id": 6004,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 15,
-                "char_end": 24
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13
-                    ],
-                    "char_start": 42,
-                    "char_end": 54,
-                    "head_token_id": 13,
-                    "head_form": "investidor",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT017::incentivo::1",
           "sent_ID": "FOLHA_DOC003209_SENT017",
           "text": "Outras áreas têm incentivos fiscais que a educação não tem, como a Lei Rouanet [incentivo à cultura], incentivo ao esporte.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivos",
             "char_start": 17,
             "char_end": 27
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "Outras áreas … a educação"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 0,
-                "char_end": 12
-              },
-              {
-                "char_start": 40,
-                "char_end": 50
-              }
-            ]
-          },
-          "target_instance_id": 10625,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 17,
-                "char_end": 27
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2
-                    ],
-                    "char_start": 0,
-                    "char_end": 12,
-                    "head_token_id": 2,
-                    "head_form": "áreas",
-                    "head_deprel": "nsubj"
-                  },
-                  {
-                    "token_ids": [
-                      7,
-                      8
-                    ],
-                    "char_start": 40,
-                    "char_end": 50,
-                    "head_token_id": 8,
-                    "head_form": "educação",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT017::incentivo::2",
           "sent_ID": "FOLHA_DOC003209_SENT017",
           "text": "Outras áreas têm incentivos fiscais que a educação não tem, como a Lei Rouanet [incentivo à cultura], incentivo ao esporte.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivo",
             "char_start": 80,
             "char_end": 89
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "à cultura",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 90,
-                "char_end": 99
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 10627,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 80,
-                "char_end": 89
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      18,
-                      19,
-                      20
-                    ],
-                    "char_start": 90,
-                    "char_end": 99,
-                    "head_token_id": 20,
-                    "head_form": "cultura",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT017::incentivo::3",
           "sent_ID": "FOLHA_DOC003209_SENT017",
           "text": "Outras áreas têm incentivos fiscais que a educação não tem, como a Lei Rouanet [incentivo à cultura], incentivo ao esporte.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "incentivo",
             "char_start": 102,
             "char_end": 111
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "ao esporte",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 112,
-                "char_end": 122
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 10629,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1c712a1c4c180727",
-          "argument_details": {
-            "predicate_token_ids": [
-              23
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 102,
-                "char_end": 111
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      24,
-                      25,
-                      26
-                    ],
-                    "char_start": 112,
-                    "char_end": 122,
-                    "head_token_id": 26,
-                    "head_form": "esporte",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 3,
-          "Arg2": 0
-        },
-        "advcl": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 3
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

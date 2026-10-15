@@ -6,139 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_34aa7d22b9c5bbb9",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_34aa7d22b9c5bbb9",
-      "frame_id": "f_02b47b70a6ae48d4",
-      "pt_roleset": "recado.01",
-      "sense_label": "recado.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "message.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/message.xml",
-          "source_xml_url": "data/nombank_sources/message.xml",
-          "source_xml_sha256": "d83963356be4beba76d62a2b2638fa924a2195f6d6b7076df70f9598d71340c7",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Emissor do recado",
-          "definition": "Sender que comunica, sem apresentador escolhido automaticamente emissor.",
-          "desc_pt": "Emissor do recado",
-          "definition_pt": "Sender que comunica, sem apresentador escolhido automaticamente emissor."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Conteúdo do recado",
-          "definition": "Sent como tema relacional político, conforme budget message original.",
-          "desc_pt": "Conteúdo do recado",
-          "definition_pt": "Sent como tema relacional político, conforme budget message original."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destinatário do recado",
-          "definition": "Sent-to pessoa/entidade identificada.",
-          "desc_pt": "Destinatário do recado",
-          "definition_pt": "Sent-to pessoa/entidade identificada."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003015_SENT015::recado::1",
           "sent_ID": "FOLHA_DOC003015_SENT015",
           "text": "O recado político estava prenunciado já na escolha do mestre de cerimônias -Colbert, apresentador de \"The Late Show with Stephen Colbert\", é conhecido por suas sátiras.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "recado",
             "char_start": 2,
             "char_end": 8
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "político",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "amod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 9,
-                "char_end": 17
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 10522,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_02b47b70a6ae48d4",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3
-                    ],
-                    "char_start": 9,
-                    "char_end": 17,
-                    "head_token_id": 3,
-                    "head_form": "político",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "amod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

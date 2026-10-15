@@ -9,30 +9,22 @@
         {
           "id": "Arg0",
           "desc": "principal participant or holder",
-          "definition": "principal participant or holder",
-          "desc_pt": "principal participant or holder",
-          "definition_pt": "principal participant or holder"
+          "definition": "principal participant or holder"
         },
         {
           "id": "Arg1",
           "desc": "nominal relation/state/event",
-          "definition": "nominal relation/state/event",
-          "desc_pt": "nominal relation/state/event",
-          "definition_pt": "nominal relation/state/event"
+          "definition": "nominal relation/state/event"
         },
         {
           "id": "Arg2",
           "desc": "target, content, object, counterpart or domain",
-          "definition": "target, content, object, counterpart or domain",
-          "desc_pt": "alvo, conteúdo, objeto, contraparte ou domínio",
-          "definition_pt": "alvo, conteúdo, objeto, contraparte ou domínio"
+          "definition": "target, content, object, counterpart or domain"
         },
         {
           "id": "Arg3",
           "desc": "time, place, degree, manner, cause or context",
-          "definition": "time, place, degree, manner, cause or context",
-          "desc_pt": "tempo, lugar, grau, modo, causa ou contexto",
-          "definition_pt": "tempo, lugar, grau, modo, causa ou contexto"
+          "definition": "time, place, degree, manner, cause or context"
         }
       ],
       "instances": [
@@ -73,67 +65,6 @@
                 "char_end": 138
               }
             ]
-          },
-          "target_instance_id": 910,
-          "annotation_authority": "accepted_in_formal_base",
-          "annotation_status": "annotated",
-          "frame_id": "f_9772d5e42e442410",
-          "argument_details": {
-            "predicate_token_ids": [
-              20
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 110,
-                "char_end": 120
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      23
-                    ],
-                    "char_start": 124,
-                    "char_end": 130,
-                    "head_token_id": 23
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      24,
-                      25,
-                      26
-                    ],
-                    "char_start": 131,
-                    "char_end": 138,
-                    "head_token_id": 26
-                  }
-                ]
-              }
-            ]
           }
         }
       ],
@@ -145,177 +76,31 @@
           "obl": 1
         }
       },
-      "sense_label": "transtorno · acepção 1",
-      "sense_id": "s_bf02e7f73b9052bc",
-      "frame_id": "f_9772d5e42e442410",
-      "inventory_authority": "accepted_in_formal_base"
+      "sense_label": "transtorno · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "transtorno · acepção 2",
-      "sense_id": "s_abe0191a4a2432e5",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_abe0191a4a2432e5",
-      "frame_id": "f_5d9c1880935ecbb0",
-      "pt_roleset": null,
-      "sense_label": "transtorno · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "trouble.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/trouble.xml",
-          "source_xml_url": "data/nombank_sources/trouble.xml",
-          "source_xml_sha256": "57a5e9bcf3b991e116f937834848c10f4792c6cad82e5b9f9caddf970defb89e",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Causa do transtorno",
-          "definition": "Agent/causer que provoca contratempo.",
-          "desc_pt": "Causa do transtorno",
-          "definition_pt": "Agent/causer que provoca contratempo."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Pessoa transtornada",
-          "definition": "Patient/experiencer afetado pelo inconveniente.",
-          "desc_pt": "Pessoa transtornada",
-          "definition_pt": "Patient/experiencer afetado pelo inconveniente."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento ou modo",
-          "definition": "Instrument or manner distinto da causa0, não o próprio transtorno sem licença contextual.",
-          "desc_pt": "Instrumento ou modo",
-          "definition_pt": "Instrument or manner distinto da causa0, não o próprio transtorno sem licença contextual."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004035_SENT016::transtorno::1",
           "sent_ID": "FOLHA_DOC004035_SENT016",
           "text": "O excesso de precaução, contudo, já causou alguns transtornos para turistas e locais.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "transtornos",
             "char_start": 50,
             "char_end": 61
           },
-          "realization": {
-            "Arg0": "O excesso de precaução",
-            "Arg1": "para turistas e locais",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "obl",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 0,
-                "char_end": 22
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 62,
-                "char_end": 84
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 14518,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5d9c1880935ecbb0",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 50,
-                "char_end": 61
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3,
-                      4
-                    ],
-                    "char_start": 0,
-                    "char_end": 22,
-                    "head_token_id": 2,
-                    "head_form": "excesso",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13,
-                      14,
-                      15
-                    ],
-                    "char_start": 62,
-                    "char_end": 84,
-                    "head_token_id": 13,
-                    "head_form": "turistas",
-                    "head_deprel": "obl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "transtorno · acepção 2"
     }
   ]
 }

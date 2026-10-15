@@ -6,676 +6,93 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_bcbf8b1523a9f6d8",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_bcbf8b1523a9f6d8",
-      "frame_id": "f_45546dcf0d735e6c",
-      "pt_roleset": "desconto.03",
-      "sense_label": "desconto.03",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "discount.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/discount.xml",
-          "source_xml_url": "data/nombank_sources/discount.xml",
-          "source_xml_sha256": "e04364dd70ea739142f231376373537c7d1ae6d8894b02e3a6d648fd8d8ae09a",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "concedente",
-          "definition": "Entidade que concede a redução.",
-          "desc_pt": "concedente",
-          "definition_pt": "Entidade que concede a redução."
-        },
-        {
-          "id": "Arg1",
-          "desc": "objeto descontado",
-          "definition": "Produto/serviço cujo preço se reduz; inclui bem segurado ou reserva explicitamente nomeados, com adaptação documentada.",
-          "desc_pt": "objeto descontado",
-          "definition_pt": "Produto/serviço cujo preço se reduz; inclui bem segurado ou reserva explicitamente nomeados, com adaptação documentada."
-        },
-        {
-          "id": "Arg2",
-          "desc": "redução",
-          "definition": "Montante da redução de preço.",
-          "desc_pt": "redução",
-          "definition_pt": "Montante da redução de preço."
-        },
-        {
-          "id": "Arg3",
-          "desc": "preço inicial",
-          "definition": "Valor inicial antes da redução.",
-          "desc_pt": "preço inicial",
-          "definition_pt": "Valor inicial antes da redução."
-        },
-        {
-          "id": "Arg4",
-          "desc": "preço final",
-          "definition": "Valor final depois da redução.",
-          "desc_pt": "preço final",
-          "definition_pt": "Valor final depois da redução."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003185_SENT047::desconto::1",
           "sent_ID": "FOLHA_DOC003185_SENT047",
           "text": "Por estarem mais protegidos de roubos e fenômenos da natureza, imóveis em prédios, em geral, ganham descontos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "descontos",
             "char_start": 100,
             "char_end": 109
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "imóveis em prédios",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 63,
-                "char_end": 81
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 2410,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              21
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 100,
-                "char_end": 109
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      13,
-                      14,
-                      15
-                    ],
-                    "char_start": 63,
-                    "char_end": 81,
-                    "head_token_id": 13,
-                    "head_form": "imóveis",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003166_SENT012::desconto::1",
           "sent_ID": "FOLHA_DOC003166_SENT012",
           "text": "Esses pacotes são em geral gratuitos, mas cabe ao consumidor checar se a empresa dá algum desconto caso ele não queira usufruir desse \"bônus\".",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "desconto",
             "char_start": 90,
             "char_end": 98
           },
-          "realization": {
-            "Arg0": "a empresa",
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 71,
-                "char_end": 80
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 5222,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              19
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 90,
-                "char_end": 98
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15,
-                      16
-                    ],
-                    "char_start": 71,
-                    "char_end": 80,
-                    "head_token_id": 16,
-                    "head_form": "empresa",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003184_SENT017::desconto::1",
           "sent_ID": "FOLHA_DOC003184_SENT017",
           "text": "Há pacotes familiares, com descontos no caso de compra de quatro ingressos, para dois adultos e duas crianças.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "descontos",
             "char_start": 27,
             "char_end": 36
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "pacotes familiares",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 3,
-                "char_end": 21
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 5696,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 27,
-                "char_end": 36
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      2,
-                      3
-                    ],
-                    "char_start": 3,
-                    "char_end": 21,
-                    "head_token_id": 2,
-                    "head_form": "pacotes",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003166_SENT014::desconto::1",
           "sent_ID": "FOLHA_DOC003166_SENT014",
           "text": "Em geral, as empresas oferecem descontos na renovação da apólice e também mais facilidades no pagamento da franquia em caso de sinistro, quando o cliente utiliza o seu cartão.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "descontos",
             "char_start": 31,
             "char_end": 40
           },
-          "realization": {
-            "Arg0": "as empresas",
-            "Arg1": "na renovação da apólice",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 10,
-                "char_end": 21
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 41,
-                "char_end": 64
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 11931,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 31,
-                "char_end": 40
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4,
-                      5
-                    ],
-                    "char_start": 10,
-                    "char_end": 21,
-                    "head_token_id": 5,
-                    "head_form": "empresas",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 41,
-                    "char_end": 64,
-                    "head_token_id": 10,
-                    "head_form": "renovação",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT017::desconto::1",
           "sent_ID": "FOLHA_DOC003161_SENT017",
           "text": "O desconto \"se esgota\", no entanto, se a compra for feita mais de 45 dias antes do voo.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "desconto",
             "char_start": 2,
             "char_end": 10
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 14470,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 10
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC004090_SENT019::desconto::1",
           "sent_ID": "FOLHA_DOC004090_SENT019",
           "text": "Conseguimos um desconto ao fazer a reserva do barco com quatro meses de antecedência.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "desconto",
             "char_start": 15,
             "char_end": 23
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "a reserva do barco",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 33,
-                "char_end": 51
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 14617,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_45546dcf0d735e6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 15,
-                "char_end": 23
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10,
-                      11
-                    ],
-                    "char_start": 33,
-                    "char_end": 51,
-                    "head_token_id": 8,
-                    "head_form": "reserva",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 2,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0,
-          "Arg4": 0
-        },
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 2,
-          "Arg2": 0,
-          "Arg3": 0,
-          "Arg4": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0,
-          "Arg4": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

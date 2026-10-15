@@ -6,516 +6,93 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_c5f5a842d4818bae",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_c5f5a842d4818bae",
-      "frame_id": "f_8dd6745033d033eb",
-      "pt_roleset": "impeachment.01",
-      "sense_label": "impeachment.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "impeachment.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/impeachment.xml",
-          "source_xml_url": "data/nombank_sources/impeachment.xml",
-          "source_xml_sha256": "af35030b6e6dd721f479538180e6b3e703ef7a09dc5c9e901c182072c52b161a",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Agente da destituição",
-          "definition": "Impeacher original; apoiar/negar recurso não implica efetuar impeachment.",
-          "desc_pt": "Agente da destituição",
-          "definition_pt": "Impeacher original; apoiar/negar recurso não implica efetuar impeachment."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Agente público alvo",
-          "definition": "Impeached original; fonte fala elected official. Aplicação a ministro judicial não eleito é extensão local explícita.",
-          "desc_pt": "Agente público alvo",
-          "definition_pt": "Impeached original; fonte fala elected official. Aplicação a ministro judicial não eleito é extensão local explícita."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Crime imputado",
-          "definition": "Crime original; classificação do impeachment como golpe não é acusação contra alvo automaticamente.",
-          "desc_pt": "Crime imputado",
-          "definition_pt": "Crime original; classificação do impeachment como golpe não é acusação contra alvo automaticamente."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000009_SENT002::impeachment::1",
           "sent_ID": "FOLHA_DOC000009_SENT002",
           "text": "O STF (Supremo Tribunal Federal) negou na quinta-feira (5) um recurso para analisar um pedido de impeachment contra o ministro Gilmar Mendes.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 97,
             "char_end": 108
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "contra o ministro Gilmar Mendes",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 109,
-                "char_end": 140
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 2143,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8dd6745033d033eb",
-          "argument_details": {
-            "predicate_token_ids": [
-              22
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 97,
-                "char_end": 108
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      23,
-                      24,
-                      25,
-                      26,
-                      27
-                    ],
-                    "char_start": 109,
-                    "char_end": 140,
-                    "head_token_id": 25,
-                    "head_form": "ministro",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003036_SENT017::impeachment::1",
           "sent_ID": "FOLHA_DOC003036_SENT017",
           "text": "Por outro lado, o impeachment permitiu que a esquerda se isolasse em um discurso ruim e crescesse só com o desgaste de Temer.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 18,
             "char_end": 29
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 6641,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8dd6745033d033eb",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 18,
-                "char_end": 29
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003036_SENT021::impeachment::1",
           "sent_ID": "FOLHA_DOC003036_SENT021",
           "text": "Mesmo se você achar que o impeachment foi um golpe, há vida após o golpe.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 26,
             "char_end": 37
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 7984,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8dd6745033d033eb",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 26,
-                "char_end": 37
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003036_SENT022::impeachment::1",
           "sent_ID": "FOLHA_DOC003036_SENT022",
           "text": "E, visto que a maioria da população, na época, apoiou o impeachment, não há como vencer sem conquistar gente que apoiou a derrubada de Dilma.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 56,
             "char_end": 67
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 9430,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_8dd6745033d033eb",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 56,
-                "char_end": 67
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_c5f5a842d4818bae",
-      "frame_id": "f_ad148d30ae2a6e32",
-      "pt_roleset": "impeachment.01",
-      "sense_label": "impeachment.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "impeachment.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/impeachment.xml",
-          "source_xml_url": "data/nombank_sources/impeachment.xml",
-          "source_xml_sha256": "af35030b6e6dd721f479538180e6b3e703ef7a09dc5c9e901c182072c52b161a",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Processante",
-          "definition": "Quem promove processo de julgar/remover titular, distinto de quem nega pedido ou analisa proposta.",
-          "desc_pt": "Processante",
-          "definition_pt": "Quem promove processo de julgar/remover titular, distinto de quem nega pedido ou analisa proposta."
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
-        {
-          "id": "Arg1",
-          "desc": "Processado",
-          "definition": "Pessoa objeto do impeachment, sem culpa ou remoção efetiva inferidas.",
-          "desc_pt": "Processado",
-          "definition_pt": "Pessoa objeto do impeachment, sem culpa ou remoção efetiva inferidas."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Acusação",
-          "definition": "Crime alegado no processamento, quando lexicalizado.",
-          "desc_pt": "Acusação",
-          "definition_pt": "Crime alegado no processamento, quando lexicalizado."
-        }
-      ],
-      "instances": [
         {
           "instance_id": "FOLHA_DOC004019_SENT030::impeachment::1",
           "sent_ID": "FOLHA_DOC004019_SENT030",
           "text": "Com forte influência no Congresso, naquele momento, penderiam a favor do impeachment.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 73,
             "char_end": 84
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 9469,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ad148d30ae2a6e32",
-          "argument_details": {
-            "predicate_token_ids": [
-              17
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 73,
-                "char_end": 84
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000009_SENT001::impeachment::1",
           "sent_ID": "FOLHA_DOC000009_SENT001",
           "text": "Supremo nega pedido para Senado analisar impeachment de Gilmar.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "impeachment",
             "char_start": 41,
             "char_end": 52
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de Gilmar",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 53,
-                "char_end": 62
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 14021,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ad148d30ae2a6e32",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 41,
-                "char_end": 52
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8,
-                      9
-                    ],
-                    "char_start": 53,
-                    "char_end": 62,
-                    "head_token_id": 9,
-                    "head_form": "Gilmar",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

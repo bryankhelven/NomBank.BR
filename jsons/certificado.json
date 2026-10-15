@@ -6,286 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "certificado · acepção 1",
-      "sense_id": "s_ae6a5eefe203b170",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_ae6a5eefe203b170",
-      "frame_id": "f_2b05597b741d4bc9",
-      "pt_roleset": null,
-      "sense_label": "certificado · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "certificate.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/certificate.xml",
-          "source_xml_url": "data/nombank_sources/certificate.xml",
-          "source_xml_sha256": "aa31c0b7784b5e6b8813bca5dde0b63248196520a1ef4bcef8d01d5f51010e04",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Certificador ou demonstrador",
-          "definition": "Prover que atesta/mostra proposição, não todo vendedor/dono de documento automaticamente.",
-          "desc_pt": "Certificador ou demonstrador",
-          "definition_pt": "Prover que atesta/mostra proposição, não todo vendedor/dono de documento automaticamente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Proposição certificada",
-          "definition": "Fato/condição atestados pelo documento, incluindo habilitação ou adequação; sem verdade externa confirmada.",
-          "desc_pt": "Proposição certificada",
-          "definition_pt": "Fato/condição atestados pelo documento, incluindo habilitação ou adequação; sem verdade externa confirmada."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destinatário da prova",
-          "definition": "Beneficiary/proved-to, não quem recebe dinheiro em outra ação.",
-          "desc_pt": "Destinatário da prova",
-          "definition_pt": "Beneficiary/proved-to, não quem recebe dinheiro em outra ação."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003193_SENT018::certificado::1",
           "sent_ID": "FOLHA_DOC003193_SENT018",
           "text": "Nós vendemos certificados para mostrar que a indústria está adequada e distribuímos o valor para a cadeia de reciclagem.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "certificados",
             "char_start": 13,
             "char_end": 25
           },
-          "realization": {
-            "Arg0": "Nós",
-            "Arg1": "que a indústria está adequada",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "ccomp",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 0,
-                "char_end": 3
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 39,
-                "char_end": 68
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 9037,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_2b05597b741d4bc9",
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 13,
-                "char_end": 25
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 3,
-                    "head_token_id": 1,
-                    "head_form": "Nós",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
-                    "char_start": 39,
-                    "char_end": 68,
-                    "head_token_id": 10,
-                    "head_form": "adequada",
-                    "head_deprel": "ccomp"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003032_SENT004::certificado::1",
           "sent_ID": "FOLHA_DOC003032_SENT004",
           "text": "A lei exige selos do Serviço de Inspeção Federal (SIF) para que produtos nacionais de origem animal sejam comercializados entre Estados, e os itens não dispunham de tal certificado.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "certificado",
             "char_start": 169,
             "char_end": 180
           },
-          "realization": {
-            "Arg0": "do Serviço de Inspeção Federal (SIF)",
-            "Arg1": "para que produtos nacionais de origem animal sejam comercializados entre Estados",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "advcl",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 18,
-                "char_end": 54
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 55,
-                "char_end": 135
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 13444,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_2b05597b741d4bc9",
-          "argument_details": {
-            "predicate_token_ids": [
-              33
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 169,
-                "char_end": 180
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 18,
-                    "char_end": 54,
-                    "head_token_id": 7,
-                    "head_form": "Serviço",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20,
-                      21,
-                      22,
-                      23,
-                      24
-                    ],
-                    "char_start": 55,
-                    "char_end": 135,
-                    "head_token_id": 22,
-                    "head_form": "comercializados",
-                    "head_deprel": "advcl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "ccomp": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "advcl": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "certificado · acepção 1"
     }
   ]
 }

@@ -6,124 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_276b80f6a0a1e897",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_276b80f6a0a1e897",
-      "frame_id": "f_cb43f6713b78c12f",
-      "pt_roleset": "vocação.04",
-      "sense_label": "vocação.04",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "talent.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/talent.xml",
-          "source_xml_url": "data/nombank_sources/talent.xml",
-          "source_xml_sha256": "3f965b0ccd5b4d6ab62efee7d0c85918fbbae1395abcf3e9584a73223c1dd351",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Titular do talento",
-          "definition": "Agent com aptidão/vocação, como jovem, não padre/chamado religioso ou talent profissionais.",
-          "desc_pt": "Titular do talento",
-          "definition_pt": "Agent com aptidão/vocação, como jovem, não padre/chamado religioso ou talent profissionais."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Campo do talento",
-          "definition": "Action particular, sem entusiasmo paterno como campo herdado automaticamente.",
-          "desc_pt": "Campo do talento",
-          "definition_pt": "Action particular, sem entusiasmo paterno como campo herdado automaticamente."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003182_SENT009::vocação::1",
           "sent_ID": "FOLHA_DOC003182_SENT009",
           "text": "Parte da vocação do jovem veio do pai, Edson Marques, 49, analista de sistemas e aficionado por computadores e jogos on-line.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "vocação",
             "char_start": 9,
             "char_end": 16
           },
-          "realization": {
-            "Arg0": "do jovem",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 17,
-                "char_end": 25
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 2517,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_cb43f6713b78c12f",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 9,
-                "char_end": 16
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7
-                    ],
-                    "char_start": 17,
-                    "char_end": 25,
-                    "head_token_id": 7,
-                    "head_form": "jovem",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

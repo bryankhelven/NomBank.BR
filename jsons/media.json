@@ -6,949 +6,107 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_5309a5e053d10c9e",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_5309a5e053d10c9e",
-      "frame_id": "f_5c1cf28a8e574aab",
-      "pt_roleset": "média.02",
-      "sense_label": "média.02",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "average.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/average.xml",
-          "source_xml_url": "data/nombank_sources/average.xml",
-          "source_xml_sha256": "4a5db6498fa641779c6d3286ad469b84de5381a3d5a96a2047326ea3ad6d47b1",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Quem calcula",
-          "definition": "Agent,person computing original No one; causar mudança ou registrar não prova computar média.",
-          "desc_pt": "Quem calcula",
-          "definition_pt": "Agent,person computing original No one; causar mudança ou registrar não prova computar média."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Entidade ou medida promediada",
-          "definition": "Entity averaged out original age/share turnover; pagantes como entidades contadas é adaptação local. Valor observado e média absoluta são distintos.",
-          "desc_pt": "Entidade ou medida promediada",
-          "definition_pt": "Entity averaged out original age/share turnover; pagantes como entidades contadas é adaptação local. Valor observado e média absoluta são distintos."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Montante da média",
-          "definition": "Amount original133.8million/average REF; queda e diferença relativa não são média absoluta. Encoding genérico exige fonte e exclui valor independente.",
-          "desc_pt": "Montante da média",
-          "definition_pt": "Amount original133.8million/average REF; queda e diferença relativa não são média absoluta. Encoding genérico exige fonte e exclui valor independente."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Conjunto ou referência de cálculo",
-          "definition": "Scale/yardstick original players’/the year’s; janela temporal e conjunto territorial/coletivo são aplicações locais explícitas. Diária original f=TMP fica fora do ramo nuclear.",
-          "desc_pt": "Conjunto ou referência de cálculo",
-          "definition_pt": "Scale/yardstick original players’/the year’s; janela temporal e conjunto territorial/coletivo são aplicações locais explícitas. Diária original f=TMP fica fora do ramo nuclear."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000100_SENT052::média::1",
           "sent_ID": "FOLHA_DOC000100_SENT052",
           "text": "Essas partidas fizeram com que a média de pontos nos últimos 12 meses caísse 182 pontos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 33,
             "char_end": 38
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de pontos",
-            "Arg2": null,
-            "Arg3": "nos últimos 12 meses"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 39,
-                "char_end": 48
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [
-              {
-                "char_start": 49,
-                "char_end": 69
-              }
-            ]
-          },
-          "target_instance_id": 310,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5c1cf28a8e574aab",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 33,
-                "char_end": 38
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8,
-                      9
-                    ],
-                    "char_start": 39,
-                    "char_end": 48,
-                    "head_token_id": 9,
-                    "head_form": "pontos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10,
-                      11,
-                      12,
-                      13,
-                      14
-                    ],
-                    "char_start": 49,
-                    "char_end": 69,
-                    "head_token_id": 14,
-                    "head_form": "meses",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003019_SENT032::média::1",
           "sent_ID": "FOLHA_DOC003019_SENT032",
           "text": "Cerca de 63% das mulheres brasileiras são as principais responsáveis pela limpeza doméstica, patamar inferior à média de 77% registrada nos outros locais.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 112,
             "char_end": 117
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "de 77%",
-            "Arg3": "nos outros locais"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nmod",
-            "Arg3": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 118,
-                "char_end": 124
-              }
-            ],
-            "Arg3": [
-              {
-                "char_start": 136,
-                "char_end": 153
-              }
-            ]
-          },
-          "target_instance_id": 800,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5c1cf28a8e574aab",
-          "argument_details": {
-            "predicate_token_ids": [
-              22
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 112,
-                "char_end": 117
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      23,
-                      24,
-                      25
-                    ],
-                    "char_start": 118,
-                    "char_end": 124,
-                    "head_token_id": 25,
-                    "head_form": "%",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      27,
-                      28,
-                      29,
-                      30
-                    ],
-                    "char_start": 136,
-                    "char_end": 153,
-                    "head_token_id": 30,
-                    "head_form": "locais",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000019_SENT005::média::1",
           "sent_ID": "FOLHA_DOC000019_SENT005",
           "text": "O volume financeiro negociado foi de R$ 6,8 bilhões, abaixo da média diária do ano, de R$ 8,3 bilhões.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 63,
             "char_end": 68
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "O volume financeiro negociado",
-            "Arg2": "de R$ 8,3 bilhões",
-            "Arg3": "do ano"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj",
-            "Arg2": "appos",
-            "Arg3": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 29
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 84,
-                "char_end": 101
-              }
-            ],
-            "Arg3": [
-              {
-                "char_start": 76,
-                "char_end": 82
-              }
-            ]
-          },
-          "target_instance_id": 3547,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5c1cf28a8e574aab",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 63,
-                "char_end": 68
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3,
-                      4
-                    ],
-                    "char_start": 0,
-                    "char_end": 29,
-                    "head_token_id": 2,
-                    "head_form": "volume",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      20,
-                      21,
-                      22,
-                      23
-                    ],
-                    "char_start": 84,
-                    "char_end": 101,
-                    "head_token_id": 23,
-                    "head_form": "bilhões",
-                    "head_deprel": "appos"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 76,
-                    "char_end": 82,
-                    "head_token_id": 18,
-                    "head_form": "ano",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC001058_SENT042::média::1",
           "sent_ID": "FOLHA_DOC001058_SENT042",
           "text": "Foram 26 mil pagantes, oito mil a mais do que a média cruzeirense.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 48,
             "char_end": 53
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "pagantes",
-            "Arg2": null,
-            "Arg3": "cruzeirense"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj",
-            "Arg2": null,
-            "Arg3": "amod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 13,
-                "char_end": 21
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [
-              {
-                "char_start": 54,
-                "char_end": 65
-              }
-            ]
-          },
-          "target_instance_id": 4532,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5c1cf28a8e574aab",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 48,
-                "char_end": 53
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4
-                    ],
-                    "char_start": 13,
-                    "char_end": 21,
-                    "head_token_id": 4,
-                    "head_form": "pagantes",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15
-                    ],
-                    "char_start": 54,
-                    "char_end": 65,
-                    "head_token_id": 15,
-                    "head_form": "cruzeirense",
-                    "head_deprel": "amod"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 1,
-          "Arg3": 2
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 1
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 2,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "appos": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1,
-          "Arg3": 0
-        },
-        "amod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_5309a5e053d10c9e",
-      "frame_id": "f_0a3b6182b9850617",
-      "pt_roleset": "média.02",
-      "sense_label": "média.02",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "average.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/average.xml",
-          "source_xml_url": "data/nombank_sources/average.xml",
-          "source_xml_sha256": "4a5db6498fa641779c6d3286ad469b84de5381a3d5a96a2047326ea3ad6d47b1",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Calculador",
-          "definition": "Quem calcula média, não quem aplica meta/conquista seguidores automaticamente.",
-          "desc_pt": "Calculador",
-          "definition_pt": "Quem calcula média, não quem aplica meta/conquista seguidores automaticamente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Entidade promediada",
-          "definition": "Grandeza/contagem de que se relata média.",
-          "desc_pt": "Entidade promediada",
-          "definition_pt": "Grandeza/contagem de que se relata média."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Valor médio",
-          "definition": "Resultado/amount explícito ou incorporado conforme REF2, sem fórmula/valor calculados externamente.",
-          "desc_pt": "Valor médio",
-          "definition_pt": "Resultado/amount explícito ou incorporado conforme REF2, sem fórmula/valor calculados externamente."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Escala de referência",
-          "definition": "Yardstick de referência; extensão explícita de year/players a período por mês ou grupo comparativo de empresas, sem denominador numérico inventado.",
-          "desc_pt": "Escala de referência",
-          "definition_pt": "Yardstick de referência; extensão explícita de year/players a período por mês ou grupo comparativo de empresas, sem denominador numérico inventado."
-        }
-      ],
-      "instances": [
         {
           "instance_id": "FOLHA_DOC003240_SENT008::média::1",
           "sent_ID": "FOLHA_DOC003240_SENT008",
           "text": "É com base na média das emissões que os sistemas reais aplicam suas metas de redução.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 14,
             "char_end": 19
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "das emissões",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 20,
-                "char_end": 32
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 9716,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_0a3b6182b9850617",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 14,
-                "char_end": 19
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 20,
-                    "char_end": 32,
-                    "head_token_id": 9,
-                    "head_form": "emissões",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003018_SENT010::média::1",
           "sent_ID": "FOLHA_DOC003018_SENT010",
           "text": "Em pouco menos de um ano, conquistou 168 mil seguidores no Facebook (um quarto deles homens) e uma média de 21 mil visitantes únicos por mês.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 99,
             "char_end": 104
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "visitantes únicos",
-            "Arg2": "de 21 mil",
-            "Arg3": "por mês"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": "nummod",
-            "Arg3": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 115,
-                "char_end": 132
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 105,
-                "char_end": 114
-              }
-            ],
-            "Arg3": [
-              {
-                "char_start": 133,
-                "char_end": 140
-              }
-            ]
-          },
-          "target_instance_id": 13462,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_0a3b6182b9850617",
-          "argument_details": {
-            "predicate_token_ids": [
-              24
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 99,
-                "char_end": 104
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      28,
-                      29
-                    ],
-                    "char_start": 115,
-                    "char_end": 132,
-                    "head_token_id": 28,
-                    "head_form": "visitantes",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      25,
-                      26,
-                      27
-                    ],
-                    "char_start": 105,
-                    "char_end": 114,
-                    "head_token_id": 26,
-                    "head_form": "21",
-                    "head_deprel": "nummod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      30,
-                      31
-                    ],
-                    "char_start": 133,
-                    "char_end": 140,
-                    "head_token_id": 31,
-                    "head_form": "mês",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003161_SENT006::média::1",
           "sent_ID": "FOLHA_DOC003161_SENT006",
           "text": "O voo em que foi registrada a maior diferença de preço, uma média de R$ 2.050 entre a empresa mais cara e a mais barata, foi Navegantes (SC) Juazeiro do Norte (CE).",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "média",
             "char_start": 60,
             "char_end": 65
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "a maior diferença de preço",
-            "Arg2": "de R$ 2.050",
-            "Arg3": "entre a empresa mais cara e a mais barata"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj:pass",
-            "Arg2": "nmod",
-            "Arg3": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 28,
-                "char_end": 54
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 66,
-                "char_end": 77
-              }
-            ],
-            "Arg3": [
-              {
-                "char_start": 78,
-                "char_end": 119
-              }
-            ]
-          },
-          "target_instance_id": 14493,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_0a3b6182b9850617",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 60,
-                "char_end": 65
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10,
-                      11
-                    ],
-                    "char_start": 28,
-                    "char_end": 54,
-                    "head_token_id": 9,
-                    "head_form": "diferença",
-                    "head_deprel": "nsubj:pass"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      15,
-                      16,
-                      17
-                    ],
-                    "char_start": 66,
-                    "char_end": 77,
-                    "head_token_id": 16,
-                    "head_form": "R$",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      18,
-                      19,
-                      20,
-                      21,
-                      22,
-                      23,
-                      24,
-                      25,
-                      26
-                    ],
-                    "char_start": 78,
-                    "char_end": 119,
-                    "head_token_id": 20,
-                    "head_form": "empresa",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 2,
-          "Arg2": 1,
-          "Arg3": 2
-        },
-        "nummod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1,
-          "Arg3": 0
-        },
-        "nsubj:pass": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

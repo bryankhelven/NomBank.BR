@@ -6,291 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003198_SENT014::substituição::1",
+          "sent_ID": "FOLHA_DOC003198_SENT014",
+          "text": "Em substituição, ela passou a exibir mais outros nomes do portfolio, como Maturatta e Do Chef.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "substituição",
+            "char_start": 3,
+            "char_end": 15
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "substituição · acepção 1",
-      "sense_id": "s_4488919b54095188",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "substituição · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "substituição · acepção 2",
-      "sense_id": "s_586ec85ff4ab1ae0",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_4488919b54095188",
-      "frame_id": "f_ce74d7aaa2a7a4d0",
-      "pt_roleset": null,
-      "sense_label": "substituição · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "replacement.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/replacement.xml",
-          "source_xml_url": "data/nombank_sources/replacement.xml",
-          "source_xml_sha256": "53c6f7795cca3a91d945cb203ecbd36cbd336e393421f94659642e56b17622f3",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Substituidor",
-          "definition": "Quem troca material/pessoa, incluindo pronome ligado ao ato.",
-          "desc_pt": "Substituidor",
-          "definition_pt": "Quem troca material/pessoa, incluindo pronome ligado ao ato."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa antiga",
-          "definition": "Item/pessoa retirados, sem marca/jogador inventados.",
-          "desc_pt": "Coisa antiga",
-          "definition_pt": "Item/pessoa retirados, sem marca/jogador inventados."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Coisa nova",
-          "definition": "Item/pessoa que entra em lugar do antigo, incluindo novos nomes de portfolio.",
-          "desc_pt": "Coisa nova",
-          "definition_pt": "Item/pessoa que entra em lugar do antigo, incluindo novos nomes de portfolio."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003198_SENT014::substituição::1",
-          "sent_ID": "FOLHA_DOC003198_SENT014",
-          "text": "Em substituição, ela passou a exibir mais outros nomes do portfolio, como Maturatta e Do Chef.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "substituição",
-            "char_start": 3,
-            "char_end": 15
-          },
-          "realization": {
-            "Arg0": "ela",
-            "Arg1": null,
-            "Arg2": "mais outros nomes do portfolio, como Maturatta e Do Chef"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": "obj"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 17,
-                "char_end": 20
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 37,
-                "char_end": 93
-              }
-            ]
-          },
-          "target_instance_id": 6060,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ce74d7aaa2a7a4d0",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 3,
-                "char_end": 15
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4
-                    ],
-                    "char_start": 17,
-                    "char_end": 20,
-                    "head_token_id": 4,
-                    "head_form": "ela",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20
-                    ],
-                    "char_start": 37,
-                    "char_end": 93,
-                    "head_token_id": 10,
-                    "head_form": "nomes",
-                    "head_deprel": "obj"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_586ec85ff4ab1ae0",
-      "frame_id": "f_00b0f95bbca7d683",
-      "pt_roleset": null,
-      "sense_label": "substituição · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "replacement.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/replacement.xml",
-          "source_xml_url": "data/nombank_sources/replacement.xml",
-          "source_xml_sha256": "53c6f7795cca3a91d945cb203ecbd36cbd336e393421f94659642e56b17622f3",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Substituidor",
-          "definition": "Quem troca material/pessoa, incluindo pronome ligado ao ato.",
-          "desc_pt": "Substituidor",
-          "definition_pt": "Quem troca material/pessoa, incluindo pronome ligado ao ato."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa antiga",
-          "definition": "Item/pessoa retirados, sem marca/jogador inventados.",
-          "desc_pt": "Coisa antiga",
-          "definition_pt": "Item/pessoa retirados, sem marca/jogador inventados."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Coisa nova",
-          "definition": "Item/pessoa que entra em lugar do antigo, incluindo novos nomes de portfolio.",
-          "desc_pt": "Coisa nova",
-          "definition_pt": "Item/pessoa que entra em lugar do antigo, incluindo novos nomes de portfolio."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000100_SENT057::substituição::1",
           "sent_ID": "FOLHA_DOC000100_SENT057",
           "text": "Basta combinar com o adversário para que o jogo tenha mais de seis substituições.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "substituições",
             "char_start": 67,
             "char_end": 80
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 12223,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_00b0f95bbca7d683",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 67,
-                "char_end": 80
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {}
+      "syntactic_profile": {},
+      "sense_label": "substituição · acepção 2"
     }
   ]
 }

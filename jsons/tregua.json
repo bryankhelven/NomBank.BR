@@ -6,262 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003139_SENT002::trégua::1",
+          "sent_ID": "FOLHA_DOC003139_SENT002",
+          "text": "Para dar trégua no noticiário abarrotado de denúncias de corrupção e casos de violência, a Globo faz uma aposta na água com açúcar.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "trégua",
+            "char_start": 9,
+            "char_end": 15
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "trégua · acepção 1",
-      "sense_id": "s_7ba51a22c6168ca5",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "trégua · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "trégua · acepção 2",
-      "sense_id": "s_b7315a0179a96378",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_7ba51a22c6168ca5",
-      "frame_id": "f_46919570c47904c5",
-      "pt_roleset": null,
-      "sense_label": "trégua · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "pause.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/pause.xml",
-          "source_xml_url": "data/nombank_sources/pause.xml",
-          "source_xml_sha256": "d2a50e3fd4c606a42c61c68d7cb6d18fde2b07bde9bf160360cb94fc8ee835bd",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Entidade ou ação que pausa",
-          "definition": "Thing pausing, agent or action restrito à folga/ausência de incômodo, como pausa no fluxo de notícias; não quem concede pausa automaticamente.",
-          "desc_pt": "Entidade ou ação que pausa",
-          "definition_pt": "Thing pausing, agent or action restrito à folga/ausência de incômodo, como pausa no fluxo de notícias; não quem concede pausa automaticamente."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003139_SENT002::trégua::1",
-          "sent_ID": "FOLHA_DOC003139_SENT002",
-          "text": "Para dar trégua no noticiário abarrotado de denúncias de corrupção e casos de violência, a Globo faz uma aposta na água com açúcar.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "trégua",
-            "char_start": 9,
-            "char_end": 15
-          },
-          "realization": {
-            "Arg0": "no noticiário abarrotado de denúncias de corrupção e casos de violência"
-          },
-          "syntax": {
-            "Arg0": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 16,
-                "char_end": 87
-              }
-            ]
-          },
-          "target_instance_id": 3130,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_46919570c47904c5",
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 9,
-                "char_end": 15
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15
-                    ],
-                    "char_start": 16,
-                    "char_end": 87,
-                    "head_token_id": 6,
-                    "head_form": "noticiário",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "obl": {
-          "Arg0": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_b7315a0179a96378",
-      "frame_id": "f_3308d93ed2554827",
-      "pt_roleset": null,
-      "sense_label": "trégua · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "truce.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/truce.xml",
-          "source_xml_url": "data/nombank_sources/truce.xml",
-          "source_xml_sha256": "86fba2a87aec5929a3ad30c9f61f95dca39b5bf597dc47ffb05befd6b354129f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Partes da trégua",
-          "definition": "Agreer ou conjunto recíproco inteiro que suspende hostilidades, sem negociador automaticamente parte.",
-          "desc_pt": "Partes da trégua",
-          "definition_pt": "Agreer ou conjunto recíproco inteiro que suspende hostilidades, sem negociador automaticamente parte."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Proposição acordada",
-          "definition": "Conteúdo específico da suspensão.",
-          "desc_pt": "Proposição acordada",
-          "definition_pt": "Conteúdo específico da suspensão."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Outra parte da trégua",
-          "definition": "Other agreeing separado quando expresso, sem duplicar coletivo.",
-          "desc_pt": "Outra parte da trégua",
-          "definition_pt": "Other agreeing separado quando expresso, sem duplicar coletivo."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC001738_SENT004::trégua::1",
           "sent_ID": "FOLHA_DOC001738_SENT004",
           "text": "O segundo negociou a trégua entre o partido e o empresariado.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "trégua",
             "char_start": 21,
             "char_end": 27
           },
-          "realization": {
-            "Arg0": "entre o partido e o empresariado",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 28,
-                "char_end": 60
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 5552,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_3308d93ed2554827",
-          "argument_details": {
-            "predicate_token_ids": [
-              5
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 21,
-                "char_end": 27
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11
-                    ],
-                    "char_start": 28,
-                    "char_end": 60,
-                    "head_token_id": 8,
-                    "head_form": "partido",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "trégua · acepção 2"
     }
   ]
 }

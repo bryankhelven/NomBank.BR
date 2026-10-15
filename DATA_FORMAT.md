@@ -105,17 +105,3 @@ As posições de caracteres preservam os intervalos existentes da anotação. Um
 O formato 2 substitui `examples` por `instances`, remove `lemma_base` quando redundante, reúne os metadados do frame na acepção e elimina identificadores opacos e tokens dos arquivos de consulta. `arguments_annotated` explicita o estado da anotação. As posições de ARG passam a `argument_positions`; as posições de REL ficam diretamente em `predicate`. As anotações por tokens e os identificadores originais continuam disponíveis em `data/annotations.jsonl`, sem alteração das marcações científicas.
 
 O formato 2.1 separa a evidência lexical da autoridade de frames; rótulos de acepção sem código passam de `pt_roleset` a `sense_label`, com `pt_roleset` nulo. `origin_frames[].description` passa a `origin_frames[].gloss` para representar fielmente o nome breve do roleset original. As 77 fontes ausentes foram recuperadas e os blocos HTML duplicados de um mesmo roleset foram reunidos, mantendo os argumentos ainda não anotados nesse estado.
-
-## N067: autoridade, inventários e rastreabilidade
-
-`annotation_status` e `arguments_annotated` continuam indicando se a anotação foi concluída, mesmo quando não há argumento realizado. `annotation_authority` distingue `accepted_in_formal_base` (6.024), `local_completed_pending_reconciliation` (4.695) e `manual_review_required` (302). A soma das duas primeiras classes é 10.719; somente a primeira representa a base formal aceita. A publicação não é novo ACK científico.
-
-Os JSONs por lema adicionam `target_instance_id`, `sense_id`, `frame_id`, `argument_details` e metadados de autoridade. As posições têm índices Unicode de início inclusivo e fim exclusivo. `argument_details` preserva os tokens e HEADs do TECH, incluindo modo incorporado em REL quando explícito. Papéis sem span continuam no inventário; slots históricos sem definição não são reintroduzidos como papéis definidos na projeção científica.
-
-Cada variante de inventário tem autoridade própria. `label_pt`, `definition_pt`, `desc_pt` e `data/role_translations.json` são traduções editoriais para a interface, preservando campos originais. `data/frame_identity_map.jsonl` registra 61 ocorrências que reutilizam inventários aceitos com IDs públicos e científicos distintos, sem renomear silenciosamente o frame. As acepções e seus IDs permanecem preservados.
-
-`data/scientific_annotations.jsonl` fornece uma projeção pública da ciência, com proveniência nominal e sem arquivos de rollback, mensagens, políticas de envio, caminhos privados ou bridge administrativo. `data/lexical_evidence.jsonl` permanece literal e separado. Os arquivos XML de origem são cópias literais; seus hashes e rótulos originais não são substituídos por explicações editoriais.
-
-`data/source_recovery.jsonl` identifica nove blocos CoNLL-U transcritos pelo usuário. `data/sentences.conllu` reúne a fonte congelada original e esses blocos adicionais, sem reescrever o congelado. A publicação preserva os campos fornecidos, incluindo DEPS `_`, e não afirma verificação byte a byte contra o corpus externo original.
-
-As instâncias 12500 (Arg1/Arg4) e 10214 (Arg1/Arg2) preservam aninhamentos ARG–ARG historicamente documentados. Tokens compartilhados aparecem com os dois rótulos; o REL não é duplicado como argumento. Os exemplos e as tabelas podem apresentar a mesma ocorrência, mas cada ocorrência possui um único destino de navegação `#instance-ID`.

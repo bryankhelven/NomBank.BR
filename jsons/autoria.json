@@ -6,351 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000101_SENT005::autoria::1",
+          "sent_ID": "FOLHA_DOC000101_SENT005",
+          "text": "Nem mesmo é a primeira de autoria de Lerner.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "autoria",
+            "char_start": 26,
+            "char_end": 33
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "autoria · acepção 1",
-      "sense_id": "s_03eaecb428810e48",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "autoria · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "autoria · acepção 2",
-      "sense_id": "s_a1e815f852cabfd3",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_03eaecb428810e48",
-      "frame_id": "f_4ad3910a359c622f",
-      "pt_roleset": null,
-      "sense_label": "autoria · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "creation.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/creation.xml",
-          "source_xml_url": "data/nombank_sources/creation.xml",
-          "source_xml_sha256": "3df0cbd36b9e260614dc34fedca23a7cb4c42a8952fc7ff10ac22105bd2bb26d",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Criador",
-          "definition": "Autor de lavra/invenção, extensão de criação de plano à autoria.",
-          "desc_pt": "Criador",
-          "definition_pt": "Autor de lavra/invenção, extensão de criação de plano à autoria."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa criada",
-          "definition": "Objeto inventado, inclusive elipse nominal sem obra identificada.",
-          "desc_pt": "Coisa criada",
-          "definition_pt": "Objeto inventado, inclusive elipse nominal sem obra identificada."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Beneficiário",
-          "definition": "Para quem se cria, n2/source3 literal.",
-          "desc_pt": "Beneficiário",
-          "definition_pt": "Para quem se cria, n2/source3 literal."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Fonte da criação",
-          "definition": "Matéria de origem, n3/source2 literal.",
-          "desc_pt": "Fonte da criação",
-          "definition_pt": "Matéria de origem, n3/source2 literal."
-        },
-        {
-          "id": "Arg4",
-          "desc": "Atributo do criado",
-          "definition": "Predicação secundária sobre coisa criada.",
-          "desc_pt": "Atributo do criado",
-          "definition_pt": "Predicação secundária sobre coisa criada."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000101_SENT005::autoria::1",
-          "sent_ID": "FOLHA_DOC000101_SENT005",
-          "text": "Nem mesmo é a primeira de autoria de Lerner.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "autoria",
-            "char_start": 26,
-            "char_end": 33
-          },
-          "realization": {
-            "Arg0": "de Lerner",
-            "Arg1": "a primeira",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "root",
-            "Arg2": null,
-            "Arg3": null,
-            "Arg4": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 34,
-                "char_end": 43
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 12,
-                "char_end": 22
-              }
-            ],
-            "Arg2": [],
-            "Arg3": [],
-            "Arg4": []
-          },
-          "target_instance_id": 475,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_4ad3910a359c622f",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 26,
-                "char_end": 33
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8,
-                      9
-                    ],
-                    "char_start": 34,
-                    "char_end": 43,
-                    "head_token_id": 9,
-                    "head_form": "Lerner",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4,
-                      5
-                    ],
-                    "char_start": 12,
-                    "char_end": 22,
-                    "head_token_id": 4,
-                    "head_form": "a",
-                    "head_deprel": "root"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg4",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 0,
-          "Arg4": 0
-        },
-        "root": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0,
-          "Arg4": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_a1e815f852cabfd3",
-      "frame_id": "f_92912f6228fbcc5a",
-      "pt_roleset": null,
-      "sense_label": "autoria · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "act.03",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/act.xml",
-          "source_xml_url": "data/nombank_sources/act.xml",
-          "source_xml_sha256": "525326af4c16d7862e1dcdb132e3f6f5cf96c176070b95216f4a5f9002ed5b27",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Autor da realização",
-          "definition": "Quem realiza ação, incluindo autoria reivindicada sem comprová-la externamente.",
-          "desc_pt": "Autor da realização",
-          "definition_pt": "Quem realiza ação, incluindo autoria reivindicada sem comprová-la externamente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Ação realizada",
-          "definition": "Evento de cuja realização se declara autoria, extensão de acts of war a ataques.",
-          "desc_pt": "Ação realizada",
-          "definition_pt": "Evento de cuja realização se declara autoria, extensão de acts of war a ataques."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004085_SENT011::autoria::1",
           "sent_ID": "FOLHA_DOC004085_SENT011",
           "text": "O grupo rebelde Exército de Salvação Arakan Rohingya assumiu a autoria dos ataques.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "autoria",
             "char_start": 63,
             "char_end": 70
           },
-          "realization": {
-            "Arg0": "O grupo rebelde Exército de Salvação Arakan Rohingya",
-            "Arg1": "dos ataques"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 0,
-                "char_end": 52
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 71,
-                "char_end": 82
-              }
-            ]
-          },
-          "target_instance_id": 2205,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_92912f6228fbcc5a",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 63,
-                "char_end": 70
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8
-                    ],
-                    "char_start": 0,
-                    "char_end": 52,
-                    "head_token_id": 2,
-                    "head_form": "grupo",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13,
-                      14
-                    ],
-                    "char_start": 71,
-                    "char_end": 82,
-                    "head_token_id": 14,
-                    "head_form": "ataques",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "autoria · acepção 2"
     }
   ]
 }

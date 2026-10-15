@@ -6,162 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_10a45b444e837ee5",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_10a45b444e837ee5",
-      "frame_id": "f_41dbf91a3a2d4119",
-      "pt_roleset": "parabéns.01",
-      "sense_label": "parabéns.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "praise.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/praise.xml",
-          "source_xml_url": "data/nombank_sources/praise.xml",
-          "source_xml_sha256": "57e7be16ea9d3e84931937f7d6997bd05e2bf1d13c50dd2617ef21fbfd8afdbb",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Autor da felicitação",
-          "definition": "Agent falante da citação de parabéns.",
-          "desc_pt": "Autor da felicitação",
-          "definition_pt": "Agent falante da citação de parabéns."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Pessoa felicitada",
-          "definition": "Theme elogiado explicitado, sem seu destacado de conteúdo que já pertence à razão.",
-          "desc_pt": "Pessoa felicitada",
-          "definition_pt": "Theme elogiado explicitado, sem seu destacado de conteúdo que já pertence à razão."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Motivo da felicitação",
-          "definition": "Attribute/reason, por seu trabalho, conforme for quality original.",
-          "desc_pt": "Motivo da felicitação",
-          "definition_pt": "Attribute/reason, por seu trabalho, conforme for quality original."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000014_SENT005::parabéns::1",
           "sent_ID": "FOLHA_DOC000014_SENT005",
           "text": "\"Parabéns por seu trabalho!\", disse Cook em sua conta oficial no Twitter, em francês.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "Parabéns",
             "char_start": 1,
             "char_end": 9
           },
-          "realization": {
-            "Arg0": "Cook",
-            "Arg1": null,
-            "Arg2": "por seu trabalho"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 36,
-                "char_end": 40
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 10,
-                "char_end": 26
-              }
-            ]
-          },
-          "target_instance_id": 8007,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_41dbf91a3a2d4119",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 1,
-                "char_end": 9
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10
-                    ],
-                    "char_start": 36,
-                    "char_end": 40,
-                    "head_token_id": 10,
-                    "head_form": "Cook",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5
-                    ],
-                    "char_start": 10,
-                    "char_end": 26,
-                    "head_token_id": 5,
-                    "head_form": "trabalho",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

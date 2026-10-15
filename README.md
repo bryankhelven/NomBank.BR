@@ -4,7 +4,7 @@ Recurso de nomes predicadores do português brasileiro no corpus Porttinari, com
 
 [Explorar o NomBank.BR](https://bryankhelven.github.io/NomBank.BR/)
 
-O recurso reúne 1.605 lemas e 11.021 instâncias. Há 10.719 instâncias com anotação concluída (97,2598%): 6.024 aceitas na base formal e 4.695 decisões locais ainda sem homologação global. Permanecem 302 ocorrências pendentes de verificação manual, preservadas em todos os exports e nas páginas.
+O recurso reúne 1.605 lemas e 11.021 instâncias. Há 6.024 instâncias com argumentos anotados (54,66%) e 4.997 ainda sem anotação de argumentos.
 
 ## Consulta
 
@@ -26,11 +26,3 @@ Evidência lexicográfica e autoridade de frames são distintas. Verbetes do DUP
 ## Interface e direitos
 
 O leiaute deriva do [NounBank.DS Expanded](https://github.com/bryankhelven/NounBank.DS-Expanded). Consulte `NOTICE` e `LICENSE-CODE` para os créditos e a licença do código. Essa licença não concede direitos adicionais sobre os textos do corpus ou outros recursos de terceiros.
-
-## Release N067
-
-A publicação distingue anotação concluída de autoridade formal. Consulte `data/annotation_authority.jsonl` e o filtro Autoridade. Nenhuma das 4.695 decisões locais é promovida automaticamente a Gold formal. As 302 pendências continuam disponíveis em `data/pending_instances.jsonl`.
-
-Spans, tokens e HEADs estão acessíveis nas tabelas e nos JSONs por lema. Os XMLs nominais de referência ficam em `data/nombank_sources/`; a proveniência científica está separada da evidência lexical. As traduções editoriais dos rótulos para apresentação em português preservam os rótulos e as definições originais nos inventários técnicos.
-
-As nove sentenças recuperadas são transcrições fornecidas pelo usuário, sem afirmação de identidade byte a byte com um arquivo externo original. Os campos DEPS `_` foram preservados. Os dois aninhamentos ARG–ARG históricos justificados permanecem; não há nova adjudicação ou reanotação geral nesta integração.

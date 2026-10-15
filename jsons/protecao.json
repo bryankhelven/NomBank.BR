@@ -6,1414 +6,190 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_5797c15e49f4c8f6",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "pt_roleset": "proteção.02",
-      "description": null,
-      "origin_frames": [],
-      "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_0eee004ffa87b617",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "pt_roleset": "proteção.03",
-      "description": null,
-      "origin_frames": [],
-      "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_39acb19cebec77d1",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "pt_roleset": "proteção.01",
-      "description": null,
-      "origin_frames": [],
-      "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_3bdf6f6e842d5504",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_5797c15e49f4c8f6",
-      "frame_id": "f_072646b8439f9ca9",
-      "pt_roleset": "proteção.04",
-      "sense_label": "proteção.04",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "protection.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/protection.xml",
-          "source_xml_url": "data/nombank_sources/protection.xml",
-          "source_xml_sha256": "c09df27acea2da31469ed22b467e8020386ef3800f9b552ef99cf9ad0733351c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "protetor",
-          "definition": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam.",
-          "desc_pt": "protetor",
-          "definition_pt": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam."
-        },
-        {
-          "id": "Arg1",
-          "desc": "protegido",
-          "definition": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta.",
-          "desc_pt": "protegido",
-          "definition_pt": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta."
-        },
-        {
-          "id": "Arg2",
-          "desc": "perigo",
-          "definition": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica.",
-          "desc_pt": "perigo",
-          "definition_pt": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica."
-        },
-        {
-          "id": "Arg3",
-          "desc": "instrumento",
-          "definition": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor.",
-          "desc_pt": "instrumento",
-          "definition_pt": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003147_SENT002::proteção::1",
           "sent_ID": "FOLHA_DOC003147_SENT002",
           "text": "Elas nasceram para transporte e proteção contra Sol, chuvas, predadores e o passar do tempo.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 32,
             "char_end": 40
           },
-          "realization": {
-            "Arg0": "Elas",
-            "Arg1": null,
-            "Arg2": "contra Sol, chuvas, predadores e o passar do tempo",
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": "nmod",
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 0,
-                "char_end": 4
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 41,
-                "char_end": 91
-              }
-            ],
-            "Arg3": []
-          },
-          "target_instance_id": 3257,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_072646b8439f9ca9",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 32,
-                "char_end": 40
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1
-                    ],
-                    "char_start": 0,
-                    "char_end": 4,
-                    "head_token_id": 1,
-                    "head_form": "Elas",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18
-                    ],
-                    "char_start": 41,
-                    "char_end": 91,
-                    "head_token_id": 8,
-                    "head_form": "Sol",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000085_SENT007::proteção::1",
           "sent_ID": "FOLHA_DOC000085_SENT007",
           "text": "A primeira opção deve ser buscar produtos que já tenham essa proteção cambial.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 61,
             "char_end": 69
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "que",
-            "Arg2": "cambial",
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj",
-            "Arg2": "amod",
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 42,
-                "char_end": 45
-              }
-            ],
-            "Arg2": [
-              {
-                "char_start": 70,
-                "char_end": 77
-              }
-            ],
-            "Arg3": []
-          },
-          "target_instance_id": 3991,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_072646b8439f9ca9",
-          "argument_details": {
-            "predicate_token_ids": [
-              12
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 61,
-                "char_end": 69
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8
-                    ],
-                    "char_start": 42,
-                    "char_end": 45,
-                    "head_token_id": 8,
-                    "head_form": "que",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      13
-                    ],
-                    "char_start": 70,
-                    "char_end": 77,
-                    "head_token_id": 13,
-                    "head_form": "cambial",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003185_SENT012::proteção::1",
           "sent_ID": "FOLHA_DOC003185_SENT012",
           "text": "Se na região nunca houve ocorrência de ventos fortes, talvez não valha a pena incluir a proteção contra vendavais, por exemplo.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 88,
             "char_end": 96
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "contra vendavais",
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": "nmod",
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 97,
-                "char_end": 113
-              }
-            ],
-            "Arg3": []
-          },
-          "target_instance_id": 4282,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_072646b8439f9ca9",
-          "argument_details": {
-            "predicate_token_ids": [
-              19
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 88,
-                "char_end": 96
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      20,
-                      21
-                    ],
-                    "char_start": 97,
-                    "char_end": 113,
-                    "head_token_id": 21,
-                    "head_form": "vendavais",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC004012_SENT046::proteção::1",
           "sent_ID": "FOLHA_DOC004012_SENT046",
           "text": "Não é do tipo que se joga no trapézio, sem rede de proteção.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 51,
             "char_end": 59
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": "rede"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null,
-            "Arg3": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": [],
-            "Arg3": [
-              {
-                "char_start": 43,
-                "char_end": 47
-              }
-            ]
-          },
-          "target_instance_id": 7480,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_072646b8439f9ca9",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 51,
-                "char_end": 59
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      14
-                    ],
-                    "char_start": 43,
-                    "char_end": 47,
-                    "head_token_id": 14,
-                    "head_form": "rede",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 2,
-          "Arg3": 0
-        },
-        "amod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1,
-          "Arg3": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 1
-        }
-      }
+      "syntactic_profile": {}
     },
     {
-      "sense_id": "s_0eee004ffa87b617",
-      "frame_id": "f_7ef881f7baa83dee",
       "pt_roleset": "proteção.02",
-      "sense_label": "proteção.02",
       "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "protection.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/protection.xml",
-          "source_xml_url": "data/nombank_sources/protection.xml",
-          "source_xml_sha256": "c09df27acea2da31469ed22b467e8020386ef3800f9b552ef99cf9ad0733351c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "protetor",
-          "definition": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam.",
-          "desc_pt": "protetor",
-          "definition_pt": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam."
-        },
-        {
-          "id": "Arg1",
-          "desc": "protegido",
-          "definition": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta.",
-          "desc_pt": "protegido",
-          "definition_pt": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta."
-        },
-        {
-          "id": "Arg2",
-          "desc": "perigo",
-          "definition": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica.",
-          "desc_pt": "perigo",
-          "definition_pt": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica."
-        },
-        {
-          "id": "Arg3",
-          "desc": "instrumento",
-          "definition": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor.",
-          "desc_pt": "instrumento",
-          "definition_pt": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor."
-        }
-      ],
+      "origin_frames": [],
+      "roles": null,
       "instances": [
         {
           "instance_id": "FOLHA_DOC002017_SENT029::proteção::1",
           "sent_ID": "FOLHA_DOC002017_SENT029",
           "text": "A falta de proteção ao pequeno investidor é questionada por especialistas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 11,
             "char_end": 19
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "ao pequeno investidor",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 20,
-                "char_end": 41
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 4839,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7ef881f7baa83dee",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 11,
-                "char_end": 19
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7,
-                      8
-                    ],
-                    "char_start": 20,
-                    "char_end": 41,
-                    "head_token_id": 8,
-                    "head_form": "investidor",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003170_SENT017::proteção::1",
           "sent_ID": "FOLHA_DOC003170_SENT017",
           "text": "De cana, o etanol brasileiro se beneficia de regras da EPA, a agência de proteção ambiental dos EUA, que estabelecem consumo mínimo de biocombustíveis.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 73,
             "char_end": 81
           },
-          "realization": {
-            "Arg0": "EPA",
-            "Arg1": "ambiental",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "amod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 55,
-                "char_end": 58
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 82,
-                "char_end": 91
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 6159,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7ef881f7baa83dee",
-          "argument_details": {
-            "predicate_token_ids": [
-              18
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 73,
-                "char_end": 81
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      13
-                    ],
-                    "char_start": 55,
-                    "char_end": 58,
-                    "head_token_id": 13,
-                    "head_form": "EPA",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      19
-                    ],
-                    "char_start": 82,
-                    "char_end": 91,
-                    "head_token_id": 19,
-                    "head_form": "ambiental",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000057_SENT001::proteção::1",
           "sent_ID": "FOLHA_DOC000057_SENT001",
           "text": "Em troca de proteção aos 'dreamers', Trump quer restringir imigração.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 12,
             "char_end": 20
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "aos 'dreamers'",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 21,
-                "char_end": 35
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 8174,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7ef881f7baa83dee",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 12,
-                "char_end": 20
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 21,
-                    "char_end": 35,
-                    "head_token_id": 8,
-                    "head_form": "dreamers",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003020_SENT016::proteção::1",
           "sent_ID": "FOLHA_DOC003020_SENT016",
           "text": "Tanto que Trump vem tentando desmontar todas as medidas de proteção ambiental aprovadas no governo de Barack Obama.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 59,
             "char_end": 67
           },
-          "realization": {
-            "Arg0": "todas as medidas",
-            "Arg1": "ambiental",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "obj",
-            "Arg1": "amod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 39,
-                "char_end": 55
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 68,
-                "char_end": 77
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 14166,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7ef881f7baa83dee",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 59,
-                "char_end": 67
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 39,
-                    "char_end": 55,
-                    "head_token_id": 9,
-                    "head_form": "medidas",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12
-                    ],
-                    "char_start": 68,
-                    "char_end": 77,
-                    "head_token_id": 12,
-                    "head_form": "ambiental",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003033_SENT026::proteção::1",
           "sent_ID": "FOLHA_DOC003033_SENT026",
           "text": "De acordo com a lei Cidade Limpa, no entanto, mesmo instalações de esculturas e de arte pública necessitam de aprovação prévia da comissão de proteção à paisagem.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 142,
             "char_end": 150
           },
-          "realization": {
-            "Arg0": "da comissão",
-            "Arg1": "à paisagem",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 127,
-                "char_end": 138
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 151,
-                "char_end": 161
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 14536,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7ef881f7baa83dee",
-          "argument_details": {
-            "predicate_token_ids": [
-              29
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 142,
-                "char_end": 150
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      25,
-                      26,
-                      27
-                    ],
-                    "char_start": 127,
-                    "char_end": 138,
-                    "head_token_id": 27,
-                    "head_form": "comissão",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      30,
-                      31,
-                      32
-                    ],
-                    "char_start": 151,
-                    "char_end": 161,
-                    "head_token_id": 32,
-                    "head_form": "paisagem",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 2,
-          "Arg1": 3,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "amod": {
-          "Arg0": 0,
-          "Arg1": 2,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "obj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {}
     },
     {
-      "sense_id": "s_39acb19cebec77d1",
-      "frame_id": "f_a5896afce89e67e7",
       "pt_roleset": "proteção.03",
-      "sense_label": "proteção.03",
       "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "protection.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/protection.xml",
-          "source_xml_url": "data/nombank_sources/protection.xml",
-          "source_xml_sha256": "c09df27acea2da31469ed22b467e8020386ef3800f9b552ef99cf9ad0733351c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "protetor",
-          "definition": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam.",
-          "desc_pt": "protetor",
-          "definition_pt": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam."
-        },
-        {
-          "id": "Arg1",
-          "desc": "protegido",
-          "definition": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta.",
-          "desc_pt": "protegido",
-          "definition_pt": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta."
-        },
-        {
-          "id": "Arg2",
-          "desc": "perigo",
-          "definition": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica.",
-          "desc_pt": "perigo",
-          "definition_pt": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica."
-        },
-        {
-          "id": "Arg3",
-          "desc": "instrumento",
-          "definition": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor.",
-          "desc_pt": "instrumento",
-          "definition_pt": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor."
-        }
-      ],
+      "origin_frames": [],
+      "roles": null,
       "instances": [
         {
           "instance_id": "FOLHA_DOC003017_SENT015::proteção::1",
           "sent_ID": "FOLHA_DOC003017_SENT015",
           "text": "Temos mais empregos espalhados em consequência da importação do que no tempo das indústrias espertalhonas que se aproveitaram da proteção da Lei de Informática jeca.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 129,
             "char_end": 137
           },
-          "realization": {
-            "Arg0": "da Lei de Informática jeca",
-            "Arg1": "que",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nsubj",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 138,
-                "char_end": 164
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 106,
-                "char_end": 109
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 10504,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_a5896afce89e67e7",
-          "argument_details": {
-            "predicate_token_ids": [
-              25
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 129,
-                "char_end": 137
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      26,
-                      27,
-                      28,
-                      29,
-                      30,
-                      31
-                    ],
-                    "char_start": 138,
-                    "char_end": 164,
-                    "head_token_id": 28,
-                    "head_form": "Lei",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      20
-                    ],
-                    "char_start": 106,
-                    "char_end": 109,
-                    "head_token_id": 20,
-                    "head_form": "que",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {}
     },
     {
-      "sense_id": "s_3bdf6f6e842d5504",
-      "frame_id": "f_5f397de5e7af0a17",
       "pt_roleset": "proteção.01",
-      "sense_label": "proteção.01",
       "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "protection.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/protection.xml",
-          "source_xml_url": "data/nombank_sources/protection.xml",
-          "source_xml_sha256": "c09df27acea2da31469ed22b467e8020386ef3800f9b552ef99cf9ad0733351c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "protetor",
-          "definition": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam.",
-          "desc_pt": "protetor",
-          "definition_pt": "Quem fornece proteção ou tem a função expressa de proteger; inclui entidade institucional e fonte normativa, conforme proceedings no exemplo nominal. Crítico, desmantelador e aprovador de outra relação não bastam."
-        },
-        {
-          "id": "Arg1",
-          "desc": "protegido",
-          "definition": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta.",
-          "desc_pt": "protegido",
-          "definition_pt": "Pessoa/entidade protegida, inclusive falta ou negociação prospectiva. Ambiental pode identificar o objeto ambiental por adaptação adjetival explícita; benefício de regra em outro predicado não basta."
-        },
-        {
-          "id": "Arg2",
-          "desc": "perigo",
-          "definition": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica.",
-          "desc_pt": "perigo",
-          "definition_pt": "Perigo contra o qual se protege. Adjetivo cambial identifica classe de risco no contexto financeiro por adaptação explícita, sem inventar moeda/flutuação específica."
-        },
-        {
-          "id": "Arg3",
-          "desc": "instrumento",
-          "definition": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor.",
-          "desc_pt": "instrumento",
-          "definition_pt": "Meio operacional de proteção independentemente indicado, como rede de proteção sob ausência; não duplicar automaticamente a fonte normativa escolhida como protetor."
-        }
-      ],
+      "origin_frames": [],
+      "roles": null,
       "instances": [
         {
           "instance_id": "FOLHA_DOC004127_SENT023::proteção::1",
           "sent_ID": "FOLHA_DOC004127_SENT023",
           "text": "O jogador colombiano deu mais proteção aos zagueiros, além de ajudar na saída de bola.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "proteção",
             "char_start": 30,
             "char_end": 38
           },
-          "realization": {
-            "Arg0": "O jogador colombiano",
-            "Arg1": "aos zagueiros",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": "obl",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 0,
-                "char_end": 20
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 39,
-                "char_end": 52
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 13239,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_5f397de5e7af0a17",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 30,
-                "char_end": 38
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3
-                    ],
-                    "char_start": 0,
-                    "char_end": 20,
-                    "head_token_id": 2,
-                    "head_form": "jogador",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 39,
-                    "char_end": 52,
-                    "head_token_id": 9,
-                    "head_form": "zagueiros",
-                    "head_deprel": "obl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0,
-          "Arg3": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

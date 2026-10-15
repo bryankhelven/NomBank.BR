@@ -6,198 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "golpe · acepção 1",
-      "sense_id": "s_45e5e6a4a56dadaf",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_45e5e6a4a56dadaf",
-      "frame_id": "f_6831ad68756e63c6",
-      "pt_roleset": null,
-      "sense_label": "golpe · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "scam.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/scam.xml",
-          "source_xml_url": "data/nombank_sources/scam.xml",
-          "source_xml_sha256": "00392fb2620e3a67e2186313c563ad39c1fa1494755f4b5433d569f9091c5397",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Enganador",
-          "definition": "Quem executa ardil/fraude, distinto de informante ou pessoa em quem se confiou sem prova.",
-          "desc_pt": "Enganador",
-          "definition_pt": "Quem executa ardil/fraude, distinto de informante ou pessoa em quem se confiou sem prova."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Enganado",
-          "definition": "Entidade vítima do golpe, inclusive conjunto contado ou comparação genérica restrita.",
-          "desc_pt": "Enganado",
-          "definition_pt": "Entidade vítima do golpe, inclusive conjunto contado ou comparação genérica restrita."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002035_SENT016::golpe::1",
           "sent_ID": "FOLHA_DOC002035_SENT016",
           "text": "Foram 40 mil vítimas do golpe, informou a polícia.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "golpe",
             "char_start": 24,
             "char_end": 29
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "40 mil vítimas"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 6,
-                "char_end": 20
-              }
-            ]
-          },
-          "target_instance_id": 6095,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_6831ad68756e63c6",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 24,
-                "char_end": 29
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      2,
-                      3,
-                      4
-                    ],
-                    "char_start": 6,
-                    "char_end": 20,
-                    "head_token_id": 4,
-                    "head_form": "vítimas",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC002035_SENT027::golpe::1",
           "sent_ID": "FOLHA_DOC002035_SENT027",
           "text": "Fui ingênua, como todo mundo que cai em golpe, porque acreditei em quem não devia.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "golpe",
             "char_start": 40,
             "char_end": 45
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "todo mundo"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 18,
-                "char_end": 28
-              }
-            ]
-          },
-          "target_instance_id": 6907,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_6831ad68756e63c6",
-          "argument_details": {
-            "predicate_token_ids": [
-              10
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 40,
-                "char_end": 45
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6
-                    ],
-                    "char_start": 18,
-                    "char_end": 28,
-                    "head_token_id": 6,
-                    "head_form": "mundo",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "golpe · acepção 1"
     }
   ]
 }

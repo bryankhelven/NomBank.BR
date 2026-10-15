@@ -6,227 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "doador · acepção 1",
-      "sense_id": "s_1feb0196ce5c6bf3",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_1feb0196ce5c6bf3",
-      "frame_id": "f_359caf8548f3394f",
-      "pt_roleset": null,
-      "sense_label": "doador · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "donor.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/donor.xml",
-          "source_xml_url": "data/nombank_sources/donor.xml",
-          "source_xml_sha256": "fa62887d419be33d94e6a8ad1102628b4509b07cc35fc2e533e9ee35fb40b790",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Doador",
-          "definition": "Quem fornece/doa incorporado conforme donors original.",
-          "desc_pt": "Doador",
-          "definition_pt": "Quem fornece/doa incorporado conforme donors original."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Recurso doado",
-          "definition": "Coisa/quantia fornecida, inclusive verba vinculada e valores das doações, sem limite de dedução confundido com doação.",
-          "desc_pt": "Recurso doado",
-          "definition_pt": "Coisa/quantia fornecida, inclusive verba vinculada e valores das doações, sem limite de dedução confundido com doação."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Receptor",
-          "definition": "Entidade destinatária da doação, distinta de IR ou fonte da avaliação.",
-          "desc_pt": "Receptor",
-          "definition_pt": "Entidade destinatária da doação, distinta de IR ou fonte da avaliação."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003209_SENT020::doador::1",
           "sent_ID": "FOLHA_DOC003209_SENT020",
           "text": "Outra mudança necessária, na avaliação da equipe da Educação, é dar poder de decisão ao doador em relação à forma como a verba será utilizada.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "doador",
             "char_start": 88,
             "char_end": 94
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "a verba",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nsubj:pass",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 119,
-                "char_end": 126
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 1234,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_359caf8548f3394f",
-          "argument_details": {
-            "predicate_token_ids": [
-              22
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 88,
-                "char_end": 94
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      29,
-                      30
-                    ],
-                    "char_start": 119,
-                    "char_end": 126,
-                    "head_token_id": 30,
-                    "head_form": "verba",
-                    "head_deprel": "nsubj:pass"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003209_SENT013::doador::1",
           "sent_ID": "FOLHA_DOC003209_SENT013",
           "text": "O texto da Câmara prevê que os doadores tenham a opção de deduzir do IR os valores das doações até o limite de 12%, assim como as demais deduções.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "doadores",
             "char_start": 31,
             "char_end": 39
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "os valores das doações",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 72,
-                "char_end": 94
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 11135,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_359caf8548f3394f",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 31,
-                "char_end": 39
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      18,
-                      19,
-                      20,
-                      21,
-                      22
-                    ],
-                    "char_start": 72,
-                    "char_end": 94,
-                    "head_token_id": 19,
-                    "head_form": "valores",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj:pass": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        },
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "doador · acepção 1"
     }
   ]
 }

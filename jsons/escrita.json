@@ -6,12 +6,24 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000110_SENT020::escrita::1",
+          "sent_ID": "FOLHA_DOC000110_SENT020",
+          "text": "Entre os diversos méritos dessa obra, como a escrita simples e direta sem \"afetações acadêmicas\", está em nos apresentar o processo que nos levou da Rússia dos Romanov (uma potência das maiores na Europa de então) às revoluções russas do início do século 20.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "escrita",
+            "char_start": 45,
+            "char_end": 52
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "escrita · acepção 1",
-      "sense_id": "s_46f2920757097cd4",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "escrita · acepção 1"
     },
     {
       "pt_roleset": null,
@@ -31,160 +43,11 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {},
-          "target_instance_id": 14479,
-          "annotation_authority": "manual_review_required",
-          "annotation_status": "not_started",
-          "frame_id": null,
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 6,
-                "char_end": 13
-              }
-            ],
-            "arguments": []
-          }
+          "argument_positions": {}
         }
       ],
       "syntactic_profile": {},
-      "sense_label": "escrita · acepção 2",
-      "sense_id": "s_aac01a9597f7bf58",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_46f2920757097cd4",
-      "frame_id": "f_1d26c4de3216656d",
-      "pt_roleset": null,
-      "sense_label": "escrita · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "writing.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/writing.xml",
-          "source_xml_url": "data/nombank_sources/writing.xml",
-          "source_xml_sha256": "d9790fb4590f1cb54fdd5cd55665bf4f5372748e647cd4abe89655ac5e05799c",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Redator",
-          "definition": "Quem escreve/redige, não leitor ou narrador do comentário sobre obra.",
-          "desc_pt": "Redator",
-          "definition_pt": "Quem escreve/redige, não leitor ou narrador do comentário sobre obra."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa escrita",
-          "definition": "Obra/texto redigidos, sem técnica musical automaticamente ação de escrever.",
-          "desc_pt": "Coisa escrita",
-          "definition_pt": "Obra/texto redigidos, sem técnica musical automaticamente ação de escrever."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Beneficiário da escrita",
-          "definition": "Para quem se redige, se expresso.",
-          "desc_pt": "Beneficiário da escrita",
-          "definition_pt": "Para quem se redige, se expresso."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000110_SENT020::escrita::1",
-          "sent_ID": "FOLHA_DOC000110_SENT020",
-          "text": "Entre os diversos méritos dessa obra, como a escrita simples e direta sem \"afetações acadêmicas\", está em nos apresentar o processo que nos levou da Rússia dos Romanov (uma potência das maiores na Europa de então) às revoluções russas do início do século 20.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "escrita",
-            "char_start": 45,
-            "char_end": 52
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "dessa obra",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 26,
-                "char_end": 36
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 10142,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_1d26c4de3216656d",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 45,
-                "char_end": 52
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7
-                    ],
-                    "char_start": 26,
-                    "char_end": 36,
-                    "head_token_id": 7,
-                    "head_form": "obra",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "sense_label": "escrita · acepção 2"
     }
   ]
 }

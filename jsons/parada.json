@@ -6,339 +6,60 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_05fb3698518e5bd9",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC003057_SENT030::parada::1",
+          "sent_ID": "FOLHA_DOC003057_SENT030",
+          "text": "Recentemente, Jonatas teve uma parada respiratória e precisou ser novamente internado e sedado.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "parada",
+            "char_start": 31,
+            "char_end": 37
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "parada.05",
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_5c6529d85e3c1379",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_05fb3698518e5bd9",
-      "frame_id": "f_7d28234b9aad3bb4",
-      "pt_roleset": "parada.04",
-      "sense_label": "parada.04",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "cessation.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/cessation.xml",
-          "source_xml_url": "data/nombank_sources/cessation.xml",
-          "source_xml_sha256": "00f7ed3ac0f8d4e79878dbf3abb9f9ae3fe448a5c579e987577ab389cb001eaa",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Causador da cessação",
-          "definition": "Quem faz cessar funcionamento, distinto de portador de episódio clínico.",
-          "desc_pt": "Causador da cessação",
-          "definition_pt": "Quem faz cessar funcionamento, distinto de portador de episódio clínico."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Função cessada",
-          "definition": "Ação/processo cessados, extensão de consumo/fumo ao funcionamento respiratório adjetival.",
-          "desc_pt": "Função cessada",
-          "definition_pt": "Ação/processo cessados, extensão de consumo/fumo ao funcionamento respiratório adjetival."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio causal da cessação, não tratamento posterior.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio causal da cessação, não tratamento posterior."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC003057_SENT030::parada::1",
-          "sent_ID": "FOLHA_DOC003057_SENT030",
-          "text": "Recentemente, Jonatas teve uma parada respiratória e precisou ser novamente internado e sedado.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "parada",
-            "char_start": 31,
-            "char_end": 37
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "respiratória",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "amod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 38,
-                "char_end": 50
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 8511,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_7d28234b9aad3bb4",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 31,
-                "char_end": 37
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7
-                    ],
-                    "char_start": 38,
-                    "char_end": 50,
-                    "head_token_id": 7,
-                    "head_form": "respiratória",
-                    "head_deprel": "amod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "amod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_5c6529d85e3c1379",
-      "frame_id": "f_073aa16653fc59db",
-      "pt_roleset": "parada.05",
-      "sense_label": "parada.05",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "stop.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/stop.xml",
-          "source_xml_url": "data/nombank_sources/stop.xml",
-          "source_xml_sha256": "c78e650271eb4fb289190beb6319f911af9232452612b82f65d4bfc4c63d5caa",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Agente da parada",
-          "definition": "Quem faz parar, não proprietário de evento automaticamente.",
-          "desc_pt": "Agente da parada",
-          "definition_pt": "Quem faz parar, não proprietário de evento automaticamente."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Objeto/ação parados",
-          "definition": "Veículo/movimento cessados na restrição PT, sem carro elíptico reconstruído.",
-          "desc_pt": "Objeto/ação parados",
-          "definition_pt": "Veículo/movimento cessados na restrição PT, sem carro elíptico reconstruído."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio de causar parada, distinto de local de serviço ou condição de safety car.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio de causar parada, distinto de local de serviço ou condição de safety car."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003105_SENT035::parada::1",
           "sent_ID": "FOLHA_DOC003105_SENT035",
           "text": "Largando no final do pelotão, em 17º, o brasileiro apostou na continuidade dos pneus de chuva extrema em sua parada em safety car.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "parada",
             "char_start": 109,
             "char_end": 115
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 10642,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_073aa16653fc59db",
-          "argument_details": {
-            "predicate_token_ids": [
-              26
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 109,
-                "char_end": 115
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003105_SENT041::parada::1",
           "sent_ID": "FOLHA_DOC003105_SENT041",
           "text": "No decorrer da corrida, Massa ainda fez mais duas paradas nos boxes, o que dificultou ainda mais sua chegada nos pontos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "paradas",
             "char_start": 50,
             "char_end": 57
           },
-          "realization": {
-            "Arg0": "Massa",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 24,
-                "char_end": 29
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 15401,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_073aa16653fc59db",
-          "argument_details": {
-            "predicate_token_ids": [
-              13
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 50,
-                "char_end": 57
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      8
-                    ],
-                    "char_start": 24,
-                    "char_end": 29,
-                    "head_token_id": 8,
-                    "head_form": "Massa",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

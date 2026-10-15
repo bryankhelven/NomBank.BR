@@ -6,123 +6,24 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "internamento · acepção 1",
-      "sense_id": "s_2b89204aad3d5f1e",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_2b89204aad3d5f1e",
-      "frame_id": "f_f8a71603617472f6",
-      "pt_roleset": null,
-      "sense_label": "internamento · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "hospitalization.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/hospitalization.xml",
-          "source_xml_url": "data/nombank_sources/hospitalization.xml",
-          "source_xml_sha256": "514789301005ed06bad9c60fb8e961f0808c7ec7fff4255893438d0f309f951e",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Quem encaminha",
-          "definition": "Sender para hospital, sem clínica recebedora necessariamente encaminhadora.",
-          "desc_pt": "Quem encaminha",
-          "definition_pt": "Sender para hospital, sem clínica recebedora necessariamente encaminhadora."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Paciente internado",
-          "definition": "Injured/ill entity, pacientes mencionados no receber para internamento.",
-          "desc_pt": "Paciente internado",
-          "definition_pt": "Injured/ill entity, pacientes mencionados no receber para internamento."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000041_SENT043::internamento::1",
           "sent_ID": "FOLHA_DOC000041_SENT043",
           "text": "Foi uma crise na família, conta Tissot, cuja clínica recebe pacientes para internamentos longos e curtos.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "internamentos",
             "char_start": 75,
             "char_end": 88
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "pacientes"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "obj"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 60,
-                "char_end": 69
-              }
-            ]
-          },
-          "target_instance_id": 7274,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_f8a71603617472f6",
-          "argument_details": {
-            "predicate_token_ids": [
-              16
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 75,
-                "char_end": 88
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      14
-                    ],
-                    "char_start": 60,
-                    "char_end": 69,
-                    "head_token_id": 14,
-                    "head_form": "pacientes",
-                    "head_deprel": "obj"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obj": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "internamento · acepção 1"
     }
   ]
 }

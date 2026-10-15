@@ -6,313 +6,62 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002075_SENT020::infiltração::1",
+          "sent_ID": "FOLHA_DOC002075_SENT020",
+          "text": "O São Paulo se dispôs a uma marcação, o Corinthians teve poucas infiltrações, definiu o treinador.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "infiltrações",
+            "char_start": 64,
+            "char_end": 76
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "infiltração · acepção 1",
-      "sense_id": "s_870ba4ef8d0ff50d",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "infiltração · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "infiltração · acepção 2",
-      "sense_id": "s_5c89f929319338be",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_870ba4ef8d0ff50d",
-      "frame_id": "f_72ec3046fa297c5d",
-      "pt_roleset": null,
-      "sense_label": "infiltração · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "entry.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/entry.xml",
-          "source_xml_url": "data/nombank_sources/entry.xml",
-          "source_xml_sha256": "bd66f945533d18a47ca73bf991c67ab1f154d31ffd4462ff0e8c76206618c42f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Entrante",
-          "definition": "Entidade que penetra/entra, extensão local à penetração esportiva coletiva.",
-          "desc_pt": "Entrante",
-          "definition_pt": "Entidade que penetra/entra, extensão local à penetração esportiva coletiva."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Lugar entrado",
-          "definition": "Campo/entidade penetrado, sem inferir adversário como espaço físico.",
-          "desc_pt": "Lugar entrado",
-          "definition_pt": "Campo/entidade penetrado, sem inferir adversário como espaço físico."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002075_SENT020::infiltração::1",
-          "sent_ID": "FOLHA_DOC002075_SENT020",
-          "text": "O São Paulo se dispôs a uma marcação, o Corinthians teve poucas infiltrações, definiu o treinador.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "infiltrações",
-            "char_start": 64,
-            "char_end": 76
-          },
-          "realization": {
-            "Arg0": "o Corinthians",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 38,
-                "char_end": 51
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 7462,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_72ec3046fa297c5d",
-          "argument_details": {
-            "predicate_token_ids": [
-              14
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 64,
-                "char_end": 76
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10,
-                      11
-                    ],
-                    "char_start": 38,
-                    "char_end": 51,
-                    "head_token_id": 11,
-                    "head_form": "Corinthians",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_5c89f929319338be",
-      "frame_id": "f_edc8cbd142323a96",
-      "pt_roleset": null,
-      "sense_label": "infiltração · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "absorption.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/absorption.xml",
-          "source_xml_url": "data/nombank_sources/absorption.xml",
-          "source_xml_sha256": "da801e14dfa964d692582b4a13ffd75985e9f90cbd04f7df838a4171c8a1e283",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Absorvente",
-          "definition": "Entidade que absorve líquido/matéria; extensão física/contextual ao sólido receptor da penetração com impregnação.",
-          "desc_pt": "Absorvente",
-          "definition_pt": "Entidade que absorve líquido/matéria; extensão física/contextual ao sólido receptor da penetração com impregnação."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Absorvido",
-          "definition": "Substância absorvida, sem lexicalizar água implícita.",
-          "desc_pt": "Absorvido",
-          "definition_pt": "Substância absorvida, sem lexicalizar água implícita."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004054_SENT003::infiltração::1",
           "sent_ID": "FOLHA_DOC004054_SENT003",
           "text": "Infiltrações, vazamentos, vidros estilhaçados e elevadores em manutenção ou já quebrados foram falhas encontradas nas paradas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "Infiltrações",
             "char_start": 0,
             "char_end": 12
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": []
-          },
-          "target_instance_id": 7809,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_edc8cbd142323a96",
-          "argument_details": {
-            "predicate_token_ids": [
-              1
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 0,
-                "char_end": 12
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC004054_SENT010::infiltração::1",
           "sent_ID": "FOLHA_DOC004054_SENT010",
           "text": "Vazamentos e infiltrações também ficaram aparentes nas paredes das estações e nos pisos cheios de marcas de goteiras.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "infiltrações",
             "char_start": 13,
             "char_end": 25
           },
-          "realization": {
-            "Arg0": "nas paredes das estações e nos pisos cheios de marcas de goteiras",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "obl",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 51,
-                "char_end": 116
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 10966,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_edc8cbd142323a96",
-          "argument_details": {
-            "predicate_token_ids": [
-              3
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 13,
-                "char_end": 25
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20,
-                      21
-                    ],
-                    "char_start": 51,
-                    "char_end": 116,
-                    "head_token_id": 9,
-                    "head_form": "paredes",
-                    "head_deprel": "obl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obl": {
-          "Arg0": 1,
-          "Arg1": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "infiltração · acepção 2"
     }
   ]
 }

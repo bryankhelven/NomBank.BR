@@ -6,140 +6,24 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "reenvio · acepção 1",
-      "sense_id": "s_d86d82d9f59dc8be",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_d86d82d9f59dc8be",
-      "frame_id": "f_dee549eaaece331d",
-      "pt_roleset": null,
-      "sense_label": "reenvio · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "referral.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/referral.xml",
-          "source_xml_url": "data/nombank_sources/referral.xml",
-          "source_xml_sha256": "960715ce301b6a9b5bb4d0ce2e68c6d876aade3801e8695f9bcd46ad1f5f6a2d",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Remetente",
-          "definition": "Recommender/sender restringido ao enviar novamente de reenvio, sem recomendação clínica/eletrônica ou pacote físico impostos.",
-          "desc_pt": "Remetente",
-          "definition_pt": "Recommender/sender restringido ao enviar novamente de reenvio, sem recomendação clínica/eletrônica ou pacote físico impostos."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa reenviada",
-          "definition": "Thing recommended/sent explícita, sem saldo antes creditado automaticamente objeto reenviado.",
-          "desc_pt": "Coisa reenviada",
-          "definition_pt": "Thing recommended/sent explícita, sem saldo antes creditado automaticamente objeto reenviado."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destinatário",
-          "definition": "Recommended/sent to quando nomeado, sem entidade de resposta como destinatário.",
-          "desc_pt": "Destinatário",
-          "definition_pt": "Recommended/sent to quando nomeado, sem entidade de resposta como destinatário."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003064_SENT021::reenvio::1",
           "sent_ID": "FOLHA_DOC003064_SENT021",
           "text": "Resposta da SPPREV - Informa que o saldo já havia sido creditado, mas que realizou o reenvio em maio.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "reenvio",
             "char_start": 85,
             "char_end": 92
           },
-          "realization": {
-            "Arg0": "SPPREV",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 12,
-                "char_end": 18
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 924,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_dee549eaaece331d",
-          "argument_details": {
-            "predicate_token_ids": [
-              19
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 85,
-                "char_end": 92
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      4
-                    ],
-                    "char_start": 12,
-                    "char_end": 18,
-                    "head_token_id": 4,
-                    "head_form": "SPPREV",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "reenvio · acepção 1"
     }
   ]
 }

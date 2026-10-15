@@ -6,363 +6,60 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_eb9c5c42f73711f0",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC002025_SENT025::correção::1",
+          "sent_ID": "FOLHA_DOC002025_SENT025",
+          "text": "Mas alentador é perceber que a demora de correção de rumos se atenua mais e mais.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "correção",
+            "char_start": 41,
+            "char_end": 49
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        },
+        {
+          "instance_id": "FOLHA_DOC000096_SENT010::correção::1",
+          "sent_ID": "FOLHA_DOC000096_SENT010",
+          "text": "Vive-se hoje, ao contrário, uma saudável correção de rumos.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "correção",
+            "char_start": 41,
+            "char_end": 49
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
+      "syntactic_profile": {}
     },
     {
       "pt_roleset": "correção.05",
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_2c71532ccb93d627",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_eb9c5c42f73711f0",
-      "frame_id": "f_edca58907e8e90c9",
-      "pt_roleset": "correção.02",
-      "sense_label": "correção.02",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "correction.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/correction.xml",
-          "source_xml_url": "data/nombank_sources/correction.xml",
-          "source_xml_sha256": "42bbb19ae57b9048e6249ccb2ce2e97284f1af83c98096ec4c10ce43adf8d0be",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Corretor",
-          "definition": "Agente de retificar.",
-          "desc_pt": "Corretor",
-          "definition_pt": "Agente de retificar."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa retificada",
-          "definition": "Aquilo que estava errado, inclusive rumo como course-correction original.",
-          "desc_pt": "Coisa retificada",
-          "definition_pt": "Aquilo que estava errado, inclusive rumo como course-correction original."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC002025_SENT025::correção::1",
-          "sent_ID": "FOLHA_DOC002025_SENT025",
-          "text": "Mas alentador é perceber que a demora de correção de rumos se atenua mais e mais.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "correção",
-            "char_start": 41,
-            "char_end": 49
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de rumos"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 50,
-                "char_end": 58
-              }
-            ]
-          },
-          "target_instance_id": 3062,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_edca58907e8e90c9",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 41,
-                "char_end": 49
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      10,
-                      11
-                    ],
-                    "char_start": 50,
-                    "char_end": 58,
-                    "head_token_id": 11,
-                    "head_form": "rumos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
-    },
-    {
-      "sense_id": "s_2c71532ccb93d627",
-      "frame_id": "f_aa711ab53237a94e",
-      "pt_roleset": "correção.05",
-      "sense_label": "correção.05",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "accuracy.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/accuracy.xml",
-          "source_xml_url": "data/nombank_sources/accuracy.xml",
-          "source_xml_sha256": "49bc576f030040a20ea27d4489b241d148ccd296992de6a65650a495a5c8c7f6",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "Matéria exata",
-          "definition": "Objeto cuja precisão/exatidão é avaliada, inclusive sob ausência.",
-          "desc_pt": "Matéria exata",
-          "definition_pt": "Objeto cuja precisão/exatidão é avaliada, inclusive sob ausência."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Valor de precisão",
-          "definition": "Exatidão incorporada no REL conforme accuracy REF2 nominal.",
-          "desc_pt": "Valor de precisão",
-          "definition_pt": "Exatidão incorporada no REL conforme accuracy REF2 nominal."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC002015_SENT013::correção::1",
           "sent_ID": "FOLHA_DOC002015_SENT013",
           "text": "Voltando à pergunta feita pela Mariana, é preciso dizer que uma das cotações a ela oferecidas carece de correção.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "correção",
             "char_start": 104,
             "char_end": 112
           },
-          "realization": {
-            "Arg1": "uma das cotações a ela oferecidas",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg1": "nsubj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 60,
-                "char_end": 93
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 4852,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_aa711ab53237a94e",
-          "argument_details": {
-            "predicate_token_ids": [
-              23
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 104,
-                "char_end": 112
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20
-                    ],
-                    "char_start": 60,
-                    "char_end": 93,
-                    "head_token_id": 14,
-                    "head_form": "uma",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_eb9c5c42f73711f0",
-      "frame_id": "f_9accb2df8cab9a6c",
-      "pt_roleset": "correção.02",
-      "sense_label": "correção.02",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "correction.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/correction.xml",
-          "source_xml_url": "data/nombank_sources/correction.xml",
-          "source_xml_sha256": "42bbb19ae57b9048e6249ccb2ce2e97284f1af83c98096ec4c10ce43adf8d0be",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Retificador",
-          "definition": "Corrector expresso, sem sujeito impessoal de vive-se reconstruído.",
-          "desc_pt": "Retificador",
-          "definition_pt": "Corrector expresso, sem sujeito impessoal de vive-se reconstruído."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa retificada",
-          "definition": "Thing that was wrong como rumos, conforme course-correction original, sob juízo do corpus.",
-          "desc_pt": "Coisa retificada",
-          "definition_pt": "Thing that was wrong como rumos, conforme course-correction original, sob juízo do corpus."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000096_SENT010::correção::1",
-          "sent_ID": "FOLHA_DOC000096_SENT010",
-          "text": "Vive-se hoje, ao contrário, uma saudável correção de rumos.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "correção",
-            "char_start": 41,
-            "char_end": 49
-          },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "de rumos"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 50,
-                "char_end": 58
-              }
-            ]
-          },
-          "target_instance_id": 13814,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_9accb2df8cab9a6c",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 41,
-                "char_end": 49
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      12,
-                      13
-                    ],
-                    "char_start": 50,
-                    "char_end": 58,
-                    "head_token_id": 13,
-                    "head_form": "rumos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

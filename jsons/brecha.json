@@ -6,255 +6,48 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000100_SENT001::brecha::1",
+          "sent_ID": "FOLHA_DOC000100_SENT001",
+          "text": "Brecha no ranking da Fifa prejudica seleções que jogam muitos amistosos.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "Brecha",
+            "char_start": 0,
+            "char_end": 6
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "brecha · acepção 1",
-      "sense_id": "s_7bd6a12b58429874",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "brecha · acepção 1"
     },
     {
       "pt_roleset": null,
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "brecha · acepção 2",
-      "sense_id": "s_d9459283587fd8ac",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_7bd6a12b58429874",
-      "frame_id": "f_065db2d11de3150f",
-      "pt_roleset": null,
-      "sense_label": "brecha · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "ambiguity.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/ambiguity.xml",
-          "source_xml_url": "data/nombank_sources/ambiguity.xml",
-          "source_xml_sha256": "bbf8fb2bfdc65681d4346c06dd2ace3b9daeb15987ffa5f12e226ebabcda6040",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "Entidade indefinida",
-          "definition": "Theme com ambiguidade/falta de definição frozen, como ranking referido.",
-          "desc_pt": "Entidade indefinida",
-          "definition_pt": "Theme com ambiguidade/falta de definição frozen, como ranking referido."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Valor de indefinição",
-          "definition": "Value incorporado comprovado por ambiguity REF2 original.",
-          "desc_pt": "Valor de indefinição",
-          "definition_pt": "Value incorporado comprovado por ambiguity REF2 original."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000100_SENT001::brecha::1",
-          "sent_ID": "FOLHA_DOC000100_SENT001",
-          "text": "Brecha no ranking da Fifa prejudica seleções que jogam muitos amistosos.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "Brecha",
-            "char_start": 0,
-            "char_end": 6
-          },
-          "realization": {
-            "Arg1": "no ranking da Fifa",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 7,
-                "char_end": 25
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 5137,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_065db2d11de3150f",
-          "argument_details": {
-            "predicate_token_ids": [
-              1
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 0,
-                "char_end": 6
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7
-                    ],
-                    "char_start": 7,
-                    "char_end": 25,
-                    "head_token_id": 4,
-                    "head_form": "ranking",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_d9459283587fd8ac",
-      "frame_id": "f_6952142f01bb1dff",
-      "pt_roleset": null,
-      "sense_label": "brecha · acepção 2",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "opportunity.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/opportunity.xml",
-          "source_xml_url": "data/nombank_sources/opportunity.xml",
-          "source_xml_sha256": "886d32d5be537575d5d5dc223081718a622edfb19f1d6687194d8d7d10ce8932",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Ator potencial",
-          "definition": "Agent que pode aproveitar oportunidade, não discurso causador automaticamente ator.",
-          "desc_pt": "Ator potencial",
-          "definition_pt": "Agent que pode aproveitar oportunidade, não discurso causador automaticamente ator."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Ação possível",
-          "definition": "Action que brecha oportuniza, com finalidade expressa e sem efeitos de outro predicado transferidos.",
-          "desc_pt": "Ação possível",
-          "definition_pt": "Action que brecha oportuniza, com finalidade expressa e sem efeitos de outro predicado transferidos."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003036_SENT006::brecha::1",
           "sent_ID": "FOLHA_DOC003036_SENT006",
           "text": "É o discurso anti-Soros, que serve para evocar sentimentos antissemitas e abrir uma brecha para explorar sentimentos populares anticapitalistas, roubando eleitores da esquerda.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "brecha",
             "char_start": 84,
             "char_end": 90
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "para explorar sentimentos populares anticapitalistas"
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "advcl"
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 91,
-                "char_end": 143
-              }
-            ]
-          },
-          "target_instance_id": 9740,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_6952142f01bb1dff",
-          "argument_details": {
-            "predicate_token_ids": [
-              15
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 84,
-                "char_end": 90
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      16,
-                      17,
-                      18,
-                      19,
-                      20
-                    ],
-                    "char_start": 91,
-                    "char_end": 143,
-                    "head_token_id": 17,
-                    "head_form": "explorar",
-                    "head_deprel": "advcl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "advcl": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "brecha · acepção 2"
     }
   ]
 }

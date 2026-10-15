@@ -6,162 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_a4a70c0536d57f44",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_a4a70c0536d57f44",
-      "frame_id": "f_c5e6207a2e159e71",
-      "pt_roleset": "temporada.01",
-      "sense_label": "temporada.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "season.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/season.xml",
-          "source_xml_url": "data/nombank_sources/season.xml",
-          "source_xml_sha256": "1e0aa48bf49cf2449635a5b447138aeedd87fa9ad6eda228e3bd6e12a721f30f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Participante da temporada",
-          "definition": "Experiencer artista/entidade que vive temporada, não administração de hotel.",
-          "desc_pt": "Participante da temporada",
-          "definition_pt": "Experiencer artista/entidade que vive temporada, não administração de hotel."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Atividade da temporada",
-          "definition": "Action específica dentro do período, não retorno genericamente anterior.",
-          "desc_pt": "Atividade da temporada",
-          "definition_pt": "Action específica dentro do período, não retorno genericamente anterior."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Delimitação temporal",
-          "definition": "Value como estação/faixa temporal, estendido explicitamente a dois anos de duração.",
-          "desc_pt": "Delimitação temporal",
-          "definition_pt": "Value como estação/faixa temporal, estendido explicitamente a dois anos de duração."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003062_SENT042::temporada::1",
           "sent_ID": "FOLHA_DOC003062_SENT042",
           "text": "Quando chegou a hora de ressurgir musicalmente, ela escolheu o \"ambiente controlado ideal\", o de uma temporada de dois anos iniciada em 2012 no hotel e cassino Caesars Palace, em Las Vegas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "temporada",
             "char_start": 101,
             "char_end": 110
           },
-          "realization": {
-            "Arg0": "ela",
-            "Arg1": null,
-            "Arg2": "de dois anos"
-          },
-          "syntax": {
-            "Arg0": "nsubj",
-            "Arg1": null,
-            "Arg2": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 48,
-                "char_end": 51
-              }
-            ],
-            "Arg1": [],
-            "Arg2": [
-              {
-                "char_start": 111,
-                "char_end": 123
-              }
-            ]
-          },
-          "target_instance_id": 9589,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_c5e6207a2e159e71",
-          "argument_details": {
-            "predicate_token_ids": [
-              21
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 101,
-                "char_end": 110
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      9
-                    ],
-                    "char_start": 48,
-                    "char_end": 51,
-                    "head_token_id": 9,
-                    "head_form": "ela",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      22,
-                      23,
-                      24
-                    ],
-                    "char_start": 111,
-                    "char_end": 123,
-                    "head_token_id": 24,
-                    "head_form": "anos",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nsubj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 0,
-          "Arg2": 1
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

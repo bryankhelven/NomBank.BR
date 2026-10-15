@@ -6,140 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_1a0f4df31c555bf4",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_1a0f4df31c555bf4",
-      "frame_id": "f_2b2c67d9e5e8f4be",
-      "pt_roleset": "evasão.01",
-      "sense_label": "evasão.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "outflow.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/outflow.xml",
-          "source_xml_url": "data/nombank_sources/outflow.xml",
-          "source_xml_sha256": "500b8ca059df571f5cf0a8d75b8aaadf8a03ea36b18dcd5fcae485e63f27f5bc",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg1",
-          "desc": "Recursos que saem",
-          "definition": "Substance estendida a divisas conforme people and capital original, sem Arg0 transportador.",
-          "desc_pt": "Recursos que saem",
-          "definition_pt": "Substance estendida a divisas conforme people and capital original, sem Arg0 transportador."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Destino da saída",
-          "definition": "Endpoint explícito, sem lado da fronteira necessariamente direção de travessia.",
-          "desc_pt": "Destino da saída",
-          "definition_pt": "Endpoint explícito, sem lado da fronteira necessariamente direção de travessia."
-        },
-        {
-          "id": "Arg3",
-          "desc": "Origem da saída",
-          "definition": "Startpoint expresso, sem país de origem reconstruído externamente.",
-          "desc_pt": "Origem da saída",
-          "definition_pt": "Startpoint expresso, sem país de origem reconstruído externamente."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000007_SENT007::evasão::1",
           "sent_ID": "FOLHA_DOC000007_SENT007",
           "text": "Battisti foi detido na semana passada acusado de evasão de divisas ao tentar atravessar a fronteira com a Bolívia portando dólares e euros no valor equivalente a pouco mais de R$ 23 mil.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "evasão",
             "char_start": 49,
             "char_end": 55
           },
-          "realization": {
-            "Arg1": "de divisas",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "syntax": {
-            "Arg1": "nmod",
-            "Arg2": null,
-            "Arg3": null
-          },
-          "argument_positions": {
-            "Arg1": [
-              {
-                "char_start": 56,
-                "char_end": 66
-              }
-            ],
-            "Arg2": [],
-            "Arg3": []
-          },
-          "target_instance_id": 5843,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_2b2c67d9e5e8f4be",
-          "argument_details": {
-            "predicate_token_ids": [
-              10
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 49,
-                "char_end": 55
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11,
-                      12
-                    ],
-                    "char_start": 56,
-                    "char_end": 66,
-                    "head_token_id": 12,
-                    "head_form": "divisas",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg3",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg1": 1,
-          "Arg2": 0,
-          "Arg3": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

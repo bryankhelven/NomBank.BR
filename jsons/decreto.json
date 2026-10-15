@@ -6,199 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "decreto · acepção 1",
-      "sense_id": "s_245be051f47d887f",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_245be051f47d887f",
-      "frame_id": "f_bf25c894ccd18e5d",
-      "pt_roleset": null,
-      "sense_label": "decreto · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "decree.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/decree.xml",
-          "source_xml_url": "data/nombank_sources/decree.xml",
-          "source_xml_sha256": "67b4bb0f872075f014dcfb5df9d4423379d25de4ae7698c4acdf09d050952f7f",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Emissor do decreto",
-          "definition": "Ruler/issuer da determinação escrita normativa, inclusive signatário por atribuição contextual.",
-          "desc_pt": "Emissor do decreto",
-          "definition_pt": "Ruler/issuer da determinação escrita normativa, inclusive signatário por atribuição contextual."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Determinação decretada",
-          "definition": "Entity decreed concreta, sem pedido apoiado no decreto como conteúdo automático.",
-          "desc_pt": "Determinação decretada",
-          "definition_pt": "Entity decreed concreta, sem pedido apoiado no decreto como conteúdo automático."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000070_SENT033::decreto::1",
           "sent_ID": "FOLHA_DOC000070_SENT033",
           "text": "Sobre o pedido feito com base no decreto assinado por Michel Temer em maio, a Pérola diz ter direito a se enquadrar nos critérios estabelecidos pela nova norma.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "decreto",
             "char_start": 33,
             "char_end": 40
           },
-          "realization": {
-            "Arg0": "por Michel Temer",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "obl:agent",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 50,
-                "char_end": 66
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 8036,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_bf25c894ccd18e5d",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 33,
-                "char_end": 40
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 50,
-                    "char_end": 66,
-                    "head_token_id": 12,
-                    "head_form": "Michel",
-                    "head_deprel": "obl:agent"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000007_SENT017::decreto::1",
           "sent_ID": "FOLHA_DOC000007_SENT017",
           "text": "O decreto do Lula não pode ser revogado.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "decreto",
             "char_start": 2,
             "char_end": 9
           },
-          "realization": {
-            "Arg0": "do Lula",
-            "Arg1": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 10,
-                "char_end": 17
-              }
-            ],
-            "Arg1": []
-          },
-          "target_instance_id": 8680,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_bf25c894ccd18e5d",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 9
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5
-                    ],
-                    "char_start": 10,
-                    "char_end": 17,
-                    "head_token_id": 5,
-                    "head_form": "Lula",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obl:agent": {
-          "Arg0": 1,
-          "Arg1": 0
-        },
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "decreto · acepção 1"
     }
   ]
 }

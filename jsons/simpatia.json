@@ -6,241 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "simpatia · acepção 1",
-      "sense_id": "s_b82c49cd477f75d1",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_b82c49cd477f75d1",
-      "frame_id": "f_66d3463cdd028d28",
-      "pt_roleset": null,
-      "sense_label": "simpatia · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "affection.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/affection.xml",
-          "source_xml_url": "data/nombank_sources/affection.xml",
-          "source_xml_sha256": "5e5b0f6487e190490028b24d65c9fa27364aca1df108ab263978ac9437084005",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Experienciador de simpatia",
-          "definition": "Quem gosta/tem inclinação, inclusive sob negação total.",
-          "desc_pt": "Experienciador de simpatia",
-          "definition_pt": "Quem gosta/tem inclinação, inclusive sob negação total."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Alvo da inclinação",
-          "definition": "Entidade a quem se dirige simpatia, sem apoio político inferido.",
-          "desc_pt": "Alvo da inclinação",
-          "definition_pt": "Entidade a quem se dirige simpatia, sem apoio político inferido."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000102_SENT013::simpatia::1",
           "sent_ID": "FOLHA_DOC000102_SENT013",
           "text": "Talvez venha daí sua simpatia pelo Michel Temer.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "simpatia",
             "char_start": 21,
             "char_end": 29
           },
-          "realization": {
-            "Arg0": "sua",
-            "Arg1": "pelo Michel Temer"
-          },
-          "syntax": {
-            "Arg0": "det",
-            "Arg1": "nmod"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 17,
-                "char_end": 20
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 30,
-                "char_end": 47
-              }
-            ]
-          },
-          "target_instance_id": 745,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_66d3463cdd028d28",
-          "argument_details": {
-            "predicate_token_ids": [
-              6
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 21,
-                "char_end": 29
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5
-                    ],
-                    "char_start": 17,
-                    "char_end": 20,
-                    "head_token_id": 5,
-                    "head_form": "sua",
-                    "head_deprel": "det"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      7,
-                      8,
-                      9,
-                      10
-                    ],
-                    "char_start": 30,
-                    "char_end": 47,
-                    "head_token_id": 9,
-                    "head_form": "Michel",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC003200_SENT025::simpatia::1",
           "sent_ID": "FOLHA_DOC003200_SENT025",
           "text": "Na realidade, eles [OAS] deram ao PMDB uma contribuição de R$ 5 milhões, o que irritou profundamente o Eduardo Cunha, que nunca nutriu por mim nenhuma simpatia.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "simpatia",
             "char_start": 151,
             "char_end": 159
           },
-          "realization": {
-            "Arg0": "o Eduardo Cunha",
-            "Arg1": "por mim"
-          },
-          "syntax": {
-            "Arg0": "obj",
-            "Arg1": "obl"
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 101,
-                "char_end": 116
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 135,
-                "char_end": 142
-              }
-            ]
-          },
-          "target_instance_id": 11897,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_66d3463cdd028d28",
-          "argument_details": {
-            "predicate_token_ids": [
-              34
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 151,
-                "char_end": 159
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      24,
-                      25,
-                      26
-                    ],
-                    "char_start": 101,
-                    "char_end": 116,
-                    "head_token_id": 25,
-                    "head_form": "Eduardo",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      31,
-                      32
-                    ],
-                    "char_start": 135,
-                    "char_end": 142,
-                    "head_token_id": 32,
-                    "head_form": "mim",
-                    "head_deprel": "obl"
-                  }
-                ]
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "det": {
-          "Arg0": 1,
-          "Arg1": 0
-        },
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1
-        },
-        "obj": {
-          "Arg0": 1,
-          "Arg1": 0
-        },
-        "obl": {
-          "Arg0": 0,
-          "Arg1": 1
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "simpatia · acepção 1"
     }
   ]
 }

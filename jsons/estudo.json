@@ -6,326 +6,51 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_199cf4044caf5681",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_199cf4044caf5681",
-      "frame_id": "f_20d552ea73999d9c",
-      "pt_roleset": "estudo.05",
-      "sense_label": "estudo.05",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "study.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/study.xml",
-          "source_xml_url": "data/nombank_sources/study.xml",
-          "source_xml_sha256": "501eaf9eb105350d763a4c12945657f35c79cda9dcb5dab01087c77317b4ba90",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "investigador",
-          "definition": "Quem examina/estuda, inclusive instituição expressamente agente do estudo.",
-          "desc_pt": "investigador",
-          "definition_pt": "Quem examina/estuda, inclusive instituição expressamente agente do estudo."
-        },
-        {
-          "id": "Arg1",
-          "desc": "assunto examinado",
-          "definition": "Objeto/questão examinada com seus modificadores pertinentes. Condição do estudo e recompensa posterior não são seu assunto automaticamente.",
-          "desc_pt": "assunto examinado",
-          "definition_pt": "Objeto/questão examinada com seus modificadores pertinentes. Condição do estudo e recompensa posterior não são seu assunto automaticamente."
-        },
-        {
-          "id": "Arg2",
-          "desc": "beneficiário",
-          "definition": "Entidade para quem o estudo se realiza, não recompensa obtida ou premiado não nomeado.",
-          "desc_pt": "beneficiário",
-          "definition_pt": "Entidade para quem o estudo se realiza, não recompensa obtida ou premiado não nomeado."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC000061_SENT002::estudo::1",
           "sent_ID": "FOLHA_DOC000061_SENT002",
           "text": "O estudo da economia depende da compreensão do comportamento humano.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "estudo",
             "char_start": 2,
             "char_end": 8
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "da economia",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 9,
-                "char_end": 20
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 7417,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_20d552ea73999d9c",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5
-                    ],
-                    "char_start": 9,
-                    "char_end": 20,
-                    "head_token_id": 5,
-                    "head_form": "economia",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000015_SENT021::estudo::1",
           "sent_ID": "FOLHA_DOC000015_SENT021",
           "text": "Outro plano em estudo pela montadora é iniciar a importação de veículos elétricos para o Brasil em 2018.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "estudo",
             "char_start": 15,
             "char_end": 21
           },
-          "realization": {
-            "Arg0": "pela montadora",
-            "Arg1": "Outro plano",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": "nsubj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 22,
-                "char_end": 36
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 11
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 12062,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_20d552ea73999d9c",
-          "argument_details": {
-            "predicate_token_ids": [
-              4
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 15,
-                "char_end": 21
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      5,
-                      6,
-                      7
-                    ],
-                    "char_start": 22,
-                    "char_end": 36,
-                    "head_token_id": 7,
-                    "head_form": "montadora",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2
-                    ],
-                    "char_start": 0,
-                    "char_end": 11,
-                    "head_token_id": 2,
-                    "head_form": "plano",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
         {
           "instance_id": "FOLHA_DOC000061_SENT001::estudo::1",
           "sent_ID": "FOLHA_DOC000061_SENT001",
           "text": "Estudo do comportamento na tomada de decisões rende Nobel de Economia.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "Estudo",
             "char_start": 0,
             "char_end": 6
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "do comportamento na tomada de decisões",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 7,
-                "char_end": 45
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 12336,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_20d552ea73999d9c",
-          "argument_details": {
-            "predicate_token_ids": [
-              1
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 0,
-                "char_end": 6
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 7,
-                    "char_end": 45,
-                    "head_token_id": 4,
-                    "head_form": "comportamento",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 2,
-          "Arg2": 0
-        },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

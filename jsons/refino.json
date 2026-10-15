@@ -6,141 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_4fe38d943a87267e",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_4fe38d943a87267e",
-      "frame_id": "f_b5535cda2ae56343",
-      "pt_roleset": "refino.01",
-      "sense_label": "refino.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "refining.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/refining.xml",
-          "source_xml_url": "data/nombank_sources/refining.xml",
-          "source_xml_sha256": "141918da496dce01bf1167d91ad57ecc72f81764fd894a6782eba5c3e3bf2c79",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Refinador",
-          "definition": "Purifier/agent, empresa refinadora conforme plants original.",
-          "desc_pt": "Refinador",
-          "definition_pt": "Purifier/agent, empresa refinadora conforme plants original."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Coisa refinada",
-          "definition": "Entity refined, sem petróleo inferido do contexto ausente.",
-          "desc_pt": "Coisa refinada",
-          "definition_pt": "Entity refined, sem petróleo inferido do contexto ausente."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Impurezas retiradas",
-          "definition": "Impurities expressas.",
-          "desc_pt": "Impurezas retiradas",
-          "definition_pt": "Impurities expressas."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004082_SENT013::refino::1",
           "sent_ID": "FOLHA_DOC004082_SENT013",
           "text": "Um executivo de uma empresa de refino estima que parte da operação voltará ao normal em duas semanas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "refino",
             "char_start": 31,
             "char_end": 37
           },
-          "realization": {
-            "Arg0": "de uma empresa",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "nmod",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 13,
-                "char_end": 27
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 5594,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_b5535cda2ae56343",
-          "argument_details": {
-            "predicate_token_ids": [
-              7
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 31,
-                "char_end": 37
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5
-                    ],
-                    "char_start": 13,
-                    "char_end": 27,
-                    "head_token_id": 5,
-                    "head_form": "empresa",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

@@ -6,139 +6,23 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_id": "s_3a46c061cbdc9b09",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_3a46c061cbdc9b09",
-      "frame_id": "f_32f4ffc9981c76e4",
-      "pt_roleset": "palpite.01",
-      "sense_label": "palpite.01",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "opinion.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/opinion.xml",
-          "source_xml_url": "data/nombank_sources/opinion.xml",
-          "source_xml_sha256": "0105cf9bd69890e51b3537cdc113282e4b3032af785afafbea19b9b5184f63a5",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Emissor do palpite",
-          "definition": "Speaker que dá opinião.",
-          "desc_pt": "Emissor do palpite",
-          "definition_pt": "Speaker que dá opinião."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Opinião",
-          "definition": "Opinion/conteúdo incorporado conforme REF1 original quando nenhuma opinião concreta dita.",
-          "desc_pt": "Opinião",
-          "definition_pt": "Opinion/conteúdo incorporado conforme REF1 original quando nenhuma opinião concreta dita."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Ouvinte do palpite",
-          "definition": "Hearer explícito, sem regras criadas de outro predicado.",
-          "desc_pt": "Ouvinte do palpite",
-          "definition_pt": "Hearer explícito, sem regras criadas de outro predicado."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC003024_SENT015::palpite::1",
           "sent_ID": "FOLHA_DOC003024_SENT015",
           "text": "Ora não há responsáveis a serem chamados, ora temos autoridades demais a dar palpites e criar regras.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "palpites",
             "char_start": 77,
             "char_end": 85
           },
-          "realization": {
-            "Arg0": "autoridades",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "obj",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 52,
-                "char_end": 63
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 11241,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_32f4ffc9981c76e4",
-          "argument_details": {
-            "predicate_token_ids": [
-              15
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 77,
-                "char_end": 85
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11
-                    ],
-                    "char_start": 52,
-                    "char_end": 63,
-                    "head_token_id": 11,
-                    "head_form": "autoridades",
-                    "head_deprel": "obj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "REL_ENCODED",
-                "status": "ENCODED_IN_REL",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "obj": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {}
     }
   ]
 }

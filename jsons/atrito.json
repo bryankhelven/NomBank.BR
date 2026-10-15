@@ -6,12 +6,24 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
+      "instances": [
+        {
+          "instance_id": "FOLHA_DOC000057_SENT007::atrito::1",
+          "sent_ID": "FOLHA_DOC000057_SENT007",
+          "text": "O retrocesso no debate, que causa atritos mesmo entre os republicanos, despertou ainda a oposição dos protegidos pelo Daca, que não querem se ver beneficiados por um arranjo que prejudicará futuros imigrantes, muitos deles parentes que tentam entrar nos EUA para rever a família.",
+          "arguments_annotated": false,
+          "predicate": {
+            "form": "atritos",
+            "char_start": 34,
+            "char_end": 41
+          },
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
+        }
+      ],
       "syntactic_profile": {},
-      "sense_label": "atrito · acepção 1",
-      "sense_id": "s_e886fa7410a00d26",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
+      "sense_label": "atrito · acepção 1"
     },
     {
       "pt_roleset": null,
@@ -31,160 +43,11 @@
           },
           "realization": {},
           "syntax": {},
-          "argument_positions": {},
-          "target_instance_id": 7371,
-          "annotation_authority": "manual_review_required",
-          "annotation_status": "not_started",
-          "frame_id": null,
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 2,
-                "char_end": 8
-              }
-            ],
-            "arguments": []
-          }
+          "argument_positions": {}
         }
       ],
       "syntactic_profile": {},
-      "sense_label": "atrito · acepção 2",
-      "sense_id": "s_aa76d55da3afe700",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_e886fa7410a00d26",
-      "frame_id": "f_ee8502098e8d2aba",
-      "pt_roleset": null,
-      "sense_label": "atrito · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "friction.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/friction.xml",
-          "source_xml_url": "data/nombank_sources/friction.xml",
-          "source_xml_sha256": "574c00aa623381fdd37cba2b06c304e775a280805b30f30758875f59a2ff5ab2",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Interlocutores em divergência",
-          "definition": "Speaker individual ou grupo recíproco como between the markets.",
-          "desc_pt": "Interlocutores em divergência",
-          "definition_pt": "Speaker individual ou grupo recíproco como between the markets."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Matéria da divergência",
-          "definition": "Argumento/topic em disputa, sem toda causa contextual como tema.",
-          "desc_pt": "Matéria da divergência",
-          "definition_pt": "Argumento/topic em disputa, sem toda causa contextual como tema."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Outro interlocutor",
-          "definition": "Listener separado, sem grupo recíproco duplicado ou efeito transferido.",
-          "desc_pt": "Outro interlocutor",
-          "definition_pt": "Listener separado, sem grupo recíproco duplicado ou efeito transferido."
-        }
-      ],
-      "instances": [
-        {
-          "instance_id": "FOLHA_DOC000057_SENT007::atrito::1",
-          "sent_ID": "FOLHA_DOC000057_SENT007",
-          "text": "O retrocesso no debate, que causa atritos mesmo entre os republicanos, despertou ainda a oposição dos protegidos pelo Daca, que não querem se ver beneficiados por um arranjo que prejudicará futuros imigrantes, muitos deles parentes que tentam entrar nos EUA para rever a família.",
-          "arguments_annotated": true,
-          "predicate": {
-            "form": "atritos",
-            "char_start": 34,
-            "char_end": 41
-          },
-          "realization": {
-            "Arg0": "entre os republicanos",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "obl",
-            "Arg1": null,
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 48,
-                "char_end": 69
-              }
-            ],
-            "Arg1": [],
-            "Arg2": []
-          },
-          "target_instance_id": 1580,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_ee8502098e8d2aba",
-          "argument_details": {
-            "predicate_token_ids": [
-              9
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 34,
-                "char_end": 41
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      11,
-                      12,
-                      13
-                    ],
-                    "char_start": 48,
-                    "char_end": 69,
-                    "head_token_id": 13,
-                    "head_form": "republicanos",
-                    "head_deprel": "obl"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "obl": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
-        }
-      }
+      "sense_label": "atrito · acepção 2"
     }
   ]
 }

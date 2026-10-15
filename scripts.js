@@ -7,7 +7,6 @@ export function selectInstances(rows, f) {
     if (numeric !== null ? o.id !== numeric : q && !normalize(`${o.lemma} ${o.sense}`).includes(q)) return false;
     if (f.letter && normalize(o.lemma)[0] !== normalize(f.letter)) return false;
     if (f.status !== 'all' && o.status !== f.status) return false;
-    if (f.authority && f.authority !== 'all' && o.authority !== f.authority) return false;
     if (f.valency !== 'all' && o.valency !== Number(f.valency)) return false;
     if (f.role !== 'all' || f.realization !== 'all') {
       if (!o.roles.some(r => (f.role === 'all' || r.slot === f.role) && (f.realization === 'all' || r.status === f.realization))) return false;
@@ -17,7 +16,7 @@ export function selectInstances(rows, f) {
 }
 
 if (typeof document !== 'undefined') {
-  const controls = ['search', 'status', 'valency', 'role', 'realization', 'authority'];
+  const controls = ['search', 'status', 'valency', 'role', 'realization'];
   const params = new URLSearchParams(location.search);
   let letter = params.get('letter') ?? '', page = 1;
   const allButton = document.createElement('button');
@@ -49,7 +48,7 @@ if (typeof document !== 'undefined') {
       const link = document.createElement('a'); link.className = 'lemma-card';
       link.href = `site_pages/${matches[0].slug}.html` + (exact ? `#instance-${matches[0].id}` : '');
       const name = document.createElement('strong'); name.textContent = lemma;
-      const info = document.createElement('small'); info.textContent = `${matches.length} instâncias · ${matches.filter(o => o.status === 'annotated').length} com anotação concluída`;
+      const info = document.createElement('small'); info.textContent = `${matches.length} instâncias · ${matches.filter(o => o.status === 'annotated').length} com ARG`;
       link.append(name, info); container.append(link);
     }
     if (!lemmas.length) { const p = document.createElement('p'); p.textContent = 'Nenhum nome encontrado com esses filtros.'; container.append(p); }

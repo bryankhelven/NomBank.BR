@@ -6,299 +6,38 @@
       "description": null,
       "origin_frames": [],
       "roles": null,
-      "instances": [],
-      "syntactic_profile": {},
-      "sense_label": "lesão · acepção 1",
-      "sense_id": "s_6efe65bf658a265d",
-      "frame_id": null,
-      "inventory_authority": "no_defined_inventory"
-    },
-    {
-      "sense_id": "s_6efe65bf658a265d",
-      "frame_id": "f_c778598da2f7054c",
-      "pt_roleset": null,
-      "sense_label": "lesão · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "injury.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/injury.xml",
-          "source_xml_url": "data/nombank_sources/injury.xml",
-          "source_xml_sha256": "8c47a5234255b3b745076dbb2a71fd5ee9b530572aa36a9d1a2a0fd50d6387a7",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Causa da lesão",
-          "definition": "Entidade/evento que causa ferimento, incluindo violência explicitada.",
-          "desc_pt": "Causa da lesão",
-          "definition_pt": "Entidade/evento que causa ferimento, incluindo violência explicitada."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Paciente lesionado",
-          "definition": "Pessoa/entidade que sofre lesão.",
-          "desc_pt": "Paciente lesionado",
-          "definition_pt": "Pessoa/entidade que sofre lesão."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio usado para lesionar, sem ferramenta ou diagnóstico inferidos.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio usado para lesionar, sem ferramenta ou diagnóstico inferidos."
-        }
-      ],
       "instances": [
         {
           "instance_id": "FOLHA_DOC004085_SENT017::lesão::1",
           "sent_ID": "FOLHA_DOC004085_SENT017",
           "text": "Muitas pessoas que chegaram tinham necessidades médicas graves, como lesões causadas por violência, ferimentos infeccionados e complicações obstétricas avançadas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "lesões",
             "char_start": 69,
             "char_end": 75
           },
-          "realization": {
-            "Arg0": "por violência",
-            "Arg1": "Muitas pessoas que chegaram",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": "obl:agent",
-            "Arg1": "nsubj",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [
-              {
-                "char_start": 85,
-                "char_end": 98
-              }
-            ],
-            "Arg1": [
-              {
-                "char_start": 0,
-                "char_end": 27
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 761,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_c778598da2f7054c",
-          "argument_details": {
-            "predicate_token_ids": [
-              11
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 69,
-                "char_end": 75
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      13,
-                      14
-                    ],
-                    "char_start": 85,
-                    "char_end": 98,
-                    "head_token_id": 14,
-                    "head_form": "violência",
-                    "head_deprel": "obl:agent"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      1,
-                      2,
-                      3,
-                      4
-                    ],
-                    "char_start": 0,
-                    "char_end": 27,
-                    "head_token_id": 2,
-                    "head_form": "pessoas",
-                    "head_deprel": "nsubj"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
-        }
-      ],
-      "syntactic_profile": {
-        "obl:agent": {
-          "Arg0": 1,
-          "Arg1": 0,
-          "Arg2": 0
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         },
-        "nsubj": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
-    },
-    {
-      "sense_id": "s_6efe65bf658a265d",
-      "frame_id": "f_23a62f9bc9ac83a2",
-      "pt_roleset": null,
-      "sense_label": "lesão · acepção 1",
-      "description": null,
-      "inventory_authority": "local_proposal_pending_reconciliation",
-      "origin_frames": [
-        {
-          "roleset": "lesion.01",
-          "resource": "English NomBank",
-          "url": "data/nombank_sources/lesion.xml",
-          "source_xml_url": "data/nombank_sources/lesion.xml",
-          "source_xml_sha256": "4e8fe3f7549bbf654b35fc86790c3aaa2ab1963592b7369ace4d40cc99644e04",
-          "adapted": true,
-          "gloss": null
-        }
-      ],
-      "roles": [
-        {
-          "id": "Arg0",
-          "desc": "Causa da lesão",
-          "definition": "Quem/o que provoca lesão.",
-          "desc_pt": "Causa da lesão",
-          "definition_pt": "Quem/o que provoca lesão."
-        },
-        {
-          "id": "Arg1",
-          "desc": "Parte lesionada",
-          "definition": "Paciente/parte corporal lesionados como skin lesions.",
-          "desc_pt": "Parte lesionada",
-          "definition_pt": "Paciente/parte corporal lesionados como skin lesions."
-        },
-        {
-          "id": "Arg2",
-          "desc": "Instrumento",
-          "definition": "Meio causal independente.",
-          "desc_pt": "Instrumento",
-          "definition_pt": "Meio causal independente."
-        }
-      ],
-      "instances": [
         {
           "instance_id": "FOLHA_DOC000156_SENT019::lesão::1",
           "sent_ID": "FOLHA_DOC000156_SENT019",
           "text": "Teve lesões na cabeça, pulmão e quadril, e múltiplas fraturas nas pernas.",
-          "arguments_annotated": true,
+          "arguments_annotated": false,
           "predicate": {
             "form": "lesões",
             "char_start": 5,
             "char_end": 11
           },
-          "realization": {
-            "Arg0": null,
-            "Arg1": "na cabeça, pulmão e quadril",
-            "Arg2": null
-          },
-          "syntax": {
-            "Arg0": null,
-            "Arg1": "nmod",
-            "Arg2": null
-          },
-          "argument_positions": {
-            "Arg0": [],
-            "Arg1": [
-              {
-                "char_start": 12,
-                "char_end": 39
-              }
-            ],
-            "Arg2": []
-          },
-          "target_instance_id": 3428,
-          "annotation_authority": "local_completed_pending_reconciliation",
-          "annotation_status": "annotated",
-          "frame_id": "f_23a62f9bc9ac83a2",
-          "argument_details": {
-            "predicate_token_ids": [
-              2
-            ],
-            "predicate_spans": [
-              {
-                "char_start": 5,
-                "char_end": 11
-              }
-            ],
-            "arguments": [
-              {
-                "slot": "Arg0",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              },
-              {
-                "slot": "Arg1",
-                "realization_mode": "INDEPENDENT_SPAN",
-                "status": "REALIZED",
-                "spans": [
-                  {
-                    "token_ids": [
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9
-                    ],
-                    "char_start": 12,
-                    "char_end": 39,
-                    "head_token_id": 5,
-                    "head_form": "cabeça",
-                    "head_deprel": "nmod"
-                  }
-                ]
-              },
-              {
-                "slot": "Arg2",
-                "realization_mode": "NONE_SELECTED",
-                "status": "UNREALIZED_IN_CONTEXT",
-                "spans": []
-              }
-            ]
-          }
+          "realization": {},
+          "syntax": {},
+          "argument_positions": {}
         }
       ],
-      "syntactic_profile": {
-        "nmod": {
-          "Arg0": 0,
-          "Arg1": 1,
-          "Arg2": 0
-        }
-      }
+      "syntactic_profile": {},
+      "sense_label": "lesão · acepção 1"
     }
   ]
 }
